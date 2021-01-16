@@ -1,0 +1,115 @@
+
+MapNoteInfo = {
+	["KunLaiSummit"] = {
+	},
+	["Ulduar"] = {
+	},
+	["Northrend"] = {
+	},
+	["Talador"] = {
+	},
+	["TheStormPeaks"] = {
+	},
+	["UpperBlackrockSpire"] = {
+	},
+	["CrystalsongForest"] = {
+	},
+	["SpiresOfArak"] = {
+	},
+	["GoldRush"] = {
+	},
+	["ValeofEternalBlossoms"] = {
+	},
+	["Ashran"] = {
+	},
+	["DragonSoul"] = {
+	},
+	["IcecrownCitadel"] = {
+	},
+	["Tanaris"] = {
+	},
+	["Kalimdor"] = {
+	},
+	["TownlongWastes"] = {
+	},
+	["Durotar"] = {
+	},
+	["BlackrockDepths"] = {
+	},
+	["Orgrimmar"] = {
+	},
+	["TanaanJungle"] = {
+	},
+	["Draenor"] = {
+	},
+	["DraenorAuchindoun"] = {
+	},
+	["Pandaria"] = {
+	},
+	["Skywall"] = {
+	},
+	["SearingGorge"] = {
+	},
+	["ThunderKingRaid"] = {
+	},
+	["garrisonffhorde_tier3"] = {
+	},
+	["NagrandDraenor"] = {
+	},
+	["MogushanVaults"] = {
+	},
+	["IronDocks"] = {
+	},
+	["BlastedLands_terrain1"] = {
+	},
+	["ShadowmoonDungeon"] = {
+	},
+	["OgreMines"] = {
+	},
+	["Azeroth"] = {
+	},
+	["Gorgrond"] = {
+	},
+	["TerokkarForest"] = {
+	},
+	["IcecrownGlacier"] = {
+	},
+	["HellfireRaid"] = {
+	},
+	["Dalaran"] = {
+	},
+	["SwampOfSorrows"] = {
+	},
+	["FrostfireRidge"] = {
+	},
+	["OvergrownOutpost"] = {
+	},
+	["garrisonffhorde"] = {
+	},
+	["HighmaulRaid"] = {
+	},
+	["StranglethornJungle"] = {
+	},
+	["Hellfire"] = {
+	},
+	["FoundryRaid"] = {
+	},
+	["ZulGurub"] = {
+	},
+	["ShattrathCity"] = {
+	},
+	["IsleoftheThunderKing"] = {
+	},
+	["Expansion01"] = {
+	},
+	["DeadwindPass"] = {
+	},
+	["ShadowmoonValleyDR"] = {
+	},
+	["ShadowmoonValley"] = {
+	},
+	["AshranHordeFactionHub"] = {
+	},
+	["Nagrand"] = {
+	},
+}

@@ -1,0 +1,12 @@
+
+BFClassMod_Config = {
+	["framePos"] = {
+		"BOTTOM", -- [1]
+		"UIParent", -- [2]
+		"BOTTOM", -- [3]
+		56.7719383239746, -- [4]
+		93.9411239624024, -- [5]
+	},
+}
+BFRuneFrame_Config = nil
+zFeeder = nil

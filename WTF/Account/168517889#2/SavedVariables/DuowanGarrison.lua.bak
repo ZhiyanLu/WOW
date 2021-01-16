@@ -1,0 +1,7 @@
+
+MasterPlanConfig = {
+	["version"] = "0.13",
+}
+MasterPlanData = {
+}
+SV_GarrisonMissionManager = nil

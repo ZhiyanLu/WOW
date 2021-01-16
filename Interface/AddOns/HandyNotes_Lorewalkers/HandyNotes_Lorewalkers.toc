@@ -1,0 +1,13 @@
+## Interface: 90002
+## Title: HandyNotes_Lorewalkers
+## Notes: Where the lore is at
+## Author: Kemayo
+## Version: v12
+## DefaultState: enabled
+## X-Category: Map
+## X-eMail: kemayo @ gmail DOT com
+## X-Curse-Project-ID: 45566
+## SavedVariables: HandyNotes_LorewalkersDB
+## RequiredDeps: HandyNotes
+
+Lore.lua

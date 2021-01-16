@@ -1,0 +1,23 @@
+VER 3 0000000000000009 "冰冻" "135833"
+#showtooltip 冰冻术
+/cast [pet]冰冻术;召唤水元素
+END
+VER 3 0000000000000006 "暴风雪" "SPELL_FROST_ICESTORM"
+#showtooltips 暴风雪
+/cast [@cursor] 暴风雪
+END
+VER 3 0000000000000005 "水流喷射" "SPELL_FROST_CHILLINGBLAST"
+/cast 水流喷射
+END
+VER 3 0000000000000008 "烈焰风暴" "SPELL_FIRE_SELFDESTRUCT"
+#showtooltips 烈焰风暴
+/cast [@cursor] 烈焰风暴
+END
+VER 3 0000000000000003 "爆发1" "SPELL_FIRE_SEALOFFIRE"
+#showtooltip 燃烧
+/castsequence reset=10 燃烧,火焰冲击,炎爆术,火焰冲击,炎爆术,烈焰飞舞,火焰冲击,炎爆术,火焰冲击,炎爆术,灼烧,炎爆术,灼烧,炎爆术,灼烧,能量符文
+END
+VER 3 0000000000000004 "爆发2" "ABILITY_MAGE_LIVINGBOMB"
+#showtooltip 燃烧
+/castsequence reset=10 燃烧,炎爆术,火焰冲击,炎爆术,火焰冲击,炎爆术,烈焰飞舞,火焰冲击,炎爆术,火焰冲击,炎爆术,凤凰烈焰(神器),炎爆术
+END

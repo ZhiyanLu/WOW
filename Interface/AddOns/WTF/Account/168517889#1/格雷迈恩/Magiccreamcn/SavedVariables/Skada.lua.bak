@@ -1,0 +1,4816 @@
+
+SkadaPerCharDB = {
+	["sets"] = {
+	},
+	["total"] = {
+		["orb_count"] = 0,
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["time"] = 0,
+		["interrupts"] = 1,
+		["mobdone"] = 6059305,
+		["damage"] = 17564856,
+		["players"] = {
+			{
+				["ffdamagedonespells"] = {
+				},
+				["healingspells"] = {
+					["纯洁壁垒"] = {
+						["shielding"] = 289781,
+						["id"] = 202052,
+						["healing"] = 289781,
+						["min"] = 0,
+						["multistrike"] = 0,
+						["name"] = "纯洁壁垒",
+						["hits"] = 49,
+						["overhealing"] = 329357.59375,
+						["max"] = 44693,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["灵魂裂劈"] = {
+						["shielding"] = 0,
+						["id"] = 228477,
+						["healing"] = 715419,
+						["min"] = 0,
+						["multistrike"] = 0,
+						["name"] = "灵魂裂劈",
+						["hits"] = 12,
+						["overhealing"] = 293114,
+						["max"] = 147200,
+						["critical"] = 4,
+						["absorbed"] = 0,
+					},
+					["灵魂盛宴"] = {
+						["shielding"] = 0,
+						["id"] = 207693,
+						["healing"] = 193803,
+						["min"] = 0,
+						["multistrike"] = 0,
+						["name"] = "灵魂盛宴",
+						["hits"] = 32,
+						["overhealing"] = 85763,
+						["max"] = 9107,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["吞噬灵魂"] = {
+						["shielding"] = 0,
+						["id"] = 202644,
+						["healing"] = 1231833,
+						["multistrikes"] = 0,
+						["min"] = 0,
+						["multistrike"] = 0,
+						["name"] = "吞噬灵魂",
+						["hits"] = 47,
+						["overhealing"] = 2380355,
+						["max"] = 196420,
+						["critical"] = 9,
+						["absorbed"] = 0,
+					},
+					["军团治疗石"] = {
+						["shielding"] = 0,
+						["id"] = 200452,
+						["healing"] = 205836,
+						["absorbed"] = 0,
+						["min"] = 68000,
+						["multistrike"] = 0,
+						["name"] = "军团治疗石",
+						["critical"] = 0,
+						["max"] = 69836,
+						["overhealing"] = 0,
+						["hits"] = 3,
+						["multistrikes"] = 0,
+					},
+				},
+				["healingabsorbed"] = 0,
+				["shielding"] = 289781,
+				["class"] = "DEMONHUNTER",
+				["orb_hit"] = 0,
+				["auras"] = {
+					["恶魔之魂"] = {
+						["name"] = "恶魔之魂",
+						["active"] = 0,
+						["id"] = 163073,
+						["uptime"] = 884,
+						["auratype"] = "BUFF",
+					},
+					["灵魂残片"] = {
+						["name"] = "灵魂残片",
+						["active"] = 0,
+						["id"] = 203981,
+						["uptime"] = 6,
+						["auratype"] = "BUFF",
+					},
+					["刃舞"] = {
+						["name"] = "刃舞",
+						["active"] = 0,
+						["id"] = 188499,
+						["uptime"] = 1,
+						["auratype"] = "BUFF",
+					},
+					["恶魔狂野"] = {
+						["name"] = "恶魔狂野",
+						["active"] = 0,
+						["id"] = 226991,
+						["uptime"] = 319,
+						["auratype"] = "BUFF",
+					},
+					["恶魔变形"] = {
+						["name"] = "恶魔变形",
+						["active"] = 0,
+						["id"] = 162264,
+						["auratype"] = "BUFF",
+						["uptime"] = 30,
+					},
+					["献祭光环"] = {
+						["name"] = "献祭光环",
+						["active"] = 0,
+						["id"] = 178740,
+						["uptime"] = 6,
+						["auratype"] = "BUFF",
+					},
+					["幽灵视觉"] = {
+						["name"] = "幽灵视觉",
+						["active"] = 0,
+						["id"] = 188501,
+						["uptime"] = 6,
+						["auratype"] = "BUFF",
+					},
+					["净化火焰"] = {
+						["name"] = "净化火焰",
+						["active"] = 0,
+						["id"] = 201408,
+						["auratype"] = "BUFF",
+						["uptime"] = 26,
+					},
+					["眼棱"] = {
+						["name"] = "眼棱",
+						["active"] = 0,
+						["id"] = 198013,
+						["auratype"] = "BUFF",
+						["uptime"] = 11,
+					},
+					["烈焰咒符"] = {
+						["name"] = "烈焰咒符",
+						["active"] = 0,
+						["id"] = 204598,
+						["uptime"] = 6,
+						["auratype"] = "DEBUFF",
+					},
+					["烈火烙印"] = {
+						["name"] = "烈火烙印",
+						["active"] = 0,
+						["id"] = 207744,
+						["uptime"] = 0,
+						["auratype"] = "DEBUFF",
+					},
+					["折磨"] = {
+						["name"] = "折磨",
+						["active"] = 0,
+						["id"] = 185245,
+						["uptime"] = 3,
+						["auratype"] = "DEBUFF",
+					},
+					["纯洁壁垒"] = {
+						["name"] = "纯洁壁垒",
+						["active"] = 0,
+						["id"] = 202052,
+						["uptime"] = 20,
+						["auratype"] = "BUFF",
+					},
+					["奥术洪流"] = {
+						["name"] = "奥术洪流",
+						["active"] = 0,
+						["id"] = 202719,
+						["uptime"] = 6,
+						["auratype"] = "DEBUFF",
+					},
+					["复仇回避"] = {
+						["name"] = "复仇回避",
+						["active"] = 0,
+						["id"] = 198813,
+						["uptime"] = 3,
+						["auratype"] = "DEBUFF",
+					},
+					["灵魂盛宴"] = {
+						["name"] = "灵魂盛宴",
+						["active"] = 0,
+						["id"] = 207693,
+						["uptime"] = 10,
+						["auratype"] = "BUFF",
+					},
+					["恶魔尖刺"] = {
+						["name"] = "恶魔尖刺",
+						["active"] = 0,
+						["id"] = 203819,
+						["uptime"] = 6,
+						["auratype"] = "BUFF",
+					},
+					["灵魂切削"] = {
+						["name"] = "灵魂切削",
+						["active"] = 0,
+						["id"] = 207407,
+						["uptime"] = 3,
+						["auratype"] = "DEBUFF",
+					},
+				},
+				["damagetaken"] = 6378325,
+				["role"] = "NONE",
+				["overhealing"] = 3088589.59375,
+				["interrupts"] = 1,
+				["orb_spells"] = {
+				},
+				["name"] = "Magiccreamcn",
+				["orb_click"] = 0,
+				["damage"] = 17564856,
+				["damagespells"] = {
+					["攻击"] = {
+						["DODGE"] = 2,
+						["id"] = 6603,
+						["IMMUNE"] = 1,
+						["EVADE"] = 3,
+						["min"] = 194,
+						["glancing"] = 3,
+						["PARRY"] = 2,
+						["critical"] = 260,
+						["hit"] = 329,
+						["totalhits"] = 700,
+						["max"] = 14000,
+						["MISS"] = 100,
+						["damage"] = 1968417,
+					},
+					["库斯卡唤海者: 闪电箭"] = {
+						["min"] = 14806,
+						["hit"] = 4,
+						["totalhits"] = 4,
+						["id"] = 197745,
+						["max"] = 15258,
+						["damage"] = 60147,
+					},
+					["裂魂"] = {
+						["min"] = 8248,
+						["critical"] = 11,
+						["hit"] = 29,
+						["totalhits"] = 40,
+						["id"] = 203782,
+						["max"] = 30852,
+						["damage"] = 649948,
+					},
+					["库斯卡唤海者: 攻击"] = {
+						["min"] = 8640,
+						["critical"] = 1,
+						["totalhits"] = 1,
+						["id"] = 6603,
+						["max"] = 8640,
+						["damage"] = 8640,
+					},
+					["灰舌潜伏者: 攻击"] = {
+						["id"] = 6603,
+						["IMMUNE"] = 1,
+						["min"] = 2009,
+						["critical"] = 2,
+						["hit"] = 43,
+						["totalhits"] = 50,
+						["max"] = 5297,
+						["MISS"] = 4,
+						["damage"] = 165649,
+					},
+					["奥术洪流"] = {
+						["id"] = 202719,
+						["totalhits"] = 2,
+						["IMMUNE"] = 2,
+						["max"] = 0,
+						["damage"] = 0,
+					},
+					["刃舞"] = {
+						["min"] = 3834,
+						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["id"] = 199552,
+						["max"] = 8033,
+						["damage"] = 11867,
+					},
+					["恶魔变形"] = {
+						["min"] = 7274,
+						["critical"] = 1,
+						["hit"] = 2,
+						["totalhits"] = 3,
+						["id"] = 200166,
+						["max"] = 16548,
+						["damage"] = 39285,
+					},
+					["献祭光环"] = {
+						["min"] = 4648,
+						["critical"] = 44,
+						["hit"] = 92,
+						["totalhits"] = 136,
+						["id"] = 187727,
+						["max"] = 56614,
+						["damage"] = 1550611,
+					},
+					["灵魂切削"] = {
+						["min"] = 10876,
+						["hit"] = 9,
+						["totalhits"] = 9,
+						["id"] = 207407,
+						["max"] = 31980,
+						["damage"] = 154254,
+					},
+					["邪能冲撞"] = {
+						["min"] = 122,
+						["critical"] = 20,
+						["hit"] = 39,
+						["totalhits"] = 59,
+						["id"] = 192611,
+						["max"] = 530554,
+						["damage"] = 1759601,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 12132,
+						["critical"] = 8,
+						["hit"] = 10,
+						["totalhits"] = 18,
+						["id"] = 228478,
+						["max"] = 50195,
+						["damage"] = 551515,
+					},
+					["眼棱"] = {
+						["min"] = 5094,
+						["critical"] = 97,
+						["totalhits"] = 97,
+						["id"] = 198030,
+						["max"] = 11923,
+						["damage"] = 613073,
+					},
+					["烈焰咒符"] = {
+						["min"] = 3903,
+						["totalhits"] = 89,
+						["critical"] = 11,
+						["hit"] = 77,
+						["EVADE"] = 1,
+						["max"] = 25241,
+						["id"] = 204598,
+						["damage"] = 738134,
+					},
+					["破坏魔毁灭者: 攻击"] = {
+						["min"] = 5125,
+						["hit"] = 1,
+						["totalhits"] = 1,
+						["id"] = 6603,
+						["max"] = 5125,
+						["damage"] = 5125,
+					},
+					["烈火烙印"] = {
+						["min"] = 50619,
+						["critical"] = 2,
+						["hit"] = 2,
+						["totalhits"] = 4,
+						["id"] = 204021,
+						["max"] = 106452,
+						["damage"] = 325209,
+					},
+					["混乱打击"] = {
+						["min"] = 4333,
+						["PARRY"] = 1,
+						["critical"] = 73,
+						["hit"] = 137,
+						["totalhits"] = 211,
+						["id"] = 222031,
+						["max"] = 45465,
+						["damage"] = 3495576,
+					},
+					["投掷利刃"] = {
+						["min"] = 78,
+						["critical"] = 33,
+						["hit"] = 68,
+						["totalhits"] = 101,
+						["id"] = 185123,
+						["max"] = 45204,
+						["damage"] = 1542910,
+					},
+					["打断"] = {
+						["id"] = 32747,
+						["totalhits"] = 1,
+						["IMMUNE"] = 1,
+						["max"] = 0,
+						["damage"] = 0,
+					},
+					["复仇回避"] = {
+						["min"] = 3924,
+						["critical"] = 2,
+						["hit"] = 2,
+						["totalhits"] = 4,
+						["id"] = 198813,
+						["max"] = 7598,
+						["damage"] = 21640,
+					},
+					["恶魔之咬"] = {
+						["min"] = 4361,
+						["id"] = 162243,
+						["critical"] = 95,
+						["hit"] = 102,
+						["totalhits"] = 198,
+						["IMMUNE"] = 1,
+						["max"] = 25433,
+						["damage"] = 2067778,
+					},
+					["恶魔之刃"] = {
+						["min"] = 4425,
+						["critical"] = 10,
+						["hit"] = 28,
+						["totalhits"] = 38,
+						["id"] = 203796,
+						["max"] = 11122,
+						["damage"] = 245103,
+					},
+					["地狱火撞击"] = {
+						["min"] = 18735,
+						["critical"] = 14,
+						["hit"] = 15,
+						["totalhits"] = 29,
+						["id"] = 189112,
+						["max"] = 44965,
+						["damage"] = 869595,
+					},
+					["净化火焰"] = {
+						["min"] = 24822,
+						["critical"] = 4,
+						["hit"] = 7,
+						["totalhits"] = 11,
+						["id"] = 201408,
+						["max"] = 59574,
+						["damage"] = 397868,
+					},
+					["毁灭"] = {
+						["min"] = 12567,
+						["critical"] = 2,
+						["hit"] = 6,
+						["totalhits"] = 8,
+						["id"] = 227518,
+						["max"] = 29614,
+						["damage"] = 182724,
+					},
+					["布鲁塔格的剑尖"] = {
+						["min"] = 49906,
+						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["id"] = 201348,
+						["max"] = 90281,
+						["damage"] = 140187,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1474214827.22012,
+						["log"] = {
+							{
+								["ts"] = 1474214819.50501,
+								["amount"] = -73217,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 241740,
+							}, -- [1]
+							{
+								["ts"] = 1474214821.50102,
+								["amount"] = -66832,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 168523,
+							}, -- [2]
+							{
+								["ts"] = 1474214823.62603,
+								["amount"] = -35471,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 101691,
+							}, -- [3]
+							{
+								["ts"] = 1474214824.16004,
+								["amount"] = -41585,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 66220,
+							}, -- [4]
+							{
+								["spellid"] = 88163,
+								["ts"] = 1474214824.62505,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 24635,
+							}, -- [5]
+							{
+								["spellid"] = 88163,
+								["ts"] = 1474214825.11406,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 24635,
+							}, -- [6]
+							{
+								["spellid"] = 88163,
+								["ts"] = 1474214825.70207,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 24635,
+							}, -- [7]
+							{
+								["absorb"] = 0,
+								["amount"] = 17513,
+								["srcname"] = "Magiccreamcn",
+								["spellid"] = 203794,
+								["hp"] = 42148,
+								["ts"] = 1474214826.12508,
+							}, -- [8]
+							{
+								["absorb"] = -31754,
+								["amount"] = -1068,
+								["srcname"] = "枯法者小丑",
+								["spellid"] = 88163,
+								["hp"] = 42148,
+								["ts"] = 1474214826.12509,
+							}, -- [9]
+							{
+								["ts"] = 1474214826.7131,
+								["amount"] = -23711,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 41080,
+							}, -- [10]
+							{
+								["ts"] = 1474214827.22011,
+								["amount"] = -17973,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 17369,
+							}, -- [11]
+							{
+								["spellname"] = "Magiccreamcn次死亡",
+								["ts"] = 1474214827.22012,
+								["spellid"] = 41220,
+								["hp"] = 0,
+							}, -- [12]
+							["pos"] = 13,
+						},
+						["maxhp"] = 483480,
+					}, -- [1]
+					{
+						["ts"] = 1474214755.3131,
+						["log"] = {
+							{
+								["ts"] = 1474214732.16701,
+								["amount"] = -102514,
+								["spellid"] = 88163,
+								["srcname"] = "库拉伦双头怪",
+								["hp"] = 249270,
+							}, -- [1]
+							{
+								["ts"] = 1474214733.80702,
+								["amount"] = -36337,
+								["spellid"] = 88163,
+								["srcname"] = "枯法实验体",
+								["hp"] = 146756,
+							}, -- [2]
+							{
+								["ts"] = 1474214738.27603,
+								["amount"] = -100332,
+								["spellid"] = 88163,
+								["srcname"] = "库拉伦双头怪",
+								["hp"] = 110419,
+							}, -- [3]
+							{
+								["ts"] = 1474214751.26304,
+								["amount"] = -79214,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 155130,
+							}, -- [4]
+							{
+								["absorb"] = 0,
+								["amount"] = 76710,
+								["srcname"] = "Magiccreamcn",
+								["spellid"] = 228477,
+								["hp"] = 152626,
+								["ts"] = 1474214752.75805,
+							}, -- [5]
+							{
+								["ts"] = 1474214753.27606,
+								["amount"] = -56520,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 152626,
+							}, -- [6]
+							{
+								["absorb"] = 0,
+								["amount"] = 9107,
+								["srcname"] = "Magiccreamcn",
+								["spellid"] = 207693,
+								["hp"] = 105213,
+								["ts"] = 1474214754.76707,
+							}, -- [7]
+							{
+								["ts"] = 1474214755.31308,
+								["amount"] = -53787,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 105213,
+							}, -- [8]
+							{
+								["ts"] = 1474214755.31309,
+								["amount"] = -60722,
+								["spellid"] = 88163,
+								["srcname"] = "枯法者小丑",
+								["hp"] = 105213,
+							}, -- [9]
+							{
+								["spellname"] = "Magiccreamcn次死亡",
+								["ts"] = 1474214755.3131,
+								["spellid"] = 41220,
+								["hp"] = 0,
+							}, -- [10]
+							["pos"] = 11,
+						},
+						["maxhp"] = 483480,
+					}, -- [2]
+					{
+						["ts"] = 1474214686.63602,
+						["log"] = {
+							{
+								["ts"] = 1474214686.63601,
+								["amount"] = -359325,
+								["spellid"] = 88163,
+								["srcname"] = "精灵灾星",
+								["hp"] = 241740,
+							}, -- [1]
+							{
+								["spellname"] = "Magiccreamcn次死亡",
+								["ts"] = 1474214686.63602,
+								["spellid"] = 41220,
+								["hp"] = 0,
+							}, -- [2]
+							["pos"] = 3,
+						},
+						["maxhp"] = 483480,
+					}, -- [3]
+					{
+						["ts"] = 1474214643.44214,
+						["log"] = {
+							{
+								["ts"] = 1474213831.76101,
+								["amount"] = -586,
+								["spellid"] = 181346,
+								["srcname"] = "洛希恩灰熊",
+								["hp"] = 482894,
+							}, -- [1]
+							{
+								["ts"] = 1474213831.86702,
+								["amount"] = -7249,
+								["hp"] = 475645,
+								["srcname"] = "洛希恩灰熊",
+								["spellid"] = 212207,
+							}, -- [2]
+							{
+								["ts"] = 1474213832.11503,
+								["amount"] = 7835,
+								["spellid"] = 207693,
+								["srcname"] = "Magiccreamcn",
+								["hp"] = 483480,
+								["absorb"] = 0,
+							}, -- [3]
+							{
+								["ts"] = 1474213834.09004,
+								["amount"] = 0,
+								["srcname"] = "Magiccreamcn",
+								["hp"] = 483480,
+								["spellid"] = 207693,
+								["absorb"] = 0,
+							}, -- [4]
+							{
+								["ts"] = 1474213974.20205,
+								["amount"] = -8041,
+								["hp"] = 148300,
+								["srcname"] = "洛希恩灰熊",
+								["spellid"] = 88163,
+							}, -- [5]
+							{
+								["ts"] = 1474213975.63306,
+								["amount"] = 69836,
+								["srcname"] = "Magiccreamcn",
+								["hp"] = 210095,
+								["spellid"] = 200452,
+								["absorb"] = 0,
+							}, -- [6]
+							{
+								["ts"] = 1474213976.20607,
+								["amount"] = -7442,
+								["srcname"] = "洛希恩灰熊",
+								["spellid"] = 88163,
+								["hp"] = 210095,
+							}, -- [7]
+							{
+								["ts"] = 1474214385.74808,
+								["amount"] = -16759,
+								["hp"] = 395904,
+								["spellid"] = 207059,
+								["srcname"] = "积怨投叉手",
+							}, -- [8]
+							{
+								["ts"] = 1474214444.40209,
+								["amount"] = -8086,
+								["spellid"] = 88163,
+								["hp"] = 483480,
+								["srcname"] = "枯法饥渴者",
+							}, -- [9]
+							{
+								["ts"] = 1474214544.1281,
+								["amount"] = -5831,
+								["spellid"] = 88163,
+								["hp"] = 483480,
+								["srcname"] = "覆羽徘徊者",
+							}, -- [10]
+							{
+								["ts"] = 1474214546.14711,
+								["amount"] = -7392,
+								["spellid"] = 88163,
+								["hp"] = 477649,
+								["srcname"] = "覆羽徘徊者",
+							}, -- [11]
+							{
+								["ts"] = 1474214641.40812,
+								["amount"] = -388126,
+								["spellid"] = 88163,
+								["hp"] = 483480,
+								["srcname"] = "精灵灾星",
+							}, -- [12]
+							{
+								["ts"] = 1474214643.44213,
+								["amount"] = -403088,
+								["hp"] = 95354,
+								["spellid"] = 88163,
+								["srcname"] = "精灵灾星",
+							}, -- [13]
+							{
+								["spellname"] = "Magiccreamcn次死亡",
+								["ts"] = 1474214643.44214,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [14]
+							{
+								["ts"] = 1474213830.99115,
+								["amount"] = 0,
+								["hp"] = 483480,
+								["srcname"] = "Magiccreamcn",
+								["spellid"] = 203794,
+								["absorb"] = 0,
+							}, -- [15]
+							["pos"] = 15,
+						},
+						["maxhp"] = 483480,
+					}, -- [4]
+				},
+				["healed"] = {
+					["Player-1500-0442A4E1"] = {
+						["role"] = "NONE",
+						["name"] = "Magiccreamcn",
+						["amount"] = 2636672,
+						["class"] = "DEMONHUNTER",
+						["shielding"] = 289781,
+					},
+				},
+				["deathlog"] = {
+					{
+						["ts"] = 1474214923.202,
+						["amount"] = -59788,
+						["spellid"] = 88163,
+						["srcname"] = "枯法者小丑",
+						["hp"] = 241740,
+					}, -- [1]
+					{
+						["ts"] = 1474214995.777,
+						["amount"] = -57987,
+						["spellid"] = 88163,
+						["srcname"] = "饥饿的行尸",
+						["hp"] = 145422,
+					}, -- [2]
+					{
+						["ts"] = 1474215000.67,
+						["amount"] = -77609,
+						["spellid"] = 88163,
+						["srcname"] = "饥饿的行尸",
+						["hp"] = 87435,
+					}, -- [3]
+					{
+						["ts"] = 1474215069.333,
+						["amount"] = -43609,
+						["spellid"] = 88163,
+						["srcname"] = "枯法蹒跚者",
+						["hp"] = 112887,
+					}, -- [4]
+					{
+						["ts"] = 1474215100.076,
+						["amount"] = -6267,
+						["spellid"] = 88163,
+						["srcname"] = "魔石蜥蜴",
+						["hp"] = 92402,
+					}, -- [5]
+					["pos"] = 6,
+				},
+				["id"] = "Player-1500-0442A4E1",
+				["maxhp"] = 268860,
+				["power"] = {
+				},
+				["damagetakenspells"] = {
+					["灵魂冲击"] = {
+						["crushing"] = 0,
+						["id"] = 200720,
+						["absorbed"] = 0,
+						["min"] = 2621,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "灵魂冲击",
+						["blocked"] = 0,
+						["totalhits"] = 17,
+						["resisted"] = 0,
+						["max"] = 3713,
+						["damage"] = 55886,
+					},
+					["暗影箭雨"] = {
+						["crushing"] = 0,
+						["id"] = 196677,
+						["absorbed"] = 0,
+						["min"] = 13187,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "暗影箭雨",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 13524,
+						["damage"] = 26711,
+					},
+					["邪能烈焰"] = {
+						["crushing"] = 0,
+						["id"] = 200504,
+						["absorbed"] = 0,
+						["min"] = 4326,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "邪能烈焰",
+						["blocked"] = 0,
+						["totalhits"] = 8,
+						["resisted"] = 0,
+						["max"] = 5886,
+						["damage"] = 40674,
+					},
+					["掷斧"] = {
+						["crushing"] = 0,
+						["id"] = 196955,
+						["absorbed"] = 0,
+						["min"] = 10330,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "掷斧",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 10330,
+						["damage"] = 10330,
+					},
+					["地狱烈焰"] = {
+						["crushing"] = 0,
+						["id"] = 201193,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["min"] = 10469,
+						["critical"] = 0,
+						["name"] = "地狱烈焰",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 10469,
+						["damage"] = 10469,
+					},
+					["炼狱打击"] = {
+						["crushing"] = 0,
+						["id"] = 192142,
+						["absorbed"] = 0,
+						["min"] = 24412,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "炼狱打击",
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["max"] = 24986,
+						["damage"] = 73815,
+					},
+					["灭绝者轰炸"] = {
+						["crushing"] = 0,
+						["id"] = 191667,
+						["absorbed"] = 0,
+						["min"] = 29822,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "灭绝者轰炸",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 30039,
+						["damage"] = 59861,
+					},
+					["末日恶灵"] = {
+						["crushing"] = 0,
+						["id"] = 215978,
+						["damage"] = 38434,
+						["max"] = 12006,
+						["min"] = 2855,
+						["name"] = "末日恶灵",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["燃烧邪能"] = {
+						["crushing"] = 0,
+						["id"] = 199773,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["min"] = 4891,
+						["critical"] = 0,
+						["name"] = "燃烧邪能",
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["max"] = 5050,
+						["damage"] = 19805,
+					},
+					["邪能火球"] = {
+						["crushing"] = 0,
+						["id"] = 215852,
+						["damage"] = 31817,
+						["max"] = 6004,
+						["min"] = 2109,
+						["name"] = "邪能火球",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 9,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["暗影烈焰"] = {
+						["crushing"] = 0,
+						["id"] = 215709,
+						["damage"] = 49088,
+						["max"] = 24709,
+						["min"] = 3940,
+						["name"] = "暗影烈焰",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 7,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["暗影陷阱"] = {
+						["crushing"] = 0,
+						["id"] = 215732,
+						["damage"] = 124203,
+						["max"] = 124203,
+						["min"] = 124203,
+						["name"] = "暗影陷阱",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["坚定袭击"] = {
+						["crushing"] = 0,
+						["id"] = 225208,
+						["damage"] = 34538,
+						["max"] = 8051,
+						["min"] = 6002,
+						["name"] = "坚定袭击",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["末日迫近"] = {
+						["crushing"] = 0,
+						["id"] = 215701,
+						["damage"] = 65919,
+						["max"] = 65919,
+						["min"] = 65919,
+						["name"] = "末日迫近",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["邪魂猛击"] = {
+						["crushing"] = 0,
+						["id"] = 216164,
+						["damage"] = 72184,
+						["max"] = 36165,
+						["min"] = 36019,
+						["name"] = "邪魂猛击",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["凶猛利爪"] = {
+						["crushing"] = 0,
+						["id"] = 212207,
+						["damage"] = 20964,
+						["max"] = 7249,
+						["min"] = 6822,
+						["name"] = "凶猛利爪",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["吸取生命"] = {
+						["crushing"] = 0,
+						["id"] = 204896,
+						["damage"] = 7501,
+						["max"] = 1251,
+						["min"] = 1250,
+						["name"] = "吸取生命",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 6,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["恶魔喷吐"] = {
+						["crushing"] = 0,
+						["id"] = 200783,
+						["absorbed"] = 0,
+						["min"] = 2408,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "恶魔喷吐",
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["max"] = 2687,
+						["damage"] = 7608,
+					},
+					["熔岩"] = {
+						["crushing"] = 0,
+						["id"] = 192519,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["min"] = 15384,
+						["critical"] = 0,
+						["name"] = "熔岩",
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["max"] = 23077,
+						["damage"] = 107691,
+					},
+					["邪能光束"] = {
+						["crushing"] = 0,
+						["id"] = 194811,
+						["damage"] = 24998,
+						["max"] = 5108,
+						["min"] = 4892,
+						["name"] = "邪能光束",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["萨吉塔鱼叉"] = {
+						["crushing"] = 0,
+						["id"] = 207059,
+						["damage"] = 16759,
+						["max"] = 16759,
+						["min"] = 16759,
+						["name"] = "萨吉塔鱼叉",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["生灵俱灭"] = {
+						["crushing"] = 0,
+						["id"] = 199604,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["min"] = 31618,
+						["critical"] = 0,
+						["name"] = "生灵俱灭",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 31618,
+						["damage"] = 31618,
+					},
+					["孵化虫群"] = {
+						["crushing"] = 0,
+						["id"] = 197627,
+						["damage"] = 13680,
+						["max"] = 13680,
+						["glancing"] = 0,
+						["name"] = "孵化虫群",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 13680,
+						["absorbed"] = 0,
+					},
+					["燃烧"] = {
+						["crushing"] = 0,
+						["id"] = 197749,
+						["absorbed"] = 0,
+						["min"] = 976,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "燃烧",
+						["blocked"] = 0,
+						["totalhits"] = 10,
+						["resisted"] = 0,
+						["max"] = 1016,
+						["damage"] = 9939,
+					},
+					["腐化混沌"] = {
+						["crushing"] = 0,
+						["id"] = 216009,
+						["damage"] = 73882,
+						["max"] = 6157,
+						["min"] = 6156,
+						["name"] = "腐化混沌",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 12,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["邪能爆破"] = {
+						["crushing"] = 0,
+						["id"] = 197222,
+						["absorbed"] = 0,
+						["min"] = 25617,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "邪能爆破",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 25617,
+						["damage"] = 25617,
+					},
+					["攻击"] = {
+						["crushing"] = 21,
+						["id"] = 6603,
+						["damage"] = 3752292,
+						["max"] = 403088,
+						["min"] = 422,
+						["name"] = "攻击",
+						["critical"] = 18,
+						["blocked"] = 0,
+						["totalhits"] = 380,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 31754,
+					},
+					["正踢"] = {
+						["crushing"] = 0,
+						["id"] = 199645,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["min"] = 25848,
+						["critical"] = 0,
+						["name"] = "正踢",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 25848,
+						["damage"] = 25848,
+					},
+					["邪能编织"] = {
+						["crushing"] = 0,
+						["id"] = 200748,
+						["absorbed"] = 0,
+						["min"] = 10190,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "邪能编织",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 10190,
+						["damage"] = 10190,
+					},
+					["灵魂腐蚀"] = {
+						["crushing"] = 0,
+						["id"] = 200674,
+						["absorbed"] = 0,
+						["min"] = 6223,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "灵魂腐蚀",
+						["blocked"] = 0,
+						["totalhits"] = 16,
+						["resisted"] = 0,
+						["max"] = 6456,
+						["damage"] = 101903,
+					},
+					["战刃的召唤"] = {
+						["crushing"] = 0,
+						["id"] = 208464,
+						["damage"] = 25626,
+						["max"] = 3661,
+						["min"] = 3660,
+						["name"] = "战刃的召唤",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 7,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["被折磨的灵魂"] = {
+						["crushing"] = 0,
+						["id"] = 200831,
+						["absorbed"] = 0,
+						["min"] = 11649,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "被折磨的灵魂",
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["max"] = 14636,
+						["damage"] = 39162,
+					},
+					["暗影烈火"] = {
+						["crushing"] = 0,
+						["id"] = 195401,
+						["absorbed"] = 0,
+						["min"] = 5081,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "暗影烈火",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 5099,
+						["damage"] = 10180,
+					},
+					["邪能顺劈"] = {
+						["crushing"] = 0,
+						["id"] = 215925,
+						["damage"] = 81506,
+						["max"] = 81506,
+						["min"] = 81506,
+						["name"] = "邪能顺劈",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["灵魂切削"] = {
+						["crushing"] = 0,
+						["id"] = 216188,
+						["damage"] = 22183,
+						["max"] = 7541,
+						["min"] = 7248,
+						["name"] = "灵魂切削",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["黑暗之息"] = {
+						["crushing"] = 0,
+						["id"] = 208196,
+						["damage"] = 106079,
+						["max"] = 4515,
+						["min"] = 474,
+						["name"] = "黑暗之息",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 42,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["污秽邪能"] = {
+						["crushing"] = 0,
+						["id"] = 200420,
+						["damage"] = 200434,
+						["max"] = 10200,
+						["min"] = 9810,
+						["name"] = "污秽邪能",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 20,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["震荡猛击"] = {
+						["crushing"] = 0,
+						["id"] = 198576,
+						["absorbed"] = 0,
+						["min"] = 5283,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "震荡猛击",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 5284,
+						["damage"] = 10567,
+					},
+					["哀伤尖塔"] = {
+						["crushing"] = 0,
+						["id"] = 192603,
+						["absorbed"] = 0,
+						["min"] = 4993,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "哀伤尖塔",
+						["blocked"] = 0,
+						["totalhits"] = 6,
+						["resisted"] = 0,
+						["max"] = 7490,
+						["damage"] = 39946,
+					},
+					["混沌猛击"] = {
+						["crushing"] = 0,
+						["id"] = 197599,
+						["absorbed"] = 0,
+						["min"] = 20938,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "混沌猛击",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 20939,
+						["damage"] = 41877,
+					},
+					["剑刃风暴"] = {
+						["crushing"] = 0,
+						["id"] = 200388,
+						["damage"] = 23963,
+						["max"] = 8659,
+						["glancing"] = 0,
+						["name"] = "剑刃风暴",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 6669,
+						["absorbed"] = 0,
+					},
+					["愤怒"] = {
+						["crushing"] = 0,
+						["id"] = 200379,
+						["damage"] = 50846,
+						["max"] = 2849,
+						["min"] = 2045,
+						["name"] = "愤怒",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 21,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["深渊嗥叫"] = {
+						["crushing"] = 0,
+						["id"] = 200498,
+						["absorbed"] = 0,
+						["min"] = 27398,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "深渊嗥叫",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 27398,
+						["damage"] = 27398,
+					},
+					["邪能燃烧"] = {
+						["crushing"] = 0,
+						["id"] = 197747,
+						["absorbed"] = 0,
+						["min"] = 9813,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "邪能燃烧",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 9847,
+						["damage"] = 19660,
+					},
+					["灵魂撕裂"] = {
+						["crushing"] = 0,
+						["id"] = 216391,
+						["damage"] = 29390,
+						["max"] = 411,
+						["min"] = 246,
+						["name"] = "灵魂撕裂",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 90,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["光束凝视"] = {
+						["crushing"] = 0,
+						["id"] = 195054,
+						["absorbed"] = 0,
+						["min"] = 9873,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "光束凝视",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 9873,
+						["damage"] = 9873,
+					},
+					["邪能冲击"] = {
+						["crushing"] = 0,
+						["id"] = 215848,
+						["damage"] = 45206,
+						["max"] = 5087,
+						["min"] = 4872,
+						["name"] = "邪能冲击",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 9,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["爆炸暗影"] = {
+						["crushing"] = 0,
+						["id"] = 201025,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["min"] = 27183,
+						["critical"] = 0,
+						["name"] = "爆炸暗影",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 27183,
+						["damage"] = 27183,
+					},
+					["凶蛮打击"] = {
+						["crushing"] = 0,
+						["id"] = 199557,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["min"] = 10513,
+						["critical"] = 0,
+						["name"] = "凶蛮打击",
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["max"] = 10698,
+						["damage"] = 52987,
+					},
+					["黑暗契约"] = {
+						["crushing"] = 0,
+						["id"] = 200809,
+						["absorbed"] = 0,
+						["min"] = 10976,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "黑暗契约",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 12352,
+						["damage"] = 23328,
+					},
+					["暗影之刃"] = {
+						["crushing"] = 0,
+						["id"] = 200662,
+						["absorbed"] = 0,
+						["min"] = 7086,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "暗影之刃",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 7091,
+						["damage"] = 14177,
+					},
+					["暗影箭"] = {
+						["crushing"] = 0,
+						["id"] = 183345,
+						["damage"] = 286019,
+						["max"] = 19188,
+						["min"] = 7102,
+						["name"] = "暗影箭",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 20,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["蛮力上钩拳"] = {
+						["crushing"] = 0,
+						["id"] = 197733,
+						["absorbed"] = 0,
+						["min"] = 4327,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "蛮力上钩拳",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 4467,
+						["damage"] = 8794,
+					},
+					["野蛮突袭"] = {
+						["crushing"] = 0,
+						["id"] = 200994,
+						["damage"] = 54130,
+						["max"] = 4706,
+						["glancing"] = 0,
+						["name"] = "野蛮突袭",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 13,
+						["resisted"] = 0,
+						["min"] = 3256,
+						["absorbed"] = 0,
+					},
+					["野蛮冲撞"] = {
+						["crushing"] = 0,
+						["id"] = 199553,
+						["absorbed"] = 0,
+						["min"] = 13288,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "野蛮冲撞",
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["max"] = 39708,
+						["damage"] = 130618,
+					},
+					["绞肉机"] = {
+						["crushing"] = 0,
+						["id"] = 198519,
+						["absorbed"] = 0,
+						["min"] = 2641,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["name"] = "绞肉机",
+						["blocked"] = 0,
+						["totalhits"] = 10,
+						["resisted"] = 0,
+						["max"] = 7925,
+						["damage"] = 47551,
+					},
+					["裂伤横扫"] = {
+						["crushing"] = 0,
+						["id"] = 181346,
+						["damage"] = 5418,
+						["max"] = 3660,
+						["min"] = 586,
+						["name"] = "裂伤横扫",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["ccbreaks"] = 0,
+				["healing"] = 2636672,
+				["ffdamagedonetargets"] = {
+				},
+				["time"] = 20838,
+				["ffdamagedone"] = 0,
+				["dispells"] = 0,
+				["damaged"] = {
+				},
+				["multistrikes"] = 0,
+			}, -- [1]
+			{
+				["healingabsorbed"] = 0,
+				["orb_hit"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["role"] = "NONE",
+				["ffdamagedone"] = 0,
+				["overhealing"] = 15669,
+				["interrupts"] = 0,
+				["deathlog"] = {
+				},
+				["orb_spells"] = {
+				},
+				["orb_click"] = 0,
+				["damage"] = 0,
+				["damagespells"] = {
+				},
+				["name"] = "库斯卡唤海者",
+				["healed"] = {
+					["Player-1500-0442CB56"] = {
+						["amount"] = 27516,
+						["role"] = "NONE",
+						["name"] = "燃烧的意志",
+						["shielding"] = 0,
+					},
+				},
+				["power"] = {
+				},
+				["id"] = "Creature-0-3124-1481-8542-96884-000048317B",
+				["maxhp"] = 0,
+				["healing"] = 27516,
+				["damagetakenspells"] = {
+				},
+				["damagetaken"] = 0,
+				["healingspells"] = {
+					["治疗波"] = {
+						["shielding"] = 0,
+						["id"] = 197744,
+						["healing"] = 27516,
+						["absorbed"] = 0,
+						["min"] = 27516,
+						["multistrike"] = 0,
+						["name"] = "治疗波",
+						["critical"] = 0,
+						["max"] = 27516,
+						["overhealing"] = 15669,
+						["hits"] = 1,
+						["multistrikes"] = 0,
+					},
+				},
+				["ffdamagedonetargets"] = {
+				},
+				["shielding"] = 0,
+				["time"] = 0,
+				["ccbreaks"] = 0,
+				["auras"] = {
+				},
+				["multistrikes"] = 0,
+			}, -- [2]
+		},
+		["deaths"] = 4,
+		["mobs"] = {
+			["魔刃刺客"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 1502834,
+						["done"] = 89572,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1502834,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 89572,
+			},
+			["狂怒战士"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 561824,
+						["done"] = 178332,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 561824,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 178332,
+			},
+			["乌发平静兮"] = {
+				["players"] = {
+				},
+				["hdone"] = 48899,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 48899,
+						["crits"] = 0,
+						["max"] = 48899,
+						["healing"] = 48899,
+						["overhealing"] = 73228,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 48899,
+						["crits"] = 0,
+						["max"] = 48899,
+						["healing"] = 48899,
+						["overhealing"] = 73228,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 48899,
+				["done"] = 0,
+			},
+			["丨殺戮者-凤凰之神"] = {
+				["players"] = {
+				},
+				["hdone"] = 13713,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 13713,
+						["healing"] = 13713,
+						["overhealing"] = 127047,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 13713,
+						["healing"] = 13713,
+						["overhealing"] = 127047,
+						["hits"] = 2,
+					},
+				},
+				["htaken"] = 13713,
+				["done"] = 0,
+			},
+			["邪魂军团士兵"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 19318,
+						["done"] = 26208,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 19318,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 26208,
+			},
+			["愤怒领主勒考斯"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 41585,
+						["done"] = 0,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 41585,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["狂野的魔犬"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 979315,
+						["done"] = 142183,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 979315,
+				["done"] = 142183,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["哇咔希"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 69450,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 69450,
+						["hits"] = 1,
+					},
+				},
+			},
+			["伊利甄子丹-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 18018,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 18018,
+						["crits"] = 0,
+						["max"] = 18018,
+						["healing"] = 18018,
+						["overhealing"] = 50532,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 18018,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 18018,
+						["crits"] = 0,
+						["max"] = 18018,
+						["healing"] = 18018,
+						["overhealing"] = 50532,
+						["hits"] = 1,
+					},
+				},
+			},
+			["鬼母"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 73708,
+						["done"] = 18831,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 73708,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 18831,
+			},
+			["光耀之眼"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 9873,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 9873,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["红色巢蛛"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 207054,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 207054,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["水蛇"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 530554,
+						["done"] = 0,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 530554,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["虫胡虫枼-黑手军团"] = {
+				["players"] = {
+				},
+				["hdone"] = 94210,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 26575,
+						["crits"] = 0,
+						["max"] = 67635,
+						["healing"] = 94210,
+						["overhealing"] = 41060,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 94210,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 26575,
+						["crits"] = 0,
+						["max"] = 67635,
+						["healing"] = 94210,
+						["overhealing"] = 41060,
+						["hits"] = 2,
+					},
+				},
+			},
+			["审判官的爆裂之眼"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 28337,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 28337,
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["军团灭绝者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 59861,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 59861,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["邪能领主卡扎"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 304403,
+						["done"] = 10330,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 304403,
+				["done"] = 10330,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["雨夜星冰乐-达斯雷玛"] = {
+				["players"] = {
+				},
+				["hdone"] = 6782,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 5840,
+						["healing"] = 6782,
+						["overhealing"] = 192853,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 6782,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 5840,
+						["healing"] = 6782,
+						["overhealing"] = 192853,
+						["hits"] = 3,
+					},
+				},
+			},
+			["腊八-库尔提拉斯"] = {
+				["players"] = {
+				},
+				["hdone"] = 50261,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 29322,
+						["healing"] = 50261,
+						["overhealing"] = 222859,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 50261,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 29322,
+						["healing"] = 50261,
+						["overhealing"] = 222859,
+						["hits"] = 4,
+					},
+				},
+			},
+			["燃烧十字军"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 150598,
+						["done"] = 39331,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 150598,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 39331,
+			},
+			["地窟蟑螂"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 73390,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 73390,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["工头布鲁塔格"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 646681,
+						["done"] = 114460,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 646681,
+				["done"] = 114460,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Mikuhatsune"] = {
+				["players"] = {
+				},
+				["hdone"] = 14029,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 9455,
+						["healing"] = 9455,
+						["overhealing"] = 98212,
+						["hits"] = 3,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 4574,
+						["healing"] = 4574,
+						["overhealing"] = 74850,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 14029,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 9455,
+						["healing"] = 9455,
+						["overhealing"] = 98212,
+						["hits"] = 3,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 4574,
+						["healing"] = 4574,
+						["overhealing"] = 74850,
+						["hits"] = 2,
+					},
+				},
+			},
+			["老卖-伊森德雷"] = {
+				["players"] = {
+				},
+				["hdone"] = 84901,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 46597,
+						["healing"] = 84901,
+						["overhealing"] = 655904,
+						["hits"] = 11,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 84901,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 46597,
+						["healing"] = 84901,
+						["overhealing"] = 655904,
+						["hits"] = 11,
+					},
+				},
+			},
+			["覆羽徘徊者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 13223,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 13223,
+			},
+			["低级小鬼"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 1248251,
+						["done"] = 147496,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1248251,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 147496,
+			},
+			["月下嫣然-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["治疗波"] = {
+						["min"] = 5778,
+						["crits"] = 0,
+						["max"] = 39673,
+						["healing"] = 45451,
+						["overhealing"] = 46894,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 45451,
+				["hdonespell"] = {
+					["集结"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 45718,
+						["hits"] = 1,
+					},
+				},
+			},
+			["溜溜好魔小兽-拉文凯斯"] = {
+				["players"] = {
+				},
+				["hdone"] = 61193,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 39725,
+						["healing"] = 61193,
+						["overhealing"] = 181267,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 39725,
+						["healing"] = 61193,
+						["overhealing"] = 181267,
+						["hits"] = 4,
+					},
+				},
+				["htaken"] = 61193,
+				["done"] = 0,
+			},
+			["魔石蜥蜴"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 6267,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 6267,
+			},
+			["浅丶蓝色-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 243136,
+				["hdonespell"] = {
+					["圣光闪现"] = {
+						["min"] = 22103,
+						["crits"] = 3,
+						["max"] = 44207,
+						["healing"] = 243136,
+						["overhealing"] = 0,
+						["hits"] = 8,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["圣光闪现"] = {
+						["min"] = 22103,
+						["crits"] = 3,
+						["max"] = 44207,
+						["healing"] = 243136,
+						["overhealing"] = 0,
+						["hits"] = 8,
+					},
+				},
+				["htaken"] = 243136,
+				["done"] = 0,
+			},
+			["勾践"] = {
+				["players"] = {
+				},
+				["hdone"] = 70335,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 9010,
+						["crits"] = 0,
+						["max"] = 70335,
+						["healing"] = 79345,
+						["overhealing"] = 47258,
+						["hits"] = 2,
+					},
+				},
+				["htaken"] = 79345,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 70335,
+						["crits"] = 0,
+						["max"] = 70335,
+						["healing"] = 70335,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+			},
+			["食魂者阿莱利"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 38113,
+						["done"] = 22030,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 38113,
+				["done"] = 22030,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["墨殇-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 33552,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 33552,
+						["crits"] = 0,
+						["max"] = 33552,
+						["healing"] = 33552,
+						["overhealing"] = 34713,
+						["hits"] = 1,
+					},
+					["治疗波"] = {
+						["min"] = 42805,
+						["crits"] = 0,
+						["max"] = 47846,
+						["healing"] = 90651,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 124203,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 33552,
+						["crits"] = 0,
+						["max"] = 33552,
+						["healing"] = 33552,
+						["overhealing"] = 34713,
+						["hits"] = 1,
+					},
+				},
+			},
+			["幻想灬遨游-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 52300,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 36077,
+						["healing"] = 52300,
+						["overhealing"] = 345890,
+						["hits"] = 6,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 52300,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 36077,
+						["healing"] = 52300,
+						["overhealing"] = 345890,
+						["hits"] = 6,
+					},
+				},
+			},
+			["奥达奇幽魂"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 839711,
+						["done"] = 96079,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 839711,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 96079,
+			},
+			["浩丶爱你"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 52653,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 52653,
+						["hits"] = 1,
+					},
+				},
+			},
+			["洛希恩灰熊"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 362800,
+						["done"] = 63540,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 362800,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 63540,
+			},
+			["伊利單丶怒疯-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 17218,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 17218,
+						["crits"] = 0,
+						["max"] = 17218,
+						["healing"] = 17218,
+						["overhealing"] = 43397,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 17218,
+						["crits"] = 0,
+						["max"] = 17218,
+						["healing"] = 17218,
+						["overhealing"] = 43397,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 17218,
+				["done"] = 0,
+			},
+			["燃烧的意志"] = {
+				["players"] = {
+				},
+				["hdone"] = 89287,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 59593,
+						["healing"] = 89287,
+						["overhealing"] = 448193,
+						["hits"] = 8,
+					},
+					["治疗波"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 27516,
+						["healing"] = 27516,
+						["overhealing"] = 59213,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 116803,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 59593,
+						["healing"] = 89287,
+						["overhealing"] = 448193,
+						["hits"] = 8,
+					},
+				},
+			},
+			["邪能魔仆"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 215763,
+						["done"] = 45206,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 215763,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 45206,
+			},
+			["邪恶魔蛛"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 36253,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 36253,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["普丽菲卡"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 507927,
+						["done"] = 82623,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 507927,
+				["done"] = 82623,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Kissy"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["治疗波"] = {
+						["min"] = 17395,
+						["crits"] = 0,
+						["max"] = 17395,
+						["healing"] = 17395,
+						["overhealing"] = 25719,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 17395,
+				["hdonespell"] = {
+				},
+			},
+			["戳死人"] = {
+				["players"] = {
+				},
+				["hdone"] = 7447,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 127680,
+						["hits"] = 4,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 7447,
+						["crits"] = 0,
+						["max"] = 7447,
+						["healing"] = 7447,
+						["overhealing"] = 86185,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 7447,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 127680,
+						["hits"] = 4,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 7447,
+						["crits"] = 0,
+						["max"] = 7447,
+						["healing"] = 7447,
+						["overhealing"] = 86185,
+						["hits"] = 1,
+					},
+				},
+			},
+			["凯丽娅·邪魂"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 578491,
+						["done"] = 215727,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 41291,
+				["hdonespell"] = {
+					["战刃的召唤"] = {
+						["min"] = 5897,
+						["crits"] = 0,
+						["max"] = 5899,
+						["healing"] = 41291,
+						["overhealing"] = 0,
+						["hits"] = 7,
+					},
+				},
+				["taken"] = 578491,
+				["htakenspell"] = {
+					["战刃的召唤"] = {
+						["min"] = 5897,
+						["crits"] = 0,
+						["max"] = 5899,
+						["healing"] = 41291,
+						["overhealing"] = 0,
+						["hits"] = 7,
+					},
+				},
+				["htaken"] = 41291,
+				["done"] = 215727,
+			},
+			["又饮一瓢"] = {
+				["players"] = {
+				},
+				["hdone"] = 67370,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 18710,
+						["healing"] = 67370,
+						["overhealing"] = 404854,
+						["hits"] = 9,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 67370,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 18710,
+						["healing"] = 67370,
+						["overhealing"] = 404854,
+						["hits"] = 9,
+					},
+				},
+			},
+			["戈古纳斯"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 537669,
+						["done"] = 144007,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 537669,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 144007,
+			},
+			["巴斯提拉克斯"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 48994,
+						["done"] = 0,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 48994,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Tonge-达斯雷玛"] = {
+				["players"] = {
+				},
+				["hdone"] = 33928,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 33928,
+						["healing"] = 33928,
+						["overhealing"] = 102092,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 33928,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 33928,
+						["healing"] = 33928,
+						["overhealing"] = 102092,
+						["hits"] = 2,
+					},
+				},
+			},
+			["仰头深呼吸-黑手军团"] = {
+				["players"] = {
+				},
+				["hdone"] = 30150,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 30150,
+						["crits"] = 0,
+						["max"] = 30150,
+						["healing"] = 30150,
+						["overhealing"] = 38715,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 30150,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 30150,
+						["crits"] = 0,
+						["max"] = 30150,
+						["healing"] = 30150,
+						["overhealing"] = 38715,
+						["hits"] = 1,
+					},
+				},
+			},
+			["枯法饥渴者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 8086,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 8086,
+			},
+			["飘零的枫"] = {
+				["players"] = {
+				},
+				["hdone"] = 10569,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 10569,
+						["crits"] = 0,
+						["max"] = 10569,
+						["healing"] = 10569,
+						["overhealing"] = 53451,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 10569,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 10569,
+						["crits"] = 0,
+						["max"] = 10569,
+						["healing"] = 10569,
+						["overhealing"] = 53451,
+						["hits"] = 1,
+					},
+				},
+			},
+			["路还长别太狂-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 47839,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 47839,
+						["crits"] = 0,
+						["max"] = 47839,
+						["healing"] = 47839,
+						["overhealing"] = 12776,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 47839,
+						["crits"] = 0,
+						["max"] = 47839,
+						["healing"] = 47839,
+						["overhealing"] = 12776,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 47839,
+				["done"] = 0,
+			},
+			["痛苦的狱卒"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 22327,
+						["done"] = 5284,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 22327,
+				["done"] = 5284,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["邪恶的控魂大师"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 217753,
+						["done"] = 158300,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 217753,
+				["done"] = 158300,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["掠行巢蛛"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 34470,
+						["done"] = 6573,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 34470,
+				["done"] = 6573,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["邪能突击步兵"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 234739,
+						["done"] = 57448,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 234739,
+				["done"] = 57448,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["专业劫色-托塞德林"] = {
+				["players"] = {
+				},
+				["hdone"] = 138060,
+				["hdonespell"] = {
+					["猩红之瓶"] = {
+						["min"] = 11505,
+						["crits"] = 0,
+						["max"] = 11505,
+						["healing"] = 138060,
+						["overhealing"] = 0,
+						["hits"] = 12,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["猩红之瓶"] = {
+						["min"] = 11505,
+						["crits"] = 0,
+						["max"] = 11505,
+						["healing"] = 138060,
+						["overhealing"] = 0,
+						["hits"] = 12,
+					},
+				},
+				["htaken"] = 138060,
+				["done"] = 0,
+			},
+			["末日指挥官贝尔艾什"] = {
+				["players"] = {
+					["灰舌潜伏者"] = {
+						["taken"] = 26753,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Magiccreamcn"] = {
+						["taken"] = 189749,
+						["done"] = 36891,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 216502,
+				["done"] = 36891,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Lycoris-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 24034,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 24034,
+						["healing"] = 24034,
+						["overhealing"] = 110126,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 24034,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 24034,
+						["healing"] = 24034,
+						["overhealing"] = 110126,
+						["hits"] = 2,
+					},
+				},
+			},
+			["末日守卫"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 38220,
+						["done"] = 0,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 38220,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["冰淇淋之王-巴瑟拉斯"] = {
+				["players"] = {
+				},
+				["hdone"] = 26449,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 26449,
+						["crits"] = 0,
+						["max"] = 26449,
+						["healing"] = 26449,
+						["overhealing"] = 34166,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 26449,
+						["crits"] = 0,
+						["max"] = 26449,
+						["healing"] = 26449,
+						["overhealing"] = 34166,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 26449,
+				["done"] = 0,
+			},
+			["石冷情-达斯雷玛"] = {
+				["players"] = {
+				},
+				["hdone"] = 216417,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 5,
+						["max"] = 60561,
+						["healing"] = 95083,
+						["overhealing"] = 586507,
+						["hits"] = 15,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 6543,
+						["crits"] = 3,
+						["max"] = 60850,
+						["healing"] = 121334,
+						["overhealing"] = 513578,
+						["hits"] = 6,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 5,
+						["max"] = 60561,
+						["healing"] = 95083,
+						["overhealing"] = 586507,
+						["hits"] = 15,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 6543,
+						["crits"] = 3,
+						["max"] = 60850,
+						["healing"] = 121334,
+						["overhealing"] = 513578,
+						["hits"] = 6,
+					},
+				},
+				["htaken"] = 216417,
+				["done"] = 0,
+			},
+			["愤怒卫士大使"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 144134,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 144134,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["邪魂觅血者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 244947,
+						["done"] = 29331,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 69608,
+				["hdonespell"] = {
+					["吸取生命"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 13922,
+						["healing"] = 69608,
+						["overhealing"] = 13922,
+						["hits"] = 6,
+					},
+				},
+				["taken"] = 244947,
+				["htakenspell"] = {
+					["吸取生命"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 13922,
+						["healing"] = 69608,
+						["overhealing"] = 13922,
+						["hits"] = 6,
+					},
+				},
+				["htaken"] = 69608,
+				["done"] = 29331,
+			},
+			["Sakia-能源舰"] = {
+				["players"] = {
+				},
+				["hdone"] = 54744,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 54744,
+						["crits"] = 0,
+						["max"] = 54744,
+						["healing"] = 54744,
+						["overhealing"] = 5871,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 54744,
+						["crits"] = 0,
+						["max"] = 54744,
+						["healing"] = 54744,
+						["overhealing"] = 5871,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 54744,
+				["done"] = 0,
+			},
+			["斯勒基"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 109095,
+						["done"] = 82024,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 82024,
+				["taken"] = 109095,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["地丶狱-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 23158,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 20597,
+						["healing"] = 23158,
+						["overhealing"] = 158687,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 20597,
+						["healing"] = 23158,
+						["overhealing"] = 158687,
+						["hits"] = 3,
+					},
+				},
+				["htaken"] = 23158,
+				["done"] = 0,
+			},
+			["邪恶的魔犬"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 543519,
+						["done"] = 136167,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 543519,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 136167,
+			},
+			["孤翼"] = {
+				["players"] = {
+				},
+				["hdone"] = 121454,
+				["hdonespell"] = {
+					["圣光闪现"] = {
+						["min"] = 24291,
+						["crits"] = 1,
+						["max"] = 48581,
+						["healing"] = 121454,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["圣光闪现"] = {
+						["min"] = 24291,
+						["crits"] = 1,
+						["max"] = 48581,
+						["healing"] = 121454,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
+				["htaken"] = 121454,
+				["done"] = 0,
+			},
+			["伊莫拉斯"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 598947,
+						["done"] = 5307,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 5307,
+				["taken"] = 598947,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["恶魔追击"] = {
+				["players"] = {
+				},
+				["hdone"] = 1375,
+				["htakenspell"] = {
+					["治疗波"] = {
+						["min"] = 44093,
+						["crits"] = 0,
+						["max"] = 44093,
+						["healing"] = 44093,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 1375,
+						["healing"] = 1375,
+						["overhealing"] = 196760,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 45468,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 1375,
+						["healing"] = 1375,
+						["overhealing"] = 196760,
+						["hits"] = 3,
+					},
+				},
+			},
+			["阿什高姆"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 200,
+						["done"] = 107691,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 107691,
+				["taken"] = 200,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["伊利达雷领主-黑手军团"] = {
+				["players"] = {
+				},
+				["hdone"] = 3389,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 2462,
+						["healing"] = 3389,
+						["overhealing"] = 197446,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 3389,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 2462,
+						["healing"] = 3389,
+						["overhealing"] = 197446,
+						["hits"] = 3,
+					},
+				},
+			},
+			["雪夜飘飞絮-达斯雷玛"] = {
+				["players"] = {
+				},
+				["hdone"] = 132761,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 67530,
+						["healing"] = 132761,
+						["overhealing"] = 69829,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 132761,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 67530,
+						["healing"] = 132761,
+						["overhealing"] = 69829,
+						["hits"] = 3,
+					},
+				},
+			},
+			["棘爪巢蛛"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 14453,
+						["done"] = 0,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 14453,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["奥达奇亡魂"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 33407,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 33407,
+			},
+			["艾薇二-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 167818,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 68640,
+						["healing"] = 99818,
+						["overhealing"] = 1000342,
+						["hits"] = 16,
+					},
+					["军团治疗石"] = {
+						["min"] = 68000,
+						["crits"] = 0,
+						["max"] = 68000,
+						["healing"] = 68000,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 167818,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 68640,
+						["healing"] = 99818,
+						["overhealing"] = 1000342,
+						["hits"] = 16,
+					},
+					["军团治疗石"] = {
+						["min"] = 68000,
+						["crits"] = 0,
+						["max"] = 68000,
+						["healing"] = 68000,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+			},
+			["末日使者阿克维什"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 482330,
+						["done"] = 141423,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 482330,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 141423,
+			},
+			["坚如磐石"] = {
+				["players"] = {
+				},
+				["hdone"] = 15154,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 15154,
+						["crits"] = 0,
+						["max"] = 15154,
+						["healing"] = 15154,
+						["overhealing"] = 48701,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 15154,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 15154,
+						["crits"] = 0,
+						["max"] = 15154,
+						["healing"] = 15154,
+						["overhealing"] = 48701,
+						["hits"] = 1,
+					},
+				},
+			},
+			["灵魂残片"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 319386,
+						["done"] = 101795,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 319386,
+				["done"] = 101795,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["憎恨碎片"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 574669,
+						["done"] = 27849,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 574669,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 27849,
+			},
+			["伊利旦丶怒风-雷霆之怒"] = {
+				["players"] = {
+				},
+				["hdone"] = 175377,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 66630,
+						["healing"] = 175377,
+						["overhealing"] = 357663,
+						["hits"] = 8,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 175377,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 66630,
+						["healing"] = 175377,
+						["overhealing"] = 357663,
+						["hits"] = 8,
+					},
+				},
+			},
+			["蛛后泰兰娜"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 406033,
+						["done"] = 13680,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 406033,
+				["done"] = 13680,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["恶魔猎手"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["集结"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 64986,
+						["healing"] = 64986,
+						["overhealing"] = 72169,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 64986,
+				["hdonespell"] = {
+				},
+			},
+			["影之黯然-达斯雷玛"] = {
+				["players"] = {
+				},
+				["hdone"] = 74542,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 7998,
+						["crits"] = 0,
+						["max"] = 66544,
+						["healing"] = 74542,
+						["overhealing"] = 61388,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 74542,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 7998,
+						["crits"] = 0,
+						["max"] = 66544,
+						["healing"] = 74542,
+						["overhealing"] = 61388,
+						["hits"] = 2,
+					},
+				},
+			},
+			["饿魔烈手-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["治疗波"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 91874,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["泰国大线鸡"] = {
+				["players"] = {
+				},
+				["hdone"] = 52009,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 52009,
+						["healing"] = 52009,
+						["overhealing"] = 84431,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 52009,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 52009,
+						["healing"] = 52009,
+						["overhealing"] = 84431,
+						["hits"] = 2,
+					},
+				},
+			},
+			["库斯卡唤海者"] = {
+				["players"] = {
+				},
+				["hdone"] = 278064,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["治疗波"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 47846,
+						["healing"] = 278064,
+						["overhealing"] = 161919,
+						["hits"] = 10,
+					},
+				},
+			},
+			["审判官贝弗尔"] = {
+				["players"] = {
+					["灰舌潜伏者"] = {
+						["taken"] = 56500,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Magiccreamcn"] = {
+						["taken"] = 157999,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 214499,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["塞纳河畔"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["治疗波"] = {
+						["min"] = 46799,
+						["crits"] = 0,
+						["max"] = 46799,
+						["healing"] = 46799,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 46799,
+				["hdonespell"] = {
+				},
+			},
+			["Wintysususu-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 8553,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 8553,
+						["healing"] = 8553,
+						["overhealing"] = 127377,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 8553,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 8553,
+						["healing"] = 8553,
+						["overhealing"] = 127377,
+						["hits"] = 2,
+					},
+				},
+			},
+			["女王的百夫长"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 25544,
+						["done"] = 37448,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 25544,
+				["done"] = 37448,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["邪魂织乱者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 330983,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 330983,
+			},
+			["沃罗斯将军"] = {
+				["players"] = {
+					["库斯卡唤海者"] = {
+						["taken"] = 53529,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Magiccreamcn"] = {
+						["taken"] = 855548,
+						["done"] = 284075,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+					["灰舌潜伏者"] = {
+						["taken"] = 82396,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 991473,
+				["done"] = 284075,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["杰斯·织暗"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 31206,
+						["done"] = 27705,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 31206,
+				["done"] = 27705,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["邪恶伯爵"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 27068,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 27068,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["精灵灾星"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 1150539,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 1150539,
+			},
+			["真丶爱你"] = {
+				["players"] = {
+				},
+				["hdone"] = 3547,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 2453,
+						["healing"] = 3547,
+						["overhealing"] = 209431,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 3547,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 2453,
+						["healing"] = 3547,
+						["overhealing"] = 209431,
+						["hits"] = 4,
+					},
+				},
+			},
+			["积怨投叉手"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 16759,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 16759,
+			},
+			["你们立字据"] = {
+				["players"] = {
+				},
+				["hdone"] = 34871,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 34871,
+						["crits"] = 0,
+						["max"] = 34871,
+						["healing"] = 34871,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 34871,
+						["crits"] = 0,
+						["max"] = 34871,
+						["healing"] = 34871,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 34871,
+				["done"] = 0,
+			},
+			["暴躁的爪牙"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 16809,
+						["done"] = 12536,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 16809,
+				["done"] = 12536,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["巨型地狱火"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 73815,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 73815,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["深渊碎片"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 28000,
+						["done"] = 10469,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 10469,
+				["taken"] = 28000,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["魔化蜘蛛"] = {
+				["players"] = {
+					["库斯卡唤海者"] = {
+						["taken"] = 15258,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Magiccreamcn"] = {
+						["taken"] = 77118,
+						["done"] = 27618,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 92376,
+				["done"] = 27618,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["炽热逐魂者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 267380,
+						["done"] = 94669,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 267380,
+				["done"] = 94669,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["梓凌"] = {
+				["players"] = {
+				},
+				["hdone"] = 6353,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 6353,
+						["crits"] = 0,
+						["max"] = 6353,
+						["healing"] = 6353,
+						["overhealing"] = 59527,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 6353,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 6353,
+						["crits"] = 0,
+						["max"] = 6353,
+						["healing"] = 6353,
+						["overhealing"] = 59527,
+						["hits"] = 1,
+					},
+				},
+			},
+			["库拉什"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 1022440,
+						["done"] = 149833,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 149833,
+				["taken"] = 1022440,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["末日使徒塔拉尔"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 373528,
+						["done"] = 44742,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 373528,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 44742,
+			},
+			["灵魂榨取"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 155349,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 155349,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["末日使徒塞拉"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 156319,
+						["done"] = 42482,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 156319,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 42482,
+			},
+			["Izumi-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 64986,
+				["htakenspell"] = {
+					["治疗波"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 4403,
+						["healing"] = 4403,
+						["overhealing"] = 80786,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 4403,
+				["hdonespell"] = {
+					["集结"] = {
+						["min"] = 64986,
+						["crits"] = 1,
+						["max"] = 64986,
+						["healing"] = 64986,
+						["overhealing"] = 26451,
+						["hits"] = 1,
+					},
+				},
+			},
+			["女性纳迦"] = {
+				["players"] = {
+				},
+				["hdone"] = 45451,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["治疗波"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 39673,
+						["healing"] = 45451,
+						["overhealing"] = 180926,
+						["hits"] = 5,
+					},
+				},
+			},
+			["Houkaimkx"] = {
+				["players"] = {
+				},
+				["hdone"] = 69719,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 67965,
+						["healing"] = 69719,
+						["overhealing"] = 129166,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 69719,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 67965,
+						["healing"] = 69719,
+						["overhealing"] = 129166,
+						["hits"] = 3,
+					},
+				},
+			},
+			["奔放的浩子-深渊之巢"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["治疗波"] = {
+						["min"] = 5356,
+						["crits"] = 0,
+						["max"] = 41851,
+						["healing"] = 47207,
+						["overhealing"] = 38359,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 47207,
+				["hdonespell"] = {
+				},
+			},
+			["勒武恺-黑手军团"] = {
+				["players"] = {
+				},
+				["hdone"] = 22589,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 368,
+						["crits"] = 1,
+						["max"] = 368,
+						["healing"] = 368,
+						["overhealing"] = 20117,
+						["hits"] = 1,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 22221,
+						["crits"] = 1,
+						["max"] = 22221,
+						["healing"] = 22221,
+						["overhealing"] = 37267,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 22589,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 368,
+						["crits"] = 1,
+						["max"] = 368,
+						["healing"] = 368,
+						["overhealing"] = 20117,
+						["hits"] = 1,
+					},
+					["灵魂裂劈"] = {
+						["min"] = 22221,
+						["crits"] = 1,
+						["max"] = 22221,
+						["healing"] = 22221,
+						["overhealing"] = 37267,
+						["hits"] = 1,
+					},
+				},
+			},
+			["Qckay"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 68115,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 68115,
+						["hits"] = 1,
+					},
+				},
+			},
+			["枯法者小丑"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 239778,
+						["done"] = 569888,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 239778,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 569888,
+			},
+			["永恒丶凋零-达斯雷玛"] = {
+				["players"] = {
+				},
+				["hdone"] = 56699,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 53684,
+						["healing"] = 56699,
+						["overhealing"] = 145306,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 56699,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 53684,
+						["healing"] = 56699,
+						["overhealing"] = 145306,
+						["hits"] = 3,
+					},
+				},
+			},
+			["李小漠"] = {
+				["players"] = {
+				},
+				["hdone"] = 3404,
+				["hdonespell"] = {
+					["灵魂裂劈"] = {
+						["min"] = 3404,
+						["crits"] = 0,
+						["max"] = 3404,
+						["healing"] = 3404,
+						["overhealing"] = 22029,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 3404,
+				["htakenspell"] = {
+					["灵魂裂劈"] = {
+						["min"] = 3404,
+						["crits"] = 0,
+						["max"] = 3404,
+						["healing"] = 3404,
+						["overhealing"] = 22029,
+						["hits"] = 1,
+					},
+				},
+			},
+			["邪能织网者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 18985,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 18985,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["峩是大飞-能源舰"] = {
+				["players"] = {
+				},
+				["hdone"] = 60615,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 60615,
+						["crits"] = 0,
+						["max"] = 60615,
+						["healing"] = 60615,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 60615,
+						["crits"] = 0,
+						["max"] = 60615,
+						["healing"] = 60615,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 60615,
+				["done"] = 0,
+			},
+			["恶魔卫士屠夫"] = {
+				["players"] = {
+					["破坏魔毁灭者"] = {
+						["taken"] = 5125,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Magiccreamcn"] = {
+						["taken"] = 35183,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 40308,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["瞎了了-黑手军团"] = {
+				["players"] = {
+				},
+				["hdone"] = 28320,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 28320,
+						["healing"] = 28320,
+						["overhealing"] = 101820,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 28320,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 28320,
+						["healing"] = 28320,
+						["overhealing"] = 101820,
+						["hits"] = 2,
+					},
+				},
+			},
+			["枯法实验体"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 36337,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 139950,
+				["hdonespell"] = {
+					["虚空之触"] = {
+						["min"] = 17805,
+						["crits"] = 0,
+						["max"] = 25119,
+						["healing"] = 139950,
+						["overhealing"] = 7806,
+						["hits"] = 6,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["虚空之触"] = {
+						["min"] = 17805,
+						["crits"] = 0,
+						["max"] = 25119,
+						["healing"] = 139950,
+						["overhealing"] = 7806,
+						["hits"] = 6,
+					},
+				},
+				["htaken"] = 139950,
+				["done"] = 36337,
+			},
+			["艾瑞达捕影者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 39241,
+						["done"] = 136652,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 39241,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 136652,
+			},
+			["大甜饼之王-巴瑟拉斯"] = {
+				["players"] = {
+				},
+				["hdone"] = 3127,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 3127,
+						["crits"] = 0,
+						["max"] = 3127,
+						["healing"] = 3127,
+						["overhealing"] = 57488,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 3127,
+						["crits"] = 0,
+						["max"] = 3127,
+						["healing"] = 3127,
+						["overhealing"] = 57488,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 3127,
+				["done"] = 0,
+			},
+			["库拉伦双头怪"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 202846,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 202846,
+			},
+			["马顿执行者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 172831,
+						["done"] = 70694,
+						["role"] = "NONE",
+						["class"] = "DEMONHUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 172831,
+				["done"] = 70694,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["乐酷天-塔纳利斯"] = {
+				["players"] = {
+				},
+				["hdone"] = 53248,
+				["hdonespell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 53248,
+						["healing"] = 53248,
+						["overhealing"] = 67982,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["吞噬灵魂"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 53248,
+						["healing"] = 53248,
+						["overhealing"] = 67982,
+						["hits"] = 2,
+					},
+				},
+				["htaken"] = 53248,
+				["done"] = 0,
+			},
+			["饥饿的行尸"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 135596,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 135596,
+			},
+			["枯法蹒跚者"] = {
+				["players"] = {
+					["Magiccreamcn"] = {
+						["taken"] = 0,
+						["done"] = 43609,
+						["class"] = "DEMONHUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 43609,
+			},
+		},
+		["shielding"] = 289781,
+		["auras"] = {
+		},
+		["healing"] = 2664188,
+		["power"] = {
+		},
+		["overhealing"] = 3104258.59375,
+		["mobtaken"] = 17564856,
+		["damagetaken"] = 6378325,
+		["name"] = "总体",
+		["starttime"] = 1472724707,
+		["ffdamagedone"] = 0,
+		["mobhdone"] = 3321283,
+		["last_action"] = 1472724707,
+		["multistrikes"] = 0,
+	},
+}

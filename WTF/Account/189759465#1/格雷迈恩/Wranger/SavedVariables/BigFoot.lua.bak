@@ -1,0 +1,37 @@
+
+BF_Frames_Config = {
+	["NewPowerBarStructFrame"] = {
+		["Pos"] = {
+			"BOTTOM", -- [1]
+			"UIParent", -- [2]
+			"BOTTOM", -- [3]
+			-335.511291503906, -- [4]
+			138.888671875, -- [5]
+		},
+	},
+	["CoolLine"] = {
+		["Pos"] = {
+			"BOTTOM", -- [1]
+			"UIParent", -- [2]
+			"BOTTOM", -- [3]
+			-0.836552679538727, -- [4]
+			97.3528823852539, -- [5]
+		},
+	},
+}
+BigFoot_Character = {
+	["Region"] = "cn3",
+	["Gender"] = 1,
+	["Race"] = "牛头人",
+	["Name"] = "Magiccream",
+	["Faction"] = 1,
+	["Class"] = "德鲁伊",
+	["Level"] = 100,
+	["VCode"] = "3725024558391143035240020304062612563506",
+	["Realm"] = "艾莫莉丝",
+}
+BigFoot_NewAddonChecked = {
+}
+BigFoot_SysTemSetTab = {
+	["BigFoot_LoadBefore"] = 1,
+}

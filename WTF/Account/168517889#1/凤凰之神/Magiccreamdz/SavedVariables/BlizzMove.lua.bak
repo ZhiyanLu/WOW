@@ -1,0 +1,187 @@
+
+BlizzMoveDB = {
+	["TradeSkillFrame"] = {
+	},
+	["RaidParentFrame"] = {
+	},
+	["ClassTrainerFrame"] = {
+	},
+	["VideoOptionsFrame"] = {
+	},
+	["CharacterFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "BOTTOMLEFT",
+		["yOfs"] = -0,
+		["xOfs"] = 32.00003433227539,
+		["point"] = "BOTTOMLEFT",
+	},
+	["MailFrame"] = {
+	},
+	["MacroFrame"] = {
+	},
+	["CollectionsJournal"] = {
+		["save"] = true,
+	},
+	["AchievementFrame"] = {
+		["save"] = true,
+	},
+	["ScrappingMachineFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 83.666748046875,
+		["xOfs"] = 17.77777862548828,
+		["point"] = "LEFT",
+	},
+	["PlayerTalentFrame"] = {
+	},
+	["GuildBankFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 79.77776336669922,
+		["xOfs"] = 14.22218227386475,
+		["save"] = true,
+		["point"] = "LEFT",
+	},
+	["SpellBookFrame"] = {
+	},
+	["version"] = "201109013",
+	["QuestFrame"] = {
+	},
+	["TradeFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 26.33332824707031,
+		["xOfs"] = 259.5556335449219,
+		["point"] = "LEFT",
+	},
+	["CalendarFrame"] = {
+		["save"] = true,
+	},
+	["InterfaceOptionsFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = -0,
+			["xOfs"] = -0,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 5.333373546600342,
+		["xOfs"] = -0,
+		["point"] = "LEFT",
+	},
+	["InspectFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = -117.3333511352539,
+		["xOfs"] = 69.3333511352539,
+		["point"] = "LEFT",
+	},
+	["AuctionFrame"] = {
+		["save"] = true,
+	},
+	["CommunitiesFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = -68.55554962158203,
+		["xOfs"] = 12.44447994232178,
+		["point"] = "LEFT",
+	},
+	["BankFrame"] = {
+	},
+	["FriendsFrame"] = {
+	},
+	["GossipFrame"] = {
+	},
+	["MerchantFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = -45.55558013916016,
+		["xOfs"] = 45.33333969116211,
+		["point"] = "LEFT",
+	},
+	["DressUpFrame"] = {
+	},
+	["WorldMapFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "RIGHT",
+			["relativePoint"] = "RIGHT",
+			["yOfs"] = 3.669907331466675,
+			["xOfs"] = -31.407470703125,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 6.632850646972656,
+		["xOfs"] = 23.70372200012207,
+		["point"] = "LEFT",
+	},
+	["LootFrame"] = {
+	},
+	["ItemSocketingFrame"] = {
+	},
+	["PVEFrame"] = {
+	},
+	["LFDParentFrame"] = {
+	},
+	["GameMenuFrame"] = {
+	},
+	["EncounterJournal"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "BOTTOMLEFT",
+		["yOfs"] = 72.44440460205078,
+		["xOfs"] = 54.22221755981445,
+		["point"] = "BOTTOMLEFT",
+	},
+	["LFRParentFrame"] = {
+	},
+	["HelpFrame"] = {
+	},
+}

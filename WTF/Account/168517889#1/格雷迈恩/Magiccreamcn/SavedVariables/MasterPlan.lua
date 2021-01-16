@@ -1,0 +1,8 @@
+
+MasterPlanPC = {
+	["version"] = "0.116",
+}
+SVPC_GarrisonMissionManager = {
+	["ignored_followers"] = {
+	},
+}

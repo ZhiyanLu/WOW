@@ -1,0 +1,74 @@
+VER 3 0100000000000005 "aoe" "INV_MISC_QUESTIONMARK"
+#showtooltip 影舞步
+/startattack
+/cast [talent:7/2]刀锋冲刺;[talent:7/3]影舞步
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+END
+VER 3 0100000000000011 "嫁祸" "INV_Misc_QuestionMark"
+#showtooltip 嫁祸诀窍 
+/cast [target=擦博离-血色十字军] 嫁祸诀窍
+END
+VER 3 010000000000000D "嫁祸" "INV_MISC_QUESTIONMARK"
+#showtooltip 嫁祸诀窍 
+/cast [target=这是什么掌法] 嫁祸诀窍
+END
+VER 3 010000000000000B "宿敌" "INV_MISC_QUESTIONMARK"
+#showtooltip 宿敌
+/cast 宿敌
+END
+VER 3 0100000000000004 "帷幕" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast 潜伏帷幕
+/y 潜伏帷幕已释放 持续15s
+/in 4 /y 剩余10s
+/in 9 /y 剩余5s
+/in 10 /y 剩余4s
+/in 11 /y 剩余3s
+/in 12 /y 剩余2s
+/in 13 /y 剩余1s
+/in 14 /y 潜伏帷幕已结束 
+END
+VER 3 0100000000000002 "抓钩" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] 抓钩 
+END
+VER 3 010000000000000A "暗步" "INV_MISC_QUESTIONMARK"
+#showtooltip 暗影步
+/cast [target=mouseover,exists]暗影步;暗影步 
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+END
+VER 3 0100000000000003 "死标" "INV_MISC_QUESTIONMARK"
+#showtooltip 死亡标记
+/cast [nocombat] 死亡标记
+/cast [combat] startattack
+/castsequence reset=4 死亡标记,斩击 
+END
+VER 3 010000000000000E "死符" "INV_MISC_QUESTIONMARK"
+#showtooltip 死亡符记
+/cast 死亡符记 
+/cast 暗影之舞
+END
+VER 3 0100000000000001 "焦点嫁祸" "INV_MISC_QUESTIONMARK"
+#showtooltip 嫁祸诀窍 
+/cast [help] [target=focus, help] [target=targettarget, help] 嫁祸诀窍 
+END
+VER 3 0100000000000009 "爆发" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast [talent:6/2]淬毒之刃;[talent:6/3]抽血
+/use 唤风者之赐
+END
+VER 3 0100000000000007 "疾跑" "INV_MISC_QUESTIONMARK"
+#showtooltip 疾跑
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+/召唤 [nostealth]部落气球
+/cast 疾跑
+END
+VER 3 010000000000000C "闷棍" "INV_MISC_QUESTIONMARK"
+#showtooltip 闷棍
+/cleartarget
+/targetenemy
+/cast 闷棍
+END

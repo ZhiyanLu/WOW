@@ -1,0 +1,2 @@
+
+settingsFR = nil

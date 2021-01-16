@@ -1,0 +1,17 @@
+
+COLLECTOR_DB = {
+	["global"] = {
+		["firstLogin"] = false,
+		["realmFeed"] = {
+			["格雷迈恩"] = {
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Exinature - 格雷迈恩"] = "Exinature - 格雷迈恩",
+	},
+	["profiles"] = {
+		["Exinature - 格雷迈恩"] = {
+		},
+	},
+}

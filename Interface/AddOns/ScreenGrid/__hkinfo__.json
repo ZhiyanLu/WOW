@@ -1,0 +1,14 @@
+{
+    "addonsMap": [
+        "ScreenGrid"
+    ],
+    "children": [],
+    "fileName": "screen-grid",
+    "gameVersion": "",
+    "interfaceMap": [],
+    "localName": "ScreenGrid",
+    "name": "ScreenGrid",
+    "searchName": "ScreenGrid",
+    "target": "curse",
+    "version": "ScreenGrid 1.7.1"
+}

@@ -1,0 +1,14 @@
+{
+    "addonsMap": [
+        "Ace3"
+    ],
+    "children": [],
+    "fileName": "ace3",
+    "gameVersion": "8.2.0",
+    "interfaceMap": [],
+    "localName": "Ace3",
+    "name": "Ace3",
+    "searchName": "Ace3",
+    "target": "curse",
+    "version": "Release-r1227"
+}

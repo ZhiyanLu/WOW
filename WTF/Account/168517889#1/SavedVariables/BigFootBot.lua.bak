@@ -1,0 +1,82 @@
+
+ItemSourceDB = {
+}
+ObjectLocationDB = {
+}
+CreatureLocationDB = {
+}
+CreatureDB = {
+}
+QuestDB = {
+}
+QuestCompleteDB = {
+}
+QuestEventDB = {
+}
+SkillSourceDB = {
+}
+BigFootBot_Version = {
+}
+BigFootBot_Info = nil
+PlayersDB = {
+	["老夫出来了啊:凤凰之神"] = {
+		["race"] = 4,
+		["name"] = "老夫出来了啊",
+		["guild"] = "Home",
+		["level"] = 120,
+		["gender"] = 2,
+		["class"] = 4,
+		["server"] = "凤凰之神",
+	},
+	["我叫有容丶:凤凰之神"] = {
+		["race"] = 2,
+		["name"] = "我叫有容丶",
+		["guild"] = "Katy Perry",
+		["level"] = 120,
+		["gender"] = 2,
+		["class"] = 8,
+		["server"] = "凤凰之神",
+	},
+	["千城彦小沫:凤凰之神"] = {
+		["race"] = 4,
+		["name"] = "千城彦小沫",
+		["guild"] = "Candy candy",
+		["level"] = 120,
+		["gender"] = 3,
+		["class"] = 6,
+		["server"] = "凤凰之神",
+	},
+}
+UtilDB = {
+	["M"] = {
+		["NumSysUnread"] = 0,
+		["MD5"] = "442854292793336476242766582771909126",
+		["NumNormalRead"] = 1,
+		["NumSysRead"] = 0,
+		["NumNormalUnread"] = 0,
+	},
+}
+NPCMarkCollectionDB = {
+}
+BigFootBot_collectData = {
+	["CombatBattlePetData"] = {
+	},
+	["BigFootBank_Data"] = {
+	},
+	["WildBattlePetData"] = {
+		["Creature-0-3904-0-14084-68819-00007F340B"] = {
+			["MapLevel"] = 0,
+			["Level"] = 17,
+			["TypeId"] = 6,
+			["Name"] = "魔法之眼",
+		},
+		["Creature-0-3928-1669-7208-128168-0000080349"] = {
+			["MapLevel"] = 0,
+			["Level"] = 25,
+			["TypeId"] = 8,
+			["Name"] = "虚空猎手幼崽",
+		},
+	},
+}
+SpamChatDB = {
+}

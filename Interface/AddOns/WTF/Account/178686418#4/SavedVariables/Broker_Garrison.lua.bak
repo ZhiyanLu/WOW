@@ -1,0 +1,48 @@
+
+Broker_GarrisonDB = {
+	["profileKeys"] = {
+		["我叫丨哀木涕 - 格雷迈恩"] = "Default",
+	},
+	["global"] = {
+		["data"] = {
+			["格雷迈恩"] = {
+				["我叫丨哀木涕"] = {
+					["lootedToday"] = {
+					},
+					["configVersion"] = 2,
+					["missions"] = {
+					},
+					["tooltipEnabled"] = true,
+					["currencySealOfTemperedFateAmount"] = 0,
+					["invasion"] = {
+						["available"] = false,
+					},
+					["buildingsExpanded"] = true,
+					["buildings"] = {
+					},
+					["trackWeekly"] = {
+						["WARMILL"] = false,
+					},
+					["currencyApexisAmount"] = 0,
+					["missionsExpanded"] = true,
+					["info"] = {
+						["playerName"] = "我叫丨哀木涕",
+						["playerFaction"] = "Horde",
+						["realmName"] = "格雷迈恩",
+						["playerClass"] = "WARRIOR",
+					},
+					["trackDaily"] = {
+					},
+					["lootedNextReset"] = 1421607587,
+					["weeklyNextReset"] = 1421953187,
+					["currencyAmount"] = 0,
+					["notificationEnabled"] = true,
+				},
+			},
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

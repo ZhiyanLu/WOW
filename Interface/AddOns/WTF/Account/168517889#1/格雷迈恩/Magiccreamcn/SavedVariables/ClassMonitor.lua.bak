@@ -1,0 +1,2 @@
+
+ClassMonitorDataPerChar = nil

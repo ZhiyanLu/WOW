@@ -1,0 +1,10 @@
+tag 55a9ff818dc03e1cbf4754c3c815c32a5ddf8b7e 9.0.2.1
+Author:	semlar <teslagraafs@gmail.com>
+Date:	Sat Nov 28 14:01:32 2020 -0500
+
+commit 7d2512b74453c158cde9cf2250ac1ab04e82ca07
+Author: semlar <teslagraafs@gmail.com>
+Date:   Sat Nov 28 14:01:17 2020 -0500
+
+    Fix error caused by maps with Bastion nodes
+

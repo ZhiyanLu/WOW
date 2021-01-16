@@ -1,0 +1,10 @@
+VER 3 0000000000000001 "BF_Mount" "ability_mount_charger"
+/bfmount
+END
+VER 3 0000000000000003 "坐骑" "Ability_Mount_Charger"
+/RandomMount
+END
+VER 3 0000000000000002 "移除" "ACHIEVEMENT_GUILD_DOCTORISIN"
+/script MainMenuBarLeftEndCap:Hide()
+/script MainMenuBarRightEndCap:Hide()
+END

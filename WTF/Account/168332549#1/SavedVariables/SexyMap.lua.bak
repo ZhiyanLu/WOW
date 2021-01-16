@@ -1,0 +1,87 @@
+
+DuowanAddon_SexyMapDB = {
+	["namespaces"] = {
+		["Ping"] = {
+		},
+		["Coordinates"] = {
+		},
+		["自动缩放"] = {
+		},
+		["Buttons"] = {
+			["profiles"] = {
+				["Magiccream - 艾莫莉丝"] = {
+					["lockDragging"] = false,
+					["dragPositions"] = {
+						["MinimapZoomIn"] = -26.8529702073548,
+						["SexyMapCoordFrame"] = -86.6862266471355,
+						["GarrisonLandingPageMinimapButton"] = 198.243123127469,
+						["dwMiniMapWorldMapButton"] = -6.98854403591075,
+						["MinimapZoomOut"] = -47.137320192372,
+					},
+				},
+			},
+		},
+		["Shapes"] = {
+			["profiles"] = {
+				["Magiccream - 艾莫莉丝"] = {
+					["shape"] = "Textures\\MinimapMask",
+				},
+			},
+		},
+		["Fader"] = {
+		},
+		["Movers"] = {
+		},
+		["Borders"] = {
+			["profiles"] = {
+				["Magiccream - 艾莫莉丝"] = {
+					["applyPreset"] = false,
+					["borders"] = {
+						{
+							["a"] = 1,
+							["r"] = 0.309803921568628,
+							["name"] = "Rune 1",
+							["b"] = 1,
+							["scale"] = 1.4,
+							["rotSpeed"] = -16,
+							["g"] = 0.47843137254902,
+							["texture"] = "SPELLS\\AURARUNE256.BLP",
+						}, -- [1]
+						{
+							["a"] = 0.379999995231628,
+							["r"] = 0.196078431372549,
+							["rotSpeed"] = 4,
+							["b"] = 1,
+							["scale"] = 2.1,
+							["name"] = "Rune 2",
+							["g"] = 0.290196078431373,
+							["texture"] = "SPELLS\\AuraRune_A.blp",
+						}, -- [2]
+						{
+							["a"] = 0.3,
+							["name"] = "Fade",
+							["b"] = 1,
+							["scale"] = 1.6,
+							["r"] = 0,
+							["g"] = 0.223529411764706,
+							["texture"] = "SPELLS\\T_VFX_HERO_CIRCLE.BLP",
+						}, -- [3]
+					},
+				},
+			},
+		},
+		["HudMap"] = {
+			["profiles"] = {
+				["Magiccream - 艾莫莉丝"] = {
+					["setNewScale"] = true,
+					["scale"] = 1.4,
+				},
+			},
+		},
+		["ZoneText"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Magiccream - 艾莫莉丝"] = "Magiccream - 艾莫莉丝",
+	},
+}

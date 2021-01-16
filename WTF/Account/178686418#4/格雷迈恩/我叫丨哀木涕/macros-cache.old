@@ -1,0 +1,14 @@
+VER 3 0100000000000003 "剑刃风暴" "ABILITY_WARRIOR_BLADESTORM"
+#showtooltips 剑刃风暴
+/cast 剑在人在
+/cast 剑刃风暴
+END
+VER 3 0100000000000004 "狂怒回复" "INV_MISC_QUESTIONMARK"
+#showtooltips 狂怒回复
+/cast 狂暴之怒
+/cast 狂怒回复
+END
+VER 3 0100000000000001 "鲁莽+战旗" "INV_MISC_QUESTIONMARK"
+/cast 鲁莽
+/cast 颅骨战旗
+END

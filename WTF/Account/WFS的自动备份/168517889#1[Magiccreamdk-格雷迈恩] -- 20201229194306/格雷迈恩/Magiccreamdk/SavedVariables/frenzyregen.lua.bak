@@ -1,0 +1,19 @@
+
+settingsFR = {
+	["XPos"] = 518.888732910156,
+	["legendaryFlag"] = true,
+	["displayFlag"] = 2,
+	["hideOutOfCombatFlag"] = false,
+	["announceFlag"] = false,
+	["showValueOnlyFlag"] = false,
+	["artifactBonus"] = 0,
+	["announceChannel"] = "SAY",
+	["hideOutOfBearFlag"] = true,
+	["ignoreMouseFlag"] = true,
+	["greyOutFlag"] = true,
+	["transparencyFlag"] = 1,
+	["shortNumFlag"] = true,
+	["YPos"] = 99.104362487793,
+	["statusTypeFlag"] = 0,
+	["movableFlag"] = false,
+}

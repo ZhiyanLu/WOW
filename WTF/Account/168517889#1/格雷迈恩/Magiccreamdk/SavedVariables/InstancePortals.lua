@@ -1,0 +1,3 @@
+﻿
+IPUITrackInstancePortals = true
+IPUITrackInstancePortalsOnContinents = true

@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "猛虎之怒" "INV_MISC_QUESTIONMARK"
+/cast 猛虎之怒
+/cast 无尽毒药之瓶
+END

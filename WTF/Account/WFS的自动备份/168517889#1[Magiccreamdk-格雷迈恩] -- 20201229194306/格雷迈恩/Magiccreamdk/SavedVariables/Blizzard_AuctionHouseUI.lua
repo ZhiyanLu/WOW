@@ -1,0 +1,3 @@
+﻿
+g_activeBidAuctionIDs = {
+}

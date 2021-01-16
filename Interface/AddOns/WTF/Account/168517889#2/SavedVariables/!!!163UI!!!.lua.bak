@@ -1,0 +1,10 @@
+
+U1DBG = {
+	["minimapDefaultPos"] = -520,
+	["profiles"] = {
+		["auto"] = {
+		},
+		["manual"] = {
+		},
+	},
+}

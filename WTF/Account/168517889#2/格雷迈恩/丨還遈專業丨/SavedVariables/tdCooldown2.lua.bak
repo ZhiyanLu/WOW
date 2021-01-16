@@ -1,0 +1,21 @@
+
+tCDblackData = {
+}
+tCDcoolingData = {
+	{
+		["spell"] = "疯狂耳语",
+		["name"] = "奥拉留斯的低语水晶",
+		["start"] = 1811793.013,
+		["duration"] = 900,
+		["icon"] = "Interface\\ICONS\\INV_Enchant_ShardShadowfrostLarge.blp",
+		["rank"] = 0,
+	}, -- [1]
+	{
+		["spell"] = "要塞炉石",
+		["name"] = "要塞炉石",
+		["start"] = 1812044.496,
+		["duration"] = 1200,
+		["icon"] = "Interface\\ICONS\\INV_Garrison_Hearthstone.blp",
+		["rank"] = 0,
+	}, -- [2]
+}

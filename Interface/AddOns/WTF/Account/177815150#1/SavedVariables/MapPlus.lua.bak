@@ -1,0 +1,389 @@
+
+MapNoteInfo = {
+	["AhnQirajTheFallenKingdom"] = {
+	},
+	["Barrens"] = {
+	},
+	["Ashran"] = {
+	},
+	["EastTemple"] = {
+	},
+	["ThroneoftheFourWinds"] = {
+	},
+	["Hyjal"] = {
+	},
+	["TanaanJungle"] = {
+	},
+	["TheNexus"] = {
+	},
+	["Undercity"] = {
+	},
+	["HulnFlashback"] = {
+	},
+	["HeartofFear"] = {
+	},
+	["StormstoutBrewery"] = {
+	},
+	["Kalimdor"] = {
+	},
+	["Karazhan"] = {
+	},
+	["VaultOfTheWardens"] = {
+	},
+	["StonetalonMountains"] = {
+	},
+	["NeltharionsLair"] = {
+	},
+	["AhnQiraj"] = {
+	},
+	["BrokenShore"] = {
+	},
+	["AzuremystScenario"] = {
+	},
+	["Gundrak"] = {
+	},
+	["ArcwayScenario"] = {
+	},
+	["Dalaran"] = {
+	},
+	["LegionKarazhanDungeon"] = {
+	},
+	["Gorgrond"] = {
+	},
+	["EndTime"] = {
+	},
+	["UlduarMagni"] = {
+	},
+	["Skywall"] = {
+	},
+	["HelheimDungeonDock"] = {
+	},
+	["DeadwindPass"] = {
+		{
+			["y"] = -503.722912382937,
+			["type"] = 1,
+			["title"] = "1",
+			["note"] = "",
+			["x"] = 372.527342708165,
+		}, -- [1]
+	},
+	["TheSlavePens"] = {
+	},
+	["HallsofLightning"] = {
+	},
+	["KunLaiSummit"] = {
+	},
+	["TempleofKotmogu"] = {
+	},
+	["ThunderTotem"] = {
+	},
+	["StormwindCity"] = {
+	},
+	["Niskara"] = {
+	},
+	["TheHiddenPass"] = {
+	},
+	["BlackRookHoldScenario"] = {
+	},
+	["STVDiamondMineBG"] = {
+	},
+	["Helheim"] = {
+	},
+	["Durotar"] = {
+	},
+	["BlackrockDepths"] = {
+	},
+	["Tirisfal"] = {
+	},
+	["IsleoftheThunderKingScenario"] = {
+	},
+	["TheJadeForest"] = {
+	},
+	["DreadWastes"] = {
+	},
+	["LegionVioletHoldDungeon"] = {
+	},
+	["DragonblightChromieScenario"] = {
+	},
+	["StranglethornJungle"] = {
+	},
+	["WailingCaverns"] = {
+	},
+	["Ashenvale"] = {
+	},
+	["BlastedLands_terrain1"] = {
+	},
+	["SuramarRaid"] = {
+	},
+	["ArgusMacAree"] = {
+	},
+	["Aszhara"] = {
+	},
+	["FrostfireRidge"] = {
+	},
+	["NightmareRaid"] = {
+	},
+	["TerraceOfEndlessSpring"] = {
+	},
+	["garrisonffhorde_tier3"] = {
+	},
+	["TheDreamgrove"] = {
+	},
+	["TheArcatraz"] = {
+	},
+	["UngoroCrater"] = {
+	},
+	["WarsongGulch"] = {
+	},
+	["DarkheartThicket"] = {
+	},
+	["ValeofEternalBlossoms"] = {
+	},
+	["Expansion01"] = {
+	},
+	["InvasionPointNaigtal"] = {
+	},
+	["IsleoftheThunderKing"] = {
+		{
+			["y"] = -476.608517650028,
+			["type"] = 1,
+			["title"] = "布根尼图斯",
+			["x"] = 509.760549009306,
+			["note"] = "",
+		}, -- [1]
+	},
+	["TheStormPeaks"] = {
+	},
+	["TombRaid"] = {
+	},
+	["BlackRookHoldDungeon"] = {
+	},
+	["GoldRush"] = {
+	},
+	["Maraudon"] = {
+	},
+	["Tanaris"] = {
+	},
+	["ThunderBluff"] = {
+	},
+	["LakeWintergrasp"] = {
+	},
+	["ArgusDungeon"] = {
+	},
+	["CoTMountHyjal"] = {
+	},
+	["Draenor"] = {
+	},
+	["Argus"] = {
+	},
+	["Deepholm"] = {
+	},
+	["DunMorogh"] = {
+	},
+	["SearingGorge"] = {
+	},
+	["ManaTombs"] = {
+	},
+	["InvasionPointVal"] = {
+	},
+	["InvasionPointAurinor"] = {
+	},
+	["EasternPlaguelands"] = {
+	},
+	["Silithus"] = {
+	},
+	["ArgusCore"] = {
+	},
+	["BlackTempleScenario"] = {
+	},
+	["BladesEdgeMountains"] = {
+	},
+	["BoreanTundra"] = {
+	},
+	["MogushanPalace"] = {
+	},
+	["Mulgore"] = {
+	},
+	["BrokenIsles"] = {
+	},
+	["KarazhanScenario"] = {
+	},
+	["Northrend"] = {
+	},
+	["ArgusSurface"] = {
+	},
+	["CrystalsongForest"] = {
+	},
+	["NetherstormArena"] = {
+	},
+	["Dragonblight"] = {
+	},
+	["ShadowpanHideout"] = {
+	},
+	["CaveoftheBloodtotemScenario"] = {
+	},
+	["GrimBatol"] = {
+	},
+	["ValsharahInvasionScenario"] = {
+	},
+	["TombofSargerasDungeon"] = {
+	},
+	["Suramar"] = {
+	},
+	["AszunaDungeon"] = {
+	},
+	["GilneasBattleground2"] = {
+	},
+	["WarlockClassShrine"] = {
+	},
+	["Azsuna"] = {
+		{
+			["y"] = -329.615936598985,
+			["type"] = 1,
+			["title"] = "传送门",
+			["note"] = "",
+			["x"] = 263.394187625305,
+		}, -- [1]
+	},
+	["InvasionPointSangua"] = {
+	},
+	["Hellfire"] = {
+	},
+	["InvasionPointCengar"] = {
+	},
+	["TwilightHighlands"] = {
+	},
+	["BurningSteppes"] = {
+	},
+	["Ulduar"] = {
+	},
+	["BlackTemple"] = {
+	},
+	["TheGreatWall"] = {
+	},
+	["Talador"] = {
+	},
+	["Desolace"] = {
+	},
+	["TKArcatrazScenario"] = {
+	},
+	["StormheimInvasionScenario"] = {
+	},
+	["InvasionPointBonich"] = {
+	},
+	["Moonglade"] = {
+	},
+	["Hinterlands"] = {
+	},
+	["CoTTheBlackMorass"] = {
+	},
+	["Badlands"] = {
+	},
+	["UtgardePinnacle"] = {
+	},
+	["PitofSaron"] = {
+	},
+	["TheStonecore"] = {
+	},
+	["Azeroth"] = {
+	},
+	["Valsharah"] = {
+		{
+			["y"] = -564.442716526932,
+			["x"] = 536.153923632456,
+			["title"] = "刺舞者",
+			["type"] = 1,
+			["note"] = "",
+		}, -- [1]
+	},
+	["Dalaran70"] = {
+	},
+	["Elwynn"] = {
+	},
+	["EmeraldDreamway"] = {
+	},
+	["StranglethornVale"] = {
+	},
+	["Stormheim"] = {
+	},
+	["StrandoftheAncients"] = {
+	},
+	["TownlongWastes"] = {
+	},
+	["SuamarCatacombsDungeon"] = {
+	},
+	["TimelessIsle"] = {
+	},
+	["ShattrathCity"] = {
+	},
+	["ThroneofTides"] = {
+	},
+	["Pandaria"] = {
+	},
+	["Firelands"] = {
+	},
+	["Uldum"] = {
+	},
+	["FoundryRaid"] = {
+	},
+	["Netherstorm"] = {
+	},
+	["HighmountainInvasionScenario"] = {
+	},
+	["Duskwood"] = {
+	},
+	["ThousandNeedles"] = {
+	},
+	["TheStockade"] = {
+	},
+	["Uldaman"] = {
+	},
+	["MogushanVaults"] = {
+	},
+	["TheCapeOfStranglethorn"] = {
+	},
+	["Highmountain"] = {
+	},
+	["AssaultonBrokenShoreScenario"] = {
+	},
+	["Orgrimmar"] = {
+	},
+	["TwinPeaks"] = {
+	},
+	["AszunaDungeonExterior"] = {
+	},
+	["SuramarNoblesDistrict"] = {
+	},
+	["IcecrownGlacier"] = {
+	},
+	["ArathiBasin"] = {
+	},
+	["DreadscarRift"] = {
+	},
+	["TheShatteredHalls"] = {
+	},
+	["SholazarBasin"] = {
+	},
+	["Ahnkahet"] = {
+	},
+	["HallsofValor"] = {
+	},
+	["Hyjal_terrain1"] = {
+	},
+	["HallOfCommunion"] = {
+	},
+	["Feralas"] = {
+	},
+	["Gnomeregan"] = {
+	},
+	["HelheimRaid"] = {
+	},
+	["LostCityofTolvir"] = {
+	},
+	["ShadowmoonValley"] = {
+	},
+	["MagistersTerrace"] = {
+	},
+	["SiegeofNiuzaoTemple"] = {
+	},
+}

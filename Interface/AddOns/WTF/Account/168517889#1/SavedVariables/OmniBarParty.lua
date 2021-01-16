@@ -1,0 +1,2 @@
+
+OmniBarPartyDB = nil

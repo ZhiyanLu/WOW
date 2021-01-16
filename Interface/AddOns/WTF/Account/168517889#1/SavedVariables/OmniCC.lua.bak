@@ -1,0 +1,132 @@
+
+OmniCC4Config = {
+	["engine"] = "AniUpdater",
+	["groupSettings"] = {
+		["TMW"] = {
+			["enabled"] = true,
+			["styles"] = {
+				["minutes"] = {
+					["scale"] = 1,
+				},
+				["soon"] = {
+					["scale"] = 1,
+				},
+				["seconds"] = {
+					["scale"] = 1,
+				},
+				["hours"] = {
+					["scale"] = 1,
+				},
+				["charging"] = {
+					["scale"] = 1,
+				},
+				["controlled"] = {
+					["scale"] = 1,
+				},
+			},
+			["fontSize"] = 18,
+			["effect"] = "pulse",
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
+			["minEffectDuration"] = 30.0000004470348,
+			["minSize"] = 0,
+			["spiralOpacity"] = 1.00999997742474,
+			["minDuration"] = 0,
+			["xOff"] = 0,
+			["tenthsDuration"] = 5.00000007450581,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["mmSSDuration"] = 300,
+			["scaleText"] = true,
+			["yOff"] = 0,
+		},
+		["base"] = {
+			["enabled"] = true,
+			["styles"] = {
+				["seconds"] = {
+					["scale"] = 1,
+				},
+				["minutes"] = {
+					["scale"] = 1,
+				},
+				["soon"] = {
+					["scale"] = 1,
+				},
+				["hours"] = {
+					["scale"] = 1,
+				},
+				["charging"] = {
+					["scale"] = 1,
+				},
+				["controlled"] = {
+					["scale"] = 1,
+				},
+			},
+			["effect"] = "pulse",
+			["minDuration"] = 0,
+			["scaleText"] = true,
+			["minEffectDuration"] = 30,
+			["spiralOpacity"] = 1.00999997742474,
+			["yOff"] = 0,
+			["xOff"] = 0,
+			["tenthsDuration"] = 5,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0,
+			["mmSSDuration"] = 300,
+			["fontSize"] = 20,
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
+		},
+		["Threat Plates"] = {
+			["enabled"] = false,
+			["styles"] = {
+				["minutes"] = {
+					["scale"] = 1,
+				},
+				["soon"] = {
+					["scale"] = 1,
+				},
+				["seconds"] = {
+					["scale"] = 1,
+				},
+				["hours"] = {
+					["scale"] = 1,
+				},
+				["charging"] = {
+					["scale"] = 1,
+				},
+				["controlled"] = {
+					["scale"] = 1,
+				},
+			},
+			["effect"] = "pulse",
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
+			["fontSize"] = 20,
+			["mmSSDuration"] = 300,
+			["spiralOpacity"] = 1.00999997742474,
+			["scaleText"] = true,
+			["xOff"] = 0,
+			["tenthsDuration"] = 5,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0,
+			["minEffectDuration"] = 30,
+			["minDuration"] = 0,
+			["yOff"] = 0,
+		},
+	},
+	["groups"] = {
+		{
+			["id"] = "TMW",
+			["rules"] = {
+				"TellMeWhen", -- [1]
+			},
+			["enabled"] = true,
+		}, -- [1]
+		{
+			["id"] = "Threat Plates",
+			["rules"] = {
+				"ThreatPlates", -- [1]
+			},
+			["enabled"] = true,
+		}, -- [2]
+	},
+	["version"] = "8.0.9",
+}

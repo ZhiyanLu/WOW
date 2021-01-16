@@ -1,0 +1,20 @@
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##
+## Interface: 90002
+## Name: HandyNotes: Universal Explorer 9.0.2
+## Version: 9.0.2
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##
+## Title: HandyNotes: Universal Explorer|cffFFFFFF 9.0.2 |r
+## Notes: Will show you on the map |nthe co-ordinations of every area |nyou need to discover for the |nUniversal Explorer achievement. |n|n(Coordinate Sources from Wowhead)|n|cff3399ff                                      Coded by |cffff0000Devil|r |cffFFFFFF(C)|r|n|n
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##
+## Author: Devil & r15ch13
+## eMail: devil.wow.uk@gmail.com
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##
+## SavedVariables: HandyNotes_Universal_ExplorerDB
+## DefaultState: Enabled
+## RequiredDeps: HandyNotes
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##
+## X-Category: Map
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##
+Handler.lua
+Config.lua
+Explorer Data.lua

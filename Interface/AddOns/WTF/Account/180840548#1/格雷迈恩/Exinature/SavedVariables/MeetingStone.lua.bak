@@ -1,0 +1,18 @@
+
+MEETINGSTONE_CHARACTER_DB = {
+	["profileKeys"] = {
+		["Magiccream - 艾莫莉丝"] = "Magiccream - 艾莫莉丝",
+	},
+	["profiles"] = {
+		["Magiccream - 艾莫莉丝"] = {
+			["settings"] = {
+				["storage"] = {
+					["y"] = 0,
+					["x"] = 21.7515977139788,
+					["scale"] = 1,
+				},
+			},
+			["lastSearchValue"] = "6-0-16-0",
+		},
+	},
+}

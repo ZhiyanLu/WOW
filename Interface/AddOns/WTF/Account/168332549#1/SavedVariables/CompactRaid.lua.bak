@@ -1,0 +1,79 @@
+
+CompactRaidDB = {
+	["keepgroupstogether"] = 1,
+	["showtooltip"] = 2,
+	["healthColor"] = "0.0,1.0,0.0",
+	["clickDownMode"] = 1,
+	["showParty"] = 1,
+	["modules"] = {
+		["RaidDebuff"] = {
+			["selTier"] = 7,
+			["customDebuffs"] = {
+			},
+			["yoffset"] = 0,
+			["scale"] = 100,
+			["xoffset"] = 0,
+			["selBoss"] = 2010,
+			["selInstance"] = 959,
+			["userLevels"] = {
+			},
+		},
+		["Artwork"] = {
+			["background"] = "Interface\\DialogFrame\\UI-DialogBox-Background",
+			["statusbar"] = "Interface\\BUTTONS\\WHITE8X8.BLP",
+			["border"] = "Interface\\AchievementFrame\\UI-Achievement-WoodBorder",
+			["font"] = "Fonts\\ARKai_T.ttf",
+		},
+	},
+	["powerColor"] = "0.0,0.0,1.0",
+	["showToolboxes"] = 1,
+	["outrangeAlpha"] = 40,
+	["showRoleIcon"] = 1,
+	["showDebuffs"] = 1,
+	["nameWidthLimit"] = 75,
+	["showDispels"] = 1,
+	["version"] = 4.33,
+	["showbarbkgnd"] = 1,
+	["height"] = 36,
+	["showPrivIcons"] = 1,
+	["nameYOffset"] = 0,
+	["tooltipPosition"] = 0,
+	["scale"] = 100,
+	["showBuffs"] = 1,
+	["spacing"] = 1,
+	["showRaidIcon"] = 1,
+	["containerBorderSize"] = 12,
+	["invertColor"] = 1,
+	["nameHeight"] = 12,
+	["containerAlpha"] = 75,
+	["showSolo"] = 1,
+	["profiles"] = {
+		["Magicocream - 格雷迈恩"] = {
+			["modules"] = {
+				["CornerIndicators"] = {
+					["talent1"] = {
+						["TOPLEFT"] = "[ignoreVehicle]#1#[aura]#灵魂石#",
+						["TOPRIGHT"] = "[ignoreVehicle]#1#[aura]#无尽呼吸#",
+					},
+				},
+				["ClickSets"] = {
+					["talent1"] = {
+						["alt-1"] = "buildin:无尽呼吸",
+						["ctrl-1"] = "buildin:灵魂石",
+						["1"] = "action:target",
+						["2"] = "action:togglemenu",
+					},
+				},
+			},
+			["version"] = 4.33,
+		},
+	},
+	["healthtextmode"] = 3,
+	["showDirectionArrow"] = 1,
+	["nameColor"] = "1.0,1.0,1.0",
+	["width"] = 64,
+	["nameXOffset"] = 0,
+	["powerBarHeight"] = 1,
+	["raidFilter"] = "CLASS",
+	["unitBkColor"] = "0.0,0.0,0.0",
+}

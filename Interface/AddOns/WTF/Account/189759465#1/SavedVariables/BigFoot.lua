@@ -1,0 +1,312 @@
+
+BigFoot_Config = {
+	["BFVersion"] = 20120927,
+	["MapToolkit"] = {
+		["EnableRangeDisplay"] = 1,
+		["EnableMapPlus"] = 1,
+		["MapWordFlight"] = 0,
+		["MapMarkEnable"] = 1,
+		["checkedVersion"] = "563",
+		["MapSexyMinimap"] = 0,
+	},
+	["BUnitFrame"] = {
+		["EnableEasyFocusFrame"] = 1,
+		["checkedVersion"] = "563",
+		["EnableTargetTarget"] = 1,
+		["EnableBUnitFrame"] = 1,
+		["EnableTargetTargetTarget"] = 0,
+		["EnableCastingIcon"] = 1,
+		["EnableCastingShining"] = 1,
+	},
+	["Item Info"] = {
+		["EnableAuctionInfo"] = 1,
+		["EnableAuctionHelper"] = 1,
+		["EnableItemQulity"] = 1,
+		["EnableItemInfo"] = 1,
+		["checkedVersion"] = "563",
+		["EnableAdditionalInfo"] = 1,
+		["EnableGemInfo"] = 1,
+		["EnableSellValue"] = 1,
+		["EnableAlreadyKnown"] = 1,
+	},
+	["RaidToolkit"] = {
+		["EnableDBM"] = 1,
+		["EnableRaidAlerter"] = 1,
+		["EnableThreat"] = 1,
+		["EnableRecount2"] = 0,
+		["EnableSkada"] = 1,
+		["EnableGrid"] = 0,
+		["checkedVersion"] = "563",
+		["EnableDecursive"] = 0,
+		["EnableMeetingStone"] = 1,
+	},
+	["QuestEnhancement"] = {
+		["EnableTurnIn"] = 0,
+		["EnableQuestBroadInfo"] = 1,
+		["EnableWholly"] = 0,
+		["EnableQuestBroad"] = 1,
+		["checkedVersion"] = "563",
+	},
+	["InfoStat"] = {
+		["DisplayStatistics"] = 1,
+		["DisplayDurability"] = 1,
+		["checkedVersion"] = "563",
+		["EnableQuickCompare"] = 1,
+	},
+	["RepairHelper"] = {
+		["RepairHelper_UseGuildMoney"] = 1,
+		["EnableRepairHelper"] = 1,
+		["checkedVersion"] = "563",
+		["RepairHelper_Enable_Used_SelfMoney_Auto"] = 1,
+	},
+	["ActionButton"] = {
+		["ShowCenter"] = 0,
+		["EnableCooldownCount2"] = 1,
+		["ToggleBar"] = 0,
+		["ShineType"] = "标准",
+		["checkedVersion"] = "563",
+	},
+	["SellerHelper"] = {
+		["AutoSellPoor"] = 1,
+		["ARAccept"] = 1,
+		["checkedVersion"] = "563",
+		["SellAccept"] = 1,
+		["EnableAutoRecharge"] = 1,
+		["EnableSellerHelper"] = 1,
+		["ShowTradeAnnounce"] = 1,
+	},
+	["BF_System"] = {
+		["EnableLoadLater"] = 0,
+		["checkedVersion"] = "563",
+	},
+	["BagManagement"] = {
+		["EnabelOpenAllBagsOnBank"] = 1,
+		["checkedVersion"] = "563",
+		["EnabelOpenAllBagsOnMerchant"] = 1,
+		["EnabelOpenAllBagsOnTrading"] = 1,
+	},
+	["BagIntegration"] = {
+		["Enable_Combuctor"] = 1,
+		["Enable_BackPack_Integration"] = 1,
+		["ReverseMode"] = 0,
+		["Enable_Bagnon"] = 0,
+		["Enable_Bank_Integration"] = 1,
+		["Enable_PUI"] = 1,
+		["checkedVersion"] = "563",
+	},
+	["PartyToolkit"] = {
+		["EnableClique"] = 0,
+		["EnablePartyAssist"] = 0,
+		["checkedVersion"] = "563",
+		["8Buttons"] = 0,
+		["EnableTeamNoticeParty"] = 0,
+		["LiteTips"] = 1,
+		["EnableTeamNoticeRaid"] = 0,
+	},
+	["MiDKP"] = {
+		["GDKPEnable"] = 0,
+		["MiDKPEnable"] = 0,
+		["checkedVersion"] = "563",
+	},
+	["ArenaMod"] = {
+		["EnableProximo"] = 0,
+		["checkedVersion"] = "563",
+		["EnableGladiatorlosSA"] = 0,
+	},
+	["BIGFOOT_VERSION_NEW"] = "zhCN6.2.0.565",
+	["BuffMaster"] = {
+		["EnablePartyShortBuffer"] = 0,
+		["EnablePartyBuffer"] = 1,
+		["BFCH_MYBUFF_SIZE"] = 25,
+		["checkedVersion"] = "563",
+		["ShowTargetCooldown2"] = 1,
+		["BFCH_OTHERBUFF_SIZE"] = 15,
+		["AdjustBuffSize"] = 1,
+		["BuffMasterShowTimeLeft"] = 1,
+		["BuffMasterShowDetailTimeLeft"] = 1,
+	},
+	["ActionBar"] = {
+		["EnableDistanceAlert"] = 1,
+		["checkedVersion"] = "563",
+		["Enable_BigFootBar"] = 0,
+		["HideTab"] = 0,
+		["HideGrid"] = 0,
+	},
+	["MarkAssistant"] = {
+		["EnableezIcon"] = 1,
+		["checkedVersion"] = "563",
+		["EnableTargetCharms"] = 1,
+	},
+	["BigFootGadget"] = {
+		["ChangeFont"] = 1,
+		["BFCB"] = 1,
+		["EnableMySlot"] = 1,
+		["EnableFasyFocus"] = 1,
+		["checkedVersion"] = "563",
+		["EnableMailMod"] = 1,
+		["EnableBigFootGPS"] = 1,
+	},
+	["TrinketMenu"] = {
+		["EnableTrinketMenu"] = 1,
+		["checkedVersion"] = "563",
+	},
+	["AutoEquip"] = {
+		["EnableAdvancedMode"] = 0,
+		["checkedVersion"] = "563",
+		["EnableAutoEquip"] = 0,
+		["EnableAutoHide"] = 0,
+	},
+	["TradeHelper"] = {
+		["EnableBigFootBlackBank"] = 1,
+		["checkedVersion"] = "563",
+		["EnableTradeHelper"] = 1,
+	},
+	["BigFootClassMod"] = {
+		["EnableAspectBar"] = 1,
+		["checkedVersion"] = "563",
+	},
+	["BFMount"] = {
+		["EnableCollector"] = 1,
+		["EnableMasterPlan"] = 1,
+		["checkedVersion"] = "563",
+		["EnableHPetBattleAny"] = 1,
+	},
+	["PortraitEnhancement"] = {
+		["EnablePartyCastBar"] = 1,
+		["EnableTargetClassInfo"] = 1,
+		["EnablePartyPor"] = 1,
+		["EnableColorize"] = 1,
+		["EnablePartyTarget"] = 1,
+		["checkedVersion"] = "563",
+		["Show3DPortrait"] = 1,
+		["EnablePorEnhance"] = 1,
+		["ShowXPBar"] = 1,
+	},
+	["InfoBox"] = {
+		["EnableBlizzMove"] = 1,
+		["checkedVersion"] = "563",
+		["EnableInfoBoxV2"] = 0,
+		["Masque_BuffDisable"] = 1,
+	},
+	["MobHealth"] = {
+		["ShowHealthPercentv2"] = 1,
+		["ShowManaPoint"] = 1,
+		["ShowHealthFormat"] = 0,
+		["MobHealthEnable"] = 1,
+		["ShowHealthPPT"] = 1,
+		["checkedVersion"] = "563",
+	},
+	["SpellMonitor"] = {
+		["EnableEventAlert"] = 1,
+		["DisableTips"] = 0,
+		["checkedVersion"] = "563",
+	},
+	["BFTT"] = {
+		["BigFootTooltipFade"] = "是",
+		["BigFootTooltipActor"] = "显示",
+		["BigFootTooltipPositionY"] = 0,
+		["BigFootTooltipItemLevel"] = "显示",
+		["BigFootTooltipPosition"] = "右下",
+		["EnableBFTooltip"] = 1,
+		["checkedVersion"] = "563",
+		["BigFootTooltipGuildRank"] = "显示",
+		["BigFootTooltipToT"] = "显示",
+		["BigFootTooltipTalent"] = "显示",
+		["BigFootTooltipPositionX"] = 0,
+		["EnableNewTypeBFTooltip"] = 0,
+	},
+	["CombatIndicator"] = {
+		["EnableCombatLeave"] = 1,
+		["EnableCombatIndicator"] = 1,
+		["checkedVersion"] = "563",
+		["EnableShowSpell"] = 0,
+		["EnableSpell"] = 0,
+		["EnableDCT"] = 0,
+	},
+	["SpellTimer"] = {
+		["checkedVersion"] = "563",
+		["EnableSpellTimer"] = 0,
+	},
+	["ChatEnhancement"] = {
+		["EnableWhisperPop"] = 1,
+		["checkedVersion"] = "563",
+		["EnableAchievementCompare"] = 1,
+		["EnablePlayerLink"] = 1,
+		["EnableBFC"] = 1,
+	},
+}
+BigFoot_Error = {
+	["zhCN6.2.0.563"] = {
+		["27756296677146378292399507984195700386"] = {
+			["combat"] = true,
+			["zone"] = "霜寒晶壁",
+			["class"] = "术士",
+			["desc"] = "Script ran too long",
+			["race"] = "血精灵",
+			["trace"] = "[C]: in function `collectgarbage'\nInterface\\AddOns\\RaidAlerter\\RaidAlerter.lua:1151: in function `RaidAlerter_SET_FUNC_ResetRAM'\nInterface\\AddOns\\RaidAlerter\\RaidAlerter.lua:3015: in function `RaidAlerter_Frame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
+			["file"] = "Interface\\AddOns\\RaidAlerter\\RaidAlerter.lua",
+			["line"] = "1151",
+			["level"] = 100,
+		},
+		["4099723011277649314140125087953315454404"] = {
+			["combat"] = true,
+			["zone"] = "塔纳安丛林",
+			["class"] = "术士",
+			["desc"] = "Script ran too long",
+			["race"] = "血精灵",
+			["trace"] = "[C]: in function `Show'\nInterface\\AddOns\\BFCooldown\\BFCooldown.lua:1: in function `StartTimer'\nInterface\\AddOns\\BFCooldown\\BFCooldown.lua:1: in function `SetCooldown'\nInterface\\AddOns\\BFCooldown\\BFCooldown.lua:1: in function <Interface\\AddOns\\BFCooldown\\BFCooldown.lua:1>\n[C]: in function `SetCooldown'\nInterface\\FrameXML\\Cooldown.lua:6: in function `CooldownFrame_SetTimer'\nInterface\\FrameXML\\ActionButton.lua:498: in function `ActionButton_UpdateCooldown'\nInterface\\FrameXML\\ActionButton.lua:666: in function `ActionButton_OnEvent'\nInterface\\FrameXML\\ActionButton.lua:137: in function <Interface\\FrameXML\\ActionButton.lua:134>\n",
+			["file"] = "Interface\\AddOns\\BFCooldown\\BFCooldown.lua",
+			["line"] = "1",
+			["level"] = 100,
+		},
+		["386977192113416829052857303824578079137"] = {
+			["combat"] = true,
+			["zone"] = "地狱火堡垒",
+			["class"] = "术士",
+			["desc"] = "Script ran too long",
+			["race"] = "血精灵",
+			["level"] = 100,
+			["trace"] = "[C]: in function `UnregisterAllEvents'\nInterface\\AddOns\\Combuctor\\item.lua:107: in function <Interface\\AddOns\\Combuctor\\item.lua:82>\n(tail call): ?\nInterface\\AddOns\\Combuctor\\itemFrame.lua:125: in function <Interface\\AddOns\\Combuctor\\itemFrame.lua:117>\n(tail call): ?\nInterface\\AddOns\\Combuctor\\itemFrame.lua:186: in function `Regenerate'\nInterface\\AddOns\\Combuctor\\itemFrame.lua:46: in function <Interface\\AddOns\\Combuctor\\itemFrame.lua:44>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2623: in function `ShowUIPanel'\nInterface\\AddOns\\Combuctor\\frame.lua:815: in function `ShowFrame'\nInterface\\AddOns\\Combuctor\\Combuctor.lua:264: in function `Show'\nInterface\\AddOns\\Combuctor\\Combuctor.lua:180: in function <Interface\\AddOns\\Combuctor\\Combuctor.lua:178>\nInterface\\AddOns\\Combuctor\\Combuctor.lua:203: in function `ToggleAllBags'\n[string \"OPENALLBAGS\"]:1: in function <[string \"OPENALLBAGS\"]:1>\n",
+			["line"] = "107",
+			["file"] = "Interface\\AddOns\\Combuctor\\item.lua",
+		},
+		["273415433942796527701555345213331217865"] = {
+			["combat"] = true,
+			["zone"] = "霜寒晶壁",
+			["class"] = "术士",
+			["desc"] = "Script ran too long",
+			["race"] = "血精灵",
+			["trace"] = "[C]: in function `ORG_AddMessage'\nInterface\\AddOns\\BigFootChat\\core.lua:1: in function `AddMessage'\nInterface\\AddOns\\RaidAlerter\\RaidAlerter.lua:5255: in function `AddMsg'\nInterface\\AddOns\\RaidAlerter\\RaidAlerter.lua:1152: in function `RaidAlerter_SET_FUNC_ResetRAM'\nInterface\\AddOns\\RaidAlerter\\RaidAlerter.lua:3015: in function `RaidAlerter_Frame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
+			["file"] = "Interface\\AddOns\\BigFootChat\\core.lua",
+			["line"] = "1",
+			["level"] = 100,
+		},
+	},
+	["debug_Mod"] = false,
+}
+MBBDB = {
+	["profileKeys"] = {
+		["Wranger - 格雷迈恩"] = "Wranger - 格雷迈恩",
+	},
+	["profiles"] = {
+		["Wranger - 格雷迈恩"] = {
+			["MiniMap"] = {
+				["minimapPos"] = 243.928332642827,
+			},
+		},
+	},
+}
+BF_Gloable = nil
+BF_LogonInfo = {
+	1453472865, -- [1]
+	1453505902, -- [2]
+	1453598923, -- [3]
+	1453678012, -- [4]
+	1453770538, -- [5]
+	1453904624, -- [6]
+	1453950120, -- [7]
+	1454898511, -- [8]
+}
+ModelChangeVariable = {
+	["hide"] = true,
+}

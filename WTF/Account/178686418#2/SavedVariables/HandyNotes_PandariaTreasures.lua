@@ -1,0 +1,2 @@
+
+PandariaTreasuresDB = nil

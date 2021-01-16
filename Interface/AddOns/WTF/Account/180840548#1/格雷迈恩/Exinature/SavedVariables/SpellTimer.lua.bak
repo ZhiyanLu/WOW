@@ -1,0 +1,38 @@
+
+SpellTimer_Config = {
+	["WarningTime"] = 5,
+	["SPELLS"] = {
+		["割裂"] = {
+			["disabled"] = 1,
+		},
+		["阳炎术"] = {
+		},
+		["野蛮咆哮"] = {
+		},
+		["纠缠根须"] = {
+			["disabled"] = 1,
+		},
+		["回春术"] = {
+			["disabled"] = 1,
+		},
+		["野性成长"] = {
+			["disabled"] = 1,
+		},
+		["虫群"] = {
+			["disabled"] = 1,
+		},
+		["日蚀"] = {
+			["disabled"] = 1,
+		},
+	},
+	["ShowProgressBar"] = 1,
+	["Scale"] = 0.80415940284729,
+	["HideAllWhenLeaveCombat"] = 1,
+	["mergeAoe"] = false,
+	["BackAlpha"] = 0,
+	["RightCancel"] = 1,
+	["Locked"] = 0,
+	["ShowName"] = 1,
+	["EnabledTest"] = 1,
+	["BorderAlpha"] = 0,
+}

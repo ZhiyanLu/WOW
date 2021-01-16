@@ -1,0 +1,14 @@
+tag 390c2825cc431116cae51ae3c6502d2ec845f648 1.17
+Author:	Justwait <justwait@method.gg>
+Date:	Sun Sep 8 18:52:11 2019 +0200
+
+1.17 tag
+
+commit 8c828ea56078c3828d64e0c25bd0d92af3ecca5f
+Author: Justwait <justwait@method.gg>
+Date:   Sun Sep 8 18:51:51 2019 +0200
+
+    -- Allow color settings for personal sct
+    -- Allow the user to change the speed of animations
+    -- Increase the frame level animations are drawn on
+

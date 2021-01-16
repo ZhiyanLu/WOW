@@ -1,0 +1,121 @@
+
+BlizzMoveDB = {
+	["TradeSkillFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000006838724,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOP",
+		["yOfs"] = -115.999989331591,
+		["xOfs"] = 206.751541157732,
+		["point"] = "TOP",
+	},
+	["VideoOptionsFrame"] = {
+	},
+	["CharacterFrame"] = {
+	},
+	["MailFrame"] = {
+	},
+	["MacroFrame"] = {
+	},
+	["AchievementFrame"] = {
+		["save"] = true,
+	},
+	["GarrisonLandingPage"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 69.4379607034612,
+		["xOfs"] = -143.895461624466,
+		["point"] = "CENTER",
+	},
+	["BlackMarketFrame"] = {
+	},
+	["PlayerTalentFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000006838724,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "RIGHT",
+		["yOfs"] = 90.0522819077933,
+		["xOfs"] = -132.771359095855,
+		["point"] = "RIGHT",
+	},
+	["GuildBankFrame"] = {
+		["save"] = true,
+	},
+	["SpellBookFrame"] = {
+	},
+	["ItemSocketingFrame"] = {
+	},
+	["PetJournalParent"] = {
+	},
+	["TradeFrame"] = {
+	},
+	["CalendarFrame"] = {
+		["save"] = true,
+	},
+	["InterfaceOptionsFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 46.4705801173265,
+		["xOfs"] = -167.496731739633,
+		["point"] = "CENTER",
+	},
+	["InspectFrame"] = {
+	},
+	["AuctionFrame"] = {
+		["save"] = true,
+	},
+	["LFRParentFrame"] = {
+	},
+	["BankFrame"] = {
+	},
+	["FriendsFrame"] = {
+	},
+	["GossipFrame"] = {
+	},
+	["MerchantFrame"] = {
+	},
+	["DressUpFrame"] = {
+	},
+	["WorldMapFrame"] = {
+	},
+	["GuildFrame"] = {
+	},
+	["LootFrame"] = {
+	},
+	["GameMenuFrame"] = {
+	},
+	["TransmogrifyFrame"] = {
+	},
+	["PVEFrame"] = {
+	},
+	["QuestFrame"] = {
+	},
+	["KeyBindingFrame"] = {
+	},
+	["EncounterJournal"] = {
+	},
+	["LFDParentFrame"] = {
+	},
+	["HelpFrame"] = {
+	},
+}

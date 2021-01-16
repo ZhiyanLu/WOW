@@ -1,0 +1,21 @@
+
+zTipSaves = {
+	["ManaBAR"] = true,
+	["Scale"] = 1,
+	["Fade"] = false,
+	["OffsetX"] = 30,
+	["ShowIsPlayer"] = false,
+	["Anchor"] = false,
+	["DisplayPvPRank"] = false,
+	["PlayerServer"] = true,
+	["OrigPosX"] = 70,
+	["TargetedBy"] = false,
+	["DisplayFaction"] = true,
+	["NPCClass"] = true,
+	["ShowTalent"] = true,
+	["OrigPosY"] = 120,
+	["OffsetY"] = 30,
+	["TargetOfMouse"] = true,
+	["VividMask"] = true,
+	["ClassIcon"] = true,
+}

@@ -1,0 +1,42 @@
+
+ItemSourceDB = {
+}
+ObjectLocationDB = {
+}
+CreatureLocationDB = {
+}
+CreatureDB = {
+}
+QuestDB = {
+}
+QuestCompleteDB = {
+}
+QuestEventDB = {
+}
+SkillSourceDB = {
+}
+BigFootBot_Version = {
+}
+BigFootBot_Info = nil
+PlayersDB = {
+}
+UtilDB = {
+}
+NPCMarkCollectionDB = {
+}
+BigFootBot_collectData = {
+	["CombatBattlePetData"] = {
+	},
+	["BigFootBank_Data"] = {
+	},
+	["WildBattlePetData"] = {
+	},
+}
+SpamChatDB = {
+	[1501121905] = {
+		["name"] = "丨頑酷態鍍丨-格雷迈恩",
+		["content"] = "11",
+	},
+	["factionGroup"] = "Horde",
+	["realm"] = "格雷迈恩",
+}

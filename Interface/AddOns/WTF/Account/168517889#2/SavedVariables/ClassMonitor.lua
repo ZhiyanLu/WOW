@@ -1,0 +1,4 @@
+
+ClassMonitorData = {
+	["MultisamplingChecked"] = true,
+}

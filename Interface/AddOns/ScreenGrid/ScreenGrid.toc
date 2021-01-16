@@ -1,0 +1,7 @@
+## Interface: 70000
+## Title: ScreenGrid
+## Author: Centella of Medivh-US
+## Notes: Creates a fullscreen grid to help align your interface.|n|cFF00FF00Author: |rCentella of Medivh-US
+## Notes-esMX: Crea una cuadricula en pantalla completa para ayudar a alinear la interfaz.|n|cFF00FF00Autor: |rCentella de Medivh-US
+## Version: 1.7.1
+ScreenGrid.lua

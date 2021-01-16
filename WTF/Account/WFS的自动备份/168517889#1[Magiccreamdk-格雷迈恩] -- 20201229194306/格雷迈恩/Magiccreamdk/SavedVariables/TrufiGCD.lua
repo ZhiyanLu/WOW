@@ -1,0 +1,153 @@
+
+TrufiGCDChSave = {
+	["TooltipEnable"] = true,
+	["TooltipStopMove"] = true,
+	["TrGCDQueueFr"] = {
+		{
+			["point"] = "CENTER",
+			["enable"] = true,
+			["text"] = "Player",
+			["fade"] = "Left",
+			["y"] = -142.2225189208984,
+			["x"] = -233.7767791748047,
+			["speed"] = 25,
+			["width"] = 6,
+			["size"] = 40,
+		}, -- [1]
+		{
+			["point"] = "TOPLEFT",
+			["enable"] = true,
+			["text"] = "Party 1",
+			["fade"] = "Right",
+			["y"] = -197.4440765380859,
+			["x"] = 278.5564880371094,
+			["speed"] = 25,
+			["width"] = 4,
+			["size"] = 40,
+		}, -- [2]
+		{
+			["point"] = "LEFT",
+			["enable"] = true,
+			["text"] = "Party 2",
+			["fade"] = "Right",
+			["y"] = 195.5577545166016,
+			["x"] = 277.6683044433594,
+			["speed"] = 25,
+			["width"] = 4,
+			["size"] = 40,
+		}, -- [3]
+		{
+			["point"] = "LEFT",
+			["enable"] = true,
+			["text"] = "Party 3",
+			["fade"] = "Right",
+			["y"] = 129.7789764404297,
+			["x"] = 277.6680297851563,
+			["speed"] = 25,
+			["width"] = 4,
+			["size"] = 40,
+		}, -- [4]
+		{
+			["point"] = "LEFT",
+			["enable"] = true,
+			["text"] = "Party 4",
+			["fade"] = "Right",
+			["y"] = 64.00022888183594,
+			["x"] = 277.6679382324219,
+			["speed"] = 25,
+			["width"] = 4,
+			["size"] = 40,
+		}, -- [5]
+		{
+			["point"] = "RIGHT",
+			["enable"] = true,
+			["text"] = "Arena 1",
+			["fade"] = "Right",
+			["y"] = 107.3328552246094,
+			["x"] = -128.4428558349609,
+			["speed"] = 21.875,
+			["width"] = 7,
+			["size"] = 35,
+		}, -- [6]
+		{
+			["point"] = "RIGHT",
+			["enable"] = true,
+			["text"] = "Arena 2",
+			["fade"] = "Right",
+			["y"] = 20.55498123168945,
+			["x"] = -128.4432067871094,
+			["speed"] = 21.875,
+			["width"] = 7,
+			["size"] = 35,
+		}, -- [7]
+		{
+			["point"] = "RIGHT",
+			["enable"] = true,
+			["text"] = "Arena 3",
+			["fade"] = "Right",
+			["y"] = -65.77803802490234,
+			["x"] = -128.4428558349609,
+			["speed"] = 21.875,
+			["width"] = 7,
+			["size"] = 35,
+		}, -- [8]
+		{
+			["point"] = "CENTER",
+			["enable"] = false,
+			["text"] = "Arena 4",
+			["fade"] = "Left",
+			["y"] = 0,
+			["x"] = 0,
+			["speed"] = 25,
+			["width"] = 3,
+			["size"] = 40,
+		}, -- [9]
+		{
+			["point"] = "CENTER",
+			["enable"] = false,
+			["text"] = "Arena 5",
+			["fade"] = "Left",
+			["y"] = 0,
+			["x"] = 0,
+			["speed"] = 25,
+			["width"] = 3,
+			["size"] = 40,
+		}, -- [10]
+		{
+			["point"] = "CENTER",
+			["enable"] = true,
+			["text"] = "Target",
+			["fade"] = "Right",
+			["y"] = -142.2222900390625,
+			["x"] = 194.6668853759766,
+			["speed"] = 25,
+			["width"] = 4,
+			["size"] = 40,
+		}, -- [11]
+		{
+			["point"] = "LEFT",
+			["enable"] = true,
+			["text"] = "Focus",
+			["fade"] = "Left",
+			["y"] = -142.7782897949219,
+			["x"] = 303.4463500976563,
+			["speed"] = 25,
+			["width"] = 3,
+			["size"] = 40,
+		}, -- [12]
+	},
+	["TooltipSpellID"] = false,
+	["EnableIn"] = {
+		["World"] = true,
+		["Raid"] = true,
+		["Enable"] = true,
+		["Arena"] = true,
+		["Bg"] = true,
+		["PvE"] = true,
+	},
+	["TrGCDBL"] = {
+		6603, -- [1]
+		75, -- [2]
+	},
+	["ModScroll"] = true,
+}

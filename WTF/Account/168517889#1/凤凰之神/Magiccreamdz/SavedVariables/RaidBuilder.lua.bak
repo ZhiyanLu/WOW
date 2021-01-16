@@ -1,0 +1,21 @@
+
+RAIDBUILDER_CHARACTER_DB = {
+	["profileKeys"] = {
+		["Magiccream - 艾莫莉丝"] = "Magiccream - 艾莫莉丝",
+	},
+	["profiles"] = {
+		["Magiccream - 艾莫莉丝"] = {
+			["logs"] = {
+				"|cff00ffff2014/12/26 23:54:55|r 兑换平台商品列表已更新。", -- [1]
+			},
+			["settings"] = {
+				["storage"] = {
+					["y"] = 0,
+					["x"] = 0.836560857701898,
+					["scale"] = 1,
+				},
+				["defaultPanel"] = 5,
+			},
+		},
+	},
+}

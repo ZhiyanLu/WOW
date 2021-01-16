@@ -1,0 +1,26 @@
+<Ui>
+	<Frame name="bfTalentInfoFrame" hidden="true" enableMouse="true">
+		<Size>
+			<AbsDimension x="250" y="255"/>
+		</Size>
+		<Backdrop bgFile="Interface\AchievementFrame\UI-Achievement-Parchment-Horizontal" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" >
+			<EdgeSize>
+				<AbsValue val="20"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="16"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>
+	</Frame>
+
+	<Button name="bfTalentInfoFrameCloseButton" inherits="UIPanelCloseButton">
+		<Scripts>
+			<OnClick>
+				self:GetParent():Hide();
+			</OnClick>
+		</Scripts>
+	</Button>
+</Ui>

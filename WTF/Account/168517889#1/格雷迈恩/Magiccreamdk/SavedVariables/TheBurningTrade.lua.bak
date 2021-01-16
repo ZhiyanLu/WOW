@@ -1,0 +1,619 @@
+
+TradeLog_TradesHistory = {
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 16,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "巨像肩铠",
+				["numItems"] = 1,
+				["itemLink"] = "|cff0070dd|Hitem:127547::::::::60:252::22:2:7191:6652:2:9:60:28:181:::|h[巨像肩铠]|h|r",
+				["isUsable"] = true,
+				["texture"] = 135117,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "我是大红手-伊森利恩",
+		["when"] = "12-31 21:59:46",
+		["result"] = "complete",
+		["where"] = "古达克",
+	}, -- [1]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 17,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "奥术护盾头盔",
+				["numItems"] = 1,
+				["itemLink"] = "|cff0070dd|Hitem:127581::::::::60:252::22:2:7191:6652:2:9:60:28:181:::|h[奥术护盾头盔]|h|r",
+				["isUsable"] = true,
+				["texture"] = 133112,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "尐红豆-菲拉斯",
+		["when"] = "12-31 22:23:21",
+		["result"] = "complete",
+		["where"] = "魔枢",
+	}, -- [2]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 18,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "寒冰束腰",
+				["numItems"] = 1,
+				["itemLink"] = "|cff0070dd|Hitem:127589::::::::60:252::22:2:7191:6652:2:9:60:28:181:::|h[寒冰束腰]|h|r",
+				["isUsable"] = true,
+				["texture"] = 132511,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "尐红豆-菲拉斯",
+		["when"] = "12-31 22:30:55",
+		["result"] = "complete",
+		["where"] = "魔枢",
+	}, -- [3]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 19,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "天墙之靴",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cff0070dd|Hitem:127515::::::::60:252::22:2:7191:6652:2:9:60:28:181:::|h[天墙之靴]|h|r",
+				["texture"] = 132551,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_CLOSED", -- [1]
+			"TRADE_SHOW", -- [2]
+			"TRADE_CLOSED", -- [3]
+			"TRADE_CLOSED", -- [4]
+		},
+		["who"] = "城管队大队长-风暴之鳞",
+		["when"] = "01-01 09:44:09",
+		["result"] = "complete",
+		["where"] = "闪电大厅",
+	}, -- [4]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 20,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "骗术师的护肩",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:178697::::::::60:252::23:4:6807:6652:1498:6646:1:28:749:::|h[骗术师的护肩]|h|r",
+				["texture"] = 3395748,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "Valkeuterpe",
+		["when"] = "01-02 00:01:58",
+		["result"] = "complete",
+		["where"] = "塞兹仙林的迷雾",
+	}, -- [5]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 21,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "夺灵者束腰",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:179326::::::::60:252::23:5:6807:6652:7194:1498:6646:1:28:749:::|h[夺灵者束腰]|h|r",
+				["texture"] = 3395742,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "Valkeuterpe",
+		["when"] = "01-02 00:19:17",
+		["result"] = "complete",
+		["where"] = "彼界",
+	}, -- [6]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 22,
+		["playerItems"] = {
+		},
+		["reason"] = "self",
+		["targetItems"] = {
+		},
+		["player"] = "Magiccreamdk",
+		["where"] = "赎罪大厅",
+		["who"] = "财务-血顶",
+		["when"] = "01-03 12:45:14",
+		["result"] = "cancelled",
+	}, -- [7]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 23,
+		["playerItems"] = {
+		},
+		["reason"] = "other",
+		["targetItems"] = {
+		},
+		["player"] = "Magiccreamdk",
+		["where"] = "赎罪大厅",
+		["who"] = "财务-血顶",
+		["when"] = "01-03 12:45:18",
+		["result"] = "cancelled",
+		["toofar"] = "no",
+	}, -- [8]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 24,
+		["playerItems"] = {
+			{
+				["texture"] = 1359999,
+				["itemLink"] = "|cffa335ee|Hitem:178827::::::::60:252::23:5:6807:6652:7193:1498:6646:1:28:749:::|h[罪污项坠]|h|r",
+				["name"] = "罪污项坠",
+				["numItems"] = 1,
+			}, -- [1]
+		},
+		["targetItems"] = {
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "财务-血顶",
+		["when"] = "01-03 12:45:30",
+		["result"] = "complete",
+		["where"] = "赎罪大厅",
+	}, -- [9]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 25,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "跳动的石心",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:178825::::::::60:252::23:4:6807:6652:1498:6646:1:28:749:::|h[跳动的石心]|h|r",
+				["texture"] = 134084,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "财务-血顶",
+		["when"] = "01-03 12:51:00",
+		["result"] = "complete",
+		["where"] = "赎罪大厅",
+	}, -- [10]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 26,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "迷途项坠",
+				["numItems"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:178707::::::::60:252::16:6:7205:6652:7194:1501:5855:6646:1:28:1279:::|h[迷途项坠]|h|r",
+				["isUsable"] = true,
+				["texture"] = 3536070,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "Valkeuterpe",
+		["when"] = "01-03 21:50:14",
+		["result"] = "complete",
+		["where"] = "玛卓克萨斯",
+	}, -- [11]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 27,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "影核之油",
+				["numItems"] = 4,
+				["itemLink"] = "|cffffffff|Hitem:171285::::::::60:252:::::::|h[影核之油]|h|r",
+				["isUsable"] = true,
+				["texture"] = 463543,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "猛猪突进",
+		["when"] = "01-03 21:50:55",
+		["result"] = "complete",
+		["where"] = "玛卓克萨斯",
+	}, -- [12]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 28,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "粘滑的痨病器官",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:178770::::::::60:252::23:4:6807:6652:1498:6646:1:28:749:::|h[粘滑的痨病器官]|h|r",
+				["texture"] = 134338,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "二院丶副院长-艾莫莉丝",
+		["when"] = "01-04 00:20:32",
+		["result"] = "complete",
+		["where"] = "凋魂之殇",
+	}, -- [13]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 29,
+		["playerItems"] = {
+		},
+		["reason"] = "other",
+		["targetItems"] = {
+		},
+		["player"] = "Magiccreamdk",
+		["where"] = "凋魂之殇",
+		["who"] = "悬浮硫磺火-试炼之环",
+		["when"] = "01-04 00:36:43",
+		["result"] = "cancelled",
+		["toofar"] = "no",
+	}, -- [14]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 30,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "凋零侯爵的斗篷",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:178755::::::::60:252::23:4:6807:6652:1498:6646:1:28:749:::|h[凋零侯爵的斗篷]|h|r",
+				["texture"] = 3390758,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "悬浮硫磺火-试炼之环",
+		["when"] = "01-04 00:37:51",
+		["result"] = "complete",
+		["where"] = "凋魂之殇",
+	}, -- [15]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 31,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "扭曲忠诚斗披",
+				["numItems"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:180123::::::::60:252::23:4:6807:6652:1498:6646:1:28:749:::|h[扭曲忠诚斗披]|h|r",
+				["isUsable"] = true,
+				["texture"] = 3390758,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "夏夏是只猫-无尽之海",
+		["when"] = "01-04 19:38:58",
+		["result"] = "complete",
+		["where"] = "晋升高塔",
+	}, -- [16]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 32,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "扭曲忠诚斗披",
+				["numItems"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:180123::::::::60:252::23:4:6807:6652:1498:6646:1:28:749:::|h[扭曲忠诚斗披]|h|r",
+				["isUsable"] = true,
+				["texture"] = 3390758,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "斯嘉丽约翰孙-布兰卡德",
+		["when"] = "01-04 19:39:07",
+		["result"] = "complete",
+		["where"] = "晋升高塔",
+	}, -- [17]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 33,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "不可思议的量子装置",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:179350::::::::60:252::16:4:6808:6652:1501:6646:1:28:1279:::|h[不可思议的量子装置]|h|r",
+				["texture"] = 2000857,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "Valkeuterpe",
+		["when"] = "01-04 23:26:09",
+		["result"] = "complete",
+		["where"] = "彼界",
+	}, -- [18]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 34,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "笼罩具象披风",
+				["numItems"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:178851::::::::60:252::23:4:6807:6652:1498:6646:1:28:749:::|h[笼罩具象披风]|h|r",
+				["isUsable"] = true,
+				["texture"] = 3395743,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "潮汕牛肉丸-阿纳克洛斯",
+		["when"] = "01-05 22:33:53",
+		["result"] = "complete",
+		["where"] = "赤红深渊",
+	}, -- [19]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 35,
+		["playerItems"] = {
+		},
+		["reason"] = "other",
+		["targetItems"] = {
+		},
+		["player"] = "Magiccreamdk",
+		["where"] = "纳斯利亚堡",
+		["who"] = "名字问我的刀-龙骨平原",
+		["when"] = "01-06 20:22:52",
+		["result"] = "cancelled",
+		["toofar"] = "no",
+	}, -- [20]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 36,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "永冬护符",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:183040::::::::60:252::3:5:7189:6652:7194:1472:6646:1:28:751:::|h[永冬护符]|h|r",
+				["texture"] = 1360001,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "名字问我的刀-龙骨平原",
+		["when"] = "01-06 20:25:02",
+		["result"] = "complete",
+		["where"] = "纳斯利亚堡",
+	}, -- [21]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 37,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "扭曲忠诚斗披",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:180123::::::::60:252::16:5:7207:6652:1501:5858:6646:1:28:1279:::|h[扭曲忠诚斗披]|h|r",
+				["texture"] = 3390758,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "啾啾丶啾啾",
+		["when"] = "01-07 23:49:19",
+		["result"] = "complete",
+		["where"] = "晋升高塔",
+	}, -- [22]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 38,
+		["playerItems"] = {
+			[7] = {
+				["name"] = "扭曲忠诚斗披",
+				["numItems"] = 1,
+				["enchantment"] = "灵魂活力",
+				["itemLink"] = "|cffa335ee|Hitem:180123::::::::60:252::16:5:7207:6652:1501:5858:6646:1:28:1279:::|h[扭曲忠诚斗披]|h|r",
+				["texture"] = 3390758,
+			},
+		},
+		["reason"] = "other",
+		["targetItems"] = {
+		},
+		["player"] = "Magiccreamdk",
+		["where"] = "晋升堡垒",
+		["who"] = "哈尼斯斯",
+		["when"] = "01-07 23:51:04",
+		["result"] = "cancelled",
+		["toofar"] = "no",
+	}, -- [23]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 39,
+		["playerItems"] = {
+			[7] = {
+				["texture"] = 3390758,
+				["itemLink"] = "|cffa335ee|Hitem:180123::::::::60:252::16:5:7207:6652:1501:5858:6646:1:28:1279:::|h[扭曲忠诚斗披]|h|r",
+				["name"] = "扭曲忠诚斗披",
+				["numItems"] = 1,
+			},
+		},
+		["targetItems"] = {
+			{
+				["name"] = "附魔披风 - 灵魂活力",
+				["numItems"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cff0070dd|Hitem:177660::::::::60:252:::::::|h[附魔披风 - 灵魂活力]|h|r",
+				["texture"] = 463531,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "哈尼斯斯",
+		["when"] = "01-07 23:51:26",
+		["result"] = "complete",
+		["where"] = "晋升堡垒",
+	}, -- [24]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 40,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "灵魂之尘",
+				["numItems"] = 19,
+				["itemLink"] = "|cffffffff|Hitem:172230::::::::60:252:::::::|h[灵魂之尘]|h|r",
+				["isUsable"] = true,
+				["texture"] = 3528445,
+			}, -- [1]
+		},
+		["player"] = "Magiccreamdk",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "哈尼斯斯",
+		["when"] = "01-08 00:29:25",
+		["result"] = "complete",
+		["where"] = "晋升高塔",
+	}, -- [25]
+}
+TRADE_LOG_BUTTON_POS = 190
+TradeLog_Announce_Checked = nil
+TradeLog_AnnounceChannel = "WHISPER"
+TBT_CurrentPortal = nil

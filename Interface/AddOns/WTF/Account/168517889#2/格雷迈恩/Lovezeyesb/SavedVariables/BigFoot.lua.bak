@@ -1,0 +1,8 @@
+
+BF_Frames_Config = {
+}
+BigFoot_Character = {
+}
+BigFoot_SysTemSetTab = {
+	["BigFoot_LoadBefore"] = 1,
+}

@@ -1,0 +1,25 @@
+
+SkadaDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Exinature - 格雷迈恩"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["ffoptions"] = {
+				["ignoredefensive"] = true,
+				["ignoreability"] = false,
+			},
+			["windows"] = {
+				{
+					["y"] = 0,
+					["point"] = "BOTTOMRIGHT",
+					["x"] = -16.36572265625,
+				}, -- [1]
+			},
+		},
+	},
+}

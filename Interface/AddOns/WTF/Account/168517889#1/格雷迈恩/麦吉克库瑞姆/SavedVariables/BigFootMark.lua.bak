@@ -1,0 +1,2 @@
+
+BigFootMarkDB = nil

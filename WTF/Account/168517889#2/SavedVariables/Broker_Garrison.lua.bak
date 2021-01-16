@@ -1,0 +1,567 @@
+
+Broker_GarrisonDB = {
+	["profileKeys"] = {
+		["丨還遈專業丨 - 格雷迈恩"] = "Default",
+	},
+	["global"] = {
+		["data"] = {
+			["格雷迈恩"] = {
+				["丨還遈專業丨"] = {
+					["lootedToday"] = {
+						[115508] = 46,
+						[116053] = 11,
+					},
+					["configVersion"] = 2,
+					["missions"] = {
+						[375] = {
+							["type"] = "战斗",
+							["id"] = 375,
+							["duration"] = 36000,
+							["typeAtlas"] = "GarrMission_MissionIcon-Combat",
+							["timeLeft"] = "10小时",
+							["timeLeftCalc"] = 7473,
+							["notification"] = 0,
+							["name"] = "堕落的古树",
+							["level"] = 97,
+							["start"] = 1420392415,
+							["followers"] = {
+								{
+									["name"] = "兰特瑞索·火刃",
+									["id"] = "0x000000000058270D",
+									["iconId"] = 1066127,
+									["abilities"] = {
+										{
+											["id"] = 102,
+											["name"] = "英勇飞跃",
+											["icon"] = "Interface\\ICONS\\Ability_HeroicLeap.blp",
+										}, -- [1]
+										{
+											["id"] = 52,
+											["name"] = "采矿",
+											["icon"] = "Interface\\ICONS\\Trade_Mining.blp",
+										}, -- [2]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Warrior",
+								}, -- [1]
+								{
+									["name"] = "缚魂者图拉妮",
+									["id"] = "0x000000000057BF36",
+									["iconId"] = 1066103,
+									["abilities"] = {
+										{
+											["id"] = 11,
+											["name"] = "治疗祷言",
+											["icon"] = "Interface\\ICONS\\Spell_Holy_PrayerOfHealing02.blp",
+										}, -- [1]
+										{
+											["id"] = 49,
+											["name"] = "平原旅人",
+											["icon"] = "Interface\\ICONS\\Achievement_Zone_ArathiHighlands_01.blp",
+										}, -- [2]
+										{
+											["id"] = 70,
+											["name"] = "德拉诺之子",
+											["icon"] = "Interface\\ICONS\\Achievement_Character_Orc_Female.blp",
+										}, -- [3]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Priest",
+								}, -- [2]
+								{
+									["name"] = "卡拉",
+									["id"] = "0x0000000000586DB3",
+									["iconId"] = 1066122,
+									["abilities"] = {
+										{
+											["id"] = 159,
+											["name"] = "闪避",
+											["icon"] = "Interface\\ICONS\\Spell_Shadow_ShadowWard.blp",
+										}, -- [1]
+										{
+											["id"] = 60,
+											["name"] = "制皮",
+											["icon"] = "Interface\\ICONS\\Trade_LeatherWorking.blp",
+										}, -- [2]
+										{
+											["id"] = 80,
+											["name"] = "额外训练",
+											["icon"] = "Interface\\ICONS\\Garrison_Building_SparringArena.blp",
+										}, -- [3]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Rogue",
+								}, -- [3]
+							},
+							["missionState"] = 1,
+							["rewards"] = {
+								[779] = {
+									["title"] = "奖励追随者经验",
+									["followerXP"] = 1600,
+									["tooltip"] = "+1,600经验值",
+									["icon"] = "Interface\\Icons\\XPBonus_Icon",
+									["name"] = "+1,600经验值",
+								},
+							},
+						},
+						[376] = {
+							["type"] = "战斗",
+							["id"] = 376,
+							["duration"] = 36000,
+							["typeAtlas"] = "GarrMission_MissionIcon-Combat",
+							["timeLeft"] = "10小时",
+							["timeLeftCalc"] = 7477,
+							["notification"] = 0,
+							["name"] = "高里亚战争大师",
+							["level"] = 98,
+							["start"] = 1420392419,
+							["followers"] = {
+								{
+									["name"] = "考尔曼",
+									["id"] = "0x00000000005C14D9",
+									["iconId"] = 1087482,
+									["abilities"] = {
+										{
+											["id"] = 124,
+											["name"] = "圣盾术",
+											["icon"] = "Interface\\ICONS\\Spell_Holy_DivineShield.blp",
+										}, -- [1]
+										{
+											["id"] = 131,
+											["name"] = "复仇之怒",
+											["icon"] = "Interface\\ICONS\\SPELL_HOLY_AVENGINEWRATH.BLP",
+										}, -- [2]
+										{
+											["id"] = 55,
+											["name"] = "锻造",
+											["icon"] = "Interface\\ICONS\\Trade_BlackSmithing.blp",
+										}, -- [3]
+										{
+											["id"] = 48,
+											["name"] = "沼泽行者",
+											["icon"] = "Interface\\ICONS\\Achievement_Zone_Sholazar_03.blp",
+										}, -- [4]
+										{
+											["id"] = 43,
+											["name"] = "利爪克星",
+											["icon"] = "INTERFACE\\ICONS\\INV_RavenLordPet.blp",
+										}, -- [5]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Paladin",
+								}, -- [1]
+								{
+									["name"] = "基姆兹·宾奇维斯",
+									["id"] = "0x00000000005807A1",
+									["iconId"] = 1066120,
+									["abilities"] = {
+										{
+											["id"] = 57,
+											["name"] = "工程学",
+											["icon"] = "Interface\\ICONS\\Trade_Engineering.blp",
+										}, -- [1]
+										{
+											["id"] = 160,
+											["name"] = "疾跑",
+											["icon"] = "Interface\\ICONS\\Ability_Rogue_Sprint.blp",
+										}, -- [2]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Rogue",
+								}, -- [2]
+								{
+									["name"] = "本杰明·吉布",
+									["id"] = "0x000000000057FAFA",
+									["iconId"] = 1066344,
+									["abilities"] = {
+										{
+											["id"] = 116,
+											["name"] = "枯萎凋零",
+											["icon"] = "Interface\\ICONS\\Spell_Shadow_DeathAndDecay.blp",
+										}, -- [1]
+										{
+											["id"] = 58,
+											["name"] = "铭文",
+											["icon"] = "Interface\\ICONS\\INV_Inscription_Tradeskill01.blp",
+										}, -- [2]
+										{
+											["id"] = 117,
+											["name"] = "心灵冰冻",
+											["icon"] = "Interface\\ICONS\\Spell_DeathKnight_MindFreeze.blp",
+										}, -- [3]
+										{
+											["id"] = 75,
+											["name"] = "经济学家",
+											["icon"] = "Interface\\ICONS\\achievement_FemaleGoblinhead.blp",
+										}, -- [4]
+										{
+											["id"] = 39,
+											["name"] = "原兽克星",
+											["icon"] = "Interface\\ICONS\\Achievement_Boss_YoggSaron_01.blp",
+										}, -- [5]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-DeathKnight",
+								}, -- [3]
+							},
+							["missionState"] = 1,
+							["rewards"] = {
+								[780] = {
+									["title"] = "奖励追随者经验",
+									["followerXP"] = 1800,
+									["tooltip"] = "+1,800经验值",
+									["icon"] = "Interface\\Icons\\XPBonus_Icon",
+									["name"] = "+1,800经验值",
+								},
+							},
+						},
+						[186] = {
+							["type"] = "战斗",
+							["id"] = 186,
+							["duration"] = 3600,
+							["rewards"] = {
+								[368] = {
+									["title"] = "货币奖励",
+									["quantity"] = 32,
+									["icon"] = "Interface\\Icons\\inv_garrison_resource",
+									["currencyID"] = 824,
+								},
+							},
+							["missionState"] = 1,
+							["timeLeftCalc"] = 3522,
+							["notification"] = 0,
+							["name"] = "风箱里的白鬼",
+							["followers"] = {
+								{
+									["name"] = "乌娜·斯莱舍",
+									["id"] = "0x00000000005975DD",
+									["abilities"] = {
+										{
+											["id"] = 148,
+											["name"] = "驱散魔法",
+											["icon"] = "Interface\\ICONS\\SPELL_HOLY_DISPELMAGIC.BLP",
+										}, -- [1]
+										{
+											["id"] = 11,
+											["name"] = "治疗祷言",
+											["icon"] = "Interface\\ICONS\\Spell_Holy_PrayerOfHealing02.blp",
+										}, -- [2]
+										{
+											["id"] = 53,
+											["name"] = "草药学",
+											["icon"] = "Interface\\ICONS\\Trade_Herbalism.blp",
+										}, -- [3]
+										{
+											["id"] = 76,
+											["name"] = "持久耐力",
+											["icon"] = "Interface\\ICONS\\Spell_Holy_WordFortitude.blp",
+										}, -- [4]
+										{
+											["id"] = 70,
+											["name"] = "德拉诺之子",
+											["icon"] = "Interface\\ICONS\\Achievement_Character_Orc_Female.blp",
+										}, -- [5]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Priest",
+									["iconId"] = 1066198,
+								}, -- [1]
+							},
+							["start"] = 1420420864,
+							["level"] = 91,
+							["timeLeft"] = "1小时",
+							["typeAtlas"] = "GarrMission_MissionIcon-Combat",
+						},
+						[373] = {
+							["type"] = "战斗",
+							["id"] = 373,
+							["duration"] = 36000,
+							["rewards"] = {
+								[777] = {
+									["title"] = "奖励追随者经验",
+									["followerXP"] = 1200,
+									["tooltip"] = "+1,200经验值",
+									["icon"] = "Interface\\Icons\\XPBonus_Icon",
+									["name"] = "+1,200经验值",
+								},
+							},
+							["missionState"] = 1,
+							["timeLeftCalc"] = 31891,
+							["notification"] = 0,
+							["name"] = "铁齿铜牙",
+							["followers"] = {
+								{
+									["name"] = "艾苏克之魂",
+									["id"] = "0x000000000057685B",
+									["abilities"] = {
+										{
+											["id"] = 104,
+											["name"] = "闷棍",
+											["icon"] = "Interface\\ICONS\\ABILITY_SAP.BLP",
+										}, -- [1]
+										{
+											["id"] = 69,
+											["name"] = "酒鬼",
+											["icon"] = "Interface\\ICONS\\Achievement_Character_Pandaren_Female.blp",
+										}, -- [2]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Rogue",
+									["iconId"] = 1066335,
+								}, -- [1]
+								{
+									["name"] = "魔导师克雷拉斯",
+									["id"] = "0x000000000057A6C6",
+									["abilities"] = {
+										{
+											["id"] = 171,
+											["name"] = "法术反制",
+											["icon"] = "Interface\\ICONS\\Spell_Frost_IceShock.blp",
+										}, -- [1]
+										{
+											["id"] = 29,
+											["name"] = "优等生",
+											["icon"] = "Interface\\ICONS\\Ability_Mage_StudentOfTheMind.blp",
+										}, -- [2]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Mage",
+									["iconId"] = 1066115,
+								}, -- [2]
+								{
+									["name"] = "黑暗游侠维罗娜拉",
+									["id"] = "0x0000000000581ACF",
+									["abilities"] = {
+										{
+											["id"] = 166,
+											["name"] = "反制射击",
+											["icon"] = "Interface\\ICONS\\INV_Ammo_Arrow_03.blp",
+										}, -- [1]
+										{
+											["id"] = 62,
+											["name"] = "剥皮",
+											["icon"] = "Interface\\ICONS\\INV_Misc_Pelt_Wolf_01.blp",
+										}, -- [2]
+									},
+									["classIcon"] = "GarrMission_ClassIcon-Hunter",
+									["iconId"] = 1066227,
+								}, -- [3]
+							},
+							["start"] = 1420416833,
+							["level"] = 95,
+							["timeLeft"] = "10小时",
+							["typeAtlas"] = "GarrMission_MissionIcon-Combat",
+						},
+					},
+					["tooltipEnabled"] = true,
+					["currencySealOfTemperedFateAmount"] = 2,
+					["invasion"] = {
+						["available"] = false,
+					},
+					["buildingsExpanded"] = true,
+					["notificationEnabled"] = true,
+					["lootedNextReset"] = 1420484394,
+					["currencyApexisAmount"] = 2287,
+					["buildings"] = {
+						[59] = {
+							["hasFollowerSlot"] = true,
+							["buildingState"] = 0,
+							["follower"] = {
+							},
+							["shipment"] = {
+								["shipmentsAvailable"] = 6,
+								["itemName"] = "矿镐",
+								["shipmentsInProgress"] = 8,
+								["shipmentsTotal"] = 8,
+								["notificationValue"] = 0,
+								["duration"] = 14400,
+								["shipmentsReadyEstimate"] = 0,
+								["itemID"] = 116055,
+								["itemQuality"] = 1,
+								["notificationDismissed"] = false,
+								["timeleftString"] = "2小时30分钟",
+								["name"] = "霜壁矿井",
+								["shipmentCapacity"] = 14,
+								["creationTime"] = 1420415549,
+								["shipmentsReady"] = 0,
+								["texture"] = "Interface\\ICONS\\Trade_Mining.blp",
+							},
+							["id"] = 62,
+							["plotID"] = 59,
+							["plotSize"] = 2,
+							["buildTime"] = 3600,
+							["canActivate"] = false,
+							["notification"] = 1,
+							["name"] = "霜壁矿井",
+							["timeStart"] = 1420410842,
+							["texPrefix"] = "GarrBuilding_Mine_1_H",
+							["isBuilding"] = false,
+							["icon"] = "Interface\\ICONS\\Trade_Mining.blp",
+							["rank"] = 2,
+						},
+						[18] = {
+							["hasFollowerSlot"] = false,
+							["buildingState"] = 0,
+							["shipment"] = {
+							},
+							["id"] = 140,
+							["plotID"] = 18,
+							["plotSize"] = 1,
+							["buildTime"] = 3600,
+							["canActivate"] = false,
+							["notification"] = 1,
+							["name"] = "废品站",
+							["timeStart"] = 1420151311,
+							["texPrefix"] = "GarrBuilding_SalvageYard_1_H",
+							["isBuilding"] = false,
+							["icon"] = "Interface\\ICONS\\Garrison_Building_SalvageYard.blp",
+							["rank"] = 2,
+						},
+						[22] = {
+							["hasFollowerSlot"] = false,
+							["buildingState"] = 0,
+							["shipment"] = {
+								["shipmentsAvailable"] = 1,
+								["itemName"] = "要塞物资",
+								["duration"] = 14400,
+								["shipmentsReadyEstimate"] = 0,
+								["notification"] = 1,
+								["creationTime"] = 1420406961,
+								["shipmentsReady"] = 0,
+								["texture"] = "Interface\\ICONS\\Garrison_Building_TradingPost.blp",
+								["notificationValue"] = 0,
+								["shipmentsInProgress"] = 6,
+								["notificationDismissed"] = false,
+								["timeleftString"] = "6分钟",
+								["shipmentsTotal"] = 6,
+								["itemID"] = 118111,
+								["itemQuality"] = 1,
+								["name"] = "货栈",
+								["shipmentCapacity"] = 7,
+							},
+							["id"] = 111,
+							["plotID"] = 22,
+							["plotSize"] = 2,
+							["buildTime"] = 3600,
+							["canActivate"] = false,
+							["notification"] = 1,
+							["name"] = "货栈",
+							["timeStart"] = 1420314126,
+							["texPrefix"] = "GarrBuilding_TradingPost_1_H",
+							["isBuilding"] = false,
+							["icon"] = "Interface\\ICONS\\Garrison_Building_TradingPost.blp",
+							["rank"] = 1,
+						},
+						[19] = {
+							["hasFollowerSlot"] = true,
+							["buildingState"] = 0,
+							["follower"] = {
+								["garrFollowerID"] = "0x00000000000000D0",
+								["portraitIconID"] = 1066532,
+								["displayID"] = 60860,
+								["followerID"] = "0x0000000000587289",
+								["status"] = "正在工作",
+								["level"] = 95,
+								["quality"] = 2,
+								["followerName"] = "阿姆",
+							},
+							["shipment"] = {
+								["shipmentsAvailable"] = 1,
+								["itemName"] = "碎裂的时光水晶",
+								["duration"] = 14400,
+								["shipmentsReadyEstimate"] = 0,
+								["notification"] = 1,
+								["creationTime"] = 1420420893,
+								["shipmentsReady"] = 0,
+								["texture"] = "Interface\\ICONS\\Trade_Engraving.blp",
+								["notificationValue"] = 0,
+								["shipmentsInProgress"] = 13,
+								["notificationDismissed"] = false,
+								["timeleftString"] = "3小时59分钟",
+								["shipmentsTotal"] = 13,
+								["itemID"] = 115504,
+								["itemQuality"] = 4,
+								["name"] = "附魔研究室",
+								["shipmentCapacity"] = 14,
+							},
+							["id"] = 125,
+							["plotID"] = 19,
+							["plotSize"] = 1,
+							["buildTime"] = 3600,
+							["canActivate"] = false,
+							["notification"] = 1,
+							["name"] = "附魔研究室",
+							["timeStart"] = 1420128783,
+							["texPrefix"] = "GarrBuilding_Enchanting_2_H",
+							["isBuilding"] = false,
+							["icon"] = "Interface\\ICONS\\Trade_Engraving.blp",
+							["rank"] = 2,
+						},
+						[63] = {
+							["hasFollowerSlot"] = false,
+							["buildingState"] = 0,
+							["shipment"] = {
+								["shipmentsAvailable"] = 6,
+								["itemName"] = "药圃",
+								["duration"] = 14400,
+								["shipmentsReadyEstimate"] = 0,
+								["notification"] = 1,
+								["creationTime"] = 1420415614,
+								["shipmentsReady"] = 0,
+								["texture"] = "Interface\\ICONS\\INV_Misc_Herb_SansamRoot.blp",
+								["notificationValue"] = 0,
+								["shipmentsInProgress"] = 1,
+								["notificationDismissed"] = false,
+								["timeleftString"] = "2小时31分钟",
+								["shipmentsTotal"] = 1,
+								["itemID"] = 116054,
+								["itemQuality"] = 1,
+								["name"] = "药圃",
+								["shipmentCapacity"] = 7,
+							},
+							["id"] = 29,
+							["plotID"] = 63,
+							["plotSize"] = 2,
+							["buildTime"] = 3600,
+							["canActivate"] = false,
+							["name"] = "药圃",
+							["timeStart"] = 1420120406,
+							["texPrefix"] = "GarrBuilding_Farm_1_H",
+							["isBuilding"] = false,
+							["icon"] = "Interface\\ICONS\\INV_Misc_Herb_SansamRoot.blp",
+							["rank"] = 1,
+						},
+						[23] = {
+							["hasFollowerSlot"] = false,
+							["buildingState"] = 0,
+							["shipment"] = {
+							},
+							["id"] = 26,
+							["plotID"] = 23,
+							["plotSize"] = 3,
+							["buildTime"] = 3600,
+							["canActivate"] = false,
+							["name"] = "兵营",
+							["timeStart"] = 1419955900,
+							["texPrefix"] = "GarrBuilding_Barracks_1_H",
+							["isBuilding"] = false,
+							["icon"] = "Interface\\ICONS\\Garrison_Building_Barracks.blp",
+							["rank"] = 1,
+						},
+					},
+					["missionsExpanded"] = true,
+					["info"] = {
+						["playerName"] = "丨還遈專業丨",
+						["playerFaction"] = "Horde",
+						["realmName"] = "格雷迈恩",
+						["playerClass"] = "MONK",
+					},
+					["trackDaily"] = {
+					},
+					["trackWeekly"] = {
+						["INN"] = true,
+						["WARMILL"] = false,
+					},
+					["weeklyNextReset"] = 1420743593,
+					["currencyAmount"] = 298,
+					["garrisonCacheLastLooted"] = 1420415512,
+				},
+			},
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

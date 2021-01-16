@@ -1,0 +1,145 @@
+
+WQTrackerDB = {
+	["profileKeys"] = {
+		["Exinature - 格雷迈恩"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["AlertTutorialStep"] = 5,
+			["GotTutorial"] = true,
+			["quests_tracked"] = {
+				["Player-1500-0443D04C"] = {
+				},
+			},
+			["quests_all_characters"] = {
+				["Player-1500-0443D04C"] = {
+					[42023] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = "|cffc557FF835",
+						["rewardTexture"] = 1391688,
+					},
+					[43762] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = "|cffc557FF840",
+						["rewardTexture"] = 1314773,
+					},
+					[42620] = {
+						["expireAt"] = 1480114863,
+						["rewardAmount"] = 1900,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[41227] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = 2375,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[44856] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = 1650,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[42806] = {
+						["expireAt"] = 1480201257,
+						["rewardAmount"] = 5200,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[43804] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = 4425,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[43247] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = 2375,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[41984] = {
+						["expireAt"] = 1480166697,
+						["rewardAmount"] = 1750,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[44892] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = "1",
+						["rewardTexture"] = 1417744,
+					},
+					[41948] = {
+						["expireAt"] = 1480114887,
+						["rewardAmount"] = "4",
+						["rewardTexture"] = 1045109,
+					},
+					[41949] = {
+						["expireAt"] = 1480132137,
+						["rewardAmount"] = "|cffc557FF840",
+						["rewardTexture"] = 1130506,
+					},
+					[42880] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = "|cffc557FF845",
+						["rewardTexture"] = 1130510,
+					},
+					[41661] = {
+						["expireAt"] = 1480158057,
+						["rewardAmount"] = "110",
+						["rewardTexture"] = 1387621,
+					},
+					[44894] = {
+						["expireAt"] = 1480244463,
+						["rewardAmount"] = 3325,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[42077] = {
+						["expireAt"] = 1480179657,
+						["rewardAmount"] = 1525,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[44799] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = "|cffc557FF845",
+						["rewardTexture"] = 1130508,
+					},
+					[43943] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = "",
+						["rewardTexture"] = 1409002,
+					},
+					[40282] = {
+						["expireAt"] = 1480114887,
+						["rewardAmount"] = 950,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[43614] = {
+						["expireAt"] = 1480158063,
+						["rewardAmount"] = 3325,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[42764] = {
+						["expireAt"] = 1480287657,
+						["rewardAmount"] = "|cffc557FF840",
+						["rewardTexture"] = 1360042,
+					},
+					[41308] = {
+						["expireAt"] = 1480114857,
+						["rewardAmount"] = 1700,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[39462] = {
+						["expireAt"] = 1480136457,
+						["rewardAmount"] = "2",
+						["rewardTexture"] = 1417744,
+					},
+				},
+			},
+			["player_names"] = {
+				["Player-1500-0443D04C"] = {
+					["class"] = "DEMONHUNTER",
+					["name"] = "Exinature",
+					["realm"] = "格雷迈恩",
+				},
+			},
+			["filters"] = {
+				["pet_battles"] = false,
+			},
+		},
+	},
+}

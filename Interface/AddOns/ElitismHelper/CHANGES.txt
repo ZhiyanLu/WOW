@@ -1,0 +1,24 @@
+tag 503615079b7a649b361fdce4a19c071abaa3e064 0.12.3
+Author:	amki <amki@amki.eu>
+Date:	Wed Jan 6 22:54:04 2021 +0100
+
+Fix self reports not working
+
+commit d55fa651a68ae38441242c40968690a34cb6e9bd
+Author: amki <amki@amki.eu>
+Date:   Tue Jan 5 07:33:26 2021 +0100
+
+    Fix search for activeUser
+
+commit 58d8844001edf085dc64cd9a047b11f3afbcbade
+Author: amki <amki@amki.eu>
+Date:   Tue Jan 5 07:13:02 2021 +0100
+
+    Fix self reporting and add EMOTE output mode to remove chat bubble spam
+
+commit bcf3db4ec5d6d67d852b78f29df43f7bf1f8e402
+Author: talizea <roi@riseup.net>
+Date:   Sat Jan 2 04:26:05 2021 +0100
+
+    add Explosive Contrivance
+
