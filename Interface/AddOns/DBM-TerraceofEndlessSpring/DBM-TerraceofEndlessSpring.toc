@@ -23,7 +23,7 @@
 ## X-DBM-Mod-MinExpansion: 4
 ## X-Curse-Project-ID: 85688
 ## X-WoWI-ID: 23199
-## Version: r139-8-g3e1936a
+## Version: r139-9-gdb66356
 
 localization.en.lua
 localization.kr.lua

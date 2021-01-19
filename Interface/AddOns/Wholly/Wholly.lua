@@ -460,7 +460,7 @@ local UIParent = UIParent
 local QuestFrame = QuestFrame
 local WorldMapFrame = WorldMapFrame
 
-local GRAIL = nil	-- will be set in ADDON_LOADED
+local GRAIL = nil	-- will be set in PLAYER_LOGIN
 
 local directoryName, _ = ...
 local versionFromToc = GetAddOnMetadata(directoryName, "Version")
@@ -560,15 +560,13 @@ if nil == Wholly or Wholly.versionNumber < Wholly_File_Version then
 								end,
 		configurationScript9 = function(self)
 									if WhollyDatabase.loadAchievementData and Grail.capabilities.usesAchievements then
-										-- bf@178.com
-										-- Grail:LoadAddOn("Grail-Achievements")
+										Grail:LoadAddOn("Grail-Achievements")
 									end
 									Wholly:_InitializeLevelOneData()
 								end,
 		configurationScript10 = function(self)
 									if WhollyDatabase.loadReputationData then
-										-- bf@178.com
-										-- Grail:LoadReputations()
+										Grail:LoadReputations()
 									end
 									Wholly:_InitializeLevelOneData()
 								end,
@@ -582,14 +580,12 @@ if nil == Wholly or Wholly.versionNumber < Wholly_File_Version then
 								end,
 		configurationScript14 = function(self)
 									if WhollyDatabase.loadDateData then
-										-- bf@178.com
-										-- Grail:LoadAddOn("Grail-When")
+										Grail:LoadAddOn("Grail-When")
 									end
 								end,
 		configurationScript15 = function(self)
 									if WhollyDatabase.loadRewardData then
-										-- bf@178.com
-										-- Grail:LoadAddOn("Grail-Rewards")
+										Grail:LoadAddOn("Grail-Rewards")
 									end
 								end,
 		configurationScript16 = function(self)
@@ -679,8 +675,8 @@ if nil == Wholly or Wholly.versionNumber < Wholly_File_Version then
 			['QUEST_PROGRESS'] = function(self, frame)
 				self:BreadcrumbUpdate(frame, true)
 			end,
-			['ADDON_LOADED'] = function(self, frame, arg1)
-				if "Wholly" == arg1 then
+			['PLAYER_LOGIN'] = function(self, frame, arg1)
+--				if "Wholly" == arg1 then	-- this is a remnant from when this was ADDON_LOADED and not PLAYER_LOGIN
 GRAIL = Grail
 if not GRAIL or GRAIL.versionNumber < requiredGrailVersion then
 local errorMessage = format(self.s.REQUIRES_FORMAT, requiredGrailVersion)
@@ -953,7 +949,7 @@ WorldMapFrame:AddDataProvider(self.mapPinsProvider)
 					self:_InitializeLevelOneData()
 					if WDB.useWidePanel then self:ToggleCurrentFrame() end
 
-				end
+--				end	-- matching the if arg1 == "Wholly" then
 			end,
 			['PLAYER_ENTERING_WORLD'] = function(self, frame)
 				self.zoneInfo.zone.mapId = Grail.GetCurrentMapAreaID()
@@ -4445,7 +4441,7 @@ end
 	local nf = CreateFrame("Frame")
 	Wholly.notificationFrame = nf
 	nf:SetScript("OnEvent", function(frame, event, ...) Wholly:_OnEvent(frame, event, ...) end)
-	nf:RegisterEvent("ADDON_LOADED")	--bf@178.com 8
+	nf:RegisterEvent("PLAYER_LOGIN")
 
 	local locale = GetLocale()
 	local S = Wholly.s

@@ -56,6 +56,9 @@ END
 VER 3 0000000000000039 "姓名版堆叠" "INV_MISC_QUESTIONMARK"
 /run SetCVar("nameplateMaxDistance", 40) SetCVar("nameplateOtherTopInset", -1) SetCVar("nameplateOtherBottomInset", -1)
 END
+VER 3 0000000000000052 "宝库" "INV_MISC_QUESTIONMARK"
+/run LoadAddOn("Blizzard_WeeklyRewards"); WeeklyRewardsFrame:Show()
+END
 VER 3 000000000000003E "屏蔽文字过滤" "INV_MISC_QUESTIONMARK"
 /console SET profanityFilter "0"
 END

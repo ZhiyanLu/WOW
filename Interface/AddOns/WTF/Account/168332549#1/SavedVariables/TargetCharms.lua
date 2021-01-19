@@ -1,2 +1,0 @@
-
-TargetCharms_OptionsGlobal = nil

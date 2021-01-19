@@ -357,9 +357,9 @@ ShadowedUFDB = {
 					["anchorTo"] = "$parent",
 				},
 				["pet"] = {
-					["anchorPoint"] = "BR",
+					["anchorPoint"] = "BL",
 					["anchorTo"] = "#SUFUnitplayer",
-					["y"] = 5,
+					["y"] = -45,
 				},
 				["raidpet"] = {
 					["anchorPoint"] = "C",
@@ -3054,14 +3054,22 @@ ShadowedUFDB = {
 					},
 				},
 				["focustarget"] = {
-					["portrait"] = {
-						["type"] = "3D",
-						["alignment"] = "LEFT",
-						["fullAfter"] = 100,
+					["indicators"] = {
+						["raidTarget"] = {
+							["anchorPoint"] = "TC",
+							["x"] = 0,
+							["anchorTo"] = "$parent",
+							["y"] = -15,
+							["size"] = 20,
+						},
+						["class"] = {
+							["anchorPoint"] = "BL",
+							["x"] = 0,
+							["anchorTo"] = "$parent",
+							["y"] = 0,
+							["size"] = 16,
+						},
 						["height"] = 0.5,
-						["fullBefore"] = 0,
-						["order"] = 15,
-						["width"] = 0.2,
 					},
 					["range"] = {
 						["enabled"] = true,
@@ -3156,27 +3164,19 @@ ShadowedUFDB = {
 						}, -- [5]
 					},
 					["height"] = 47,
-					["indicators"] = {
-						["raidTarget"] = {
-							["anchorPoint"] = "TC",
-							["x"] = 0,
-							["anchorTo"] = "$parent",
-							["y"] = -15,
-							["size"] = 20,
-						},
-						["class"] = {
-							["anchorPoint"] = "BL",
-							["x"] = 0,
-							["anchorTo"] = "$parent",
-							["y"] = 0,
-							["size"] = 16,
-						},
-						["height"] = 0.5,
-					},
 					["highlight"] = {
 						["height"] = 0.5,
 						["mouseover"] = true,
 						["size"] = 10,
+					},
+					["portrait"] = {
+						["type"] = "3D",
+						["alignment"] = "LEFT",
+						["fullAfter"] = 100,
+						["height"] = 0.5,
+						["fullBefore"] = 0,
+						["order"] = 15,
+						["width"] = 0.2,
 					},
 					["altPowerBar"] = {
 						["order"] = 100,
@@ -3290,7 +3290,7 @@ ShadowedUFDB = {
 					["incAbsorb"] = {
 						["height"] = 0.5,
 					},
-					["width"] = 150,
+					["width"] = 130,
 					["fader"] = {
 						["height"] = 0.5,
 					},

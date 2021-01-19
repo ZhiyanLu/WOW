@@ -266,9 +266,9 @@ ShadowedUFDB = {
 					["anchorTo"] = "$parent",
 				},
 				["pet"] = {
-					["y"] = 5,
+					["y"] = -45,
 					["anchorTo"] = "#SUFUnitplayer",
-					["anchorPoint"] = "BR",
+					["anchorPoint"] = "BL",
 				},
 				["arenapet"] = {
 					["anchorPoint"] = "RB",
@@ -4265,7 +4265,7 @@ ShadowedUFDB = {
 						["order"] = 0,
 						["height"] = 1,
 					},
-					["width"] = 150,
+					["width"] = 130,
 					["altPowerBar"] = {
 						["order"] = 100,
 						["background"] = true,
@@ -4300,10 +4300,14 @@ ShadowedUFDB = {
 					},
 				},
 				["focustarget"] = {
-					["highlight"] = {
+					["portrait"] = {
+						["type"] = "3D",
+						["alignment"] = "LEFT",
+						["fullAfter"] = 100,
 						["height"] = 0.5,
-						["mouseover"] = true,
-						["size"] = 10,
+						["fullBefore"] = 0,
+						["order"] = 15,
+						["width"] = 0.2,
 					},
 					["range"] = {
 						["enabled"] = true,
@@ -4391,6 +4395,17 @@ ShadowedUFDB = {
 					["fader"] = {
 						["height"] = 0.5,
 					},
+					["highlight"] = {
+						["height"] = 0.5,
+						["mouseover"] = true,
+						["size"] = 10,
+					},
+					["height"] = 47,
+					["altPowerBar"] = {
+						["order"] = 100,
+						["background"] = true,
+						["height"] = 0.4,
+					},
 					["indicators"] = {
 						["raidTarget"] = {
 							["anchorPoint"] = "TC",
@@ -4407,21 +4422,6 @@ ShadowedUFDB = {
 							["size"] = 16,
 						},
 						["height"] = 0.5,
-					},
-					["height"] = 47,
-					["altPowerBar"] = {
-						["order"] = 100,
-						["background"] = true,
-						["height"] = 0.4,
-					},
-					["portrait"] = {
-						["type"] = "3D",
-						["alignment"] = "LEFT",
-						["fullAfter"] = 100,
-						["height"] = 0.5,
-						["fullBefore"] = 0,
-						["order"] = 15,
-						["width"] = 0.2,
 					},
 					["emptyBar"] = {
 						["reactionType"] = "none",

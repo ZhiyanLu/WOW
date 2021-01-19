@@ -1,4 +1,0 @@
-
-ClassMonitorData = {
-	["MultisamplingChecked"] = true,
-}

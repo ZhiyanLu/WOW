@@ -1,9 +1,0 @@
-
-MasterPlanAG = {
-	["格雷迈恩"] = {
-		["Exinature"] = {
-			["class"] = "DEMONHUNTER",
-			["faction"] = "Horde",
-		},
-	},
-}

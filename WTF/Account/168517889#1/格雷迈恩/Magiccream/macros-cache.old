@@ -1,9 +1,3 @@
-VER 3 0100000000000014 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [talent:2/2]乌索尔旋风;[talent:2/3]野性冲锋
-/use [nostealth]棱彩装饰
-/use [nostealth]泡泡棒
-END
 VER 3 010000000000000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [talent:7/2]艾露恩之怒;[talent:7/3]新月
@@ -11,6 +5,12 @@ END
 VER 3 0100000000000013 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [talent:2/2]甘霖;[talent:2/3]野性冲锋
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+END
+VER 3 0100000000000014 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:2/2]乌索尔旋风;[talent:2/3]野性冲锋
 /use [nostealth]棱彩装饰
 /use [nostealth]泡泡棒
 END
@@ -82,14 +82,14 @@ VER 3 0100000000000008 "激活鼠标" "INV_MISC_QUESTIONMARK"
 /use 缠结精华之牙
 /script SendChatMessage("给你激活了！！", "WHISPER", nil, UnitName("mouseover"))
 END
-VER 3 0100000000000018 "爆发" "INV_MISC_QUESTIONMARK"
+VER 3 0100000000000016 "猛虎之怒" "INV_MISC_QUESTIONMARK"
+/cast 猛虎之怒
+/cast 火红烈焰(艾泽里特精华)
+END
+VER 3 0100000000000018 "超凡" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use 超凡之盟
 /use 自省强化
 /use 增效羁绊(格里恩)
 /use 13
-END
-VER 3 0100000000000016 "猛虎之怒" "INV_MISC_QUESTIONMARK"
-/cast 猛虎之怒
-/cast 火红烈焰(艾泽里特精华)
 END

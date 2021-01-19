@@ -1,2 +1,0 @@
-
-NewPowerInfo_Global = nil

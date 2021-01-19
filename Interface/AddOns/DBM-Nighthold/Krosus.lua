@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1713, "DBM-Nighthold", nil, 786)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200806141949")
+mod:SetRevision("20210118141911")
 mod:SetCreatureID(101002)
 mod:SetEncounterID(1842)
 --mod:SetUsedIcons(8, 7, 6, 3, 2, 1)
@@ -72,7 +72,7 @@ mod.vb.firstBeam = 0--0 Not sent, 1 Left, 2 Right
 --/run DBMUpdateKrosusBeam(wasLeft)
 --Global on purpose for external mod support
 --DBM:GetModByName("1713"):SendBigWigsSync("firstBeamWasLeft")
-function DBMUpdateKrosusBeam(wasLeft)
+_G["DBMUpdateKrosusBeam"] = function(wasLeft)
 	if wasLeft then
 		mod.vb.firstBeam = 1
 		if not mod:IsLFR() then

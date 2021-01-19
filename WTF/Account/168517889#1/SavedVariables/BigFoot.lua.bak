@@ -86,13 +86,13 @@ BigFoot_Config = {
 		["ARAccept"] = 1,
 		["checkedVersion"] = "851",
 		["SellAccept"] = 1,
-		["ShowTradeAnnounce"] = 1,
 		["EnableAutoRecharge"] = 1,
 		["EnableSellerHelper"] = 1,
+		["ShowTradeAnnounce"] = 1,
 	},
 	["BF_System"] = {
-		["EnableLoadLater"] = 0,
 		["checkedVersion"] = "851",
+		["EnableLoadLater"] = 0,
 	},
 	["MobHealth"] = {
 		["TransparentMode"] = 0,
@@ -335,14 +335,14 @@ BigFoot_Error = {
 		},
 		["!!!Libs"] = {
 			["combat"] = false,
-			["zone"] = "雷文德斯",
+			["zone"] = "奥格瑞玛",
 			["class"] = "死亡骑士",
 			["race"] = "兽人",
-			["time"] = 1610772458,
+			["time"] = 1611072497,
 			["trace"] = "[string \"@Interface\\AddOns\\BigFoot\\BigFootError.lua\"]:1: in function `BigFootErrorFrame_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>\n[string \"=[C]\"]: in function `FocusUnit'\n[string \"@Interface\\FrameXML\\UnitPopup.lua\"]:1945: in function `func'\n[string \"@Interface\\SharedXML\\UIDropDownMenu.lua\"]:905: in function <Interface\\SharedXML\\UIDropDownMenu.lua:870>\n[string \"=[C]\"]: in function `UIDropDownMenuButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n[string \"=[C]\"]: ?\n",
 			["level"] = 60,
 			["forbiddenfunc"] = "FocusUnit()",
-			["version"] = "zhCN9.0.0.851",
+			["version"] = "zhCN9.0.0.852",
 		},
 		["Wholly"] = {
 			["combat"] = true,
@@ -7520,5 +7520,9 @@ BF_LogonInfo = {
 	1609949174, -- [414]
 	1610364684, -- [415]
 	1610771697, -- [416]
+	1610858695, -- [417]
+	1610969256, -- [418]
+	1610987234, -- [419]
+	1611072421, -- [420]
 }
 ModelChangeVariable = nil

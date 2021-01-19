@@ -20,7 +20,7 @@
 ## X-DBM-Mod-MinExpansion: 1
 ## X-Curse-Project-ID: 16442
 ## X-WoWI-ID: 11700
-## Version: r678-5-g98908a6
+## Version: r678-6-gfc0edbf
 
 localization.en.lua
 localization.de.lua

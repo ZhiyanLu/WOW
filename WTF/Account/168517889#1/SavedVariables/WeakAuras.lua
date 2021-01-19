@@ -28,17 +28,6 @@ WeakAurasSaved = {
 	},
 	["editor_tab_spaces"] = 4,
 	["login_squelch_time"] = 10,
-	["lastArchiveClear"] = 1602513824,
-	["minimap"] = {
-		["minimapPos"] = -73735,
-		["hide"] = false,
-	},
-	["lastUpgrade"] = 1605190555,
-	["personalRessourceDisplayFrame"] = {
-	},
-	["clearOldHistory"] = 30,
-	["registered"] = {
-	},
 	["displays"] = {
 		["(彼界)寰宇操控"] = {
 			["iconSource"] = -1,
@@ -185,14 +174,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -206,37 +205,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "1TNqczChe7L",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(通灵)准备吐息"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 86.166381835938,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -289,10 +288,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -364.99938964844,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -300,7 +333,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -422,18 +456,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 22,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -495,45 +518,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = -364.99938964844,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -551,23 +545,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 220,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)准备吐息",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)准备吐息",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -944,7 +933,8 @@ WeakAurasSaved = {
 			["version"] = 1,
 			["subRegions"] = {
 			},
-			["rowSpace"] = 1,
+			["config"] = {
+			},
 			["uid"] = "TKAVMWJO4Xg",
 			["load"] = {
 				["talent"] = {
@@ -964,13 +954,39 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["rotation"] = 0,
+			["useLimit"] = false,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["radius"] = 200,
+			["animate"] = false,
+			["rowSpace"] = 1,
+			["scale"] = 1,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["arcLength"] = 360,
+			["limit"] = 5,
+			["constantFactor"] = "RADIUS",
+			["yOffset"] = 165,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["id"] = "纳斯利亚堡",
+			["gridWidth"] = 5,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -991,42 +1007,15 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["animate"] = false,
-			["useLimit"] = false,
-			["scale"] = 1,
-			["xOffset"] = 82,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["radius"] = 200,
-			["limit"] = 5,
-			["constantFactor"] = "RADIUS",
-			["yOffset"] = 165,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "纳斯利亚堡",
-			["gridWidth"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["arcLength"] = 360,
-			["config"] = {
-			},
+			["borderInset"] = 1,
+			["rotation"] = 0,
 			["anchorPoint"] = "CENTER",
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["borderInset"] = 1,
+			["xOffset"] = 82,
 		},
 		["女勋爵-共享认知"] = {
 			["iconSource"] = -1,
@@ -1561,19 +1550,29 @@ WeakAurasSaved = {
 		},
 		["(彼界)喷涌黑暗"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -1626,10 +1625,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -1637,7 +1670,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -1713,18 +1747,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -1786,45 +1809,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -1842,23 +1836,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(彼界)喷涌黑暗",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(彼界)喷涌黑暗",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -2215,19 +2204,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)魔像地板AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -2286,10 +2285,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -2297,7 +2330,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -2438,18 +2472,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -2511,45 +2534,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -2567,23 +2561,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)魔像地板AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)魔像地板AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -2598,19 +2587,29 @@ WeakAurasSaved = {
 		},
 		["(伤逝)AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -2669,10 +2668,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -2680,7 +2713,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -2821,18 +2855,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -2894,45 +2917,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -2950,23 +2944,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -3178,42 +3167,6 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["parent"] = "纳斯利亚堡",
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
-			["cooldown"] = true,
-			["conditions"] = {
-			},
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "干将-粉碎流星",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 75,
-			["cooldownTextDisabled"] = true,
-			["uid"] = "YQ14Lxgl81u",
-			["inverse"] = false,
-			["cooldownEdge"] = false,
-			["displayIcon"] = 796637,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -3234,6 +3187,42 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
+			},
+			["parent"] = "纳斯利亚堡",
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
+			["cooldown"] = true,
+			["conditions"] = {
+			},
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["id"] = "干将-粉碎流星",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 75,
+			["cooldownTextDisabled"] = true,
+			["uid"] = "YQ14Lxgl81u",
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["displayIcon"] = 796637,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["authorOptions"] = {
 			},
 		},
 		["凯子-猩红乱舞"] = {
@@ -3611,19 +3600,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)跑跑跑"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -3682,10 +3681,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.70980392156863, -- [2]
@@ -3693,7 +3726,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -3788,18 +3822,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -3861,45 +3884,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -3917,23 +3911,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)跑跑跑",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)跑跑跑",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -4133,14 +4122,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -4154,21 +4153,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "NRSL6zHS2VQ",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(凋魂)召唤软泥"] = {
 			["outline"] = "OUTLINE",
@@ -4748,14 +4737,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -4769,21 +4768,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "FtEB2S0wZss",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["圣物匠-毁灭之锋"] = {
 			["iconSource"] = 0,
@@ -5173,19 +5162,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)准备盯人"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -5238,10 +5237,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -5249,7 +5282,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -5325,18 +5359,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -5398,45 +5421,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -5454,23 +5448,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)准备盯人",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)准备盯人",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -5485,19 +5474,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)剑士顺劈"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -5546,10 +5545,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -5557,7 +5590,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -5679,18 +5713,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -5752,45 +5775,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -5808,23 +5802,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)剑士顺劈",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)剑士顺劈",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -6693,14 +6682,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -6714,21 +6713,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "jiaHSdLNFla",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(赎罪)跳舞"] = {
 			["sparkWidth"] = 1,
@@ -7307,19 +7296,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)点名dot"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -7362,10 +7361,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -7373,7 +7406,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -7519,18 +7553,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -7590,45 +7613,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -7646,23 +7640,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)点名dot",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)点名dot",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -8238,19 +8227,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -8263,28 +8247,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "oSg09MIKlPJ",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3575389",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(伤逝)点名自保"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -8325,10 +8324,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -8336,7 +8369,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -8482,18 +8516,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -8555,45 +8578,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -8611,23 +8605,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 320,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)点名自保",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)点名自保",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -8845,19 +8834,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -8870,12 +8854,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "lZENIi(LQ9X",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 461806,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["啸翼-抽干"] = {
 			["iconSource"] = -1,
@@ -9309,14 +9298,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -9330,21 +9329,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "HMSDsUYw3MV",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(凋魂)爆炸软泥"] = {
 			["outline"] = "OUTLINE",
@@ -10285,19 +10274,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)过载之怒"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -10356,10 +10355,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				1, -- [2]
@@ -10367,7 +10400,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -10494,18 +10528,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -10567,45 +10590,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -10623,23 +10617,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)过载之怒",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)过载之怒",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -11605,19 +11594,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -11630,28 +11614,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "5aPKuEJKErU",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 3528307,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(通灵)狂风"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -11700,10 +11699,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.90196078431373, -- [2]
@@ -11711,7 +11744,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -11833,18 +11867,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -11906,45 +11929,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -11962,23 +11956,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)狂风",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)狂风",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -12199,19 +12188,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -12224,28 +12208,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "FABiSlOBX)j",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "613397",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)奥能波动"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -12268,14 +12267,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -12301,10 +12300,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -12312,7 +12345,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -12388,18 +12422,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -12461,45 +12484,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -12517,23 +12511,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)奥能波动",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)奥能波动",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -12921,14 +12910,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -12942,21 +12941,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "ZTumzvczD)o",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["毁灭者-风蚀"] = {
 			["iconSource"] = 0,
@@ -13161,19 +13150,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -13186,12 +13170,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "w)frAKWSf4f",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "1778230",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["大帝-穿刺"] = {
 			["iconSource"] = 0,
@@ -13672,9 +13661,9 @@ WeakAurasSaved = {
 				},
 			},
 			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
+			["icon"] = true,
 			["stickyDuration"] = false,
-			["parent"] = "纳斯利亚堡",
+			["useTooltip"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["conditions"] = {
@@ -13715,7 +13704,28 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
-			["icon"] = true,
+			["authorOptions"] = {
+			},
+			["parent"] = "纳斯利亚堡",
+			["uid"] = "QnJzGWoyQhi",
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
+			["auto"] = true,
+			["tocversion"] = 90002,
+			["id"] = "圣物匠-转阶段",
+			["semver"] = "1.0.0",
+			["alpha"] = 1,
+			["width"] = 75,
+			["cooldownEdge"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["displayIcon"] = "2101973",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -13735,27 +13745,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["uid"] = "QnJzGWoyQhi",
-			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 90002,
-			["id"] = "圣物匠-转阶段",
-			["semver"] = "1.0.0",
-			["alpha"] = 1,
-			["width"] = 75,
-			["useTooltip"] = true,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["cooldownEdge"] = false,
-			["displayIcon"] = "2101973",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["authorOptions"] = {
 			},
 		},
 		["猎手-凶恶猛扑（自己）"] = {
@@ -14623,19 +14612,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.98039215686275, -- [2]
-				0.93333333333333, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -14648,12 +14632,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "ZE)A(mt0ss3",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				0.98039215686275, -- [2]
+				0.93333333333333, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 3614365,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["泥拳-毁灭踩踏"] = {
 			["iconSource"] = 0,
@@ -15203,19 +15192,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -15228,12 +15212,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "8jnfGzYf7IE",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3565727",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(仙林)纱雾撕咬"] = {
 			["iconSource"] = -1,
@@ -15380,14 +15369,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\Gasp.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -15401,21 +15400,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "zYvABRhduJ3",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\Gasp.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(凋魂)凋零污秽2"] = {
 			["sparkWidth"] = 10,
@@ -15859,14 +15848,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -15880,21 +15879,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "GOQkqCnHtru",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["干将-粉碎爆炸"] = {
 			["iconSource"] = 0,
@@ -16130,19 +16119,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -16155,12 +16139,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "2JL(rtEskI1",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 1519262,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)充能践踏"] = {
 			["outline"] = "OUTLINE",
@@ -16303,19 +16292,29 @@ WeakAurasSaved = {
 		},
 		["(伤逝)旋风斩"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -16367,10 +16366,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -16378,7 +16411,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -16500,18 +16534,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -16573,7 +16596,137 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
+			},
+			["sparkOffsetY"] = 0,
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["borderInFront"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["icon_side"] = "RIGHT",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["auto"] = true,
+			["sparkHeight"] = 14,
+			["texture"] = "Minimalist",
+			["width"] = 250,
+			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["sparkHidden"] = "NEVER",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["id"] = "(伤逝)旋风斩",
+			["config"] = {
+			},
+			["inverse"] = false,
+			["spark"] = false,
+			["orientation"] = "HORIZONTAL",
+			["conditions"] = {
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["uid"] = "wnaGRm0M4Fv",
+		},
+		["(凋魂)蘑菇"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "",
+			["yOffset"] = 197,
+			["anchorPoint"] = "CENTER",
 			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["use_unit"] = true,
+						["use_track"] = true,
+						["spellId"] = 327995,
+						["subeventPrefix"] = "SPELL",
+						["check"] = "event",
+						["use_genericShowOn"] = true,
+						["genericShowOn"] = "showOnCooldown",
+						["names"] = {
+							"Vulnerable", -- [1]
+						},
+						["destUnit"] = "player",
+						["name"] = "Obliteration Blast",
+						["spellIds"] = {
+						},
+						["use_spellId"] = true,
+						["unit"] = "nameplate",
+						["duration"] = "4",
+						["spellName"] = "Discharge Apetagonizer Core",
+						["debuffType"] = "HARMFUL",
+						["auraspellids"] = {
+							"331379", -- [1]
+						},
+						["type"] = "status",
+						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Cast",
+						["custom_hide"] = "timed",
+						["realSpellName"] = "Discharge Apetagonizer Core",
+						["use_spellName"] = true,
+						["events"] = "UNIT_SPELLCAST_START,UNIT_SPELLCAST_SUCCEEDED,UNIT_SPELLCAST_INTERRUPTED, UNIT_SPELLCAST_FAILED",
+						["use_sourceUnit"] = false,
+						["rune"] = 0,
+						["use_destUnit"] = false,
+						["sourceUnit"] = "player",
+						["use_absorbMode"] = true,
+					},
+					["untrigger"] = {
+						["unit"] = "nameplate",
+					},
+				}, -- [1]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 40,
 			["xOffset"] = 0,
 			["animation"] = {
 				["start"] = {
@@ -16609,129 +16762,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["backdropInFront"] = false,
 			["authorOptions"] = {
 			},
-			["auto"] = true,
-			["sparkOffsetY"] = 0,
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
-			["borderInFront"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["icon_side"] = "RIGHT",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["sparkHidden"] = "NEVER",
-			["sparkHeight"] = 14,
-			["texture"] = "Minimalist",
-			["width"] = 250,
-			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "(伤逝)旋风斩",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
-			["config"] = {
-			},
-			["inverse"] = false,
-			["spark"] = false,
-			["orientation"] = "HORIZONTAL",
-			["conditions"] = {
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["uid"] = "wnaGRm0M4Fv",
-		},
-		["(凋魂)蘑菇"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "",
-			["yOffset"] = 197,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["use_unit"] = true,
-						["use_track"] = true,
-						["spellId"] = 327995,
-						["subeventPrefix"] = "SPELL",
-						["check"] = "event",
-						["use_genericShowOn"] = true,
-						["genericShowOn"] = "showOnCooldown",
-						["names"] = {
-							"Vulnerable", -- [1]
-						},
-						["destUnit"] = "player",
-						["name"] = "Obliteration Blast",
-						["spellIds"] = {
-						},
-						["use_spellId"] = true,
-						["unit"] = "nameplate",
-						["duration"] = "4",
-						["spellName"] = "Discharge Apetagonizer Core",
-						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
-						["auraspellids"] = {
-							"331379", -- [1]
-						},
-						["custom_type"] = "stateupdate",
-						["useExactSpellId"] = true,
-						["event"] = "Cast",
-						["custom_hide"] = "timed",
-						["realSpellName"] = "Discharge Apetagonizer Core",
-						["use_spellName"] = true,
-						["events"] = "UNIT_SPELLCAST_START,UNIT_SPELLCAST_SUCCEEDED,UNIT_SPELLCAST_INTERRUPTED, UNIT_SPELLCAST_FAILED",
-						["use_sourceUnit"] = false,
-						["rune"] = 0,
-						["use_destUnit"] = false,
-						["sourceUnit"] = "player",
-						["use_absorbMode"] = true,
-					},
-					["untrigger"] = {
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["icon_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
-			["backdropInFront"] = false,
-			["zoom"] = 0,
 			["barColor"] = {
 				0.9921568627451, -- [1]
 				0, -- [2]
@@ -16739,7 +16772,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -16861,18 +16895,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -16934,45 +16957,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -16990,23 +16984,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)蘑菇",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)蘑菇",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -17021,19 +17010,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)二号点名"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -17074,10 +17073,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.28235294117647, -- [1]
 				1, -- [2]
@@ -17085,7 +17118,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -17198,18 +17232,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -17271,45 +17294,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -17327,23 +17321,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)二号点名",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)二号点名",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -17851,8 +17840,7 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["text2Containment"] = "INSIDE",
 			["text1Font"] = "聊天",
-			["config"] = {
-			},
+			["displayIcon"] = "Interface\\ICONS\\NeonRedArrowH.tga",
 			["mirror"] = false,
 			["text2Color"] = {
 				1, -- [1]
@@ -17860,7 +17848,6 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["xOffset"] = 155.5556640625,
 			["color"] = {
 				1, -- [1]
 				0, -- [2]
@@ -17868,6 +17855,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["alpha"] = 1,
+			["config"] = {
+			},
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -17904,7 +17893,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["displayIcon"] = "Interface\\ICONS\\NeonRedArrowH.tga",
+			["xOffset"] = 155.5556640625,
 		},
 		["啸翼-刺耳回声"] = {
 			["iconSource"] = 0,
@@ -18156,10 +18145,10 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -18192,12 +18181,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -18210,12 +18194,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "lmlTKiO95F8",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "136116",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(赤红)stopcasting1"] = {
 			["sparkWidth"] = 10,
@@ -19230,19 +19219,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)狂乱飞踢"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 566558,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -19291,10 +19290,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.55294117647059, -- [2]
@@ -19302,7 +19335,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -19424,18 +19458,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 566558,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -19495,45 +19518,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -19551,23 +19545,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)狂乱飞踢",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)狂乱飞踢",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -19725,14 +19714,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -19746,37 +19745,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "1d8UzvoBptm",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(赎罪)急速射击"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -19835,10 +19834,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.007843137254902, -- [2]
@@ -19846,7 +19879,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -19987,18 +20021,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -20060,45 +20083,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -20116,23 +20110,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)急速射击",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)急速射击",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -20517,14 +20506,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -20538,37 +20537,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "Lt7Ks8MkH34",
 			["inverse"] = false,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["xOffset"] = -200,
+		},
+		["(凋魂)真菌风暴"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			["yOffset"] = 169,
+			["anchorPoint"] = "CENTER",
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
 			["actions"] = {
 				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
 					["do_sound"] = true,
 				},
 				["finish"] = {
 				},
 				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["(凋魂)真菌风暴"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-			["yOffset"] = 169,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -20627,10 +20626,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.03921568627451, -- [2]
@@ -20638,7 +20671,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -20712,18 +20746,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -20785,45 +20808,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -20841,23 +20835,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)真菌风暴",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)真菌风暴",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -21122,19 +21111,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)点名不动"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -21175,10 +21174,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -21186,7 +21219,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -21332,18 +21366,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -21405,45 +21428,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -21461,23 +21455,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)点名不动",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)点名不动",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -21492,19 +21481,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)锁链"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -21564,10 +21563,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.52549019607843, -- [2]
@@ -21575,7 +21608,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -21649,18 +21683,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -21724,45 +21747,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -21780,23 +21774,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)锁链",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)锁链",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -22681,19 +22670,29 @@ WeakAurasSaved = {
 		},
 		["(凋魂)喷射魔药"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Pling5.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -22716,14 +22715,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -22749,10 +22748,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -22760,7 +22793,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -22868,18 +22902,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Pling5.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -22941,45 +22964,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -22997,23 +22991,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)喷射魔药",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)喷射魔药",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -23486,14 +23475,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -23507,21 +23506,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "97IORJeGIbt",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(通灵)盯人快跑"] = {
 			["sparkWidth"] = 10,
@@ -24084,19 +24073,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -24109,12 +24093,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "gv)q0xVLJXS",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 3160258,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)内爆"] = {
 			["sparkWidth"] = 10,
@@ -24738,14 +24727,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -24759,37 +24758,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "dR(1Wz60qce",
 			["inverse"] = false,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["xOffset"] = -200,
+		},
+		["(高塔)奥能波潮"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "",
+			["yOffset"] = 197,
+			["anchorPoint"] = "CENTER",
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
 			["actions"] = {
 				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
 					["do_sound"] = true,
 				},
 				["finish"] = {
 				},
 				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["(高塔)奥能波潮"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "",
-			["yOffset"] = 197,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -24812,14 +24811,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -24845,10 +24844,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -24856,7 +24889,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -24932,18 +24966,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -25005,45 +25028,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -25061,23 +25055,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)奥能波潮",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)奥能波潮",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -25235,14 +25224,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -25256,21 +25255,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "FqqPEACE5NY",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(赎罪)小鬼盯人"] = {
 			["iconSource"] = -1,
@@ -25417,14 +25406,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -25438,21 +25437,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "l7x)NTXAbnP",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["BuffIcon"] = {
 			["iconSource"] = -1,
@@ -26023,19 +26012,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -26048,12 +26032,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "GvTYTIHT5Rn",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 136116,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["ZT - Nnoggie's Party CD Front End"] = {
 			["textFlags"] = "OUTLINE",
@@ -30065,7 +30054,7 @@ WeakAurasSaved = {
 							["198898"] = false,
 							["207167"] = false,
 							["204263"] = false,
-							["202137"] = false,
+							["202137"] = true,
 							["324312"] = true,
 							["207684"] = false,
 							["99"] = false,
@@ -30580,19 +30569,29 @@ WeakAurasSaved = {
 		},
 		["(凋魂)脓液喷吐"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -30615,14 +30614,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -30648,10 +30647,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -30659,7 +30692,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -30767,18 +30801,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -30840,45 +30863,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -30896,23 +30890,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)脓液喷吐",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)脓液喷吐",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -31181,19 +31170,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)老二点名炸怪"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -31234,10 +31233,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -31245,7 +31278,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -31391,18 +31425,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -31464,45 +31487,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -31520,23 +31514,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 320,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)老二点名炸怪",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)老二点名炸怪",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -31551,19 +31540,29 @@ WeakAurasSaved = {
 		},
 		["(伤逝)回旋镖"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 566558,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -31604,10 +31603,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -31615,7 +31648,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -31761,18 +31795,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 566558,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -31834,45 +31857,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -31890,23 +31884,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)回旋镖",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)回旋镖",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -32442,19 +32431,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -32467,12 +32451,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "fA2kZUS2TPq",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 1378703,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["大帝-毁灭之手"] = {
 			["iconSource"] = 0,
@@ -32673,19 +32662,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -32698,12 +32682,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "8bZrZEBi)l8",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "136225",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["干将-魂殇"] = {
 			["iconSource"] = -1,
@@ -32974,19 +32963,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)大怪AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -33045,10 +33044,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -33056,7 +33089,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -33197,18 +33231,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -33268,45 +33291,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -33324,23 +33318,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)大怪AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)大怪AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -33681,19 +33670,29 @@ WeakAurasSaved = {
 		},
 		["(高塔)冲锋"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -33716,14 +33715,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -33749,10 +33748,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -33760,7 +33793,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -33836,18 +33870,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -33909,45 +33932,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -33965,23 +33959,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)冲锋",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)冲锋",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -34590,19 +34579,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)脊锤重压 2"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -34654,10 +34653,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.90196078431373, -- [2]
@@ -34665,7 +34698,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -34787,18 +34821,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -34860,45 +34883,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -34916,23 +34910,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)脊锤重压 2",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)脊锤重压 2",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -35922,14 +35911,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -35943,21 +35942,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "bcjvr67CbQ(",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["大帝-致命灵巧"] = {
 			["iconSource"] = 0,
@@ -36886,14 +36875,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -36907,21 +36906,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "lReW9KcSlO(",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(高塔)充能心能"] = {
 			["iconSource"] = -1,
@@ -37109,14 +37098,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -37130,21 +37129,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "cZtTHHp4f)I",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(高塔)黑水"] = {
 			["iconSource"] = -1,
@@ -37332,14 +37321,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -37353,21 +37352,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "p)f7tLEpOYG",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(仙林)驱散心能注入"] = {
 			["outline"] = "OUTLINE",
@@ -38035,19 +38024,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -38060,12 +38044,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "wbK0yomW8(3",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "1357802",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(凋魂)凋零污秽"] = {
 			["outline"] = "OUTLINE",
@@ -38392,14 +38381,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -38413,21 +38412,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "d(Vu1mEz)hB",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["猎手-吞噬灵魂"] = {
 			["iconSource"] = 0,
@@ -38801,19 +38790,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)滋长猜忌"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -38872,10 +38871,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.49803921568627, -- [2]
@@ -38883,7 +38916,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -39024,18 +39058,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -39099,45 +39122,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -39155,23 +39149,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)滋长猜忌",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)滋长猜忌",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -40619,19 +40608,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -40644,28 +40628,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "DPf)MQx)02E",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 524795,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)充能之矛"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 566558,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -40688,14 +40687,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -40721,10 +40720,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.92549019607843, -- [1]
 				0, -- [2]
@@ -40732,7 +40765,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -40808,18 +40842,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 566558,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -40881,45 +40904,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -40937,23 +40931,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)充能之矛",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)充能之矛",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -40968,19 +40957,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)剧毒分泌物"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -41032,10 +41031,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -41043,7 +41076,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -41165,18 +41199,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -41236,45 +41259,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -41292,23 +41286,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)剧毒分泌物",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)剧毒分泌物",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -41666,19 +41655,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)藤曼"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -41727,10 +41726,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -41738,7 +41771,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -41860,18 +41894,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -41931,45 +41954,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -41987,23 +41981,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)藤曼",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)藤曼",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -42991,14 +42980,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -43012,21 +43011,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "4elxLNd3KBu",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(高塔)原始心能"] = {
 			["iconSource"] = -1,
@@ -43214,14 +43203,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -43235,21 +43234,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "Xb(n2LiEPgh",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(伤逝)锯齿箭buff"] = {
 			["iconSource"] = -1,
@@ -43376,14 +43365,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -43397,37 +43396,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "JeT3TzQE717",
 			["inverse"] = false,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["xOffset"] = -200,
+		},
+		["(仙林)尾王心控"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
+			["yOffset"] = 141,
+			["anchorPoint"] = "CENTER",
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
 			["actions"] = {
 				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["sound"] = 551339,
 					["do_sound"] = true,
 				},
 				["finish"] = {
 				},
 				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["(仙林)尾王心控"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
-			["yOffset"] = 141,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -43468,10 +43467,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.92156862745098, -- [1]
 				0, -- [2]
@@ -43479,7 +43512,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -43592,18 +43626,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -43663,45 +43686,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -43719,23 +43713,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)尾王心控",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)尾王心控",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -44068,10 +44057,10 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -44094,12 +44083,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -44112,28 +44096,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "j(aL5MEeVtC",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3684825",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(赤红)哨兵地板"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -44192,10 +44191,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -44203,7 +44236,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -44330,18 +44364,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -44403,45 +44426,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -44459,23 +44453,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)哨兵地板",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)哨兵地板",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -45379,14 +45368,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -45400,21 +45399,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "N0cLNSwoTE9",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["Quantum Device"] = {
 			["iconSource"] = -1,
@@ -45639,19 +45628,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)石像鬼吐息"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -45700,10 +45699,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				0.58823529411765, -- [2]
@@ -45711,7 +45744,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -45821,18 +45855,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -45894,45 +45917,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -45950,23 +45944,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)石像鬼吐息",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)石像鬼吐息",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -46257,19 +46246,29 @@ WeakAurasSaved = {
 		},
 		["(伤逝)尾王吹风1"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -46328,10 +46327,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.047058823529412, -- [2]
@@ -46339,7 +46372,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -46448,18 +46482,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -46521,45 +46544,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -46577,23 +46571,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)尾王吹风1",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)尾王吹风1",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -46608,19 +46597,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)尾王驱散"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -46661,10 +46660,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -46672,7 +46705,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -46771,18 +46805,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -46846,45 +46869,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -46902,23 +46896,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)尾王驱散",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)尾王驱散",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -48326,14 +48315,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -48347,21 +48346,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "H6S9Gi9o)YP",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(仙林)生命注入"] = {
 			["outline"] = "OUTLINE",
@@ -48540,19 +48529,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)boss吐息"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -48611,10 +48610,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				1, -- [2]
@@ -48622,7 +48655,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -48763,18 +48797,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -48836,45 +48859,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -48892,23 +48886,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)boss吐息",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)boss吐息",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -49666,14 +49655,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -49687,21 +49686,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "FOXWcOikx1E",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["Sound when targeted by a boss"] = {
 			["text2Point"] = "CENTER",
@@ -50096,14 +50085,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -50117,21 +50116,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "K76zoklOp7X",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["议会-骄傲喷发"] = {
 			["iconSource"] = 0,
@@ -50337,19 +50326,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -50362,12 +50346,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "BFvydg6yhzq",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 3528311,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(凋魂)窒息勒压"] = {
 			["outline"] = "OUTLINE",
@@ -50532,19 +50521,29 @@ WeakAurasSaved = {
 		},
 		["(彼界)一号AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -50603,10 +50602,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -50614,7 +50647,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -50723,18 +50757,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -50796,45 +50819,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -50852,23 +50846,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(彼界)一号AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(彼界)一号AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -51569,19 +51558,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)尾王心控 2"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -51622,10 +51621,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.92156862745098, -- [1]
 				0, -- [2]
@@ -51633,7 +51666,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -51746,18 +51780,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -51817,45 +51840,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -51873,23 +51867,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)尾王心控 2",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)尾王心控 2",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -52448,19 +52437,29 @@ WeakAurasSaved = {
 		},
 		["(彼界)卡视角"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -52513,10 +52512,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -52524,7 +52557,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -52600,18 +52634,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -52673,45 +52696,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -52729,23 +52723,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(彼界)卡视角",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(彼界)卡视角",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -53301,19 +53290,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -53326,12 +53310,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "d2t(K5nqgcZ",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "136133",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["议会-断魂之舞"] = {
 			["iconSource"] = 0,
@@ -53541,19 +53530,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -53566,28 +53550,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "G3mCWrzxLRS",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 462534,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(凋魂)锯齿脊针"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -53646,10 +53645,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				0.81176470588235, -- [2]
@@ -53657,7 +53690,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -53731,18 +53765,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -53804,45 +53827,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -53860,23 +53854,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)锯齿脊针",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)锯齿脊针",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -54578,19 +54567,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)二号AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -54649,10 +54648,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.89019607843137, -- [2]
@@ -54660,7 +54693,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -54801,18 +54835,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -54872,45 +54895,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -54928,23 +54922,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)二号AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)二号AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -55160,19 +55149,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -55185,12 +55169,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "PKOzHeAu(3k",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 3528309,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["啸翼-裂耳尖啸DOT"] = {
 			["iconSource"] = -1,
@@ -56235,19 +56224,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)尾王雕像"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -56296,10 +56295,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.47058823529412, -- [1]
 				1, -- [2]
@@ -56307,7 +56340,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -56449,18 +56483,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -56522,45 +56545,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -56578,23 +56572,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)尾王雕像",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)尾王雕像",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -56829,19 +56818,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -56854,12 +56838,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "JQbR85Vx(zQ",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 3528307,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(凋魂)召唤蜘蛛"] = {
 			["sparkWidth"] = 10,
@@ -57160,19 +57149,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)卡尔aoe"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -57231,10 +57230,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				0.87058823529412, -- [2]
@@ -57242,7 +57275,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -57337,18 +57371,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -57410,45 +57433,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -57466,23 +57460,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)卡尔aoe",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)卡尔aoe",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -59012,19 +59001,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)躲地板"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -59083,10 +59082,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.047058823529412, -- [2]
@@ -59094,7 +59127,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -59237,18 +59271,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -59310,45 +59333,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -59366,23 +59360,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)躲地板",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)躲地板",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -60198,14 +60187,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -60219,21 +60218,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "vzXA0eqXTqs",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(彼界)虔诚牺牲"] = {
 			["sparkWidth"] = 10,
@@ -60746,19 +60735,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -60771,12 +60755,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "pFqgJVdoNhh",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "1357812",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["啸翼-回声定位"] = {
 			["iconSource"] = -1,
@@ -61878,14 +61867,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -61899,21 +61898,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "ZJTvm2cKUXx",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(彼界)躲地板"] = {
 			["outline"] = "OUTLINE",
@@ -63128,19 +63117,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.98039215686275, -- [2]
-				0.93333333333333, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -63153,12 +63137,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "2Z7PAHOFayd",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				0.98039215686275, -- [2]
+				0.93333333333333, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3601528",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(仙林)心能注入"] = {
 			["iconSource"] = -1,
@@ -63305,14 +63294,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -63326,21 +63325,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "AoCStUAz0E8",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["干将-回荡湮灭读条"] = {
 			["iconSource"] = 0,
@@ -63568,19 +63557,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -63593,12 +63577,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "9P5xG4FjbIC",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 136025,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["大帝-阴燃之忿"] = {
 			["iconSource"] = 0,
@@ -63806,19 +63795,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -63831,28 +63815,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "bVFIn)FGG5R",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3528312",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(彼界)三号踩雷"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -63875,14 +63874,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "aura2",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"321948", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "aura2",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -63908,10 +63907,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -63919,7 +63952,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -63995,18 +64029,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -64068,45 +64091,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -64124,23 +64118,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(彼界)三号踩雷",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(彼界)三号踩雷",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -64300,14 +64289,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -64321,37 +64320,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "Zl3ZicpbBjg",
 			["inverse"] = false,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["xOffset"] = 0,
+		},
+		["(通灵)守门人AOE"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			["yOffset"] = 169,
+			["anchorPoint"] = "CENTER",
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
 			["actions"] = {
 				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
 					["do_sound"] = true,
 				},
 				["finish"] = {
 				},
 				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["(通灵)守门人AOE"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-			["yOffset"] = 169,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -64410,10 +64409,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.67450980392157, -- [2]
@@ -64421,7 +64454,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -64562,18 +64596,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -64635,45 +64658,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -64691,23 +64685,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)守门人AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)守门人AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -64722,19 +64711,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)尾王连线"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -64775,10 +64774,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -64786,7 +64819,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -64899,18 +64933,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -64970,45 +64993,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -65026,23 +65020,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)尾王连线",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)尾王连线",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -65354,19 +65343,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)喷屎"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\ESPARK1.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -65407,10 +65406,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				1, -- [2]
@@ -65418,7 +65451,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -65510,18 +65544,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\ESPARK1.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -65583,45 +65606,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -65639,23 +65633,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)喷屎",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)喷屎",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -65670,19 +65659,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)魔像地板"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 326389",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -65734,10 +65733,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				1, -- [2]
@@ -65745,7 +65778,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -65865,18 +65899,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 326389",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -65938,45 +65961,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -65994,23 +65988,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)魔像地板",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)魔像地板",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -67157,12 +67146,13 @@ WeakAurasSaved = {
 						},
 						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "timed",
-						["custom_type"] = "event",
+						["useExactSpellId"] = true,
 						["debuffType"] = "HARMFUL",
 						["use_message"] = true,
 						["type"] = "event",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = true,
+						["auraspellids"] = {
+						},
+						["unevent"] = "timed",
 						["spellIds"] = {
 						},
 						["fetchTooltip"] = false,
@@ -67171,10 +67161,9 @@ WeakAurasSaved = {
 						["message"] = "spell:334064",
 						["useName"] = false,
 						["events"] = "",
-						["unevent"] = "timed",
+						["subeventSuffix"] = "_CAST_START",
 						["check"] = "event",
-						["auraspellids"] = {
-						},
+						["custom_type"] = "event",
 						["use_messageType"] = true,
 						["messageType"] = "CHAT_MSG_RAID_BOSS_WHISPER",
 					},
@@ -67357,19 +67346,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -67382,12 +67366,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "nhhcMIla1aU",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "342917",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)知识烦扰1"] = {
 			["sparkWidth"] = 10,
@@ -67945,19 +67934,29 @@ WeakAurasSaved = {
 		},
 		["(伤逝)AOE2"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -68016,10 +68015,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -68027,7 +68060,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -68168,18 +68202,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -68241,45 +68264,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -68297,23 +68291,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)AOE2",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)AOE2",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -68831,19 +68820,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -68856,12 +68840,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "BSzX14e)mdY",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3565727",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(彼界)死亡之主"] = {
 			["sparkWidth"] = 1,
@@ -69492,14 +69481,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -69513,21 +69512,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "1xSYlQAgNcj",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(伤逝)stopcasting 5"] = {
 			["sparkWidth"] = 10,
@@ -70114,19 +70103,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -70139,39 +70123,33 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "Rzeu)O9nmUw",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 132093,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(通灵)毁伤坦克自保"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
+			["borderBackdrop"] = "Blizzard Tooltip",
 			["color"] = {
 			},
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["version"] = 1,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["sparkOffsetX"] = 0,
+			["iconSource"] = -1,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["icon_color"] = {
 				1, -- [1]
@@ -70180,53 +70158,21 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["backdropInFront"] = false,
-			["auto"] = true,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["barColor"] = {
 				1, -- [1]
 				0.16862745098039, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["desaturate"] = false,
+			["authorOptions"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
-			["sparkOffsetY"] = 0,
+			["version"] = 1,
 			["subRegions"] = {
 				{
 					["type"] = "subborder",
@@ -70365,7 +70311,18 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -70482,44 +70439,76 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["xOffset"] = 0,
-			["selfPoint"] = "CENTER",
-			["authorOptions"] = {
+			["stickyDuration"] = false,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
-			["desaturate"] = false,
 			["config"] = {
 			},
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
-			["borderInFront"] = false,
 			["backgroundColor"] = {
 				0.46274509803922, -- [1]
 				0.47843137254902, -- [2]
 				0.47058823529412, -- [3]
 				0.89758960157633, -- [4]
 			},
-			["icon_side"] = "LEFT",
+			["sparkOffsetY"] = 0,
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["borderInFront"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["icon_side"] = "LEFT",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
-			["frameStrata"] = 1,
+			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["sparkHidden"] = "NEVER",
-			["width"] = 250,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["id"] = "(通灵)毁伤坦克自保",
 			["uid"] = "qE95x4Yhb9x",
@@ -70741,19 +70730,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -70766,12 +70750,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "zeozpTCqGXl",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 2103878,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["猎手-巴加斯特之影"] = {
 			["iconSource"] = 0,
@@ -71000,19 +70989,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -71025,12 +71009,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "va1)8mhIAbt",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 1709932,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["干将-石拳读条（坦克）"] = {
 			["iconSource"] = 0,
@@ -72365,14 +72354,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -72386,21 +72385,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "mM7Ajeg13S3",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(赤红)粉碎之凝"] = {
 			["sparkWidth"] = 10,
@@ -74932,19 +74921,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -74957,12 +74941,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "WKHszvzN2lD",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 1396969,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["啸翼-血光"] = {
 			["iconSource"] = 0,
@@ -75315,26 +75304,26 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fullCircle"] = true,
+			["rowSpace"] = 1,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["internalVersion"] = 40,
+			["authorOptions"] = {
+			},
 			["animate"] = true,
-			["rowSpace"] = 1,
+			["fullCircle"] = true,
 			["scale"] = 1,
-			["stagger"] = 0,
+			["gridType"] = "RD",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["arcLength"] = 360,
-			["authorOptions"] = {
-			},
+			["useLimit"] = false,
+			["internalVersion"] = 40,
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 0,
 			["borderOffset"] = 16,
@@ -75367,13 +75356,13 @@ WeakAurasSaved = {
 			["uid"] = "hGeTYjp5xTR",
 			["config"] = {
 			},
-			["gridType"] = "RD",
+			["stagger"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["useLimit"] = false,
+			["arcLength"] = 360,
 		},
 		["(高塔)失去信心"] = {
 			["iconSource"] = -1,
@@ -75561,14 +75550,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -75582,21 +75581,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "57JAq9dAB(c",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(赎罪)诅咒施法 2"] = {
 			["sparkWidth"] = 10,
@@ -76112,14 +76101,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -76133,21 +76132,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "qU)AZpPHfst",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(仙林)准备AOE 2"] = {
 			["outline"] = "OUTLINE",
@@ -76388,17 +76377,6 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 			["fontSize"] = 12,
-			["internalVersion"] = 40,
-			["displayText"] = "%p",
-			["grow"] = "HORIZONTAL",
-			["background"] = "None",
-			["border"] = false,
-			["borderEdge"] = "1 Pixel",
-			["anchorPoint"] = "CENTER",
-			["borderSize"] = 2,
-			["limit"] = 3,
-			["groupIcon"] = 1033497,
-			["uid"] = "zSrl30KxJ6i",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -76419,6 +76397,17 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["xOffset"] = -500,
+			["borderInset"] = 1,
+			["background"] = "None",
+			["border"] = false,
+			["borderEdge"] = "1 Pixel",
+			["displayText"] = "%p",
+			["borderSize"] = 2,
+			["limit"] = 3,
+			["uid"] = "zSrl30KxJ6i",
+			["stagger"] = 0,
+			["anchorPoint"] = "CENTER",
 			["useAnchorPerUnit"] = true,
 			["gridWidth"] = 5,
 			["rowSpace"] = 1,
@@ -76430,14 +76419,14 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["anchorPerUnit"] = "UNITFRAME",
 			["sort"] = "none",
-			["xOffset"] = -500,
-			["borderInset"] = 1,
+			["internalVersion"] = 40,
+			["groupIcon"] = 1033497,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["stagger"] = 0,
+			["grow"] = "HORIZONTAL",
 		},
 		["(赎罪)盯人 2"] = {
 			["iconSource"] = -1,
@@ -76584,14 +76573,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -76605,21 +76604,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "5olzbWPZXe4",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["女勋爵-偿罪"] = {
 			["iconSource"] = -1,
@@ -77927,19 +77916,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)最终收割"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -77998,10 +77997,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.12941176470588, -- [2]
@@ -78009,7 +78042,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -78150,18 +78184,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -78223,45 +78246,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -78279,23 +78273,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)最终收割",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)最终收割",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -78421,19 +78410,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)准备躲圈"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -78486,10 +78485,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -78497,7 +78530,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -78619,18 +78653,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -78692,45 +78715,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -78748,23 +78742,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)准备躲圈",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)准备躲圈",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -79201,14 +79190,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding4.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -79222,21 +79221,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "kHUn9rRpA8o",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding4.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(高塔)疑云密布"] = {
 			["iconSource"] = -1,
@@ -79424,14 +79413,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -79445,37 +79444,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "iey348oJxhX",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(伤逝)AOE1"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -79534,10 +79533,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -79545,7 +79578,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -79686,18 +79720,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -79759,45 +79782,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -79815,23 +79809,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)AOE1",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)AOE1",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -79846,19 +79835,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)回响猛刺"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -79917,10 +79916,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				1, -- [2]
@@ -79928,7 +79961,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -80037,18 +80071,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -80112,45 +80135,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -80168,23 +80162,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)回响猛刺",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)回响猛刺",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -80199,19 +80188,30 @@ WeakAurasSaved = {
 		},
 		["(仙林)龙吐息"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+					["do_message"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -80263,10 +80263,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.086274509803922, -- [2]
@@ -80274,7 +80308,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -80396,19 +80431,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-					["do_message"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -80468,45 +80491,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -80524,23 +80518,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)龙吐息",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)龙吐息",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -80555,19 +80544,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)点名自保"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -80612,10 +80611,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -80623,7 +80656,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -80769,18 +80803,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -80840,45 +80863,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -80896,23 +80890,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)点名自保",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)点名自保",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -81540,19 +81529,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)切肉飞刀"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -81595,10 +81594,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -81606,7 +81639,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -81731,18 +81765,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -81804,45 +81827,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -81860,23 +81854,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)切肉飞刀",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)切肉飞刀",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -82844,19 +82833,29 @@ WeakAurasSaved = {
 		},
 		["(通灵)脊锤重压"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -82908,10 +82907,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.90196078431373, -- [2]
@@ -82919,7 +82952,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -83041,18 +83075,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -83114,45 +83137,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -83170,23 +83164,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(通灵)脊锤重压",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(通灵)脊锤重压",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -84058,19 +84047,29 @@ WeakAurasSaved = {
 		},
 		["(彼界)影子旋风斩"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -84123,10 +84122,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -84134,7 +84167,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -84256,18 +84290,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -84329,45 +84352,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -84385,23 +84379,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(彼界)影子旋风斩",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(彼界)影子旋风斩",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -84890,19 +84879,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -84915,12 +84899,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "MBCzAcaUeH(",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 3528311,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["PhoGuild - Raid Ability Timeline Icon"] = {
 			["outline"] = "OUTLINE",
@@ -85238,21 +85227,21 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 12,
 			["width"] = 25,
-			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["preferToUpdate"] = true,
+			["xOffset"] = 0,
+			["desc"] = "Made by: Bosmutus - Zul'jin(US)",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["icon"] = true,
 			["desaturate"] = false,
+			["cooldownEdge"] = false,
+			["preferToUpdate"] = true,
 			["uid"] = "tGYnrOdWAgj",
 			["frameStrata"] = 1,
 			["auto"] = true,
@@ -85311,7 +85300,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["desc"] = "Made by: Bosmutus - Zul'jin(US)",
+			["icon"] = true,
 		},
 		["(赤红)地雷"] = {
 			["outline"] = "OUTLINE",
@@ -85593,19 +85582,29 @@ WeakAurasSaved = {
 		},
 		["(凋魂)二号ADD"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -85664,10 +85663,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.03921568627451, -- [2]
@@ -85675,7 +85708,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -85749,18 +85783,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -85822,45 +85845,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -85878,23 +85872,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)二号ADD",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)二号ADD",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -86337,19 +86326,29 @@ WeakAurasSaved = {
 		},
 		["(高塔)AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -86408,10 +86407,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.03921568627451, -- [2]
@@ -86419,7 +86452,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -86560,18 +86594,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -86635,45 +86658,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -86691,23 +86685,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -86971,19 +86960,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -86996,12 +86980,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "CQRdaeS(2I(",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 136215,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["毁灭者-不稳定的喷发（队友）"] = {
 			["iconSource"] = 0,
@@ -87073,12 +87062,13 @@ WeakAurasSaved = {
 						},
 						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "timed",
-						["custom_type"] = "stateupdate",
+						["useExactSpellId"] = true,
 						["debuffType"] = "HARMFUL",
 						["use_message"] = true,
 						["type"] = "event",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = true,
+						["auraspellids"] = {
+						},
+						["unevent"] = "timed",
 						["spellIds"] = {
 						},
 						["fetchTooltip"] = false,
@@ -87087,10 +87077,9 @@ WeakAurasSaved = {
 						["message"] = "spell:334064",
 						["useName"] = false,
 						["events"] = "",
-						["unevent"] = "timed",
+						["subeventSuffix"] = "_CAST_START",
 						["check"] = "event",
-						["auraspellids"] = {
-						},
+						["custom_type"] = "stateupdate",
 						["use_messageType"] = true,
 						["messageType"] = "CHAT_MSG_RAID_BOSS_WHISPER",
 					},
@@ -87267,19 +87256,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -87292,12 +87276,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "0B8XwfrnCqq",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "342917",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["议会-炫目步法"] = {
 			["iconSource"] = -1,
@@ -88269,14 +88258,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -88290,21 +88289,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "3df8hq6Ngkw",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(赤红)三号AOE debuff"] = {
 			["iconSource"] = -1,
@@ -88453,14 +88442,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -88474,21 +88473,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "YPEYQ9YrsLl",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(高塔)躲地板"] = {
 			["outline"] = "OUTLINE",
@@ -88754,14 +88743,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -88775,37 +88774,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "jKOvWwirzI1",
 			["inverse"] = false,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["xOffset"] = -200,
+		},
+		["(凋魂)软泥浪潮"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "",
+			["yOffset"] = 197,
+			["anchorPoint"] = "CENTER",
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
 			["actions"] = {
 				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
 					["do_sound"] = true,
 				},
 				["finish"] = {
 				},
 				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["(凋魂)软泥浪潮"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "",
-			["yOffset"] = 197,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -88828,14 +88827,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -88861,10 +88860,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				0.46666666666667, -- [2]
@@ -88872,7 +88905,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -88980,18 +89014,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -89053,45 +89076,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -89109,23 +89103,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)软泥浪潮",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)软泥浪潮",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -89140,19 +89129,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)冲锋分摊"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -89193,10 +89192,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -89204,7 +89237,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -89303,18 +89337,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -89376,45 +89399,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -89432,23 +89426,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)冲锋分摊",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)冲锋分摊",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -90251,19 +90240,29 @@ WeakAurasSaved = {
 		},
 		["(高塔)老二正面AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -90286,14 +90285,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -90319,10 +90318,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.92549019607843, -- [1]
 				0, -- [2]
@@ -90330,7 +90363,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -90406,18 +90440,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -90479,45 +90502,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -90535,23 +90529,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)老二正面AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)老二正面AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -90672,13 +90661,25 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fullCircle"] = true,
+			["rowSpace"] = 1,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["authorOptions"] = {
+			},
+			["animate"] = true,
+			["fullCircle"] = true,
+			["scale"] = 1,
+			["gridType"] = "RD",
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["useLimit"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -90699,18 +90700,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["animate"] = true,
-			["rowSpace"] = 1,
-			["scale"] = 1,
-			["stagger"] = 0,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["arcLength"] = 360,
-			["authorOptions"] = {
-			},
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 0,
 			["borderOffset"] = 16,
@@ -90724,29 +90713,39 @@ WeakAurasSaved = {
 			["uid"] = "WRPokUyICSV",
 			["config"] = {
 			},
-			["gridType"] = "RD",
+			["stagger"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["useLimit"] = false,
+			["arcLength"] = 360,
 		},
 		["(伤逝)AOE3"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -90805,10 +90804,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -90816,7 +90849,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -90957,18 +90991,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -91030,45 +91053,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -91086,23 +91080,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)AOE3",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)AOE3",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -91117,19 +91106,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)尾王ADD"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -91181,10 +91180,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.64313725490196, -- [2]
@@ -91192,7 +91225,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -91314,18 +91348,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -91385,45 +91408,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -91441,23 +91435,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)尾王ADD",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)尾王ADD",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -91715,19 +91704,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -91740,28 +91724,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "(iN6cjUbPiT",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 132093,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)粉碎打击"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -91784,14 +91783,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -91817,10 +91816,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -91828,7 +91861,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -91904,18 +91938,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -91977,45 +92000,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -92033,23 +92027,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)粉碎打击",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)粉碎打击",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -92064,19 +92053,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)三号坦克自保"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -92135,10 +92134,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				1, -- [2]
@@ -92146,7 +92179,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -92255,18 +92289,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -92330,45 +92353,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -92386,23 +92380,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)三号坦克自保",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)三号坦克自保",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -93123,19 +93112,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -93148,12 +93132,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "Dnv0uZRiBLD",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3256113",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(赤红)源血衰竭"] = {
 			["sparkWidth"] = 10,
@@ -94025,10 +94014,10 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -94057,12 +94046,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -94075,12 +94059,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "HGz5CiDDyYC",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 3528313,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)暗踪箭"] = {
 			["sparkWidth"] = 10,
@@ -94876,19 +94865,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -94901,12 +94885,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "OPTGYo8aA6q",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3528282",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["圣物匠-重组"] = {
 			["iconSource"] = -1,
@@ -95350,14 +95339,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -95371,21 +95370,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "g(gSXYB44FJ",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["议会-决斗者的还击（坦克）"] = {
 			["iconSource"] = -1,
@@ -96250,19 +96239,29 @@ WeakAurasSaved = {
 		},
 		["(彼界)小怪AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -96321,10 +96320,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				1, -- [2]
@@ -96332,7 +96365,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -96473,18 +96507,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -96546,45 +96569,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -96602,23 +96596,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(彼界)小怪AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(彼界)小怪AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -97007,14 +96996,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -97028,21 +97027,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "Wl)jtsP2S9h",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 		},
 		["(赤红)stopcasting 3"] = {
 			["outline"] = "OUTLINE",
@@ -97632,14 +97621,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -97653,37 +97652,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "pSZLzzS8Kyr",
 			["inverse"] = false,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["xOffset"] = -200,
+		},
+		["(赎罪)尾王档线"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			["yOffset"] = 169,
+			["anchorPoint"] = "CENTER",
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
 			["actions"] = {
 				["start"] = {
-					["sound"] = 551339,
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
 					["do_sound"] = true,
 				},
 				["finish"] = {
 				},
 				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["(赎罪)尾王档线"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-			["yOffset"] = 169,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -97745,10 +97744,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -97756,7 +97789,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -97865,18 +97899,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -97938,45 +97961,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -97994,23 +97988,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 320,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)尾王档线",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)尾王档线",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -98025,19 +98014,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)卡尔暗影箭"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -98090,10 +98089,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				1, -- [2]
@@ -98101,7 +98134,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -98177,18 +98211,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -98252,45 +98275,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -98308,23 +98302,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)卡尔暗影箭",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)卡尔暗影箭",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -98860,19 +98849,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.98039215686275, -- [2]
-				0.93333333333333, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -98885,12 +98869,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "EfbCjoC05(v",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				0.98039215686275, -- [2]
+				0.93333333333333, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3601541",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["啸翼-裂耳尖啸"] = {
 			["iconSource"] = 0,
@@ -99120,19 +99109,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -99145,28 +99129,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "Im2dJk6JoUA",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 136147,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(赤红)文书地板"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -99225,10 +99224,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.96862745098039, -- [2]
@@ -99236,7 +99269,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -99377,18 +99411,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -99450,45 +99473,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -99506,23 +99500,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)文书地板",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)文书地板",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -99744,19 +99733,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.98039215686275, -- [2]
-				0.93333333333333, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -99769,12 +99753,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "a5wFAl8q8OL",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				0.98039215686275, -- [2]
+				0.93333333333333, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3601530",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["圣物匠-毁灭符文（队友）"] = {
 			["iconSource"] = -1,
@@ -100570,19 +100559,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -100595,12 +100579,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "qruLTVHmo5E",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "3684828",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(伤逝)躲开正面 2"] = {
 			["outline"] = "OUTLINE",
@@ -101267,6 +101256,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["authorOptions"] = {
+			},
+			["config"] = {
+			},
+			["parent"] = "纳斯利亚堡",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dance.ogg",
@@ -101279,19 +101273,14 @@ WeakAurasSaved = {
 					["do_custom"] = false,
 				},
 			},
-			["config"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = false,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["conditions"] = {
 			},
-			["authorOptions"] = {
-			},
-			["parent"] = "纳斯利亚堡",
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
 			["cooldownTextDisabled"] = true,
@@ -101316,19 +101305,29 @@ WeakAurasSaved = {
 		},
 		["(高塔)衰竭弹幕"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -101351,14 +101350,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -101384,10 +101383,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -101395,7 +101428,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -101471,18 +101505,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -101544,45 +101567,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -101600,23 +101594,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)衰竭弹幕",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)衰竭弹幕",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -102394,19 +102383,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)boss击飞吃球"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -102465,10 +102464,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				0.81960784313725, -- [2]
@@ -102476,7 +102509,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -102596,18 +102630,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -102669,45 +102692,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -102725,23 +102719,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)boss击飞吃球",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)boss击飞吃球",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -102875,41 +102864,6 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "yv7vLsILyax",
-			["selfPoint"] = "CENTER",
-			["parent"] = "纳斯利亚堡",
-			["regionType"] = "icon",
-			["url"] = "https://wago.io/BYNw1h77H/1",
-			["cooldown"] = false,
-			["conditions"] = {
-			},
-			["icon"] = true,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "WA Version Check (CHECK CUSTOM OPTIONS) ",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 75,
-			["zoom"] = 0.3,
-			["config"] = {
-				["disabled"] = false,
-				["event"] = 1,
-				["diff"] = 10,
-				["print"] = true,
-			},
-			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayIcon"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\wagoupdate_logo.tga",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
 			["authorOptions"] = {
 				{
 					["text"] = "This compares your version with others in the raid and lets you know if you're oudated.|n\n\"Disable this permanently\" requires you to uncheck \"Custom Configuration\" when importing updates in the future.|n",
@@ -102970,6 +102924,41 @@ WeakAurasSaved = {
 					["width"] = 0.55,
 				}, -- [7]
 			},
+			["parent"] = "纳斯利亚堡",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["cooldown"] = false,
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["id"] = "WA Version Check (CHECK CUSTOM OPTIONS) ",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 75,
+			["zoom"] = 0.3,
+			["config"] = {
+				["disabled"] = false,
+				["event"] = 1,
+				["diff"] = 10,
+				["print"] = true,
+			},
+			["inverse"] = false,
+			["icon"] = true,
+			["displayIcon"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\wagoupdate_logo.tga",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["url"] = "https://wago.io/BYNw1h77H/1",
 		},
 		["凯子-猩红乱舞DOT"] = {
 			["iconSource"] = -1,
@@ -103264,19 +103253,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)三号吃球"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -103335,10 +103334,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -103346,7 +103379,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -103441,18 +103475,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -103514,45 +103537,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -103570,23 +103564,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)三号吃球",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)三号吃球",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -104082,14 +104071,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -104103,21 +104102,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "7uk(SUhdVgQ",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["队友减伤监视"] = {
 			["iconSource"] = -1,
@@ -104289,8 +104278,7 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0,
-			["authorOptions"] = {
-			},
+			["cooldownEdge"] = false,
 			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
@@ -104317,11 +104305,11 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -1720,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = -1720,
+			["stickyDuration"] = false,
 			["config"] = {
 			},
 			["semver"] = "1.0.1",
@@ -104335,11 +104323,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "uNAfNURagDA",
 			["inverse"] = false,
-			["stickyDuration"] = false,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["cooldownEdge"] = false,
+			["selfPoint"] = "CENTER",
 		},
 		["大帝-午夜猎手喂食"] = {
 			["iconSource"] = -1,
@@ -105052,19 +105041,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)圣洁迷雾"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -105123,10 +105122,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.49803921568627, -- [2]
@@ -105134,7 +105167,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -105275,18 +105309,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -105350,45 +105373,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -105406,23 +105400,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)圣洁迷雾",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)圣洁迷雾",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -106156,14 +106145,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -106177,21 +106176,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "n9UAXpOUvwP",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["猎手-致命咆哮"] = {
 			["iconSource"] = -1,
@@ -106439,19 +106428,29 @@ WeakAurasSaved = {
 		},
 		["(伤逝)尾王AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -106510,10 +106509,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -106521,7 +106554,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -106630,18 +106664,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -106703,45 +106726,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -106759,23 +106753,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)尾王AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)尾王AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -107420,19 +107409,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -107445,12 +107429,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "Bk5jizjaDuo",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "538040",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(赤红)流血"] = {
 			["iconSource"] = -1,
@@ -107636,14 +107625,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -107657,21 +107656,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "g6MFFnOyD4e",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["猎手-石化嚎叫"] = {
 			["iconSource"] = -1,
@@ -107926,12 +107915,7 @@ WeakAurasSaved = {
 			["customText"] = "function()\n    if aura_env.state and aura_env.state.stacks and aura_env.state.stacks > 1 then\n        return aura_env.state.stacks\n    end\nend",
 			["yOffset"] = 0,
 			["anchorPoint"] = "LEFT",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["text1Font"] = "Friz Quadrata TT",
 			["cooldownSwipe"] = true,
 			["xOffset"] = 0,
 			["customTextUpdate"] = "event",
@@ -108126,7 +108110,12 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["text2Containment"] = "INSIDE",
 			["text1Enabled"] = true,
-			["text1Font"] = "Friz Quadrata TT",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["text2"] = "%p",
 			["anchorFrameFrame"] = "UIParent",
@@ -108319,19 +108308,30 @@ WeakAurasSaved = {
 		},
 		["(仙林)正面突突突"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+					["do_message"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -108383,10 +108383,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.086274509803922, -- [2]
@@ -108394,7 +108428,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -108516,19 +108551,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-					["do_message"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -108588,45 +108611,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -108644,23 +108638,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)正面突突突",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)正面突突突",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -108887,19 +108876,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				0.95686274509804, -- [1]
-				0.9843137254902, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -108912,28 +108896,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = ")A)jPs)8V9H",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				0.95686274509804, -- [1]
+				0.9843137254902, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "1778226",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(凋魂)魔药践踏"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -108992,10 +108991,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.03921568627451, -- [2]
@@ -109003,7 +109036,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -109077,18 +109111,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -109150,45 +109173,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -109206,23 +109200,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)魔药践踏",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)魔药践踏",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -109380,14 +109369,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -109401,21 +109400,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "iyZ3AOWHpa)",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(高塔)黑暗长枪"] = {
 			["sparkWidth"] = 10,
@@ -110534,19 +110523,29 @@ WeakAurasSaved = {
 		},
 		["(仙林)尾王心控 3"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    local function getColored(unit)\n        local function DecimalToHex(r,g,b)\n            return string.format(\"|cff%02x%02x%02x\", r*255, g*255, b*255)\n        end\n        \n        local playername = UnitName(unit)\n        local playerclass,PLAYERCLASS = UnitClass(unit)\n        local playerlevel = UnitLevel(unit)\n        local classcolor = RAID_CLASS_COLORS[PLAYERCLASS]\n        local r,g,b = classcolor.r,classcolor.g,classcolor.b\n        local classcolorhex = DecimalToHex(r,g,b)\n        return classcolorhex..playername..\"|r\"\n    end\n    \n    if UnitExists(\"targettarget\") then        \n        local coloredName = getColored(\"targettarget\")        \n        return coloredName\n    end\nend",
 			["yOffset"] = 141,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = 551339,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -110587,10 +110586,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.92156862745098, -- [1]
 				0, -- [2]
@@ -110598,7 +110631,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -110711,18 +110745,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 551339,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -110782,45 +110805,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -110838,23 +110832,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(仙林)尾王心控 3",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(仙林)尾王心控 3",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -110869,19 +110858,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)转圈"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 168,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -110943,10 +110942,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.72941176470588, -- [1]
 				1, -- [2]
@@ -110954,7 +110987,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -111095,18 +111129,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -111168,7 +111191,137 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
+			},
+			["sparkOffsetY"] = 0,
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["borderInFront"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["icon_side"] = "RIGHT",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["auto"] = true,
+			["sparkHeight"] = 14,
+			["texture"] = "Minimalist",
+			["width"] = 320,
+			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["sparkHidden"] = "NEVER",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["id"] = "(赎罪)转圈",
+			["config"] = {
+			},
+			["inverse"] = false,
+			["spark"] = false,
+			["orientation"] = "HORIZONTAL",
+			["conditions"] = {
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["uid"] = "IeJf3gquqkf",
+		},
+		["(凋魂)剧毒射击"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "",
+			["yOffset"] = 197,
+			["anchorPoint"] = "CENTER",
 			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Pling5.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["use_unit"] = true,
+						["use_track"] = true,
+						["spellId"] = 328395,
+						["subeventPrefix"] = "SPELL",
+						["check"] = "event",
+						["use_genericShowOn"] = true,
+						["genericShowOn"] = "showOnCooldown",
+						["names"] = {
+							"Vulnerable", -- [1]
+						},
+						["destUnit"] = "player",
+						["name"] = "Obliteration Blast",
+						["spellIds"] = {
+						},
+						["use_spellId"] = true,
+						["unit"] = "nameplate",
+						["duration"] = "4",
+						["spellName"] = "Discharge Apetagonizer Core",
+						["debuffType"] = "HARMFUL",
+						["auraspellids"] = {
+							"331379", -- [1]
+						},
+						["type"] = "status",
+						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Cast",
+						["custom_hide"] = "timed",
+						["realSpellName"] = "Discharge Apetagonizer Core",
+						["use_spellName"] = true,
+						["events"] = "UNIT_SPELLCAST_START,UNIT_SPELLCAST_SUCCEEDED,UNIT_SPELLCAST_INTERRUPTED, UNIT_SPELLCAST_FAILED",
+						["use_sourceUnit"] = false,
+						["rune"] = 0,
+						["use_destUnit"] = false,
+						["sourceUnit"] = "player",
+						["use_absorbMode"] = true,
+					},
+					["untrigger"] = {
+						["unit"] = "nameplate",
+					},
+				}, -- [1]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 40,
 			["xOffset"] = 0,
 			["animation"] = {
 				["start"] = {
@@ -111204,129 +111357,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["backdropInFront"] = false,
 			["authorOptions"] = {
 			},
-			["auto"] = true,
-			["sparkOffsetY"] = 0,
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
-			["borderInFront"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["icon_side"] = "RIGHT",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["sparkHidden"] = "NEVER",
-			["sparkHeight"] = 14,
-			["texture"] = "Minimalist",
-			["width"] = 320,
-			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "(赎罪)转圈",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
-			["config"] = {
-			},
-			["inverse"] = false,
-			["spark"] = false,
-			["orientation"] = "HORIZONTAL",
-			["conditions"] = {
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["uid"] = "IeJf3gquqkf",
-		},
-		["(凋魂)剧毒射击"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "",
-			["yOffset"] = 197,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["use_unit"] = true,
-						["use_track"] = true,
-						["spellId"] = 328395,
-						["subeventPrefix"] = "SPELL",
-						["check"] = "event",
-						["use_genericShowOn"] = true,
-						["genericShowOn"] = "showOnCooldown",
-						["names"] = {
-							"Vulnerable", -- [1]
-						},
-						["destUnit"] = "player",
-						["name"] = "Obliteration Blast",
-						["spellIds"] = {
-						},
-						["use_spellId"] = true,
-						["unit"] = "nameplate",
-						["duration"] = "4",
-						["spellName"] = "Discharge Apetagonizer Core",
-						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
-						["auraspellids"] = {
-							"331379", -- [1]
-						},
-						["custom_type"] = "stateupdate",
-						["useExactSpellId"] = true,
-						["event"] = "Cast",
-						["custom_hide"] = "timed",
-						["realSpellName"] = "Discharge Apetagonizer Core",
-						["use_spellName"] = true,
-						["events"] = "UNIT_SPELLCAST_START,UNIT_SPELLCAST_SUCCEEDED,UNIT_SPELLCAST_INTERRUPTED, UNIT_SPELLCAST_FAILED",
-						["use_sourceUnit"] = false,
-						["rune"] = 0,
-						["use_destUnit"] = false,
-						["sourceUnit"] = "player",
-						["use_absorbMode"] = true,
-					},
-					["untrigger"] = {
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["icon_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
-			["backdropInFront"] = false,
-			["zoom"] = 0,
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -111334,7 +111367,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -111410,18 +111444,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Pling5.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -111483,45 +111506,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -111539,23 +111533,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)剧毒射击",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)剧毒射击",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -111715,14 +111704,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = 566240,
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -111736,21 +111735,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "(XcypxLe1i6",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = 566240,
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["毁灭者-吞噬"] = {
 			["iconSource"] = 0,
@@ -111980,10 +111969,10 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -112022,12 +112011,7 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -112040,28 +112024,46 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "GssZ1tlXDM(",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "1778226",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)天域军火"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["message"] = "集合放圈！！！",
+					["do_sound"] = true,
+					["message_type"] = "SAY",
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_message"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -112084,14 +112086,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -112117,10 +112119,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.27450980392157, -- [2]
@@ -112128,7 +112164,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -112204,21 +112241,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["message"] = "集合放圈！！！",
-					["do_sound"] = true,
-					["message_type"] = "SAY",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_message"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -112280,45 +112303,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -112336,23 +112330,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)天域军火",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)天域军火",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -112510,14 +112499,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -112531,37 +112530,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "mq7RjsnDhEp",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(凋魂)大鹏击飞"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 225,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -112584,14 +112583,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -112617,10 +112616,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -112628,7 +112661,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -112736,18 +112770,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -112809,45 +112832,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -112865,23 +112859,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)大鹏击飞",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)大鹏击飞",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -112896,19 +112885,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)蓝怪地板"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -112967,10 +112966,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -112978,7 +113011,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -113066,18 +113100,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\cat2.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -113139,45 +113162,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -113195,23 +113189,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)蓝怪地板",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)蓝怪地板",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -113927,6 +113916,16 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["regionType"] = "texture",
 			["blendMode"] = "ADD",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.771618694067, -- [4]
+			},
+			["texture"] = "Spells\\TEXTURES\\Beam_Purple_02",
+			["xOffset"] = 0,
+			["desaturate"] = true,
+			["semver"] = "2.0.3",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -113947,11 +113946,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["texture"] = "Spells\\TEXTURES\\Beam_Purple_02",
-			["discrete_rotation"] = 0,
-			["xOffset"] = 0,
-			["semver"] = "2.0.3",
-			["desaturate"] = true,
 			["id"] = "PhoGuild - Raid Ability Timeline Backdrop",
 			["frameStrata"] = 3,
 			["alpha"] = 1,
@@ -113966,12 +113960,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.771618694067, -- [4]
-			},
+			["discrete_rotation"] = 0,
 		},
 		["(通灵)远离勾子"] = {
 			["outline"] = "OUTLINE",
@@ -115466,6 +115455,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["authorOptions"] = {
+			},
+			["config"] = {
+			},
+			["parent"] = "纳斯利亚堡",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
@@ -115478,19 +115472,14 @@ WeakAurasSaved = {
 					["do_custom"] = false,
 				},
 			},
-			["config"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = false,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["conditions"] = {
 			},
-			["authorOptions"] = {
-			},
-			["parent"] = "纳斯利亚堡",
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
 			["cooldownTextDisabled"] = true,
@@ -115663,14 +115652,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -115684,21 +115683,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "uxRJHO9lVEv",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(彼界)超频启动远离"] = {
 			["outline"] = "OUTLINE",
@@ -116716,14 +116705,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\Gasp.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -116737,21 +116736,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = ")Wutr8WR8ZU",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\Gasp.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["啸翼-盲眼横扫"] = {
 			["iconSource"] = 0,
@@ -117238,19 +117227,29 @@ WeakAurasSaved = {
 		},
 		["(赤红)吹风击飞"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -117309,10 +117308,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0, -- [1]
 				0.44313725490196, -- [2]
@@ -117320,7 +117353,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -117447,18 +117481,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -117520,45 +117543,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -117576,23 +117570,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赤红)吹风击飞",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赤红)吹风击飞",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -117904,19 +117893,29 @@ WeakAurasSaved = {
 		},
 		["(凋魂)湮灭污泥"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Pling5.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -117939,14 +117938,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -117972,10 +117971,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -117983,7 +118016,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -118059,18 +118093,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Pling5.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -118132,45 +118155,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -118188,23 +118182,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)湮灭污泥",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)湮灭污泥",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -119393,14 +119382,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -119414,37 +119413,37 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "zLq(oOuzxaj",
 			["inverse"] = false,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["xOffset"] = -200,
+		},
+		["(彼界)三号AOE"] = {
+			["sparkWidth"] = 3,
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			["yOffset"] = 141,
+			["anchorPoint"] = "CENTER",
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/jk_CUtCZE/1",
 			["actions"] = {
 				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bigkiss.ogg",
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
 					["do_sound"] = true,
 				},
 				["finish"] = {
 				},
 				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["(彼界)三号AOE"] = {
-			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-			["yOffset"] = 141,
-			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
-			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -119503,10 +119502,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.03921568627451, -- [2]
@@ -119514,7 +119547,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -119655,18 +119689,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -119728,45 +119751,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -119784,23 +119778,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 300,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(彼界)三号AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(彼界)三号AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -120198,19 +120187,29 @@ WeakAurasSaved = {
 		},
 		["(伤逝)嗜血冲锋"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -120262,10 +120261,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.87058823529412, -- [1]
 				0, -- [2]
@@ -120273,7 +120306,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -120395,18 +120429,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\swordecho.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -120468,45 +120491,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -120524,23 +120518,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(伤逝)嗜血冲锋",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(伤逝)嗜血冲锋",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -120555,19 +120544,29 @@ WeakAurasSaved = {
 		},
 		["(凋魂)毒雨AOE"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -120626,10 +120625,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.03921568627451, -- [2]
@@ -120637,7 +120670,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -120778,18 +120812,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -120853,45 +120876,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -120909,23 +120903,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(凋魂)毒雨AOE",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(凋魂)毒雨AOE",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -122197,19 +122186,29 @@ WeakAurasSaved = {
 		},
 		["(赎罪)地板"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "function()\n    return aura_env.count\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 169,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -122268,10 +122267,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.047058823529412, -- [2]
@@ -122279,7 +122312,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -122420,18 +122454,7 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -122493,45 +122516,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -122549,23 +122543,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(赎罪)地板",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(赎罪)地板",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -122725,14 +122714,24 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0.3,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = -200,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["config"] = {
 			},
 			["auto"] = true,
@@ -122746,21 +122745,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "4)St5kmo4wh",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["xOffset"] = -200,
 		},
 		["(彼界)米尔豪斯大招"] = {
 			["sparkWidth"] = 10,
@@ -123280,19 +123269,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -123305,12 +123289,17 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "UFgMBh1Cgk9",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 524795,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(仙林)躲开正面 2"] = {
 			["outline"] = "OUTLINE",
@@ -124005,19 +123994,14 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
-			["icon"] = true,
+			["parent"] = "纳斯利亚堡",
 			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -124030,28 +124014,43 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = true,
 			["uid"] = "cdC94KMfS4D",
 			["inverse"] = false,
-			["parent"] = "纳斯利亚堡",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 136133,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["(高塔)衰竭弹幕 2"] = {
 			["sparkWidth"] = 3,
-			["sparkOffsetX"] = 0,
-			["color"] = {
-			},
+			["iconSource"] = -1,
+			["parent"] = "SL地下城By往事如云烟 v1.6",
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 197,
 			["anchorPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["iconSource"] = -1,
+			["fontFlags"] = "OUTLINE",
+			["sparkOffsetX"] = 0,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/jk_CUtCZE/1",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.castSpellId = 325523",
+					["do_custom"] = true,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -124074,14 +124073,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["spellName"] = "Discharge Apetagonizer Core",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["unevent"] = "auto",
 						["auraspellids"] = {
 							"331379", -- [1]
 						},
-						["custom_type"] = "stateupdate",
+						["type"] = "status",
 						["useExactSpellId"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Discharge Apetagonizer Core",
@@ -124107,10 +124106,44 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["internalVersion"] = 40,
-			["parent"] = "SL地下城By往事如云烟 v1.6",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["duration"] = "0",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["backdropInFront"] = false,
-			["zoom"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				1, -- [1]
 				0.3921568627451, -- [2]
@@ -124118,7 +124151,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+			},
 			["sparkRotationMode"] = "AUTO",
 			["version"] = 1,
 			["subRegions"] = {
@@ -124194,18 +124228,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 28,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\BITE.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.castSpellId = 325523",
-					["do_custom"] = true,
-				},
-			},
+			["icon"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -124267,45 +124290,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["fontFlags"] = "OUTLINE",
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["duration"] = "0",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["zoom"] = 0,
+			["backgroundColor"] = {
+				0.46274509803922, -- [1]
+				0.47843137254902, -- [2]
+				0.47058823529412, -- [3]
+				0.89758960157633, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["auto"] = true,
 			["sparkOffsetY"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -124323,23 +124317,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["sparkHeight"] = 14,
 			["texture"] = "Minimalist",
 			["width"] = 250,
 			["sparkTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
-			["id"] = "(高塔)衰竭弹幕 2",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundColor"] = {
-				0.46274509803922, -- [1]
-				0.47843137254902, -- [2]
-				0.47058823529412, -- [3]
-				0.89758960157633, -- [4]
-			},
+			["id"] = "(高塔)衰竭弹幕 2",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -124353,12 +124342,23 @@ WeakAurasSaved = {
 			["uid"] = "poeJH)wO0)(",
 		},
 	},
+	["lastArchiveClear"] = 1602513824,
+	["minimap"] = {
+		["minimapPos"] = -73735,
+		["hide"] = false,
+	},
+	["lastUpgrade"] = 1605190555,
+	["personalRessourceDisplayFrame"] = {
+	},
+	["clearOldHistory"] = 30,
+	["registered"] = {
+	},
+	["dbVersion"] = 40,
 	["frame"] = {
-		["xOffset"] = -527.3331298828125,
-		["yOffset"] = -130.5562133789063,
+		["xOffset"] = -508.6658935546875,
+		["yOffset"] = -97.6673583984375,
 		["height"] = 665.0001220703125,
 		["width"] = 750.0001220703125,
 	},
-	["dbVersion"] = 40,
 	["editor_theme"] = "Monokai",
 }

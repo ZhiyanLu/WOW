@@ -845,7 +845,6 @@ function RangeDisplay:toggleLocked(flag)
     else
         self:unlock()
     end
-	RangeDisplay_OptionLoad()
 end
 
 function RangeDisplay:toggleMute(flag)
@@ -916,11 +915,10 @@ end
 function RangeDisplay:loadOptions()
     if not self.optionsLoaded then
         self.optionsLoaded = true
-		RangeDisplay_OptionLoad()
-        -- local loaded, reason = LoadAddOn(OptionsAppName)
-        -- if not loaded then
-            -- print("Failed to load " .. tostring(OptionsAppName) .. ": " .. tostring(reason))
-        -- end
+        local loaded, reason = LoadAddOn(OptionsAppName)
+        if not loaded then
+            print("Failed to load " .. tostring(OptionsAppName) .. ": " .. tostring(reason))
+        end
     end
 end
 
@@ -928,6 +926,7 @@ function RangeDisplay:openConfigDialog(ud)
     -- this function will be overwritten by the Options module when loaded
     if not self.optionsLoaded then
         self:loadOptions()
+        InterfaceAddOnsList_Update()
         return self:openConfigDialog(ud)
     end
     InterfaceOptionsFrame_OpenToCategory(self.dummyOpts)

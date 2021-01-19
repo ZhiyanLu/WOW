@@ -1,2 +1,0 @@
-
-ClassMonitorData = nil

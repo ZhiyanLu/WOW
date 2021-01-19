@@ -1,5 +1,0 @@
-
-WATCHDOG_VARS = {
-	["LAST_SEARCH_RESULTS"] = {
-	},
-}

@@ -63,12 +63,12 @@ DeathNoteDB = {
 		["Magiccreamcn - 格雷迈恩"] = {
 		},
 		["Magiccreamdk - 格雷迈恩"] = {
-			["searchbox_text"] = "",
 			["display_filters"] = {
 				["buff_gains"] = false,
 				["debuff_fades"] = false,
 				["buff_fades"] = false,
 			},
+			["searchbox_text"] = "",
 			["unit_menu"] = true,
 			["display"] = {
 				["columns"] = {
@@ -78,9 +78,9 @@ DeathNoteDB = {
 					148.8889007568359, -- [4]
 				},
 				["w"] = 860.8889770507812,
-				["y"] = -4.000091552734375,
+				["y"] = -26.22236633300781,
 				["h"] = 504.4443359375,
-				["x"] = -326.6666793823242,
+				["x"] = -188.0000305175781,
 				["namelist"] = 2,
 			},
 		},

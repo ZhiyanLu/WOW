@@ -9,10 +9,6 @@ NameplateSCTDB = {
 		["余生请多指教 - 格雷迈恩"] = "Default",
 	},
 	["global"] = {
-		["yOffsetPersonal"] = -200,
-		["sizing"] = {
-			["critsScale"] = 1,
-		},
 		["animations"] = {
 			["autoattack"] = "disabled",
 			["normal"] = "fountain",
@@ -37,8 +33,12 @@ NameplateSCTDB = {
 			["crit"] = "disabled",
 			["miss"] = "disabled",
 		},
-		["personal"] = false,
+		["yOffsetPersonal"] = -200,
+		["sizing"] = {
+			["critsScale"] = 1,
+		},
 		["xOffset"] = 75,
 		["textShadow"] = false,
+		["personal"] = false,
 	},
 }

@@ -1,6 +1,6 @@
 
 TellMeWhenDB = {
-	["Version"] = 90301,
+	["Version"] = 90401,
 	["profileKeys"] = {
 		["余生请多指教 - 格雷迈恩"] = "余生请多指教 - 格雷迈恩",
 		["Magiccreamdk - 格雷迈恩"] = "Magiccreamdk - 格雷迈恩",
@@ -2951,30 +2951,6 @@ TellMeWhenDB = {
 				["Icons"] = {
 					{
 						["Type"] = "buff",
-						["Name"] = "能量灌注",
-						["ShowTimerText"] = true,
-						["Events"] = {
-							{
-								["Type"] = "Animations",
-								["Animation"] = "ACTVTNGLOW",
-								["Event"] = "OnStart",
-								["Infinite"] = true,
-							}, -- [1]
-							["n"] = 1,
-						},
-						["States"] = {
-							{
-							}, -- [1]
-							nil, -- [2]
-							{
-							}, -- [3]
-							{
-							}, -- [4]
-						},
-						["Enabled"] = true,
-					}, -- [1]
-					{
-						["Type"] = "buff",
 						["ShowTimerText"] = true,
 						["Name"] = "狂奔怒吼; 狂风; 潜伏帷幕; 狂风图腾; 自由祝福",
 						["Events"] = {
@@ -3001,7 +2977,7 @@ TellMeWhenDB = {
 							}, -- [4]
 						},
 						["Enabled"] = true,
-					}, -- [2]
+					}, -- [1]
 					{
 						["Unit"] = "player; target",
 						["Type"] = "meta",
@@ -3012,6 +2988,30 @@ TellMeWhenDB = {
 						["ShowTimerText"] = true,
 						["GUID"] = "TMW:icon:1RpbO9akkJDT",
 						["Name"] = "保护祝福; 破咒祝福; 自由祝福",
+						["Events"] = {
+							{
+								["Type"] = "Animations",
+								["Animation"] = "ACTVTNGLOW",
+								["Event"] = "OnStart",
+								["Infinite"] = true,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["Enabled"] = true,
+					}, -- [2]
+					{
+						["Type"] = "buff",
+						["ShowTimerText"] = true,
+						["Name"] = "铁木树皮",
 						["Events"] = {
 							{
 								["Type"] = "Animations",
@@ -3059,7 +3059,7 @@ TellMeWhenDB = {
 					{
 						["Type"] = "buff",
 						["ShowTimerText"] = true,
-						["Name"] = "铁木树皮",
+						["Name"] = "痛苦压制",
 						["Events"] = {
 							{
 								["Type"] = "Animations",
@@ -3082,8 +3082,8 @@ TellMeWhenDB = {
 					}, -- [5]
 					{
 						["Type"] = "buff",
+						["Name"] = "能量灌注",
 						["ShowTimerText"] = true,
-						["Name"] = "痛苦压制",
 						["Events"] = {
 							{
 								["Type"] = "Animations",
@@ -3106,31 +3106,6 @@ TellMeWhenDB = {
 					}, -- [6]
 					{
 						["Type"] = "buff",
-						["Name"] = "守护之魂",
-						["ClockGCD"] = true,
-						["ShowTimerText"] = true,
-						["Events"] = {
-							{
-								["Type"] = "Animations",
-								["Animation"] = "ACTVTNGLOW",
-								["Event"] = "OnStart",
-								["Infinite"] = true,
-							}, -- [1]
-							["n"] = 1,
-						},
-						["States"] = {
-							{
-							}, -- [1]
-							nil, -- [2]
-							{
-							}, -- [3]
-							{
-							}, -- [4]
-						},
-						["Enabled"] = true,
-					}, -- [7]
-					{
-						["Type"] = "buff",
 						["ShowTTText"] = 1,
 						["ShowTimerText"] = true,
 						["Name"] = "作茧缚命",
@@ -3150,6 +3125,31 @@ TellMeWhenDB = {
 									[2] = "[if Length(Stacks) > 4 then\n    Format(\"%.1f\", (Stacks / 10000)) 'W'\nelseif Stacks > 0 then\n    Stacks\nend]",
 								},
 							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["Enabled"] = true,
+					}, -- [7]
+					{
+						["Type"] = "buff",
+						["Name"] = "守护之魂",
+						["ClockGCD"] = true,
+						["ShowTimerText"] = true,
+						["Events"] = {
+							{
+								["Type"] = "Animations",
+								["Animation"] = "ACTVTNGLOW",
+								["Event"] = "OnStart",
+								["Infinite"] = true,
+							}, -- [1]
+							["n"] = 1,
 						},
 						["States"] = {
 							{
@@ -5730,6 +5730,32 @@ TellMeWhenDB = {
 					{
 						["Unit"] = "target",
 						["Type"] = "buff",
+						["ShowTimerText"] = true,
+						["ClockGCD"] = true,
+						["Name"] = "守护之魂",
+						["Events"] = {
+							{
+								["Type"] = "Animations",
+								["Animation"] = "ACTVTNGLOW",
+								["Event"] = "OnStart",
+								["Infinite"] = true,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["Enabled"] = true,
+					}, -- [1]
+					{
+						["Unit"] = "target",
+						["Type"] = "buff",
 						["ShowTTText"] = 1,
 						["ShowTimerText"] = true,
 						["Name"] = "作茧缚命",
@@ -5760,38 +5786,12 @@ TellMeWhenDB = {
 							}, -- [4]
 						},
 						["Enabled"] = true,
-					}, -- [1]
-					{
-						["Unit"] = "target",
-						["Type"] = "buff",
-						["ShowTimerText"] = true,
-						["ClockGCD"] = true,
-						["Name"] = "守护之魂",
-						["Events"] = {
-							{
-								["Type"] = "Animations",
-								["Animation"] = "ACTVTNGLOW",
-								["Event"] = "OnStart",
-								["Infinite"] = true,
-							}, -- [1]
-							["n"] = 1,
-						},
-						["States"] = {
-							{
-							}, -- [1]
-							nil, -- [2]
-							{
-							}, -- [3]
-							{
-							}, -- [4]
-						},
-						["Enabled"] = true,
 					}, -- [2]
 					{
 						["Unit"] = "target",
 						["Type"] = "buff",
-						["Name"] = "痛苦压制",
 						["ShowTimerText"] = true,
+						["Name"] = "能量灌注",
 						["Events"] = {
 							{
 								["Type"] = "Animations",
@@ -5815,7 +5815,7 @@ TellMeWhenDB = {
 					{
 						["Unit"] = "target",
 						["Type"] = "buff",
-						["Name"] = "铁木树皮",
+						["Name"] = "痛苦压制",
 						["ShowTimerText"] = true,
 						["Events"] = {
 							{
@@ -5863,6 +5863,31 @@ TellMeWhenDB = {
 						["Enabled"] = true,
 					}, -- [5]
 					{
+						["Unit"] = "target",
+						["Type"] = "buff",
+						["Name"] = "铁木树皮",
+						["ShowTimerText"] = true,
+						["Events"] = {
+							{
+								["Type"] = "Animations",
+								["Animation"] = "ACTVTNGLOW",
+								["Event"] = "OnStart",
+								["Infinite"] = true,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["Enabled"] = true,
+					}, -- [6]
+					{
 						["Unit"] = "player; target",
 						["Type"] = "meta",
 						["Icons"] = {
@@ -5890,7 +5915,7 @@ TellMeWhenDB = {
 							}, -- [4]
 						},
 						["Enabled"] = true,
-					}, -- [6]
+					}, -- [7]
 					{
 						["Unit"] = "target",
 						["Type"] = "buff",
@@ -5909,31 +5934,6 @@ TellMeWhenDB = {
 							["icon"] = {
 								["TextLayout"] = "icon1",
 							},
-						},
-						["States"] = {
-							{
-							}, -- [1]
-							nil, -- [2]
-							{
-							}, -- [3]
-							{
-							}, -- [4]
-						},
-						["Enabled"] = true,
-					}, -- [7]
-					{
-						["Unit"] = "target",
-						["Type"] = "buff",
-						["ShowTimerText"] = true,
-						["Name"] = "能量灌注",
-						["Events"] = {
-							{
-								["Type"] = "Animations",
-								["Animation"] = "ACTVTNGLOW",
-								["Event"] = "OnStart",
-								["Infinite"] = true,
-							}, -- [1]
-							["n"] = 1,
 						},
 						["States"] = {
 							{
@@ -44805,7 +44805,10 @@ TellMeWhenDB = {
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1PSpuBtHYg1o",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -80,
+						["x"] = 185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -44984,14 +44987,14 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -80,
-						["x"] = 185,
-					},
+					["Columns"] = 8,
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1VZ5J=3WQRK0",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -50,
+						["x"] = 185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -45091,14 +45094,14 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -50,
-						["x"] = 185,
-					},
+					["Columns"] = 8,
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1PSpFqU4PUjj",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -80,
+						["x"] = -184.6483941177534,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -45115,8 +45118,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "生存本能; 精通本能",
 							["ShowTimerText"] = true,
+							["Name"] = "生存本能; 精通本能",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -45173,7 +45176,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "野蛮咆哮",
 							["Type"] = "buff",
 							["Conditions"] = {
 								{
@@ -45186,7 +45189,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "野蛮咆哮",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -45291,13 +45294,13 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "buff",
 							["OnlyMine"] = true,
-							["Name"] = "猛虎之怒",
+							["ShowTimerText"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "icon1",
 								},
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "猛虎之怒",
 							["Conditions"] = {
 								{
 									["Name"] = "猛虎之怒",
@@ -45412,14 +45415,14 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -80,
-						["x"] = -184.6483941177534,
-					},
+					["Columns"] = 8,
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1PSovhDMyswt",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -50,
+						["x"] = -184.6483941177534,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -45441,8 +45444,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "激励兽群",
+							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -45467,8 +45470,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "血祭之力",
 							["ShowTimerText"] = true,
+							["Name"] = "血祭之力",
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -45504,8 +45507,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "狂暴回复",
 							["ShowTimerText"] = true,
+							["Name"] = "狂暴回复",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -45540,8 +45543,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "掠食者的迅捷",
 							["ShowTimerText"] = true,
+							["Name"] = "掠食者的迅捷",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -45565,8 +45568,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "节能施法",
 							["ShowTimerText"] = true,
+							["Name"] = "节能施法",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -45662,21 +45665,21 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -50,
-						["x"] = -184.6483941177534,
-					},
+					["Columns"] = 8,
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1PSqjlmIR3JQ",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -80,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "精通本能",
 							["ShowTimerText"] = true,
+							["Name"] = "精通本能",
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -45702,8 +45705,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "野蛮暴烈",
 							["ShowTimerText"] = true,
+							["Name"] = "野蛮暴烈",
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -45883,9 +45886,9 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["AndOr"] = "OR",
-									["Type"] = "SPELLCHARGES",
-									["Name"] = "化身：乌索克的守护者",
 									["Level"] = 1,
+									["Name"] = "化身：乌索克的守护者",
+									["Type"] = "SPELLCHARGES",
 								}, -- [3]
 								{
 									["Type"] = "BUFFDUR",
@@ -45966,8 +45969,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "铁鬃",
 							["ShowTimerText"] = true,
+							["Name"] = "铁鬃",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -46072,21 +46075,21 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -80,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [5]
 				{
 					["GUID"] = "TMW:group:1PSqqGgc7PmQ",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -50,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "烧蚀护盾",
+							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -46120,7 +46123,8 @@ TellMeWhenDB = {
 							["CLEUEvents"] = {
 								["SPELL_AURA_APPLIED"] = true,
 							},
-							["Name"] = "闪光庇护所",
+							["ConditionDur"] = 10,
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnShow",
@@ -46130,8 +46134,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowTimerText"] = true,
-							["ConditionDur"] = 10,
+							["Name"] = "闪光庇护所",
 							["ICDType"] = "spellcast",
 							["OnlyIfCounting"] = true,
 							["ConditionDurEnabled"] = true,
@@ -46151,8 +46154,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "艾泽里特血脉; 晶化甲壳",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnShow",
@@ -46209,8 +46212,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "大地守卫者",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -46235,8 +46238,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "213680",
 							["ShowTimerText"] = true,
+							["Name"] = "213680",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -46260,8 +46263,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "星河守护者",
 							["ShowTimerText"] = true,
+							["Name"] = "星河守护者",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -46285,8 +46288,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "淤血",
 							["ShowTimerText"] = true,
+							["Name"] = "淤血",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -46382,14 +46385,14 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -50,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [6]
 				{
 					["GUID"] = "TMW:group:1VvAnm6FO0ea",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -46417,7 +46420,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -46425,7 +46428,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -46449,8 +46452,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "天界指引",
 							["ShowTimerText"] = true,
+							["Name"] = "天界指引",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -46477,8 +46480,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "导师的圣钟",
 							["ShowTimerText"] = true,
+							["Name"] = "导师的圣钟",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -46505,8 +46508,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "过载的心能电池",
 							["ShowTimerText"] = true,
+							["Name"] = "过载的心能电池",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -46760,17 +46763,11 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -20,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [7]
 				{
 					["GUID"] = "TMW:group:1RsF_3Ffwy_N",
-					["Point"] = {
-						["y"] = -80,
-						["x"] = 185,
-					},
+					["Columns"] = 8,
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -46831,11 +46828,11 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "cleu",
 							["CLEUDur"] = 8,
-							["ShowTimerText"] = true,
+							["Name"] = "明月普照",
 							["CLEUEvents"] = {
 								["SPELL_CAST_SUCCESS"] = true,
 							},
-							["Name"] = "明月普照",
+							["ShowTimerText"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -46924,8 +46921,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "生命心能",
 							["ShowTimerText"] = true,
+							["Name"] = "生命心能",
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -46971,8 +46968,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "低吼",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -47299,11 +47296,17 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -80,
+						["x"] = 185,
+					},
 				}, -- [8]
 				{
 					["GUID"] = "TMW:group:1PSqgB4X61gn",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -50,
+						["x"] = 185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -47609,14 +47612,14 @@ TellMeWhenDB = {
 						[102] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -50,
-						["x"] = 185,
-					},
+					["Columns"] = 8,
 				}, -- [9]
 				{
 					["GUID"] = "TMW:group:1PSsuCK5pkNG",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -80,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -47665,19 +47668,21 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 						{
-							["CLEUEvents"] = {
-								["SPELL_AURA_APPLIED"] = true,
-							},
+							["OnlyMine"] = true,
 							["OnlyEquipped"] = true,
 							["OnlyInBags"] = true,
 							["Enabled"] = true,
 							["Type"] = "cleu",
-							["SourceUnit"] = "player",
+							["ICDType"] = "spellcast",
 							["CLEUDur"] = 8,
 							["OnlyIfCounting"] = true,
 							["CLEUNoRefresh"] = true,
-							["OnlyMine"] = true,
+							["ShowTimerText"] = true,
+							["CLEUEvents"] = {
+								["SPELL_AURA_APPLIED"] = true,
+							},
 							["Name"] = "不稳定的催化剂",
+							["ConditionDur"] = 10,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -47687,10 +47692,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ConditionDur"] = 10,
-							["ShowTimerText"] = true,
 							["CustomTex"] = "281517",
-							["ICDType"] = "spellcast",
+							["SourceUnit"] = "player",
 							["Conditions"] = {
 								{
 									["Type"] = "BUFFDUR",
@@ -47719,7 +47722,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "树皮术",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -47728,7 +47731,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Name"] = "树皮术",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -47753,8 +47756,8 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "buff",
 							["OnlyMine"] = true,
-							["Name"] = "化身",
 							["ShowTimerText"] = true,
+							["Name"] = "化身",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -47851,7 +47854,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "丛林之魂",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "icon1",
@@ -47861,7 +47864,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Name"] = "丛林之魂",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -47993,14 +47996,14 @@ TellMeWhenDB = {
 						[104] = false,
 						[102] = false,
 					},
-					["Point"] = {
-						["y"] = -80,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [10]
 				{
 					["GUID"] = "TMW:group:1PSsu1pzr7Uw",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -50,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -48041,8 +48044,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "狂暴回复",
 							["ShowTimerText"] = true,
+							["Name"] = "狂暴回复",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -48066,8 +48069,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "羁绊之魂",
+							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -48092,8 +48095,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "buff",
-							["Name"] = "激活",
 							["ShowTimerText"] = true,
+							["Name"] = "激活",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -48172,13 +48175,13 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "节能施法",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "icon1",
 								},
 							},
-							["Name"] = "节能施法",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -48384,14 +48387,14 @@ TellMeWhenDB = {
 						[104] = false,
 						[102] = false,
 					},
-					["Point"] = {
-						["y"] = -50,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [11]
 				{
 					["GUID"] = "TMW:group:1VvAq8ffGE8=",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -185,
+					},
 					["Scale"] = 1.29,
 					["Icons"] = {
 						{
@@ -48667,14 +48670,14 @@ TellMeWhenDB = {
 						[104] = false,
 						[102] = false,
 					},
-					["Point"] = {
-						["y"] = -20,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [12]
 				{
 					["GUID"] = "TMW:group:1TcYCnS__daF",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -80,
+						["x"] = 185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -48824,24 +48827,24 @@ TellMeWhenDB = {
 						[104] = false,
 						[102] = false,
 					},
-					["Point"] = {
-						["y"] = -80,
-						["x"] = 185,
-					},
+					["Columns"] = 8,
 				}, -- [13]
 				{
 					["GUID"] = "TMW:group:1PSsr=AFHle6",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -50,
+						["x"] = 185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1QSYGhLgSz3T",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "春暖花开",
 							["Unit"] = "target",
 							["Type"] = "buff",
 							["Enabled"] = true,
-							["Name"] = "春暖花开",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -48937,8 +48940,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "EITHER",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["Name"] = "艾欧娜尔之种; 活力导管",
 							["ShowTimerText"] = true,
+							["Name"] = "艾欧娜尔之种; 活力导管",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -48979,7 +48982,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "奇迹之力",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1RmzKllD8C7R",
@@ -48988,7 +48991,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Name"] = "奇迹之力",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -49000,8 +49003,8 @@ TellMeWhenDB = {
 										}, -- [1]
 										{
 											["Type"] = "MANA",
-											["AndOr"] = "OR",
 											["Level"] = 15,
+											["AndOr"] = "OR",
 											["Operator"] = "<=",
 										}, -- [2]
 										["n"] = 2,
@@ -49163,14 +49166,14 @@ TellMeWhenDB = {
 						[104] = false,
 						[102] = false,
 					},
-					["Point"] = {
-						["y"] = -50,
-						["x"] = 185,
-					},
+					["Columns"] = 8,
 				}, -- [14]
 				{
 					["GUID"] = "TMW:group:1PTG53mjKRE8",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -80,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -49225,7 +49228,7 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "炎法师的引线",
 							["OnlyEquipped"] = true,
 							["Events"] = {
 								{
@@ -49236,7 +49239,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Name"] = "炎法师的引线",
+							["ShowTimerText"] = true,
 							["CustomTex"] = "271115",
 							["OnlyInBags"] = true,
 						}, -- [2]
@@ -49265,8 +49268,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "星辰领主",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -49290,9 +49293,9 @@ TellMeWhenDB = {
 						{
 							["GUID"] = "TMW:icon:1RYqhmWLTSYa",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
 							["Name"] = "化身：艾露恩之眷; 超凡之盟",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1VbKfeW6uDG3", -- [1]
@@ -49313,7 +49316,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "cooldown",
-							["Name"] = "星火术",
+							["ShowTimerText"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCHARGES",
@@ -49328,7 +49331,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "星火术",
 							["States"] = {
 								{
 								}, -- [1]
@@ -49342,7 +49345,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "cooldown",
-							["ShowTimerText"] = true,
+							["Name"] = "愤怒",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCHARGES",
@@ -49357,7 +49360,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "愤怒",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -49553,14 +49556,14 @@ TellMeWhenDB = {
 						[104] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -80,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [15]
 				{
 					["GUID"] = "TMW:group:1PTG7OmiRQok",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -50,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -49582,8 +49585,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "汇帆",
 							["ShowTimerText"] = true,
+							["Name"] = "汇帆",
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -49630,8 +49633,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "枭兽狂怒",
+							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -49656,8 +49659,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "至日",
 							["ShowTimerText"] = true,
+							["Name"] = "至日",
 							["Events"] = {
 								{
 									["Event"] = "OnStack",
@@ -49686,8 +49689,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "月蚀",
+							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -49713,8 +49716,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "日蚀",
+							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -50043,21 +50046,21 @@ TellMeWhenDB = {
 						[104] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -50,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [16]
 				{
 					["GUID"] = "TMW:group:1TEzjv10uq_i",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "吸血鬼之速",
+							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -50082,8 +50085,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "宝石皮肤",
+							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Events"] = {
 								{
@@ -50109,7 +50112,7 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1PVpSt5Sl_k4",
 							["Type"] = "buff",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -50127,7 +50130,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -50171,8 +50174,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "导师的圣钟",
 							["ShowTimerText"] = true,
+							["Name"] = "导师的圣钟",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -50196,7 +50199,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "同化雕文",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -50204,7 +50207,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Name"] = "同化雕文",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -50229,7 +50232,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "339946",
+							["ShowTimerText"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -50237,7 +50240,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "339946",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -50261,7 +50264,7 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "339943",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -50269,7 +50272,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Name"] = "339943",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -50475,14 +50478,14 @@ TellMeWhenDB = {
 						[104] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -20,
-						["x"] = -185,
-					},
+					["Columns"] = 8,
 				}, -- [17]
 				{
 					["GUID"] = "TMW:group:1PTG0tUByGo5",
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -80,
+						["x"] = 185,
+					},
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
@@ -50491,8 +50494,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "月火术",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -50504,8 +50507,8 @@ TellMeWhenDB = {
 											["Type"] = "DEBUFFDUR",
 											["Name"] = "164812",
 											["Level"] = 7,
-											["Operator"] = "<=",
 											["Unit"] = "target",
+											["Operator"] = "<=",
 										}, -- [2]
 										["n"] = 2,
 									},
@@ -50532,8 +50535,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "阳炎术",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -50545,8 +50548,8 @@ TellMeWhenDB = {
 											["Type"] = "DEBUFFDUR",
 											["Name"] = "164815",
 											["Level"] = 6,
-											["Operator"] = "<=",
 											["Unit"] = "target",
+											["Operator"] = "<=",
 										}, -- [2]
 										["n"] = 2,
 									},
@@ -50573,8 +50576,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "星辰耀斑",
+							["ShowTimerText"] = true,
 							["Conditions"] = {
 								{
 									["Name"] = "星辰耀斑",
@@ -50593,8 +50596,8 @@ TellMeWhenDB = {
 											["Type"] = "DEBUFFDUR",
 											["Name"] = "202347",
 											["Level"] = 8,
-											["Operator"] = "<=",
 											["Unit"] = "target",
+											["Operator"] = "<=",
 										}, -- [2]
 										["n"] = 2,
 									},
@@ -50619,10 +50622,9 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
-								"TMW:icon:1S5wis7OPlB6", -- [1]
-								"TMW:icon:1S5wis7Q9R0j", -- [2]
+								"TMW:icon:1S5xLgesVC3c", -- [1]
+								"TMW:icon:1S5xMTIoIqzX", -- [2]
 							},
-							["CustomTex"] = "202770",
 							["States"] = {
 								{
 								}, -- [1]
@@ -50637,9 +50639,10 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
-								"TMW:icon:1S5xLgesVC3c", -- [1]
-								"TMW:icon:1S5xMTIoIqzX", -- [2]
+								"TMW:icon:1S5wis7OPlB6", -- [1]
+								"TMW:icon:1S5wis7Q9R0j", -- [2]
 							},
+							["CustomTex"] = "202770",
 							["States"] = {
 								{
 								}, -- [1]
@@ -50678,8 +50681,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "影中暗刃",
+							["ShowTimerText"] = true,
 							["CustomTex"] = "280286",
 							["States"] = {
 								{
@@ -50876,24 +50879,18 @@ TellMeWhenDB = {
 						[104] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = -80,
-						["x"] = 185,
-					},
+					["Columns"] = 8,
 				}, -- [18]
 				{
 					["GUID"] = "TMW:group:1VbDgFSgsNm8",
-					["Point"] = {
-						["y"] = -50,
-						["x"] = 185,
-					},
+					["Columns"] = 8,
 					["Scale"] = 1.28,
 					["Icons"] = {
 						{
 							["Enabled"] = true,
 							["Type"] = "buff",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "星辰坠落",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1RmzKllD8C7R",
@@ -50903,7 +50900,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Name"] = "星辰坠落",
+							["ShowTimerText"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "LUNAR_POWER",
@@ -51240,11 +51237,17 @@ TellMeWhenDB = {
 						[104] = false,
 						[105] = false,
 					},
-					["Columns"] = 8,
+					["Point"] = {
+						["y"] = -50,
+						["x"] = 185,
+					},
 				}, -- [19]
 				{
 					["GUID"] = "TMW:group:1Vc40PNzdjOK",
-					["Columns"] = 1,
+					["Point"] = {
+						["y"] = 20,
+						["x"] = -1.727210058059349e-05,
+					},
 					["Scale"] = 2.4,
 					["Icons"] = {
 						{
@@ -51569,22 +51572,19 @@ TellMeWhenDB = {
 						[104] = false,
 						[105] = false,
 					},
-					["Point"] = {
-						["y"] = 20,
-						["x"] = -1.727210058059349e-05,
-					},
+					["Columns"] = 1,
 				}, -- [20]
 				{
 					["GUID"] = "TMW:group:1PohxveX4h2J",
 					["Columns"] = 8,
-					["Scale"] = 1.28,
 					["Locked"] = true,
+					["Scale"] = 1.28,
 					["Name"] = "XD共有技能",
 					["Icons"] = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -51592,7 +51592,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -51643,8 +51643,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "树皮术",
 							["ShowTimerText"] = true,
+							["Name"] = "树皮术",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -51683,7 +51683,7 @@ TellMeWhenDB = {
 							["Events"] = {
 								{
 									["Type"] = "Animations",
-									["Duration"] = 2,
+									["Duration"] = 5,
 									["Event"] = "OnStart",
 									["Animation"] = "ACTVTNGLOW",
 								}, -- [1]
@@ -51703,7 +51703,7 @@ TellMeWhenDB = {
 						{
 							["GUID"] = "TMW:icon:1PVpSt5_uqrg",
 							["OnlyMine"] = true,
-							["Name"] = "急奔; 猛虎冲刺",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["Events"] = {
 								{
@@ -51715,7 +51715,7 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "急奔; 猛虎冲刺",
 							["States"] = {
 								{
 								}, -- [1]
@@ -51954,15 +51954,15 @@ TellMeWhenDB = {
 						["y"] = -20,
 						["x"] = 185,
 					},
-					["Scale"] = 1.28,
 					["Locked"] = true,
+					["Scale"] = 1.28,
 					["Columns"] = 8,
 					["Icons"] = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "自省强化; 羁绊强化",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -51986,8 +51986,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "战斗冥想",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -52061,8 +52061,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "无畏之力",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -52105,8 +52105,8 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "坚守阵地; 火红烈焰; 永恒之潮; 艾泽拉斯的不朽赐福; 清醒梦境之忆",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -52364,8 +52364,8 @@ TellMeWhenDB = {
 				{
 					["GUID"] = "TMW:group:1Rm7iJjFH3xP",
 					["Columns"] = 8,
-					["Scale"] = 1.28,
 					["Locked"] = true,
+					["Scale"] = 1.28,
 					["Name"] = "xd控制",
 					["Icons"] = {
 						{
@@ -52374,8 +52374,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "蛮力猛击; 战争践踏",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -52399,11 +52399,9 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "cleu",
 							["CLEUDur"] = 8,
-							["Name"] = "日光术",
-							["CLEUEvents"] = {
-								["SPELL_CAST_SUCCESS"] = true,
-							},
 							["ShowTimerText"] = true,
+							["OnlyMine"] = true,
+							["Name"] = "日光术",
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -52413,13 +52411,15 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["OnlyMine"] = true,
+							["CLEUEvents"] = {
+								["SPELL_CAST_SUCCESS"] = true,
+							},
 							["Conditions"] = {
 								{
-									["Operator"] = ">",
+									["Unit"] = "target",
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "日光术",
-									["Unit"] = "target",
+									["Operator"] = ">",
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -52440,8 +52440,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "台风",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnShow",
@@ -52499,8 +52499,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "休眠; 夺魂咆哮",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -52526,8 +52526,8 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "纠缠根须; 群体缠绕",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnStart",
@@ -52579,7 +52579,6 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1SBVxxeDxNJc",
 							["Type"] = "cleu",
 							["CLEUDur"] = 10,
-							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Event"] = "OnShow",
@@ -52589,18 +52588,19 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["Name"] = "乌索尔旋风",
+							["OnlyMine"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
 							["CLEUEvents"] = {
 								["SPELL_CAST_SUCCESS"] = true,
 							},
-							["Name"] = "乌索尔旋风",
-							["Enabled"] = true,
-							["OnlyMine"] = true,
 							["Conditions"] = {
 								{
-									["Operator"] = ">",
+									["Unit"] = "target",
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "乌索尔旋风",
-									["Unit"] = "target",
+									["Operator"] = ">",
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -52920,9 +52920,12 @@ TellMeWhenDB = {
 				}, -- [23]
 				{
 					["GUID"] = "TMW:group:1Ppig=lKhJSe",
-					["Name"] = "备用其他",
-					["Columns"] = 8,
 					["Locked"] = true,
+					["Point"] = {
+						["y"] = 125,
+						["x"] = 540,
+					},
+					["Name"] = "备用其他",
 					["Scale"] = 1.3,
 					["Rows"] = 3,
 					["Icons"] = {
@@ -52932,7 +52935,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "生命绽放",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1RmzKllD8C7R",
@@ -52942,7 +52945,7 @@ TellMeWhenDB = {
 								},
 							},
 							["Enabled"] = true,
-							["Name"] = "生命绽放",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -52959,7 +52962,7 @@ TellMeWhenDB = {
 							["Unit"] = "raid 1-40; group 1-40",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "生命绽放",
+							["ShowTimerText"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1RmzKllD8C7R",
@@ -52970,7 +52973,7 @@ TellMeWhenDB = {
 								},
 							},
 							["Enabled"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "生命绽放",
 							["States"] = {
 								{
 									["Alpha"] = 0.5,
@@ -52988,7 +52991,7 @@ TellMeWhenDB = {
 							["Unit"] = "raid 1-40; group 1-40",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "生命绽放",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1RmzKllD8C7R",
@@ -52999,7 +53002,7 @@ TellMeWhenDB = {
 								},
 							},
 							["Enabled"] = true,
-							["Name"] = "生命绽放",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -53019,9 +53022,9 @@ TellMeWhenDB = {
 							["Unit"] = "raid 1-40; group 1-40",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "野性成长",
-							["Enabled"] = true,
 							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Name"] = "野性成长",
 							["States"] = {
 								{
 									["Alpha"] = 0.5,
@@ -53039,9 +53042,9 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
 							["Name"] = "野性成长",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -53058,9 +53061,9 @@ TellMeWhenDB = {
 							["Unit"] = "raid 1-40; group 1-40",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
 							["Name"] = "野性成长",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0.5,
@@ -53106,7 +53109,9 @@ TellMeWhenDB = {
 							["CLEUDur"] = 10,
 							["Enabled"] = true,
 							["FakeHidden"] = true,
-							["OnlyMine"] = true,
+							["CLEUEvents"] = {
+								["SPELL_CAST_SUCCESS"] = true,
+							},
 							["ShowTimerText"] = true,
 							["Events"] = {
 								{
@@ -53117,9 +53122,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["CLEUEvents"] = {
-								["SPELL_CAST_SUCCESS"] = true,
-							},
+							["OnlyMine"] = true,
 							["Name"] = "自然之力",
 							["SourceUnit"] = "player",
 							["States"] = {
@@ -53138,7 +53141,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "宁静",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["Events"] = {
 								{
@@ -53149,7 +53152,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "宁静",
 							["States"] = {
 								{
 								}, -- [1]
@@ -53166,9 +53169,9 @@ TellMeWhenDB = {
 							["Unit"] = "raid 1-40; group 1-40",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "宁静",
-							["Enabled"] = true,
 							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Name"] = "宁静",
 							["States"] = {
 								{
 									["Alpha"] = 0.5,
@@ -53186,9 +53189,9 @@ TellMeWhenDB = {
 							["Unit"] = "raid 1-40; group 1-40",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
 							["Name"] = "宁静",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0.5,
@@ -53217,9 +53220,9 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
 							["Name"] = "塞纳里奥结界; 塞纳里奥结界",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -53289,7 +53292,9 @@ TellMeWhenDB = {
 							["CLEUDur"] = 10,
 							["Enabled"] = true,
 							["FakeHidden"] = true,
-							["OnlyMine"] = true,
+							["CLEUEvents"] = {
+								["SPELL_CAST_SUCCESS"] = true,
+							},
 							["Name"] = "艾露恩之怒",
 							["Events"] = {
 								{
@@ -53300,9 +53305,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["CLEUEvents"] = {
-								["SPELL_CAST_SUCCESS"] = true,
-							},
+							["OnlyMine"] = true,
 							["ShowTimerText"] = true,
 							["SourceUnit"] = "player",
 							["States"] = {
@@ -53358,7 +53361,7 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TXl_5JzGhOM",
 							["Type"] = "icd",
 							["FakeHidden"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "海巫之裁: 39",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -53368,7 +53371,7 @@ TellMeWhenDB = {
 								},
 							},
 							["Enabled"] = true,
-							["Name"] = "海巫之裁: 39",
+							["ShowTimerText"] = true,
 							["CustomTex"] = "303044",
 							["States"] = {
 								{
@@ -53387,7 +53390,7 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TXl_5J=lqSq",
 							["Type"] = "icd",
 							["FakeHidden"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "忠仆之裁: 39",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -53397,7 +53400,7 @@ TellMeWhenDB = {
 								},
 							},
 							["Enabled"] = true,
-							["Name"] = "忠仆之裁: 39",
+							["ShowTimerText"] = true,
 							["CustomTex"] = "303044",
 							["States"] = {
 								{
@@ -53948,10 +53951,7 @@ TellMeWhenDB = {
 							},
 						}, -- [56]
 					},
-					["Point"] = {
-						["y"] = 125,
-						["x"] = 540,
-					},
+					["Columns"] = 8,
 				}, -- [24]
 				{
 					["Icons"] = {
@@ -53969,24 +53969,20 @@ TellMeWhenDB = {
 					},
 				}, -- [25]
 			},
-			["Version"] = 90301,
+			["Version"] = 90401,
 			["Locked"] = true,
 			["NumGroups"] = 24,
 			["SoundChannel"] = "Master",
 			["ForceNoBlizzCC"] = true,
 		},
 		["Magiccreamdk - 格雷迈恩"] = {
-			["Version"] = 90301,
+			["Version"] = 90401,
 			["NumGroups"] = 20,
 			["DrawEdge"] = true,
 			["ForceNoBlizzCC"] = true,
 			["Locked"] = true,
 			["Groups"] = {
 				{
-					["Point"] = {
-						["y"] = -80,
-						["x"] = 185,
-					},
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -54004,7 +54000,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "溃烂之伤",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54016,8 +54012,8 @@ TellMeWhenDB = {
 										}, -- [1]
 										{
 											["Type"] = "DEBUFFSTACKS",
-											["Unit"] = "target",
 											["Operator"] = ">=",
+											["Unit"] = "target",
 											["Name"] = "溃烂之伤",
 											["PrtsBefore"] = 1,
 											["Level"] = 4,
@@ -54039,15 +54035,15 @@ TellMeWhenDB = {
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "DEBUFFSTACKS",
-											["Unit"] = "target",
 											["Operator"] = ">=",
+											["Unit"] = "target",
 											["Name"] = "溃烂之伤",
 											["Level"] = 1,
 										}, -- [1]
 										{
 											["Type"] = "DEBUFFSTACKS",
-											["Unit"] = "target",
 											["Operator"] = "<=",
+											["Unit"] = "target",
 											["Name"] = "溃烂之伤",
 											["Level"] = 3,
 										}, -- [2]
@@ -54067,7 +54063,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "溃烂之伤",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [1]
 						{
@@ -54075,7 +54071,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "邪恶虫群",
+							["ShowTimerText"] = true,
 							["CustomTex"] = "115989",
 							["States"] = {
 								{
@@ -54086,7 +54082,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "邪恶虫群",
 							["Enabled"] = true,
 						}, -- [2]
 						{
@@ -54094,7 +54090,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "灵魂收割",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54103,14 +54099,14 @@ TellMeWhenDB = {
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
 											["Operator"] = "<=",
+											["Unit"] = "target",
 											["Level"] = 40,
 										}, -- [1]
 										{
 											["Type"] = "DEBUFFDUR",
-											["Unit"] = "target",
 											["Operator"] = ">",
+											["Unit"] = "target",
 											["Name"] = "灵魂收割",
 											["AndOr"] = "OR",
 										}, -- [2]
@@ -54142,18 +54138,18 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "DEBUFFDUR",
-									["Unit"] = "target",
 									["Operator"] = ">",
+									["Unit"] = "target",
 									["Name"] = "灵魂收割",
 									["PrtsBefore"] = 1,
 								}, -- [3]
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "target",
 									["Operator"] = "<=",
-									["AndOr"] = "OR",
-									["PrtsBefore"] = 1,
+									["Unit"] = "target",
 									["Level"] = 40,
+									["PrtsBefore"] = 1,
+									["AndOr"] = "OR",
 								}, -- [4]
 								{
 									["Type"] = "SPELLCD",
@@ -54162,7 +54158,7 @@ TellMeWhenDB = {
 								}, -- [5]
 								["n"] = 5,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "灵魂收割",
 						}, -- [3]
 						{
 							["States"] = {
@@ -54200,8 +54196,8 @@ TellMeWhenDB = {
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "DEBUFFDUR",
-											["Unit"] = "pet",
 											["Operator"] = "<=",
+											["Unit"] = "pet",
 											["Name"] = "控制亡灵",
 											["Level"] = 60,
 										}, -- [1]
@@ -54326,8 +54322,16 @@ TellMeWhenDB = {
 					},
 					["Name"] = "邪DK目标debuff1",
 					["GUID"] = "TMW:group:1PSpuBtHYg1o",
+					["Point"] = {
+						["y"] = -80,
+						["x"] = 185,
+					},
 				}, -- [1]
 				{
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -185,
+					},
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -54384,13 +54388,13 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "不可思议的量子装置; 赤红华尔兹",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
 									["Duration"] = 5,
 									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
+									["Event"] = "OnStart",
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -54403,13 +54407,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "不可思议的量子装置; 赤红华尔兹",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [5]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "势不可挡",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54429,7 +54433,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "势不可挡",
 							["Enabled"] = true,
 						}, -- [6]
 						{
@@ -54446,7 +54450,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "不洁之力",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54466,7 +54470,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "不洁之力",
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -54648,16 +54652,8 @@ TellMeWhenDB = {
 					},
 					["Name"] = "邪DK目标debuff2",
 					["GUID"] = "TMW:group:1Vwo0jA3uc0w",
-					["Point"] = {
-						["y"] = -20,
-						["x"] = -185,
-					},
 				}, -- [2]
 				{
-					["Point"] = {
-						["y"] = -50,
-						["x"] = 185,
-					},
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -54687,8 +54683,8 @@ TellMeWhenDB = {
 										}, -- [1]
 										{
 											["Type"] = "DEBUFFDUR",
-											["Operator"] = "<=",
 											["Unit"] = "target",
+											["Operator"] = "<=",
 											["Name"] = "恶性瘟疫",
 											["Level"] = 9,
 										}, -- [2]
@@ -54719,7 +54715,7 @@ TellMeWhenDB = {
 								"TMW:icon:1Vx7US6TlrO5", -- [1]
 								"TMW:icon:1Vx7UXG6_f88", -- [2]
 							},
-							["Name"] = "亡者大军",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54745,7 +54741,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "亡者大军",
 							["Enabled"] = true,
 						}, -- [2]
 						{
@@ -54843,12 +54839,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "邪DK目标debuff2",
 					["GUID"] = "TMW:group:1VZ5J=3WQRK0",
-				}, -- [3]
-				{
 					["Point"] = {
 						["y"] = -50,
-						["x"] = -184.6483941177534,
+						["x"] = 185,
 					},
+				}, -- [3]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -54880,7 +54876,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "激励兽群",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54900,13 +54896,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "激励兽群",
 							["Enabled"] = true,
 						}, -- [2]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "血祭之力",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54926,7 +54922,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "血祭之力",
 							["Enabled"] = true,
 						}, -- [3]
 						{
@@ -54954,7 +54950,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "黑暗援助",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54973,13 +54969,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "黑暗援助",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [6]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "末日突降",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -54999,13 +54995,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "末日突降",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [7]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "符文腐蚀",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55025,7 +55021,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "符文腐蚀",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -55097,12 +55093,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "邪DK自身buff2",
 					["GUID"] = "TMW:group:1PSovhDMyswt",
-				}, -- [4]
-				{
 					["Point"] = {
-						["y"] = -80,
+						["y"] = -50,
 						["x"] = -184.6483941177534,
 					},
+				}, -- [4]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -55129,7 +55125,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "生存本能; 精通本能",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55148,7 +55144,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "生存本能; 精通本能",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [2]
 						{
@@ -55221,7 +55217,7 @@ TellMeWhenDB = {
 								"TMW:icon:1S5xLgesVC3c", -- [1]
 								"TMW:icon:1S5xMTIoIqzX", -- [2]
 							},
-							["Name"] = "亡者大军",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55247,7 +55243,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "亡者大军",
 							["Enabled"] = true,
 						}, -- [5]
 						{
@@ -55257,7 +55253,7 @@ TellMeWhenDB = {
 								"TMW:icon:1Vxzt9SGhxiH", -- [1]
 								"TMW:icon:1VxztBIfqKaX", -- [2]
 							},
-							["Name"] = "亡者大军",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55283,7 +55279,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "亡者大军",
 							["Enabled"] = true,
 						}, -- [6]
 						{
@@ -55339,7 +55335,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "狂热畸兽",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55386,7 +55382,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "狂热畸兽",
+							["ShowTimerText"] = true,
 						}, -- [8]
 						{
 							["States"] = {
@@ -55457,12 +55453,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "邪DK自身buff",
 					["GUID"] = "TMW:group:1PSpFqU4PUjj",
-				}, -- [5]
-				{
 					["Point"] = {
 						["y"] = -80,
-						["x"] = -185,
+						["x"] = -184.6483941177534,
 					},
+				}, -- [5]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 4,
 					["Locked"] = true,
@@ -55478,7 +55474,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "精通本能",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55499,13 +55495,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "精通本能",
 							["Enabled"] = true,
 						}, -- [1]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "野蛮暴烈",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55525,7 +55521,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "野蛮暴烈",
 							["Enabled"] = true,
 						}, -- [2]
 						{
@@ -55696,9 +55692,9 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "SPELLCHARGES",
-									["AndOr"] = "OR",
-									["Name"] = "化身：乌索克的守护者",
 									["Level"] = 1,
+									["Name"] = "化身：乌索克的守护者",
+									["AndOr"] = "OR",
 								}, -- [3]
 								{
 									["Type"] = "BUFFDUR",
@@ -55768,7 +55764,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "铁鬃",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55796,7 +55792,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "铁鬃",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -55868,12 +55864,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "熊T自身buff1",
 					["GUID"] = "TMW:group:1PSqjlmIR3JQ",
-				}, -- [6]
-				{
 					["Point"] = {
-						["y"] = -50,
+						["y"] = -80,
 						["x"] = -185,
 					},
+				}, -- [6]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 4,
 					["Locked"] = true,
@@ -55889,7 +55885,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "烧蚀护盾",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55909,7 +55905,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "烧蚀护盾",
 							["Enabled"] = true,
 						}, -- [1]
 						{
@@ -55923,7 +55919,15 @@ TellMeWhenDB = {
 							["Name"] = "闪光庇护所",
 							["ShowTimerText"] = true,
 							["OnlyMine"] = true,
-							["ConditionDur"] = 10,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
 							["CustomTex"] = "271559",
 							["States"] = {
 								{
@@ -55940,22 +55944,14 @@ TellMeWhenDB = {
 							["OnlyIfCounting"] = true,
 							["Enabled"] = true,
 							["CLEUNoRefresh"] = true,
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
+							["ConditionDur"] = 10,
 							["OnlyInBags"] = true,
 							["ConditionDurEnabled"] = true,
 						}, -- [2]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "艾泽里特血脉; 晶化甲壳",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -55974,7 +55970,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "艾泽里特血脉; 晶化甲壳",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [3]
 						{
@@ -56013,7 +56009,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "大地守卫者",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56033,13 +56029,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "大地守卫者",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [5]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "213680",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56058,13 +56054,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "213680",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [6]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "星河守护者",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56083,13 +56079,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "星河守护者",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [7]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "淤血",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56108,7 +56104,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "淤血",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -56180,12 +56176,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "熊T自身buff2",
 					["GUID"] = "TMW:group:1PSqqGgc7PmQ",
-				}, -- [7]
-				{
 					["Point"] = {
-						["y"] = -20,
+						["y"] = -50,
 						["x"] = -185,
 					},
+				}, -- [7]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 4,
 					["Locked"] = true,
@@ -56245,7 +56241,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56271,13 +56267,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
 							["Enabled"] = true,
 						}, -- [5]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "天界指引",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56299,7 +56295,7 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								},
 							},
-							["Name"] = "天界指引",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [6]
 						{
@@ -56316,7 +56312,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "过载的心能电池",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56338,7 +56334,7 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								},
 							},
-							["Name"] = "过载的心能电池",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -56520,12 +56516,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "熊T自身buff3",
 					["GUID"] = "TMW:group:1VvAnm6FO0ea",
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -185,
+					},
 				}, -- [8]
 				{
-					["Point"] = {
-						["y"] = -80,
-						["x"] = 185,
-					},
 					["Scale"] = 1.28,
 					["Role"] = 4,
 					["Locked"] = true,
@@ -56598,8 +56594,8 @@ TellMeWhenDB = {
 							},
 							["Type"] = "cleu",
 							["CLEUDur"] = 8,
-							["Name"] = "明月普照",
 							["ShowTimerText"] = true,
+							["Name"] = "明月普照",
 							["Enabled"] = true,
 							["Events"] = {
 								{
@@ -56689,7 +56685,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "生命心能",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56716,7 +56712,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "生命心能",
 							["Enabled"] = true,
 						}, -- [6]
 						{
@@ -56735,7 +56731,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "低吼",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -56755,7 +56751,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "低吼",
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -57058,12 +57054,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "熊T目标debuff1",
 					["GUID"] = "TMW:group:1RsF_3Ffwy_N",
-				}, -- [9]
-				{
 					["Point"] = {
-						["y"] = -50,
+						["y"] = -80,
 						["x"] = 185,
 					},
+				}, -- [9]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 4,
 					["Locked"] = true,
@@ -57506,12 +57502,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "熊T各种吸收盾",
 					["GUID"] = "TMW:group:1PSqgB4X61gn",
+					["Point"] = {
+						["y"] = -50,
+						["x"] = 185,
+					},
 				}, -- [10]
 				{
-					["Point"] = {
-						["y"] = -80,
-						["x"] = -185,
-					},
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -57564,8 +57560,8 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["OnlyEquipped"] = true,
 							["Type"] = "item",
-							["Name"] = "炎法师的引线",
 							["ShowTimerText"] = true,
+							["Name"] = "炎法师的引线",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -57616,7 +57612,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "星辰领主",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -57635,7 +57631,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "星辰领主",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [5]
 						{
@@ -57645,7 +57641,7 @@ TellMeWhenDB = {
 								"TMW:icon:1VbKfeW6uDG3", -- [1]
 								"TMW:icon:1VbKr3Nr3Tus", -- [2]
 							},
-							["Name"] = "化身：艾露恩之眷; 超凡之盟",
+							["ShowTimerText"] = true,
 							["GUID"] = "TMW:icon:1RYqhmWLTSYa",
 							["States"] = {
 								{
@@ -57658,13 +57654,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "化身：艾露恩之眷; 超凡之盟",
 							["Enabled"] = true,
 						}, -- [6]
 						{
 							["Type"] = "cooldown",
-							["Name"] = "星火术",
 							["ShowTimerText"] = true,
+							["Name"] = "星火术",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCHARGES",
@@ -57692,8 +57688,8 @@ TellMeWhenDB = {
 						}, -- [7]
 						{
 							["Type"] = "cooldown",
-							["Name"] = "愤怒",
 							["ShowTimerText"] = true,
+							["Name"] = "愤怒",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCHARGES",
@@ -57898,12 +57894,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "鸟D自身buff",
 					["GUID"] = "TMW:group:1PTG53mjKRE8",
-				}, -- [11]
-				{
 					["Point"] = {
-						["y"] = -50,
+						["y"] = -80,
 						["x"] = -185,
 					},
+				}, -- [11]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -57935,7 +57931,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "汇帆",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -57955,7 +57951,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "汇帆",
 							["Enabled"] = true,
 						}, -- [2]
 						{
@@ -57983,7 +57979,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "枭兽狂怒",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58003,13 +57999,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "枭兽狂怒",
 							["Enabled"] = true,
 						}, -- [5]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "至日",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58033,13 +58029,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "至日",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [6]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "月蚀",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58059,13 +58055,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "月蚀",
 							["Enabled"] = true,
 						}, -- [7]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "日蚀",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58085,7 +58081,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "日蚀",
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -58388,12 +58384,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "鸟D自身buff2",
 					["GUID"] = "TMW:group:1PTG7OmiRQok",
-				}, -- [12]
-				{
 					["Point"] = {
-						["y"] = -20,
+						["y"] = -50,
 						["x"] = -185,
 					},
+				}, -- [12]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -58409,7 +58405,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "吸血鬼之速",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58429,13 +58425,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "吸血鬼之速",
 							["Enabled"] = true,
 						}, -- [1]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "宝石皮肤",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58455,13 +58451,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "宝石皮肤",
 							["Enabled"] = true,
 						}, -- [2]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
 							["GUID"] = "TMW:icon:1PVpSt5Sl_k4",
 							["Events"] = {
 								{
@@ -58488,7 +58484,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "延时之力药水; 智力战斗药水; 敏捷战斗药水",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [3]
 						{
@@ -58524,7 +58520,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "导师的圣钟",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58543,13 +58539,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "导师的圣钟",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [5]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "同化雕文",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58576,13 +58572,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "同化雕文",
 							["Enabled"] = true,
 						}, -- [6]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "339946",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58608,13 +58604,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "339946",
 							["Enabled"] = true,
 						}, -- [7]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "339943",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58640,7 +58636,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "339943",
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -58822,12 +58818,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "鸟德自身buff3",
 					["GUID"] = "TMW:group:1TEzjv10uq_i",
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -185,
+					},
 				}, -- [13]
 				{
-					["Point"] = {
-						["y"] = -80,
-						["x"] = 185,
-					},
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -58845,7 +58841,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "月火术",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58857,8 +58853,8 @@ TellMeWhenDB = {
 										}, -- [1]
 										{
 											["Type"] = "DEBUFFDUR",
-											["Operator"] = "<=",
 											["Unit"] = "target",
+											["Operator"] = "<=",
 											["Name"] = "164812",
 											["Level"] = 7,
 										}, -- [2]
@@ -58878,7 +58874,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "月火术",
 							["Enabled"] = true,
 						}, -- [1]
 						{
@@ -58886,7 +58882,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "阳炎术",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58898,8 +58894,8 @@ TellMeWhenDB = {
 										}, -- [1]
 										{
 											["Type"] = "DEBUFFDUR",
-											["Operator"] = "<=",
 											["Unit"] = "target",
+											["Operator"] = "<=",
 											["Name"] = "164815",
 											["Level"] = 6,
 										}, -- [2]
@@ -58919,7 +58915,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "阳炎术",
 							["Enabled"] = true,
 						}, -- [2]
 						{
@@ -58927,8 +58923,8 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "星辰耀斑",
 							["ShowTimerText"] = true,
+							["Name"] = "星辰耀斑",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -58940,8 +58936,8 @@ TellMeWhenDB = {
 										}, -- [1]
 										{
 											["Type"] = "DEBUFFDUR",
-											["Operator"] = "<=",
 											["Unit"] = "target",
+											["Operator"] = "<=",
 											["Name"] = "202347",
 											["Level"] = 8,
 										}, -- [2]
@@ -59032,7 +59028,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "影中暗刃",
+							["ShowTimerText"] = true,
 							["CustomTex"] = "280286",
 							["States"] = {
 								{
@@ -59043,7 +59039,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "影中暗刃",
 							["Enabled"] = true,
 						}, -- [8]
 						{
@@ -59225,12 +59221,12 @@ TellMeWhenDB = {
 					},
 					["Name"] = "鸟D目标debuff1",
 					["GUID"] = "TMW:group:1PTG0tUByGo5",
-				}, -- [14]
-				{
 					["Point"] = {
-						["y"] = -50,
+						["y"] = -80,
 						["x"] = 185,
 					},
+				}, -- [14]
+				{
 					["Scale"] = 1.28,
 					["Role"] = 1,
 					["Locked"] = true,
@@ -59246,8 +59242,8 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "星辰坠落",
 							["ShowTimerText"] = true,
+							["Name"] = "星辰坠落",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -59588,12 +59584,13 @@ TellMeWhenDB = {
 					},
 					["Name"] = "鸟D目标debuff2",
 					["GUID"] = "TMW:group:1VbDgFSgsNm8",
+					["Point"] = {
+						["y"] = -50,
+						["x"] = 185,
+					},
 				}, -- [15]
 				{
-					["View"] = "bar",
-					["Point"] = {
-						["y"] = -90,
-					},
+					["GUID"] = "TMW:group:1NaU7Igqfr1m",
 					["Scale"] = 1,
 					["TextureName"] = "Blizzard",
 					["Locked"] = true,
@@ -59809,7 +59806,10 @@ TellMeWhenDB = {
 							["Icon"] = false,
 						},
 					},
-					["GUID"] = "TMW:group:1NaU7Igqfr1m",
+					["View"] = "bar",
+					["Point"] = {
+						["y"] = -90,
+					},
 				}, -- [16]
 				{
 					["GUID"] = "TMW:group:1PohxveX4h2J",
@@ -59864,7 +59864,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "巫妖之躯",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -59883,13 +59883,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "巫妖之躯",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [4]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "冰封之韧",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -59908,13 +59908,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "冰封之韧",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [5]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "死亡脚步; 幻影步",
+							["ShowTimerText"] = true,
 							["GUID"] = "TMW:icon:1PVpSt5_uqrg",
 							["Events"] = {
 								{
@@ -59934,13 +59934,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "死亡脚步; 幻影步",
 							["Enabled"] = true,
 						}, -- [6]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "反魔法护罩",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -59966,7 +59966,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "反魔法护罩",
 							["Enabled"] = true,
 						}, -- [7]
 						{
@@ -60249,7 +60249,7 @@ TellMeWhenDB = {
 								"TMW:icon:1VyPOOEjsHOq", -- [1]
 								"TMW:icon:1VyPOOEliCGN", -- [2]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "抚慰阴影",
 							["OnlyMine"] = true,
 							["States"] = {
 								{
@@ -60260,13 +60260,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "抚慰阴影",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [2]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "兴奋追猎者",
 							["CustomTex"] = "331939",
 							["States"] = {
 								{
@@ -60277,13 +60277,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "兴奋追猎者",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [3]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "沉醉",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -60303,7 +60303,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "沉醉",
 							["Enabled"] = true,
 						}, -- [4]
 						{
@@ -60337,7 +60337,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "无畏之力",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -60375,13 +60375,13 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "无畏之力",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [6]
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "坚守阵地; 火红烈焰; 永恒之潮; 艾泽拉斯的不朽赐福; 清醒梦境之忆",
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -60408,7 +60408,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["Name"] = "坚守阵地; 火红烈焰; 永恒之潮; 艾泽拉斯的不朽赐福; 清醒梦境之忆",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [7]
 						{
@@ -60616,7 +60616,7 @@ TellMeWhenDB = {
 							["Unit"] = "target; pet",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "窒息; 撕扯",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -60635,7 +60635,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "窒息; 撕扯",
 							["Enabled"] = true,
 						}, -- [1]
 						{
@@ -60654,7 +60654,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "寒冰锁链; 317792",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -60673,7 +60673,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "寒冰锁链; 317792",
 							["Enabled"] = true,
 						}, -- [3]
 						{
@@ -60703,7 +60703,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "寒冰锁链",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -60722,7 +60722,7 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "寒冰锁链",
 							["Enabled"] = true,
 						}, -- [6]
 						{
@@ -61063,8 +61063,8 @@ TellMeWhenDB = {
 					["Icons"] = {
 						{
 							["Type"] = "cooldown",
-							["Name"] = "亡者大军",
 							["ShowTimerText"] = true,
+							["Name"] = "亡者大军",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
@@ -61087,13 +61087,13 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 						}, -- [1]
 						{
-							["OnlyMine"] = true,
-							["Type"] = "cleu",
-							["CLEUDur"] = 34,
-							["ShowTimerText"] = true,
 							["CLEUEvents"] = {
 								["SPELL_CAST_SUCCESS"] = true,
 							},
+							["Type"] = "cleu",
+							["CLEUDur"] = 34,
+							["ShowTimerText"] = true,
+							["OnlyMine"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -61119,23 +61119,23 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 						}, -- [2]
 						{
-							["CLEUEvents"] = {
-								["SPELL_CAST_SUCCESS"] = true,
-							},
+							["OnlyMine"] = true,
 							["Type"] = "cooldown",
 							["CLEUDur"] = 16,
 							["Name"] = "275699",
 							["Conditions"] = {
 								{
 									["Type"] = "DEBUFFSTACKS",
-									["Unit"] = "target",
 									["Operator"] = ">=",
+									["Unit"] = "target",
 									["Name"] = "溃烂之伤",
 									["Level"] = 4,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["OnlyMine"] = true,
+							["CLEUEvents"] = {
+								["SPELL_CAST_SUCCESS"] = true,
+							},
 							["States"] = {
 								{
 									["Alpha"] = 0.5,
@@ -61153,13 +61153,13 @@ TellMeWhenDB = {
 							["ShowTimerText"] = true,
 						}, -- [3]
 						{
-							["OnlyMine"] = true,
-							["Type"] = "cleu",
-							["CLEUDur"] = 16,
-							["Name"] = "275699",
 							["CLEUEvents"] = {
 								["SPELL_CAST_SUCCESS"] = true,
 							},
+							["Type"] = "cleu",
+							["CLEUDur"] = 16,
+							["Name"] = "275699",
+							["OnlyMine"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -61187,7 +61187,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "188290",
 							["GUID"] = "TMW:icon:1Vx7US6TlrO5",
 							["Events"] = {
 								{
@@ -61230,16 +61230,16 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "188290",
+							["ShowTimerText"] = true,
 						}, -- [5]
 						{
-							["OnlyMine"] = true,
-							["Type"] = "cleu",
-							["CLEUDur"] = 10,
-							["Name"] = "枯萎凋零",
 							["CLEUEvents"] = {
 								["SPELL_CAST_SUCCESS"] = true,
 							},
+							["Type"] = "cleu",
+							["CLEUDur"] = 10,
+							["ShowTimerText"] = true,
+							["OnlyMine"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0.5,
@@ -61251,7 +61251,7 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["FakeHidden"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "枯萎凋零",
 							["GUID"] = "TMW:icon:1Vx7UXG6_f88",
 							["SourceUnit"] = "player",
 							["Enabled"] = true,
@@ -61259,7 +61259,7 @@ TellMeWhenDB = {
 						{
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "抚慰阴影",
 							["GUID"] = "TMW:icon:1VyPOOEjsHOq",
 							["Events"] = {
 								{
@@ -61280,17 +61280,17 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["FakeHidden"] = true,
-							["Name"] = "抚慰阴影",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [7]
 						{
+							["OnlyMine"] = true,
+							["Type"] = "cleu",
+							["CLEUDur"] = 12,
+							["ShowTimerText"] = true,
 							["CLEUEvents"] = {
 								["SPELL_AURA_APPLIED"] = true,
 							},
-							["Type"] = "cleu",
-							["CLEUDur"] = 12,
-							["Name"] = "抚慰阴影",
-							["OnlyMine"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0.5,
@@ -61306,13 +61306,13 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1VyPOOEliCGN",
 							["CLEUNoRefresh"] = true,
 							["SourceUnit"] = "player",
-							["ShowTimerText"] = true,
+							["Name"] = "抚慰阴影",
 						}, -- [8]
 						{
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "宁静",
 							["GUID"] = "TMW:icon:1SSjTjcW50hi",
 							["Events"] = {
 								{
@@ -61333,14 +61333,14 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["FakeHidden"] = true,
-							["Name"] = "宁静",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						}, -- [9]
 						{
 							["Unit"] = "raid 1-40; group 1-40",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "宁静",
+							["ShowTimerText"] = true,
 							["GUID"] = "TMW:icon:1SSjTluI6u2U",
 							["States"] = {
 								{
@@ -61353,14 +61353,14 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["FakeHidden"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "宁静",
 							["Enabled"] = true,
 						}, -- [10]
 						{
 							["Unit"] = "raid 1-40; group 1-40",
 							["OnlyMine"] = true,
 							["Type"] = "cooldown",
-							["Name"] = "宁静",
+							["ShowTimerText"] = true,
 							["GUID"] = "TMW:icon:1SSjSd4L8DD8",
 							["States"] = {
 								{
@@ -61373,7 +61373,7 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["FakeHidden"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "宁静",
 							["Enabled"] = true,
 						}, -- [11]
 						{
@@ -61391,7 +61391,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Type"] = "buff",
-							["Name"] = "塞纳里奥结界; 塞纳里奥结界",
+							["ShowTimerText"] = true,
 							["GUID"] = "TMW:icon:1SSrV1L5fWxh",
 							["States"] = {
 								{
@@ -61403,7 +61403,7 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["FakeHidden"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "塞纳里奥结界; 塞纳里奥结界",
 							["Enabled"] = true,
 						}, -- [13]
 						{
@@ -61460,13 +61460,13 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 						}, -- [15]
 						{
-							["OnlyMine"] = true,
-							["Type"] = "cleu",
-							["CLEUDur"] = 10,
-							["ShowTimerText"] = true,
 							["CLEUEvents"] = {
 								["SPELL_CAST_SUCCESS"] = true,
 							},
+							["Type"] = "cleu",
+							["CLEUDur"] = 10,
+							["ShowTimerText"] = true,
+							["OnlyMine"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -61532,9 +61532,9 @@ TellMeWhenDB = {
 						}, -- [17]
 						{
 							["Type"] = "icd",
-							["Name"] = "海巫之裁: 39",
-							["GUID"] = "TMW:icon:1TXl_5JzGhOM",
 							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1TXl_5JzGhOM",
+							["Name"] = "海巫之裁: 39",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -61561,9 +61561,9 @@ TellMeWhenDB = {
 						}, -- [18]
 						{
 							["Type"] = "icd",
-							["Name"] = "忠仆之裁: 39",
-							["GUID"] = "TMW:icon:1TXl_5J=lqSq",
 							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1TXl_5J=lqSq",
+							["Name"] = "忠仆之裁: 39",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {

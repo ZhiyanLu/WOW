@@ -1,4 +1,0 @@
-VER 3 0100000000000001 "爆发" "INV_MISC_QUESTIONMARK"
-/施放 涅墨西斯
-/施放 混乱之刃
-END

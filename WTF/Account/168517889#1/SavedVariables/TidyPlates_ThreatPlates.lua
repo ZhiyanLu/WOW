@@ -20,13 +20,13 @@ ThreatPlatesDB = {
 			["welcome"] = true,
 		},
 		["Magiccream - 格雷迈恩"] = {
-			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				nil, -- [2]
 				true, -- [3]
 				false, -- [4]
 			},
+			["welcome"] = true,
 		},
 		["Magiccreamdz - 凤凰之神"] = {
 			["welcome"] = true,
@@ -49,11 +49,11 @@ ThreatPlatesDB = {
 			},
 		},
 		["Magiccreamdk - 格雷迈恩"] = {
-			["welcome"] = true,
 			["spec"] = {
 				true, -- [1]
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["麦吉克库瑞姆 - 格雷迈恩"] = {
 			["spec"] = {

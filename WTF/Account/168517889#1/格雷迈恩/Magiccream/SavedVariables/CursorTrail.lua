@@ -8,6 +8,6 @@ CursorTrail_PlayerConfig = {
 	["UserOfsX"] = 0,
 	["UserScale"] = 1,
 	["UserShadowAlpha"] = 0,
-	["Strata"] = "HIGH",
 	["UserShowOnlyInCombat"] = false,
+	["Strata"] = "HIGH",
 }

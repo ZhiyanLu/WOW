@@ -109,6 +109,10 @@ function AuctionatorDataProviderMixin:NotifyCacheUsed()
   self.cacheUsedCount = self.cacheUsedCount + 1
 end
 
+function AuctionatorDataProviderMixin:SetDirty()
+  self.isDirty = true
+end
+
 function AuctionatorDataProviderMixin:SetOnPreserveScrollCallback(onPreserveScrollCallback)
   self.onPreserveScroll = onPreserveScrollCallback
 end
@@ -132,6 +136,12 @@ function AuctionatorDataProviderMixin:CheckForEntriesToProcess()
       self.announcedCompletion = true
       self.onSearchEnded()
     end
+
+    if self.isDirty then
+      self.onUpdate(self.results)
+      self.isDirty = false
+    end
+
     return
   end
 
@@ -152,6 +162,9 @@ function AuctionatorDataProviderMixin:CheckForEntriesToProcess()
       self.insertedKeys[key] = entry
       table.insert(self.results, entry)
 
+      --Used to keep items in a consistent order when fields are identical and sorting
+      entry.sortingIndex = #self.results
+
       self.onEntryProcessed(entry)
     end
   end
@@ -166,6 +179,7 @@ function AuctionatorDataProviderMixin:CheckForEntriesToProcess()
   end
 
   self.onUpdate(self.results)
+  self.isDirty = false
 end
 
 local function WrapCSVParameter(parameter)
@@ -186,7 +200,11 @@ function AuctionatorDataProviderMixin:GetCSV(callback)
   local layout = self:GetTableLayout()
 
   for index, column in ipairs(layout) do
-    csvResult = csvResult .. WrapCSVParameter(column.headerText) .. ","
+    csvResult = csvResult .. WrapCSVParameter(column.headerText)
+
+    if index ~= #layout then
+      csvResult = csvResult ..  ","
+    end
   end
   csvResult = csvResult .. "\n"
 
@@ -203,7 +221,10 @@ function AuctionatorDataProviderMixin:GetCSV(callback)
           csvResult = csvResult .. ","
         end
       end
-      csvResult = csvResult .. "\n"
+
+      if index ~= self:GetCount() then
+        csvResult = csvResult .. "\n"
+      end
 
       index = index + 1
     end

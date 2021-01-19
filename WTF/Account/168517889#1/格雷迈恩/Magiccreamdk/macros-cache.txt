@@ -1,3 +1,7 @@
+VER 3 010000000000001D " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [talent:5/2]幻影步;[talent:5/3]天灾契约
+END
 VER 3 010000000000001B " " "INV_Misc_QuestionMark"
 #showtooltip
 /cast [talent:2/2]甘霖;[talent:2/3]野性冲锋
@@ -9,10 +13,6 @@ VER 3 010000000000001C " " "INV_Misc_QuestionMark"
 /cast [talent:2/2]乌索尔旋风;[talent:2/3]野性冲锋
 /use [nostealth]棱彩装饰
 /use [nostealth]泡泡棒
-END
-VER 3 010000000000001D " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast [talent:5/2]幻影步;[talent:5/3]天灾契约
 END
 VER 3 010000000000001E "低吼" "INV_MISC_QUESTIONMARK"
 #showtooltip 黑暗命令
@@ -72,6 +72,7 @@ VER 3 010000000000002A "突变" "INV_Misc_QuestionMark"
 /use 黑暗突变
 /use 血性狂怒(种族特长)
 /use 压制能量水晶
+/use 罪孽角斗士的凶猛徽章
 END
 VER 3 0100000000000027 "罩子" "INV_Misc_QuestionMark"
 #showtooltip 反魔法领域

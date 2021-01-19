@@ -2,36 +2,36 @@
 MasterPlanAG = {
 	["格雷迈恩"] = {
 		["哈尼臭嗨"] = {
-			["class"] = "PALADIN",
 			["faction"] = "Horde",
+			["class"] = "PALADIN",
 		},
 		["Magiccreamcn"] = {
-			["faction"] = "Horde",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Horde",
 		},
 		["Magicocream"] = {
-			["class"] = "WARLOCK",
 			["faction"] = "Horde",
+			["class"] = "WARLOCK",
 		},
 		["Qwerqwerwerw"] = {
-			["class"] = "ROGUE",
 			["faction"] = "Horde",
+			["class"] = "ROGUE",
 		},
 		["麦吉克库瑞姆"] = {
 			["class"] = "ROGUE",
 			["summary"] = {
-				["ti2"] = 122485,
-				["ti3"] = 127854,
+				["tt2"] = 1537801032,
+				["tt3"] = 1537285580,
 				["tt1"] = 1537474083,
 				["ti1"] = 118531,
-				["tt3"] = 1537285580,
-				["tt2"] = 1537801032,
+				["ti3"] = 127854,
+				["ti2"] = 122485,
 			},
 			["faction"] = "Horde",
 		},
 		["余生请多指教"] = {
-			["faction"] = "Horde",
 			["class"] = "WARLOCK",
+			["faction"] = "Horde",
 		},
 		["Magiccreamdk"] = {
 			["class"] = "DEATHKNIGHT",
@@ -46,51 +46,51 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Magiccream"] = {
-			["class"] = "DRUID",
+			["curOil"] = 3560,
 			["summary"] = {
 				["lastOilTime"] = 1610728900,
-				["ti2"] = 122486,
+				["tt2"] = true,
+				["tt3"] = 1608552330,
+				["ti1"] = 118531,
+				["tt1"] = true,
+				["ti3"] = 127855,
 				["inProgress"] = {
 					[192] = 1546999276,
 					[242] = 1546998823,
-					[285] = 1547019070,
 					[186] = 1547001079,
+					[285] = 1547019070,
 				},
-				["ti3"] = 127855,
-				["tt1"] = true,
-				["ti1"] = 118531,
-				["tt3"] = 1608552330,
-				["tt2"] = true,
+				["ti2"] = 122486,
 			},
 			["faction"] = "Horde",
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1546997621,
+			["class"] = "DRUID",
 			["curRes"] = 10000,
-			["curOil"] = 3560,
+			["lastCacheTime"] = 1546997621,
 		},
 	},
 	["冰风岗"] = {
 		["Magiccream"] = {
-			["faction"] = "Horde",
 			["class"] = "ROGUE",
+			["faction"] = "Horde",
 		},
 	},
 	["洛丹伦"] = {
 		["Magiccream"] = {
-			["class"] = "ROGUE",
 			["faction"] = "Horde",
+			["class"] = "ROGUE",
 		},
 	},
 	["凤凰之神"] = {
 		["Magiccreamdz"] = {
 			["class"] = "ROGUE",
 			["summary"] = {
-				["tt2"] = 1537801032,
-				["tt3"] = 1537285580,
+				["ti2"] = 122485,
+				["ti3"] = 127854,
 				["tt1"] = 1537474083,
 				["ti1"] = 118531,
-				["ti3"] = 127854,
-				["ti2"] = 122485,
+				["tt3"] = 1537285580,
+				["tt2"] = 1537801032,
 			},
 			["faction"] = "Horde",
 		},

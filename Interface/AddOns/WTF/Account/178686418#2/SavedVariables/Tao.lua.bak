@@ -1,2 +1,0 @@
-
-Tao_Options = nil

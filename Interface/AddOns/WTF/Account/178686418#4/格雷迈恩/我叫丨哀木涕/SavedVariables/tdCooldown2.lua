@@ -1,5 +1,0 @@
-
-tCDblackData = {
-}
-tCDcoolingData = {
-}

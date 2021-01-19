@@ -968,8 +968,8 @@ experimental = false,	-- currently this implementation does not reduce memory si
 				end
 			end,
 
-			['ADDON_LOADED'] = function(self, frame, arg1)
-				if "Grail" == arg1 then
+			['PLAYER_LOGIN'] = function(self, frame, arg1)
+--				if "Grail" == arg1 then
 
 					local debugStartTime = debugprofilestop()
 					--
@@ -1403,9 +1403,9 @@ experimental = false,	-- currently this implementation does not reduce memory si
 					local environmentToUse = self:_EnvironmentForLoad()
 					self:LoadAddOn("Grail-Quests-" .. environmentToUse)
 					local originalMem = gcinfo()
-					-- if self:LoadAddOn("Grail-NPCs-" .. environmentToUse) then		--bf@178.com
+					if self:LoadAddOn("Grail-NPCs-" .. environmentToUse) then
 						self:_ProcessNPCs(originalMem)
-					-- end
+					end
 					self:LoadAddOn("Grail-NPCs-" .. environmentToUse .. "-" .. self.playerLocale)
 					self.npc.name[1] = ADVENTURE_JOURNAL
 
@@ -1647,7 +1647,7 @@ frame:RegisterEvent("GOSSIP_ENTER_CODE")	-- gossipIndex
 					self:_UpdateTrackingObserver()
 
 					self.timings.AddonLoaded = 	debugprofilestop() - debugStartTime
-				end
+--				end
 
 			end,
 
@@ -7864,7 +7864,7 @@ end
 			else
 				success, failureReason = LoadAddOn(addonName)
 				if not success then
-					-- print(format("|cFFFF0000Grail|r "..ADDON_LOAD_FAILED, addonName, _G["ADDON_"..failureReason]))	--bf@178.com
+					print(format("|cFFFF0000Grail|r "..ADDON_LOAD_FAILED, addonName, _G["ADDON_"..failureReason]))
 				end
 			end
 			return success
@@ -11620,7 +11620,7 @@ end
 --	notifications from the Blizzard system
 me.notificationFrame = CreateFrame("Frame")
 me.notificationFrame:SetScript("OnEvent", function(frame, event, ...) Grail:_Tooltip_OnEvent(frame, event, ...) end)
-me.notificationFrame:RegisterEvent("ADDON_LOADED")	--bf@178.com 6
+me.notificationFrame:RegisterEvent("PLAYER_LOGIN")
 
 end
 

@@ -1,33 +1,13 @@
 
 ClassMonitorDataPerChar = {
 	["Plugins"] = {
-		["CM_RESOURCE"] = {
-			["customcolor"] = false,
-			["height"] = 20,
-			["color"] = {
-				0.929411764705882, -- [1]
-				0.313725490196078, -- [2]
-				0, -- [3]
-			},
-			["text"] = true,
-			["textSize"] = 24,
-			["width"] = 167,
-		},
-		["CM_MOVER"] = {
-			["height"] = 20,
-			["width"] = 167,
-		},
 		["CM_COMBO"] = {
-			["customcolor"] = false,
+			["width"] = 167,
 			["specs"] = {
 				"any", -- [1]
 			},
 			["filled"] = true,
-			["color"] = {
-				1, -- [1]
-				0, -- [2]
-				0.00392156862745098, -- [3]
-			},
+			["autohide"] = false,
 			["anchor"] = {
 				"BOTTOMLEFT", -- [1]
 				"CM_RESOURCE", -- [2]
@@ -36,7 +16,27 @@ ClassMonitorDataPerChar = {
 				0, -- [5]
 			},
 			["height"] = 20,
-			["autohide"] = false,
+			["color"] = {
+				1, -- [1]
+				0, -- [2]
+				0.00392156862745098, -- [3]
+			},
+			["customcolor"] = false,
+		},
+		["CM_RESOURCE"] = {
+			["width"] = 167,
+			["color"] = {
+				0.929411764705882, -- [1]
+				0.313725490196078, -- [2]
+				0, -- [3]
+			},
+			["height"] = 20,
+			["text"] = true,
+			["textSize"] = 24,
+			["customcolor"] = false,
+		},
+		["CM_MOVER"] = {
+			["height"] = 20,
 			["width"] = 167,
 		},
 	},

@@ -1,8 +1,9 @@
 # <DBM> Icecrown Citadel
 
-## [r297-7-gc24074d](https://github.com/DeadlyBossMods/DBM-WotLK/tree/c24074dbf24ede74c80322e208a8396cde14d81b) (2020-12-18)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-WotLK/compare/r297...c24074dbf24ede74c80322e208a8396cde14d81b) [Previous Releases](https://github.com/DeadlyBossMods/DBM-WotLK/releases)
+## [r297-8-g5ec98de](https://github.com/DeadlyBossMods/DBM-WotLK/tree/5ec98de0d7b587385babcc7cebb73c77bb0ee092) (2021-01-18)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-WotLK/compare/r297...5ec98de0d7b587385babcc7cebb73c77bb0ee092) [Previous Releases](https://github.com/DeadlyBossMods/DBM-WotLK/releases)
 
+- LuaCheck update (#9)  
 - Merge pull request #8 from DeadlyBossMods/ci  
     Ci sync from master  
 - Ci sync from master  

@@ -1,14 +1,9 @@
-# [3.1.8](https://github.com/WeakAuras/WeakAuras2/tree/3.1.8) (2021-01-07)
+# [3.1.8-2-g2068192a](https://github.com/WeakAuras/WeakAuras2/tree/2068192a73982df46f7d82f7a9b760ac92162fec) (2021-01-13)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.1.7...3.1.8)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.1.8...2068192a73982df46f7d82f7a9b760ac92162fec)
 
-## Highlights
+InfusOnWoW (2):
 
- Fix a regression 
-
-## Commits
-
-mrbuds (1):
-
-- fix regression in TestForLongString
+- Fix oversight in 7a3d5c762 breaking remaining time check for
+- Clamp tooltips to the screen
 

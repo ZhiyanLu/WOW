@@ -216,28 +216,28 @@ NameplateCooldownsAceDB = {
 						[319454] = true,
 					},
 				},
-				["狂暴"] = {
+				["震荡波"] = {
 					["enabled"] = true,
-					["class"] = "MISC",
-					["cooldown"] = 126,
+					["class"] = "WARRIOR",
+					["cooldown"] = 25,
 					["spellIDs"] = {
-						[26297] = true,
+						[46968] = true,
 					},
 				},
-				["战栗图腾"] = {
-					["enabled"] = true,
-					["class"] = "SHAMAN",
-					["cooldown"] = 59,
-					["spellIDs"] = {
-						[8143] = true,
-					},
-				},
-				["伊利丹之握"] = {
+				["禁锢"] = {
 					["enabled"] = true,
 					["class"] = "DEMONHUNTER",
-					["cooldown"] = 60,
+					["cooldown"] = 45,
 					["spellIDs"] = {
-						[205630] = true,
+						[217832] = true,
+					},
+				},
+				["信仰飞跃"] = {
+					["enabled"] = true,
+					["class"] = "PRIEST",
+					["cooldown"] = 90,
+					["spellIDs"] = {
+						[73325] = true,
 					},
 				},
 				["制裁之锤"] = {
@@ -256,20 +256,20 @@ NameplateCooldownsAceDB = {
 						[236320] = true,
 					},
 				},
-				["信仰飞跃"] = {
+				["狂暴"] = {
 					["enabled"] = true,
-					["class"] = "PRIEST",
-					["cooldown"] = 90,
+					["class"] = "MISC",
+					["cooldown"] = 126,
 					["spellIDs"] = {
-						[73325] = true,
+						[26297] = true,
 					},
 				},
-				["甘霖"] = {
+				["战栗图腾"] = {
 					["enabled"] = true,
-					["class"] = "DRUID",
-					["cooldown"] = 90,
+					["class"] = "SHAMAN",
+					["cooldown"] = 59,
 					["spellIDs"] = {
-						[108238] = true,
+						[8143] = true,
 					},
 				},
 				["作茧缚命"] = {
@@ -280,20 +280,20 @@ NameplateCooldownsAceDB = {
 						[116849] = true,
 					},
 				},
-				["屏气凝神"] = {
-					["enabled"] = true,
-					["class"] = "MONK",
-					["cooldown"] = 90,
-					["spellIDs"] = {
-						[152173] = true,
-					},
-				},
-				["禁锢"] = {
+				["伊利丹之握"] = {
 					["enabled"] = true,
 					["class"] = "DEMONHUNTER",
-					["cooldown"] = 45,
+					["cooldown"] = 60,
 					["spellIDs"] = {
-						[217832] = true,
+						[205630] = true,
+					},
+				},
+				["甘霖"] = {
+					["enabled"] = true,
+					["class"] = "DRUID",
+					["cooldown"] = 90,
+					["spellIDs"] = {
+						[108238] = true,
 					},
 				},
 				["狂风图腾"] = {
@@ -312,12 +312,12 @@ NameplateCooldownsAceDB = {
 						[46924] = true,
 					},
 				},
-				["鱼叉猛刺"] = {
+				["屏气凝神"] = {
 					["enabled"] = true,
-					["class"] = "HUNTER",
-					["cooldown"] = 30,
+					["class"] = "MONK",
+					["cooldown"] = 90,
 					["spellIDs"] = {
-						[190925] = true,
+						[152173] = true,
 					},
 				},
 				["打磨利刃"] = {
@@ -352,12 +352,12 @@ NameplateCooldownsAceDB = {
 						[15487] = true,
 					},
 				},
-				["锁链咒符"] = {
+				["超级新星"] = {
 					["enabled"] = true,
-					["class"] = "DEMONHUNTER",
-					["cooldown"] = 67.5,
+					["class"] = "MAGE",
+					["cooldown"] = 25,
 					["spellIDs"] = {
-						[202138] = true,
+						[157980] = true,
 					},
 				},
 				["天启"] = {
@@ -368,20 +368,20 @@ NameplateCooldownsAceDB = {
 						[275699] = true,
 					},
 				},
-				["超级新星"] = {
+				["圣佑术"] = {
 					["enabled"] = true,
-					["class"] = "MAGE",
-					["cooldown"] = 25,
+					["class"] = "PALADIN",
+					["cooldown"] = 30,
 					["spellIDs"] = {
-						[157980] = true,
+						[498] = true,
 					},
 				},
-				["潜伏帷幕"] = {
+				["被遗忘的女王护卫"] = {
 					["enabled"] = true,
-					["class"] = "ROGUE",
-					["cooldown"] = 360,
+					["class"] = "PALADIN",
+					["cooldown"] = 180,
 					["spellIDs"] = {
-						[114018] = true,
+						[228049] = true,
 					},
 				},
 				["主人的召唤"] = {
@@ -392,12 +392,12 @@ NameplateCooldownsAceDB = {
 						[53271] = true,
 					},
 				},
-				["冰冷血脉"] = {
+				["电能图腾"] = {
 					["enabled"] = true,
-					["class"] = "MAGE",
-					["cooldown"] = 180,
+					["class"] = "SHAMAN",
+					["cooldown"] = 59,
 					["spellIDs"] = {
-						[12472] = true,
+						[192058] = true,
 					},
 				},
 				["逃脱"] = {
@@ -408,12 +408,12 @@ NameplateCooldownsAceDB = {
 						[781] = true,
 					},
 				},
-				["蛮力猛击"] = {
+				["掠夺护甲"] = {
 					["enabled"] = true,
-					["class"] = "DRUID",
-					["cooldown"] = 54,
+					["class"] = "ROGUE",
+					["cooldown"] = 120,
 					["spellIDs"] = {
-						[5211] = true,
+						[198529] = true,
 					},
 				},
 				["不灭决心"] = {
@@ -488,12 +488,12 @@ NameplateCooldownsAceDB = {
 						[195676] = true,
 					},
 				},
-				["铁木树皮"] = {
+				["潜伏帷幕"] = {
 					["enabled"] = true,
-					["class"] = "DRUID",
-					["cooldown"] = 90,
+					["class"] = "ROGUE",
+					["cooldown"] = 360,
 					["spellIDs"] = {
-						[102342] = true,
+						[114018] = true,
 					},
 				},
 				["亡者大军"] = {
@@ -528,12 +528,12 @@ NameplateCooldownsAceDB = {
 						[22570] = true,
 					},
 				},
-				["圣佑术"] = {
+				["蛮力猛击"] = {
 					["enabled"] = true,
-					["class"] = "PALADIN",
-					["cooldown"] = 30,
+					["class"] = "DRUID",
+					["cooldown"] = 54,
 					["spellIDs"] = {
-						[498] = true,
+						[5211] = true,
 					},
 				},
 				["化身：丛林之王"] = {
@@ -608,20 +608,20 @@ NameplateCooldownsAceDB = {
 						[108194] = true,
 					},
 				},
+				["心灵炸弹"] = {
+					["enabled"] = true,
+					["class"] = "PRIEST",
+					["cooldown"] = 30,
+					["spellIDs"] = {
+						[205369] = true,
+					},
+				},
 				["反魔法护罩"] = {
 					["enabled"] = true,
 					["class"] = "DEATHKNIGHT",
 					["cooldown"] = 40,
 					["spellIDs"] = {
 						[48707] = true,
-					},
-				},
-				["隐形术"] = {
-					["enabled"] = true,
-					["class"] = "MAGE",
-					["cooldown"] = 300,
-					["spellIDs"] = {
-						[66] = true,
 					},
 				},
 				["卸除武装"] = {
@@ -1736,12 +1736,12 @@ NameplateCooldownsAceDB = {
 						[99] = true,
 					},
 				},
-				["心灵炸弹"] = {
+				["隐形术"] = {
 					["enabled"] = true,
-					["class"] = "PRIEST",
-					["cooldown"] = 30,
+					["class"] = "MAGE",
+					["cooldown"] = 300,
 					["spellIDs"] = {
-						[205369] = true,
+						[66] = true,
 					},
 				},
 				["根基图腾"] = {
@@ -1848,12 +1848,12 @@ NameplateCooldownsAceDB = {
 						[108968] = true,
 					},
 				},
-				["被遗忘的女王护卫"] = {
+				["铁木树皮"] = {
 					["enabled"] = true,
-					["class"] = "PALADIN",
-					["cooldown"] = 180,
+					["class"] = "DRUID",
+					["cooldown"] = 90,
 					["spellIDs"] = {
-						[228049] = true,
+						[102342] = true,
 					},
 				},
 				["急速冷却"] = {
@@ -1864,20 +1864,20 @@ NameplateCooldownsAceDB = {
 						[235219] = true,
 					},
 				},
-				["电能图腾"] = {
+				["锁链咒符"] = {
 					["enabled"] = true,
-					["class"] = "SHAMAN",
-					["cooldown"] = 59,
+					["class"] = "DEMONHUNTER",
+					["cooldown"] = 67.5,
 					["spellIDs"] = {
-						[192058] = true,
+						[202138] = true,
 					},
 				},
-				["掠夺护甲"] = {
+				["冰冷血脉"] = {
 					["enabled"] = true,
-					["class"] = "ROGUE",
-					["cooldown"] = 120,
+					["class"] = "MAGE",
+					["cooldown"] = 180,
 					["spellIDs"] = {
-						[198529] = true,
+						[12472] = true,
 					},
 				},
 				["光环掌握"] = {
@@ -1912,12 +1912,12 @@ NameplateCooldownsAceDB = {
 						[329038] = true,
 					},
 				},
-				["震荡波"] = {
+				["鱼叉猛刺"] = {
 					["enabled"] = true,
-					["class"] = "WARRIOR",
-					["cooldown"] = 25,
+					["class"] = "HUNTER",
+					["cooldown"] = 30,
 					["spellIDs"] = {
-						[46968] = true,
+						[190925] = true,
 					},
 				},
 				["闪光术"] = {

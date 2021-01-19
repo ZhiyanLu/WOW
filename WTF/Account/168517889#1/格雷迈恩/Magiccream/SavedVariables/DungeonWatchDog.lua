@@ -8,8 +8,8 @@ WATCHDOG_DB = {
 	["shareCount"] = 0,
 	["version"] = 7,
 	["ignoreTimeLimit"] = 259200,
-	["shareGuildToggle"] = true,
-	["shareToggle"] = true,
-	["shareCountTime"] = 1540742825,
 	["defaultFilterToggle"] = true,
+	["shareCountTime"] = 1540742825,
+	["shareToggle"] = true,
+	["shareGuildToggle"] = true,
 }

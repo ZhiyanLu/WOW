@@ -1,3 +1,0 @@
-
-DCTOP_SAVE = {
-}

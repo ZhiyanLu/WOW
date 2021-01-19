@@ -80,7 +80,6 @@ function AuctionatorCancellingDataProviderMixin:OnLoad()
 end
 
 function AuctionatorCancellingDataProviderMixin:OnShow()
-
   Auctionator.EventBus:Register(self, EVENT_BUS_EVENTS)
 
   self:QueryAuctions()
@@ -123,7 +122,7 @@ function AuctionatorCancellingDataProviderMixin:Sort(fieldName, sortDirection)
     return comparator(left, right)
   end)
 
-  self.onUpdate(self.results)
+  self:SetDirty()
 end
 
 function AuctionatorCancellingDataProviderMixin:OnEvent(eventName, auctionID, ...)

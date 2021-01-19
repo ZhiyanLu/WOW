@@ -1,8 +1,13 @@
 # <DBM> PvP
 
-## [r102-2-g65403a1](https://github.com/DeadlyBossMods/DBM-PvP/tree/65403a1eab89a0aacdbd97cd2143f34347ac9fdd) (2021-01-11)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r102...65403a1eab89a0aacdbd97cd2143f34347ac9fdd) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
+## [r108](https://github.com/DeadlyBossMods/DBM-PvP/tree/r108) (2021-01-16)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r107...r108) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
 
-- Merge pull request #57 from DeadlyBossMods/misc  
-    Misc stuff  
-- Misc stuff  
+- Merge pull request #65 from DeadlyBossMods/QartemisT-patch-1  
+    Update PvPGeneral.lua  
+- Update PvPGeneral.lua  
+- Merge pull request #64 from DeadlyBossMods/QartemisT-patch-1  
+    PvP Updates  
+- PvP Updates  
+    - Don't warn on missing data if there's not at least 3 values of the SAME (Too many misc values)  
+    - Fix a possible nil value.  

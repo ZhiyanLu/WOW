@@ -1,2 +1,0 @@
-﻿
-NewPowerInfo_Character = nil

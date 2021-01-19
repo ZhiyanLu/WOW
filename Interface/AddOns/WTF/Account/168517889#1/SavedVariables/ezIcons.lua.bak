@@ -1,4 +1,0 @@
-
-ezIconsDB = nil
-ezIconsDBPC = {
-}
