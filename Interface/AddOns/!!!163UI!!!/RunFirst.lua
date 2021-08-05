@@ -5,7 +5,7 @@ U1PlayerName = UnitName("player")
 U1PlayerClass = UnitClassBase("player")
 
 local __TAG = select(2, BNGetInfo());
-if __TAG == 'alex#516722' or __TAG == 'nanostan#4954' or __TAG == 'vloth#1274' then
+if select(2, GetAddOnInfo("!!!!!DebugMe")) ~= nil then
     SetCVar("scriptErrors", 1)
 else
     SetCVar("scriptErrors", DEBUG_MODE and 1 or 0)
@@ -513,6 +513,9 @@ elseif toc < 20000 then
 
     function GetPlayerFactionGroup()
         return UnitFactionGroup("player");
+    end
+    function _G.PatchTemplate(template)
+        return template;
     end
 
 else

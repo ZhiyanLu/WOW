@@ -32,7 +32,7 @@ Details.Coach = {
 }
 
 function Details.Coach.AskRLForCoachStatus()
-    Details:SendCommMessage(_G.DETAILS_PREFIX_NETWORK, Details:Serialize(_G.DETAILS_PREFIX_COACH, UnitName("player"), GetRealmName(), Details.realversion, "CIEA"), "RAID")
+    Details:SendRaidData(DETAILS_PREFIX_COACH, "CIEA")
     if (_detalhes.debug) then
         Details:Msg("[|cFFAAFFAADetails! Coach|r] asked the coach the coach status.")
     end
@@ -54,7 +54,7 @@ end
 
 --the coach is no more a coach
 function Details.Coach.SendRaidCoachEndNotify()
-    Details:SendCommMessage(_G.DETAILS_PREFIX_NETWORK, Details:Serialize(_G.DETAILS_PREFIX_COACH, UnitName("player"), GetRealmName(), Details.realversion, "CE"), "RAID")
+    Details:SendRaidData(DETAILS_PREFIX_COACH, "CE")
     if (_detalhes.debug) then
         Details:Msg("[|cFFAAFFAADetails! Coach|r] sent to raid a coach end notification.")
     end
@@ -62,7 +62,7 @@ end
 
 --there's a new coach, notify players
 function Details.Coach.SendRaidCoachStartNotify()
-    Details:SendCommMessage(_G.DETAILS_PREFIX_NETWORK, Details:Serialize(_G.DETAILS_PREFIX_COACH, UnitName("player"), GetRealmName(), Details.realversion, "CS"), "RAID")
+    Details:SendRaidData(DETAILS_PREFIX_COACH, "CS")
     if (_detalhes.debug) then
         Details:Msg("[|cFFAAFFAADetails! Coach|r] sent to raid a coach start notification.")
     end
@@ -70,7 +70,7 @@ end
 
 --player send his death to the coach
 function Details.Coach.SendDeathToRL(deathTable)
-    Details:SendCommMessage(_G.DETAILS_PREFIX_NETWORK, Details:Serialize(_G.DETAILS_PREFIX_COACH, UnitName("player"), GetRealmName(), Details.realversion, "CDD", deathTable), "RAID")
+    Details:SendRaidData(DETAILS_PREFIX_COACH, "CDD", deathTable)
     if (_detalhes.debug) then
         Details:Msg("[|cFFAAFFAADetails! Coach|r] your death has been sent to coach.")
     end
@@ -81,8 +81,15 @@ function Details.Coach.Client.SendDataToRL()
     if (_detalhes.debug) then
         print("Details Coach sending data to RL.")
     end
-    
-    local data = Details.packFunctions.GetAllData()
+
+    --local data = Details.packFunctions.GetAllData()
+    local okay, data = pcall(Details.packFunctions.GetAllData)
+    if (not okay) then
+        Details:Msg("Error on GetAllData():", data)
+        Details.Coach.Client.UpdateTicker:Cancel()
+        return
+    end
+
     if (data and Details.Coach.Client.coachName) then
         Details:SendCommMessage(_G.DETAILS_PREFIX_NETWORK, Details:Serialize(_G.DETAILS_PREFIX_COACH, UnitName("player"), GetRealmName(), Details.realversion, "CDT", data), "WHISPER", Details.Coach.Client.coachName)
     end
@@ -134,6 +141,15 @@ function Details.Coach.StartUp()
     end
 
     function eventListener.OnEnterCombat()
+        --[=[  --debug solo
+            Details.Coach.SendRLCombatStartNotify("Ditador")
+            --start a timer to send data to the coach
+            if (Details.Coach.Client.UpdateTicker) then
+                Details.Coach.Client.UpdateTicker:Cancel()
+            end
+            Details.Coach.Client.UpdateTicker = Details.Schedules.NewTicker(1.5, Details.Coach.Client.SendDataToRL)
+        --]=]
+
         --send a notify to coach telling a new combat has started
         if (Details.Coach.Client.IsEnabled()) then
             if (IsInRaid() and isInRaidZone()) then
@@ -539,7 +555,7 @@ function Details.Coach.WelcomePanel()
                 hasAssistantsTexture:SetTexCoord(0, 0.5, 0, 0.5)
             end
 
-            local isInCorrectGroup = false
+            local isInCorrectGroup = true --debug
             for i = 1, numRaidMembers do
                 local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML = GetRaidRosterInfo(i)
                 if (name == playerName) then

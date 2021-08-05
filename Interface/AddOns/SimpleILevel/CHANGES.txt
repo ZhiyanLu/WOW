@@ -1,66 +1,10 @@
-tag 24ed0434444fed605f549e84c2587dd0cc860f12 3.4.6
+tag f8c08bc3b56b390ca179b817570ad13b355f88d3 3.4.7
 Author:	scotepi <github@scotepi.net>
-Date:	Sun Dec 13 20:53:02 2020 -0500
+Date:	Mon Feb 1 20:36:54 2021 -0500
 
-commit 93df1911a093c2fd76cb0a3079e4c88c82519aa1
+commit 3ec17602e0154d7af35c4ee74f29c3cd55ce54a0
 Author: scotepi <github@scotepi.net>
-Date:   Wed Nov 25 10:26:01 2020 -0500
+Date:   Mon Feb 1 20:36:39 2021 -0500
 
-    Color updates for SL
-
-commit eed6215680e9ac652c5dadf1428fd0e5761ae253
-Author: scotepi <github@scotepi.net>
-Date:   Wed Nov 25 10:16:58 2020 -0500
-
-    Changed to use SIL:HexToRGB
-    
-    Colors are now stored in Hex only
-
-commit 5411f9d01c7fcd801b17d5861269bde626766392
-Author: scotepi <github@scotepi.net>
-Date:   Tue Nov 24 15:14:52 2020 -0500
-
-    Added SIL:HexToRGB
-
-commit 8221a7dad349a7726e53f9cd47436f07f4d8ba4a
-Author: scotepi <github@scotepi.net>
-Date:   Tue Nov 24 15:06:12 2020 -0500
-
-    Removed colors.p
-
-commit ad71b6b3aed2b146dd75d43e306d5080d3b5eacd
-Author: scotepi <github@scotepi.net>
-Date:   Tue Nov 24 15:02:17 2020 -0500
-
-    Build color index on the fly
-
-commit e3403c4208f7c82da9fbe32a183caebe5e758f91
-Author: scotepi <github@scotepi.net>
-Date:   Tue Nov 24 14:45:57 2020 -0500
-
-    Missed some comments
-
-commit 87a0f9f362f4c7a28cf2cefb69f9f9b4536049f4
-Author: scotepi <github@scotepi.net>
-Date:   Tue Nov 24 14:45:37 2020 -0500
-
-    Missed some comments
-
-commit 1ccb32934d1bcd88b72444cdb3b9e0608b841131
-Author: scotepi <github@scotepi.net>
-Date:   Tue Nov 24 14:43:12 2020 -0500
-
-    Moved colors to its own file
-
-commit a0752a5e4f9e5abfe99a7ee23e37693250c43315
-Author: scotepi <github@scotepi.net>
-Date:   Tue Nov 24 14:41:25 2020 -0500
-
-    File cleanup
-
-commit 3b0e6d913a865d82dffc1a4535f074ccb1f602b1
-Author: scotepi <github@scotepi.net>
-Date:   Tue Nov 24 14:40:05 2020 -0500
-
-    Prep for file rename
+    Color Correction
 

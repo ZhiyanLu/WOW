@@ -42,12 +42,7 @@ oRA3DB = {
 				},
 			},
 		},
-		["Consumables"] = {
-			["profiles"] = {
-				["Default"] = {
-					["checkRune"] = true,
-				},
-			},
+		["Tanks"] = {
 		},
 		["Alerts"] = {
 			["profiles"] = {
@@ -58,18 +53,23 @@ oRA3DB = {
 				},
 			},
 		},
-		["Tanks"] = {
+		["Consumables"] = {
+			["profiles"] = {
+				["Default"] = {
+					["checkRune"] = true,
+				},
+			},
 		},
 	},
 	["profileKeys"] = {
 		["余生请多指教 - 格雷迈恩"] = "Default",
-		["哈尼臭嗨 - 格雷迈恩"] = "Default",
-		["麦吉克库瑞姆 - 格雷迈恩"] = "Default",
-		["Magiccream - 艾莫莉丝"] = "Default",
-		["Magiccreamdk - 格雷迈恩"] = "Default",
-		["Magiccreamcn - 格雷迈恩"] = "Default",
-		["Magiccream - 格雷迈恩"] = "Default",
 		["Magiccreamdz - 凤凰之神"] = "Default",
+		["哈尼臭嗨 - 格雷迈恩"] = "Default",
+		["Magiccream - 艾莫莉丝"] = "Default",
+		["Magiccreamcn - 格雷迈恩"] = "Default",
+		["Magiccreamdk - 格雷迈恩"] = "Default",
+		["Magiccream - 格雷迈恩"] = "Default",
+		["麦吉克库瑞姆 - 格雷迈恩"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -77,17 +77,17 @@ oRA3DB = {
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148.000015258789,
-					["Width"] = 200,
-					["PosY"] = 443.200022411344,
 					["PosX"] = 602.666712125138,
+					["PosY"] = 443.200022411344,
+					["Width"] = 200,
 				},
 				["oRA3BattleResMonitor"] = {
 				},
 				["oRA3ReadyCheck"] = {
 					["Height"] = 211.000091552734,
-					["PosX"] = 520.533465067536,
-					["PosY"] = 588.222523532953,
 					["Width"] = 320.000213623047,
+					["PosY"] = 588.222523532953,
+					["PosX"] = 520.533465067536,
 				},
 			},
 			["lastSelectedPanel"] = "冷却",

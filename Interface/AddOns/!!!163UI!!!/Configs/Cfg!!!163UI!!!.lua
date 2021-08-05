@@ -1,6 +1,14 @@
 local L = select(2,...).L
 U1_NEW_ICON = '|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t'
 
+local U1StoreHideCompactRaid = nil
+local _b_hideCompactRaid = false;
+local function _Hook_HideOnShow(self)
+    if _b_hideCompactRaid then
+        self:Hide();
+    end
+end
+
 function U1CfgMakeCVarOption(title, cvar, options)
     local info = options and Mixin({}, options) or {}
 
@@ -39,6 +47,34 @@ function U1CfgMakeCVarOption(title, cvar, options)
     end
 
     return info
+end
+
+local _C_CharKey = UnitName('player') .. " - " .. GetRealmName();
+function CoreMakeAce3DBSingleProfile(name, UseSingleProfile, profile)
+	local _db = _G[name];
+	_db = _db or {  };
+	_G[name] = _db;
+	_db.profileKeys = _db.profileKeys or {  };
+	_db.profiles = _db.profiles or {  };
+	local _PKey = _db.profileKeys[_C_CharKey];
+	if _PKey == nil or _db.profiles[_PKey] == nil then
+		if UseSingleProfile == false then
+			_db.profileKeys[_C_CharKey] = _C_CharKey;
+			if _db.profiles[_C_CharKey] == nil then
+				_db.profiles[_C_CharKey] = profile or {  };
+				return true, _db.profiles[_C_CharKey];
+			end
+			return false, _db.profiles[_C_CharKey];
+		else
+			_db.profileKeys[_C_CharKey] = "Default";
+			if _db.profiles.Default == nil then
+				_db.profiles.Default = profile or {  };
+				return true, _db.profiles.Default;
+			end
+			return false, _db.profiles.Default;
+		end
+	end
+	return false, _db.profiles[_PKey];
 end
 
 U1RegisterAddon("!!!Libs", { load = "NORMAL", protected = 1, hide = 1 }) EnableAddOn("!!!Libs") --163UI必须第一个加载，不能依赖其他的，只能这样
@@ -135,91 +171,13 @@ U1RegisterAddon("!!!163UI!!!", {
     },
     --]]
     {
-        var = "colorFriend",
-        default = true,
-        text = "好友列表染色",
-        callback = function(cfg, v, loading)
-            _163UI_TOGGLE_FRIEND_COLOR(v, loading);
-        end
-    },
-    -- {
-    --     var = "protectEye",
-    --     default = false,
-    --     text = "护眼模式（晋升堡垒晋升高塔）",
-    --     tip = "啊啊啊！暴爹闪瞎我的双眼！",
-    --     callback = function(cfg, v, loading)
-    --         _163UIProtectEye(v, loading);
-    --     end
-    -- },
-    {
-        var = "enhanceFriendTip",
-        default = true,
-        text = "增强好友列表鼠标提示",
-        callback = function(cfg, v, loading)
-            _163UI_TOGGLE_FRIEND_COLOR_TIP(v, loading);
-        end
-    },
-    -- {
-    --     var = "explosiveNamePlate",
-    --     default = true,
-    --     text = "使易爆球姓名版更明显",
-    --     callback = function(cfg, v, loading)
-    --         _163UI_TOGGLE_EXPLOSIVE_NAMEPALTE(v, loading);
-    --     end,
-    --     {
-    --         var = "scale_width",
-    --         text = "宽度比例",
-    --         default = 1.5,
-    --         type = "spin",
-    --         range = { 0.5, 5.0, 0.1 },
-    --         callback = function(cfg, v, loading)
-    --             _163UI_SET_EXPLOSIVE_NAMEPALTE_SCALE_WIDTH(v)
-    --         end,
-    --     },
-    --     {
-    --         var = "scale_height",
-    --         text = "高度比例",
-    --         default = 2.0,
-    --         type = "spin",
-    --         range = { 0.5, 5.0, 0.1 },
-    --         callback = function(cfg, v, loading)
-    --             _163UI_SET_EXPLOSIVE_NAMEPALTE_SCALE_HEIGHT(v)
-    --         end,
-    --     },
-    -- },
-    {
-        var = "wqRemainingTime",
-        default = true,
-        text = "显示世界任务剩余时间",
-        callback = function(cfg, v, loading)
-            _163UI_TOGGLE_WORLDQUEST_REMAINING_TIME(v, loading);
-        end
-    },
-    {
-        var = "charmingCastBar",
-        default = 0,
-        text = "为施法条加点料！",
-        tip = "为施法条增加一些额外的小彩蛋",
-        type = "radio",
-        options = {
-            "无", 0, "有爱", 1, "墨黑", 2, "火焰", 3, "雷光", 4,
-        },
-        cols = 5,
-        callback = function(cfg, v, loading)
-            if v ~= 0 then
-                __163_HookCastingBarFrame(nil, v);
-            else
-                __163_UnhookCastingBarFrame();
-            end
-        end
-    },
-    {
         var = "hideCompactRaid",
         text = L["完全屏蔽默认的团队框架"],
         tip = L["说明`完全屏蔽暴雪团队框架及屏幕左侧的控制条，在使用Grid等团队框架时可以减少占用。` `注意此选项不能在战斗中设置"],
         default = nil,
         secure = 1,
         callback = function(cfg, v, loading)
+            _b_hideCompactRaid = v;
             if loading and not v then return end
             if not GetDisplayedAllyFrames or not CompactRaidFrameManager or not CompactRaidFrameContainer then
                 U1Message(L["此选项不适合此游戏版本"])
@@ -238,8 +196,8 @@ U1RegisterAddon("!!!163UI!!!", {
                 end)
             end
 
-            --togglescripthook(U1StoreHideCompactRaid, CompactRaidFrameManager, "OnShow", function(self) self:Hide() end, v)
-            togglescripthook(U1StoreHideCompactRaid, CompactRaidFrameContainer, "OnShow", function(self) self:Hide() end, v)
+            -- CompactRaidFrameManager:HookScript("OnShow", _Hook_HideOnShow)
+            CompactRaidFrameContainer:HookScript("OnShow", _Hook_HideOnShow)
             if v then
                 CompactRaidFrameManager:SetAlpha(0) --CompactRaidFrameManager 不能Hide，会污染
                 CompactRaidFrameManager:UnregisterAllEvents();

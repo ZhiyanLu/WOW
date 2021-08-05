@@ -72,6 +72,7 @@ VER 3 010000000000002A "突变" "INV_Misc_QuestionMark"
 /use 黑暗突变
 /use 血性狂怒(种族特长)
 /use 压制能量水晶
+/use 罪孽角斗士的凶猛徽章
 END
 VER 3 0100000000000027 "罩子" "INV_Misc_QuestionMark"
 #showtooltip 反魔法领域

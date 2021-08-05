@@ -2,22 +2,22 @@
 ThreatPlatesDB = {
 	["char"] = {
 		["Magiccream - 冰风岗"] = {
+			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
-			["welcome"] = true,
 		},
 		["Magiccream - 洛丹伦"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["Qwerqwerwerw - 格雷迈恩"] = {
+			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
-			["welcome"] = true,
 		},
 		["Magiccream - 格雷迈恩"] = {
 			["spec"] = {
@@ -29,49 +29,53 @@ ThreatPlatesDB = {
 			["welcome"] = true,
 		},
 		["Magiccreamdz - 凤凰之神"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["哈尼臭嗨 - 格雷迈恩"] = {
-			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 				false, -- [3]
 			},
-		},
-		["余生请多指教 - 格雷迈恩"] = {
 			["welcome"] = true,
-			["spec"] = {
-				[3] = false,
-			},
 		},
 		["Magiccreamdk - 格雷迈恩"] = {
+			["welcome"] = true,
 			["spec"] = {
 				true, -- [1]
 				[3] = false,
 			},
+		},
+		["Magiccreamcn - 格雷迈恩"] = {
+			["spec"] = {
+				nil, -- [1]
+				true, -- [2]
+			},
 			["welcome"] = true,
 		},
 		["麦吉克库瑞姆 - 格雷迈恩"] = {
+			["welcome"] = true,
+			["spec"] = {
+				[3] = false,
+			},
+		},
+		["余生请多指教 - 格雷迈恩"] = {
 			["spec"] = {
 				[3] = false,
 			},
 			["welcome"] = true,
 		},
-		["Magiccreamcn - 格雷迈恩"] = {
-			["welcome"] = true,
-			["spec"] = {
-				nil, -- [1]
-				true, -- [2]
-			},
-		},
 	},
 	["global"] = {
 		["CheckNewLookAndFeel"] = true,
-		["version"] = "10.0.9",
+		["version"] = "10.2.9",
+	},
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
 	},
 	["profileKeys"] = {
 		["Magiccream - 冰风岗"] = "Default",
@@ -80,10 +84,10 @@ ThreatPlatesDB = {
 		["Magiccream - 格雷迈恩"] = "Default",
 		["Magiccreamdz - 凤凰之神"] = "Default",
 		["哈尼臭嗨 - 格雷迈恩"] = "Default",
-		["余生请多指教 - 格雷迈恩"] = "Default",
 		["Magiccreamdk - 格雷迈恩"] = "Default",
-		["麦吉克库瑞姆 - 格雷迈恩"] = "Default",
 		["Magiccreamcn - 格雷迈恩"] = "Default",
+		["麦吉克库瑞姆 - 格雷迈恩"] = "Default",
+		["余生请多指教 - 格雷迈恩"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -103,143 +107,26 @@ ThreatPlatesDB = {
 				["BarHeight"] = 4,
 				["ShowEnemyPlayer"] = true,
 				["ShowEnemyNPC"] = true,
+				["ShowOnlyAltPower"] = false,
 				["BorderOffset"] = 0,
 				["y"] = -9,
 				["BarWidth"] = 120,
-				["ON"] = true,
-				["ShowOnlyAltPower"] = false,
 			},
-			["stealthWidget"] = {
-				["scale"] = 25,
-			},
-			["uniqueSettings"] = {
-				nil, -- [1]
-				{
-				}, -- [2]
-				{
-				}, -- [3]
-				{
-				}, -- [4]
-				{
-				}, -- [5]
-				{
-				}, -- [6]
-				{
-				}, -- [7]
-				{
-				}, -- [8]
-				{
-				}, -- [9]
-				{
-				}, -- [10]
-				{
-				}, -- [11]
-				{
-				}, -- [12]
-				{
-				}, -- [13]
-				{
-				}, -- [14]
-				nil, -- [15]
-				{
-				}, -- [16]
-				{
-				}, -- [17]
-				nil, -- [18]
-				nil, -- [19]
-				{
-				}, -- [20]
-				{
-				}, -- [21]
-				nil, -- [22]
-				nil, -- [23]
-				{
-				}, -- [24]
-				{
-				}, -- [25]
-				nil, -- [26]
-				{
-				}, -- [27]
-				{
-				}, -- [28]
-				{
-				}, -- [29]
-				nil, -- [30]
-				nil, -- [31]
-				{
-				}, -- [32]
-				{
-					["color"] = {
-						["g"] = 0,
-						["b"] = 0.0470588235294118,
-					},
-					["Trigger"] = {
-						["Name"] = {
-							["Input"] = "戈霍恩之嗣",
-							["AsArray"] = {
-								"戈霍恩之嗣", -- [1]
-							},
-						},
-					},
-					["name"] = "戈霍恩之嗣",
-					["scale"] = 1.5,
-				}, -- [33]
-				{
-					["color"] = {
-						["r"] = 0.9882352941176471,
-						["b"] = 0.9647058823529412,
-					},
-					["Trigger"] = {
-						["Name"] = {
-							["Input"] = "爆炸物",
-							["AsArray"] = {
-								"爆炸物", -- [1]
-							},
-						},
-					},
-					["name"] = "爆炸物",
-					["scale"] = 1.5,
-				}, -- [34]
-			},
-			["questWidget"] = {
-				["y_hv"] = 20,
-				["scale"] = 25,
-				["y"] = 20,
-				["HideInCombatAttacked"] = false,
+			["ShowFriendlyBlizzardNameplates"] = true,
+			["totemWidget"] = {
+				["ON"] = false,
 			},
 			["threatWidget"] = {
 				["ThreatPercentage"] = {
 					["HorizontalOffset"] = 0,
 				},
 			},
-			["arenaWidget"] = {
-				["ShowNumber"] = false,
-				["ShowOrb"] = false,
-			},
-			["text"] = {
-				["full"] = true,
-				["LocalizedUnitSymbol"] = true,
-				["amount"] = true,
-			},
-			["BossModsWidget"] = {
-				["FontSize"] = 20,
-			},
-			["uniqueWidget"] = {
-				["ON"] = false,
-			},
 			["threat"] = {
-				["dps"] = {
-					["scale"] = {
-						["MEDIUM"] = 0,
-						["LOW"] = 0,
-						["HIGH"] = 0,
-					},
-				},
 				["tank"] = {
 					["scale"] = {
-						["OFFTANK"] = 0,
-						["MEDIUM"] = 0,
 						["LOW"] = 0,
+						["MEDIUM"] = 0,
+						["OFFTANK"] = 0,
 						["HIGH"] = 0,
 					},
 					["alpha"] = {
@@ -248,15 +135,52 @@ ThreatPlatesDB = {
 						["HIGH"] = 1,
 					},
 				},
+				["dps"] = {
+					["scale"] = {
+						["MEDIUM"] = 0,
+						["LOW"] = 0,
+						["HIGH"] = 0,
+					},
+				},
+				["useAlpha"] = false,
+				["useScale"] = false,
+				["art"] = {
+					["ON"] = false,
+				},
+				["toggle"] = {
+					["Tapped"] = false,
+					["Neutral"] = false,
+					["InstancesOnly"] = true,
+				},
 				["AdditiveScale"] = true,
 			},
+			["text"] = {
+				["full"] = true,
+				["LocalizedUnitSymbol"] = true,
+				["amount"] = true,
+			},
+			["FocusWidget"] = {
+				["ON"] = false,
+			},
+			["BossModsWidget"] = {
+				["y"] = 50,
+				["ShowInHeadlineView"] = false,
+				["FontSize"] = 20,
+			},
+			["questWidget"] = {
+				["y_hv"] = 20,
+				["scale"] = 25,
+				["y"] = 20,
+				["HideInCombatAttacked"] = false,
+			},
+			["uniqueWidget"] = {
+				["ON"] = false,
+			},
+			["arenaWidget"] = {
+				["ShowNumber"] = false,
+				["ShowOrb"] = false,
+			},
 			["AuraWidget"] = {
-				["FilterBySpell"] = {
-					"279956", -- [1]
-					"窒息尖啸", -- [2]
-					"205644", -- [3]
-					"", -- [4]
-				},
 				["CrowdControl"] = {
 					["ShowBlizzardForEnemy"] = false,
 					["ShowAllEnemy"] = true,
@@ -266,23 +190,23 @@ ThreatPlatesDB = {
 				["ModeIcon"] = {
 					["IconWidth"] = 25,
 					["Duration"] = {
-						["HorizontalOffset"] = -5,
 						["Font"] = {
 							["Size"] = 14,
 						},
+						["HorizontalOffset"] = -5,
 						["VerticalOffset"] = 5,
 					},
 					["Style"] = "custom",
-					["IconHeight"] = 18,
+					["IconHeight"] = 20,
 					["ColumnSpacing"] = 1,
-					["Rows"] = 1,
 					["StackCount"] = {
-						["HorizontalOffset"] = 4,
 						["Font"] = {
 							["Size"] = 12,
 						},
+						["HorizontalOffset"] = 4,
 						["VerticalOffset"] = -4,
 					},
+					["Rows"] = 1,
 					["RowSpacing"] = 3,
 				},
 				["y"] = 2,
@@ -314,10 +238,12 @@ ThreatPlatesDB = {
 						"303568", -- [24]
 						"304645", -- [25]
 						"317792", -- [26]
-						"334058", -- [27]
-						"345209", -- [28]
-						"345319", -- [29]
-						"", -- [30]
+						"321519", -- [27]
+						"334058", -- [28]
+						"345209", -- [29]
+						"345319", -- [30]
+						"356329", -- [31]
+						"", -- [32]
 					},
 				},
 				["ShowOmniCC"] = false,
@@ -325,11 +251,11 @@ ThreatPlatesDB = {
 				["ShowTooltips"] = true,
 				["SortOrder"] = "AtoZ",
 				["ModeBar"] = {
+					["LabelTextIndent"] = 0,
+					["IconSpacing"] = 0,
+					["TimeTextIndent"] = 0,
 					["BackgroundTexture"] = "Gloss",
 					["Texture"] = "Gloss",
-					["IconSpacing"] = 0,
-					["LabelTextIndent"] = 0,
-					["TimeTextIndent"] = 0,
 				},
 				["Buffs"] = {
 					["FilterBySpell"] = {
@@ -342,17 +268,28 @@ ThreatPlatesDB = {
 					["ShowDispellable"] = false,
 					["Scale"] = 1,
 				},
+				["FilterBySpell"] = {
+					"279956", -- [1]
+					"窒息尖啸", -- [2]
+					"205644", -- [3]
+					"", -- [4]
+				},
 			},
 			["settings"] = {
+				["customtext"] = {
+					["shadow"] = false,
+					["typeface"] = "聊天",
+					["height"] = 8,
+				},
 				["eliteicon"] = {
 					["y"] = 0,
 					["x"] = 55,
 					["scale"] = 12,
 				},
 				["spellicon"] = {
-					["y"] = -16,
 					["x"] = 53,
 					["scale"] = 18,
+					["y"] = -16,
 				},
 				["spelltext"] = {
 					["height"] = 15,
@@ -360,14 +297,15 @@ ThreatPlatesDB = {
 				},
 				["level"] = {
 					["shadow"] = false,
-					["x"] = -58,
+					["x"] = -60,
 					["height"] = 8,
-					["size"] = 10,
+					["size"] = 8,
 				},
 				["healthbar"] = {
 					["AlwaysFullAbsorb"] = true,
 					["BackgroundOpacity"] = 1,
 					["BackgroundUseForegroundColor"] = true,
+					["height"] = 8,
 				},
 				["healthborder"] = {
 					["EdgeSize"] = 2,
@@ -396,40 +334,33 @@ ThreatPlatesDB = {
 						["HorizontalOffset"] = 10,
 					},
 				},
-				["customtext"] = {
-					["shadow"] = false,
-					["height"] = 8,
-					["typeface"] = "聊天",
-					["size"] = 10,
-				},
 				["frame"] = {
-					["height"] = 52.875,
+					["height"] = 50.525,
 					["width"] = 154,
+				},
+				["castnostop"] = {
+					["ShowInterruptShield"] = true,
+					["ShowOverlay"] = false,
 				},
 				["raidicon"] = {
 					["y_hv"] = 0,
 					["scale"] = 25,
 					["hpMarked"] = {
 						["SKULL"] = {
-							["b"] = 0,
-							["g"] = 0.290196078431373,
 							["r"] = 0.984313725490196,
+							["g"] = 0.290196078431373,
+							["b"] = 0,
 						},
 						["CROSS"] = {
-							["b"] = 0.909803921568627,
-							["g"] = 0.976470588235294,
 							["r"] = 0.92156862745098,
+							["g"] = 0.976470588235294,
+							["b"] = 0.909803921568627,
 						},
 					},
 					["y"] = 10,
 					["x"] = 0,
 				},
-				["castnostop"] = {
-					["ShowOverlay"] = false,
-					["ShowInterruptShield"] = true,
-				},
 			},
-			["friendlyClassIcon"] = true,
 			["tidyplatesFade"] = true,
 			["HeadlineView"] = {
 				["customtext"] = {
@@ -448,12 +379,16 @@ ThreatPlatesDB = {
 				["x"] = -72,
 				["theme"] = "clean",
 			},
+			["stealthWidget"] = {
+				["scale"] = 25,
+			},
+			["socialWidget"] = {
+				["ShowFriendIcon"] = false,
+				["ShowFactionIcon"] = false,
+			},
 		},
 		["备份"] = {
 			["nameplate"] = {
-				["toggle"] = {
-					["TargetS"] = true,
-				},
 				["scale"] = {
 					["Elite"] = 1,
 					["Totem"] = 0.8,
@@ -461,44 +396,86 @@ ThreatPlatesDB = {
 					["NonTarget"] = 0,
 					["Minus"] = 0.75,
 				},
+				["toggle"] = {
+					["TargetS"] = true,
+				},
 			},
 			["ResourceWidget"] = {
 				["ShowEnemyPlayer"] = true,
 				["BorderOffset"] = 0,
-				["ShowOnlyAltPower"] = false,
+				["BarWidth"] = 120,
 				["y"] = -9,
 				["ShowEnemyNPC"] = true,
 				["BarHeight"] = 4,
 				["ON"] = true,
-				["BarWidth"] = 120,
+				["ShowOnlyAltPower"] = false,
 			},
 			["CVarsBackup"] = {
 				["showQuestTrackingTooltips"] = "0",
 			},
-			["threat"] = {
-				["dps"] = {
-					["scale"] = {
-						["LOW"] = 0,
-						["MEDIUM"] = 0,
-						["HIGH"] = 0,
-					},
+			["tidyplatesFade"] = true,
+			["stealthWidget"] = {
+				["scale"] = 25,
+			},
+			["text"] = {
+				["amount"] = true,
+				["full"] = true,
+				["LocalizedUnitSymbol"] = true,
+			},
+			["HeadlineView"] = {
+				["customtext"] = {
+					["y"] = 0,
 				},
-				["tank"] = {
-					["scale"] = {
-						["LOW"] = 0,
-						["OFFTANK"] = 0,
-						["MEDIUM"] = 0,
-						["HIGH"] = 0,
-					},
-					["alpha"] = {
-						["MEDIUM"] = 1,
-						["OFFTANK"] = 1,
-						["HIGH"] = 1,
-					},
+				["FriendlySubtext"] = "ROLE_GUILD_LEVEL",
+				["name"] = {
+					["y"] = 0,
 				},
-				["AdditiveScale"] = true,
+			},
+			["classWidget"] = {
+				["y_hv"] = 0,
+				["x_hv"] = -75,
+				["scale"] = 20,
+				["x"] = -72,
+				["theme"] = "clean",
+				["y"] = 0,
 			},
 			["AuraWidget"] = {
+				["FilterBySpell"] = {
+					"279956", -- [1]
+					"窒息尖啸", -- [2]
+					"205644", -- [3]
+					"", -- [4]
+				},
+				["CrowdControl"] = {
+					["Scale"] = 1,
+					["ShowAllEnemy"] = true,
+					["ShowFriendly"] = false,
+					["ShowBlizzardForEnemy"] = false,
+				},
+				["ModeIcon"] = {
+					["IconHeight"] = 14,
+					["Rows"] = 1,
+					["Style"] = "custom",
+					["IconWidth"] = 25,
+					["StackCount"] = {
+						["HorizontalOffset"] = 4,
+						["Font"] = {
+							["Size"] = 12,
+						},
+						["VerticalOffset"] = -4,
+					},
+					["Duration"] = {
+						["HorizontalOffset"] = -5,
+						["Font"] = {
+							["Size"] = 14,
+						},
+						["VerticalOffset"] = 5,
+					},
+					["ColumnSpacing"] = 1,
+					["RowSpacing"] = 3,
+				},
+				["y"] = 6,
+				["SortReverse"] = true,
 				["Debuffs"] = {
 					["FilterBySpell"] = {
 						"1330", -- [1]
@@ -528,45 +505,14 @@ ThreatPlatesDB = {
 						"304645", -- [25]
 					},
 				},
-				["CrowdControl"] = {
-					["Scale"] = 1,
-					["ShowAllEnemy"] = true,
-					["ShowFriendly"] = false,
-					["ShowBlizzardForEnemy"] = false,
-				},
-				["ModeIcon"] = {
-					["IconHeight"] = 14,
-					["StackCount"] = {
-						["HorizontalOffset"] = 4,
-						["Font"] = {
-							["Size"] = 12,
-						},
-						["VerticalOffset"] = -4,
-					},
-					["Style"] = "custom",
-					["IconWidth"] = 25,
-					["ColumnSpacing"] = 1,
-					["Duration"] = {
-						["HorizontalOffset"] = -5,
-						["Font"] = {
-							["Size"] = 14,
-						},
-						["VerticalOffset"] = 5,
-					},
-					["Rows"] = 1,
-					["RowSpacing"] = 3,
-				},
-				["y"] = 6,
-				["SortReverse"] = true,
-				["SortOrder"] = "AtoZ",
 				["ModeBar"] = {
-					["BackgroundTexture"] = "Gloss",
-					["IconSpacing"] = 0,
-					["TimeTextIndent"] = 0,
 					["LabelTextIndent"] = 0,
+					["IconSpacing"] = 0,
 					["Texture"] = "Gloss",
+					["BackgroundTexture"] = "Gloss",
+					["TimeTextIndent"] = 0,
 				},
-				["ShowTooltips"] = true,
+				["FlashWhenExpiring"] = true,
 				["Buffs"] = {
 					["FilterMode"] = "Allow",
 					["FilterBySpell"] = {
@@ -578,88 +524,18 @@ ThreatPlatesDB = {
 					["ShowOnEnemyNPCs"] = false,
 					["ShowDispellable"] = false,
 				},
-				["FlashWhenExpiring"] = true,
-				["FilterBySpell"] = {
-					"279956", -- [1]
-					"窒息尖啸", -- [2]
-					"205644", -- [3]
-					"", -- [4]
-				},
-			},
-			["text"] = {
-				["amount"] = true,
-				["full"] = true,
-				["LocalizedUnitSymbol"] = true,
-			},
-			["HeadlineView"] = {
-				["customtext"] = {
-					["y"] = 0,
-				},
-				["FriendlySubtext"] = "ROLE_GUILD_LEVEL",
-				["name"] = {
-					["y"] = 0,
-				},
-			},
-			["classWidget"] = {
-				["y_hv"] = 0,
-				["x_hv"] = -75,
-				["scale"] = 20,
-				["x"] = -72,
-				["theme"] = "clean",
-				["y"] = 0,
-			},
-			["stealthWidget"] = {
-				["scale"] = 25,
+				["SortOrder"] = "AtoZ",
+				["ShowTooltips"] = true,
 			},
 			["uniqueSettings"] = {
-				nil, -- [1]
 				{
-				}, -- [2]
-				{
-				}, -- [3]
-				{
-				}, -- [4]
-				{
-				}, -- [5]
-				{
-				}, -- [6]
-				{
-				}, -- [7]
-				{
-				}, -- [8]
-				{
-				}, -- [9]
-				{
-				}, -- [10]
-				{
-				}, -- [11]
-				{
-				}, -- [12]
-				{
-				}, -- [13]
-				{
-				}, -- [14]
-				[24] = {
-				},
-				[25] = {
-				},
-				[27] = {
-				},
-				[28] = {
-				},
-				[29] = {
-				},
-				[16] = {
-				},
-				[17] = {
-				},
-				[34] = {
+					["UseAutomaticIcon"] = false,
 					["color"] = {
 						["b"] = 0.9647058823529412,
 						["r"] = 0.9882352941176471,
 					},
 					["scale"] = 1.5,
-					["name"] = "爆炸物",
+					["icon"] = "",
 					["Trigger"] = {
 						["Name"] = {
 							["Input"] = "爆炸物",
@@ -668,20 +544,15 @@ ThreatPlatesDB = {
 							},
 						},
 					},
-				},
-				[20] = {
-				},
-				[21] = {
-				},
-				[32] = {
-				},
-				[33] = {
+				}, -- [1]
+				{
+					["UseAutomaticIcon"] = false,
 					["color"] = {
 						["g"] = 0,
 						["b"] = 0.0470588235294118,
 					},
 					["scale"] = 1.5,
-					["name"] = "戈霍恩之嗣",
+					["icon"] = "",
 					["Trigger"] = {
 						["Name"] = {
 							["Input"] = "戈霍恩之嗣",
@@ -690,13 +561,13 @@ ThreatPlatesDB = {
 							},
 						},
 					},
-				},
+				}, -- [2]
 			},
 			["settings"] = {
 				["customtext"] = {
-					["height"] = 8,
-					["shadow"] = false,
 					["typeface"] = "聊天",
+					["shadow"] = false,
+					["height"] = 8,
 					["size"] = 10,
 				},
 				["healthbar"] = {
@@ -705,37 +576,46 @@ ThreatPlatesDB = {
 					["BackgroundUseForegroundColor"] = true,
 				},
 				["eliteicon"] = {
-					["y"] = 0,
-					["x"] = 55,
 					["scale"] = 12,
+					["x"] = 55,
+					["y"] = 0,
 				},
 				["skullicon"] = {
 					["scale"] = 12,
 					["x"] = 45,
 				},
-				["castnostop"] = {
-					["ShowOverlay"] = false,
-					["ShowInterruptShield"] = true,
+				["raidicon"] = {
+					["y_hv"] = 0,
+					["x"] = 0,
+					["scale"] = 25,
+					["y"] = 10,
+					["hpMarked"] = {
+						["SKULL"] = {
+							["b"] = 0,
+							["g"] = 0.290196078431373,
+							["r"] = 0.984313725490196,
+						},
+						["CROSS"] = {
+							["b"] = 0.909803921568627,
+							["g"] = 0.976470588235294,
+							["r"] = 0.92156862745098,
+						},
+					},
 				},
 				["spellicon"] = {
 					["y"] = -16,
 					["x"] = 53,
 					["scale"] = 18,
 				},
-				["castbar"] = {
-					["y"] = -16,
-					["x"] = -8,
-					["SpellNameText"] = {
-						["HorizontalOffset"] = 10,
-					},
-					["height"] = 12,
-					["BackgroundUseForegroundColor"] = true,
-					["width"] = 105,
+				["healthborder"] = {
+					["Offset"] = 2,
+					["EdgeSize"] = 2,
+					["texture"] = "TP_Border_Default",
 				},
 				["name"] = {
-					["flags"] = "OUTLINE",
-					["shadow"] = false,
 					["y"] = 8,
+					["shadow"] = false,
+					["flags"] = "OUTLINE",
 				},
 				["spelltext"] = {
 					["height"] = 15,
@@ -751,28 +631,19 @@ ThreatPlatesDB = {
 					["x"] = -52,
 					["size"] = 10,
 				},
-				["healthborder"] = {
-					["Offset"] = 2,
-					["EdgeSize"] = 2,
-					["texture"] = "TP_Border_Default",
-				},
-				["raidicon"] = {
-					["y_hv"] = 0,
-					["x"] = 0,
-					["scale"] = 25,
-					["y"] = 10,
-					["hpMarked"] = {
-						["SKULL"] = {
-							["r"] = 0.984313725490196,
-							["g"] = 0.290196078431373,
-							["b"] = 0,
-						},
-						["CROSS"] = {
-							["r"] = 0.92156862745098,
-							["g"] = 0.976470588235294,
-							["b"] = 0.909803921568627,
-						},
+				["castbar"] = {
+					["y"] = -16,
+					["x"] = -8,
+					["SpellNameText"] = {
+						["HorizontalOffset"] = 10,
 					},
+					["height"] = 12,
+					["BackgroundUseForegroundColor"] = true,
+					["width"] = 105,
+				},
+				["castnostop"] = {
+					["ShowInterruptShield"] = true,
+					["ShowOverlay"] = false,
 				},
 			},
 			["BossModsWidget"] = {
@@ -788,7 +659,29 @@ ThreatPlatesDB = {
 				["HideInCombatAttacked"] = false,
 			},
 			["friendlyClassIcon"] = true,
-			["tidyplatesFade"] = true,
+			["threat"] = {
+				["tank"] = {
+					["scale"] = {
+						["LOW"] = 0,
+						["OFFTANK"] = 0,
+						["MEDIUM"] = 0,
+						["HIGH"] = 0,
+					},
+					["alpha"] = {
+						["OFFTANK"] = 1,
+						["MEDIUM"] = 1,
+						["HIGH"] = 1,
+					},
+				},
+				["dps"] = {
+					["scale"] = {
+						["MEDIUM"] = 0,
+						["LOW"] = 0,
+						["HIGH"] = 0,
+					},
+				},
+				["AdditiveScale"] = true,
+			},
 		},
 	},
 }

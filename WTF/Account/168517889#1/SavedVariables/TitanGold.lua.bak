@@ -3,7 +3,7 @@ GoldSave = {
 	["Magiccream_格雷迈恩::Horde"] = {
 		["show"] = true,
 		["name"] = "Magiccream",
-		["gold"] = 173929704,
+		["gold"] = 204950371,
 	},
 	["Magiccreamcn_格雷迈恩::Horde"] = {
 		["show"] = true,
@@ -18,7 +18,7 @@ GoldSave = {
 	["Magiccreamdk_格雷迈恩::Horde"] = {
 		["show"] = true,
 		["name"] = "Magiccreamdk",
-		["gold"] = 100447344,
+		["gold"] = 1232946,
 	},
 	["余生请多指教_格雷迈恩::Horde"] = {
 		["show"] = true,

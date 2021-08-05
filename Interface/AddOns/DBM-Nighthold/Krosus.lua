@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1713, "DBM-Nighthold", nil, 786)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210118141911")
+mod:SetRevision("20210119194005")
 mod:SetCreatureID(101002)
 mod:SetEncounterID(1842)
 --mod:SetUsedIcons(8, 7, 6, 3, 2, 1)
@@ -87,7 +87,7 @@ _G["DBMUpdateKrosusBeam"] = function(wasLeft)
 end
 
 function mod:OnCombatStart(delay)
-	if self:IsTrivial(120) or self:IsLFR() then
+	if self:IsTrivial() or self:IsLFR() then
 		minAmount, maxAmount = 8, 16
 	elseif self:IsNormal() then
 		minAmount, maxAmount = 4, 8

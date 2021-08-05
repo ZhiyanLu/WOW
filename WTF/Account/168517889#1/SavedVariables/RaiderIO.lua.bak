@@ -1,21 +1,12 @@
 
 RaiderIO_Config = {
-	["previouslyEnabledLogging"] = false,
+	["previouslyEnabledLogging"] = true,
 }
-RaiderIO_LastCharacter = "cn-Magiccreamdk-greymane"
+RaiderIO_LastCharacter = "cn-Magiccream-greymane"
 RaiderIO_MissingCharacters = {
-	["cn-布伦希爾德-the-mechanar"] = true,
-	["cn-旋转菲琳-bone-wastes"] = true,
-	["cn-Ganyuheng-the-mechanar"] = true,
-	["cn-谁奶大谁尴尬-ravencrest"] = true,
-	["cn-苦苦挣扎-detheroc"] = true,
-	["cn-丶利利木子-greymane"] = true,
-	["cn-安岳壹哥-barthilas"] = true,
-	["cn-Magiccreamdk-greymane"] = true,
-	["cn-妞妞-alexstrasza"] = true,
-	["cn-占戈衤申-ravencrest"] = true,
-	["cn-你猎爹粑粑-gazlowe"] = true,
-	["cn-众生屠-thunder-bluff"] = true,
-	["cn-植元-greymane"] = true,
+	["cn-丿莫兮丶风流-greymane"] = true,
+	["cn-Magiccream-greymane"] = true,
+}
+RaiderIO_MissingServers = {
 }
 RaiderIO_CachedRuns = nil

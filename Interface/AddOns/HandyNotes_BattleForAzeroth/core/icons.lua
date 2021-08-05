@@ -19,6 +19,7 @@ local DEFAULT_GLOW = Glow('square_icon')
 
 ns.icons = { -- name => path
 
+    -- Red, Blue, Yellow, Purple, Green, Pink, Lime, Navy, Teal
     chest_bk = {Icon('chest_black'), Glow('chest')},
     chest_bl = {Icon('chest_blue'), Glow('chest')},
     chest_bn = {Icon('chest_brown'), Glow('chest')},
@@ -46,10 +47,11 @@ ns.icons = { -- name => path
     paw_g = {Icon('paw_green'), Glow('paw')},
     paw_y = {Icon('paw_yellow'), Glow('paw')},
 
-    peg_wb = {Icon('peg_white_blue'), Glow('peg')},
-    peg_wg = {Icon('peg_white_green'), Glow('peg')},
-    peg_wr = {Icon('peg_white_red'), Glow('peg')},
-    peg_wy = {Icon('peg_white_yellow'), Glow('peg')},
+    peg_bl = {Icon('peg_blue'), Glow('peg')},
+    peg_bk = {Icon('peg_black'), Glow('peg')},
+    peg_gn = {Icon('peg_green'), Glow('peg')},
+    peg_rd = {Icon('peg_red'), Glow('peg')},
+    peg_yw = {Icon('peg_yellow'), Glow('peg')},
 
     portal_b = {Icon('portal_blue'), Glow('portal')},
     portal_g = {Icon('portal_green'), Glow('portal')},

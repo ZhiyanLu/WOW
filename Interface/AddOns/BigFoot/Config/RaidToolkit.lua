@@ -239,43 +239,43 @@ function RaidToolkitConfigFunc()
 
 	end
 
-	if (IsConfigurableAddOn("DBM-Core")) then
-		ModManagement_RegisterCheckBox(
-			"RaidToolkit",
-			DBM_ENABLE_TEXT,
-			nil,
-			"EnableDBM",
-			1,
-			function (arg)
-				if (arg == 1) then
-					if (not BigFoot_IsAddOnLoaded("DBM-StatusBarTimers")) then
-						BigFoot_LoadAddOn("DBM-StatusBarTimers");
-					end
-					if (not BigFoot_IsAddOnLoaded("DBM-Core")) then
-						BigFoot_LoadAddOn("DBM-Core");
-						BigFoot_DelayCall(function() if DBM then DBM.Options.SettingsMessageShown = true end end,5)
-					end
-					if (not BigFoot_IsAddOnLoaded("DBM-RaidLeadTools")) then
-						BigFoot_LoadAddOn("DBM-RaidLeadTools");
-					end
-					if (not BigFoot_IsAddOnLoaded("DBM-SpellTimers")) then
-						BigFoot_LoadAddOn("DBM-SpellTimers");
-					end
-					if (not BigFoot_IsAddOnLoaded("DBM-DefaultSkin")) then
-						BigFoot_LoadAddOn("DBM-DefaultSkin");
-					end
-				else
-					if (BigFoot_IsAddOnLoadedFromBigFoot("DBM-Core")) then
-						BigFoot_RequestReloadUI(function() BigFoot_Print(DBM_DISABLE_DELAY_TEXT); end);
-					end
-				end
-			end,
-			nil,
-			nil,
-			DBMString.Name or DBMString.colorText
+	-- if (IsConfigurableAddOn("DBM-Core")) then
+		-- ModManagement_RegisterCheckBox(
+			-- "RaidToolkit",
+			-- DBM_ENABLE_TEXT,
+			-- nil,
+			-- "EnableDBM",
+			-- 1,
+			-- function (arg)
+				-- if (arg == 1) then
+					-- if (not BigFoot_IsAddOnLoaded("DBM-StatusBarTimers")) then
+						-- BigFoot_LoadAddOn("DBM-StatusBarTimers");
+					-- end
+					-- if (not BigFoot_IsAddOnLoaded("DBM-Core")) then
+						-- BigFoot_LoadAddOn("DBM-Core");
+						-- BigFoot_DelayCall(function() if DBM then DBM.Options.SettingsMessageShown = true end end,5)
+					-- end
+					-- if (not BigFoot_IsAddOnLoaded("DBM-RaidLeadTools")) then
+						-- BigFoot_LoadAddOn("DBM-RaidLeadTools");
+					-- end
+					-- if (not BigFoot_IsAddOnLoaded("DBM-SpellTimers")) then
+						-- BigFoot_LoadAddOn("DBM-SpellTimers");
+					-- end
+					-- if (not BigFoot_IsAddOnLoaded("DBM-DefaultSkin")) then
+						-- BigFoot_LoadAddOn("DBM-DefaultSkin");
+					-- end
+				-- else
+					-- if (BigFoot_IsAddOnLoadedFromBigFoot("DBM-Core")) then
+						-- BigFoot_RequestReloadUI(function() BigFoot_Print(DBM_DISABLE_DELAY_TEXT); end);
+					-- end
+				-- end
+			-- end,
+			-- nil,
+			-- nil,
+			-- DBMString.Name or DBMString.colorText
 
-		);
-	end
+		-- );
+	-- end
 
 	if (IsConfigurableAddOn("Grid")) then
 		ModManagement_RegisterCheckBox(

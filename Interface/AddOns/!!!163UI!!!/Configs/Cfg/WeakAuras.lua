@@ -5,7 +5,7 @@ U1RegisterAddon("WeakAuras", {
 
     tags = { "TAG_SPELL", },
     icon = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\icon.blp",
-    desc = "简单又强大的状态监控模块，和TellMeWhen任选一个喜欢的就好，https://wago.io/weakauras 有一些字符串可以导入",
+    desc = "简单又强大的状态监控模块WA，和TellMeWhen任选一个喜欢的就好，https://wago.io/weakauras 有一些字符串可以导入",
 
     -- reload = true,
 

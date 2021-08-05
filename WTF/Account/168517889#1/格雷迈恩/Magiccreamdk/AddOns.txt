@@ -200,7 +200,7 @@ callbackhandler-1.0: enabled
 libsharedmedia-3.0: enabled
 dominos_config: enabled
 MythicPlusTimer: disabled
-TidyPlates_ThreatPlates: enabled
+TidyPlates_ThreatPlates: disabled
 Ace3: enabled
 AceGUI-3.0-SharedMediaWidgets: enabled
 SMT: enabled
@@ -337,7 +337,7 @@ WeakAurasArchive: enabled
 dbm-castlenathria: enabled
 dbm-party-shadowlands: enabled
 handynotes_visionsofnzoth: enabled
-battlegroundenemies: enabled
+battlegroundenemies: disabled
 handynotes_battleforazerothachievments: enabled
 savedinstances: enabled
 details_raidcheck: enabled
@@ -433,3 +433,14 @@ RaiderIO_DB_TW_A_R: disabled
 RaiderIO_DB_TW_H_R: disabled
 RaiderIO_DB_KR_H_R: disabled
 mythicdungeontools: enabled
+dbm_mods_legion: disabled
+dbm_mods_wod: disabled
+dbm_mods_mop: disabled
+dbm_mods_cataclysm: disabled
+dbm_mods_bfa: disabled
+dbm_mods_wotlk: disabled
+dbm_mods_old: disabled
+mrt: enabled
+dbm-sanctumofdomination: enabled
+blizzmove_debug: enabled
+ventureplan: enabled

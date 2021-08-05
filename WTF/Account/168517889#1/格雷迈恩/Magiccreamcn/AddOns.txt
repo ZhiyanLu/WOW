@@ -207,7 +207,7 @@ DBM-Uldir: enabled
 DBM-Party-BfA: enabled
 DBM-Azeroth-BfA: enabled
 MythicPlusTimer: disabled
-TidyPlates_ThreatPlates: enabled
+TidyPlates_ThreatPlates: disabled
 Ace3: enabled
 AceGUI-3.0-SharedMediaWidgets: enabled
 Dominos_Config: enabled
@@ -337,3 +337,5 @@ grail-npcs-_classic_-dede: enabled
 DungeonWatchDog: enabled
 BattleGroundEnemies: enabled
 BigDebuffs: enabled
+MRT: enabled
+BattlegroundTargets: enabled

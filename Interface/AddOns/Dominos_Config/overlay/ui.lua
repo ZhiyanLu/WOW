@@ -11,7 +11,7 @@ local GRID_COLOR = _G.CreateColor(0.4, 0.4, 0.4, 0.5)
 -- #731abc
 local GRID_HIGHLIGHT_COLOR = _G.CreateColor(0.451, 0.102, 0.737, 0.5)
 
-local GRID_THICKNESS = 1
+local GRID_LINE_THICKNESS = 2
 
 local OverlayUI = Addon:NewModule('OverlayUI', 'AceEvent-3.0')
 
@@ -78,6 +78,8 @@ function OverlayUI:OnEnable()
     ParentAddon.RegisterCallback(self, 'CONFIG_MODE_DISABLED')
     ParentAddon.RegisterCallback(self, 'LAYOUT_UNLOADED')
     ParentAddon.RegisterCallback(self, 'LAYOUT_LOADED')
+    ParentAddon.RegisterCallback(self, 'BAR_DISPLAY_LAYER_UPDATED', 'OnBarDisplayLevelChanged')
+    ParentAddon.RegisterCallback(self, 'BAR_DISPLAY_LEVEL_UPDATED', 'OnBarDisplayLevelChanged')
 
     self:SetVisible(not (ParentAddon:Locked() or _G.InCombatLockdown()))
 end
@@ -100,6 +102,18 @@ end
 function OverlayUI:OnFadeOutFinished()
     self.frame:Hide()
     self:HideDragFrames()
+end
+
+function OverlayUI:OnBarDisplayLevelChanged(msg, bar)
+    local activeDragFrames = self.activeDragFrames
+
+    if activeDragFrames then
+        for i = #activeDragFrames, 1, -1 do
+            if activeDragFrames[i].owner == bar then
+                activeDragFrames[i]:UpdateFrameLevel()
+            end
+        end
+    end
 end
 
 function OverlayUI:CONFIG_MODE_ENABLED()
@@ -193,44 +207,78 @@ function OverlayUI:UpdateGrid()
     end
 end
 
--- this is derived from Ben Walker's Alignment Grid addon
+local function SetLinePoint(line, point, relFrame, relPoint, x, y)
+    if PixelUtil then
+        PixelUtil.SetPoint(line, point, relFrame, relPoint, x, y)
+    else
+        line:SetPoint(point, relFrame, relPoint, x, y)
+    end
+end
+
+local function SetLineWidth(line, width)
+    if PixelUtil then
+        PixelUtil.SetWidth(line, width, 1)
+    else
+        line:SetWidth(width)
+    end
+end
+
+local function SetLineHeight(line, height)
+    if PixelUtil then
+        PixelUtil.SetHeight(line, height, 1)
+    else
+        line:SetHeight(height)
+    end
+end
+
 function OverlayUI:DrawGrid()
     self:ClearGrid()
 
-    local verticalLines, horizontalLines = ParentAddon:GetAlignmentGridScale()
-    local width, height = self.frame:GetSize()
-    -- convert to an even number, so that we can highlight the middle point
-    local xOffset = width / verticalLines
-    local yOffset = height / horizontalLines
+    local parent = self.frame
+    local cx, cy = parent:GetCenter()
+	local spacing = (parent:GetHeight() / ParentAddon:GetAlignmentGridSize())
 
-    for i = 0, verticalLines do
+    -- draw center lines
+    local cvLine = self:AcquireGridLine()
+    cvLine:SetColorTexture(GRID_HIGHLIGHT_COLOR:GetRGBA())
+    SetLineWidth(cvLine, GRID_LINE_THICKNESS)
+    SetLinePoint(cvLine, 'TOP', parent, 'TOPLEFT', cx, 0)
+    SetLinePoint(cvLine, 'BOTTOM', parent, 'BOTTOMLEFT', cx, 0)
+
+    local chLine = self:AcquireGridLine()
+    chLine:SetColorTexture(GRID_HIGHLIGHT_COLOR:GetRGBA())
+    SetLineHeight(chLine, GRID_LINE_THICKNESS)
+    SetLinePoint(chLine, 'LEFT', parent, 'BOTTOMLEFT', 0, cy)
+    SetLinePoint(chLine, 'RIGHT', parent, 'BOTTOMRIGHT', 0, cy)
+
+    -- draw vertical lines
+    for x = spacing, cx, spacing do
         local line = self:AcquireGridLine()
+        line:SetColorTexture(GRID_COLOR:GetRGBA())
+        SetLineWidth(line, GRID_LINE_THICKNESS)
+        SetLinePoint(line, 'TOP', parent, 'TOPLEFT', cx + x, 0)
+        SetLinePoint(line, 'BOTTOM', parent, 'BOTTOMLEFT', cx + x, 0)
 
-        line:SetThickness(GRID_THICKNESS)
-
-        if i == (verticalLines / 2) then
-            line:SetColorTexture(GRID_HIGHLIGHT_COLOR:GetRGBA())
-        else
-            line:SetColorTexture(GRID_COLOR:GetRGBA())
-        end
-
-        line:SetStartPoint("TOPLEFT", xOffset * i, 0)
-        line:SetEndPoint("BOTTOMLEFT", xOffset * i, 0)
+        line = self:AcquireGridLine()
+        line:SetColorTexture(GRID_COLOR:GetRGBA())
+        SetLineWidth(line, GRID_LINE_THICKNESS)
+        SetLinePoint(line, 'TOP', parent, 'TOPLEFT', cx - x, 0)
+        SetLinePoint(line, 'BOTTOM', parent, 'BOTTOMLEFT', cx - x, 0)
     end
 
-    for i = 0, horizontalLines do
+    -- draw horizontal lines
+    for y = spacing, cy, spacing do
         local line = self:AcquireGridLine()
+        line:SetColorTexture(GRID_COLOR:GetRGBA())
+        SetLineHeight(line, GRID_LINE_THICKNESS)
+        SetLinePoint(line, 'LEFT', parent, 'BOTTOMLEFT', 0, cy + y)
+        SetLinePoint(line, 'RIGHT', parent, 'BOTTOMRIGHT', 0, cy + y)
 
-        line:SetThickness(GRID_THICKNESS)
-
-        if i == (horizontalLines / 2) then
-            line:SetColorTexture(GRID_HIGHLIGHT_COLOR:GetRGBA())
-        else
-            line:SetColorTexture(GRID_COLOR:GetRGBA())
-        end
-
-        line:SetStartPoint("BOTTOMLEFT", 0, yOffset * i)
-        line:SetEndPoint("BOTTOMRIGHT", 0, yOffset * i)
+        line = self:AcquireGridLine()
+        line:SetColorTexture(GRID_COLOR:GetRGBA())
+        SetLineHeight(line, GRID_LINE_THICKNESS)
+        SetLinePoint(line, 'LEFT', parent, 'BOTTOMLEFT', 0, cy - y)
+        SetLinePoint(line, 'RIGHT', parent, 'BOTTOMRIGHT', 0, cy - y)
     end
 end
 
@@ -253,8 +301,7 @@ function OverlayUI:AcquireGridLine()
     if line then
         inactiveLines[#inactiveLines] = nil
     else
-        line = self.frame:CreateLine()
-        line:SetDrawLayer('BACKGROUND', 7)
+        line = self.frame:CreateTexture(nil, 'BACKGROUND', nil, 7)
     end
 
     -- add
@@ -270,6 +317,7 @@ function OverlayUI:AcquireGridLine()
 end
 
 function OverlayUI:ReleaseGridLine(line)
+    line:ClearAllPoints()
     line:Hide()
 
     local inactiveLines = self.inactiveGridLines

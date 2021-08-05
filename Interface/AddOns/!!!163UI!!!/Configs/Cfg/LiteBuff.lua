@@ -19,7 +19,7 @@ U1RegisterAddon("LiteBuff", {
     toggle = function(name, info, enable, justload)
         if not justload then
             if not InCombatLockdown() then
-                CoreUIShowOrHide(LiteBuffFrame, enable)
+                LiteBuffFrame:SetShown(enable);
             end
         end
         if(not InCombatLockdown()) then

@@ -2,58 +2,58 @@
 DCTSA_CONFIG = {
 	["DCTSA_SAVE"] = {
 		["DCTSA_FILTER_CASTSUCCESS_SORT"] = {
+			["filt"] = {
+			},
 			["buffer"] = {
 				"尖啸", -- [1]
 				"斜掠", -- [2]
 			},
-			["filt"] = {
-			},
 		},
 		["DCTSA_FILTER_CASTSUCCESS"] = {
-			["buffer"] = {
-				["斜掠"] = 0,
-				["尖啸"] = 0,
-			},
 			["filt"] = {
+			},
+			["buffer"] = {
+				["尖啸"] = 0,
+				["斜掠"] = 0,
 			},
 		},
 		["DCTSA_SAVEDATA_VER"] = 2001,
 		["DCTSA_FILTER_BUFF_SORT"] = {
-			["buffer"] = {
-			},
 			["filt"] = {
+			},
+			["buffer"] = {
 			},
 		},
 		["DCTSA_FILTER_CASTSTART"] = {
+			["filt"] = {
+			},
 			["buffer"] = {
 				["瘟疫之种"] = 0,
 			},
-			["filt"] = {
-			},
 		},
 		["DCTSA_FILTER_DISPELLED"] = {
-			["buffer"] = {
-			},
 			["filt"] = {
 			},
-		},
-		["DCTSA_FILTER_DISPELLED_SORT"] = {
 			["buffer"] = {
-			},
-			["filt"] = {
-			},
-		},
-		["DCTSA_FILTER_BUFF"] = {
-			["buffer"] = {
-			},
-			["filt"] = {
 			},
 		},
 		["DCTSA_FILTER_CASTSTART_SORT"] = {
+			["filt"] = {
+			},
 			["buffer"] = {
 				"瘟疫之种", -- [1]
 			},
+		},
+		["DCTSA_FILTER_BUFF"] = {
 			["filt"] = {
+			},
+			["buffer"] = {
+			},
+		},
+		["DCTSA_FILTER_DISPELLED_SORT"] = {
+			["filt"] = {
+			},
+			["buffer"] = {
 			},
 		},
 		["PROFILE"] = {
@@ -251,29 +251,7 @@ DCTSA_CONFIG = {
 						}, -- [2]
 					},
 				},
-				["DCTSA_SHOW_BUFFGET"] = {
-					["color"] = {
-						0.35, -- [1]
-						0.35, -- [2]
-						1, -- [3]
-					},
-					["frame"] = 6,
-					["colorEx"] = {
-						{
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-						}, -- [1]
-						{
-							1, -- [1]
-							1, -- [2]
-							0, -- [3]
-						}, -- [2]
-					},
-					["show"] = {
-						"#ic#c1#oi#ce获得了#c2#sn#ce", -- [1]
-					},
-				},
+				["DCTSA_CASTTIME"] = 1,
 				["DCTSA_SHOW_CASTSTART_FOCUS"] = {
 					["color"] = {
 						1, -- [1]
@@ -368,6 +346,7 @@ DCTSA_CONFIG = {
 						"#ic#c1◇#ce #c2#sn#ce被驱散", -- [1]
 					},
 				},
+				["DCTSA_MERGE_CASTSUCCESS_AND_BUFFGET"] = 1,
 				["DCTSA_SHOW_BUFFFADE_YOURTARGET"] = {
 					["show"] = {
 						"#ic#c1★#ce#c2#sn#ce消失了", -- [1]
@@ -392,7 +371,6 @@ DCTSA_CONFIG = {
 						}, -- [2]
 					},
 				},
-				["DCTSA_MERGE_CASTSUCCESS_AND_BUFFGET"] = 1,
 				["DCTSA_ENABLE"] = 0,
 				["DCTSA_SHOW_BUFFFADE_FOCUS"] = {
 					["color"] = {
@@ -417,7 +395,29 @@ DCTSA_CONFIG = {
 						"#ic#c1◇#ce #c2#sn#ce消失了", -- [1]
 					},
 				},
-				["DCTSA_CASTTIME"] = 1,
+				["DCTSA_SHOW_BUFFGET"] = {
+					["color"] = {
+						0.35, -- [1]
+						0.35, -- [2]
+						1, -- [3]
+					},
+					["frame"] = 6,
+					["colorEx"] = {
+						{
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+						}, -- [1]
+						{
+							1, -- [1]
+							1, -- [2]
+							0, -- [3]
+						}, -- [2]
+					},
+					["show"] = {
+						"#ic#c1#oi#ce获得了#c2#sn#ce", -- [1]
+					},
+				},
 			},
 			["备份"] = {
 				["DCTSA_SHOW_BUFFGET_FOCUS"] = {
@@ -613,29 +613,7 @@ DCTSA_CONFIG = {
 						}, -- [2]
 					},
 				},
-				["DCTSA_SHOW_BUFFGET"] = {
-					["color"] = {
-						0.35, -- [1]
-						0.35, -- [2]
-						1, -- [3]
-					},
-					["frame"] = 6,
-					["colorEx"] = {
-						{
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-						}, -- [1]
-						{
-							1, -- [1]
-							1, -- [2]
-							0, -- [3]
-						}, -- [2]
-					},
-					["show"] = {
-						"#ic#c1#oi#ce获得了#c2#sn#ce", -- [1]
-					},
-				},
+				["DCTSA_CASTTIME"] = 1,
 				["DCTSA_SHOW_CASTSTART_FOCUS"] = {
 					["color"] = {
 						1, -- [1]
@@ -730,6 +708,7 @@ DCTSA_CONFIG = {
 						"#ic#c1◇#ce #c2#sn#ce被驱散", -- [1]
 					},
 				},
+				["DCTSA_MERGE_CASTSUCCESS_AND_BUFFGET"] = 1,
 				["DCTSA_SHOW_BUFFFADE_YOURTARGET"] = {
 					["show"] = {
 						"#ic#c1★#ce#c2#sn#ce消失了", -- [1]
@@ -754,7 +733,6 @@ DCTSA_CONFIG = {
 						}, -- [2]
 					},
 				},
-				["DCTSA_MERGE_CASTSUCCESS_AND_BUFFGET"] = 1,
 				["DCTSA_ENABLE"] = 0,
 				["DCTSA_SHOW_BUFFFADE_FOCUS"] = {
 					["color"] = {
@@ -779,7 +757,29 @@ DCTSA_CONFIG = {
 						"#ic#c1◇#ce #c2#sn#ce消失了", -- [1]
 					},
 				},
-				["DCTSA_CASTTIME"] = 1,
+				["DCTSA_SHOW_BUFFGET"] = {
+					["color"] = {
+						0.35, -- [1]
+						0.35, -- [2]
+						1, -- [3]
+					},
+					["frame"] = 6,
+					["colorEx"] = {
+						{
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+						}, -- [1]
+						{
+							1, -- [1]
+							1, -- [2]
+							0, -- [3]
+						}, -- [2]
+					},
+					["show"] = {
+						"#ic#c1#oi#ce获得了#c2#sn#ce", -- [1]
+					},
+				},
 			},
 			["备份2"] = {
 				["DCTSA_SHOW_BUFFGET_FOCUS"] = {
@@ -975,29 +975,7 @@ DCTSA_CONFIG = {
 						}, -- [2]
 					},
 				},
-				["DCTSA_SHOW_BUFFGET"] = {
-					["color"] = {
-						0.35, -- [1]
-						0.35, -- [2]
-						1, -- [3]
-					},
-					["frame"] = 6,
-					["colorEx"] = {
-						{
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-						}, -- [1]
-						{
-							1, -- [1]
-							1, -- [2]
-							0, -- [3]
-						}, -- [2]
-					},
-					["show"] = {
-						"#ic#c1#oi#ce获得了#c2#sn#ce", -- [1]
-					},
-				},
+				["DCTSA_CASTTIME"] = 1,
 				["DCTSA_SHOW_CASTSTART_FOCUS"] = {
 					["color"] = {
 						1, -- [1]
@@ -1092,6 +1070,7 @@ DCTSA_CONFIG = {
 						"#ic#c1◇#ce #c2#sn#ce被驱散", -- [1]
 					},
 				},
+				["DCTSA_MERGE_CASTSUCCESS_AND_BUFFGET"] = 1,
 				["DCTSA_SHOW_BUFFFADE_YOURTARGET"] = {
 					["show"] = {
 						"#ic#c1★#ce#c2#sn#ce消失了", -- [1]
@@ -1116,7 +1095,6 @@ DCTSA_CONFIG = {
 						}, -- [2]
 					},
 				},
-				["DCTSA_MERGE_CASTSUCCESS_AND_BUFFGET"] = 1,
 				["DCTSA_ENABLE"] = 0,
 				["DCTSA_SHOW_BUFFFADE_FOCUS"] = {
 					["color"] = {
@@ -1141,7 +1119,29 @@ DCTSA_CONFIG = {
 						"#ic#c1◇#ce #c2#sn#ce消失了", -- [1]
 					},
 				},
-				["DCTSA_CASTTIME"] = 1,
+				["DCTSA_SHOW_BUFFGET"] = {
+					["color"] = {
+						0.35, -- [1]
+						0.35, -- [2]
+						1, -- [3]
+					},
+					["frame"] = 6,
+					["colorEx"] = {
+						{
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+						}, -- [1]
+						{
+							1, -- [1]
+							1, -- [2]
+							0, -- [3]
+						}, -- [2]
+					},
+					["show"] = {
+						"#ic#c1#oi#ce获得了#c2#sn#ce", -- [1]
+					},
+				},
 			},
 		},
 	},

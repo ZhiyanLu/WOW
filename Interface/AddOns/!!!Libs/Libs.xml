@@ -26,7 +26,6 @@
 <Include file="LibDialog-1.0\LibDialog-1.0.lua"/><!--Archy,AtlasLoot,Broker_Dura,MethodDungeonTools,NPCScan,Details-->
 <Include file="LibCompress\LibCompress.lua"/><!--WeakAuras,MDT,Details-->
 <Include file="LibDeflate\LibDeflate.lua"/><!--ExRT,WeakAuras,Details-->
-<Include file="LibClassicDurations\LibClassicDurations.xml"/><!--ExRT,WeakAuras,Details-->
 
 <Include file="UTF8\utf8data.lua"/>
 <Include file="UTF8\utf8.lua"/>

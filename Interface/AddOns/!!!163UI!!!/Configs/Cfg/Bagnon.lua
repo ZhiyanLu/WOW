@@ -10,8 +10,6 @@ U1RegisterAddon("Bagnon", {
     icon = [[Interface\Icons\INV_Misc_Bag_13]],
     optdeps = { "BagBrother" },
 
-    modifier = "|cffcd1a1c[爱不易]|r",
-
     -- runBeforeLoad = function(info, name)
     --     if Bagnon_Sets ~= nil and Bagnon_Sets.global ~= nil then
     --         for _, v in next, Bagnon_Sets.global do

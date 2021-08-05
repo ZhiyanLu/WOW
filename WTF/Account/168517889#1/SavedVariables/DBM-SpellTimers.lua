@@ -170,6 +170,8 @@ DBM_SpellTimers_Settings = {
 			["bartext"] = "%spell: %player",
 		}, -- [13]
 	},
+	["disable_encounter"] = false,
+	["show_portal"] = false,
 	["portal_horde"] = {
 		{
 			["spell"] = 11417,
@@ -237,6 +239,4 @@ DBM_SpellTimers_Settings = {
 			["bartext"] = "%spell: %player",
 		}, -- [13]
 	},
-	["show_portal"] = false,
-	["disable_encounter"] = false,
 }

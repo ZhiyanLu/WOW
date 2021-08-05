@@ -8,6 +8,12 @@ local FailByAbility = {}
 local activeUser = nil
 local AddonVersion = 0.2
 local playerUser = GetUnitName("player",true).."-"..GetRealmName():gsub(" ", "")
+local defaultElitismHelperDBValues = {
+	Loud = true,
+	Threshold = 30,
+	OutputMode = "default",
+	EndOfDungeonMessage = true
+}
 
 local OutputModes = {
     ["default"] = 0,
@@ -31,6 +37,7 @@ local Spells = {
 	[240448] = 20,      -- Quaking (Environment)
 	[343520] = 20,      -- Storming (Environment)
 	[342494] = 20, 		-- Belligerent Boast(Season 1 Pridefull)
+	[350163] = 20, 		-- Melee (Spiteful Shade)
 	
 	-- Mists of Tirna Scythe
 	[321968] = 20, 		-- Bewildering Pollen (tirnenn Villager)
@@ -346,7 +353,11 @@ SlashCmdList["ELITISMHELPER"] = function(msg,editBox)
 			print("ElitismHelper: Damage notifications are already disabled.")
 		else
 			ElitismHelperDB.Loud = false
-			print("ElitismHelper: Will only announce at the end of the dungeon.")
+			if ElitismHelperDB.EndOfDungeonMessage then
+				print("ElitismHelper: Will only announce at the end of the dungeon.")
+			else
+				print("ElitismHelper: All notifications are disabled.")
+			end
 		end
 	end
 
@@ -375,6 +386,22 @@ SlashCmdList["ELITISMHELPER"] = function(msg,editBox)
 		end,
 		["eod"] = function()
 			ElitismFrame:CHALLENGE_MODE_COMPLETED()
+		end,
+		["eodon"] = function()
+			if ElitismHelperDB.EndOfDungeonMessage then
+				print("ElitismHelper: End-of-dungeon message is already enabled.")
+			else
+				ElitismHelperDB.EndOfDungeonMessage = true
+				print("ElitismHelper: Will announce at the end of the dungeon.")
+			end
+		end,
+		["eodoff"] = function()
+			if not ElitismHelperDB.EndOfDungeonMessage then
+				print("ElitismHelper: End-of-dungeon message is already disabled.")
+			else
+				ElitismHelperDB.EndOfDungeonMessage = false
+				print("ElitismHelper: Will not announce at the end of the dungeon.")
+			end
 		end,
 		["on"] = enableElitismHelper,
 		["enable"] = enableElitismHelper,
@@ -406,6 +433,8 @@ SlashCmdList["ELITISMHELPER"] = function(msg,editBox)
 			print("Elitism Helper options:")
 			print(" on/enable: Enable Elitism Helper announcer")
 			print(" off/disable: Disable Elitism Helper announcer")
+			print(" eodon: Enable Elitism Helper end-of-dungeon stats")
+			print(" eodoff: Disable Elitism Helper end-of-dungeon stats")
 			print(" output: Define output channel between default | party | raid | yell | self")
 			print(" ------ This is more or less for debugging ------")
 			print(" start: Start logging failure damage")
@@ -533,14 +562,16 @@ function ElitismFrame:ADDON_LOADED(event,addon)
 		ElitismFrame:RebuildTable()
 	end
 	
-	if not ElitismHelperDB or not ElitismHelperDB.Threshold  then
-		ElitismHelperDB = {
-			Loud = true,
-			Threshold = 30,
-			OutputMode = "default"
-		}
+	if not ElitismHelperDB then
+		ElitismHelperDB = defaultElitismHelperDBValues
 	end
-	
+
+	-- Backwards compatibility to make sure that DB values will always be set, even when updating from previous versions
+	for key, defaultValue in pairs(defaultElitismHelperDBValues) do
+		if ElitismHelperDB[key] == nil then
+			ElitismHelperDB[key] = defaultValue
+		end
+	end
 end
 
 function ElitismFrame:GROUP_ROSTER_UPDATE(event,...)
@@ -558,20 +589,22 @@ function compareDamage(a,b)
 end
 
 function ElitismFrame:CHALLENGE_MODE_COMPLETED(event,...)
-	local count = 0
-	for _ in pairs(CombinedFails) do count = count + 1 end
-	if count == 0 then
-		print("No Damage?");
-		--maybeSendChatMessage("Thank you for travelling with ElitismHelper. No failure damage was taken this run.")
-		return
-	else
-		maybeSendChatMessage("Thank you for travelling with ElitismHelper. Amount of failure damage:")
-	end
-	local u = { }
-	for k, v in pairs(CombinedFails) do table.insert(u, { key = k, value = v }) end
-	table.sort(u, compareDamage)
-	for k,v in pairs(u) do
-			maybeSendChatMessage(k..". "..v["key"].." "..round(v["value"] / 1000,1).."k")
+	if ElitismHelperDB.EndOfDungeonMessage then
+		local count = 0
+		for _ in pairs(CombinedFails) do count = count + 1 end
+		if count == 0 then
+			print("No Damage?");
+			--maybeSendChatMessage("Thank you for travelling with ElitismHelper. No failure damage was taken this run.")
+			return
+		else
+			maybeSendChatMessage("Thank you for travelling with ElitismHelper. Amount of failure damage:")
+		end
+		local u = { }
+		for k, v in pairs(CombinedFails) do table.insert(u, { key = k, value = v }) end
+		table.sort(u, compareDamage)
+		for k,v in pairs(u) do
+				maybeSendChatMessage(k..". "..v["key"].." "..round(v["value"] / 1000,1).."k")
+		end
 	end
 end
 

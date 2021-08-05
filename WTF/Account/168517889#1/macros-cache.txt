@@ -40,6 +40,10 @@ END
 VER 3 0000000000000030 "tab宏" "INV_MISC_QUESTIONMARK"
 /console targetnearstuseold 1
 END
+VER 3 0000000000000054 "低吼" "INV_MISC_QUESTIONMARK"
+/cast 低吼
+/shout hi，孙子！
+END
 VER 3 0000000000000034 "取消伤害治疗数字" "INV_MISC_QUESTIONMARK"
 /console floatingCombatTextCombatDamage 0
 /console floatingCombatTextCombatHealing 0
@@ -64,6 +68,10 @@ VER 3 000000000000003E "屏蔽文字过滤" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000002B "开怪" "SPELL_MISC_PETHEAL"
 /dbm pull 5
+END
+VER 3 0000000000000058 "控制" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [talent:3/2]夺魂咆哮;[talent:3/3]乌索尔旋风
 END
 VER 3 0000000000000032 "显示移动速度" "132120"
 /run table.insert(PAPERDOLL_STATCATEGORIES[1].stats,{ stat = "MOVESPEED" })
@@ -96,10 +104,24 @@ END
 VER 3 000000000000004F "火箭" "443328"
 /use 6
 END
-VER 3 000000000000004B "炉石" "INV_MISC_QUESTIONMARK"
+VER 3 0000000000000055 "炉石" "1444943"
+/use 达拉然炉石
+/console SET portal "TW"
+/console SET profanityFilter "0"
+END
+VER 3 0000000000000056 "炉石" "134414"
 /use 炉石
 /console SET portal "TW"
 /console SET profanityFilter "0"
+END
+VER 3 000000000000004B "炉石" "INV_MISC_QUESTIONMARK"
+/use 法夜炉石
+/console SET portal "TW"
+/console SET profanityFilter "0"
+END
+VER 3 0000000000000059 "猛虎之怒" "134400"
+/cast 猛虎之怒
+/cast 火红烈焰(艾泽里特精华)
 END
 VER 3 0000000000000011 "移除技能条两边狮鹫" "SPELL_DRUID_STAMPEDINGROAR_CAT"
 /Script MainMenuBarArtFrame.LeftEndCap:Hide() 
@@ -112,7 +134,13 @@ VER 3 0000000000000037 "聊天乱码" "INV_MISC_QUESTIONMARK"
 /console SET portal "TW"
 /console SET profanityFilter "0"
 END
-VER 3 0000000000000050 "进入战斗" "134400"
+VER 3 000000000000005A "超凡" "INV_Misc_QuestionMark"
+#showtooltip
+/use 超凡之盟
+/use 自省强化
+/use 导师的圣钟
+END
+VER 3 0000000000000057 "进入战斗" "134400"
 /console floatingCombatTextCombatState 1
 END
 VER 3 000000000000002D "野德隐藏外观检测" "INV_MISC_QUESTIONMARK"

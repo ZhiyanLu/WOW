@@ -7,6 +7,7 @@ Auctionator.Constants = {
   AdvancedSearchDivider = ';',
 
   PET_CAGE_ID = 82800,
+  WOW_TOKEN_ID = 122270,
 
   SCAN_DAY_0 = time({year=2020, month=1, day=1, hour=0}),
 
@@ -19,18 +20,18 @@ Auctionator.Constants = {
     COMMODITY = 2
   },
   ITEM_CLASS_IDS = {
-    LE_ITEM_CLASS_WEAPON,
-    LE_ITEM_CLASS_ARMOR,
-    LE_ITEM_CLASS_CONTAINER,
-    LE_ITEM_CLASS_GEM,
-    LE_ITEM_CLASS_ITEM_ENHANCEMENT,
-    LE_ITEM_CLASS_CONSUMABLE,
-    LE_ITEM_CLASS_GLYPH,
-    LE_ITEM_CLASS_TRADEGOODS,
-    LE_ITEM_CLASS_RECIPE,
-    LE_ITEM_CLASS_BATTLEPET,
-    LE_ITEM_CLASS_QUESTITEM,
-    LE_ITEM_CLASS_MISCELLANEOUS
+    Enum.ItemClass.Weapon,
+    Enum.ItemClass.Armor,
+    Enum.ItemClass.Container,
+    Enum.ItemClass.Gem,
+    Enum.ItemClass.ItemEnhancement,
+    Enum.ItemClass.Consumable,
+    Enum.ItemClass.Glyph,
+    Enum.ItemClass.Tradegoods,
+    Enum.ItemClass.Recipe,
+    Enum.ItemClass.Battlepet,
+    Enum.ItemClass.Questitem,
+    Enum.ItemClass.Miscellaneous
   },
   INVENTORY_TYPE_IDS = {
     Enum.InventoryType.IndexHeadType,
@@ -47,4 +48,5 @@ Auctionator.Constants = {
     WHISPER = 1
   },
   NO_LIST = "",
+  ITEM_LEVEL_THRESHOLD = 168,
 }

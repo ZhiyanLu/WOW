@@ -83,12 +83,21 @@ end
 
 local function onEditFocusLost(self)
     local ctl = self:GetParent();
+    if GetMouseFocus() == ctl.ok then
+        return;
+    end
     local cfg = ctl._cfg
     ctl:CtlLoadValue(U1LoadDBValue(cfg))
     ctl.ok:Hide();
 end
 
 local function editOnChar(self) self:GetParent().ok:Show() end
+
+local function editOnTextChanged(self, userInput)
+    if userInput then
+        self:GetParent().ok:Show()
+    end
+end
 
 local function confirmValue(self)
     local ctl = self:GetParent();
@@ -118,7 +127,8 @@ local creator = function()
     :SetJustifyH("LEFT")
     :un();
 
-    ct.edit:SetScript("OnChar", editOnChar)
+    -- ct.edit:SetScript("OnChar", editOnChar)
+    ct.edit:SetScript("OnTextChanged", editOnTextChanged)
     ct.edit:SetScript("OnEnterPressed", confirmValue)
 
     CoreUIEnableTooltip(ct.edit);
@@ -126,6 +136,7 @@ local creator = function()
     ct.edit:HookScript("OnEnter", childOnEnter)
     ct.edit:HookScript("OnLeave", childOnLeave)
     ct.edit:HookScript("OnEditFocusLost", onEditFocusLost);
+    ct.edit:HookScript("OnEscapePressed", onEditFocusLost);
 
     ct.ok = TplPanelButton(ct):LEFT(ct.edit, "RIGHT", -4, 0)
     :SetScript("OnClick", confirmValue)

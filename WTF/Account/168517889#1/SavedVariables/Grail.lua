@@ -6233,7 +6233,7 @@ GrailDatabase = {
 				"37176|zhCN|61595|A:6000012", -- [4448]
 			},
 		},
-		["delayEvents"] = true,
+		["delayEventsHandled"] = true,
 		["Tracking"] = {
 			"2018-10-04 05:56 格雷迈恩/麦吉克库瑞姆/Horde/ROGUE/BloodElf/3/zhCN/CN/27980", -- [1]
 			"New quest completed 49528", -- [2]
@@ -9746,7 +9746,7 @@ GrailDatabase = {
 			"New quest completed 50598", -- [3509]
 			"New quest completed 50602", -- [3510]
 		},
-		["delayEventsHandled"] = true,
+		["delayEvents"] = true,
 	},
 	["BadQuestData"] = {
 		"G97|CN|27980|G[51583][reward]=", -- [1]

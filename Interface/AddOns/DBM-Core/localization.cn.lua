@@ -1,7 +1,7 @@
 -- L.Core
 -- Diablohu(diablohudream@gmail.com)
 -- yleaf(yaroot@gmail.com)
--- Mini Dragon(projecteurs@gmail.com) <流浪者酒馆-Brilla@金色平原> 20210108
+-- Mini Dragon(projecteurs@gmail.com) <流浪者酒馆-Brilla@金色平原> 20210804
 
 if GetLocale() ~= "zhCN" then return end
 if not DBM_CORE_L then DBM_CORE_L = {} end
@@ -190,12 +190,12 @@ L.DPMCORE						= "警告: DBM-PVP已经已经很久没人维护了,并无法兼�
 L.DBMLDB							= "警告: DBM-LDB 已经集成入" .. L.DBM .. "核心。建议在插件目录删掉'DBM-LDB'。"
 L.UPDATE_REQUIRES_RELAUNCH		= "警告: 如果你不完全重启游戏，" .. L.DBM .. "可能会工作不正常。此次更新包含了新的文件，或者toc文件的改变，这是重载界面无法加载的。不重启游戏可能导致作战模块功能错误。"
 L.OUT_OF_DATE_NAG				= "你的" .. L.DBM .. "版本已经过期，新版本针对特定的首领战斗增加新的功能和错误的修复。建议您进行更新来改善您的游戏体验。"
-L.RETAIL_ONLY					= "警告: 你所用的是怀旧服版本的" .. L.DBM .. "。请删掉这个" .. L.DBM .. "并下载正式服的" .. L.DBM .. "。"
+L.RETAIL_ONLY					= "警告: 此版本" .. L.DBM .. "是给正式服使用的。请删掉这个" .. L.DBM .. "并下载怀旧服的" .. L.DBM .. "。"
 
 
 L.MOVABLE_BAR				= "拖动我！"
 
-L.PIZZA_SYNC_INFO					= "|Hplayer:%1$s|h[%1$s]|h向你发送了一个" .. L.DBM .. "计时条"
+L.PIZZA_SYNC_INFO					= "|Hplayer:%1$s|h[%1$s]|h向你发送了一个" .. L.DBM .. " 计时条: '%2$s'\n|Hgarrmission:DBM:cancel:%2$s:nil|h|cff3588ff[取消此倒计时]|r|h |Hgarrmission:DBM:ignore:%2$s:%1$s|h|cff3588ff[忽略来自%1$s的计时条]|r|h"
 L.PIZZA_CONFIRM_IGNORE			= "是否要在该次游戏连接中屏蔽来自%s的计时条？"
 L.PIZZA_ERROR_USAGE				= "命令：/dbm [broadcast] timer <时间（秒）> <文本>"
 
@@ -254,7 +254,6 @@ L.SLASHCMD_HELP2				= {
 	"/dbm break <分钟>: 向所有团队成员发送一个长度为<分钟>的狂暴计时条(需要队长或助理权限)。",
 	"/dbm version: 进行团队范围的" .. L.DBM .. "版本检测(也可使用: ver)",
 	"/dbm version2: 进行团队范围的" .. L.DBM .. "版本检测并密语那些过期版本用户(也可使用: ver2)",
-	"/dbm lockout: 查询团队成员当前的副本锁定状态(副本CD)(也可使用: lockouts, ids)(需要队长或助理权限)。",
 	"/dbm lag: 检测全团网络延时",
 	"/dbm durability: 检测全团装备耐久度"
 }
@@ -268,6 +267,7 @@ L.TIMER_USAGE	= {
 }
 
 L.ERROR_NO_PERMISSION				= "权限不足。需要队长或助理权限。"
+L.TIME_TOO_SHORT				= "战斗倒计时需要大于三秒。"
 
 --Common Locals
 L.NEXT						= "下一个 %s"
@@ -286,9 +286,11 @@ L.EAST						= "东"
 L.WEST						= "西"
 L.NORTH						= "北"
 L.SOUTH						= "南"
-L.INTERMISSION				= "中场时间"
+L.INTERMISSION				= "转场"
 L.ORB						= "球"
 L.ORBS						= "球"
+L.RING						= "环"
+L.RINGS						= "环"
 L.CHEST						= "奖励宝箱"
 L.NO_DEBUFF					= "没有%s"
 L.ALLY						= "队友"
@@ -458,6 +460,7 @@ L.AUTO_SPEC_WARN_OPTIONS.targetchange	= "特殊警报：需要立刻切换目标
 
 -- Auto-generated Timer Localizations
 L.AUTO_TIMER_TEXTS.target				= "%s: >%%s<"
+L.AUTO_TIMER_TEXTS.targetcount 			= "%s: >%%s< (%%s)"
 L.AUTO_TIMER_TEXTS.cast					= "%s"
 L.AUTO_TIMER_TEXTS.castcount				= "%s (%%s)"
 L.AUTO_TIMER_TEXTS.castsource			= "%s: %%s"
@@ -479,6 +482,7 @@ L.AUTO_TIMER_TEXTS.addscustom			= "小怪 (%%s)"
 L.AUTO_TIMER_TEXTS.roleplay				= GUILD_INTEREST_RP
 
 L.AUTO_TIMER_OPTIONS.target				= "计时条：$spell:%s减益效果持续时间"
+L.AUTO_TIMER_OPTIONS.targetcount		= "计时条：$spell:%s减益效果持续时间(带计数)"
 L.AUTO_TIMER_OPTIONS.cast				= "计时条：$spell:%s施法时间"
 L.AUTO_TIMER_OPTIONS.castcount			= "计时条：$spell:%s施法时间(带计数)"
 L.AUTO_TIMER_OPTIONS.castsource			= "计时条：$spell:%s施法时间(带来源)"
@@ -580,22 +584,6 @@ L.SPEED_CLEAR_TIMER_TEXT	= "最速清除"
 L.COMBAT_RES_TIMER_TEXT	= "下一次可用战复"
 L.TIMER_RESPAWN		= "%s 刷新"
 
-L.REQ_INSTANCE_ID_PERMISSION		= "%s请求获取你现在副本的存档ID与进度。是否愿意向&s提交进度？\n\n注意：在接受后，他可以随时查看您当前的进度情况，直到您下线、掉线或重载用户界面。"
-L.ERROR_NO_RAID					= "使用该功能需要身处一个团队中。"
-L.INSTANCE_INFO_REQUESTED			= "已发送团队副本进度查看请求。\n请注意，团员会根据需要选择接受或拒绝该请求。请求时间约一分钟，请等待。"
-L.INSTANCE_INFO_STATUS_UPDATE		= "已收到%d名团员的进度回复（已安装" .. L.DBM .. "的团员有 %d 名）：%d人接受请求，%d人拒绝。生成数据需要约%d秒，请等待。"
-L.INSTANCE_INFO_ALL_RESPONSES		= "所有团员接受请求。"
-L.INSTANCE_INFO_DETAIL_DEBUG		= "发送者：%s 结果类型：%s 副本名：%s 副本ID：%s 难度：%d 规模：%d 进度：%s"
-L.INSTANCE_INFO_DETAIL_HEADER		= "%s，难度%s："
-L.INSTANCE_INFO_DETAIL_INSTANCE	= "    ID %s, 进度%d：%s"
-L.INSTANCE_INFO_DETAIL_INSTANCE2	= "    进度%d：%s"
-L.INSTANCE_INFO_NOLOCKOUT			= "你的团队没有副本进度信息。"
-L.INSTANCE_INFO_STATS_DENIED		= "拒绝请求：%s"
-L.INSTANCE_INFO_STATS_AWAY		= "暂离：%s"
-L.INSTANCE_INFO_STATS_NO_RESPONSE	= "未安装" .. L.DEADLY_BOSS_MODS .. "：%s"
-L.INSTANCE_INFO_RESULTS			= "副本进度扫描结果。" --Note that instances might show up more than once if there are players with localized WoW clients in your raid.
-L.INSTANCE_INFO_SHOW_RESULTS		= "仍未回复的玩家: %s"
-
 L.LAG_CHECKING				= "延时检测请稍后... "
 L.LAG_HEADER					=  L.DEADLY_BOSS_MODS .. " - 延时检测"
 L.LAG_ENTRY					= "%s：世界延时[%d毫秒] / 本地延时[%d毫秒]"
@@ -613,7 +601,4 @@ L.SILENTMODE_IS     = "静音模式为："
 
 L.LDB_LOAD_MODS		= "载入首领模块"
 
-L.LDB_CAT_OTHER		= "其他首领"
-
-L.LDB_CAT_GENERAL		= "常规"
 L.LDB_ENABLE_BOSS_MOD	= "启用首领模块"

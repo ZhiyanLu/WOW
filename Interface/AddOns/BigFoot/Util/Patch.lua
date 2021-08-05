@@ -84,38 +84,3 @@ do
 
 	LoaderFrame:SetScript("OnEvent", LoaderEvents)
 end
-
-
-do
-	local function ShowWeeklyRewards()
-		if not IsAddOnLoaded("Blizzard_WeeklyRewards") then
-			LoadAddOn("Blizzard_WeeklyRewards");
-		end
-		if not WeeklyRewardsFrame then return end
-		if ( WeeklyRewardsFrame:IsShown() ) then
-			HideUIPanel(WeeklyRewardsFrame)
-		else
-			ShowUIPanel(WeeklyRewardsFrame)
-		end
-	end
-
-	local f = CreateFrame("Frame")
-	f:RegisterEvent("ADDON_LOADED")
-
-	f:SetScript("OnEvent", function(self, event,...)
-		if event == "ADDON_LOADED" then
-			local addon = select(1,...)
-			local chest;
-			if addon == "Blizzard_ChallengesUI" then
-				chest = ChallengesFrame.WeeklyInfo.Child.WeeklyChest
-				chest:HookScript("OnMouseUp", ShowWeeklyRewards)
-			elseif addon == "Blizzard_PVPUI" then
-				chest = PVPQueueFrame.HonorInset.CasualPanel.WeeklyChest
-				chest:HookScript("OnMouseUp", ShowWeeklyRewards)
-				chest = PVPQueueFrame.HonorInset.RatedPanel.WeeklyChest
-				chest:HookScript("OnMouseUp", ShowWeeklyRewards)
-			end
-		end
-	end)
-end
-

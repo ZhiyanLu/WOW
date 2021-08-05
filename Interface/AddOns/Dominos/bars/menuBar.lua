@@ -10,17 +10,8 @@ local L = LibStub('AceLocale-3.0'):GetLocale(AddonName)
 
 local MICRO_BUTTONS
 
-if Addon:IsBuild('classic') then
-    MICRO_BUTTONS = {
-        'CharacterMicroButton',
-        'SpellbookMicroButton',
-        'TalentMicroButton',
-        'QuestLogMicroButton',
-        'SocialsMicroButton',
-        'WorldMapMicroButton',
-        'MainMenuMicroButton',
-        'HelpMicroButton'
-    }
+if Addon:IsBuild('bcc', 'classic') then
+    MICRO_BUTTONS = _G.MICRO_BUTTONS
 else
     MICRO_BUTTONS = {
         'CharacterMicroButton',
@@ -69,10 +60,6 @@ function MenuBar:GetDisplayName()
     return L.MenuBarDisplayName
 end
 
-function MenuBar:GetDisplayLevel()
-    return 'LOW'
-end
-
 MenuBar:Extend(
     'OnCreate',
     function(self)
@@ -87,13 +74,7 @@ MenuBar:Extend(
             end
         end
 
-        local requestLayoutUpdate =
-            Addon:Defer(
-            function()
-                self:Layout()
-            end,
-            0.1
-        )
+        local requestLayoutUpdate = Addon:Defer(function() self:Layout() end, 0)
 
         hooksecurefunc('UpdateMicroButtons', requestLayoutUpdate)
 
@@ -143,6 +124,7 @@ MenuBar:Extend(
 
 function MenuBar:GetDefaults()
     return {
+        displayLayer = 'LOW',
         point = 'BOTTOMRIGHT',
         x = -244,
         y = 0
@@ -282,17 +264,6 @@ Addon.MenuBar = MenuBar
 -- context menu
 --------------------------------------------------------------------------------
 
-local function Menu_AddLayoutPanel(menu)
-    local panel = menu:NewPanel(LibStub('AceLocale-3.0'):GetLocale('Dominos-Config').Layout)
-
-    panel:NewScaleSlider()
-    panel:NewPaddingSlider()
-    panel:NewSpacingSlider()
-    panel:NewColumnsSlider()
-
-    return panel
-end
-
 local function MenuButtonCheckbox_Create(panel, button, name)
     if not button then
         return
@@ -334,11 +305,12 @@ local function Menu_AddDisableMenuButtonsPanel(menu)
 
     panel.width = width
     panel.height = height
+
     return panel
 end
 
 function MenuBar:OnCreateMenu(menu)
-    Menu_AddLayoutPanel(menu)
+    menu:AddLayoutPanel()
     Menu_AddDisableMenuButtonsPanel(menu)
     menu:AddFadingPanel()
     menu:AddAdvancedPanel()

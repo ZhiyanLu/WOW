@@ -15,12 +15,11 @@
 -- ADDON GLOBALS AND LOCALS
 -- ---------------------------------
 
-local wow_classic = WOW_PROJECT_ID and WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
-if wow_classic then
+if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
 	StaticPopupDialogs["TMW_PROJECT_MISMATCH"] = {
 		-- This is not localizable, because AceLocale might not have loaded
 		-- (this is why we don't bother to load AceLocale until after these checks).
-		text = "You've installed TellMeWhen for retail WoW, but this is Classic WoW. Please double-check which version of TMW you downloaded.", 
+		text = ("You've installed TellMeWhen for retail WoW, but this is %s. Please double-check which version of TMW you downloaded."):format(_G["EXPANSION_NAME" + GetExpansionLevel()]), 
 		button1 = EXIT_GAME,
 		button2 = CANCEL,
 		OnAccept = ForceQuit,
@@ -33,10 +32,10 @@ if wow_classic then
 	return
 end
 
-TELLMEWHEN_VERSION = "9.0.4"
+TELLMEWHEN_VERSION = "9.1.0"
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "9.0.3-3-g6b72b90c" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "9.1.0" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -44,11 +43,11 @@ elseif strmatch(projectVersion, "%-%d+%-") then
 end
 
 TELLMEWHEN_VERSION_FULL = TELLMEWHEN_VERSION .. " " .. TELLMEWHEN_VERSION_MINOR
-TELLMEWHEN_VERSIONNUMBER = 90401 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
+TELLMEWHEN_VERSIONNUMBER = 91000 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
 
 TELLMEWHEN_FORCECHANGELOG = 86005 -- if the user hasn't seen the changelog until at least this version, show it to them.
 
-if TELLMEWHEN_VERSIONNUMBER > 91000 or TELLMEWHEN_VERSIONNUMBER < 90000 then
+if TELLMEWHEN_VERSIONNUMBER > 92000 or TELLMEWHEN_VERSIONNUMBER < 91000 then
 	-- safety check because i accidentally made the version number 414069 once
 	return error("TELLMEWHEN: THE VERSION NUMBER IS SCREWED UP OR MAYBE THE SAFETY LIMITS ARE WRONG")
 end
@@ -3127,6 +3126,14 @@ function TMW:SlashCommand(str)
 		else
 			TMW:Print("Bad syntax. Usage: /tmw [enable||disable||toggle] [profile||global] groupID iconID")
 		end
+	elseif cmd == "counter" then
+		local name, operation, value = arg2, arg3, tonumber(arg4)
+		if value == nil or arg2 == nil or arg3 == nil then
+			TMW:Print("Usage: /tmw counter counter-name [+||-||/||*||=] number. E.g. '/tmw counter casts + 1'")
+			return
+		end
+		TMW:ChangeCounter(name, operation, value)
+
 	elseif cmd == "cpu" then
 		if arg2 == "reset" then
 			TMW:CpuProfileReset()

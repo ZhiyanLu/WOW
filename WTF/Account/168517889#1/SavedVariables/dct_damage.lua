@@ -76,6 +76,31 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
+		["DCTD_SHOWPERIODIC"] = {
+			["show"] = {
+				"#ic#am#sn", -- [1]
+				"#am{#bt}", -- [2]
+			},
+			["per"] = 100,
+			["color"] = {
+				1, -- [1]
+				0, -- [2]
+				1, -- [3]
+			},
+			["frame"] = 9,
+			["colorEx"] = {
+				{
+					1, -- [1]
+					1, -- [2]
+					0, -- [3]
+				}, -- [1]
+				{
+					1, -- [1]
+					0, -- [2]
+					0, -- [3]
+				}, -- [2]
+			},
+		},
 		["DCTD_SHOWINTERRUPT_PET"] = {
 			["show"] = {
 				"#c1中断:#ce#sn(宠物)", -- [1]
@@ -98,31 +123,6 @@ DCTD_CONFIG = {
 					1, -- [1]
 					0, -- [2]
 					0, -- [3]
-				}, -- [2]
-			},
-		},
-		["DCTD_SHOWHIT"] = {
-			["show"] = {
-				"#am", -- [1]
-				"#am{#bt}", -- [2]
-			},
-			["per"] = 100,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["frame"] = 9,
-			["colorEx"] = {
-				{
-					1, -- [1]
-					1, -- [2]
-					0, -- [3]
-				}, -- [1]
-				{
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
 				}, -- [2]
 			},
 		},
@@ -200,6 +200,8 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
+		["DCTD_CritScale"] = 1,
+		["DCTD_AvgMulitHit"] = 1,
 		["DCTD_SHOWHIT_PET"] = {
 			["show"] = {
 				"#am(宠物)", -- [1]
@@ -225,8 +227,6 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
-		["DCTD_AvgMulitHit"] = 1,
-		["DCTD_CritScale"] = 1,
 		["DCTD_SSC_Number"] = 0,
 		["DCTD_SHOWCOMBOHIT"] = {
 			["show"] = {
@@ -251,6 +251,7 @@ DCTD_CONFIG = {
 				0, -- [3]
 			},
 		},
+		["DCTD_SSC_Spell"] = 0,
 		["DCTD_SHOWHITCRIT"] = {
 			["show"] = {
 				"#am", -- [1]
@@ -274,30 +275,6 @@ DCTD_CONFIG = {
 					1, -- [2]
 					1, -- [3]
 				}, -- [2]
-			},
-		},
-		["DCTD_SHOWSPELLCRIT"] = {
-			["show"] = {
-				"#ic#am#c1#sn#ce", -- [1]
-				"#ic#am#c1#sn#ce{#bt}", -- [2]
-			},
-			["frame"] = 8,
-			["colorEx"] = {
-				{
-					0, -- [1]
-					1, -- [2]
-					1, -- [3]
-				}, -- [1]
-				{
-					1, -- [1]
-					0, -- [2]
-					0, -- [3]
-				}, -- [2]
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
 			},
 		},
 		["DCTD_SHOWPERIODIC_PET"] = {
@@ -324,18 +301,12 @@ DCTD_CONFIG = {
 				1, -- [3]
 			},
 		},
-		["DCTD_SHOWPERIODICHEAL"] = {
+		["DCTD_SHOWMISS"] = {
 			["show"] = {
-				"#ic#am #sn", -- [1]
-				"#ic#am (#oh) #sn", -- [2]
+				"#ms", -- [1]
+				"#ic#ms#c1(#sn)#ce", -- [2]
 			},
-			["per"] = 0,
-			["color"] = {
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-			},
-			["frame"] = 0,
+			["frame"] = 9,
 			["colorEx"] = {
 				{
 					1, -- [1]
@@ -347,6 +318,11 @@ DCTD_CONFIG = {
 					0, -- [2]
 					0, -- [3]
 				}, -- [2]
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 			},
 		},
 		["DCTD_SHOWHITCRIT_PET"] = {
@@ -374,12 +350,18 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
-		["DCTD_SHOWMISS"] = {
+		["DCTD_SHOWPERIODICHEAL"] = {
 			["show"] = {
-				"#ms", -- [1]
-				"#ic#ms#c1(#sn)#ce", -- [2]
+				"#ic#am #sn", -- [1]
+				"#ic#am (#oh) #sn", -- [2]
 			},
-			["frame"] = 9,
+			["per"] = 0,
+			["color"] = {
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+			["frame"] = 0,
 			["colorEx"] = {
 				{
 					1, -- [1]
@@ -391,11 +373,6 @@ DCTD_CONFIG = {
 					0, -- [2]
 					0, -- [3]
 				}, -- [2]
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
 			},
 		},
 		["DCTD_SHOWHEALCRIT"] = {
@@ -471,7 +448,30 @@ DCTD_CONFIG = {
 			},
 		},
 		["DCTD_ENABLE"] = 1,
-		["DCTD_SSC_Spell"] = 0,
+		["DCTD_SHOWSPELLCRIT"] = {
+			["show"] = {
+				"#ic#am#c1#sn#ce", -- [1]
+				"#ic#am#c1#sn#ce{#bt}", -- [2]
+			},
+			["frame"] = 8,
+			["colorEx"] = {
+				{
+					0, -- [1]
+					1, -- [2]
+					1, -- [3]
+				}, -- [1]
+				{
+					1, -- [1]
+					0, -- [2]
+					0, -- [3]
+				}, -- [2]
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+		},
 		["DCTD_SHOWCOMBOHITCRIT"] = {
 			["color"] = {
 				1, -- [1]
@@ -495,15 +495,15 @@ DCTD_CONFIG = {
 				"#ic#am#c1#sn#ce", -- [1]
 			},
 		},
-		["DCTD_SHOWPERIODIC"] = {
+		["DCTD_SHOWHIT"] = {
 			["show"] = {
-				"#ic#am#sn", -- [1]
+				"#am", -- [1]
 				"#am{#bt}", -- [2]
 			},
 			["per"] = 100,
 			["color"] = {
 				1, -- [1]
-				0, -- [2]
+				1, -- [2]
 				1, -- [3]
 			},
 			["frame"] = 9,
@@ -515,8 +515,8 @@ DCTD_CONFIG = {
 				}, -- [1]
 				{
 					1, -- [1]
-					0, -- [2]
-					0, -- [3]
+					1, -- [2]
+					1, -- [3]
 				}, -- [2]
 			},
 		},
@@ -621,6 +621,31 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
+		["DCTD_SHOWPERIODIC"] = {
+			["show"] = {
+				"#ic#am#sn", -- [1]
+				"#am{#bt}", -- [2]
+			},
+			["per"] = 100,
+			["color"] = {
+				1, -- [1]
+				0, -- [2]
+				1, -- [3]
+			},
+			["frame"] = 9,
+			["colorEx"] = {
+				{
+					1, -- [1]
+					1, -- [2]
+					0, -- [3]
+				}, -- [1]
+				{
+					1, -- [1]
+					0, -- [2]
+					0, -- [3]
+				}, -- [2]
+			},
+		},
 		["DCTD_SHOWINTERRUPT_PET"] = {
 			["show"] = {
 				"#c1中断:#ce#sn(宠物)", -- [1]
@@ -643,31 +668,6 @@ DCTD_CONFIG = {
 					1, -- [1]
 					0, -- [2]
 					0, -- [3]
-				}, -- [2]
-			},
-		},
-		["DCTD_SHOWHIT"] = {
-			["show"] = {
-				"#am", -- [1]
-				"#am{#bt}", -- [2]
-			},
-			["per"] = 100,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["frame"] = 9,
-			["colorEx"] = {
-				{
-					1, -- [1]
-					1, -- [2]
-					0, -- [3]
-				}, -- [1]
-				{
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
 				}, -- [2]
 			},
 		},
@@ -745,6 +745,8 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
+		["DCTD_CritScale"] = 1,
+		["DCTD_AvgMulitHit"] = 1,
 		["DCTD_SHOWHIT_PET"] = {
 			["show"] = {
 				"#am(宠物)", -- [1]
@@ -770,8 +772,6 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
-		["DCTD_AvgMulitHit"] = 1,
-		["DCTD_CritScale"] = 1,
 		["DCTD_SSC_Number"] = 0,
 		["DCTD_SHOWCOMBOHIT"] = {
 			["show"] = {
@@ -796,6 +796,7 @@ DCTD_CONFIG = {
 				0, -- [3]
 			},
 		},
+		["DCTD_SSC_Spell"] = 0,
 		["DCTD_SHOWHITCRIT"] = {
 			["show"] = {
 				"#am", -- [1]
@@ -819,30 +820,6 @@ DCTD_CONFIG = {
 					1, -- [2]
 					1, -- [3]
 				}, -- [2]
-			},
-		},
-		["DCTD_SHOWSPELLCRIT"] = {
-			["show"] = {
-				"#ic#am#c1#sn#ce", -- [1]
-				"#ic#am#c1#sn#ce{#bt}", -- [2]
-			},
-			["frame"] = 8,
-			["colorEx"] = {
-				{
-					0, -- [1]
-					1, -- [2]
-					1, -- [3]
-				}, -- [1]
-				{
-					1, -- [1]
-					0, -- [2]
-					0, -- [3]
-				}, -- [2]
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
 			},
 		},
 		["DCTD_SHOWPERIODIC_PET"] = {
@@ -869,18 +846,12 @@ DCTD_CONFIG = {
 				1, -- [3]
 			},
 		},
-		["DCTD_SHOWPERIODICHEAL"] = {
+		["DCTD_SHOWMISS"] = {
 			["show"] = {
-				"#ic#am #sn", -- [1]
-				"#ic#am (#oh) #sn", -- [2]
+				"#ms", -- [1]
+				"#ic#ms#c1(#sn)#ce", -- [2]
 			},
-			["per"] = 0,
-			["color"] = {
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-			},
-			["frame"] = 0,
+			["frame"] = 9,
 			["colorEx"] = {
 				{
 					1, -- [1]
@@ -892,6 +863,11 @@ DCTD_CONFIG = {
 					0, -- [2]
 					0, -- [3]
 				}, -- [2]
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 			},
 		},
 		["DCTD_SHOWHITCRIT_PET"] = {
@@ -919,12 +895,18 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
-		["DCTD_SHOWMISS"] = {
+		["DCTD_SHOWPERIODICHEAL"] = {
 			["show"] = {
-				"#ms", -- [1]
-				"#ic#ms#c1(#sn)#ce", -- [2]
+				"#ic#am #sn", -- [1]
+				"#ic#am (#oh) #sn", -- [2]
 			},
-			["frame"] = 9,
+			["per"] = 0,
+			["color"] = {
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+			["frame"] = 0,
 			["colorEx"] = {
 				{
 					1, -- [1]
@@ -936,11 +918,6 @@ DCTD_CONFIG = {
 					0, -- [2]
 					0, -- [3]
 				}, -- [2]
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
 			},
 		},
 		["DCTD_SHOWHEALCRIT"] = {
@@ -1016,7 +993,30 @@ DCTD_CONFIG = {
 			},
 		},
 		["DCTD_ENABLE"] = 1,
-		["DCTD_SSC_Spell"] = 0,
+		["DCTD_SHOWSPELLCRIT"] = {
+			["show"] = {
+				"#ic#am#c1#sn#ce", -- [1]
+				"#ic#am#c1#sn#ce{#bt}", -- [2]
+			},
+			["frame"] = 8,
+			["colorEx"] = {
+				{
+					0, -- [1]
+					1, -- [2]
+					1, -- [3]
+				}, -- [1]
+				{
+					1, -- [1]
+					0, -- [2]
+					0, -- [3]
+				}, -- [2]
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+		},
 		["DCTD_SHOWCOMBOHITCRIT"] = {
 			["color"] = {
 				1, -- [1]
@@ -1040,15 +1040,15 @@ DCTD_CONFIG = {
 				"#ic#am#c1#sn#ce", -- [1]
 			},
 		},
-		["DCTD_SHOWPERIODIC"] = {
+		["DCTD_SHOWHIT"] = {
 			["show"] = {
-				"#ic#am#sn", -- [1]
+				"#am", -- [1]
 				"#am{#bt}", -- [2]
 			},
 			["per"] = 100,
 			["color"] = {
 				1, -- [1]
-				0, -- [2]
+				1, -- [2]
 				1, -- [3]
 			},
 			["frame"] = 9,
@@ -1060,8 +1060,8 @@ DCTD_CONFIG = {
 				}, -- [1]
 				{
 					1, -- [1]
-					0, -- [2]
-					0, -- [3]
+					1, -- [2]
+					1, -- [3]
 				}, -- [2]
 			},
 		},
@@ -1166,6 +1166,31 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
+		["DCTD_SHOWPERIODIC"] = {
+			["show"] = {
+				"#ic#am#sn", -- [1]
+				"#am{#bt}", -- [2]
+			},
+			["per"] = 100,
+			["color"] = {
+				1, -- [1]
+				0, -- [2]
+				1, -- [3]
+			},
+			["frame"] = 9,
+			["colorEx"] = {
+				{
+					1, -- [1]
+					1, -- [2]
+					0, -- [3]
+				}, -- [1]
+				{
+					1, -- [1]
+					0, -- [2]
+					0, -- [3]
+				}, -- [2]
+			},
+		},
 		["DCTD_SHOWINTERRUPT_PET"] = {
 			["show"] = {
 				"#c1中断:#ce#sn(宠物)", -- [1]
@@ -1188,31 +1213,6 @@ DCTD_CONFIG = {
 					1, -- [1]
 					0, -- [2]
 					0, -- [3]
-				}, -- [2]
-			},
-		},
-		["DCTD_SHOWHIT"] = {
-			["show"] = {
-				"#am", -- [1]
-				"#am{#bt}", -- [2]
-			},
-			["per"] = 100,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["frame"] = 9,
-			["colorEx"] = {
-				{
-					1, -- [1]
-					1, -- [2]
-					0, -- [3]
-				}, -- [1]
-				{
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
 				}, -- [2]
 			},
 		},
@@ -1290,6 +1290,8 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
+		["DCTD_CritScale"] = 1,
+		["DCTD_AvgMulitHit"] = 1,
 		["DCTD_SHOWHIT_PET"] = {
 			["show"] = {
 				"#am(宠物)", -- [1]
@@ -1315,8 +1317,6 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
-		["DCTD_AvgMulitHit"] = 1,
-		["DCTD_CritScale"] = 1,
 		["DCTD_SSC_Number"] = 0,
 		["DCTD_SHOWCOMBOHIT"] = {
 			["show"] = {
@@ -1341,6 +1341,7 @@ DCTD_CONFIG = {
 				0, -- [3]
 			},
 		},
+		["DCTD_SSC_Spell"] = 0,
 		["DCTD_SHOWHITCRIT"] = {
 			["show"] = {
 				"#am", -- [1]
@@ -1364,30 +1365,6 @@ DCTD_CONFIG = {
 					1, -- [2]
 					1, -- [3]
 				}, -- [2]
-			},
-		},
-		["DCTD_SHOWSPELLCRIT"] = {
-			["show"] = {
-				"#ic#am#c1#sn#ce", -- [1]
-				"#ic#am#c1#sn#ce{#bt}", -- [2]
-			},
-			["frame"] = 8,
-			["colorEx"] = {
-				{
-					0, -- [1]
-					1, -- [2]
-					1, -- [3]
-				}, -- [1]
-				{
-					1, -- [1]
-					0, -- [2]
-					0, -- [3]
-				}, -- [2]
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
 			},
 		},
 		["DCTD_SHOWPERIODIC_PET"] = {
@@ -1414,18 +1391,12 @@ DCTD_CONFIG = {
 				1, -- [3]
 			},
 		},
-		["DCTD_SHOWPERIODICHEAL"] = {
+		["DCTD_SHOWMISS"] = {
 			["show"] = {
-				"#ic#am #sn", -- [1]
-				"#ic#am (#oh) #sn", -- [2]
+				"#ms", -- [1]
+				"#ic#ms#c1(#sn)#ce", -- [2]
 			},
-			["per"] = 0,
-			["color"] = {
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-			},
-			["frame"] = 0,
+			["frame"] = 9,
 			["colorEx"] = {
 				{
 					1, -- [1]
@@ -1437,6 +1408,11 @@ DCTD_CONFIG = {
 					0, -- [2]
 					0, -- [3]
 				}, -- [2]
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 			},
 		},
 		["DCTD_SHOWHITCRIT_PET"] = {
@@ -1464,12 +1440,18 @@ DCTD_CONFIG = {
 				}, -- [2]
 			},
 		},
-		["DCTD_SHOWMISS"] = {
+		["DCTD_SHOWPERIODICHEAL"] = {
 			["show"] = {
-				"#ms", -- [1]
-				"#ic#ms#c1(#sn)#ce", -- [2]
+				"#ic#am #sn", -- [1]
+				"#ic#am (#oh) #sn", -- [2]
 			},
-			["frame"] = 9,
+			["per"] = 0,
+			["color"] = {
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+			["frame"] = 0,
 			["colorEx"] = {
 				{
 					1, -- [1]
@@ -1481,11 +1463,6 @@ DCTD_CONFIG = {
 					0, -- [2]
 					0, -- [3]
 				}, -- [2]
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
 			},
 		},
 		["DCTD_SHOWHEALCRIT"] = {
@@ -1561,7 +1538,30 @@ DCTD_CONFIG = {
 			},
 		},
 		["DCTD_ENABLE"] = 1,
-		["DCTD_SSC_Spell"] = 0,
+		["DCTD_SHOWSPELLCRIT"] = {
+			["show"] = {
+				"#ic#am#c1#sn#ce", -- [1]
+				"#ic#am#c1#sn#ce{#bt}", -- [2]
+			},
+			["frame"] = 8,
+			["colorEx"] = {
+				{
+					0, -- [1]
+					1, -- [2]
+					1, -- [3]
+				}, -- [1]
+				{
+					1, -- [1]
+					0, -- [2]
+					0, -- [3]
+				}, -- [2]
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+		},
 		["DCTD_SHOWCOMBOHITCRIT"] = {
 			["color"] = {
 				1, -- [1]
@@ -1585,15 +1585,15 @@ DCTD_CONFIG = {
 				"#ic#am#c1#sn#ce", -- [1]
 			},
 		},
-		["DCTD_SHOWPERIODIC"] = {
+		["DCTD_SHOWHIT"] = {
 			["show"] = {
-				"#ic#am#sn", -- [1]
+				"#am", -- [1]
 				"#am{#bt}", -- [2]
 			},
 			["per"] = 100,
 			["color"] = {
 				1, -- [1]
-				0, -- [2]
+				1, -- [2]
 				1, -- [3]
 			},
 			["frame"] = 9,
@@ -1605,8 +1605,8 @@ DCTD_CONFIG = {
 				}, -- [1]
 				{
 					1, -- [1]
-					0, -- [2]
-					0, -- [3]
+					1, -- [2]
+					1, -- [3]
 				}, -- [2]
 			},
 		},

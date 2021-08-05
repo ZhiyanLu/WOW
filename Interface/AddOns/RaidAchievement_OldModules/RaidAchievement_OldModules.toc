@@ -1,4 +1,4 @@
-﻿## Interface: 90001
+﻿## Interface: 90100
 ## Author: Shurshik
 ## Title: Raid|cff7fff7fAchievement|r_OldModules
 ## Notes: Raid|cff7fff7fAchievement|r_OldModules

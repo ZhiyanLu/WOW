@@ -1,8 +1,8 @@
 # <DBM> Spell Timers
 
-## [r128](https://github.com/DeadlyBossMods/DBM-SpellTimers/tree/r128) (2020-12-21)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-SpellTimers/compare/r127...r128) [Previous Releases](https://github.com/DeadlyBossMods/DBM-SpellTimers/releases)
+## [r134](https://github.com/DeadlyBossMods/DBM-SpellTimers/tree/r134) (2021-07-02)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-SpellTimers/compare/r133...r134) [Previous Releases](https://github.com/DeadlyBossMods/DBM-SpellTimers/releases)
 
-- Update SpellTimers.lua  
-- Ci sync with master  
-- Update CI  
+- I did not put that damn colin there. hate editor behavior changes  
+- fix luacheck  
+- actually make spelltimers compatiable with DBM 9.1  

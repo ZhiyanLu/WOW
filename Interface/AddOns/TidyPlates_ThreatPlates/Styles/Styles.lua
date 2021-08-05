@@ -7,7 +7,7 @@ local ThreatPlates = Addon.ThreatPlates
 
 -- WoW APIs
 local InCombatLockdown, IsInInstance = InCombatLockdown, IsInInstance
-local UnitPlayerControlled, UnitIsUnit = UnitPlayerControlled, UnitIsUnit
+local UnitIsPlayer, UnitPlayerControlled, UnitIsUnit = UnitIsPlayer, UnitPlayerControlled, UnitIsUnit
 local UnitIsOtherPlayersPet = UnitIsOtherPlayersPet
 local UnitIsBattlePet = UnitIsBattlePet
 local UnitCanAttack = UnitCanAttack
@@ -29,7 +29,7 @@ local _G =_G
 -- Wrapper functions for WoW Classic
 ---------------------------------------------------------------------------------------------------
 
-if Addon.CLASSIC then
+if Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC then
   UnitIsBattlePet = function(...) return false end
 end
 
@@ -68,7 +68,8 @@ local MAP_UNIT_TYPE_TO_TP_TYPE = {
   EnemyMinus       = "Minus", --                   = Minus
   NeutralNPC       = "Neutral", --                 = Neutral
   NeutralGuardian  = "Guardian",
-  NeutralMinus     = "Minus" --                    = Minus
+  NeutralMinus     = "Minus", --                    = Minus
+  NeutralPet       = "Pet",      -- Sometimes, friendly pets turn into neutral pets when you lose control over them (e.g., in quests).
   --                  Tapped                       = Tapped
 }
 
@@ -137,22 +138,29 @@ local function ShowUnit(unit)
   -- nameplates aren't created in the first place (e.g. friendly NPCs, totems, guardians, pets, ...)
   local unit_type = GetUnitType(unit)
   local show, headline_view = GetUnitVisibility(unit_type)
+  -- If a unit is targeted, show the nameplate if possible.
+  show = show or unit.isTarget
 
-  if not show then return false end
+  if not show then return false, false, headline_view end
 
-  local e, b, t = (unit.isElite or unit.isRare), unit.isBoss, _G.UnitIsTapDenied(unit.unitid)
+  local e, b = (unit.isElite or unit.isRare), unit.isBoss
   local db_base = TidyPlatesThreat.db.profile
   local db = db_base.Visibility
 
-  if (e and db.HideElite) or (b and db.HideBoss) or (t and db.HideTapped) then
-    return false
+  local hide_unit_type = false
+  if (e and db.HideElite) or (b and db.HideBoss) or (unit.TP_DetailedUnitType == "Tapped" and db.HideTapped) or (unit.TP_DetailedUnitType == "Guardian" and db.HideGuardian) then
+    hide_unit_type = true
   elseif db.HideNormal and not (e or b) then
-    return false
+    hide_unit_type = true
   elseif UnitIsBattlePet(unit.unitid) then
     -- TODO: add configuration option for enable/disable
-    return false
+    hide_unit_type = true
   elseif db.HideFriendlyInCombat and unit.reaction == "FRIENDLY" and InCombatLockdown() then
-    return false
+    hide_unit_type = true
+  end
+
+  if hide_unit_type and not unit.isTarget then
+    return show, hide_unit_type, headline_view
   end
 
 --  if full_unit_type == "EnemyNPC" then
@@ -183,7 +191,7 @@ local function ShowUnit(unit)
     end
   end
 
-  return show, headline_view
+  return show, false, headline_view
 end
 
 -- Returns style based on threat (currently checks for in combat, should not do hat)
@@ -319,8 +327,9 @@ function Addon.UnitStyle_CastDependent(unit, spell_id, spell_name)
 end
 
 function Addon:SetStyle(unit)
-  local show, headline_view = ShowUnit(unit)
+  local show, hide_unit_type, headline_view = ShowUnit(unit)
 
+  -- Nameplate is disabled in General - Visibility
   if not show then
     return "empty", nil
   end
@@ -334,9 +343,9 @@ function Addon:SetStyle(unit)
     style = unit.CustomStyleAura
     unit.CustomPlateSettings = unit.CustomPlateSettingsAura
   else
-    style = UnitStyle_NameDependent(unit) or (headline_view and "NameOnly")
+  	style = UnitStyle_NameDependent(unit) or (headline_view and "NameOnly")
   end
-
+	  
   -- Dynamic enable checks for custom styles
   -- Only check it once if custom style is used for multiple mobs
   -- only check it once when entering a dungeon, not on every style change
@@ -356,7 +365,11 @@ function Addon:SetStyle(unit)
     end
   end
 
-  --if not style and unit.reaction ~= "FRIENDLY" then
+  -- Hidden nameplates might be shown if a custom style is defined for them (Visibility - Hide Nameplates)
+  if hide_unit_type and style ~= "unique" and style ~= "NameOnly-Unique" then
+    return "empty", nil
+  end
+
   if not style and Addon:ShowThreatFeedback(unit) then
     -- could call GetThreatStyle here, but that would at a tiny overhead
     -- style tank/dps only used for hostile (enemy, neutral) NPCs

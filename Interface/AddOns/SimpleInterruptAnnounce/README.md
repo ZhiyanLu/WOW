@@ -2,7 +2,7 @@
 Simple Interrupt Announce
 =========================
 
-Copyright 2011-2020 BeathsCurse (Bowmore - Silvermoon EU)
+Copyright 2011-2021 BeathsCurse (Bowmore - Silvermoon EU)
 
 
 Introduction

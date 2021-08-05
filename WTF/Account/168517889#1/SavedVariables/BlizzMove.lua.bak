@@ -1,6 +1,9 @@
 
 BlizzMoveDB = {
-	["savePosStrategy"] = "session",
+	["saveScaleStrategy"] = "session",
 	["points"] = {
 	},
+	["scales"] = {
+	},
+	["savePosStrategy"] = "session",
 }

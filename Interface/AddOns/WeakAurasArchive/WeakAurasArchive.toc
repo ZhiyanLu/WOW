@@ -1,6 +1,7 @@
-## Interface: 90002
+## Interface: 90100
 ## Title: WeakAuras Archive
 ## Author: The WeakAuras Team
+## Version: 3.6.1-2-gef69528
 ## LoadOnDemand: 1
 ## SavedVariables: WeakAurasArchive
 ## Dependencies: WeakAuras

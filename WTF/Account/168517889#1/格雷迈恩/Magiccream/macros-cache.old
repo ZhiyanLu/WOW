@@ -8,15 +8,13 @@ VER 3 0100000000000013 " " "INV_MISC_QUESTIONMARK"
 /use [nostealth]棱彩装饰
 /use [nostealth]泡泡棒
 END
-VER 3 0100000000000014 " " "INV_MISC_QUESTIONMARK"
+VER 3 0100000000000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [talent:2/2]乌索尔旋风;[talent:2/3]野性冲锋
-/use [nostealth]棱彩装饰
-/use [nostealth]泡泡棒
+/cast [talent:1/3,@cursor] 自然之力;[talent:1/2]艾露恩的战士
 END
-VER 3 0100000000000009 "低吼" "INV_MISC_QUESTIONMARK"
-/cast 低吼
-/shout hi，孙子！
+VER 3 010000000000001C "万灵" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast !万灵之召
 END
 VER 3 0100000000000012 "冲锋" "INV_MISC_QUESTIONMARK"
 #showtooltip 野性冲锋
@@ -40,17 +38,17 @@ VER 3 0100000000000002 "安抚" "INV_MISC_QUESTIONMARK"
 /tar 纳兹曼尼战争主母 
 /施放 安抚
 END
-VER 3 0100000000000010 "急奔" "INV_MISC_QUESTIONMARK"
-#showtooltip 急奔
-/use [nostealth]棱彩装饰
-/use [nostealth]泡泡棒
-/castsequence reset=20 急奔,树人形态
-END
 VER 3 0100000000000011 "急奔" "INV_MISC_QUESTIONMARK"
 #showtooltip 急奔
 /use [nostealth]棱彩装饰
 /use [nostealth]泡泡棒
 /castsequence reset=20 急奔,枭兽形态
+END
+VER 3 0100000000000010 "急奔" "INV_MISC_QUESTIONMARK"
+#showtooltip 急奔
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+/castsequence reset=20 急奔,树人形态
 END
 VER 3 010000000000000E "愈合" "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -58,38 +56,43 @@ VER 3 010000000000000E "愈合" "INV_MISC_QUESTIONMARK"
 /cast [@mouseover,help,exists][]愈合
 /console autounshift 1
 END
-VER 3 0100000000000019 "控制" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [talent:3/2]夺魂咆哮;[talent:3/3]乌索尔旋风
-END
 VER 3 010000000000000C "月火" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /console autounshift 0 
 /cast [@mouseover,help,exists][]月火术
 /console autounshift 1
 END
-VER 3 0100000000000007 "树人" "INV_MISC_QUESTIONMARK"
-#showtooltip 自然之力
-/cast [@cursor] 自然之力
+VER 3 010000000000001A "枭兽" "INV_MISC_QUESTIONMARK"
+#showtooltip 灵魂变形
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+/castsequence reset=3 灵魂变形,枭兽形态
 END
-VER 3 0100000000000017 "激活" "INV_MISC_QUESTIONMARK"
-#showtooltip 激活
-/cast [target=Magiccream] 激活
-END
-VER 3 0100000000000008 "激活鼠标" "INV_MISC_QUESTIONMARK"
+VER 3 0100000000000008 "激活" "INV_MISC_QUESTIONMARK"
 #showtooltip 激活
 /cast [target=mouseover,help,nodead,exists] 激活
-/use 缠结精华之牙
 /script SendChatMessage("给你激活了！！", "WHISPER", nil, UnitName("mouseover"))
 END
-VER 3 0100000000000016 "猛虎之怒" "INV_MISC_QUESTIONMARK"
-/cast 猛虎之怒
-/cast 火红烈焰(艾泽里特精华)
+VER 3 010000000000001B "熊" "INV_MISC_QUESTIONMARK"
+#showtooltip 灵魂变形
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+/castsequence reset=3 灵魂变形,熊形态
+END
+VER 3 010000000000001D "狂暴" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 狂暴
+/use 猛虎之怒
+/use 不可思议的量子装置
+END
+VER 3 010000000000001E "猎豹" "INV_MISC_QUESTIONMARK"
+#showtooltip 灵魂变形
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+/castsequence reset=3 灵魂变形,猎豹形态
 END
 VER 3 0100000000000018 "超凡" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use 超凡之盟
-/use 自省强化
-/use 增效羁绊(格里恩)
-/use 13
+/use 导师的圣钟
 END

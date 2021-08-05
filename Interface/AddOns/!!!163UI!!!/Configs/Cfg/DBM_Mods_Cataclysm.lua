@@ -7,6 +7,16 @@ U1RegisterAddon("DBM_Mods_Cataclysm", {
     tags = { "TAG_RAID", },
     defaultEnable = 1,
     nolodbutton = 1,
+    dummy = 1,
+    children = {
+        "DBM-BaradinHold",
+        "DBM-BastionTwilight",
+        "DBM-BlackwingDescent",
+        "DBM-DragonSoul",
+        "DBM-Firelands",
+        "DBM-Party-Cataclysm",
+        "DBM-ThroneFourWinds",
+    },
     toggle = function(name, info, enable, justload)
     end,
 });

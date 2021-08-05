@@ -1,21 +1,19 @@
 local mod	= DBM:NewMod("d1963", "DBM-Challenges", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210106201501")
+mod:SetRevision("20210802205751")
 
 mod:RegisterCombat("scenario", 2162)--1911-1912 are outdoor areas
 mod.noStatistics = true
 
 mod:RegisterEventsInCombat(
-	"SPELL_CAST_START 288210 292903 295985 296748 295001 294362 304075 296523 270248 270264 270348 263085 215710 294526 294533 298844 297018 295942 294165 330118 258935 308026 335528 277040 329608 330438 330471 294401 294517 296839 297020 242391 330573 332165 258938 329422 329423",
+	"SPELL_CAST_START 288210 292903 295985 296748 295001 294362 304075 296523 270248 270264 270348 263085 215710 294526 294533 298844 297018 295942 294165 330118 258935 308026 335528 277040 329608 330438 330471 294401 294517 296839 297020 242391 330573 332165 258938 329422 329423 329930 329908 329909 81008 351931",
 	"SPELL_AURA_APPLIED 304093 277040",
 	"SPELL_AURA_APPLIED_DOSE 303678",
 	"SPELL_AURA_REMOVED 277040",
 	"SPELL_PERIODIC_DAMAGE 294607",
 	"SPELL_PERIODIC_MISSED 294607",
-	"UNIT_DIED",
-	"NAME_PLATE_UNIT_ADDED",
-	"FORBIDDEN_NAME_PLATE_UNIT_ADDED"
+	"UNIT_DIED"
 )
 
 --TODO, verifying howling souls spellId, user submitted and unverified from logs. SpellId given is used in eye of azshara. Can use torghast reusuing it though.
@@ -32,14 +30,19 @@ local specWarnMassiveStrike			= mod:NewSpecialWarningDodge(292903, nil, nil, nil
 local specWarnMeteor				= mod:NewSpecialWarningDodge(270264, nil, nil, nil, 2, 2)
 local specWarnRatTrap				= mod:NewSpecialWarningDodge(295942, nil, nil, nil, 2, 2)
 local specWarnFanningtheFlames		= mod:NewSpecialWarningDodge(308026, nil, nil, nil, 2, 2)
+local specWarnCrushingSlam			= mod:NewSpecialWarningDodge(329908, nil, nil, nil, 2, 2)
 local specWarnProphecyOfDeath		= mod:NewSpecialWarningDodge(330471, nil, nil, nil, 2, 2)
 local specWarnDiscordantBarrage		= mod:NewSpecialWarningDodge(294401, nil, nil, nil, 2, 2)
 local specWarnBindSouls				= mod:NewSpecialWarningDodge(297020, nil, nil, nil, 2, 2)
 local specWarnInferno				= mod:NewSpecialWarningDodge(335528, nil, nil, nil, 2, 2)
+local specWarnQuake					= mod:NewSpecialWarningJump(81008, nil, nil, nil, 2, 2)
+
 local specWarnGroundCrush			= mod:NewSpecialWarningRun(295985, nil, nil, nil, 4, 2)
 --local specWarnMightySlam			= mod:NewSpecialWarningRun(296748, nil, nil, nil, 4, 2)
 local specWarnWhirlwind				= mod:NewSpecialWarningRun(295001, nil, nil, nil, 4, 2)
 local specWarnSoulblastNova			= mod:NewSpecialWarningRun(294533, nil, nil, nil, 4, 2)
+local specWarnCrushingStomp			= mod:NewSpecialWarningRun(329909, nil, nil, nil, 4, 2)
+local specWarnPainBringer			= mod:NewSpecialWarningRun(351931, nil, nil, nil, 4, 2)
 local specWarnDeafeningHowl			= mod:NewSpecialWarningCast(296523, "SpellCaster", nil, nil, 1, 2)
 local specWarnBoneShrapnel			= mod:NewSpecialWarningStack(303678, nil, 4, nil, nil, 1, 6)
 local specWarnMassCripple			= mod:NewSpecialWarningDispel(304093, "RemoveMagic", nil, nil, 1, 2)
@@ -54,6 +57,7 @@ local specWarnTerrifyingRoar		= mod:NewSpecialWarningInterrupt(263085, "HasInter
 local specWarnCurseofFrailty		= mod:NewSpecialWarningInterrupt(294526, "HasInterrupt", nil, nil, 1, 2)
 local specWarnFearsomeHowl			= mod:NewSpecialWarningInterrupt(298844, "HasInterrupt", nil, 2, 1, 2)
 local specWarnFearsomeShriek		= mod:NewSpecialWarningInterrupt(332165, "HasInterrupt", nil, nil, 1, 2)
+local specWarnTerrifyingScreech		= mod:NewSpecialWarningInterrupt(329930, "HasInterrupt", nil, nil, 1, 2)
 local specWarnPhasingRoar			= mod:NewSpecialWarningInterrupt(294517, "HasInterrupt", nil, nil, 1, 2)
 local specWarnDeathBlast			= mod:NewSpecialWarningInterrupt(296839, "HasInterrupt", nil, nil, 1, 2)
 local specWarnAccursedStrength		= mod:NewSpecialWarningInterrupt(294165, "HasInterrupt", nil, nil, 1, 2)
@@ -104,6 +108,9 @@ function mod:SPELL_CAST_START(args)
 	elseif spellId == 308026 and self:AntiSpam(3, 2) then
 		specWarnFanningtheFlames:Show()
 		specWarnFanningtheFlames:Play("shockwave")
+	elseif spellId == 329908 and self:AntiSpam(3, 2) then
+		specWarnCrushingSlam:Show()
+		specWarnCrushingSlam:Play("shockwave")
 	elseif spellId == 215710 and self:AntiSpam(4, 4) then
 		specWarnHowlingSouls:Show()
 		specWarnHowlingSouls:Play("aesoon")
@@ -125,6 +132,9 @@ function mod:SPELL_CAST_START(args)
 	elseif spellId == 335528 and self:AntiSpam(3, 7) then
 		specWarnInferno:Show()
 		specWarnInferno:Play("watchstep")
+	elseif spellId == 81008 and self:AntiSpam(3, 7) then
+		specWarnQuake:Schedule(0.75)
+		specWarnQuake:ScheduleVoice(0.75, "jumpnow")
 	elseif spellId == 295985 then
 		if self:AntiSpam(4, 1) then
 			specWarnGroundCrush:Show()
@@ -139,7 +149,13 @@ function mod:SPELL_CAST_START(args)
 	elseif spellId == 294533 and self:AntiSpam(4, 1) then
 		specWarnSoulblastNova:Show()
 		specWarnSoulblastNova:Play("justrun")
-	elseif spellId == 296523 and self:AntiSpam(4, 5) then
+	elseif spellId == 329909 and self:AntiSpam(4, 1) then
+		specWarnCrushingStomp:Show()
+		specWarnCrushingStomp:Play("justrun")
+	elseif spellId == 351931 and self:AntiSpam(4, 1) then
+		specWarnPainBringer:Show()
+		specWarnPainBringer:Play("justrun")
+	elseif (spellId == 296523 or spellId == 318995) and self:AntiSpam(4, 5) then
 		specWarnDeafeningHowl:Show()
 		specWarnDeafeningHowl:Play("stopcast")
 	elseif spellId == 288210 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
@@ -190,6 +206,9 @@ function mod:SPELL_CAST_START(args)
 	elseif spellId == 332165 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
 		specWarnFearsomeShriek:Show(args.sourceName)
 		specWarnFearsomeShriek:Play("kickcast")
+	elseif spellId == 329930 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
+		specWarnTerrifyingScreech:Show(args.sourceName)
+		specWarnTerrifyingScreech:Play("kickcast")
 	elseif spellId == 330573 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
 		specWarnBountyOfTheForest:Show(args.sourceName)
 		specWarnBountyOfTheForest:Play("kickcast")
@@ -245,16 +264,3 @@ function mod:UNIT_DIED(args)
 		timerGroundCrushCD:Stop(args.destGUID)
 	end
 end
-
-function mod:NAME_PLATE_UNIT_ADDED(unit)
-	if unit then
-		local guid = UnitGUID(unit)
-		if not guid then return end
-		local cid = self:GetCIDFromGUID(guid)
-		if cid == 152253 and not warnedGUIDs[guid] then
-			warnedGUIDs[guid] = true
-			PlaySoundFile("Interface\\AddOns\\DBM-CHallenges\\Shadowlands\\Stars.mp3", "Master")
-		end
-	end
-end
-mod.FORBIDDEN_NAME_PLATE_UNIT_ADDED = mod.NAME_PLATE_UNIT_ADDED

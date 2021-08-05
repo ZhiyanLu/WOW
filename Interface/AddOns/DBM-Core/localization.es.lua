@@ -193,8 +193,7 @@ L.RETAIL_ONLY					= "AVISO: esta versión de DBM está pensada para la versión 
 
 L.MOVABLE_BAR				= "¡Muéveme!"
 
-L.PIZZA_SYNC_INFO					= "|Hplayer:%1$s|h[%1$s]|h ha compartido un temporizador de DBM: '%2$s'\n|HDBM:cancel:%2$s:nil|h|cff3588ff[Cancelar este temporizador]|r|h  |HDBM:ignore:%2$s:%1$s|h|cff3588ff[Ignorar temporizadores de %1$s]|r|h"
---L.PIZZA_SYNC_INFO					= "|Hplayer:%1$s|h[%1$s]|h ha compartido un temporizador de DBM: '%2$s'\n|HDBM:cancel:%2$s:nil|h|cff3588ff[Cancelar este temporizador]|r|h  |HDBM:ignore:%2$s:%1$s|h|cff3588ff[Ignorar temporizadores de %1$s]|r|h"
+L.PIZZA_SYNC_INFO					= "|Hplayer:%1$s|h[%1$s]|h ha compartido un temporizador de DBM: '%2$s'\n|Hgarrmission:DBM:cancel:%2$s:nil|h|cff3588ff[Cancelar este temporizador]|r|h  |Hgarrmission:DBM:ignore:%2$s:%1$s|h|cff3588ff[Ignorar temporizadores de %1$s]|r|h"
 L.PIZZA_CONFIRM_IGNORE			= "¿Seguro que quieres ignorar los temporizadores de %s para esta sesión?"
 L.PIZZA_ERROR_USAGE				= "Uso: /dbm [broadcast] timer <seg> <texto>. <seg> debe ser mayor que 1."
 
@@ -255,7 +254,6 @@ L.SLASHCMD_HELP2				= {
 	"/dbm break <min>: Inicia un temporizador de descanso para toda la banda (requiere líder o ayudante) (alias: break).",
 	"/dbm version: Realiza una comprobación de versión de DBM a toda la banda (alias: ver).",
 	"/dbm version2: Realiza una comprobación de versión de DBM que también susurra a los jugadores con versiones desfasadas (alias: ver2).",
-	"/dbm lockout: Realiza una comprobación de registros de banda a toda la banda (requiere líder o ayudante) (alias: lockouts, ids).",
 	"/dbm lag: Realiza una comprobación de latencia a toda la banda.",
 	"/dbm durability: Realiza una comprobación de durabilidad a toda la banda."
 }
@@ -477,7 +475,7 @@ L.AUTO_TIMER_TEXTS.fades		= "%s expira"--Buff/Debuff on players
 L.AUTO_TIMER_TEXTS.ai			= "IA de %s"
 L.AUTO_TIMER_TEXTS.cd			= "%s TdR"
 L.AUTO_TIMER_TEXTS.cdshort		= "~%s"
-L.AUTO_TIMER_TEXTS.cdcount		= "%s TdR (%%s)"
+L.AUTO_TIMER_TEXTS.cdcount		= "%s (%%s) TdR"
 L.AUTO_TIMER_TEXTS.cdcountshort		= "~%s (%%s)"
 L.AUTO_TIMER_TEXTS.cdsource		= "%s TdR: >%%s<"
 L.AUTO_TIMER_TEXTS.cdsourceshort	= "~%s: >%%s<"
@@ -596,24 +594,6 @@ L.SPEED_CLEAR_TIMER_TEXT	= "Récord actual"
 L.COMBAT_RES_TIMER_TEXT	= "Siguiente resurrección"
 L.TIMER_RESPAWN		= "%s reaparece"
 
-
-L.REQ_INSTANCE_ID_PERMISSION		= "%s ha solicitado ver tu registro de estancias actual.\n¿Quieres compartir esta información con %s?."
-L.ERROR_NO_RAID					= "Tienes que estar en un grupo de banda para usar esta característica."
-L.INSTANCE_INFO_REQUESTED			= "Se ha enviado una solicitud al grupo de banda.\nPor favor, ten en cuenta que los jugadores deben aceptarla para que puedas recibir los datos."
-L.INSTANCE_INFO_STATUS_UPDATE		= "Se ha recibido datos de %d de %d jugadores con DBM: %d han compartido sus datos, %d han rechazado la petición. Esperando %d segundos más..."
-L.INSTANCE_INFO_ALL_RESPONSES		= "Se ha recibido datos de todos los miembros de la banda."
-L.INSTANCE_INFO_DETAIL_DEBUG		= "Personaje: %s Resultado: %s Estancia: %s ID: %s Dificultad: %d Tamaño: %d Jefes: %s"
-L.INSTANCE_INFO_DETAIL_HEADER		= "%s, dificultad %s:"
-L.INSTANCE_INFO_DETAIL_INSTANCE	= "    ID %s, %d jefes: %s"
-L.INSTANCE_INFO_DETAIL_INSTANCE2	= "    %d jefes: %s"
-L.INSTANCE_INFO_NOLOCKOUT			= "Tu grupo de banda no tiene registros de estancia."
-L.INSTANCE_INFO_STATS_DENIED		= "Petición rechazada: %s"
-L.INSTANCE_INFO_STATS_AWAY		= "Ausente: %s"
-L.INSTANCE_INFO_STATS_NO_RESPONSE	= "Sin versión de DBM compatible: %s"
-L.INSTANCE_INFO_RESULTS			= "Resultados de la comprobación de registros de estancia. Ten en cuenta que una misma estancia puede salir varias veces si hay jugadores en tu banda con el cliente de juego en un idioma distinto."
-L.INSTANCE_INFO_SHOW_RESULTS		= "Jugadores que todavía no han respondido: %s\n|HDBM:showRaidIdResults|h|cff3588ff[Mostrar resultados]|r|h"
---L.INSTANCE_INFO_SHOW_RESULTS		= "Jugadores que todavía no han respondido: %s"
-
 L.LAG_CHECKING				= "Comprobando latencia de la banda..."
 L.LAG_HEADER					= "Deadly Boss Mods - Resultados de latencia"
 L.LAG_ENTRY					= "%s: Latencia de mundo [%d ms] / Latencia de hogar [%d ms]"
@@ -630,7 +610,4 @@ L.LDB_TOOLTIP_HELP2	= "Clic derecho para el menú de configuración"
 
 L.LDB_LOAD_MODS		= "Cargar módulo"
 
-L.LDB_CAT_OTHER		= "Otros módulos"
-
-L.LDB_CAT_GENERAL		= "General"
 L.LDB_ENABLE_BOSS_MOD	= "Habilitar módulo"

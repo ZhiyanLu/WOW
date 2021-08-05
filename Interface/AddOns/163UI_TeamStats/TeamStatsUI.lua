@@ -468,8 +468,8 @@ end
 创建列及标题按钮
 ---------------------------------------------------------------]]
 local BossCountTextCreator = function(col,btn,idx)
-    local text = btn:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall"):SetWordWrap(false):Size(col.width + 1, 28)
-    text:SetFontHeight(14)
+    local text = btn:CreateFontString(nil, "ARTWORK"):SetWordWrap(false):Size(col.width + 1, 28)
+    text:SetFont(GameFontHighlightSmall:GetFont(), 14)
     --btn:CreateTexture():SetTexture(1,1,1,0.5):TL(text):BR(text)
     return text
 end
@@ -661,7 +661,7 @@ function TS.SetupColumns(f)
         {
             -- 服务器
             width = 40,
-            create = function(col,btn,idx) return btn:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall"):SetFontHeight(12):SetJustifyH("CENTER"):Size(col.width, 24) end,
+            create = function(col,btn,idx) return btn:CreateFontString(nil, "ARTWORK"):SetFont(GameFontHighlightSmall:GetFont(), 12):SetJustifyH("CENTER"):Size(col.width, 24) end,
             update = function(line, widget, idx, colIdx)
                 widget:SetText(names[idx]:gsub("^.+%-", ""))
                 widget:SetText("-"..string.utf8sub(names[idx]:gsub("^.+%-", ""), 1, 2))
@@ -749,7 +749,7 @@ function TS.SetupColumns(f)
             headerSpan = 1,
             width = 55,
             tip = "已插宝石数/总宝石孔数 顶级宝石数+高级宝石数+其他宝石数\n \n已附魔装备数/总附魔装备数 缺失部位\n\n腰带打孔算一个附魔",
-            create = function(col,btn,idx) return btn:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall"):SetFontHeight(14):SetJustifyH("CENTER"):Size(col.width, 24) end,
+            create = function(col,btn,idx) return btn:CreateFontString(nil, "ARTWORK"):SetFont(GameFontHighlightSmall:GetFont(), 14):SetJustifyH("CENTER"):Size(col.width, 24) end,
             update = function(line, widget, idx, colIdx)
                 local player = line.player
                 if (player.gem_info) then -- and player.total_enchant and player.has_enchant) then
@@ -769,7 +769,7 @@ function TS.SetupColumns(f)
                 local ct = WW:Frame(nil, btn):Size(1, 1)
                 for i=1, 2 do
                     local legBtn = WW:Button(nil, ct):Size(22, 21):LEFT((i-1)*24, 0):AddFrameLevel(5):CreateTexture():ALL():SetColorTexture(1,1,1,0.1):up()
-                    :CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall"):Key("txt"):SetFontHeight(14):SetJustifyH("CENTER"):ALL():SetText("肩"):SetTextColor(1, 0.5, 0):up():un()
+                    :CreateFontString(nil, "ARTWORK"):Key("txt"):SetFontH(GameFontHighlightSmall:GetFont(), 14):SetJustifyH("CENTER"):ALL():SetText("肩"):SetTextColor(1, 0.5, 0):up():un()
                     ct["legend"..i] = legBtn
                     legBtn:SetScript("OnEnter", legendBtnOnEnter)
                     legBtn:SetScript("OnLeave", legendBtnOnLeave)
@@ -804,7 +804,7 @@ function TS.SetupColumns(f)
             headerSpan = 1,
             width = 64,
             tip = "当前版本相关的副本成就，同战网共享，跨角色。绿色为有，红色为没有",
-            create = function(col,btn,idx) return btn:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall"):SetFontHeight(14):SetJustifyH("CENTER"):Size(col.width, 24) end,
+            create = function(col,btn,idx) return btn:CreateFontString(nil, "ARTWORK"):SetFont(GameFontHighlightSmall:GetFont(), 14):SetJustifyH("CENTER"):Size(col.width, 24) end,
             update = function(line, widget, idx, colIdx)
                 local player = line.player
                 if not player.compared then
@@ -848,7 +848,7 @@ function TS.SetupColumns(f)
         if col.header then
             local id = #f.headers+1
             local btn = TplColumnButton(f, nil, TS.COLUMN_BUTTON_HEIGHT):SetScript("OnClick", sortNames):un()
-            WW(btn:GetFontString()):SetFontHeight(14):un()
+            btn:GetFontString():SetFont(GameFontNormalSmall:GetFont(), 14)
             btn.id = id
             table.insert(f.headers, btn)
             --一个表头可以跨多个元素, 要计算其宽度

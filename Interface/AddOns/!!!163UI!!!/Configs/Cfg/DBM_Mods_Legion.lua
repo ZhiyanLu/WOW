@@ -6,6 +6,17 @@ U1RegisterAddon("DBM_Mods_Legion", {
     tags = { "TAG_RAID", },
     defaultEnable = 1,
     nolodbutton = 1,
+    dummy = 1,
+    children = {
+        "DBM-AntorusBurningThrone",
+        "DBM-TombofSargeras",
+        "DBM-Nighthold",
+        "DBM-TrialofValor",
+        "DBM-EmeraldNightmare",
+        -- "DBM-Argus",
+        "DBM-BrokenIsles",
+        "DBM-Party-Legion",
+    },
     toggle = function(name, info, enable, justload)
     end,
 });

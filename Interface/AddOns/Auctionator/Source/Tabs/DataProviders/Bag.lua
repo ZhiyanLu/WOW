@@ -8,11 +8,6 @@ local BAG_AUCTIONATOR_EVENTS = {
 
 AuctionatorBagDataProviderMixin = CreateFromMixins(AuctionatorDataProviderMixin)
 
-function AuctionatorBagDataProviderMixin:OnLoad()
-  AuctionatorDataProviderMixin.OnLoad(self)
-  self.processCountPerUpdate = 200
-end
-
 function AuctionatorBagDataProviderMixin:Reload()
   self:Reset()
   self:LoadBagData()
@@ -81,9 +76,13 @@ function AuctionatorBagDataProviderMixin:LoadBagData()
 
   orderedKeys = Auctionator.Utilities.ReverseArray(orderedKeys)
 
-  for _, key in ipairs(orderedKeys) do
-    table.insert( results, itemMap[key] )
+  for key, item in pairs(itemMap) do
+    table.insert(results, item)
   end
+
+  table.sort(results, function(left, right)
+    return Auctionator.Selling.UniqueBagKey(left) < Auctionator.Selling.UniqueBagKey(right)
+  end)
 
   self:AppendEntries(results, true)
 end

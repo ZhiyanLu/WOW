@@ -16,15 +16,6 @@ L.OTabPlugins	= "Core Plugins"
 L.OTabOptions	= GAMEOPTIONS_MENU
 L.OTabAbout		= "About"
 
-L.TabCategory_SHADOWLANDS	= EXPANSION_NAME8
-L.TabCategory_BFA	 		= EXPANSION_NAME7
-L.TabCategory_LEG	 		= EXPANSION_NAME6
-L.TabCategory_WOD	 		= EXPANSION_NAME5
-L.TabCategory_MOP	 		= EXPANSION_NAME4
-L.TabCategory_CATA	 		= EXPANSION_NAME3
-L.TabCategory_WOTLK 		= EXPANSION_NAME2
-L.TabCategory_BC 			= EXPANSION_NAME1
-L.TabCategory_CLASSIC		= EXPANSION_NAME0
 L.TabCategory_OTHER    		= "Other Mods"
 
 L.BossModLoaded 			= "%s statistics"
@@ -114,8 +105,7 @@ L.RecordOnlyBosses			= "Only record Bosses (Excludes all trash. Use '/dbm pull' 
 L.LogOnlyNonTrivial			= "Only record non trivial content (normal or harder current content raids &amp; Mythic+ Dungeons)"
 --
 L.Area_3rdParty				= "3rd Party Addon Options"
-L.ShowBBOnCombatStart		= "Perform Big Brother buff check on combat start"
-L.BigBrotherAnnounceToRaid	= "Announce Big Brother results to raid"
+L.oRA3AnnounceConsumables	= "Announce oRA3 consumables check on combat start"
 L.Area_Invite				= "Invite Options"
 L.AutoAcceptFriendInvite	= "Automatically accept group invites from friends"
 L.AutoAcceptGuildInvite		= "Automatically accept group invites from guild members"
@@ -149,6 +139,8 @@ L.Area_ImportExportProfile	= "Import/Export profiles"
 L.ImportExportInfo			= "Importing will overwrite your current profile, do at your own risk."
 L.ButtonImportProfile		= "Import profile"
 L.ButtonExportProfile		= "Export profile"
+
+L.ImportErrorOn				= "Custom sounds missing for setting: %s"
 
 -- Tab: Alerts
 L.TabCategory_Alerts	 	= "Alerts"
@@ -273,7 +265,7 @@ L.BarDBM					= "Classic (existing small bar slides to Enlarged anchor)"
 L.BarSimple					= "Simple (small bar disappears and new large bar created)"
 L.BarStartColor				= "Start color"
 L.BarEndColor 				= "End color"
-L.Bar_Height				= "Bar Height: %d"
+L.Bar_Height				= "Bar height: %d"
 L.Slider_BarOffSetX 		= "Offset X: %d"
 L.Slider_BarOffSetY 		= "Offset Y: %d"
 L.Slider_BarWidth 			= "Bar width: %d"
@@ -324,7 +316,7 @@ L.ExpandUpwards				= "Expand upward"
 L.FillUpBars				= "Fill up"
 L.ClickThrough				= "Disable mouse events (click through)"
 L.Bar_Decimal				= "Decimal shows below time: %d"
-L.Bar_Alpha					= "Bar Alpha: %0.1f"
+L.Bar_Alpha					= "Alpha: %0.1f"
 L.Bar_EnlargeTime			= "Bar enlarges below time: %d"
 L.BarSpark					= "Bar spark"
 L.BarFlash					= "Flash bar about to expire"
@@ -347,11 +339,11 @@ L.Area_BlizzFiltersSetup	= "Blizzard Filters guide"
 L.Panel_SpamFilter					= "DBM Features"
 L.Area_SpamFilter_Anounces			= "Announce Global Disable & Filter Options"
 L.SpamBlockNoShowAnnounce			= "Do not show text or play sound for ANY general announcements"
-L.SpamBlockNoShowTgtAnnounce		= "Do not show text or play sound for TARGET general announcements (above filter overrides this one)"
+L.SpamBlockNoShowTgtAnnounce		= "Do not show text or play sound for TARGET general announcements that do not affect other players (above filter overrides this one)"
 L.SpamBlockNoSpecWarnText			= "Do not show special announce text"
 L.SpamBlockNoSpecWarnFlash			= "Do not show special announce screen flash"
 L.SpamBlockNoSpecWarnSound			= "Do not play special announce sounds (still permits voice packs, if one is enabled in Spoken Alerts panel)"
-L.SpamBlockNoTrivialSpecWarnSound	= "Do not play special announce sounds for content that is trivial for your level (plays user selected regular announce sound instead)"
+L.SpamBlockNoTrivialSpecWarnSound	= "Do not play special announce sounds or show screen flash for content that is trivial for your level (plays user selected regular announce sound instead)"
 
 L.Area_SpamFilter_Timers	= "Timer Global Disable & Filter Options"
 L.SpamBlockNoShowTimers		= "Do not show mod timers (Boss Mod/CM/LFG/Respawn)"

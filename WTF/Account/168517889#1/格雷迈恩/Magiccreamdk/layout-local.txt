@@ -2,9 +2,9 @@ Version: 1
 Frame: TitanPanelGoldButton
 FrameLevel: 2
 Anchor: TOP
-X: -5
+X: -37
 Y: -3
-W: 178
+W: 168
 H: 16
 Frame: WhisperPopNotifyButton
 FrameLevel: 1

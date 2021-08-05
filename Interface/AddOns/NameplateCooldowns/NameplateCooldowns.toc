@@ -1,15 +1,15 @@
-## Interface: 90002
+## Interface: 90100
 ## Title: NameplateCooldowns
 ## Notes: Shows the cooldowns of enemy players above their nameplates
 ## SavedVariables: NameplateCooldownsAceDB
-## Version: 90002.0-release
+## Version: 90100.4-release
+## X-Curse-Project-ID: 66866
+## X-Wago-ID: 0mNwjlGo
 
 embeds.xml
 src\constants.lua
 src\utilities.lua
 locales\localizations.xml
-defaultSpells.lua
-defaultSpells_Classic.lua
+src\default-spells.lua
 src\database.lua
 NameplateCooldowns.lua
-NameplateCooldowns_Classic.lua

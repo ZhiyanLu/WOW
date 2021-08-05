@@ -1,7 +1,6 @@
 # SavedInstances
 
-## [9.0.4-1-gf0a6113](https://github.com/SavedInstances/SavedInstances/tree/f0a61133cc088a5236036d1f4174075510c22ac2) (2020-12-18)
-[Full Changelog](https://github.com/SavedInstances/SavedInstances/compare/9.0.4...f0a61133cc088a5236036d1f4174075510c22ac2) [Previous Releases](https://github.com/SavedInstances/SavedInstances/releases)
+## [9.1.3-1-geb40329](https://github.com/SavedInstances/SavedInstances/tree/eb403296a23c78fee93950d2f26c249c30d70466) (2021-08-01)
+[Full Changelog](https://github.com/SavedInstances/SavedInstances/compare/9.1.3...eb403296a23c78fee93950d2f26c249c30d70466) [Previous Releases](https://github.com/SavedInstances/SavedInstances/releases)
 
-- M+: fix reward waiting detect  
-    fixes #451  
+- feat(Progress): add Covenant Assaults (#540)  

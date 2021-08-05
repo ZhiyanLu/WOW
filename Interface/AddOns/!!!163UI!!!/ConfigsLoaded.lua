@@ -76,16 +76,30 @@ function U1ConfigsLoaded()
     for _, info in pairs(addonInfo) do
         if not info.parent and not info.hide then
             info.tags = info.tags or (info.xcategories and {strsplit(",", info.xcategories:gsub(",[ ]+", ","))})
-            for _, v in ipairs(info.tags or _empty_table) do
-                --转换为hash，用于快速检索.
-                if v == "CLASS" then info._classAddon = true end --标记插件是职业相关，如果不是本职业则隐藏
-                if true or info.vendor then --只处理标准的。
-                    info.tags[v] = true;
-                    U1RegisterTag(v);
+            if info.tags then
+                for _, v in ipairs(info.tags) do
+                    --转换为hash，用于快速检索.
+                    if v == "CLASS" then info._classAddon = true end --标记插件是职业相关，如果不是本职业则隐藏
+                    if true or info.vendor then --只处理标准的。
+                        info.tags[v] = true;
+                        U1RegisterTag(v);
+                    end
                 end
             end
         end
     end
+
+    local _, _PLAYER_CLASS = UnitClass('player');
+    for _, info in pairs(addonInfo) do
+        if not info.parent then
+            if info.tags then
+                if info._classAddon and not info.tags[_PLAYER_CLASS] then
+                    DisableAddOn(_);
+                end
+            end
+        end
+    end
+    SaveAddOns();
 
     U1ConfigsLoaded = nil;
     U1RegisterAddon = nil;

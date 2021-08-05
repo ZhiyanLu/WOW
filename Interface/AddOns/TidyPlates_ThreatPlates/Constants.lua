@@ -179,13 +179,14 @@ Addon.AurasFilterMode = {
   None = L["None"],
 }
 
+-- SPEC_ROLES is only used in Retail currently
 ThreatPlates.SPEC_ROLES = {
-  DEATHKNIGHT = (Addon.CLASSIC and nil) or { true, false, false },
-  DEMONHUNTER = (Addon.CLASSIC and nil) or { false, true },
-  DRUID 			= (Addon.CLASSIC and { false, true, true }) or { false, false, true, false },
+  DEATHKNIGHT = { true, false, false },
+  DEMONHUNTER = { false, true },
+  DRUID 			= { false, false, true, false },
   HUNTER			= { false, false, false },
   MAGE				= { false, false, false },
-  MONK 				= (Addon.CLASSIC and nil) or { true, false, false },
+  MONK 				= { true, false, false },
   PALADIN 		= { false, true, false },
   PRIEST			= { false, false, false },
   ROGUE				= { false, false, false },
@@ -193,6 +194,13 @@ ThreatPlates.SPEC_ROLES = {
   WARLOCK			= { false, false, false },
   WARRIOR			= { false, false, true },
 }
+
+--if not Addon.IS_CLASSIC and not Addon.IS_TBC_CLASSIC then
+--  ThreatPlates.SPEC_ROLES.DEATHKNIGHT = { true, false, false }
+--  ThreatPlates.SPEC_ROLES.DEMONHUNTER = { false, true }
+--  ThreatPlates.SPEC_ROLES.DRUID 			= { false, false, true, false }
+--  ThreatPlates.SPEC_ROLES.MONK 				= { true, false, false }
+--end
 
 ThreatPlates.FontStyle = {
   NONE = L["None"],
@@ -227,6 +235,7 @@ ThreatPlates.ENEMY_SUBTEXT = {
   ROLE_GUILD_LEVEL = L["NPC Role, Guild, or Level"],
   LEVEL = L["Level"],
   ALL = L["Everything"],
+  CUSTOM = L["Custom"],
 }
 
 -- "NPC Role, Guild, or Quest", "Quest"
@@ -238,6 +247,7 @@ ThreatPlates.FRIENDLY_SUBTEXT = {
   ROLE_GUILD_LEVEL = L["NPC Role, Guild, or Level"],
   LEVEL = L["Level"],
   ALL = L["Everything"],
+  CUSTOM = L["Custom"],
 }
 
 -------------------------------------------------------------------------------
@@ -281,7 +291,43 @@ local TOTEM_DATA_RETAIL = {
   { SpellID = 204336, ID = "P4", GroupColor = "2b76ff"},	  -- Grounding Totem
 
   --{ SpellID = 196932, ID = "N6", GroupColor = "4c9900"},		-- Voodoo Totem (removed in patch 8.0.1)
-  --{ SpellID = 192058, ID = "N3", GroupColor = "4c9900"},		-- Lightning  Surge Totem (renamed to Capacitator Totem in patch 8.0.1)
+}
+
+local TOTEM_DATA_BC_CLASSIC = {
+  -- Earth Totems
+  { SpellID = 8075,   ID = "E1", GroupColor = "8B4513", Ranks = 6, Icon ="spell_nature_earthbindtotem", },	-- Strength of Earth Totem
+  { SpellID = 8071,   ID = "E2", GroupColor = "8B4513", Ranks = 8, Icon ="spell_nature_stoneskintotem" },	  -- Stoneskin Totem
+  { SpellID = 5730,   ID = "E3", GroupColor = "8B4513", Ranks = 7, Icon ="spell_nature_stoneclawtotem" },	  -- Stoneclaw Totem
+  { SpellID = 2484,    ID = "E4", GroupColor = "8B4513", Icon ="spell_nature_strengthofearthtotem02" },     -- Earthbind Totem
+  { SpellID = 8143,    ID = "E5", GroupColor = "8B4513", Icon ="spell_nature_tremortotem" },	              -- Tremor Totem
+  { SpellID = 2062,    ID = "E6", GroupColor = "8B4513", Icon ="spell_nature_earthelemental_totem" },	      -- Earth Elemental Totem
+
+  -- Fire Totems
+  { SpellID = 3599, ID = "F1", GroupColor = "ff8f8f", Ranks = 7, Icon ="spell_fire_searingtotem", }, 	    -- Searing Totem
+  { SpellID = 8181, ID = "F2", GroupColor = "ff8f8f", Ranks = 4, Icon ="spell_frostresistancetotem_01" }, -- Frost Resistance Totem
+  { SpellID = 1535, ID = "F3", GroupColor = "ff8f8f", Ranks = 7, Icon ="spell_fire_sealoffire" }, 	      -- Fire Nova Totem
+  { SpellID = 8190, ID = "F4", GroupColor = "ff8f8f", Ranks = 5, Icon ="spell_fire_selfdestruct" }, 	    -- Magma Totem
+  { SpellID = 8227, ID = "F5", GroupColor = "ff8f8f", Ranks = 5, Icon ="spell_nature_guardianward" }, 	  -- Flametongue Totem
+  { SpellID = 2894, ID = "F6", GroupColor = "ff8f8f", Icon ="spell_fire_elemental_totem" }, 	            -- Fire Elemental Totem
+  { SpellID = 30706, ID = "F7", GroupColor = "ff8f8f", Icon ="spell_fire_totemofwrath" }, 	              -- Totem of Wrath
+
+  -- Air Totems
+  { SpellID = 8835,  ID = "A1", GroupColor = "ffb31f", Ranks = 3, Icon ="spell_nature_invisibilitytotem" },		   -- Grace of Air Totem
+  { SpellID = 10595,  ID = "A2", GroupColor = "ffb31f", Ranks = 4, Icon ="spell_nature_natureresistancetotem" }, -- Nature Resistance Totem
+  { SpellID = 15107,  ID = "A3", GroupColor = "ffb31f", Ranks = 4, Icon ="spell_nature_earthbind" },		         -- Windwall Totem
+  { SpellID = 8512,  ID = "A4", GroupColor = "ffb31f", Ranks = 5, Icon ="spell_nature_windfury" },	           	 -- Windfury Totem
+  { SpellID = 8177,   ID = "A5", GroupColor = "ffb31f", Icon ="spell_nature_groundingtotem" },          		     -- Grounding Totem
+  { SpellID = 6495,   ID = "A6", GroupColor = "ffb31f", Icon ="spell_nature_removecurse" },		                   -- Sentry Totem
+  { SpellID = 25908,  ID = "A7", GroupColor = "ffb31f", Icon ="spell_nature_brilliance" },		                   -- Tranquil Air Totem
+  { SpellID = 3738,  ID = "A8", GroupColor = "ffb31f", Icon ="spell_nature_slowingtotem" },		                   -- Wrath of Air Totem
+
+  -- Water Totems
+  { SpellID = 5394,  ID = "W1", GroupColor = "b8d1ff", Ranks = 6, Icon ="inv_spear_04" },		                -- Healing Stream Totem
+  { SpellID = 5675,  ID = "W2", GroupColor = "b8d1ff", Ranks = 5, Icon ="spell_nature_manaregentotem" },		-- Mana Spring Totem
+  { SpellID = 8184,  ID = "W3", GroupColor = "b8d1ff", Ranks = 5, Icon ="spell_fireresistancetotem_01" },		-- Fire Resistance Totem
+  { SpellID = 16190,  ID = "W4", GroupColor = "b8d1ff", Icon ="spell_frost_summonwaterelemental" },		      -- Mana Tide Totem
+  { SpellID = 8170,   ID = "W5", GroupColor = "b8d1ff", Icon ="spell_nature_diseasecleansingtotem" },		    -- Disease Cleansing Totem
+  { SpellID = 8166,   ID = "W6", GroupColor = "b8d1ff", Icon ="spell_nature_poisoncleansingtotem" },        -- Poison Cleansing Totem
 }
 
 local TOTEM_DATA_CLASSIC = {
@@ -317,8 +363,8 @@ local TOTEM_DATA_CLASSIC = {
   { SpellID = 8166,   ID = "W6", GroupColor = "b8d1ff", },        		  -- Poison Cleansing Totem
 }
 
-local TOTEM_DATA = (Addon.CLASSIC and TOTEM_DATA_CLASSIC) or TOTEM_DATA_RETAIL
-local TOTEM_RANKS_CLASSIC = { " II", " III", " IV", " V", " VI" }
+local TOTEM_DATA = (Addon.IS_CLASSIC and TOTEM_DATA_CLASSIC) or (Addon.IS_TBC_CLASSIC and TOTEM_DATA_BC_CLASSIC) or TOTEM_DATA_RETAIL
+local TOTEM_RANKS_CLASSIC = { " II", " III", " IV", " V", " VI", " VII", " VIII", " IX" }
 
 function Addon:InitializeTotemInformation()
   for _, totem_data in ipairs(TOTEM_DATA) do
@@ -337,7 +383,7 @@ function Addon:InitializeTotemInformation()
       Addon.TOTEMS[name] = totem_data.ID
 
       -- Add totem ranks for WoW Classic
-      if Addon.CLASSIC then
+      if Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC then
         for rank = 1, (totem_data.Ranks or 1) - 1  do
           Addon.TOTEMS[name .. TOTEM_RANKS_CLASSIC[rank]] = totem_data.ID
         end
@@ -369,6 +415,7 @@ ThreatPlates.DEFAULT_SETTINGS = {
     version = "",
     DefaultsVersion = "SMOOTH",
     CustomNameplatesVersion = 1,
+    ScriptingIsEnabled = false,
   },
   char = {
     welcome = false,
@@ -389,6 +436,7 @@ ThreatPlates.DEFAULT_SETTINGS = {
     },
   },
   profile = {
+    CheckForIncompatibleAddons = true,
     -- cache = {}, - removed in 9.3.0
     -- OldSetting = true, - removed in 8.7.0
     verbose = false,
@@ -400,7 +448,7 @@ ThreatPlates.DEFAULT_SETTINGS = {
       toggle  = true,
       amount = -0.3
     },
-    tidyplatesFade = false,
+    -- tidyplatesFade = false, -- removed in 10.1.0 as it was no longer used
     healthColorChange = false,
     customColor =  false,
     allowClass = true, -- old default: false,
@@ -418,7 +466,7 @@ ThreatPlates.DEFAULT_SETTINGS = {
     Automation = {
       FriendlyUnits = "NONE",
       EnemyUnits = "NONE",
-      SmallPlatesInInstances = false,
+      -- SmallPlatesInInstances = false, -- Removed in 10.1.7
       HideFriendlyUnitsInInstances = false,
     },
     Scale = {
@@ -469,7 +517,9 @@ ThreatPlates.DEFAULT_SETTINGS = {
       SubtextColor =  RGB(255, 255, 255, 1),
       --
       EnemySubtext = "ROLE_GUILD_LEVEL",
+      EnemySubtextCustom = "",
       FriendlySubtext = "ROLE_GUILD",
+      FriendlySubtextCustom = "",
     },
     Visibility = {
       --				showNameplates = true,
@@ -494,6 +544,7 @@ ThreatPlates.DEFAULT_SETTINGS = {
       HideNormal = false,
       HideBoss = false,
       HideElite = false,
+      HideGuardian = false,
       HideTapped = false,
       HideFriendlyInCombat = false,
     },
@@ -608,7 +659,9 @@ ThreatPlates.DEFAULT_SETTINGS = {
       level = 1,
       alpha = 1,
       anchor = "RIGHT",
-      ShowInHeadlineView = false
+      ShowInHeadlineView = false,
+      x_hv = 0,
+      y_hv = 16,
     },
     AuraWidget = {
       ON = true,
@@ -697,8 +750,8 @@ ThreatPlates.DEFAULT_SETTINGS = {
         ShowDispellable = true,
         ShowBoss = true,
         ShowEnemy = true,
-        ShowAllEnemy = (Addon.CLASSIC and true) or false,
-        ShowBlizzardForEnemy = (Addon.CLASSIC and false) or true,
+        ShowAllEnemy = false,
+        ShowBlizzardForEnemy = true,
         Scale = 2.0,
         FilterMode = "Block",
         FilterBySpell = {},
@@ -1120,6 +1173,7 @@ ThreatPlates.DEFAULT_SETTINGS = {
     totemSettings = GetDefaultTotemSettings(),
     uniqueSettings = {
       ["**"] = {
+        Name = "",
         Trigger = {
           Type = "Name",
           Name = {
@@ -1134,6 +1188,11 @@ ThreatPlates.DEFAULT_SETTINGS = {
             Input = "",
             AsArray = {}, -- Generated after entering Input with Addon.Split
           },
+          Script = {
+            -- Only here to avoid Lua errors without adding to may checks for this particular trigger
+            Input = "",
+            AsArray = {}, -- Generated after entering Input with Addon.Split
+          }
         },
         Effects = {
           Glow = {
@@ -1179,6 +1238,16 @@ ThreatPlates.DEFAULT_SETTINGS = {
           g = 1,
           b = 1,
         },
+        Scripts = {
+          Type = "Standard",
+          Function = "Create",
+          Event = "",
+          Code = {
+            Functions = {},
+            Events = {},
+            Legacy = ""
+          },
+        }
       },
     },
     CVarsBackup = {}, -- Backup for CVars that should be restored when TP is disabled
@@ -1247,7 +1316,7 @@ ThreatPlates.DEFAULT_SETTINGS = {
       },
       castnostop = {
         show = true, -- no longer used
-        ShowOverlay = (Addon.CLASSIC and false) or true,
+        ShowOverlay = true,
         ShowInterruptShield = false,
       },
       castborder = {
@@ -1359,7 +1428,9 @@ ThreatPlates.DEFAULT_SETTINGS = {
         flags = "NONE",
         --
         FriendlySubtext = "HEALTH",
+        FriendlySubtextCustom = "",
         EnemySubtext = "HEALTH",
+        EnemySubtextCustom = "",
         SubtextColorUseHeadline = false,
         SubtextColorUseSpecific = false,
         SubtextColor =  RGB(255, 255, 255, 1),

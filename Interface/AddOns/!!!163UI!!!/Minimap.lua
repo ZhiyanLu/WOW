@@ -1,4 +1,5 @@
 local _ = ...;
+local LSUP = LibStub'LibShowUIPanel-1.0'
 local L = select(2, ...).L
 
 --必须在hook之前设置
@@ -117,9 +118,13 @@ local function mmbHookOnClick(self, ...)
         U1_MMBUpdateUI();
     else
         --U1_CloseCompactMode(); --还原并不好用.
-        -- if not InCombatLockdown() and GameMenuFrame:IsVisible() then
-        --     HideUIPanel(GameMenuFrame);
-        -- end
+        if GameMenuFrame:IsVisible() then
+            if InCombatLockdown() then
+                LSUP.OnCallHideUIPanel(GameMenuFrame);
+            else
+                HideUIPanel(GameMenuFrame);
+            end
+        end
         UUI.Raise(false);
         if(self._originOnClick) then
             self._originOnClick(self, ...);

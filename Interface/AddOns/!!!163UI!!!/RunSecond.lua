@@ -4,7 +4,7 @@ EnableAddOn("!!!Libs") LoadAddOn("!!!Libs") --不能在CoreLibs之前，不能�
 
 
 local _RemovedAddOn = {
-    "!!!163UI.3dcodecmd!!!",
+    -- "!!!163UI.3dcodecmd!!!",
     "HandyNotes_Arathi",
     "TomCats-DarkshoreRares", "TomCats-Mechagon", "TomCats-Nazjatar",
     "DBM-Argus", "DBM-Azeroth-BfA", "DBM-GarrisonInvasions",
@@ -17,7 +17,10 @@ local _RemovedAddOn = {
     "ItemLevelDisplay",
     "Dominos_CastClassic",
     "AzeritePowerWeights", "AzeriteTooltip",
-	"Paku_Totems", "BFAInvasionTimer", "BFAInvasionTimer_Options",
+    "GridStatusRaidDebuff", "GridStatusRD_BfA", "GridStatusRD_Legion", "GridStatusRD_MoP", "GridStatusRD_WoD",
+    "KayrCovenantMissions",
+    -- "CompactRaid",
+    "DBM-DefaultSkin",
 };
 function U1RemovedAddOn(...)
     local removed = {}
@@ -25,16 +28,16 @@ function U1RemovedAddOn(...)
         local addon = select(i, ...)
         local reason = select(5, GetAddOnInfo(addon))
         if reason ~= "MISSING" then
-            -- local vendor = GetAddOnMetadata(addon, "X-Vendor")
-            -- if vendor and vendor:upper() == "NETEASE" then
+            local vendor = GetAddOnMetadata(addon, "X-Vendor")
+            if vendor and vendor:upper() == "NETEASE" then
                 DisableAddOn(addon)
                 table.insert(removed, addon)
-            -- end
+            end
         end
     end
-    if #removed > 0 then
-        U1Message("插件"..table.concat(removed, ",").."已废弃，请使用客户端更新或手工删除")
-    end
+    -- if #removed > 0 then
+    --     U1Message("插件"..table.concat(removed, ",").."已废弃，请使用客户端更新或手工删除")
+    -- end
 end
 U1RemovedAddOn(unpack(_RemovedAddOn))
 local _RemovedAddOnHash = {  };
@@ -46,6 +49,7 @@ end
 U1._RemovedAddOnHash = _RemovedAddOnHash;
 
 ---LibSharedMedia Options, { type = "drop", options = CtlSharedMediaOptions("statusbar"), }
+-- used in 163UI_CombatTimer
 local optionsFuncs, optionsLists;
 function CtlSharedMediaOptions(type)
     optionsFuncs = optionsFuncs or {};
@@ -82,7 +86,7 @@ end
 --按ESC时, AceConfigDialog先关闭, 并阻止界面窗口和网易有爱关闭
 hooksecurefunc("StaticPopup_EscapePressed", function()
     if LibStub("AceConfigDialog-3.0"):CloseAll() then
-        GameMenuFrame:Show()
+        -- GameMenuFrame:Show()
     end
 end)
 
@@ -351,7 +355,7 @@ end)
 --被世界任务完成框遮挡
 CastingBarFrame:SetFrameStrata("DIALOG")
 
-if false and select(2, GetBuildInfo()) == "24330" then
+--[[if false and select(2, GetBuildInfo()) == "24330" then
     hooksecurefunc("SendChatMessage", function(msg, ...)
         local needSend = false
         while(true) do
@@ -374,7 +378,7 @@ if false and select(2, GetBuildInfo()) == "24330" then
         end
     end)
 end
-
+]]
 local UpdateAddOnMemoryUsageOrigin = UpdateAddOnMemoryUsage
 function UpdateAddOnMemoryUsage()
     if not InCombatLockdown() then
@@ -384,38 +388,38 @@ end
 
 SetCVar("nameplateShowDebuffsOnFriendly", "0")
 
-AbbreviateNumbers163 = AbbreviateLargeNumbers
-if _G.AbbreviateLargeNumbers and GetLocale():sub(1,2) == "zh" then
-    function AbbreviateLargeNumbers163(value)
-        local strLen = strlen(value);
-        if ( strLen >= 11 ) then
-            return string.sub(value, 1, -9)..SECOND_NUMBER_CAP;
-        else
-            return _G.AbbreviateLargeNumbers(value)
-        end
-    end
-end
+-- AbbreviateNumbers163 = AbbreviateLargeNumbers
+-- if _G.AbbreviateLargeNumbers and GetLocale():sub(1,2) == "zh" then
+--     function AbbreviateLargeNumbers163(value)
+--         local strLen = strlen(value);
+--         if ( strLen >= 11 ) then
+--             return string.sub(value, 1, -9)..SECOND_NUMBER_CAP;
+--         else
+--             return _G.AbbreviateLargeNumbers(value)
+--         end
+--     end
+-- end
 
-AbbreviateNumbers163 = AbbreviateNumbers
-if GetLocale():sub(1,2) == "zh" then
-    local NUMBER_ABBREVIATION_DATA = {
-        -- Order these from largest to smallest
-        -- (significandDivisor and fractionDivisor should multiply to be equal to breakpoint)
-        { breakpoint = 10000000000,	abbreviation = SECOND_NUMBER_CAP_NO_SPACE,	significandDivisor = 100000000,	fractionDivisor = 1 },
-        { breakpoint = 100000000,	abbreviation = SECOND_NUMBER_CAP_NO_SPACE,	significandDivisor = 10000000,  fractionDivisor = 10 },
-        { breakpoint = 1000000,	    abbreviation = FIRST_NUMBER_CAP_NO_SPACE,	significandDivisor = 10000,	    fractionDivisor = 1 },
-        { breakpoint = 10000,		abbreviation = FIRST_NUMBER_CAP_NO_SPACE,	significandDivisor = 1000,	    fractionDivisor = 10 },
-    }
-    function AbbreviateNumbers163(value)
-        for i, data in ipairs(NUMBER_ABBREVIATION_DATA) do
-            if value >= data.breakpoint then
-                local finalValue = math.floor(value / data.significandDivisor) / data.fractionDivisor;
-                return finalValue .. data.abbreviation;
-            end
-        end
-        return tostring(value);
-    end
-end
+-- AbbreviateNumbers163 = AbbreviateNumbers
+-- if GetLocale():sub(1,2) == "zh" then
+--     local NUMBER_ABBREVIATION_DATA = {
+--         -- Order these from largest to smallest
+--         -- (significandDivisor and fractionDivisor should multiply to be equal to breakpoint)
+--         { breakpoint = 10000000000,	abbreviation = SECOND_NUMBER_CAP_NO_SPACE,	significandDivisor = 100000000,	fractionDivisor = 1 },
+--         { breakpoint = 100000000,	abbreviation = SECOND_NUMBER_CAP_NO_SPACE,	significandDivisor = 10000000,  fractionDivisor = 10 },
+--         { breakpoint = 1000000,	    abbreviation = FIRST_NUMBER_CAP_NO_SPACE,	significandDivisor = 10000,	    fractionDivisor = 1 },
+--         { breakpoint = 10000,		abbreviation = FIRST_NUMBER_CAP_NO_SPACE,	significandDivisor = 1000,	    fractionDivisor = 10 },
+--     }
+--     function AbbreviateNumbers163(value)
+--         for i, data in ipairs(NUMBER_ABBREVIATION_DATA) do
+--             if value >= data.breakpoint then
+--                 local finalValue = math.floor(value / data.significandDivisor) / data.fractionDivisor;
+--                 return finalValue .. data.abbreviation;
+--             end
+--         end
+--         return tostring(value);
+--     end
+-- end
 
 CoreDependCall("Blizzard_ArtifactUI", function()
     if not (ArtifactFrame and ArtifactFrame.PerksTab and ArtifactFrame.PerksTab.TitleContainer and ArtifactFrame.PerksTab.TitleContainer.PointsRemainingLabel) then return end
@@ -454,7 +458,7 @@ CoreDependCall("Blizzard_ArtifactUI", function()
                 end
             end
 
-    		self:SetText(AbbreviateLargeNumbers163(Round(self.targetAnimatedValue))..percent);
+    		self:SetText((Round(self.targetAnimatedValue))..percent);
     		self.currentAnimatedValue = self.targetAnimatedValue;
     		self.targetAnimatedValue = nil;
     	end

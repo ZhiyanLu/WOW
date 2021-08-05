@@ -1,6 +1,6 @@
 U1RegisterAddon("CovenantForge", {
     title = "导灵器特质评分",
-    defaultEnable = 1,
+    defaultEnable = 0,
     load = "LATER",
     tags = { "TAG_EQUIPMENT", },
     icon = 1869493,

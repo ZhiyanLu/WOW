@@ -98,7 +98,7 @@ function Addon:OnEnter(mapID, coord)
         GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
     end
 
-    node:Render(GameTooltip, map:HasPOIs(node))
+    node:Render(GameTooltip, map:CanFocus(node))
     map:SetFocus(node, true, true)
     ns.MinimapDataProvider:RefreshAllData()
     ns.WorldMapDataProvider:RefreshAllData()
@@ -123,7 +123,7 @@ function Addon:OnClick(button, down, mapID, coord)
         end
         ToggleDropDownMenu(1, nil, DropdownMenu, self, 0, 0)
     elseif button == "LeftButton" and down then
-        if map:HasPOIs(node) then
+        if map:CanFocus(node) then
             map:SetFocus(node, not node._focus)
             Addon:Refresh()
         end
@@ -143,11 +143,8 @@ function Addon:OnInitialize()
     ns.CreateGlobalGroupOptions()
 
     -- Add quick-toggle menu button to top-right corner of world map
-    WorldMapFrame:AddOverlayFrame(
-        ADDON_NAME.."WorldMapOptionsButtonTemplate",
-        "DROPDOWNTOGGLEBUTTON", "TOPRIGHT",
-        WorldMapFrame:GetCanvasContainer(), "TOPRIGHT", -68, -2
-    )
+    local template = ADDON_NAME.."WorldMapOptionsButtonTemplate"
+    ns.world_map_button = LibStub("Krowi_WorldMapButtons-1.0"):Add(template, "DROPDOWNTOGGLEBUTTON")
 
     -- Query localized expansion title
     if not ns.expansion then error('Expansion not set: '..ADDON_NAME) end
@@ -169,7 +166,7 @@ function Addon:RegisterWithHandyNotes()
             local coord, node = next(nodes, precoord)
             while coord do -- Have we reached the end of this zone?
                 if node and (force or map:IsNodeEnabled(node, coord, minimap)) then
-                    local icon, scale, alpha = node:GetDisplayInfo(minimap)
+                    local icon, scale, alpha = node:GetDisplayInfo(map.id, minimap)
                     return coord, nil, icon, scale, alpha
                 end
                 coord, node = next(nodes, coord) -- Get next node

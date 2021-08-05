@@ -186,35 +186,17 @@ function Addon:GetDatabaseDefaults()
             showTooltipsCombat = true,
             useOverrideUI = not self:IsBuild('classic'),
 
-            minimap = {
-                hide = false
-            },
+            minimap = {hide = false},
 
-            ab = {
-                count = 10,
-                showgrid = true,
-                rightClickUnit = 'player'
-            },
+            ab = {count = 10, showgrid = true, rightClickUnit = 'player'},
 
-            frames = {
-                bags = {
-                    point = 'BOTTOMRIGHT',
-                    oneBag = false,
-                    keyRing = true,
-                    spacing = 2
-                }
-            },
+            frames = {bags = {point = 'BOTTOMRIGHT', oneBag = false, keyRing = true, spacing = 2}},
 
-            alignmentGrid = {
-                enabled = true,
-                size = 32
-            },
+            alignmentGrid = {enabled = true, size = 32},
 
             -- what modules are enabled
             -- module[id] = enabled
-            modules = {
-                ['**'] = true
-            }
+            modules = {['**'] = true}
         }
     }
 end
@@ -743,17 +725,12 @@ function Addon:GetAlignmentGridSize()
 end
 
 function Addon:GetAlignmentGridScale()
-    local gridSize = self:GetAlignmentGridSize()
-    if gridSize <= 0 then
-        return 0, 0
-    end
-
-    local aspectRatio = GetScreenWidth() / GetScreenHeight()
-    local xScale = _G.Round(gridSize / 2) * 2
-    local yScale = _G.Round((xScale / aspectRatio) / 2) * 2
-
-    return xScale, yScale
+    -- due to changes in Dominos_Config\overlay\ui.lua to
+    -- function "DrawGrid", grid now displays with perfectly square subdivisions.
+    local gridScale = GetScreenHeight() / (Addon:GetAlignmentGridSize() * 2)
+    return gridScale, gridScale
 end
+
 --------------------------------------------------------------------------------
 -- Utility Methods
 --------------------------------------------------------------------------------
@@ -769,9 +746,9 @@ function Addon:GetWowBuild()
 
     if project == WOW_PROJECT_CLASSIC then
         return 'classic'
-    end
-
-    if project == WOW_PROJECT_MAINLINE then
+    elseif project == WOW_PROJECT_BURNING_CRUSADE_CLASSIC then
+        return 'bcc'
+    elseif project == WOW_PROJECT_MAINLINE then
         return 'retail'
     end
 

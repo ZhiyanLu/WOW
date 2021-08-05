@@ -16,6 +16,14 @@
 			InterfaceOptionsFrame_OpenToCategory("Quartz 3")
         end 
     },
+	{ 
+        type = 'button', 
+        text = '重置所有设置为默认', 
+        callback = function() 
+            Quartz3DB = nil;
+            ReloadUI();
+        end 
+    },
     {
         var = "charmingCastBar",
         default = 0,
@@ -29,9 +37,9 @@
         callback = function(cfg, v, loading)
             if Quartz3CastBarPlayer and Quartz3CastBarPlayer.Bar then
                 if v ~= 0 then
-                    __163_HookCastingBarFrame(Quartz3CastBarPlayer.Bar, v);
+                    _163UIPlugin.CastingFrame.Enable(Quartz3CastBarPlayer.Bar, v);
                 else
-                    __163_UnhookCastingBarFrame(Quartz3CastBarPlayer.Bar);
+                    _163UIPlugin.CastingFrame.Disable(Quartz3CastBarPlayer.Bar);
                 end
             end
         end

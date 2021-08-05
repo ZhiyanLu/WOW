@@ -1,11 +1,11 @@
 local mod	= DBM:NewMod(2394, "DBM-CastleNathria", nil, 1190)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20201228233217")
+mod:SetRevision("20210224082525")
 mod:SetCreatureID(164407)
 mod:SetEncounterID(2399)
 mod:SetUsedIcons(1)
-mod:SetHotfixNoticeRev(20201228000000)--2020, 12, 28
+mod:SetHotfixNoticeRev(20210119000000)--2021, 01, 19
 mod:SetMinSyncRevision(20201228000000)
 mod.respawnTime = 29
 
@@ -67,7 +67,6 @@ local timerSiesmicShiftCD						= mod:NewCDCountTimer(34, 340817, nil, nil, nil, 
 --local berserkTimer							= mod:NewBerserkTimer(600)
 
 mod:AddRangeFrameOption(5, 340817)
---mod:AddInfoFrameOption(342410, true)
 mod:AddSetIconOption("SetIconGaze", 331209, true, false, {1})
 
 mod.vb.gazeCount = 0
@@ -99,28 +98,28 @@ function mod:OnCombatStart(delay)
 	self.vb.rubbleCount = 0
 	playerPartner = nil
 	table.wipe(ChainLinkTargets)
-	timerChainLinkCD:Start(4.7-delay, 1)
-	timerFallingRubbleCD:Start(12.5-delay, 1)
-	timerDestructiveStompCD:Start(18.2-delay, 1)
---	timerColossalRoarCD:Start(1-delay)--Cast instantly on pull
-	timerHatefulGazeCD:Start(50.1-delay, 1)
-	if self:IsHard() then
-		timerChainSlamCD:Start(28.3-delay, 1)
-		if self:IsMythic() then
-			self.vb.shiftCount = 0
-			timerSiesmicShiftCD:Start(18.1, 1)
+	--Roar cast instantly on pull, no timer needed
+	if self:IsLFR() then
+		timerFallingRubbleCD:Start(12.1-delay, 1)--Unknown, not in combat log
+		timerDestructiveStompCD:Start(18.5-delay, 1)
+		timerHatefulGazeCD:Start(51.3-delay, 1)
+	else
+		timerChainLinkCD:Start(4.7-delay, 1)
+		timerFallingRubbleCD:Start(12.5-delay, 1)
+		timerDestructiveStompCD:Start(18.2-delay, 1)
+		timerHatefulGazeCD:Start(50.1-delay, 1)
+		if self:IsHard() then
+			timerChainSlamCD:Start(28.3-delay, 1)
+			if self:IsMythic() then
+				self.vb.shiftCount = 0
+				timerSiesmicShiftCD:Start(18.1, 1)
+			end
 		end
 	end
---	if self.Options.RangeFrame then
---		DBM.RangeCheck:Show(4)
---	end
 --	berserkTimer:Start(-delay)
 end
 
 function mod:OnCombatEnd()
---	if self.Options.InfoFrame then
---		DBM.InfoFrame:Hide()
---	end
 	if self.Options.RangeFrame then
 		DBM.RangeCheck:Hide()
 	end
@@ -139,7 +138,7 @@ function mod:SPELL_CAST_START(args)
 		if self.vb.stompCount % 2 == 0 then
 			timerDestructiveStompCD:Start(43, self.vb.stompCount+1)
 		else
-			timerDestructiveStompCD:Start(25, self.vb.stompCount+1)
+			timerDestructiveStompCD:Start(25, self.vb.stompCount+1)--LFR is only about .5 seconds slower, so not worth nitpick
 		end
 	end
 end
@@ -150,7 +149,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		self.vb.roarCount = self.vb.roarCount + 1
 		specWarnColossalRoar:Show()
 		specWarnColossalRoar:Play("aesoon")
-		timerColossalRoarCD:Start(31.9, self.vb.roarCount+1)
+		timerColossalRoarCD:Start(self:IsLFR() and 33.2 or 31.9, self.vb.roarCount+1)
 	end
 end
 
@@ -158,7 +157,7 @@ function mod:SPELL_AURA_APPLIED(args)
 	local spellId = args.spellId
 	if spellId == 331209 then
 		self.vb.gazeCount = self.vb.gazeCount + 1
-		timerHatefulGazeCD:Start(67.3, self.vb.gazeCount+1)
+		timerHatefulGazeCD:Start(self:IsLFR() and 70.3 or 67.3, self.vb.gazeCount+1)
 		if self.Options.SetIconGaze then
 			self:SetIcon(args.destName, 1)
 		end

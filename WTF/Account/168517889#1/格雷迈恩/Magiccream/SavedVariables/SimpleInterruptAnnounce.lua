@@ -9,15 +9,15 @@ SIACFG = {
 		["other"] = "off",
 		["own"] = "self",
 	},
-	["cfgversion"] = 1,
 	["isEnabled"] = true,
-	["soundOther"] = 623880,
-	["instance"] = {
-		["other"] = "self",
-		["own"] = "self",
-	},
+	["cfgversion"] = 1,
 	["raid"] = {
 		["other"] = "self",
 		["own"] = "self",
 	},
+	["instance"] = {
+		["other"] = "self",
+		["own"] = "self",
+	},
+	["soundOther"] = 623880,
 }

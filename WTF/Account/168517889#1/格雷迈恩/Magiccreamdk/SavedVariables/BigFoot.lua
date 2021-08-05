@@ -16,14 +16,6 @@ BF_Frames_Config = {
 	},
 	["CoolLine"] = {
 	},
-	["BCanMove"] = false,
-	["BUFFocusFrame"] = {
-		["offX"] = -58.9999961853027,
-		["point"] = "TOPLEFT",
-		["region"] = "UIParent",
-		["offY"] = -20.83664894104,
-		["refPoint"] = "TOPLEFT",
-	},
 	["TrinketMenu_MainFrame"] = {
 		["offX"] = 699.5103759765625,
 		["point"] = "TOPLEFT",
@@ -31,6 +23,14 @@ BF_Frames_Config = {
 		["offY"] = 346.7890625,
 		["refPoint"] = "BOTTOMLEFT",
 	},
+	["BUFFocusFrame"] = {
+		["offX"] = -58.9999961853027,
+		["point"] = "TOPLEFT",
+		["region"] = "UIParent",
+		["offY"] = -20.83664894104,
+		["refPoint"] = "TOPLEFT",
+	},
+	["BCanMove"] = false,
 }
 BigFoot_Character = {
 	["Region"] = "cn0",

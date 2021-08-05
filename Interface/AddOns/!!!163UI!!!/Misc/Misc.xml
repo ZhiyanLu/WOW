@@ -2,6 +2,7 @@
 ..\FrameXML\UI.xsd">
 
 
+    <Script file="163UIDBCodec.lua"/>
     <!-- <Script file="OhMyEye.lua"/> -->
     <Script file="Inst_strategy.lua"/>
     <Script file="Simple.lua"/>

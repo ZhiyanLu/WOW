@@ -12,6 +12,7 @@ Combuctor_Sets = {
 	},
 	["soulColor"] = {
 	},
+	["locked"] = true,
 	["quiverColor"] = {
 	},
 	["reagentColor"] = {
@@ -28,7 +29,9 @@ Combuctor_Sets = {
 	},
 	["mineColor"] = {
 	},
-	["version"] = "9.0.2",
+	["version"] = "9.1.0",
+	["fridgeColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -168,7 +171,5 @@ Combuctor_Sets = {
 			},
 			["height"] = 550.3704833984375,
 		},
-	},
-	["fridgeColor"] = {
 	},
 }

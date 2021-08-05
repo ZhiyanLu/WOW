@@ -1,14 +1,17 @@
 # BattleGroundEnemies
 
-## [9.0.2.7-9-geba77fd](https://github.com/bullsei/BattleGroundEnemies/tree/eba77fdd0473e8e64d632f57dd1dac459ac50abf) (2021-01-04)
-[Full Changelog](https://github.com/bullsei/BattleGroundEnemies/compare/9.0.2.7...eba77fdd0473e8e64d632f57dd1dac459ac50abf) [Previous Releases](https://github.com/bullsei/BattleGroundEnemies/releases)
+## [9.0.5.6-12-g3519581](https://github.com/BullseiWoWAddons/BattleGroundEnemies/tree/3519581f8458675776f834b96d783f750d60f159) (2021-07-11)
+[Full Changelog](https://github.com/BullseiWoWAddons/BattleGroundEnemies/compare/9.0.5.6...3519581f8458675776f834b96d783f750d60f159) [Previous Releases](https://github.com/BullseiWoWAddons/BattleGroundEnemies/releases)
 
-- These need to be local variables of course  
-- Reworked the auracontainer code  
-- Cleaned up the positioning code and fixed a issue reported by glaiverobber. Thanks for teh report  
-- Clean up  
-- Forgot to uncomment this ...  
-- thats how it should be  
-- Removed unused argument  
-- Cleaned up the auracode and some minor changes  
-- Removed a duplicate and a not used entry defaults  
+- Removed LibGroupInSpecT-1.1 from TBCC package  
+- Fix for TBCC arena  
+- Removed the requirement for the race to make it work for same faction BGs on TBCC, also added the map id for eye of the storm in TBCC  
+- :)  
+- added more prints  
+- Added some print messages to debug problems in TBCC  
+- well, i am dumb  
+- This event doesnt exist in TBC  
+- thanks to luacheck :)  
+- Added Initial support for arenas  
+- Added first version of arena support  
+- Updated Toc for 9.1  

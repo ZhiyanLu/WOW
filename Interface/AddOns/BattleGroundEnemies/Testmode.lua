@@ -1,12 +1,14 @@
 local addonName, Data = ...
 local BattleGroundEnemies = BattleGroundEnemies
 
-local L = LibStub("AceLocale-3.0"):GetLocale("BattleGroundEnemies")
+local L = Data.L
 local LibRaces = LibStub("LibRaces-1.0")
 local LibPlayerSpells = LibStub("LibPlayerSpells-1.0")
 
 local PlayerLevel = UnitLevel("player")
 
+local isRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
+local isTBCC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
 
 local mathrandom = math.random
 local tinsert = table.insert
@@ -25,16 +27,20 @@ local function SetupTestmode()
 	do
 		local count = 1
 		for triggerSpellID, tinketNumber in pairs(Data.TriggerSpellIDToTrinketnumber) do
-			randomTrinkets[count] = triggerSpellID
-			count = count + 1
+			if GetSpellInfo(triggerSpellID) then
+				randomTrinkets[count] = triggerSpellID
+				count = count + 1
+			end
 		end
 	end
 
 	do
 		local count = 1
 		for racialSpelliD, cd in pairs(Data.RacialSpellIDtoCooldown) do
-			randomRacials[count] = racialSpelliD
-			count = count + 1
+			if GetSpellInfo(racialSpelliD) then
+				randomRacials[count] = racialSpelliD
+				count = count + 1
+			end
 		end
 	end
 end
@@ -61,19 +67,43 @@ end
 do
 	local counter
 	
-	
-	function BattleGroundEnemies:FillFakePlayerData(amount, playerType, role)
+	function BattleGroundEnemies:FillFakePlayerData(BGSize, amount, playerType, role)
 		for i = 1, amount do
-			local randomSpec = Data.RolesToSpec[role][mathrandom(1, #Data.RolesToSpec[role])]
-			local classTag = randomSpec.classTag
-			local specName = randomSpec.specName
-			local name = L[playerType]..counter.."-Realm"..counter
+	
+			local classTag, randomSpec, specName
+			if isTBCC then
+				classTag = Data.ClassList[mathrandom(1, #Data.ClassList)]
+			else
+				randomSpec = Data.RolesToSpec[role][mathrandom(1, #Data.RolesToSpec[role])]
+				classTag = randomSpec.classTag
+				specName = randomSpec.specName
+			end
+			
+			local unitID, name
+			if BGSize == 5 then
+				if playerType == "Enemy" then
+					unitID = "arena"..counter 
+				else
+					if counter == 1 then
+						unitID = "player"
+					else
+						unitID = "party"..(counter -1)
+					end
+				end
+			else
+				name = L[playerType]..counter.."-Realm"..counter
+			end
+
+			name = unitID or name
+
+			
 			fakePlayers[name] = {
 				PlayerClass = classTag,
 				PlayerName = name,
-				PlayerSpecName = specName,
+				PlayerSpecName = specName, --will be nil for TBCC
 				PlayerClassColor = RAID_CLASS_COLORS[classTag],
-				PlayerLevel = mathrandom(PlayerLevel - 5, PlayerLevel)
+				PlayerLevel = mathrandom(PlayerLevel - 5, PlayerLevel),
+				unit = unitID
 			}
 			counter = counter + 1
 		end
@@ -85,9 +115,10 @@ do
 		
 			playerType:RemoveAllPlayers()
 			
-		
+			if self.BGSize ~= 5 then
+				playerType:UpdatePlayerCount(self.BGSize)
+			end
 			
-			playerType:UpdatePlayerCount(self.BGSize)
 			
 			
 			
@@ -97,12 +128,15 @@ do
 			
 			
 			counter = 1
-			BattleGroundEnemies:FillFakePlayerData(healerAmount, playerType.PlayerType == "Enemies" and "Enemy" or "Ally", "HEALER")
-			BattleGroundEnemies:FillFakePlayerData(tankAmount, playerType.PlayerType == "Enemies" and "Enemy" or "Ally", "TANK")
-			BattleGroundEnemies:FillFakePlayerData(damagerAmount, playerType.PlayerType == "Enemies" and "Enemy" or "Ally", "DAMAGER")
+			BattleGroundEnemies:FillFakePlayerData(self.BGSize, healerAmount, playerType.PlayerType == "Enemies" and "Enemy" or "Ally", "HEALER")
+			BattleGroundEnemies:FillFakePlayerData(self.BGSize, tankAmount, playerType.PlayerType == "Enemies" and "Enemy" or "Ally", "TANK")
+			BattleGroundEnemies:FillFakePlayerData(self.BGSize, damagerAmount, playerType.PlayerType == "Enemies" and "Enemy" or "Ally", "DAMAGER")
 			
 			for name, enemyDetails in pairs(fakePlayers) do
-				playerType:SetupButtonForNewPlayer(enemyDetails)
+				local playerButton = playerType:SetupButtonForNewPlayer(enemyDetails)
+				if not isTBCC then
+					playerButton.Covenant:DisplayCovenant(mathrandom(1, #Data.CovenantIcons))  
+				end
 			end
 			playerType:SortPlayers()
 		end
@@ -181,10 +215,10 @@ do
 						local health = mathrandom(0, 100)
 						if health == 0 and holdsflag ~= playerButton then --don't let players die that are holding a flag at the moment
 							--BattleGroundEnemies:Debug("dead")
-							playerButton.Health:SetValue(0)
+							playerButton.healthBar:SetValue(0)
 							playerButton.ObjectiveAndRespawn:PlayerDied(27)
 						else
-							playerButton.Health:SetValue(health/100) --player still alive
+							playerButton.healthBar:SetValue(health/100) --player still alive
 							
 							if BattleGroundEnemies.BGSize == 15 and number == 1 and not hasFlag and settings.ObjectiveAndRespawn_ObjectiveEnabled then --this guy has a objective now
 							
@@ -235,11 +269,16 @@ do
 								--self:Debug("Nummber5")
 								local auraType, spellID
 								auraType = "DEBUFF"
-								spellID = harmfulPlayerSpells[mathrandom(1, #harmfulPlayerSpells)]
-								playerButton:AuraApplied(spellID, (GetSpellInfo(spellID)), UnitName("player"), auraType)
+								if #harmfulPlayerSpells > 1 then
+									spellID = harmfulPlayerSpells[mathrandom(1, #harmfulPlayerSpells)]
+									playerButton:AuraApplied(spellID, (GetSpellInfo(spellID)), UnitName("player"), auraType)
+								end
+								
 								auraType = "BUFF"
-								spellID = helpfulPlayerSpells[mathrandom(1, #helpfulPlayerSpells)]
-								playerButton:AuraApplied(spellID, (GetSpellInfo(spellID)), UnitName("player"), auraType)
+								if #helpfulPlayerSpells > 1 then
+									spellID = helpfulPlayerSpells[mathrandom(1, #helpfulPlayerSpells)]
+									playerButton:AuraApplied(spellID, (GetSpellInfo(spellID)), UnitName("player"), auraType)
+								end
 							elseif number == 6 then --power simulation
 								local power = mathrandom(0, 100)
 								playerButton.Power:SetValue(power/100)
@@ -263,7 +302,7 @@ do
 					end
 					if number == 6 then --toggle range
 						if playerType.config.RangeIndicator_Enabled then
-							playerButton:UpdateRange((playerButton.RangeIndicator:GetAlpha() ~= 1) and true or false)
+							playerButton:UpdateRange((playerButton.oldAlpha ~= 1) and true or false)
 						end
 					end
 				end

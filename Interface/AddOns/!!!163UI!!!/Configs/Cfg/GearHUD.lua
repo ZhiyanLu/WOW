@@ -1,3 +1,5 @@
+local _bakup = nil;
+
 U1RegisterAddon("GearHUD", {
     title = "齿轮血量提示",
     tags = { "TAG_COMBATINFO", },
@@ -9,10 +11,12 @@ U1RegisterAddon("GearHUD", {
     defaultEnable  = 1,
     
     toggle = function(name, info, enable, justload)
-        togglehook(nil, "GearHud_OnEvent", noop, not enable);
+        _bakup = _bakup or _G["GearHud_OnEvent"];
         if not enable then
+            _G["GearHud_OnEvent"] = noop;
             GearHud:Hide()
         else
+            _G["GearHud_OnEvent"] = _bakup;
             GearHud:Show()
             GearHud_Update(0);
         end

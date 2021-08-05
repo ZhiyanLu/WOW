@@ -1,16 +1,45 @@
-lightweight tag 92782ffb5be341bd296b7fe4fed9364c48ea2c05 1.5.6
-Author:	Buds <mrbouyou@gmail.com>
-Date:	Sat Jan 9 17:53:32 2021 +0100
+Changes since tag 1.5.6
 
-commit 92782ffb5be341bd296b7fe4fed9364c48ea2c05
+commit feea6a3cbf3a9e0e3d458b10ef4e0db48cec5cec
 Author: Buds <mrbouyou@gmail.com>
-Date:   Sat Jan 9 17:53:32 2021 +0100
+Date:   Sat Jul 10 22:18:26 2021 +0200
 
-    listen INSTANCE_ENCOUNTER_ENGAGE_UNIT event for new boss units
+    add ignoreFocusFrame & focusFrames property
 
-commit 3182bb377160c00b417affaaf2a02216f5e33979
+commit b21517cd16f35755a5d0276a8a3f7f76a5a35059
 Author: Buds <mrbouyou@gmail.com>
-Date:   Mon Jan 4 23:17:35 2021 +0100
+Date:   Wed May 19 00:26:53 2021 +0200
 
-    make GetUnitFrames more resilient to bad input
+    Create LICENCE.txt
+
+commit 35da53585d82ccd13f7402f0b8b578ab8e826489
+Author: Buds <mrbouyou@gmail.com>
+Date:   Wed Jan 27 06:14:31 2021 +0100
+
+    add ignoreRaidFrame (default false) & raidFrames options
+
+commit 88001ad77fe3ad929b70e01e8ffb6370bd9b56e9
+Author: Buds <mrbouyou@gmail.com>
+Date:   Tue Jan 26 18:22:25 2021 +0100
+
+    update README.md
+
+commit d8aa6e1217a7295b59b5cb7a92979c39567ec0be
+Author: Buds <mrbouyou@gmail.com>
+Date:   Tue Jan 26 18:11:02 2021 +0100
+
+    bump minor
+
+commit 119d90033d6343e69a296a92f2ee7b34e6bcecb6
+Author: Buds <mrbouyou@gmail.com>
+Date:   Tue Jan 26 17:48:05 2021 +0100
+
+    simplify defaultFramePriorities
+
+commit 55bdf9e691646c1579d6990ca5588f46fba0310b
+Author: Buds <mrbouyou@gmail.com>
+Date:   Tue Jan 26 17:45:43 2021 +0100
+
+    add ignorePartyFrame & partyFrames options
+    fixes #13
 

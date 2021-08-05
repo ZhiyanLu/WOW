@@ -149,7 +149,15 @@ kModelConstants =
         BaseOfsX = -0.15, BaseOfsY = 0.72,
         BaseStepX = 3454, BaseStepY = 3200,
         IsSkewed = true, HorizontalSlope = 0,
-    },    
+    },
+    [1617293] = { -- "spells/7fx_kiljaeden_focuseddreadflame_precast.m2"
+        Name = kCategory.Spots .. "Fire Orb",
+        BaseScale = 0.09, BaseFacing = 0,
+        BaseOfsX = 0, BaseOfsY = 0,
+        BaseStepX = 3300, BaseStepY = 3140,
+        IsSkewed = true, HorizontalSlope = 0,
+        SkewTopMult = 0.95, SkewBottomMult = 1.06,
+    },
     [166381] = {  -- "spells/ice_precast_low_hand.m2"
         Name = kCategory.Spots .. "Frost",
         BaseScale = 0.12, BaseFacing = 0,
@@ -192,7 +200,16 @@ kModelConstants =
         BaseStepX = 3430, BaseStepY = 3160,
         IsSkewed = true, HorizontalSlope = 0, 
     },
-    
+
+    [975870] = { -- "spells/warlock_demonbolt_missile01.m2"
+        Name = kCategory.Spots .. "Swirling, Demonbolt",
+        BaseScale = 0.025, BaseFacing = 0,
+        BaseOfsX = 0.025, BaseOfsY = 1.35,
+        BaseStepX = 3470, BaseStepY = 3220,
+        IsSkewed = true, HorizontalSlope = 0,
+        SkewTopMult = 1, SkewBottomMult = 1.1,
+    },
+
     --~~~~~~~~~~~~~~~~~~~~~~~~~
     --[[  Continuous Trails  ]]
     --~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -315,7 +332,7 @@ kModelConstants =
     --~~~~~~~~~~~~~~~~~~~~~~~~
     --[[      Unused        ]]
     --~~~~~~~~~~~~~~~~~~~~~~~~
-    
+ 
 --~     [166026] = {  -- "spells/enchantments/soulfrostglow_high.m2"
 --~         Name = kCategory.Glow .. "Cloud, Black & Blue",
 --~         BaseScale = 0.17, BaseFacing = 0,

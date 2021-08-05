@@ -8,33 +8,33 @@ function AuctionatorSellingBagFrameMixin:OnLoad()
   self.allShowing = true
   self.frameMap = {
     [FAVOURITE] = self.ScrollFrame.ItemListingFrame.Favourites,
-    [LE_ITEM_CLASS_WEAPON] = self.ScrollFrame.ItemListingFrame.WeaponItems,
-    [LE_ITEM_CLASS_ARMOR] = self.ScrollFrame.ItemListingFrame.ArmorItems,
-    [LE_ITEM_CLASS_CONTAINER] = self.ScrollFrame.ItemListingFrame.ContainerItems,
-    [LE_ITEM_CLASS_GEM] = self.ScrollFrame.ItemListingFrame.GemItems,
-    [LE_ITEM_CLASS_ITEM_ENHANCEMENT] = self.ScrollFrame.ItemListingFrame.EnhancementItems,
-    [LE_ITEM_CLASS_CONSUMABLE] = self.ScrollFrame.ItemListingFrame.ConsumableItems,
-    [LE_ITEM_CLASS_GLYPH] = self.ScrollFrame.ItemListingFrame.GlyphItems,
-    [LE_ITEM_CLASS_TRADEGOODS] = self.ScrollFrame.ItemListingFrame.TradeGoodItems,
-    [LE_ITEM_CLASS_RECIPE] = self.ScrollFrame.ItemListingFrame.RecipeItems,
-    [LE_ITEM_CLASS_BATTLEPET] = self.ScrollFrame.ItemListingFrame.BattlePetItems,
-    [LE_ITEM_CLASS_QUESTITEM] = self.ScrollFrame.ItemListingFrame.QuestItems,
-    [LE_ITEM_CLASS_MISCELLANEOUS] = self.ScrollFrame.ItemListingFrame.MiscItems
+    [Enum.ItemClass.Weapon] = self.ScrollFrame.ItemListingFrame.WeaponItems,
+    [Enum.ItemClass.Armor] = self.ScrollFrame.ItemListingFrame.ArmorItems,
+    [Enum.ItemClass.Container] = self.ScrollFrame.ItemListingFrame.ContainerItems,
+    [Enum.ItemClass.Gem] = self.ScrollFrame.ItemListingFrame.GemItems,
+    [Enum.ItemClass.ItemEnhancement] = self.ScrollFrame.ItemListingFrame.EnhancementItems,
+    [Enum.ItemClass.Consumable] = self.ScrollFrame.ItemListingFrame.ConsumableItems,
+    [Enum.ItemClass.Glyph] = self.ScrollFrame.ItemListingFrame.GlyphItems,
+    [Enum.ItemClass.Tradegoods] = self.ScrollFrame.ItemListingFrame.TradeGoodItems,
+    [Enum.ItemClass.Recipe] = self.ScrollFrame.ItemListingFrame.RecipeItems,
+    [Enum.ItemClass.Battlepet] = self.ScrollFrame.ItemListingFrame.BattlePetItems,
+    [Enum.ItemClass.Questitem] = self.ScrollFrame.ItemListingFrame.QuestItems,
+    [Enum.ItemClass.Miscellaneous] = self.ScrollFrame.ItemListingFrame.MiscItems
   }
   self.orderedClassIds = {
     FAVOURITE,
-    LE_ITEM_CLASS_WEAPON,
-    LE_ITEM_CLASS_ARMOR,
-    LE_ITEM_CLASS_CONTAINER,
-    LE_ITEM_CLASS_GEM,
-    LE_ITEM_CLASS_ITEM_ENHANCEMENT,
-    LE_ITEM_CLASS_CONSUMABLE,
-    LE_ITEM_CLASS_GLYPH,
-    LE_ITEM_CLASS_TRADEGOODS,
-    LE_ITEM_CLASS_RECIPE,
-    LE_ITEM_CLASS_BATTLEPET,
-    LE_ITEM_CLASS_QUESTITEM,
-    LE_ITEM_CLASS_MISCELLANEOUS,
+    Enum.ItemClass.Weapon,
+    Enum.ItemClass.Armor,
+    Enum.ItemClass.Container,
+    Enum.ItemClass.Gem,
+    Enum.ItemClass.ItemEnhancement,
+    Enum.ItemClass.Consumable,
+    Enum.ItemClass.Glyph,
+    Enum.ItemClass.Tradegoods,
+    Enum.ItemClass.Recipe,
+    Enum.ItemClass.Battlepet,
+    Enum.ItemClass.Questitem,
+    Enum.ItemClass.Miscellaneous,
   }
 
   self.itemCategories = {}
@@ -106,6 +106,12 @@ function AuctionatorSellingBagFrameMixin:SetupFavourites()
   if Auctionator.Config.Get(Auctionator.Config.Options.SELLING_MISSING_FAVOURITES) then
     local moreFavourites = Auctionator.Selling.GetAllFavourites()
 
+    --Make favourite order independent of the order that the favourites were
+    --added.
+    table.sort(moreFavourites, function(left, right)
+      return Auctionator.Selling.UniqueBagKey(left) < Auctionator.Selling.UniqueBagKey(right)
+    end)
+
     for _, fav in ipairs(moreFavourites) do
       if seenKeys[Auctionator.Selling.UniqueBagKey(fav)] == nil then
         table.insert(self.items[FAVOURITE], CopyTable(fav))
@@ -117,7 +123,8 @@ end
 function AuctionatorSellingBagFrameMixin:Update()
   Auctionator.Debug.Message("AuctionatorSellingBagFrameMixin:Update()")
 
-  local height = 0
+  local minHeight = 0
+  local maxHeight = 0
   local classItems = {}
   local lastItem = nil
 
@@ -140,9 +147,10 @@ function AuctionatorSellingBagFrameMixin:Update()
 
     frame:AddItems(classItems)
 
-    height = height + frame.SectionTitle:GetHeight()
+    minHeight = minHeight + frame.SectionTitle:GetHeight()
+    maxHeight = maxHeight + frame:GetHeight()
   end
 
-  self:SetSize(self.frameMap[1]:GetRowWidth(), height)
-  self.ScrollFrame.ItemListingFrame:SetSize(self.frameMap[1]:GetRowWidth(), height)
+  self:SetSize(self.frameMap[1]:GetRowWidth(), maxHeight)
+  self.ScrollFrame.ItemListingFrame:SetSize(self.frameMap[1]:GetRowWidth(), minHeight)
 end

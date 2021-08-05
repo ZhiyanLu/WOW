@@ -1,6 +1,7 @@
 # SlashIn
 
-## [v9.0.1-1-g388ad60](https://github.com/funkydude/SlashIn/tree/388ad60cdc2fa5fe54d1b5bc5006c06016fec492) (2020-12-25)
-[Full Changelog](https://github.com/funkydude/SlashIn/compare/v9.0.1...388ad60cdc2fa5fe54d1b5bc5006c06016fec492) [Previous Releases](https://github.com/funkydude/SlashIn/releases)
+## [v9.1.0](https://github.com/funkydude/SlashIn/tree/v9.1.0) (2021-06-30)
+[Full Changelog](https://github.com/funkydude/SlashIn/compare/v9.0.3...v9.1.0) [Previous Releases](https://github.com/funkydude/SlashIn/releases)
 
-- add luacheck file  
+- Bump toc  
+- Update workflow  

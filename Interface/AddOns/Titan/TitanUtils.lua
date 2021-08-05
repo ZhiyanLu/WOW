@@ -12,6 +12,12 @@ TITAN_NOT_REGISTERED = _G["RED_FONT_COLOR_CODE"].."Not_Registered_Yet".._G["FONT
 TITAN_REGISTERED = _G["GREEN_FONT_COLOR_CODE"].."Registered".._G["FONT_COLOR_CODE_CLOSE"]
 TITAN_REGISTER_FAILED = _G["RED_FONT_COLOR_CODE"].."Failed_to_Register".._G["FONT_COLOR_CODE_CLOSE"]
 
+-- For debug across Titan Panel
+TITAN_PANEL_VARS = {}
+TITAN_PANEL_VARS.debug = {}
+TITAN_PANEL_VARS.debug.movable = false
+TITAN_PANEL_VARS.debug.events = false
+
 local _G = getfenv(0);
 local L = LibStub("AceLocale-3.0"):GetLocale(TITAN_ID, true)
 local media = LibStub("LibSharedMedia-3.0")
@@ -1686,7 +1692,13 @@ OUT:
 - true (IsVisible) or false
 --]]
 function TitanPanelRightClickMenu_IsVisible()
-	return _G[drop_down_1]:IsVisible();
+	local res = false
+	if _G[drop_down_1] and _G[drop_down_1]:IsVisible() then
+		res = true
+	else
+		res = false
+	end
+	return res
 end
 
 --[[ Titan
@@ -1696,7 +1708,7 @@ VAR:  None
 OUT:  None
 --]]
 function TitanPanelRightClickMenu_Close()
-	if _G[drop_down_1]:IsVisible() then
+	if _G[drop_down_1] and _G[drop_down_1]:IsVisible() then
 		_G[drop_down_1]:Hide()
 	end
 end

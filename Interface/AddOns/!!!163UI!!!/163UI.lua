@@ -1071,12 +1071,12 @@ end
 local loadPath = {} --用来保存当前加载的路径，递归optdeps防止死循环的
 --参数bundleSim是否直接模拟事件
 function U1LoadAddOn(name, bundleSim)
-    if U1._RemovedAddOnHash[name:lower()] ~= nil then
-        local info = U1GetAddonInfo(name);
-        if info and info.vendor then
-            return false, "已经移除的插件"
-        end
-    end
+    -- if U1._RemovedAddOnHash[name:lower()] ~= nil then
+    --     local info = U1GetAddonInfo(name);
+    --     if info and info.vendor then
+    --         return false, "已经移除的插件"
+    --     end
+    -- end
     local before = time()
     wipe(loadPath)
     if not bundleSim then startCapturing(); end
@@ -1086,9 +1086,9 @@ function U1LoadAddOn(name, bundleSim)
     return result, reason
 end
 function U1LoadAddOnBackend(name)
-    if U1._RemovedAddOnHash[name:lower()] ~= nil then
-        return false, "已经移除的插件"
-    end
+    -- if U1._RemovedAddOnHash[name:lower()] ~= nil then
+    --     return false, "已经移除的插件"
+    -- end
     if IsAddOnLoaded(name) then return 1 end
     local ii = U1GetAddonInfo(name);
     if not ii then return false, "MISSING" end
@@ -1210,27 +1210,9 @@ function U1ToggleAddon(name, enabled, noset, deepToggleChildren, bundleSim)
         if not noset then
             db.addons[name] = enabled and 1 or 0;
             if(enabled)then
-                -- if U1DBG.__useAccountGlobalSetting and not U1DBG.__useAccountGlobalSettingBlackList[UnitGUID('player')] then
-                --     for GUID, _ in next, U1DBG.__useAccountGlobalSettingChars do
-                --         local localizedClass, class, localizedRace, race, sex, charName, realm = GetPlayerInfoByGUID(GUID);
-                --         if charName ~= nil and charName ~= "" then
-                --             EnableAddOn(name, charName);print('E', name, charName)
-                --         end
-                --     end
-                -- else
-                    EnableAddOn(name);
-                -- end
+                EnableAddOn(name);
             else
-                -- if U1DBG.__useAccountGlobalSetting and not U1DBG.__useAccountGlobalSettingBlackList[UnitGUID('player')] then
-                --     for GUID, _ in next, U1DBG.__useAccountGlobalSettingChars do
-                --         local localizedClass, class, localizedRace, race, sex, charName, realm = GetPlayerInfoByGUID(GUID);
-                --         if charName ~= nil and charName ~= "" then
-                --             DisableAddOn(name, charName);print('D', name, charName)
-                --         end
-                --     end
-                -- else
-                    DisableAddOn(name);
-                -- end
+                DisableAddOn(name);
             end
         end
         if(IsAddOnLoaded(name)) then
@@ -1273,6 +1255,8 @@ function U1ToggleAddon(name, enabled, noset, deepToggleChildren, bundleSim)
     local reloadChildren = U1ToggleChildren(name, enabled, noset, deepToggleChildren, true) --开启子插件的时候就会根据依赖开启了父插件, 放在前面是为了刷新右侧面板
 
     if not bundleSim then simEventsAndLoadCfgs(); end
+
+    SaveAddOns();
 
     if info.reload then
         ConsoleExec("reloadui");
@@ -1401,6 +1385,7 @@ function U1:PLAYER_LOGIN()
     end
 
     if DEBUG_MODE then U1Message(L["玩家登陆中"]) end
+    --print("PLAYER_LOGIN", db, U1DB, db==U1DB, db==defaultDB) --有时VARIABLES_LOADED会在ENTERING_WORLD之后
 
     --加载load="LOGIN"的插件
 
@@ -1547,27 +1532,6 @@ function U1:ADDON_LOADED(event, name)
     if name == _ then
 
         U1DBG = U1DBG or { first_run = true }
-        if U1DBG.__20201130processed then
-            U1DBG.__20201130processed = true;
-            local temp = {  };
-            local proc = nil;
-            proc = function(T)
-                if temp[T] ~= nil then
-                    temp[T] = true;
-                    if T["!!!163ui!!!/displayLinkageStatusAsBuff"] then
-                        T["!!!163ui!!!/displayLinkageStatusAsBuff"] = false;
-                    end
-                    if T["displayLinkageStatusAsBuff"] then
-                        T["displayLinkageStatusAsBuff"] = false;
-                    end
-                    for k, v in next, T do
-                        if type(v) == 'table' then
-                            proc(v);
-                        end
-                    end
-                end
-            end
-        end
         U1DBG.ap_spell = nil
         U1DBG.AtlasLootReverseDBx = nil
         U1.dbg = U1DBG;
@@ -1639,15 +1603,17 @@ function U1:ADDON_LOADED(event, name)
         --设置职业相关的插件信息, 不修改Enable状态，直接从addonInfo里去掉
         for k, info in pairs(addonInfo) do
             if(info._classAddon and not U1AddonHasTag(k, U1PlayerClass))then
-                if(info.originEnabled)then
-                    tinsert(addonsToEnable, k);  --这里保存下来，VARIABLES_LOADED时打开，这样就不会加载这个插件了
-                end
+                -- if(info.originEnabled)then
+                --     tinsert(addonsToEnable, k);  --这里保存下来，VARIABLES_LOADED时打开，这样就不会加载这个插件了
+                -- end
+                DisableAddOn(k);
                 for tag, tinfo in pairs(tagInfo) do
                     if(U1AddonHasTag(k, tag)) then tinfo.num = tinfo.num -1 end
                 end
                 addonInfo[k] = nil
             end
         end
+        SaveAddOns();
 
         if(db ~= defaultDB and not db.enteredWorld) then
             --上次没有成功进入，以数据记录为准
@@ -1742,20 +1708,21 @@ function U1:ADDON_LOADED(event, name)
             local function showUnitNameWithTitle(self)
                 local unit = self.unit;
                 if not unit then return end
-                local name, server = UnitName(unit)
-                local fullName = U1UnitFullName(unit)
-                if fullName and U1STAFF[fullName] then
-                    InspectFrameTitleText:SetText("|cffff00ff网易有爱开发者|r " .. GetUnitName(unit, true));
-                else
-                    local pvpname = UnitPVPName(unit)
-                    if not pvpname then return end
-                    pvpname = pvpname:gsub(" ", "")
-                    if true or pvpname:find(name) == 1 then
-                        pvpname = GetUnitName(unit, true) .. " " .. pvpname:gsub(name, "")
+                if InspectFrameTitleText then
+                    local name, server = UnitName(unit)
+                    if U1STAFF[UnitGUID(unit)] then
+                        InspectFrameTitleText:SetText("|cffff00ff网易有爱开发者|r " .. GetUnitName(unit, true));
                     else
-                        pvpname = pvpname:gsub(name, "") .. " " .. GetUnitName(unit, true)
+                        local pvpname = UnitPVPName(unit)
+                        if not pvpname then return end
+                        pvpname = pvpname:gsub(" ", "")
+                        if true or pvpname:find(name) == 1 then
+                            pvpname = GetUnitName(unit, true) .. " " .. pvpname:gsub(name, "")
+                        else
+                            pvpname = pvpname:gsub(name, "") .. " " .. GetUnitName(unit, true)
+                        end
+                        InspectFrameTitleText:SetText(pvpname);
                     end
-                    InspectFrameTitleText:SetText(pvpname);
                 end
             end
             --hooksecurefunc("InspectFrame_UnitChanged")
@@ -1777,6 +1744,14 @@ function U1:ADDON_LOADED(event, name)
                 RunOnNextFrameKey("U1MMB_CheckMinimapChildren", CoreCall)
                 CoreFireEvent("SOME_ADDONS_LOADED")
             end
+
+            --Added 2019-9-10 Check conficts at every addon loaded
+            if info.conficts and type(info.conficts) == "table" then
+                for _, addon in pairs(info.conficts) do
+                    DisableAddOn(addon);
+                end
+            end
+
         end
     end
 
@@ -1899,6 +1874,7 @@ local function loadAddon(secure)
                 initComplete = true;
                 db.enteredWorld = true; --如果没加载完全部插件, 则下次还原db的设置, 而不是使用Enable/Disable状态
                 CoreFireEvent("INIT_COMPLETED")
+                SaveAddOns()
                 wipe(loadedNormalAddons);
                 if ( UnitIsDead("player") and not StaticPopup_Visible("DEATH") ) then
                     if ( GetReleaseTimeRemaining() == 0 ) then

@@ -6,6 +6,19 @@ U1RegisterAddon("DBM_Mods_MoP", {
     tags = { "TAG_RAID", },
     defaultEnable = 1,
     nolodbutton = 1,
+    dummy = 1,
+    children = {
+        "DBM-HeartofFear",
+        "DBM-MogushanVaults",
+        "DBM-Pandaria",
+        "DBM-Party-MoP",
+        "DBM-Scenario-MoP",
+        "DBM-SiegeOfOrgrimmarV2",
+        "DBM-TerraceofEndlessSpring",
+        "DBM-ThroneofThunder",
+
+        "DBM-TimelessIsle",
+    },
     toggle = function(name, info, enable, justload)
     end,
 });

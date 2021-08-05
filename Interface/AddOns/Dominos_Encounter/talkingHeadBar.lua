@@ -18,6 +18,7 @@ function TalkingHeadBar:GetDefaults()
         point = 'BOTTOM',
         x = 0,
         y = 74,
+        displayLayer = 'LOW',
         showInPetBattleUI = true,
         showInOverrideUI = true
     }
@@ -27,26 +28,28 @@ function TalkingHeadBar:GetDisplayName()
 	return 'Talking Heads'
 end
 
-function TalkingHeadBar:GetDisplayLevel()
-    return 'LOW'
-end
-
 function TalkingHeadBar:Layout()
-    local frame = TalkingHeadFrame
     local width, height
 
-    if frame then
-        frame:ClearAllPoints()
-        frame:SetPoint('CENTER', self)
-        frame:SetParent(self)
-
-        width, height = frame:GetSize()
+    if TalkingHeadFrame then
+        self:RepositionTalkingHeadFrame()
+        width, height = TalkingHeadFrame:GetSize()
     else
         width, height = 570, 155
     end
 
     local pW, pH = self:GetPadding()
     self:SetSize(width + pW, height + pH)
+end
+
+function TalkingHeadBar:RepositionTalkingHeadFrame()
+    local frame = TalkingHeadFrame
+    if frame then
+        frame:ClearAllPoints()
+        frame:SetPoint('CENTER', self)
+        frame:SetParent(self)
+        return true
+    end
 end
 
 function TalkingHeadBar:OnCreateMenu(menu)
@@ -67,8 +70,9 @@ function TalkingHeadBar:AddLayoutPanel(menu)
 		set = function(_, enable) panel.owner:SetMuteSounds(enable) end
 	}
 
-    panel.scaleSlider = panel:NewScaleSlider()
-    panel.paddingSlider = panel:NewPaddingSlider()
+    panel:AddBasicLayoutOptions()
+
+    return panel
 end
 
 function TalkingHeadBar:SetMuteSounds(enable)
@@ -90,7 +94,12 @@ local TalkingHeadBarModule = Dominos:NewModule('TalkingHeadBar', 'AceEvent-3.0')
 
 function TalkingHeadBarModule:Load()
     self.frame = TalkingHeadBar:New()
-    self:RegisterEvent("ADDON_LOADED")
+
+    if IsAddOnLoaded("Blizzard_TalkingHeadUI") then
+        self:OnTalkingHeadUILoaded()
+    elseif not self.loaded then
+        self:RegisterEvent("ADDON_LOADED")
+    end
 end
 
 function TalkingHeadBarModule:Unload()
@@ -108,9 +117,13 @@ function TalkingHeadBarModule:ADDON_LOADED(event, addon)
 end
 
 function TalkingHeadBarModule:OnTalkingHeadUILoaded()
+    if self.loaded then
+        return
+    end
+
     TalkingHeadFrame.ignoreFramePositionManager = true
 
-    -- onshow/hide call UpdateManagedFramePositions on the blizzard end so
+    -- OnShow/OnHide call UpdateManagedFramePositions on the blizzard end so
     -- turn that bit off
     TalkingHeadFrame:SetScript("OnShow", nil)
     TalkingHeadFrame:SetScript("OnHide", nil)
@@ -126,7 +139,18 @@ function TalkingHeadBarModule:OnTalkingHeadUILoaded()
         end
     end)
 
-    if not InCombatLockdown() then
-        self.frame:Layout()
+    hooksecurefunc(AlertFrame, 'UpdateAnchors', function()
+        self:OnAlertFrameAnchorsUpdated()
+    end)
+end
+
+-- reposition the talking head frame when it moves
+function TalkingHeadBarModule:OnAlertFrameAnchorsUpdated()
+    if (not self.frame) then return end
+
+    local _, relFrame = TalkingHeadFrame:GetPoint()
+
+    if self.frame ~= relFrame then
+        self.frame:RepositionTalkingHeadFrame()
     end
 end

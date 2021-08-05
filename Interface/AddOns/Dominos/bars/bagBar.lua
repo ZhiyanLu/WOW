@@ -18,12 +18,9 @@ function BagBar:GetDisplayName()
     return L.BagBarDisplayName
 end
 
-function BagBar:GetDisplayLevel()
-    return 'LOW'
-end
-
 function BagBar:GetDefaults()
     return {
+        displayLayer = 'LOW',
         point = 'BOTTOMRIGHT',
         oneBag = false,
         keyRing = true,
@@ -46,7 +43,7 @@ function BagBar:SetShowKeyRing(enable)
 end
 
 function BagBar:ShowKeyRing()
-    if Addon:IsBuild('classic') then
+    if Addon:IsBuild('bcc', 'classic') then
         return self.sets.keyRing
     end
 end
@@ -100,18 +97,22 @@ function BagBar:OnCreateMenu(menu)
             return layoutPanel.owner:ShowBags()
         end,
         set = function(_, enable)
-            return layoutPanel.owner:SetShowBags(enable)
+            layoutPanel.owner:SetShowBags(enable)
+            layoutPanel.colsSlider:UpdateRange()
+            layoutPanel.colsSlider:UpdateValue()
         end
     }
 
-    if Addon:IsBuild('Classic') then
+    if Addon:IsBuild('bcc', 'classic') then
         layoutPanel:NewCheckButton {
             name = L.BagBarShowKeyRing,
             get = function()
                 return layoutPanel.owner:ShowKeyRing()
             end,
             set = function(_, enable)
-                return layoutPanel.owner:SetShowKeyRing(enable)
+                layoutPanel.owner:SetShowKeyRing(enable)
+                layoutPanel.colsSlider:UpdateRange()
+                layoutPanel.colsSlider:UpdateValue()
             end
         }
     end
@@ -133,7 +134,7 @@ function BagBarModule:OnInitialize()
         self:RegisterButton(('CharacterBag%dSlot'):format(slot))
     end
 
-    if Addon:IsBuild('Classic') then
+    if Addon:IsBuild('bcc', 'classic') then
         -- force hide the old keyring button
         KeyRingButton:Hide()
 
@@ -239,7 +240,7 @@ function BagBarModule:RegisterButton(name)
 
     button:Hide()
 
-    if Addon:IsBuild('Retail') then
+    if Addon:IsBuild('retail') then
         resize(button, 36)
         resize(button.IconBorder, 37)
         resize(button.IconOverlay, 37)

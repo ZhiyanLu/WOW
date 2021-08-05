@@ -1,5 +1,6 @@
 local U1Name, U1 = ...
 local DataBroker = LibStub'LibDataBroker-1.1'
+local LSUP = LibStub'LibShowUIPanel-1.0'
 local L = U1.L
 
 U1_FRAME_NAME = "U1Frame";
@@ -168,8 +169,12 @@ function UUI.Raise(raise)
             main:SetFrameLevel(30);
         end
     else
-        if not InCombatLockdown() and GameMenuFrame:IsVisible() then
-            HideUIPanel(GameMenuFrame);
+        if GameMenuFrame:IsVisible() then
+            if InCombatLockdown() then
+                LSUP.OnCallHideUIPanel(GameMenuFrame);
+            else
+                HideUIPanel(GameMenuFrame);
+            end
         else
             main:SetFrameStrata("MEDIUM");
             main:Lower();
@@ -674,8 +679,8 @@ function UUI.Top.Create(main)
     main.collect = TplPanelButton(main,nil, UUI.PANEL_BUTTON_HEIGHT):Set3Fonts(UUI.FONT_PANEL_BUTTON)
     :SetScript("OnClick", function() SlashCmdList["163UIGUIDE"]() end)
     :un()
-    CoreUIEnableTooltip(main.collect, "引导界面", "网易有爱引导界面")
-    UUI.AddChangeWithColsButton(main.collect, "引导界面", "引导")
+    CoreUIEnableTooltip(main.collect, L["引导界面"], L["网易有爱引导界面"])
+    UUI.AddChangeWithColsButton(main.collect, L["引导界面"], L["引导"])
 
     main.profile = TplPanelButton(main,nil, UUI.PANEL_BUTTON_HEIGHT):Set3Fonts(UUI.FONT_PANEL_BUTTON)
     :SetScript("OnMouseDown", function(self)
@@ -686,7 +691,12 @@ function UUI.Top.Create(main)
     CoreUIEnableTooltip(main.profile, L["方案管理"], L["将已启用的插件列表等保存为方案，例如任务模式、副本模式等，亦可以在多个角色之间共用。"])
     UUI.AddChangeWithColsButton(main.profile, L["方案管理"], L["方案"])
 
-    CoreUIAnchor(main,"TOPRIGHT","TOPRIGHT",-28-20,-12,"RIGHT", "LEFT",-8,0, main.setting, main.collect, main.profile, main.reload);
+    main.extern = TplPanelButton(main,nil, UUI.PANEL_BUTTON_HEIGHT):Set3Fonts(UUI.FONT_PANEL_BUTTON)
+    :SetScript("OnMouseUp", function(self) U1.ToggleExtern(); end)
+    CoreUIEnableTooltip(main.extern, L["导入导出"], L["将当前游戏设置、插件设置、界面布局导出到字符串，可以分享给其它有爱玩家。"])      --  没添加到locale.lua
+    UUI.AddChangeWithColsButton(main.extern, L["导入导出"], L["字符串"])
+
+    CoreUIAnchor(main,"TOPRIGHT","TOPRIGHT",-28-20,-12,"RIGHT", "LEFT",-8,0, main.setting, main.collect, main.profile, main.reload, main.extern);
 end
 
 function UUI.Top.ToggleQuickSettingDropDown(self)
@@ -1944,7 +1954,13 @@ function U1_CreateMinimapButton()
 end
 
 function UUI.ToggleUI(self, button)
-    if not InCombatLockdown() and GameMenuFrame:IsVisible() then HideUIPanel(GameMenuFrame) end
+    if GameMenuFrame:IsVisible() then
+        if InCombatLockdown() then
+            LSUP.OnCallHideUIPanel(GameMenuFrame);
+        else
+            HideUIPanel(GameMenuFrame)
+        end
+    end
     if UUI():IsVisible() then UUI():Hide() else UUI():Show() end
 end
 

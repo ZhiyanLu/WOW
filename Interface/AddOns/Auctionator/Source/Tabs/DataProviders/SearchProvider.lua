@@ -27,14 +27,22 @@ local SEARCH_PROVIDER_LAYOUT = {
     headerText = AUCTIONATOR_L_ITEM_LEVEL_COLUMN,
     headerParameters = { "level" },
     cellTemplate = "AuctionatorStringCellTemplate",
-    cellParameters = { "level" },
+    cellParameters = { "levelPretty" },
   },
   {
     headerTemplate = "AuctionatorStringColumnHeaderTemplate",
-    headerParameters = { "timeLeftRaw" },
-    headerText = AUCTIONATOR_L_TIME_LEFT_H,
+    headerParameters = { "timeLeft" },
+    headerText = AUCTIONATOR_L_TIME_LEFT,
     cellTemplate = "AuctionatorStringCellTemplate",
-    cellParameters = { "timeLeft" },
+    cellParameters = { "timeLeftPretty" },
+    defaultHide = true,
+  },
+  {
+    headerTemplate = "AuctionatorStringColumnHeaderTemplate",
+    headerParameters = { "otherSellers" },
+    headerText = AUCTIONATOR_L_SELLERS_COLUMN,
+    cellTemplate = "AuctionatorTooltipStringCellTemplate",
+    cellParameters = { "otherSellers" },
     defaultHide = true,
   },
   {
@@ -49,10 +57,8 @@ local SEARCH_PROVIDER_LAYOUT = {
 
 local SEARCH_EVENTS = {
   "COMMODITY_SEARCH_RESULTS_UPDATED",
+  "COMMODITY_PURCHASE_SUCCEEDED",
   "ITEM_SEARCH_RESULTS_UPDATED",
-
-  --Used to update the search when a cancel happens
-  "AUCTION_CANCELED",
 }
 
 AuctionatorSearchDataProviderMixin = CreateFromMixins(AuctionatorDataProviderMixin)
@@ -60,7 +66,9 @@ AuctionatorSearchDataProviderMixin = CreateFromMixins(AuctionatorDataProviderMix
 function AuctionatorSearchDataProviderMixin:OnShow()
   FrameUtil.RegisterFrameForEvents(self, SEARCH_EVENTS)
   Auctionator.EventBus:Register(self, {
-    Auctionator.Selling.Events.SellSearchStart
+    Auctionator.Selling.Events.SellSearchStart,
+    Auctionator.Selling.Events.BagItemClicked,
+    Auctionator.Cancelling.Events.RequestCancel,
   })
 
   self:Reset()
@@ -69,14 +77,22 @@ end
 function AuctionatorSearchDataProviderMixin:OnHide()
   FrameUtil.UnregisterFrameForEvents(self, SEARCH_EVENTS)
   Auctionator.EventBus:Unregister(self, {
-    Auctionator.Selling.Events.SellSearchStart
+    Auctionator.Selling.Events.SellSearchStart,
+    Auctionator.Selling.Events.BagItemClicked,
+    Auctionator.Cancelling.Events.RequestCancel,
   })
 end
 
-function AuctionatorSearchDataProviderMixin:ReceiveEvent(eventName)
+function AuctionatorSearchDataProviderMixin:ReceiveEvent(eventName, itemKey)
   if eventName == Auctionator.Selling.Events.SellSearchStart then
     self:Reset()
     self.onSearchStarted()
+    -- Used to prevent a sale causing the view to sometimes change to another item
+    self.expectedItemKey = itemKey
+  elseif eventName == Auctionator.Selling.Events.BagItemClicked then
+    self.onResetScroll()
+  elseif eventName == Auctionator.Cancelling.Events.RequestCancel then
+    self:RegisterEvent("AUCTION_CANCELED")
   end
 end
 
@@ -93,8 +109,9 @@ local COMPARATORS = {
   bidPrice = Auctionator.Utilities.NumberComparator,
   quantity = Auctionator.Utilities.NumberComparator,
   level = Auctionator.Utilities.NumberComparator,
-  timeLeftRaw = Auctionator.Utilities.NumberComparator,
+  timeLeft = Auctionator.Utilities.NumberComparator,
   owned = Auctionator.Utilities.StringComparator,
+  otherSellers = Auctionator.Utilities.StringComparator,
 }
 
 function AuctionatorSearchDataProviderMixin:UniqueKey(entry)
@@ -112,22 +129,38 @@ function AuctionatorSearchDataProviderMixin:Sort(fieldName, sortDirection)
 end
 
 function AuctionatorSearchDataProviderMixin:OnEvent(eventName, itemRef, auctionID)
-  if eventName == "COMMODITY_SEARCH_RESULTS_UPDATED" then
+  if eventName == "COMMODITY_SEARCH_RESULTS_UPDATED" and self.expectedItemKey ~= nil and
+          self.expectedItemKey.itemID == itemRef then
     self:Reset()
     self:AppendEntries(self:ProcessCommodityResults(itemRef), true)
 
-  -- Get item search results, excluding individual auction updates (which cause
-  -- the display to blank)
-  elseif eventName == "ITEM_SEARCH_RESULTS_UPDATED" and auctionID == nil then
+  elseif (eventName == "ITEM_SEARCH_RESULTS_UPDATED" and self.expectedItemKey ~= nil and
+          Auctionator.Utilities.ItemKeyString(self.expectedItemKey) == Auctionator.Utilities.ItemKeyString(itemRef)
+        ) then
+    self.onPreserveScroll()
     self:Reset()
     self:AppendEntries(self:ProcessItemResults(itemRef), true)
 
-  elseif eventName == "AUCTION_CANCELED" then
-    Auctionator.EventBus
-      :RegisterSource(self, "AuctionatorSearchDataProviderMixin")
-      :Fire(self, Auctionator.Selling.Events.RefreshSearch)
-      :UnregisterSource(self)
+  else
+    if eventName == "AUCTION_CANCELED" then
+      self:UnregisterEvent("AUCTION_CANCELED")
+    end
+
+    self.onPreserveScroll()
+    self:RefreshView()
   end
+end
+
+function AuctionatorSearchDataProviderMixin:RefreshView()
+  self.onPreserveScroll()
+  Auctionator.EventBus
+    :RegisterSource(self, "AuctionatorSearchDataProviderMixin")
+    :Fire(self, Auctionator.Selling.Events.RefreshSearch)
+    :UnregisterSource(self)
+end
+
+local function cancelShortcutEnabled()
+  return Auctionator.Config.Get(Auctionator.Config.Options.SELLING_CANCEL_SHORTCUT) ~= Auctionator.Config.Shortcuts.NONE
 end
 
 function AuctionatorSearchDataProviderMixin:ProcessCommodityResults(itemID)
@@ -140,16 +173,23 @@ function AuctionatorSearchDataProviderMixin:ProcessCommodityResults(itemID)
       price = resultInfo.unitPrice,
       bidPrice = nil,
       owners = resultInfo.owners,
+      totalNumberOfOwners = resultInfo.totalNumberOfOwners,
+      otherSellers = Auctionator.Utilities.StringJoin(resultInfo.owners, PLAYER_LIST_DELIMITER),
       quantity = resultInfo.quantity,
       quantityFormatted = Auctionator.Utilities.DelimitThousands(resultInfo.quantity),
-      level = "0",
-      timeLeft = Auctionator.Utilities.RoundTime(resultInfo.timeLeftSeconds or 0),
-      timeLeftRaw = resultInfo.timeLeftSeconds or 0,
+      level = 0,
+      levelPretty = "0",
+      timeLeftPretty = Auctionator.Utilities.FormatTimeLeft(resultInfo.timeLeftSeconds),
+      timeLeft = resultInfo.timeLeftSeconds or 0, --Used in sorting
       auctionID = resultInfo.auctionID,
       itemID = itemID,
       itemType = Auctionator.Constants.ITEM_TYPES.COMMODITY,
       canBuy = not (resultInfo.containsOwnerItem or resultInfo.containsAccountItem)
     }
+
+    if #entry.owners > 0 and #entry.owners < entry.totalNumberOfOwners then
+      entry.otherSellers = AUCTIONATOR_L_SELLERS_OVERFLOW_TEXT:format(entry.otherSellers, entry.totalNumberOfOwners - #entry.owners)
+    end
 
     if resultInfo.containsOwnerItem then
       -- Test if the auction has been loaded for cancelling
@@ -157,6 +197,7 @@ function AuctionatorSearchDataProviderMixin:ProcessCommodityResults(itemID)
         anyOwnedNotLoaded = true
       end
 
+      entry.otherSellers = GREEN_FONT_COLOR:WrapTextInColorCode(AUCTION_HOUSE_SELLER_YOU)
       entry.owned = AUCTIONATOR_L_UNDERCUT_YES
 
     else
@@ -171,30 +212,11 @@ function AuctionatorSearchDataProviderMixin:ProcessCommodityResults(itemID)
   -- called if an auction exists that hasn't been loaded for cancelling yet.
   -- If a user really really wants to avoid an extra request they can turn the
   -- feature off.
-  if anyOwnedNotLoaded and Auctionator.Config.Get(Auctionator.Config.Options.SELLING_CANCEL_SHORTCUT) ~= Auctionator.Config.Shortcuts.NONE then
+  if anyOwnedNotLoaded and cancelShortcutEnabled() then
     Auctionator.AH.QueryOwnedAuctions({})
   end
 
   return entries
-end
-
-local function cancelShortcutEnabled()
-  return Auctionator.Config.Get(Auctionator.Config.Options.SELLING_CANCEL_SHORTCUT) ~= Auctionator.Config.Shortcuts.NONE
-end
-
-local function TimeLeftBandToHours(timeLeftBand)
-  if timeLeftBand == Enum.AuctionHouseTimeLeftBand.Short then
-    return "0 - 2"
-  elseif timeLeftBand == Enum.AuctionHouseTimeLeftBand.Medium then
-    return "2 - 12"
-  elseif timeLeftBand == Enum.AuctionHouseTimeLeftBand.Long then
-    return "12 - 24"
-  elseif timeLeftBand == Enum.AuctionHouseTimeLeftBand.VeryLong then
-    return "24 - 48"
-  else
-    Auctionator.Debug.Message("Missing auction time left band")
-    return ""
-  end
 end
 
 function AuctionatorSearchDataProviderMixin:ProcessItemResults(itemKey)
@@ -206,10 +228,13 @@ function AuctionatorSearchDataProviderMixin:ProcessItemResults(itemKey)
     local entry = {
       price = resultInfo.buyoutAmount,
       bidPrice = resultInfo.bidAmount,
-      level = tostring(resultInfo.itemKey.itemLevel or 0),
+      level = resultInfo.itemKey.itemLevel or 0,
+      levelPretty = "",
       owners = resultInfo.owners,
-      timeLeft = TimeLeftBandToHours(resultInfo.timeLeft),
-      timeLeftRaw =  resultInfo.timeLeft,
+      totalNumberOfOwners = resultInfo.totalNumberOfOwners,
+      otherSellers = Auctionator.Utilities.StringJoin(resultInfo.owners, PLAYER_LIST_DELIMITER),
+      timeLeftPretty = Auctionator.Utilities.FormatTimeLeftBand(resultInfo.timeLeft),
+      timeLeft = resultInfo.timeLeft, --Used in sorting and the vanilla AH tooltip code
       quantity = resultInfo.quantity,
       quantityFormatted = Auctionator.Utilities.DelimitThousands(resultInfo.quantity),
       itemLink = resultInfo.itemLink,
@@ -218,12 +243,17 @@ function AuctionatorSearchDataProviderMixin:ProcessItemResults(itemKey)
       canBuy = resultInfo.buyoutAmount ~= nil and not (resultInfo.containsOwnerItem or resultInfo.containsAccountItem)
     }
 
+    if #entry.owners > 0 and #entry.owners < entry.totalNumberOfOwners then
+      entry.otherSellers = AUCTIONATOR_L_SELLERS_OVERFLOW_TEXT:format(entry.otherSellers, entry.totalNumberOfOwners - #entry.owners)
+    end
+
     if resultInfo.itemKey.battlePetSpeciesID ~= 0 and entry.itemLink ~= nil then
-      entry.level = tostring(Auctionator.Utilities.GetPetLevelFromLink(entry.itemLink))
+      entry.level = Auctionator.Utilities.GetPetLevelFromLink(entry.itemLink)
+      entry.levelPretty = tostring(entry.level)
     end
 
     local qualityColor = Auctionator.Utilities.GetQualityColorFromLink(entry.itemLink)
-    entry.level = "|c" .. qualityColor .. entry.level .. "|r"
+    entry.levelPretty = "|c" .. qualityColor .. entry.level .. "|r"
 
     if resultInfo.containsOwnerItem then
       -- Test if the auction has been loaded for cancelling
@@ -231,6 +261,7 @@ function AuctionatorSearchDataProviderMixin:ProcessItemResults(itemKey)
         anyOwnedNotLoaded = true
       end
 
+      entry.otherSellers = GREEN_FONT_COLOR:WrapTextInColorCode(AUCTION_HOUSE_SELLER_YOU)
       entry.owned = AUCTIONATOR_L_UNDERCUT_YES
 
     else

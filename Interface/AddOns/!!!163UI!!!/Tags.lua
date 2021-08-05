@@ -81,10 +81,10 @@ U1.TAGS = {
     EQUIPMENT = { order = 255, },
     MANAGEMENT = { order = 255, },
     ITEM = { order = 255, },
+    INTERFACE = { order = 255, },
     -- DATA = { order = 255, },
     -- GARRISON = { order = 255, },
     -- BIG = { order = 255, },
-    -- INTERFACE = { order = 255, },
     -- MAPQUEST = { order = 255, },
     --COMBAT = { order = 255, },
     -- DEV = DEBUG_MODE and {order=0} or hide,
@@ -104,7 +104,7 @@ TAG_RAID = "RAID"
 --TAG_COMBAT = "COMBAT"
 TAG_COMBATINFO = "COMBATINFO"
 TAG_PVP = "PVP"
--- TAG_INTERFACE = "INTERFACE"
+TAG_INTERFACE = "INTERFACE"
 TAG_CHAT = "CHAT"
 -- TAG_BIG = "BIG"
 -- TAG_MAPQUEST = "MAPQUEST"

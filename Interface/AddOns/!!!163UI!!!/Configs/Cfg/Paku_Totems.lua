@@ -6,7 +6,7 @@ end
 U1RegisterAddon("Paku_Totems", {
     title = "帕库图腾标记",
     defaultEnable = 0,
-    tags = { "TAG_MAPQUEST", "TAG_GOOD", },
+    tags = { "TAG_MAP", },
     icon = "Interface\\ICONS\\Spell_Shaman_TotemRecall",
     nopic = 1,
     {

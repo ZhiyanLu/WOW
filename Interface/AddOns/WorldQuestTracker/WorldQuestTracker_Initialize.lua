@@ -123,6 +123,16 @@ do
 				ignored_quests = {},
 				send_whispers = false,
 				dont_open_in_group = true,
+
+				kfilter = { --anti spam on pre-made dungeons
+					enabled = true,
+					ignore_leaders_enabled = true,
+					leaders_ignored = {},
+					ignore_by_time = 30,
+					show_button = true,
+					dont_show_ignored_leaders = true,
+					wipe_counter = 0,
+				},
 			},
 
 			rarescan = {
@@ -170,7 +180,7 @@ do
 				extra_tracking_indicator = false,
 				use_bounty_ring = false,
 			},
-			
+
 			last_news_time = 0,
 
 			hoverover_animations = true, --hover and shown slider animations
@@ -207,7 +217,14 @@ do
 			tracker_show_time = false,
 			tracker_textsize = 12,
 
-			talking_heads = {},
+			talking_heads_heard = {},
+			talking_heads_torgast = true,
+			talking_heads_dungeon = true,
+			talking_heads_raid = true,
+			talking_heads_openworld = true,
+
+			flymaster_tracker_frame_pos = {},
+			flymaster_tracker_enabled = true,
 			
 			show_faction_frame = true,
 			

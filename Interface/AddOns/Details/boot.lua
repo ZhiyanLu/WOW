@@ -4,11 +4,15 @@
 		_ = nil
 		_detalhes = LibStub("AceAddon-3.0"):NewAddon("_detalhes", "AceTimer-3.0", "AceComm-3.0", "AceSerializer-3.0", "NickTag-1.0")
 		
-		_detalhes.build_counter = 8154
-		_detalhes.alpha_build_counter = 8154 --if this is higher than the regular counter, use it instead
-		_detalhes.game_version = "v9.0.2"
-		_detalhes.userversion = "v9.0.2." .. _detalhes.build_counter
-		_detalhes.realversion = 144 --core version, this is used to check API version for scripts and plugins (see alias below)
+		local version, build, date, tocversion = GetBuildInfo()
+
+		_detalhes.build_counter = 8722
+		_detalhes.alpha_build_counter = 8722 --if this is higher than the regular counter, use it instead
+		_detalhes.bcc_counter = 25
+		_detalhes.dont_open_news = true
+		_detalhes.game_version = version
+		_detalhes.userversion = version .. _detalhes.build_counter
+		_detalhes.realversion = 145 --core version, this is used to check API version for scripts and plugins (see alias below)
 		_detalhes.APIVersion = _detalhes.realversion --core version
 		_detalhes.version = _detalhes.userversion .. " (core " .. _detalhes.realversion .. ")" --simple stirng to show to players
 		
@@ -19,6 +23,7 @@
 		
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> initialization stuff
+local _
 
 do
 	local _detalhes = _G._detalhes
@@ -28,6 +33,56 @@ do
 	local Loc = _G.LibStub("AceLocale-3.0"):GetLocale( "Details" )
 
 	local news = {
+		{"v9.0.5.8637.144", "June 22nd, 2021"},
+		"Major update on Vanguard plugin.",
+		"Added utility module to Coach, this module will send interrupt, dispel, cc breaks, cooldown usege and battle resses to the Coach.",
+		"Added plugins into the title bar display menu.",
+
+		{"v9.0.5.8502.144", "May 21th, 2021"},
+		"Added options to change the color of each team during an arena match.",
+		"Fixed One Segment Battleground.",
+		"Fixed an error with Howl of Terror on Demo Warlocks.",
+
+		{"v9.0.5.8501.144", "May 17th, 2021"},
+		"Complete overhaul and rerritten on Fade In and Out animations, this should fix all bugs related to animations not being consistent.",
+		"Complete overhaul on the broadcaster tool for arenas 'Current DPS'. It shows now a bar indicating the dps of both teams.",
+		"Yellow arena team now has purple color.",
+		"Several updates on the combat log engine and bug fixes.",
+
+		{"v9.0.5.8357.144", "March 15th, 2021"},
+		"Max amount of segments raised to 40, was 30.",
+		"Added a 'Sanguine Heal' actor to show how much the void zone healed enemies, shown on Everything mode.",
+		"Death events are now ignore after the necrolord triggers Forgeborne Reveries.",
+		"Mythic dungeon settings are reset after importing a profile.",
+		"Scripts now support Inline text feature.",
+		"Fixed a rare bug when exporting a profile would result into a bug.",
+		"Fixed an issue with Spirit Shell overhealing.",
+		"Fixed a rare bug on dispel toooltips giving errors.",
+		"Fixed a bug on exporting scripts.",
+		"Fixed an error given when an a battleground opponent die.",
+		"Fixed an issue where sometimes entering an arena cause errors.",
+		"Fixed some issues with pet detection.",
+
+		{"v9.0.2.8246.144", "February 17th, 2021"},
+		"Added healing done to Coach feature (in testing).",
+		"Ignore Forgeborne Reveries healing done (Necrolords ability).",
+		"Arena enemy deaths now are shown in the Deaths display.",
+		"Guild statistics data has been wiped, this system had a major improvement overall.",
+		"Fixed 'Clear Overall Data' on Logout which wasn't clearing.",
+		
+		{"v9.0.2.8192.144", "January 27th, 2021"},
+		"If you get issues with nicknames, disable any weakaura which modifies this feature.",
+		"Advanced Death Logs plugin got some fixes and should work properly.",
+		"Added the word 'Overall' at the end of the title bar text when the segment is overall.",
+		"Added covenant and durability into the Raid Check plugin.",
+		"Added API Window:SetTitleBarText(text) and Window:GetTitleBarText().",
+		"Fixed some issues where Details! printed 'combat start time not found.'",
+		"Fixed damage per Phase.",
+		"Fixed resizing window with no background error.",
+		"Fixed 'Always Show player' on ascending sort direction.",
+		"Added more foods into the Ready Check plugin.",
+		"Fixed some issues with the coach fearure.",
+		
 		{"v9.0.2.8154.144", "January 14th, 2021"},
 		"Added total damage bars into the player list in the Breakdown window.",
 		"Added 'Square' or 'Roll' mode to Details! Streamer plugin, to change the statusbar mode to Squares, visit the options panel for the plugin.",
@@ -138,87 +193,12 @@ do
 				{Name = "Report What is Shown In the Window", Desc = "Report the current data shown in the window, the number 1 is the window number, replace it to report another window.", MacroText = "/script Details:FastReportWindow(1)"},
 			}
 			
-		--> quais raides devem ser guardadas no hist�rico
-			_detalhes.InstancesToStoreData = { --> mapIDs
-				[2070] = true, --Battle for Dazaralor (BFA) GetInstanceInfo
-				[1148] = true, --Uldir (BFA) uiMapID
-				[1861] = true, --Uldir (BFA) from GetInstanceInfo
-				[2164] = true, --Eternal Palace
-
-				[2217] = true, --8.3
-
+		--> current instances of the exp (need to maintain)
+			_detalhes.InstancesToStoreData = { --mapId
 				[2296] = true, --castle narnia
+				[2450] = true, --sanctum of domination
 			}
-			
-			--must fail in map and encounter id to not store data
-			_detalhes.EncountersToStoreData = { --> encounterIDs
-				--CLEU
-				[2144] = 1, --Taloc - Taloc
-				[2141] = 2, --MOTHER - MOTHER
-				[2128] = 3, --Fetid Devourer - Fetid Devourer
-				[2136] = 4, --Zek'voz - Zek'voz, Herald of N'zoth
-				[2134] = 5, --Vectis - Vectis
-				[2145] = 6, --Zul - Zul, Reborn
-				[2135] = 7, --Mythrax the Unraveler - Mythrax the Unraveler
-				[2122] = 8, --G'huun - G'huun
-				
-				[2265] = 1, --Champion of the Light
-				[2263] = 2, --Grong, the Jungle Lord
-				[2266] = 3, --Jadefire Masters
-				[2271] = 4, --Opulence
-				[2268] = 5, --Conclave of the Chosen
-				[2272] = 6, --King Rastakhan
-				[2276] = 7, --High Tinker Mekkatorque
-				[2280] = 8, --Stormwall Blockade
-				[2281] = 9, --Lady Jaina Proudmoore
-				
-				[2269] = 1, --The Restless Cabal
-				[2273] = 2, --Uu'nat, Harbinger of the Void
-				
-				[2298] = 1, --Abyssal Commander Sivara
-				[2289] = 2, --Blackwater Behemoth
-				[2305] = 3, --Radiance of Azshara
-				[2304] = 4, --Lady Ashvane
-				[2303] = 5, --Orgozoa
-				[2311] = 6, --The Queen's Court
-				[2293] = 7, --Za'qul, Harbinger of Ny'alotha
-				[2299] = 8, --Queen Azshara
-				
-				--EJID
-				[2168] = 1, --Taloc
-				[2167] = 2, --MOTHER
-				[2146] = 3, --Fetid Devourer
-				[2169] = 4, --Zek'voz, Herald of N'zoth
-				[2166] = 5, --Vectis
-				[2195] = 6, --Zul, Reborn
-				[2194] = 7, --Mythrax the Unraveler
-				[2147] = 8, --G'huun
-				
-				[2333] = 1, --Champion of the Light
-				[2325] = 2, --Grong, the Jungle Lord
-				[2341] = 3, --Jadefire Masters
-				[2342] = 4, --Opulence
-				[2330] = 5, --Conclave of the Chosen
-				[2335] = 6, --King Rastakhan
-				[2334] = 7, --High Tinker Mekkatorque
-				[2337] = 8, --Stormwall Blockade
-				[2343] = 9, --Lady Jaina Proudmoore
-				
-				[2328] = 1, --The Restless Cabal
-				[2332] = 2, --Uu'nat, Harbinger of the Void
-				
-				[2352] = 1, --Abyssal Commander Sivara
-				[2347] = 2, --Blackwater Behemoth
-				[2353] = 3, --Radiance of Azshara
-				[2354] = 4, --Lady Ashvane
-				[2351] = 5, --Orgozoa
-				[2359] = 6, --The Queen's Court
-				[2349] = 7, --Za'qul, Harbinger of Ny'alotha
-				[2361] = 8, --Queen Azshara
-				
-			
-			}
-			
+
 		--> armazena os escudos - Shields information for absorbs
 			_detalhes.escudos = {}
 		--> armazena as fun��es dos frames - Frames functions
@@ -270,6 +250,8 @@ do
 			_detalhes.encounter_table = {}
 			_detalhes.encounter_counter = {}
 			_detalhes.encounter_dungeons = {}
+		--> unitId dos inimigos dentro de uma arena
+			_detalhes.arena_enemies = {}
 		--> reliable char data sources
 		--> actors that are using details! and sent character data, we don't need query inspect on these actors
 			_detalhes.trusted_characters = {}
@@ -529,6 +511,9 @@ do
 			[323436] = true --Phial of Serenity (from Kyrians)
 		}
 	
+		--[[global]] DETAILS_MODE_GROUP = 2
+		--[[global]] DETAILS_MODE_ALL = 3
+
 		_detalhes._detalhes_props = {
 			DATA_TYPE_START = 1,	--> Something on start
 			DATA_TYPE_END = 2,	--> Something on end
@@ -746,7 +731,7 @@ do
 		SharedMedia:Register ("statusbar", "WorldState Score", [[Interface\WorldStateFrame\WORLDSTATEFINALSCORE-HIGHLIGHT]])
 		SharedMedia:Register ("statusbar", "DGround", [[Interface\AddOns\Details\images\bar_background]])
 		SharedMedia:Register ("statusbar", "Details Flat", [[Interface\AddOns\Details\images\bar_background]])
-
+		SharedMedia:Register ("statusbar", "Splitbar", [[Interface\AddOns\Details\images\bar_textures\split_bar]])
 		SharedMedia:Register ("statusbar", "Details2020", [[Interface\AddOns\Details\images\bar_textures\texture2020]])
 		
 		--window bg and bar border
@@ -767,25 +752,33 @@ do
 		SharedMedia:Register ("sound", "d_gun2", [[Interface\Addons\Details\sounds\sound_gun3.ogg]])
 		SharedMedia:Register ("sound", "d_jedi1", [[Interface\Addons\Details\sounds\sound_jedi1.ogg]])
 		SharedMedia:Register ("sound", "d_whip1", [[Interface\Addons\Details\sounds\sound_whip1.ogg]])
+
+		SharedMedia:Register ("sound", "Details Threat Warning Volume 1", [[Interface\Addons\Details\sounds\threat_warning_1.ogg]])
+		SharedMedia:Register ("sound", "Details Threat Warning Volume 2", [[Interface\Addons\Details\sounds\threat_warning_2.ogg]])
+		SharedMedia:Register ("sound", "Details Threat Warning Volume 3", [[Interface\Addons\Details\sounds\threat_warning_3.ogg]])
+		SharedMedia:Register ("sound", "Details Threat Warning Volume 4", [[Interface\Addons\Details\sounds\threat_warning_4.ogg]])
+
+		
+
 	
-	--> global 'vardump' for dump table contents over chat panel
-		function vardump (t)
+	--> dump table contents over chat panel
+		function Details.VarDump(t)
 			if (type (t) ~= "table") then
 				return
 			end
-			for a,b in pairs (t) do 
+			for a,b in pairs (t) do
 				print (a,b)
 			end
 		end
-		
-	--> global 'table_deepcopy' copies a full table	
-		function table_deepcopy (orig)
+
+	--> copies a full table
+		function Details.CopyTable(orig)
 			local orig_type = type(orig)
 			local copy
 			if orig_type == 'table' then
 				copy = {}
 				for orig_key, orig_value in next, orig, nil do
-					copy [table_deepcopy (orig_key)] = table_deepcopy (orig_value)
+					copy [Details.CopyTable (orig_key)] = Details.CopyTable (orig_value)
 				end
 			else
 				copy = orig

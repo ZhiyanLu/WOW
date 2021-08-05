@@ -1,6 +1,6 @@
 if GetLocale()~='zhCN' then return end
-local main= "9.0.0."
-local minor = "852"
+local main= "9.1.0."
+local minor = "876"
 BIGFOOT_VERSION = "zhCN"..main..minor;
 
 function GetMinorVersion()
@@ -8,6 +8,136 @@ function GetMinorVersion()
 end
 
 BigFootChangelog_ah();
+
+	BigFootChangelog_at("2021/07/26 (9.1.0.876)")
+	BigFootChangelog_ar("进度管家","升级至最新版本(9.1.3)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.7)。")
+
+
+	BigFootChangelog_at("2021/07/21 (9.1.0.875)")
+	BigFootChangelog_ar("地图标记","暗影国度模块更新。")
+	BigFootChangelog_ar("竞技语音","中文语音模块更新。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.6)。")
+
+
+	BigFootChangelog_at("2021/07/16 (9.1.0.874)")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.5)。")
+
+
+	BigFootChangelog_at("2021/07/14 (9.1.0.873)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90100.01)。")
+
+
+	BigFootChangelog_at("2021/07/13 (9.1.0.872)")
+	BigFootChangelog_ar("地图标记","暗影国度模块更新。")
+	BigFootChangelog_ar("进度管家","升级至最新版本(9.1.2)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.3)。")
+
+
+	BigFootChangelog_at("2021/07/05 (9.1.0.871)")
+	BigFootChangelog_ar("首领报警","修复无法正常加载模块的问题。")
+	BigFootChangelog_ar("地图标记","暗影国度模块更新。")
+	BigFootChangelog_ar("进度管家","升级至最新版本(9.1.1)。")
+
+
+	BigFootChangelog_at("2021/07/02 (9.1.0.870)")
+	BigFootChangelog_ar("可接任务","升级至最新版本(116)。")
+	BigFootChangelog_ar("世界任务","升级至最新版本(426)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.1)。")
+
+
+	BigFootChangelog_at("2021/07/01 (9.1.0.869)")
+	BigFootChangelog_ar("大脚插件","兼容至当前游戏版本。")
+	BigFootChangelog_ar("大脚插件","同步更新整合类插件。")
+
+
+	BigFootChangelog_at("2021/06/16 (9.0.5.868)")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.30)。")
+	BigFootChangelog_ar("战场目标","升级至最新版本(9.0.5.5)。")
+
+
+	BigFootChangelog_at("2021/06/04 (9.0.5.867)")
+	BigFootChangelog_ar("可接任务","升级至最新版本(115)。")
+	BigFootChangelog_ar("竞技助手","升级至最新版本(7.0.5)。")
+	BigFootChangelog_ar("战场目标","升级至最新版本(9.0.5.2)。")
+
+
+	BigFootChangelog_at("2021/06/02 (9.0.5.866)")
+	BigFootChangelog_ar("竞技语音","升级至最新版本(3.8)。")
+	BigFootChangelog_ar("进度管家","升级至最新版本(9.0.8)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.29)。")
+	BigFootChangelog_ar("战场目标","升级至最新版本(9.0.5.0)。")
+
+
+	BigFootChangelog_at("2021/05/18 (9.0.5.865)")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.28)。")
+	BigFootChangelog_ar("界面调整","升级至最新版本(4.10.8)。")
+
+
+	BigFootChangelog_at("2021/05/11 (9.0.5.864)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90005.02)。")
+
+
+	BigFootChangelog_at("2021/05/07 (9.0.5.863)")
+	BigFootChangelog_ar("世界任务","升级至最新版本(423)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.27)。")
+
+
+	BigFootChangelog_at("2021/04/30 (9.0.5.862)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90005.01)。")
+
+
+	BigFootChangelog_at("2021/04/23 (9.0.5.861)")
+	BigFootChangelog_ar("大脚插件","添加暗影界旅程(ShadowlandsJourney)。")
+	BigFootChangelog_ar("地图标记","暗影国度模块更新。")
+	BigFootChangelog_ar("竞技语音","升级至最新版本(3.7.1)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.26)。")
+
+
+	BigFootChangelog_at("2021/04/01 (9.0.5.860)")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.25)。")
+
+
+	BigFootChangelog_at("2021/03/25 (9.0.5.859)")
+	BigFootChangelog_ar("竞技语音","升级至最新版本(3.5)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.24)。")
+
+
+	BigFootChangelog_at("2021/03/18 (9.0.5.858)")
+	BigFootChangelog_ar("世界任务","升级至最新版本(422)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.23)。")
+
+
+	BigFootChangelog_at("2021/03/11 (9.0.5.857)")
+	BigFootChangelog_ar("大脚插件","兼容至当前游戏版本。")
+	BigFootChangelog_ar("世界任务","升级至最新版本(421)。")
+	BigFootChangelog_ar("进度管家","升级至最新版本(9.0.7)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.22)。")
+
+
+	BigFootChangelog_at("2021/02/20 (9.0.0.856)")
+	BigFootChangelog_ar("世界任务","升级至最新版本(419)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.21)。")
+
+
+	BigFootChangelog_at("2021/02/17 (9.0.0.855)")
+	BigFootChangelog_ar("地图标记","模块更新。")
+	BigFootChangelog_ar("世界任务","升级至最新版本(418)。")
+	BigFootChangelog_ar("进度管家","升级至最新版本(9.0.5)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.20)。")
+
+
+	BigFootChangelog_at("2021/01/27 (9.0.0.854)")
+	BigFootChangelog_ar("可接任务","升级至最新版本(114)。")
+	BigFootChangelog_ar("竞技语音","升级至最新版本(3.2)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.19)。")
+
+
+	BigFootChangelog_at("2021/01/20 (9.0.0.853)")
+	BigFootChangelog_ar("世界任务","升级至最新版本(416)。")
+	BigFootChangelog_ar("秘境增强","升级至最新版本(0.19.8)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.18)。")
+
 
 	BigFootChangelog_at("2021/01/08 (9.0.0.852)")
 	BigFootChangelog_ar("首领报警","升级至最新版本(9.0.17)。")
@@ -1770,4 +1900,4 @@ BigFootChangelog_ah();
 BigFootChangelog_af();
 
 
-BF_VERSION_CHECKSUM = "55"
+BF_VERSION_CHECKSUM = "48"

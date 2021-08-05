@@ -200,7 +200,7 @@ callbackhandler-1.0: enabled
 dominos_config: enabled
 libsharedmedia-3.0: enabled
 MythicPlusTimer: disabled
-TidyPlates_ThreatPlates: enabled
+TidyPlates_ThreatPlates: disabled
 Ace3: enabled
 AceGUI-3.0-SharedMediaWidgets: enabled
 SMT: enabled
@@ -367,3 +367,5 @@ dbm-party-shadowlands: enabled
 dbm-shadowlands: enabled
 GladiatorlosSA_zhCN: enabled
 libguildpositions-1.0: enabled
+MRT: enabled
+BattlegroundTargets: enabled

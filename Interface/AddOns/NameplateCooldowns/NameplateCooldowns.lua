@@ -5,15 +5,13 @@
 -- luacheck: globals InterfaceOptionsFrame_OpenToCategory GetSpellInfo GameFontHighlightSmall hooksecurefunc ALL GameTooltip FillLocalizedClassList
 -- luacheck: globals OTHER PlaySound SOUNDKIT COMBATLOG_OBJECT_REACTION_HOSTILE CombatLogGetCurrentEventInfo IsInInstance strsplit UnitName GetRealmName
 
-if (select(4, GetBuildInfo()) < 80200) then return end
-
 local _, addonTable = ...;
 local Interrupts = addonTable.Interrupts;
 local Trinkets = addonTable.Trinkets;
 local Reductions = addonTable.Reductions;
 
 --@non-debug@
-local buildTimestamp = "90002.0-release";
+local buildTimestamp = "90100.4-release";
 --@end-non-debug@
 
 -- Libraries
@@ -51,17 +49,17 @@ local ElapsedTimer = 0;
 local Nameplates = {};
 local NameplatesVisible = {};
 local InstanceType = "none";
+local AllCooldowns = { };
 local GUIFrame, EventFrame, TestFrame, db, aceDB, ProfileOptionsFrame, LocalPlayerGUID;
 
-local _G, pairs, UIParent, string_gsub, string_find, bit_band, GetTime, math_ceil, table_insert, table_sort, C_Timer_After, string_lower, string_format, C_Timer_NewTimer, math_max, C_NamePlate_GetNamePlateForUnit, UnitGUID =
-	  _G, pairs, UIParent, string.gsub,	string.find, bit.band, GetTime, math.ceil, table.insert, table.sort, C_Timer.After, string.lower, string.format, C_Timer.NewTimer, math.max, C_NamePlate.GetNamePlateForUnit, UnitGUID;
-local wipe, format, GetSpellLink, IsInGroup, unpack, tinsert, GetSpellInfo, string_gmatch = wipe, string.format, GetSpellLink, IsInGroup, unpack, table.insert, GetSpellInfo, string.gmatch;
+local _G, pairs, UIParent, string_gsub, string_find, bit_band, GetTime, math_ceil, table_insert, table_sort, C_Timer_After, string_format, C_Timer_NewTimer, math_max, C_NamePlate_GetNamePlateForUnit, UnitGUID =
+	  _G, pairs, UIParent, string.gsub,	string.find, bit.band, GetTime, math.ceil, table.insert, table.sort, C_Timer.After, string.format, C_Timer.NewTimer, math.max, C_NamePlate.GetNamePlateForUnit, UnitGUID;
+local wipe, IsInGroup, unpack, tinsert, GetSpellInfo = wipe, IsInGroup, unpack, table.insert, GetSpellInfo;
 
 local OnStartup, InitializeDB, GetDefaultDBEntryForSpell;
 local AllocateIcon, ReallocateAllIcons, UpdateOnlyOneNameplate, HideCDIcon, ShowCDIcon;
 local OnUpdate;
-local EnableTestMode, DisableTestMode;
-local ShowGUI, InitializeGUI, GUICategory_General, GUICategory_Profiles, GUICategory_Other, OnGUICategoryClick, ShowGUICategory, CreateGUICategory;
+local ShowGUI, InitializeGUI, GUICategory_General, GUICategory_Other, OnGUICategoryClick, ShowGUICategory, CreateGUICategory;
 
 -------------------------------------------------------------------------------------------------
 ----- Initialize
@@ -71,9 +69,7 @@ do
 	function GetDefaultDBEntryForSpell()
 		return {
 			["enabled"] = true,
-			["cooldown"] = 60,
 			["glow"] = nil,
-			["spellIDs"] = nil,
 		};
 	end
 
@@ -87,12 +83,7 @@ do
 					order = 1,
 					name = 'Open config dialog',
 					desc = nil,
-					func = function()
-						ShowGUI();
-						if (GUIFrame) then
-							InterfaceOptionsFrameCancel:Click();
-						end
-					end,
+					func = ShowGUI,
 				},
 			},
 		});
@@ -111,7 +102,7 @@ do
 			EventFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 		end
 		if (TestFrame and TestFrame:GetScript("OnUpdate") ~= nil) then
-			DisableTestMode();
+			addonTable.DisableTestMode();
 		end
 		OnUpdate();
 		if (GUIFrame) then
@@ -123,13 +114,14 @@ do
 
 	function InitializeDB()
 		-- // set defaults
+		local iconSize = 26;
 		local aceDBDefaults = {
 			profile = {
 				SpellCDs = { },
 				DBVersion = 0,
 				MigrationVersion = 0,
 				IconSpacing = 0,
-				IconSize = 26,
+				IconSize = iconSize,
 				IconXOffset = 0,
 				IconYOffset = 30,
 				FullOpacityAlways = false,
@@ -152,7 +144,7 @@ do
 				},
 				ShowOldBlizzardBorderAroundIcons = false,
 				FontScale = 1,
-				TimerTextSize = nil,
+				TimerTextSize = math_ceil(iconSize - iconSize/2),
 				TimerTextUseRelativeScale = true,
 				TimerTextAnchor = "CENTER",
 				TimerTextAnchorIcon = "CENTER",
@@ -165,6 +157,8 @@ do
 				ShowCDOnAllies = false,
 				ShowInactiveCD = false,
 				IgnoreNameplateScale = false,
+				ShowCooldownTooltip = false,
+				InverseLogic = false,
 			},
 		};
 		aceDB = LibStub("AceDB-3.0"):New("NameplateCooldownsAceDB", aceDBDefaults);
@@ -177,32 +171,38 @@ do
 		aceDB.RegisterCallback("NameplateCooldowns", "OnProfileReset", ReloadDB);
 	end
 
-	local function OnStartup_AddNewAndUpdatedSpells()
-		if (db.DBVersion < addonTable.DefaultSpellsVersion) then
-			for class, spellsTable in pairs(addonTable.CDs) do
-				for spellID, spellCd in pairs(spellsTable) do
-					local spellName = SpellNameByID[spellID];
-					if (spellName ~= nil) then
-						if (db.SpellCDs[spellName] == nil) then
-							db.SpellCDs[spellName] = GetDefaultDBEntryForSpell();
-							db.SpellCDs[spellName].cooldown = spellCd;
-							db.SpellCDs[spellName].spellIDs = { [spellID] = true; };
-							db.SpellCDs[spellName].class = class;
-							addonTable.Print(format(L["New spell has been added: %s"], GetSpellLink(spellID)));
-						else
-							db.SpellCDs[spellName].cooldown = spellCd;
-						end
+	function addonTable.BuildCooldownValues()
+		wipe(AllCooldowns);
+		for class, cds in pairs(addonTable.CDs) do
+			for spellId, cd in pairs(cds) do
+				if (SpellNameByID[spellId] ~= nil) then
+					AllCooldowns[spellId] = cd;
+					if (db.SpellCDs[spellId] == nil) then
+						db.SpellCDs[spellId] = GetDefaultDBEntryForSpell();
+						addonTable.Print(string_format(L["New spell has been added: %s"].." (%s)", GetSpellLink(spellId) or SpellNameByID[spellId], class));
 					end
 				end
 			end
-			db.DBVersion = addonTable.DefaultSpellsVersion;
+		end
+		for spellID in pairs(AllCooldowns) do
+			if (db.SpellCDs[spellID] ~= nil and db.SpellCDs[spellID].customCD ~= nil) then
+				AllCooldowns[spellID] = db.SpellCDs[spellID].customCD;
+			end
+		end
+
+		-- delete invalid spells
+		for spellId in pairs(db.SpellCDs) do
+			if (SpellNameByID[spellId] == nil) then
+				db.SpellCDs[spellId] = nil;
+				print("Spell with id:" .. tostring(spellId) .. " seems to be invalid, removing from db...");
+			end
 		end
 	end
 
 	function OnStartup()
 		LocalPlayerGUID = UnitGUID("player");
 		InitializeDB();
-		OnStartup_AddNewAndUpdatedSpells();
+		addonTable.BuildCooldownValues();
 		-- // starting OnUpdate()
 		EventFrame:SetScript("OnUpdate", function(_, elapsed)
 			ElapsedTimer = ElapsedTimer + elapsed;
@@ -236,6 +236,12 @@ do
 				end
 				addonTable.Print("Waiting for replies from " .. c);
 				C_ChatInfo.SendAddonMessage("NC_prefix", "requesting", c);
+			elseif (msg == "test") then
+				if (not addonTable.TestModeActive) then
+					addonTable.EnableTestMode();
+				else
+					addonTable.DisableTestMode();
+				end
 			else
 				ShowGUI();
 			end
@@ -251,6 +257,25 @@ end
 do
 
 	local glowInfo = { };
+
+	local iconTooltip = LRD.CreateTooltip();
+	local function SetCooldownTooltip(icon, spellID)
+		if (db.ShowCooldownTooltip and spellID ~= nil) then
+			icon:SetScript("OnEnter", function(self)
+				iconTooltip:ClearAllPoints();
+				iconTooltip:SetPoint("BOTTOM", self, "TOP", 0, 0);
+				iconTooltip:SetSpellById(spellID);
+				iconTooltip:Show();
+			end);
+			icon:SetScript("OnLeave", function()
+				iconTooltip:Hide();
+			end);
+		else
+			icon:SetScript("OnEnter", nil);
+			icon:SetScript("OnLeave", nil);
+		end
+	end
+	addonTable.SetCooldownTooltip = SetCooldownTooltip;
 
 	local function AllocateIcon_SetIconPlace(frame, icon, iconIndex)
 		icon:ClearAllPoints();
@@ -388,68 +413,68 @@ do
 	local CDSortFunctions = {
 		[SORT_MODE_NONE] = function() end,
 		[SORT_MODE_TRINKET_INTERRUPT_OTHER] = function(item1, item2)
-			if (Trinkets[item1.spellName]) then
-				if (Trinkets[item2.spellName]) then
+			if (Trinkets[item1.spellID]) then
+				if (Trinkets[item2.spellID]) then
 					return item1.expires < item2.expires;
 				else
 					return true;
 				end
-			elseif (Trinkets[item2.spellName]) then
+			elseif (Trinkets[item2.spellID]) then
 				return false;
-			elseif (Interrupts[item1.spellName]) then
-				if (Interrupts[item2.spellName]) then
+			elseif (Interrupts[item1.spellID]) then
+				if (Interrupts[item2.spellID]) then
 					return item1.expires < item2.expires;
 				else
 					return true;
 				end
-			elseif (Interrupts[item2.spellName]) then
+			elseif (Interrupts[item2.spellID]) then
 				return false;
 			else
 				return item1.expires < item2.expires;
 			end
 		end,
 		[SORT_MODE_INTERRUPT_TRINKET_OTHER] = function(item1, item2)
-			if (Interrupts[item1.spellName]) then
-				if (Interrupts[item2.spellName]) then
+			if (Interrupts[item1.spellID]) then
+				if (Interrupts[item2.spellID]) then
 					return item1.expires < item2.expires;
 				else
 					return true;
 				end
-			elseif (Interrupts[item2.spellName]) then
+			elseif (Interrupts[item2.spellID]) then
 				return false;
-			elseif (Trinkets[item1.spellName]) then
-				if (Trinkets[item2.spellName]) then
+			elseif (Trinkets[item1.spellID]) then
+				if (Trinkets[item2.spellID]) then
 					return item1.expires < item2.expires;
 				else
 					return true;
 				end
-			elseif (Trinkets[item2.spellName]) then
+			elseif (Trinkets[item2.spellID]) then
 				return false;
 			else
 				return item1.expires < item2.expires;
 			end
 		end,
 		[SORT_MODE_TRINKET_OTHER] = function(item1, item2)
-			if (Trinkets[item1.spellName]) then
-				if (Trinkets[item2.spellName]) then
+			if (Trinkets[item1.spellID]) then
+				if (Trinkets[item2.spellID]) then
 					return item1.expires < item2.expires;
 				else
 					return true;
 				end
-			elseif (Trinkets[item2.spellName]) then
+			elseif (Trinkets[item2.spellID]) then
 				return false;
 			else
 				return item1.expires < item2.expires;
 			end
 		end,
 		[SORT_MODE_INTERRUPT_OTHER] = function(item1, item2)
-			if (Interrupts[item1.spellName]) then
-				if (Interrupts[item2.spellName]) then
+			if (Interrupts[item1.spellID]) then
+				if (Interrupts[item2.spellID]) then
 					return item1.expires < item2.expires;
 				else
 					return true;
 				end
-			elseif (Interrupts[item2.spellName]) then
+			elseif (Interrupts[item2.spellID]) then
 				return false;
 			else
 				return item1.expires < item2.expires;
@@ -459,8 +484,8 @@ do
 
 	local function Nameplate_SortAuras(cds)
 		local t = { };
-		for spellName, spellInfo in pairs(cds) do
-			if (spellName ~= nil) then
+		for _, spellInfo in pairs(cds) do
+			if (spellInfo ~= nil) then
 				t[#t+1] = spellInfo;
 			end
 		end
@@ -497,14 +522,14 @@ do
 		end
 	end
 
-	local function Nameplate_SetBorder(icon, spellName, isActive)
-		if (isActive and db.ShowBorderInterrupts and Interrupts[spellName]) then
+	local function Nameplate_SetBorder(icon, spellID, isActive)
+		if (isActive and db.ShowBorderInterrupts and Interrupts[spellID]) then
 			if (icon.borderState ~= 1) then
 				icon.border:SetVertexColor(unpack(db.BorderInterruptsColor));
 				icon.border:Show();
 				icon.borderState = 1;
 			end
-		elseif (isActive and db.ShowBorderTrinkets and Trinkets[spellName]) then
+		elseif (isActive and db.ShowBorderTrinkets and Trinkets[spellID]) then
 			if (icon.borderState ~= 2) then
 				icon.border:SetVertexColor(unpack(db.BorderTrinketsColor));
 				icon.border:Show();
@@ -518,7 +543,12 @@ do
 
 	local function Nameplate_SetCooldown(icon, remain, isActive)
 		if (isActive) then
-			local text = (remain >= 60) and (math_ceil(remain/60).."m") or math_ceil(remain);
+			local text;
+			if (db.InverseLogic) then
+				text = "";
+			else
+				text = (remain >= 60) and (math_ceil(remain/60).."m") or math_ceil(remain);
+			end
 			if (icon.text ~= text) then
 				icon.cooldownText:SetText(text);
 				icon.text = text;
@@ -541,15 +571,19 @@ do
 	end
 
 	function UpdateOnlyOneNameplate(frame, unitGUID)
+		if (unitGUID == LocalPlayerGUID) then return; end
 		local counter = 1;
 		if (GlobalFilterNameplate(unitGUID)) then
 			if (SpellsPerPlayerGUID[unitGUID]) then
 				local currentTime = GetTime();
 				local sortedCDs = Nameplate_SortAuras(SpellsPerPlayerGUID[unitGUID]);
 				for _, spellInfo in pairs(sortedCDs) do
-					local spellName = spellInfo.spellName;
+					local spellID = spellInfo.spellID;
 					local isActiveCD = spellInfo.expires > currentTime;
-					local dbInfo = db.SpellCDs[spellName];
+					if (db.InverseLogic) then
+						isActiveCD = not isActiveCD;
+					end
+					local dbInfo = db.SpellCDs[spellID];
 					if (dbInfo and dbInfo.enabled and (db.ShowInactiveCD or isActiveCD)) then
 						if (counter > frame.NCIconsCount) then
 							AllocateIcon(frame);
@@ -559,7 +593,8 @@ do
 						local remain = spellInfo.expires - currentTime;
 						UpdateNameplate_SetGlow(icon, dbInfo.glow, remain, isActiveCD);
 						Nameplate_SetCooldown(icon, remain, isActiveCD);
-						Nameplate_SetBorder(icon, spellName, isActiveCD);
+						Nameplate_SetBorder(icon, spellID, isActiveCD);
+						SetCooldownTooltip(icon, spellID);
 						if (not icon.shown) then
 							ShowCDIcon(icon, frame);
 						end
@@ -625,38 +660,32 @@ do
 		local cTime = GetTime();
 		for _, unitGUID in pairs(NameplatesVisible) do
 			if (not SpellsPerPlayerGUID[unitGUID]) then SpellsPerPlayerGUID[unitGUID] = { }; end
-			SpellsPerPlayerGUID[unitGUID][SpellNameByID[SPELL_PVPTRINKET]] = { ["spellName"] = SpellNameByID[SPELL_PVPTRINKET], ["expires"] = cTime + 120, ["texture"] = SpellTextureByID[SPELL_PVPTRINKET] }; -- // 2m test
+			SpellsPerPlayerGUID[unitGUID][SPELL_PVPTRINKET] = { ["spellID"] = SPELL_PVPTRINKET, ["expires"] = cTime + 120, ["texture"] = SpellTextureByID[SPELL_PVPTRINKET] }; -- // 2m test
 			for spellID, cd in pairs(_spellIDs) do
-				if (not SpellsPerPlayerGUID[unitGUID][SpellNameByID[spellID]]) then
-					SpellsPerPlayerGUID[unitGUID][SpellNameByID[spellID]] = { ["spellName"] = SpellNameByID[spellID], ["expires"] = cTime + cd, ["texture"] = SpellTextureByID[spellID] };
+				if (not SpellsPerPlayerGUID[unitGUID][spellID]) then
+					SpellsPerPlayerGUID[unitGUID][spellID] = { ["spellID"] = spellID, ["expires"] = cTime + cd, ["texture"] = SpellTextureByID[spellID] };
 				else
-					if (cTime - SpellsPerPlayerGUID[unitGUID][SpellNameByID[spellID]]["expires"] > 0) then
-						SpellsPerPlayerGUID[unitGUID][SpellNameByID[spellID]] = { ["spellName"] = SpellNameByID[spellID], ["expires"] = cTime + cd, ["texture"] = SpellTextureByID[spellID] };
+					if (cTime - SpellsPerPlayerGUID[unitGUID][spellID]["expires"] > 0) then
+						SpellsPerPlayerGUID[unitGUID][spellID] = { ["spellID"] = spellID, ["expires"] = cTime + cd, ["texture"] = SpellTextureByID[spellID] };
 					end
 				end
 			end
 		end
 	end
 
-	function EnableTestMode()
+	function addonTable.EnableTestMode()
 		_charactersDB = addonTable.deepcopy(SpellsPerPlayerGUID);
 		_spellCDs = addonTable.deepcopy(db.SpellCDs);
-		db.SpellCDs = { };
-		for spellID, cd in pairs(_spellIDs) do
-			local spellName = SpellNameByID[spellID];
-			db.SpellCDs[spellName] = GetDefaultDBEntryForSpell();
-			db.SpellCDs[spellName].enabled = true;
-			db.SpellCDs[spellName].cooldown = cd;
-			db.SpellCDs[spellName].spellIDs = { [spellID] = true; };
+		for spellID in pairs(_spellIDs) do
+			db.SpellCDs[spellID] = GetDefaultDBEntryForSpell();
+			db.SpellCDs[spellID].enabled = true;
 		end
-		db.SpellCDs[SpellNameByID[SPELL_PVPTRINKET]] = GetDefaultDBEntryForSpell();
-		db.SpellCDs[SpellNameByID[SPELL_PVPTRINKET]].enabled = true;
-		db.SpellCDs[SpellNameByID[SPELL_PVPTRINKET]].cooldown = 120;
-		db.SpellCDs[SpellNameByID[SPELL_PVPTRINKET]].spellIDs = { [SPELL_PVPTRINKET] = true; };
-		db.SpellCDs[SpellNameByID[SPELL_PVPTRINKET]].glow = GLOW_TIME_INFINITE;
+		db.SpellCDs[SPELL_PVPTRINKET] = GetDefaultDBEntryForSpell();
+		db.SpellCDs[SPELL_PVPTRINKET].enabled = true;
+		db.SpellCDs[SPELL_PVPTRINKET].glow = GLOW_TIME_INFINITE;
 		if (not TestFrame) then
 			TestFrame = CreateFrame("frame");
-			TestFrame:SetScript("OnEvent", function() DisableTestMode(); end);
+			TestFrame:SetScript("OnEvent", function() addonTable.DisableTestMode(); end);
 		end
 		TestFrame:SetScript("OnUpdate", function(_, elapsed)
 			_t = _t + elapsed;
@@ -668,14 +697,16 @@ do
 		TestFrame:RegisterEvent("PLAYER_LOGOUT");
 		refreshCDs(); 	-- // for instant start
 		OnUpdate();		-- // for instant start
+		addonTable.TestModeActive = true;
 	end
 
-	function DisableTestMode()
+	function addonTable.DisableTestMode()
 		TestFrame:SetScript("OnUpdate", nil);
 		TestFrame:UnregisterEvent("PLAYER_LOGOUT");
 		SpellsPerPlayerGUID = addonTable.deepcopy(_charactersDB);
 		db.SpellCDs = addonTable.deepcopy(_spellCDs);
 		OnUpdate();		-- // for instant start
+		addonTable.TestModeActive = false;
 	end
 
 end
@@ -684,18 +715,6 @@ end
 ----- GUI
 -------------------------------------------------------------------------------------------------
 do
-
-	local function GetIDAndTextureForSpell(spellName, spellInfo)
-		local spellID, textureID;
-		if (spellInfo.spellIDs ~= nil and next(spellInfo.spellIDs)) then
-			spellID = next(spellInfo.spellIDs);
-			textureID = SpellTextureByID[spellID];
-		else
-			spellID = next(AllSpellIDsAndIconsByName[spellName]);
-			textureID = SpellTextureByID[spellID];
-		end
-		return spellID, textureID;
-	end
 
 	function ShowGUI()
 		if (not InCombatLockdown()) then
@@ -1283,7 +1302,7 @@ do
 
 	function InitializeGUI()
 		GUIFrame = CreateFrame("Frame", "NC_GUIFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate");
-		GUIFrame:SetHeight(490);
+		GUIFrame:SetHeight(540);
 		GUIFrame:SetWidth(540);
 		GUIFrame:SetPoint("CENTER", UIParent, "CENTER", 0, 80);
 		GUIFrame:SetBackdrop({
@@ -1340,7 +1359,7 @@ do
 		GUIFrame.Categories = {};
 		GUIFrame.SpellIcons = {};
 
-		for index, value in pairs({ L["General"], L["Filters"], L["options:category:borders"], L["options:category:text"], L["Profiles"], L["options:category:spells"] }) do
+		for index, value in pairs({ L["General"], L["Filters"], L["options:category:borders"], L["options:category:text"], L["options:category:spells"] }) do
 			local b = CreateGUICategory();
 			b.index = index;
 			b.text:SetText(value);
@@ -1361,8 +1380,6 @@ do
 				GUICategory_General(index, value);
 			elseif (value == L["Filters"]) then
 				GUICategory_Filters(index, value);
-			elseif (value == L["Profiles"]) then
-				GUICategory_Profiles(index, value);
 			elseif (value == L["options:category:borders"]) then
 				GUICategory_Borders(index, value);
 			elseif (value == L["options:category:text"]) then
@@ -1371,6 +1388,38 @@ do
 				GUICategory_Other(index, value);
 			end
 		end
+
+		local buttonTestMode;
+		do
+			buttonTestMode = LRD.CreateButton();
+			buttonTestMode:SetParent(GUIFrame.outline);
+			buttonTestMode:SetText(L["options:general:test-mode"]);
+			buttonTestMode:SetPoint("BOTTOMLEFT", GUIFrame.outline, "BOTTOMLEFT", 4, 4);
+			buttonTestMode:SetPoint("BOTTOMRIGHT", GUIFrame.outline, "BOTTOMRIGHT", -4, 4);
+			buttonTestMode:SetHeight(30);
+			buttonTestMode:SetScript("OnClick", function()
+				if (not addonTable.TestModeActive) then
+					addonTable.EnableTestMode();
+				else
+					addonTable.DisableTestMode();
+				end
+			end);
+		end
+
+		local buttonProfiles;
+		do
+			buttonProfiles = LRD.CreateButton();
+			buttonProfiles:SetParent(GUIFrame.outline);
+			buttonProfiles:SetText(L["options:profiles"]);
+			buttonProfiles:SetHeight(30);
+			buttonProfiles:SetPoint("BOTTOMLEFT", buttonTestMode, "TOPLEFT", 0, 0);
+			buttonProfiles:SetPoint("BOTTOMRIGHT", buttonTestMode, "TOPRIGHT", 0, 0);
+			buttonProfiles:SetScript("OnClick", function()
+				InterfaceOptionsFrame_OpenToCategory(ProfileOptionsFrame);
+				GUIFrame:Hide();
+			end);
+		end
+
 	end
 
 	function GUICategory_General(index)
@@ -1388,92 +1437,55 @@ do
 			[frameAnchors[9]] = L["anchor-point:bottomleft"]
 		};
 
-
-		local buttonEnableDisableAddon = LRD.CreateButton();
-		buttonEnableDisableAddon:SetParent(GUIFrame);
-		buttonEnableDisableAddon:SetText(db.AddonEnabled and L["options:general:disable-addon-btn"] or L["options:general:enable-addon-btn"]);
-		buttonEnableDisableAddon:SetWidth(340);
-		buttonEnableDisableAddon:SetHeight(20);
-		buttonEnableDisableAddon:SetPoint("TOPLEFT", GUIFrame.outline, "TOPRIGHT", 15, -5);
-		buttonEnableDisableAddon:SetScript("OnClick", function()
-			if (db.AddonEnabled) then
-				EventFrame:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
-				wipe(SpellsPerPlayerGUID);
-			else
-				EventFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
-			end
-			OnUpdate();
-			db.AddonEnabled = not db.AddonEnabled;
-			buttonEnableDisableAddon.Text:SetText(db.AddonEnabled and L["options:general:disable-addon-btn"] or L["options:general:enable-addon-btn"]);
-			addonTable.Print(db.AddonEnabled and L["chat:addon-is-enabled"] or L["chat:addon-is-disabled"]);
-		end);
-		table.insert(GUIFrame.Categories[index], buttonEnableDisableAddon);
-		table_insert(GUIFrame.OnDBChangedHandlers, function() buttonEnableDisableAddon.Text:SetText(db.AddonEnabled and L["options:general:disable-addon-btn"] or L["options:general:enable-addon-btn"]); end);
-
-		local buttonSwitchTestMode = LRD.CreateButton();
-		buttonSwitchTestMode:SetParent(GUIFrame);
-		buttonSwitchTestMode:SetText(L["Enable test mode (need at least one visible nameplate)"]);
-		buttonSwitchTestMode:SetWidth(340);
-		buttonSwitchTestMode:SetHeight(20);
-		buttonSwitchTestMode:SetPoint("TOPLEFT", GUIFrame.outline, "TOPRIGHT", 15, -30);
-		buttonSwitchTestMode:SetScript("OnClick", function(self)
-			if (not TestFrame or not TestFrame:GetScript("OnUpdate")) then
-				EnableTestMode();
-				self.Text:SetText(L["Disable test mode"]);
-			else
-				DisableTestMode();
-				self.Text:SetText(L["Enable test mode (need at least one visible nameplate)"]);
-			end
-		end);
-		table.insert(GUIFrame.Categories[index], buttonSwitchTestMode);
-		table_insert(GUIFrame.OnDBChangedHandlers, function() buttonSwitchTestMode.Text:SetText(L["Enable test mode (need at least one visible nameplate)"]); end);
-
-		local sliderIconSize = LRD.CreateSlider();
-		sliderIconSize:SetParent(GUIFrame.outline);
-		sliderIconSize:SetPoint("TOPLEFT", GUIFrame.outline, "TOPRIGHT", 15, -60);
-		sliderIconSize:SetHeight(100);
-		sliderIconSize:SetWidth(155);
-		sliderIconSize:GetTextObject():SetText(L["Icon size"]);
-		sliderIconSize:GetBaseSliderObject():SetValueStep(1);
-		sliderIconSize:GetBaseSliderObject():SetMinMaxValues(1, 50);
-		sliderIconSize:GetBaseSliderObject():SetValue(db.IconSize);
-		sliderIconSize:GetBaseSliderObject():SetScript("OnValueChanged", function(_, value)
-			sliderIconSize:GetEditboxObject():SetText(tostring(math_ceil(value)));
-			db.IconSize = math_ceil(value);
-			ReallocateAllIcons(false);
-		end);
-		sliderIconSize:GetEditboxObject():SetText(tostring(db.IconSize));
-		sliderIconSize:GetEditboxObject():SetScript("OnEnterPressed", function()
-			if (sliderIconSize:GetEditboxObject():GetText() ~= "") then
-				local v = tonumber(sliderIconSize:GetEditboxObject():GetText());
-				if (v == nil) then
-					sliderIconSize:GetEditboxObject():SetText(tostring(db.IconSize));
-					addonTable.Print(L["Value must be a number"]);
-				else
-					if (v > 50) then
-						v = 50;
-					end
-					if (v < 1) then
-						v = 1;
-					end
-					sliderIconSize:GetBaseSliderObject():SetValue(v);
-				end
-				sliderIconSize:GetEditboxObject():ClearFocus();
-			end
-		end);
-		sliderIconSize:GetLowTextObject():SetText("1");
-		sliderIconSize:GetHighTextObject():SetText("50");
-		table.insert(GUIFrame.Categories[index], sliderIconSize);
-		table_insert(GUIFrame.OnDBChangedHandlers, function() sliderIconSize:GetBaseSliderObject():SetValue(db.IconSize); sliderIconSize:GetEditboxObject():SetText(tostring(db.IconSize)); end);
-
-		-- // sliderIconSpacing
+		local sliderIconSize;
 		do
+			local minValue, maxValue = 1, 100;
+			sliderIconSize = LRD.CreateSlider();
+			sliderIconSize:SetParent(GUIFrame.outline);
+			sliderIconSize:SetHeight(100);
+			sliderIconSize:SetPoint("TOPLEFT", GUIFrame.outline, "TOPRIGHT", 15, -15);
+			sliderIconSize:SetPoint("TOPRIGHT", GUIFrame, "TOPRIGHT", -20, 0);
+			sliderIconSize:GetTextObject():SetText(L["Icon size"]);
+			sliderIconSize:GetBaseSliderObject():SetValueStep(1);
+			sliderIconSize:GetBaseSliderObject():SetMinMaxValues(minValue, maxValue);
+			sliderIconSize:GetBaseSliderObject():SetValue(db.IconSize);
+			sliderIconSize:GetBaseSliderObject():SetScript("OnValueChanged", function(_, value)
+				sliderIconSize:GetEditboxObject():SetText(tostring(math_ceil(value)));
+				db.IconSize = math_ceil(value);
+				ReallocateAllIcons(false);
+			end);
+			sliderIconSize:GetEditboxObject():SetText(tostring(db.IconSize));
+			sliderIconSize:GetEditboxObject():SetScript("OnEnterPressed", function()
+				if (sliderIconSize:GetEditboxObject():GetText() ~= "") then
+					local v = tonumber(sliderIconSize:GetEditboxObject():GetText());
+					if (v == nil) then
+						sliderIconSize:GetEditboxObject():SetText(tostring(db.IconSize));
+						addonTable.Print(L["Value must be a number"]);
+					else
+						if (v > maxValue) then
+							v = maxValue;
+						end
+						if (v < minValue) then
+							v = minValue;
+						end
+						sliderIconSize:GetBaseSliderObject():SetValue(v);
+					end
+					sliderIconSize:GetEditboxObject():ClearFocus();
+				end
+			end);
+			sliderIconSize:GetLowTextObject():SetText(tostring(minValue));
+			sliderIconSize:GetHighTextObject():SetText(tostring(maxValue));
+			table.insert(GUIFrame.Categories[index], sliderIconSize);
+			table_insert(GUIFrame.OnDBChangedHandlers, function() sliderIconSize:GetBaseSliderObject():SetValue(db.IconSize); sliderIconSize:GetEditboxObject():SetText(tostring(db.IconSize)); end);
+		end
 
+		local sliderIconSpacing;
+		do
 			local minValue, maxValue = 0, 50;
-			local sliderIconSpacing = LRD.CreateSlider();
+			sliderIconSpacing = LRD.CreateSlider();
 			sliderIconSpacing:SetParent(GUIFrame.outline);
-			sliderIconSpacing:SetWidth(155);
-			sliderIconSpacing:SetPoint("LEFT", sliderIconSize, "RIGHT", 30, 0);
+			sliderIconSpacing:SetWidth(sliderIconSize:GetWidth());
+			sliderIconSpacing:SetPoint("TOP", sliderIconSize, "BOTTOM", 0, 45);
 			sliderIconSpacing.label:SetText(L["options:general:space-between-icons"]);
 			sliderIconSpacing.slider:SetValueStep(1);
 			sliderIconSpacing.slider:SetMinMaxValues(minValue, maxValue);
@@ -1508,87 +1520,91 @@ do
 			table_insert(GUIFrame.OnDBChangedHandlers, function() sliderIconSpacing.slider:SetValue(db.IconSpacing); sliderIconSpacing.editbox:SetText(tostring(db.IconSpacing)); end);
 		end
 
-		local sliderIconXOffset = LRD.CreateSlider();
-		sliderIconXOffset:SetParent(GUIFrame.outline);
-		sliderIconXOffset:SetPoint("TOPLEFT", GUIFrame.outline, "TOPRIGHT", 15, -115);
-		sliderIconXOffset:SetHeight(100);
-		sliderIconXOffset:SetWidth(155);
-		sliderIconXOffset:GetTextObject():SetText(L["Icon X-coord offset"]);
-		sliderIconXOffset:GetBaseSliderObject():SetValueStep(1);
-		sliderIconXOffset:GetBaseSliderObject():SetMinMaxValues(-200, 200);
-		sliderIconXOffset:GetBaseSliderObject():SetValue(db.IconXOffset);
-		sliderIconXOffset:GetBaseSliderObject():SetScript("OnValueChanged", function(_, value)
-			sliderIconXOffset:GetEditboxObject():SetText(tostring(math_ceil(value)));
-			db.IconXOffset = math_ceil(value);
-			ReallocateAllIcons(false);
-		end);
-		sliderIconXOffset:GetEditboxObject():SetText(tostring(db.IconXOffset));
-		sliderIconXOffset:GetEditboxObject():SetScript("OnEnterPressed", function()
-			if (sliderIconXOffset:GetEditboxObject():GetText() ~= "") then
-				local v = tonumber(sliderIconXOffset:GetEditboxObject():GetText());
-				if (v == nil) then
-					sliderIconXOffset:GetEditboxObject():SetText(tostring(db.IconXOffset));
-					addonTable.Print(L["Value must be a number"]);
-				else
-					if (v > 200) then
-						v = 200;
-					end
-					if (v < -200) then
-						v = -200;
-					end
-					sliderIconXOffset:GetBaseSliderObject():SetValue(v);
-				end
-				sliderIconXOffset:GetEditboxObject():ClearFocus();
-			end
-		end);
-		sliderIconXOffset:GetLowTextObject():SetText("-200");
-		sliderIconXOffset:GetHighTextObject():SetText("200");
-		table.insert(GUIFrame.Categories[index], sliderIconXOffset);
-		table_insert(GUIFrame.OnDBChangedHandlers, function() sliderIconXOffset:GetBaseSliderObject():SetValue(db.IconXOffset); sliderIconXOffset:GetEditboxObject():SetText(tostring(db.IconXOffset)); end);
-
-		local sliderIconYOffset = LRD.CreateSlider();
-		sliderIconYOffset:SetHeight(100);
-		sliderIconYOffset:SetWidth(155);
-		sliderIconYOffset:SetParent(GUIFrame.outline);
-		sliderIconYOffset:SetPoint("TOPLEFT", GUIFrame.outline, "TOPRIGHT", 200, -115);
-		sliderIconYOffset:GetTextObject():SetText(L["Icon Y-coord offset"]);
-		sliderIconYOffset:GetBaseSliderObject():SetValueStep(1);
-		sliderIconYOffset:GetBaseSliderObject():SetMinMaxValues(-200, 200);
-		sliderIconYOffset:GetBaseSliderObject():SetValue(db.IconYOffset);
-		sliderIconYOffset:GetBaseSliderObject():SetScript("OnValueChanged", function(_, value)
-			sliderIconYOffset:GetEditboxObject():SetText(tostring(math_ceil(value)));
-			db.IconYOffset = math_ceil(value);
-			ReallocateAllIcons(false);
-		end);
-		sliderIconYOffset:GetEditboxObject():SetText(tostring(db.IconYOffset));
-		sliderIconYOffset:GetEditboxObject():SetScript("OnEnterPressed", function()
-			if (sliderIconYOffset:GetEditboxObject():GetText() ~= "") then
-				local v = tonumber(sliderIconYOffset:GetEditboxObject():GetText());
-				if (v == nil) then
-					sliderIconYOffset:GetEditboxObject():SetText(tostring(db.IconYOffset));
-					addonTable.Print(L["Value must be a number"]);
-				else
-					if (v > 200) then
-						v = 200;
-					end
-					if (v < -200) then
-						v = -200;
-					end
-					sliderIconYOffset:GetBaseSliderObject():SetValue(v);
-				end
-				sliderIconYOffset:GetEditboxObject():ClearFocus();
-			end
-		end);
-		sliderIconYOffset:GetLowTextObject():SetText("-200");
-		sliderIconYOffset:GetHighTextObject():SetText("200");
-		table.insert(GUIFrame.Categories[index], sliderIconYOffset);
-		table_insert(GUIFrame.OnDBChangedHandlers, function() sliderIconYOffset:GetBaseSliderObject():SetValue(db.IconYOffset); sliderIconYOffset:GetEditboxObject():SetText(tostring(db.IconYOffset)); end);
-
-		-- // dropdownFrameAnchor
+		local sliderIconXOffset;
 		do
-			local dropdownFrameAnchor = CreateFrame("Frame", "NC.GUI.Fonts.DropdownFrameAnchor", GUIFrame, "UIDropDownMenuTemplate");
-			UIDropDownMenu_SetWidth(dropdownFrameAnchor, 140);
-			dropdownFrameAnchor:SetPoint("TOPLEFT", 155, -200);
+			sliderIconXOffset = LRD.CreateSlider();
+			sliderIconXOffset:SetParent(GUIFrame.outline);
+			sliderIconXOffset:SetPoint("TOP", sliderIconSpacing, "BOTTOM", 0, 45);
+			sliderIconXOffset:SetWidth(sliderIconSize:GetWidth());
+			sliderIconXOffset:GetTextObject():SetText(L["Icon X-coord offset"]);
+			sliderIconXOffset:GetBaseSliderObject():SetValueStep(1);
+			sliderIconXOffset:GetBaseSliderObject():SetMinMaxValues(-200, 200);
+			sliderIconXOffset:GetBaseSliderObject():SetValue(db.IconXOffset);
+			sliderIconXOffset:GetBaseSliderObject():SetScript("OnValueChanged", function(_, value)
+				sliderIconXOffset:GetEditboxObject():SetText(tostring(math_ceil(value)));
+				db.IconXOffset = math_ceil(value);
+				ReallocateAllIcons(false);
+			end);
+			sliderIconXOffset:GetEditboxObject():SetText(tostring(db.IconXOffset));
+			sliderIconXOffset:GetEditboxObject():SetScript("OnEnterPressed", function()
+				if (sliderIconXOffset:GetEditboxObject():GetText() ~= "") then
+					local v = tonumber(sliderIconXOffset:GetEditboxObject():GetText());
+					if (v == nil) then
+						sliderIconXOffset:GetEditboxObject():SetText(tostring(db.IconXOffset));
+						addonTable.Print(L["Value must be a number"]);
+					else
+						if (v > 200) then
+							v = 200;
+						end
+						if (v < -200) then
+							v = -200;
+						end
+						sliderIconXOffset:GetBaseSliderObject():SetValue(v);
+					end
+					sliderIconXOffset:GetEditboxObject():ClearFocus();
+				end
+			end);
+			sliderIconXOffset:GetLowTextObject():SetText("-200");
+			sliderIconXOffset:GetHighTextObject():SetText("200");
+			table.insert(GUIFrame.Categories[index], sliderIconXOffset);
+			table_insert(GUIFrame.OnDBChangedHandlers, function() sliderIconXOffset:GetBaseSliderObject():SetValue(db.IconXOffset); sliderIconXOffset:GetEditboxObject():SetText(tostring(db.IconXOffset)); end);
+		end
+
+		local sliderIconYOffset;
+		do
+			sliderIconYOffset = LRD.CreateSlider();
+			sliderIconYOffset:SetWidth(sliderIconSize:GetWidth());
+			sliderIconYOffset:SetParent(GUIFrame.outline);
+			sliderIconYOffset:SetPoint("TOP", sliderIconXOffset, "BOTTOM", 0, 45);
+			sliderIconYOffset:GetTextObject():SetText(L["Icon Y-coord offset"]);
+			sliderIconYOffset:GetBaseSliderObject():SetValueStep(1);
+			sliderIconYOffset:GetBaseSliderObject():SetMinMaxValues(-200, 200);
+			sliderIconYOffset:GetBaseSliderObject():SetValue(db.IconYOffset);
+			sliderIconYOffset:GetBaseSliderObject():SetScript("OnValueChanged", function(_, value)
+				sliderIconYOffset:GetEditboxObject():SetText(tostring(math_ceil(value)));
+				db.IconYOffset = math_ceil(value);
+				ReallocateAllIcons(false);
+			end);
+			sliderIconYOffset:GetEditboxObject():SetText(tostring(db.IconYOffset));
+			sliderIconYOffset:GetEditboxObject():SetScript("OnEnterPressed", function()
+				if (sliderIconYOffset:GetEditboxObject():GetText() ~= "") then
+					local v = tonumber(sliderIconYOffset:GetEditboxObject():GetText());
+					if (v == nil) then
+						sliderIconYOffset:GetEditboxObject():SetText(tostring(db.IconYOffset));
+						addonTable.Print(L["Value must be a number"]);
+					else
+						if (v > 200) then
+							v = 200;
+						end
+						if (v < -200) then
+							v = -200;
+						end
+						sliderIconYOffset:GetBaseSliderObject():SetValue(v);
+					end
+					sliderIconYOffset:GetEditboxObject():ClearFocus();
+				end
+			end);
+			sliderIconYOffset:GetLowTextObject():SetText("-200");
+			sliderIconYOffset:GetHighTextObject():SetText("200");
+			table.insert(GUIFrame.Categories[index], sliderIconYOffset);
+			table_insert(GUIFrame.OnDBChangedHandlers, function() sliderIconYOffset:GetBaseSliderObject():SetValue(db.IconYOffset); sliderIconYOffset:GetEditboxObject():SetText(tostring(db.IconYOffset)); end);
+		end
+
+		local dropdownFrameAnchor;
+		do
+			dropdownFrameAnchor = CreateFrame("Frame", "NC.GUI.Fonts.DropdownFrameAnchor", GUIFrame, "UIDropDownMenuTemplate");
+			UIDropDownMenu_SetWidth(dropdownFrameAnchor, 310);
+			dropdownFrameAnchor:SetPoint("TOP", sliderIconYOffset, "BOTTOM", 0, 45);
 			local info = {};
 			dropdownFrameAnchor.initialize = function()
 				wipe(info);
@@ -1612,11 +1628,11 @@ do
 			table_insert(GUIFrame.OnDBChangedHandlers, function() _G[dropdownFrameAnchor:GetName() .. "Text"]:SetText(frameAnchorsLocalization[db.CDFrameAnchor]); end);
 		end
 
-		-- // dropdownFrameAnchorToParent
+		local dropdownFrameAnchorToParent
 		do
-			local dropdownFrameAnchorToParent = CreateFrame("Frame", "NC.GUI.Fonts.DropdownFrameAnchorToParent", GUIFrame, "UIDropDownMenuTemplate");
-			UIDropDownMenu_SetWidth(dropdownFrameAnchorToParent, 140);
-			dropdownFrameAnchorToParent:SetPoint("TOPLEFT", 315, -200);
+			dropdownFrameAnchorToParent = CreateFrame("Frame", "NC.GUI.Fonts.DropdownFrameAnchorToParent", GUIFrame, "UIDropDownMenuTemplate");
+			UIDropDownMenu_SetWidth(dropdownFrameAnchorToParent, 310);
+			dropdownFrameAnchorToParent:SetPoint("TOP", dropdownFrameAnchor, "BOTTOM", 0, -5);
 			local info = {};
 			dropdownFrameAnchorToParent.initialize = function()
 				wipe(info);
@@ -1640,6 +1656,77 @@ do
 			table_insert(GUIFrame.OnDBChangedHandlers, function() _G[dropdownFrameAnchorToParent:GetName() .. "Text"]:SetText(frameAnchorsLocalization[db.CDFrameAnchorToParent]); end);
 		end
 
+		local dropdownIconSortMode;
+		do
+			local sortModes = {
+				[SORT_MODE_NONE] = "none",
+				[SORT_MODE_TRINKET_INTERRUPT_OTHER] = "trinkets, then interrupts, then other spells",
+				[SORT_MODE_INTERRUPT_TRINKET_OTHER] = "interrupts, then trinkets, then other spells",
+				[SORT_MODE_TRINKET_OTHER] = "trinkets, then other spells",
+				[SORT_MODE_INTERRUPT_OTHER] = "interrupts, then other spells",
+			};
+
+			dropdownIconSortMode = CreateFrame("Frame", "NC.GUI.General.DropdownIconSortMode", GUIFrame, "UIDropDownMenuTemplate");
+			UIDropDownMenu_SetWidth(dropdownIconSortMode, 310);
+			dropdownIconSortMode:SetPoint("TOP", dropdownFrameAnchorToParent, "BOTTOM", 0, -5);
+			local info = {};
+			dropdownIconSortMode.initialize = function()
+				wipe(info);
+				for sortMode, sortModeL in pairs(sortModes) do
+					info.text = sortModeL;
+					info.value = sortMode;
+					info.func = function(self)
+						db.IconSortMode = self.value;
+						_G[dropdownIconSortMode:GetName().."Text"]:SetText(self:GetText());
+					end
+					info.checked = (db.IconSortMode == info.value);
+					UIDropDownMenu_AddButton(info);
+				end
+			end
+			_G[dropdownIconSortMode:GetName().."Text"]:SetText(sortModes[db.IconSortMode]);
+			dropdownIconSortMode.text = dropdownIconSortMode:CreateFontString("NC.GUI.General.DropdownIconSortMode.Label", "ARTWORK", "GameFontNormalSmall");
+			dropdownIconSortMode.text:SetPoint("LEFT", 20, 15);
+			dropdownIconSortMode.text:SetText(L["general.sort-mode"]);
+			table.insert(GUIFrame.Categories[index], dropdownIconSortMode);
+			table_insert(GUIFrame.OnDBChangedHandlers, function() _G[dropdownIconSortMode:GetName().."Text"]:SetText(sortModes[db.IconSortMode]); end);
+		end
+
+		local dropdownIconGrowDirection;
+		do
+
+			local iconGrowDirections = {
+				[ICON_GROW_DIRECTION_RIGHT] = L["icon-grow-direction:right"],
+				[ICON_GROW_DIRECTION_LEFT] = L["icon-grow-direction:left"],
+				[ICON_GROW_DIRECTION_UP] = L["icon-grow-direction:up"],
+				[ICON_GROW_DIRECTION_DOWN] = L["icon-grow-direction:down"],
+			};
+
+			dropdownIconGrowDirection = CreateFrame("Frame", "NC.GUI.General.DropdownIconGrowDirection", GUIFrame, "UIDropDownMenuTemplate");
+			UIDropDownMenu_SetWidth(dropdownIconGrowDirection, 310);
+			dropdownIconGrowDirection:SetPoint("TOP", dropdownIconSortMode, "BOTTOM", 0, -5);
+			local info = {};
+			dropdownIconGrowDirection.initialize = function()
+				wipe(info);
+				for direction, directionL in pairs(iconGrowDirections) do
+					info.text = directionL;
+					info.value = direction;
+					info.func = function(self)
+						db.IconGrowDirection = self.value;
+						_G[dropdownIconGrowDirection:GetName().."Text"]:SetText(self:GetText());
+						ReallocateAllIcons(false);
+					end
+					info.checked = (db.IconGrowDirection == info.value);
+					UIDropDownMenu_AddButton(info);
+				end
+			end
+			_G[dropdownIconGrowDirection:GetName().."Text"]:SetText(iconGrowDirections[db.IconGrowDirection]);
+			dropdownIconGrowDirection.text = dropdownIconGrowDirection:CreateFontString("NC.GUI.General.DropdownIconGrowDirection.Label", "ARTWORK", "GameFontNormalSmall");
+			dropdownIconGrowDirection.text:SetPoint("LEFT", 20, 15);
+			dropdownIconGrowDirection.text:SetText(L["options:general:icon-grow-direction"]);
+			table.insert(GUIFrame.Categories[index], dropdownIconGrowDirection);
+			table_insert(GUIFrame.OnDBChangedHandlers, function() _G[dropdownIconGrowDirection:GetName().."Text"]:SetText(iconGrowDirections[db.IconGrowDirection]); end);
+		end
+
 		-- // checkBoxFullOpacityAlways
 		do
 			checkBoxFullOpacityAlways = LRD.CreateCheckBox();
@@ -1650,7 +1737,7 @@ do
 				ReallocateAllIcons(true);
 			end);
 			checkBoxFullOpacityAlways:SetParent(GUIFrame.outline);
-			checkBoxFullOpacityAlways:SetPoint("TOPLEFT", 155, -320);
+			checkBoxFullOpacityAlways:SetPoint("TOPLEFT", dropdownIconGrowDirection, "BOTTOMLEFT", 0, -10);
 			checkBoxFullOpacityAlways:SetChecked(db.FullOpacityAlways);
 			table.insert(GUIFrame.Categories[index], checkBoxFullOpacityAlways);
 			table_insert(GUIFrame.OnDBChangedHandlers, function() checkBoxFullOpacityAlways:SetChecked(db.FullOpacityAlways); end);
@@ -1704,105 +1791,50 @@ do
 			table_insert(GUIFrame.OnDBChangedHandlers, function() checkboxShowInactiveCD:SetChecked(db.ShowInactiveCD); end);
 		end
 
-		-- // dropdownIconSortMode
+		local checkboxCooldownTooltip;
 		do
-			local sortModes = {
-				[SORT_MODE_NONE] = "none",
-				[SORT_MODE_TRINKET_INTERRUPT_OTHER] = "trinkets, then interrupts, then other spells",
-				[SORT_MODE_INTERRUPT_TRINKET_OTHER] = "interrupts, then trinkets, then other spells",
-				[SORT_MODE_TRINKET_OTHER] = "trinkets, then other spells",
-				[SORT_MODE_INTERRUPT_OTHER] = "interrupts, then other spells",
-			};
-
-			local dropdownIconSortMode = CreateFrame("Frame", "NC.GUI.General.DropdownIconSortMode", GUIFrame, "UIDropDownMenuTemplate");
-			UIDropDownMenu_SetWidth(dropdownIconSortMode, 300);
-			dropdownIconSortMode:SetPoint("TOPLEFT", 155, -280);
-			local info = {};
-			dropdownIconSortMode.initialize = function()
-				wipe(info);
-				for sortMode, sortModeL in pairs(sortModes) do
-					info.text = sortModeL;
-					info.value = sortMode;
-					info.func = function(self)
-						db.IconSortMode = self.value;
-						_G[dropdownIconSortMode:GetName().."Text"]:SetText(self:GetText());
-					end
-					info.checked = (db.IconSortMode == info.value);
-					UIDropDownMenu_AddButton(info);
-				end
-			end
-			_G[dropdownIconSortMode:GetName().."Text"]:SetText(sortModes[db.IconSortMode]);
-			dropdownIconSortMode.text = dropdownIconSortMode:CreateFontString("NC.GUI.General.DropdownIconSortMode.Label", "ARTWORK", "GameFontNormalSmall");
-			dropdownIconSortMode.text:SetPoint("LEFT", 20, 15);
-			dropdownIconSortMode.text:SetText(L["general.sort-mode"]);
-			table.insert(GUIFrame.Categories[index], dropdownIconSortMode);
-			table_insert(GUIFrame.OnDBChangedHandlers, function() _G[dropdownIconSortMode:GetName().."Text"]:SetText(sortModes[db.IconSortMode]); end);
+			checkboxCooldownTooltip = LRD.CreateCheckBox();
+			checkboxCooldownTooltip:SetText(L["options:general:show-cooldown-tooltip"]);
+			checkboxCooldownTooltip:SetOnClickHandler(function(this)
+				db.ShowCooldownTooltip = this:GetChecked();
+				OnUpdate();
+				GameTooltip:Hide();
+			end);
+			checkboxCooldownTooltip:SetChecked(db.ShowCooldownTooltip);
+			checkboxCooldownTooltip:SetParent(GUIFrame.outline);
+			checkboxCooldownTooltip:SetPoint("TOPLEFT", checkboxShowInactiveCD, "BOTTOMLEFT", 0, 0);
+			table_insert(GUIFrame.Categories[index], checkboxCooldownTooltip);
+			table_insert(GUIFrame.OnDBChangedHandlers, function() checkboxCooldownTooltip:SetChecked(db.ShowCooldownTooltip); end);
 		end
 
-		-- // dropdownIconGrowDirection
+		local checkboxInverseLogic;
 		do
-
-			local iconGrowDirections = {
-				[ICON_GROW_DIRECTION_RIGHT] = L["icon-grow-direction:right"],
-				[ICON_GROW_DIRECTION_LEFT] = L["icon-grow-direction:left"],
-				[ICON_GROW_DIRECTION_UP] = L["icon-grow-direction:up"],
-				[ICON_GROW_DIRECTION_DOWN] = L["icon-grow-direction:down"],
-			};
-
-			local dropdownIconGrowDirection = CreateFrame("Frame", "NC.GUI.General.DropdownIconGrowDirection", GUIFrame, "UIDropDownMenuTemplate");
-			UIDropDownMenu_SetWidth(dropdownIconGrowDirection, 300);
-			dropdownIconGrowDirection:SetPoint("TOPLEFT", 155, -240);
-			local info = {};
-			dropdownIconGrowDirection.initialize = function()
-				wipe(info);
-				for direction, directionL in pairs(iconGrowDirections) do
-					info.text = directionL;
-					info.value = direction;
-					info.func = function(self)
-						db.IconGrowDirection = self.value;
-						_G[dropdownIconGrowDirection:GetName().."Text"]:SetText(self:GetText());
-						ReallocateAllIcons(false);
-					end
-					info.checked = (db.IconGrowDirection == info.value);
-					UIDropDownMenu_AddButton(info);
-				end
-			end
-			_G[dropdownIconGrowDirection:GetName().."Text"]:SetText(iconGrowDirections[db.IconGrowDirection]);
-			dropdownIconGrowDirection.text = dropdownIconGrowDirection:CreateFontString("NC.GUI.General.DropdownIconGrowDirection.Label", "ARTWORK", "GameFontNormalSmall");
-			dropdownIconGrowDirection.text:SetPoint("LEFT", 20, 15);
-			dropdownIconGrowDirection.text:SetText(L["options:general:icon-grow-direction"]);
-			table.insert(GUIFrame.Categories[index], dropdownIconGrowDirection);
-			table_insert(GUIFrame.OnDBChangedHandlers, function() _G[dropdownIconGrowDirection:GetName().."Text"]:SetText(iconGrowDirections[db.IconGrowDirection]); end);
+			checkboxInverseLogic = LRD.CreateCheckBox();
+			checkboxInverseLogic:SetText(L["options:general:inverse-logic"]);
+			LRD.SetTooltip(checkboxInverseLogic, L["options:general:inverse-logic:tooltip"]);
+			checkboxInverseLogic:SetOnClickHandler(function(this)
+				db.InverseLogic = this:GetChecked();
+				OnUpdate();
+			end);
+			checkboxInverseLogic:SetChecked(db.InverseLogic);
+			checkboxInverseLogic:SetParent(GUIFrame.outline);
+			checkboxInverseLogic:SetPoint("TOPLEFT", checkboxCooldownTooltip, "BOTTOMLEFT", 0, 0);
+			table_insert(GUIFrame.Categories[index], checkboxInverseLogic);
+			table_insert(GUIFrame.OnDBChangedHandlers, function() checkboxInverseLogic:SetChecked(db.InverseLogic); end);
 		end
 
-	end
-
-	function GUICategory_Profiles(index)
-		local button = LRD.CreateButton();
-		button:SetParent(GUIFrame);
-		button:SetText(L["options:profiles:open-profiles-dialog"]);
-		button:SetWidth(170);
-		button:SetHeight(40);
-		button:SetPoint("CENTER", GUIFrame, "CENTER", 70, 0);
-		button:SetScript("OnClick", function()
-			InterfaceOptionsFrame_OpenToCategory(ProfileOptionsFrame);
-			GUIFrame:Hide();
-		end);
-		table_insert(GUIFrame.Categories[index], button);
 	end
 
 	function GUICategory_Other(index)
 		local controls = { };
-		local selectedSpellName = 0;
+		local selectedSpellId = 0;
 		local dropdownMenuSpells = LRD.CreateDropdownMenu();
-		local spellArea, editboxAddSpell, buttonAddSpell, sliderCooldown, editboxSpellID, buttonDeleteSpell, selectSpell, checkboxEnabled, checkboxGlow, areaGlow,
-		sliderGlowThreshold, areaCooldown, areaIDs, dropdownClassSelector;
+		local spellArea, selectSpell, checkboxEnabled, checkboxGlow, areaGlow, sliderGlowThreshold, dropdownClassSelector, areaCustomCD, checkboxCustomCD, editboxCustomCD;
 		local selectedClass = addonTable.ALL_CLASSES;
 
 		-- // building spell cache
 		do
 			GUIFrame:HookScript("OnShow", function()
-				buttonAddSpell:Disable();
 				selectSpell:Disable();
 				local scanAllSpells = coroutine.create(function()
 					local misses = 0;
@@ -1821,8 +1853,9 @@ do
 						end
 						coroutine.yield();
 					end
-					buttonAddSpell:Enable();
-					selectSpell:Enable();
+					if (not addonTable.TestModeActive) then
+						selectSpell:Enable();
+					end
 				end);
 				addonTable.coroutine_queue("scanAllSpells", scanAllSpells);
 			end);
@@ -1845,7 +1878,7 @@ do
 			});
 			spellArea:SetBackdropColor(0.1, 0.1, 0.2, 1);
 			spellArea:SetBackdropBorderColor(0.8, 0.8, 0.9, 0.4);
-			spellArea:SetPoint("TOPLEFT", GUIFrame.outline, "TOPRIGHT", 10, -85);
+			spellArea:SetPoint("TOPLEFT", GUIFrame.outline, "TOPRIGHT", 10, -35);
 			spellArea:SetPoint("BOTTOMLEFT", GUIFrame.outline, "BOTTOMRIGHT", 10, 0);
 			spellArea:SetWidth(360);
 
@@ -1874,97 +1907,6 @@ do
 			table_insert(controls, spellArea);
 		end
 
-		-- // editboxAddSpell, buttonAddSpell
-		do
-			editboxAddSpell = CreateFrame("EditBox", nil, GUIFrame, "InputBoxTemplate");
-			editboxAddSpell:SetAutoFocus(false);
-			editboxAddSpell:SetFontObject(GameFontHighlightSmall);
-			editboxAddSpell:SetPoint("TOPLEFT", GUIFrame, 172, -30);
-			editboxAddSpell:SetHeight(20);
-			editboxAddSpell:SetWidth(210);
-			editboxAddSpell:SetJustifyH("LEFT");
-			editboxAddSpell:EnableMouse(true);
-			editboxAddSpell:SetScript("OnEscapePressed", function() editboxAddSpell:ClearFocus(); end);
-			editboxAddSpell:SetScript("OnEnterPressed", function() buttonAddSpell:Click(); end);
-			editboxAddSpell.text = editboxAddSpell:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-			editboxAddSpell.text:SetPoint("LEFT", 0, 15);
-			editboxAddSpell.text:SetText(L["options:spells:add-new-spell"]);
-			hooksecurefunc("ChatEdit_InsertLink", function(link)
-                if (editboxAddSpell:IsVisible() and editboxAddSpell:HasFocus() and link ~= nil) then
-					local spellName = string.match(link, "%[\"?(.-)\"?%]");
-					if (spellName ~= nil) then
-						editboxAddSpell:SetText(spellName);
-						editboxAddSpell:ClearFocus();
-						return true;
-					end
-                end
-			end);
-			table_insert(GUIFrame.Categories[index], editboxAddSpell);
-
-			buttonAddSpell = LRD.CreateButton();
-			buttonAddSpell:SetParent(GUIFrame);
-			buttonAddSpell:SetText(L["options:spells:add-spell"]);
-			buttonAddSpell:SetWidth(115);
-			buttonAddSpell:SetHeight(20);
-			buttonAddSpell:SetPoint("LEFT", editboxAddSpell, "RIGHT", 10, 0);
-			buttonAddSpell:SetScript("OnClick", function()
-				local text = editboxAddSpell:GetText();
-				if (text == nil or text == "") then
-					addonTable.Print(L["Empty spell name!"]);
-				else
-					local spellName;
-					local spellID;
-					if (tonumber(text) ~= nil) then
-						spellID = tonumber(text);
-						spellName = SpellNameByID[spellID];
-					else
-						spellName = text;
-					end
-					if (spellName ~= nil) then
-						local spellNameIsValid = spellID ~= nil;
-						if (spellID == nil) then
-							if (AllSpellIDsAndIconsByName[spellName] == nil) then
-								for _spellName in pairs(AllSpellIDsAndIconsByName) do
-									if (string_lower(_spellName) == string_lower(spellName)) then
-										spellName = _spellName;
-										spellNameIsValid = true;
-									end
-								end
-							else
-								spellNameIsValid = true;
-							end
-						end
-						if (spellNameIsValid) then
-							if (db.SpellCDs[spellName] ~= nil) then
-								addonTable.msg(format(L["Spell already exists (%s)"], spellName));
-							else
-								db.SpellCDs[spellName] = GetDefaultDBEntryForSpell();
-								db.SpellCDs[spellName].class = addonTable.UNKNOWN_CLASS;
-								if (spellID ~= nil) then db.SpellCDs[spellName].spellIDs = { [spellID] = true }; end
-								selectedClass = addonTable.ALL_CLASSES;
-								_G[dropdownClassSelector:GetName().."Text"]:SetText(ALL);
-								selectSpell:Click();
-								local btn = dropdownMenuSpells:GetButtonByText(spellName);
-								if (btn ~= nil) then
-									btn:Click();
-									LBG_ShowOverlayGlow(areaCooldown, false, true);
-									C_Timer_After(3, function() LBG_HideOverlayGlow(areaCooldown); end);
-								end
-								ReallocateAllIcons(true);
-							end
-						else
-							addonTable.msg(L["Spell seems to be nonexistent"]);
-						end
-					else
-						addonTable.msg(L["Spell seems to be nonexistent"]);
-					end
-				end
-				editboxAddSpell:SetText("");
-				editboxAddSpell:ClearFocus();
-			end);
-			table_insert(GUIFrame.Categories[index], buttonAddSpell);
-		end
-
 		-- // enable & disable all spells buttons
 		do
 
@@ -1977,8 +1919,8 @@ do
 			enableAllSpellsButton:SetText(L["options:spells:enable-all-spells"]);
 			enableAllSpellsButton:SetScript("OnClick", function(self)
 				if (self.clickedOnce) then
-					for spellName in pairs(db.SpellCDs) do
-						db.SpellCDs[spellName].enabled = true;
+					for spellID in pairs(db.SpellCDs) do
+						db.SpellCDs[spellID].enabled = true;
 					end
 					ReallocateAllIcons(true);
 					selectSpell:Click();
@@ -2007,8 +1949,8 @@ do
 			disableAllSpellsButton:SetText(L["options:spells:disable-all-spells"]);
 			disableAllSpellsButton:SetScript("OnClick", function(self)
 				if (self.clickedOnce) then
-					for spellName in pairs(db.SpellCDs) do
-						db.SpellCDs[spellName].enabled = false;
+					for spellID in pairs(db.SpellCDs) do
+						db.SpellCDs[spellID].enabled = false;
 					end
 					ReallocateAllIcons(true);
 					selectSpell:Click();
@@ -2030,38 +1972,6 @@ do
 
 		end
 
-		-- // delete all spells button
-		do
-
-			local deleteAllSpellsButton = LRD.CreateButton();
-			deleteAllSpellsButton.clickedOnce = false;
-			deleteAllSpellsButton:SetParent(dropdownMenuSpells);
-			deleteAllSpellsButton:SetPoint("TOPLEFT", dropdownMenuSpells, "BOTTOMLEFT", 0, -29);
-			deleteAllSpellsButton:SetPoint("TOPRIGHT", dropdownMenuSpells, "BOTTOMRIGHT", 0, -29);
-			deleteAllSpellsButton:SetHeight(18);
-			deleteAllSpellsButton:SetText(L["options:spells:delete-all-spells"]);
-			deleteAllSpellsButton:SetScript("OnClick", function(self)
-				if (self.clickedOnce) then
-					wipe(db.SpellCDs);
-					OnUpdate();
-					self.clickedOnce = false;
-					self:SetText(L["options:spells:delete-all-spells"]);
-				else
-					self.clickedOnce = true;
-					self:SetText(L["options:spells:please-push-once-more"]);
-					C_Timer_After(3, function()
-						self.clickedOnce = false;
-						self:SetText(L["options:spells:delete-all-spells"]);
-					end);
-				end
-			end);
-			deleteAllSpellsButton:SetScript("OnHide", function(self)
-				self.clickedOnce = false;
-				self:SetText(L["options:spells:delete-all-spells"]);
-			end);
-
-		end
-
 		local function HideGameTooltip()
 			GameTooltip:Hide();
 		end
@@ -2077,76 +1987,77 @@ do
 		end
 
 		local function OnSpellSelected(buttonInfo)
-			local spellID, spellTexture = GetIDAndTextureForSpell(buttonInfo.text, buttonInfo.info);
+			local spellID = buttonInfo.info;
 			for _, control in pairs(controls) do
 				control:Show();
 			end
-			selectedSpellName = buttonInfo.text;
-			selectSpell.Text:SetText(buttonInfo.text);
+			selectedSpellId = spellID;
+			selectSpell.Text:SetText(SpellNameByID[spellID]);
 			selectSpell:SetScript("OnEnter", function(self)
 				GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT");
 				GameTooltip:SetSpellByID(spellID);
+				GameTooltip:AddLine("NC CD: " .. AllCooldowns[spellID]);
 				GameTooltip:Show();
 			end);
 			selectSpell:HookScript("OnLeave", function() GameTooltip:Hide(); end);
-			selectSpell.icon:SetTexture(spellTexture);
+			selectSpell.icon:SetTexture(SpellTextureByID[spellID]);
 			selectSpell.icon:Show();
-			checkboxEnabled:SetChecked(db.SpellCDs[selectedSpellName].enabled);
-			if (db.SpellCDs[selectedSpellName].glow == nil) then
+			checkboxEnabled:SetChecked(db.SpellCDs[selectedSpellId].enabled);
+			if (db.SpellCDs[selectedSpellId].glow == nil) then
 				checkboxGlow:SetTriState(0);
 				sliderGlowThreshold:Hide();
 				areaGlow:SetHeight(40);
-			elseif (db.SpellCDs[selectedSpellName].glow == GLOW_TIME_INFINITE) then
+			elseif (db.SpellCDs[selectedSpellId].glow == GLOW_TIME_INFINITE) then
 				checkboxGlow:SetTriState(2);
 				sliderGlowThreshold:Hide();
 				areaGlow:SetHeight(40);
 			else
 				checkboxGlow:SetTriState(1);
-				sliderGlowThreshold.slider:SetValue(db.SpellCDs[selectedSpellName].glow);
+				sliderGlowThreshold.slider:SetValue(db.SpellCDs[selectedSpellId].glow);
 				areaGlow:SetHeight(80);
 			end
-			sliderCooldown.slider:SetValue(db.SpellCDs[selectedSpellName].cooldown);
-			if (db.SpellCDs[selectedSpellName].spellIDs) then
-				local t = { };
-				for key in pairs(db.SpellCDs[selectedSpellName].spellIDs) do
-					table_insert(t, key);
-				end
-				editboxSpellID:SetText(table.concat(t, ","));
+			if (db.SpellCDs[selectedSpellId].customCD ~= nil) then
+				checkboxCustomCD:SetChecked(true);
+				areaCustomCD:SetHeight(80);
+				editboxCustomCD:Show();
+				editboxCustomCD:SetText(tostring(db.SpellCDs[selectedSpellId].customCD));
 			else
-				editboxSpellID:SetText("");
+				checkboxCustomCD:SetChecked(false);
+				areaCustomCD:SetHeight(40);
+				editboxCustomCD:Hide();
 			end
 		end
 
 		local function GetListForSpells()
 			local t = { };
-			for spellName, spellInfo in pairs(db.SpellCDs) do
-				if (selectedClass == addonTable.ALL_CLASSES or selectedClass == spellInfo.class) then
-					local spellID, spellTexture = GetIDAndTextureForSpell(spellName, spellInfo);
-					table_insert(t, {
-						icon = spellTexture,
-						text = spellName,
-						info = spellInfo,
-						disabled = not spellInfo.enabled,
-						onEnter = function(self)
-							GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
-							GameTooltip:SetSpellByID(spellID);
-							GameTooltip:Show();
-						end,
-						onLeave = HideGameTooltip,
-						func = OnSpellSelected,
-						checkBoxEnabled = true,
-						checkBoxState = spellInfo.enabled,
-						onCheckBoxClick = function(checkbox)
-							db.SpellCDs[spellName].enabled = checkbox:GetChecked();
-							ReallocateAllIcons(true);
-							dropdownMenuSpells:GetButtonByText(spellName):SetGray(not checkbox:GetChecked());
-						end,
-						onCloseButtonClick = function(buttonInfo)
-							OnSpellSelected(buttonInfo);
-							buttonDeleteSpell:Click();
-							selectSpell:Click();
-						end,
-					});
+			for class, cds in pairs(addonTable.CDs) do
+				for spellID in pairs(cds) do
+					if (SpellNameByID[spellID] ~= nil) then
+						if (selectedClass == addonTable.ALL_CLASSES or selectedClass == class) then
+							local spellInfo = db.SpellCDs[spellID] or GetDefaultDBEntryForSpell();
+							table_insert(t, {
+								icon = SpellTextureByID[spellID],
+								text = SpellNameByID[spellID],
+								info = spellID,
+								disabled = not spellInfo.enabled,
+								onEnter = function(self)
+									GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+									GameTooltip:SetSpellByID(spellID);
+									GameTooltip:AddLine("NC CD: " .. AllCooldowns[spellID]);
+									GameTooltip:Show();
+								end,
+								onLeave = HideGameTooltip,
+								func = OnSpellSelected,
+								checkBoxEnabled = true,
+								checkBoxState = spellInfo.enabled,
+								onCheckBoxClick = function(checkbox)
+									db.SpellCDs[spellID].enabled = checkbox:GetChecked();
+									ReallocateAllIcons(true);
+									dropdownMenuSpells:GetButtonByText(SpellNameByID[spellID]):SetGray(not checkbox:GetChecked());
+								end,
+							});
+						end
+					end
 				end
 			end
 			table_sort(t, function(item1, item2) return item1.text < item2.text; end);
@@ -2173,6 +2084,7 @@ do
 				dropdownMenuSpells:SetParent(button);
 				dropdownMenuSpells:ClearAllPoints();
 				dropdownMenuSpells:SetPoint("TOP", button, "BOTTOM", 0, -35);
+				dropdownMenuSpells:SetSize(350, 370);
 				dropdownMenuSpells:Show();
 				dropdownMenuSpells.searchBox:SetFocus();
 				dropdownMenuSpells.searchBox:SetText("");
@@ -2226,75 +2138,12 @@ do
 			checkboxEnabled = LRD.CreateCheckBox();
 			checkboxEnabled:SetText(L["options:spells:enable-tracking-of-this-spell"]);
 			checkboxEnabled:SetOnClickHandler(function(self)
-				db.SpellCDs[selectedSpellName].enabled = self:GetChecked();
+				db.SpellCDs[selectedSpellId].enabled = self:GetChecked();
 				ReallocateAllIcons(true);
 			end);
 			checkboxEnabled:SetParent(spellArea.controlsFrame);
 			checkboxEnabled:SetPoint("TOPLEFT", 15, -15);
 			table_insert(controls, checkboxEnabled);
-		end
-
-		-- // areaCooldown
-		do
-			areaCooldown = CreateFrame("Frame", nil, spellArea.controlsFrame, BackdropTemplateMixin and "BackdropTemplate");
-			areaCooldown:SetBackdrop({
-				bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-				edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-				tile = 1,
-				tileSize = 16,
-				edgeSize = 16,
-				insets = { left = 4, right = 4, top = 4, bottom = 4 }
-			});
-			areaCooldown:SetBackdropColor(0.1, 0.1, 0.2, 1);
-			areaCooldown:SetBackdropBorderColor(0.8, 0.8, 0.9, 0.4);
-			areaCooldown:SetPoint("TOPLEFT", checkboxEnabled, "BOTTOMLEFT", 0, -10);
-			areaCooldown:SetWidth(340);
-			areaCooldown:SetHeight(70);
-			table_insert(controls, areaCooldown);
-		end
-
-		-- // sliderCooldown
-		do
-			local minV, maxV = 1, 900;
-			sliderCooldown = LRD.CreateSlider();
-			sliderCooldown:SetParent(areaCooldown);
-			sliderCooldown:SetWidth(330);
-			sliderCooldown.label:ClearAllPoints();
-			sliderCooldown.label:SetPoint("CENTER", sliderCooldown, "CENTER", 0, 15);
-			sliderCooldown.label:SetText(L["options:spells:cooldown-time"]);
-			sliderCooldown:ClearAllPoints();
-			sliderCooldown:SetPoint("CENTER", areaCooldown, "CENTER", 0, 0);
-			sliderCooldown.slider:ClearAllPoints();
-			sliderCooldown.slider:SetPoint("LEFT", 3, 0)
-			sliderCooldown.slider:SetPoint("RIGHT", -3, 0)
-			sliderCooldown.slider:SetValueStep(1);
-			sliderCooldown.slider:SetMinMaxValues(minV, maxV);
-			sliderCooldown.slider:SetScript("OnValueChanged", function(_, value)
-				sliderCooldown.editbox:SetText(tostring(math_ceil(value)));
-				db.SpellCDs[selectedSpellName].cooldown = math_ceil(value);
-				ReallocateAllIcons(true);
-			end);
-			sliderCooldown.editbox:SetScript("OnEnterPressed", function()
-				if (sliderCooldown.editbox:GetText() ~= "") then
-					local v = tonumber(sliderCooldown.editbox:GetText());
-					if (v == nil) then
-						sliderCooldown.editbox:SetText(tostring(db.SpellCDs[selectedSpellName].cooldown));
-						addonTable.Print(L["Value must be a number"]);
-					else
-						if (v > maxV) then
-							v = maxV;
-						end
-						if (v < minV) then
-							v = minV;
-						end
-						sliderCooldown.slider:SetValue(v);
-					end
-					sliderCooldown.editbox:ClearFocus();
-				end
-			end);
-			sliderCooldown.lowtext:SetText(tostring(minV));
-			sliderCooldown.hightext:SetText(tostring(maxV));
-			table_insert(controls, sliderCooldown);
 		end
 
 		-- // areaGlow
@@ -2310,7 +2159,7 @@ do
 			});
 			areaGlow:SetBackdropColor(0.1, 0.1, 0.2, 1);
 			areaGlow:SetBackdropBorderColor(0.8, 0.8, 0.9, 0.4);
-			areaGlow:SetPoint("TOPLEFT", areaCooldown, "BOTTOMLEFT", 0, 0);
+			areaGlow:SetPoint("TOPLEFT", checkboxEnabled, "BOTTOMLEFT", 0, -10);
 			areaGlow:SetWidth(340);
 			areaGlow:SetHeight(80);
 			table_insert(controls, areaGlow);
@@ -2326,16 +2175,16 @@ do
 			});
 			checkboxGlow:SetOnClickHandler(function(self)
 				if (self:GetTriState() == 0) then
-					db.SpellCDs[selectedSpellName].glow = nil; -- // making db smaller
+					db.SpellCDs[selectedSpellId].glow = nil; -- // making db smaller
 					sliderGlowThreshold:Hide();
 					areaGlow:SetHeight(40);
 				elseif (self:GetTriState() == 1) then
-					db.SpellCDs[selectedSpellName].glow = 5;
+					db.SpellCDs[selectedSpellId].glow = 5;
 					sliderGlowThreshold:Show();
 					sliderGlowThreshold.slider:SetValue(5);
 					areaGlow:SetHeight(80);
 				else
-					db.SpellCDs[selectedSpellName].glow = GLOW_TIME_INFINITE;
+					db.SpellCDs[selectedSpellId].glow = GLOW_TIME_INFINITE;
 					sliderGlowThreshold:Hide();
 					areaGlow:SetHeight(40);
 				end
@@ -2365,14 +2214,14 @@ do
 			sliderGlowThreshold.slider:SetMinMaxValues(minV, maxV);
 			sliderGlowThreshold.slider:SetScript("OnValueChanged", function(_, value)
 				sliderGlowThreshold.editbox:SetText(tostring(math_ceil(value)));
-				db.SpellCDs[selectedSpellName].glow = math_ceil(value);
+				db.SpellCDs[selectedSpellId].glow = math_ceil(value);
 				ReallocateAllIcons(true);
 			end);
 			sliderGlowThreshold.editbox:SetScript("OnEnterPressed", function()
 				if (sliderGlowThreshold.editbox:GetText() ~= "") then
 					local v = tonumber(sliderGlowThreshold.editbox:GetText());
 					if (v == nil) then
-						sliderGlowThreshold.editbox:SetText(tostring(db.SpellCDs[selectedSpellName].glow));
+						sliderGlowThreshold.editbox:SetText(tostring(db.SpellCDs[selectedSpellId].glow));
 						addonTable.Print(L["Value must be a number"]);
 					else
 						if (v > maxV) then
@@ -2391,10 +2240,10 @@ do
 			table_insert(controls, sliderGlowThreshold);
 		end
 
-		-- // areaIDs
+		-- // areaCustomCD
 		do
-			areaIDs = CreateFrame("Frame", nil, spellArea.controlsFrame, BackdropTemplateMixin and "BackdropTemplate");
-			areaIDs:SetBackdrop({
+			areaCustomCD = CreateFrame("Frame", nil, spellArea.controlsFrame, BackdropTemplateMixin and "BackdropTemplate");
+			areaCustomCD:SetBackdrop({
 				bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
 				edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
 				tile = 1,
@@ -2402,80 +2251,78 @@ do
 				edgeSize = 16,
 				insets = { left = 4, right = 4, top = 4, bottom = 4 }
 			});
-			areaIDs:SetBackdropColor(0.1, 0.1, 0.2, 1);
-			areaIDs:SetBackdropBorderColor(0.8, 0.8, 0.9, 0.4);
-			areaIDs:SetPoint("TOPLEFT", areaGlow, "BOTTOMLEFT", 0, 0);
-			areaIDs:SetWidth(340);
-			areaIDs:SetHeight(40);
-			table_insert(controls, areaIDs);
+			areaCustomCD:SetBackdropColor(0.1, 0.1, 0.2, 1);
+			areaCustomCD:SetBackdropBorderColor(0.8, 0.8, 0.9, 0.4);
+			areaCustomCD:SetPoint("TOPLEFT", areaGlow, "BOTTOMLEFT", 0, -10);
+			areaCustomCD:SetWidth(340);
+			areaCustomCD:SetHeight(80);
+			table_insert(controls, areaCustomCD);
 		end
 
-		-- // editboxSpellID
+		-- // checkboxCustomCD
 		do
-
-			local function StringToTableKeys(str)
-				local t = { };
-				for key in string_gmatch(str, "%w+") do
-					local nmbr = tonumber(key);
-					if (nmbr ~= nil) then
-						t[nmbr] = true;
-					end
+			checkboxCustomCD = LRD.CreateCheckBox();
+			checkboxCustomCD:SetText(L["options:spells:custom-cooldown"]);
+			checkboxCustomCD:SetOnClickHandler(function(self)
+				if (not self:GetChecked()) then
+					db.SpellCDs[selectedSpellId].customCD = nil;
+					addonTable.BuildCooldownValues();
+					areaCustomCD:SetHeight(40);
+					editboxCustomCD:Hide();
+				else
+					areaCustomCD:SetHeight(80);
+					editboxCustomCD:Show();
 				end
-				return t;
-			end
+			end);
+			checkboxCustomCD:SetParent(areaCustomCD);
+			checkboxCustomCD:SetPoint("TOPLEFT", 10, -10);
+			table_insert(controls, checkboxCustomCD);
+		end
 
-			editboxSpellID = CreateFrame("EditBox", nil, areaIDs, BackdropTemplateMixin and "BackdropTemplate");
-			editboxSpellID:SetAutoFocus(false);
-			editboxSpellID:SetFontObject(GameFontHighlightSmall);
-			editboxSpellID.text = editboxSpellID:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-			editboxSpellID.text:SetPoint("TOPLEFT", areaIDs, "TOPLEFT", 10, -10);
-			editboxSpellID.text:SetText(L["options:spells:track-only-this-spellid"]);
-			editboxSpellID:SetPoint("LEFT", editboxSpellID.text, "RIGHT", 5, 0);
-			editboxSpellID:SetPoint("RIGHT", areaIDs, "RIGHT", -15, 0);
-			editboxSpellID:SetHeight(20);
-			editboxSpellID:SetJustifyH("LEFT");
-			editboxSpellID:EnableMouse(true);
-			editboxSpellID:SetBackdrop({
+		-- // editboxCustomCD
+		do
+			editboxCustomCD = CreateFrame("EditBox", nil, areaCustomCD, BackdropTemplateMixin and "BackdropTemplate");
+			editboxCustomCD:SetAutoFocus(false);
+			editboxCustomCD:SetFontObject(GameFontHighlightSmall);
+			editboxCustomCD.text = editboxCustomCD:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+			editboxCustomCD.text:SetPoint("TOPLEFT", checkboxCustomCD, "BOTTOMRIGHT", 0, -10);
+			editboxCustomCD.text:SetText(L["options:spells:custom-cooldown-value"]);
+			editboxCustomCD:SetPoint("LEFT", editboxCustomCD.text, "RIGHT", 5, 0);
+			editboxCustomCD:SetPoint("RIGHT", areaCustomCD, "RIGHT", -15, 0);
+			editboxCustomCD:SetHeight(20);
+			editboxCustomCD:SetJustifyH("LEFT");
+			editboxCustomCD:EnableMouse(true);
+			editboxCustomCD:SetBackdrop({
 				bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
 				edgeFile = "Interface\\ChatFrame\\ChatFrameBackground",
 				tile = true, edgeSize = 1, tileSize = 5,
 			});
-			editboxSpellID:SetBackdropColor(0, 0, 0, 0.5);
-			editboxSpellID:SetBackdropBorderColor(0.3, 0.3, 0.30, 0.80);
-			editboxSpellID:SetScript("OnEscapePressed", function() editboxSpellID:ClearFocus(); end);
-			editboxSpellID:SetScript("OnEnterPressed", function(self)
+			editboxCustomCD:SetBackdropColor(0, 0, 0, 0.5);
+			editboxCustomCD:SetBackdropBorderColor(0.3, 0.3, 0.30, 0.80);
+			editboxCustomCD:SetScript("OnEscapePressed", function() editboxCustomCD:ClearFocus(); end);
+			editboxCustomCD:SetScript("OnEnterPressed", function(self)
 				local text = self:GetText();
-				local t = StringToTableKeys(text);
-				db.SpellCDs[selectedSpellName].spellIDs = (addonTable.table_count(t) > 0) and t or nil;
-				ReallocateAllIcons(true);
-				if (addonTable.table_count(t) == 0) then
-					self:SetText("");
+				local value = tonumber(text);
+				if (value ~= nil) then
+					db.SpellCDs[selectedSpellId].customCD = value;
+					addonTable.BuildCooldownValues();
 				end
 				self:ClearFocus();
 			end);
-			table_insert(controls, editboxSpellID);
+			table_insert(controls, editboxCustomCD);
 		end
 
-		-- // buttonDeleteSpell
-		do
-			buttonDeleteSpell = LRD.CreateButton();
-			buttonDeleteSpell:SetParent(spellArea.controlsFrame);
-			buttonDeleteSpell:SetText(L["options:spells:delete-spell"]);
-			buttonDeleteSpell:SetWidth(90);
-			buttonDeleteSpell:SetHeight(20);
-			buttonDeleteSpell:SetPoint("TOPLEFT", areaIDs, "BOTTOMLEFT", 10, -10);
-			buttonDeleteSpell:SetPoint("TOPRIGHT", areaIDs, "BOTTOMRIGHT", -10, -10);
-			buttonDeleteSpell:SetScript("OnClick", function()
-				db.SpellCDs[selectedSpellName] = nil;
-				ReallocateAllIcons(true);
-				selectSpell.Text:SetText(L["options:spells:click-to-select-spell"]);
-				selectSpell.icon:SetTexture(nil);
-				for _, control in pairs(controls) do
-					control:Hide();
+		hooksecurefunc(addonTable, "EnableTestMode", function()
+			selectSpell:Disable();
+			if (selectSpell:IsVisible()) then
+				for _, button in pairs(GUIFrame.CategoryButtons) do
+					if (button.text:GetText() == L["options:category:spells"]) then
+						button:Click();
+					end
 				end
-			end);
-			table_insert(controls, buttonDeleteSpell);
-		end
+			end
+		end);
+		hooksecurefunc(addonTable, "DisableTestMode", function() selectSpell:Enable(); end);
 
 	end
 
@@ -2531,14 +2378,15 @@ do
 
 	EventFrame.COMBAT_LOG_EVENT_UNFILTERED = function()
 		local cTime = GetTime();
-		local _, eventType, _, srcGUID, _, srcFlags, _, _, _, _, _, spellID, spellName = CombatLogGetCurrentEventInfo();
+		local _, eventType, _, srcGUID, _, srcFlags, _, _, _, _, _, spellID = CombatLogGetCurrentEventInfo();
 		if (bit_band(srcFlags, COMBATLOG_OBJECT_REACTION_HOSTILE) ~= 0 or (db.ShowCDOnAllies == true and srcGUID ~= LocalPlayerGUID)) then
-			local entry = db.SpellCDs[spellName];
-			if (entry and entry.enabled and (entry.spellIDs == nil or entry.spellIDs[spellID])) then
+			local entry = db.SpellCDs[spellID];
+			local cooldown = AllCooldowns[spellID];
+			if (cooldown ~= nil and entry and entry.enabled) then
 				if (eventType == "SPELL_CAST_SUCCESS" or eventType == "SPELL_AURA_APPLIED" or eventType == "SPELL_MISSED" or eventType == "SPELL_SUMMON") then
 					if (not SpellsPerPlayerGUID[srcGUID]) then SpellsPerPlayerGUID[srcGUID] = { }; end
-					local expires = cTime + entry.cooldown;
-					SpellsPerPlayerGUID[srcGUID][spellName] = { ["spellName"] = spellName, ["expires"] = expires, ["texture"] = SpellTextureByID[spellID] };
+					local expires = cTime + cooldown;
+					SpellsPerPlayerGUID[srcGUID][spellID] = { ["spellID"] = spellID, ["expires"] = expires, ["texture"] = SpellTextureByID[spellID] };
 					for frame, unitGUID in pairs(NameplatesVisible) do
 						if (unitGUID == srcGUID) then
 							UpdateOnlyOneNameplate(frame, unitGUID);
@@ -2551,8 +2399,8 @@ do
 			if (Reductions[spellID] ~= nil and eventType == "SPELL_CAST_SUCCESS") then
 				if (SpellsPerPlayerGUID[srcGUID]) then
 					for _, sp in pairs(Reductions[spellID].spells) do
-						if (SpellsPerPlayerGUID[srcGUID][SpellNameByID[sp]] ~= nil) then
-							SpellsPerPlayerGUID[srcGUID][SpellNameByID[sp]].expires = SpellsPerPlayerGUID[srcGUID][SpellNameByID[sp]].expires - Reductions[spellID].reduction;
+						if (SpellsPerPlayerGUID[srcGUID][sp] ~= nil) then
+							SpellsPerPlayerGUID[srcGUID][sp].expires = SpellsPerPlayerGUID[srcGUID][sp].expires - Reductions[spellID].reduction;
 						end
 					end
 					for frame, unitGUID in pairs(NameplatesVisible) do
@@ -2563,9 +2411,9 @@ do
 					end
 				end
 			-- // pvptier 1/2 used, correcting cd of PvP trinket
-			elseif (spellID == SPELL_PVPADAPTATION and db.SpellCDs[SpellNameByID[SPELL_PVPTRINKET]] ~= nil and db.SpellCDs[SpellNameByID[SPELL_PVPTRINKET]].enabled and eventType == "SPELL_AURA_APPLIED") then
+			elseif (spellID == SPELL_PVPADAPTATION and db.SpellCDs[SPELL_PVPTRINKET] ~= nil and db.SpellCDs[SPELL_PVPTRINKET].enabled and eventType == "SPELL_AURA_APPLIED") then
 				if (SpellsPerPlayerGUID[srcGUID]) then
-					SpellsPerPlayerGUID[srcGUID][SpellNameByID[SPELL_PVPTRINKET]] = { ["spellName"] = SpellNameByID[SPELL_PVPTRINKET], ["expires"] = cTime + 60, ["texture"] = SpellTextureByID[SPELL_PVPTRINKET] };
+					SpellsPerPlayerGUID[srcGUID][SPELL_PVPTRINKET] = { ["spellID"] = SPELL_PVPTRINKET, ["expires"] = cTime + 60, ["texture"] = SpellTextureByID[SPELL_PVPTRINKET] };
 					for frame, unitGUID in pairs(NameplatesVisible) do
 						if (unitGUID == srcGUID) then
 							UpdateOnlyOneNameplate(frame, unitGUID);
@@ -2601,12 +2449,18 @@ do
 			nameplate.NCIconsCount = 0;	-- // it's faster than #nameplate.NCIcons
 			Nameplates[nameplate] = true;
 		end
+		if (nameplate.NCFrame ~= nil and unitGUID ~= LocalPlayerGUID) then
+			nameplate.NCFrame:Show();
+		end
 		UpdateOnlyOneNameplate(nameplate, unitGUID);
 	end
 
 	EventFrame.NAME_PLATE_UNIT_REMOVED = function(unitID)
 		local nameplate = C_NamePlate_GetNamePlateForUnit(unitID);
 		NameplatesVisible[nameplate] = nil;
+		if (nameplate.NCFrame ~= nil) then
+			nameplate.NCFrame:Hide();
+		end
 	end
 
 	EventFrame.PLAYER_TARGET_CHANGED = function()
@@ -2628,3 +2482,4 @@ do
 	end
 
 end
+

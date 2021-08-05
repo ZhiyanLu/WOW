@@ -1,4 +1,4 @@
-﻿if GetLocale() ~= "ptBR" then return end
+if GetLocale() ~= "ptBR" then return end
 
 if not DBM_GUI_L then DBM_GUI_L = {} end
 
@@ -12,13 +12,6 @@ L.OTabBosses	= "Chefes"
 L.OTabOptions	= "Opções"
 
 L.TabCategory_Options	 	= "Opções Gerais"
-L.TabCategory_WOD	 		= "Warlords of Draenor"
-L.TabCategory_MOP	 		= "Mists of Pandaria"
-L.TabCategory_CATA	 		= "Cataclysm"
-L.TabCategory_WOTLK 		= "Wrath of the Lich King"
-L.TabCategory_BC 			= "The Burning Crusade"
-L.TabCategory_CLASSIC		= "Wow Vanilla"
-L.TabCategory_PVP 			= "PVP"
 L.TabCategory_OTHER    		= "Outros módulos"
 
 L.BossModLoaded 			= "%s estatísticas"
@@ -239,8 +232,7 @@ L.AutologBosses				= "Gravar automaticamente o relatório de encontro com os che
 L.AdvancedAutologBosses		= "Gravar automaticamente o encontro com o chefe utilizando o Transcritor"
 L.LogOnlyNonTrivial			= "Só gravar encontros com chefes de raid (exclui Localizador de Raids/Grupos/Cenários)"
 L.Area_3rdParty				= "opções de add0ns de terceiros"
-L.ShowBBOnCombatStart		= "Fazer checagem de Buff com Big Brother no início do combate"
-L.BigBrotherAnnounceToRaid	= "Anunciar resultados do Big Brother para a raid"
+--L.oRA3AnnounceConsumables	= "Announce oRA3 consumables check on combat start"
 L.Area_Invite				= "Opções de convite"
 L.AutoAcceptFriendInvite	= "Aceitar convites de amigos automaticamente"
 L.AutoAcceptGuildInvite		= "Aceitar convites de membros da guilda automaticamente"

@@ -25,7 +25,7 @@
 ## Notes-zhTW: 於聊天視窗各頻道加入平均物品等級
 
 ## Author: Scotepi
-## Version: 3.4.6
+## Version: 3.4.7
 ## Dependencies: SimpleILevel
 ## SavedVariables: SIL_Social
 ## LoadOnDemand: 1

@@ -1,16 +1,16 @@
 
 OmniCCDB = {
-	["global"] = {
-		["addonVersion"] = "9.0.5",
-		["dbVersion"] = 5,
-	},
 	["profileKeys"] = {
 		["Magiccreamdz - 凤凰之神"] = "默认",
 		["麦吉克库瑞姆 - 格雷迈恩"] = "默认",
-		["余生请多指教 - 格雷迈恩"] = "默认",
+		["哈尼臭嗨 - 格雷迈恩"] = "默认",
 		["Magiccreamdk - 格雷迈恩"] = "默认",
 		["Magiccream - 格雷迈恩"] = "默认",
-		["哈尼臭嗨 - 格雷迈恩"] = "默认",
+		["余生请多指教 - 格雷迈恩"] = "默认",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.1.0",
 	},
 	["profiles"] = {
 		["默认"] = {
@@ -42,6 +42,16 @@ OmniCCDB = {
 					["id"] = "163UI_Grid",
 					["priority"] = 4,
 				}, -- [4]
+				{
+					["patterns"] = {
+						"PlaterMainAuraIcon", -- [1]
+						"PlaterSecondaryAuraIcon", -- [2]
+						"ExtraIconRowIcon", -- [3]
+					},
+					["id"] = "Plater Nameplates Rule",
+					["priority"] = 5,
+					["theme"] = "Plater Nameplates Theme",
+				}, -- [5]
 			},
 			["themes"] = {
 				["163UI_Grid"] = {
@@ -68,15 +78,15 @@ OmniCCDB = {
 						},
 					},
 					["minDuration"] = 3,
-					["anchor"] = "TOPRIGHT",
+					["minSize"] = 0.1,
 					["effect"] = "none",
 					["spiralOpacity"] = 0.6,
 					["yOff"] = 5,
 					["xOff"] = 10,
-					["name"] = "163UI_Grid",
-					["fontSize"] = 26,
 					["version"] = "20191126",
-					["minSize"] = 0.1,
+					["fontSize"] = 26,
+					["name"] = "163UI_Grid",
+					["anchor"] = "TOPRIGHT",
 				},
 				["TMW"] = {
 					["textStyles"] = {
@@ -97,14 +107,50 @@ OmniCCDB = {
 							["scale"] = 1,
 						},
 					},
-					["fontSize"] = 17,
+					["fontFace"] = "Fonts\\ARKai_T.TTF",
 					["tenthsDuration"] = 5.00000007450581,
 					["minSize"] = 0,
 					["mmSSDuration"] = 300,
 					["spiralOpacity"] = 1.00999997742474,
 					["yOff"] = 1,
 					["minEffectDuration"] = 30.0000004470348,
+					["fontSize"] = 17,
+					["minDuration"] = 0,
+				},
+				["Plater Nameplates Theme"] = {
+					["textStyles"] = {
+						["soon"] = {
+						},
+						["seconds"] = {
+						},
+						["minutes"] = {
+						},
+					},
+				},
+				["Threat Plates"] = {
+					["textStyles"] = {
+						["soon"] = {
+							["scale"] = 1,
+						},
+						["seconds"] = {
+						},
+						["minutes"] = {
+						},
+						["hours"] = {
+							["scale"] = 1,
+						},
+						["charging"] = {
+							["scale"] = 1,
+						},
+						["controlled"] = {
+							["scale"] = 1,
+						},
+					},
 					["fontFace"] = "Fonts\\ARKai_T.TTF",
+					["tenthsDuration"] = 5,
+					["minSize"] = 0,
+					["mmSSDuration"] = 300,
+					["spiralOpacity"] = 1.00999997742474,
 					["minDuration"] = 0,
 				},
 				["默认"] = {
@@ -134,54 +180,12 @@ OmniCCDB = {
 					["minEffectDuration"] = 0,
 					["minDuration"] = 0,
 				},
-				["Threat Plates"] = {
-					["textStyles"] = {
-						["soon"] = {
-							["scale"] = 1,
-						},
-						["seconds"] = {
-						},
-						["minutes"] = {
-						},
-						["hours"] = {
-							["scale"] = 1,
-						},
-						["charging"] = {
-							["scale"] = 1,
-						},
-						["controlled"] = {
-							["scale"] = 1,
-						},
-					},
-					["fontFace"] = "Fonts\\ARKai_T.TTF",
-					["tenthsDuration"] = 5,
-					["minSize"] = 0,
-					["mmSSDuration"] = 300,
-					["spiralOpacity"] = 1.00999997742474,
-					["minDuration"] = 0,
-				},
 			},
 		},
 	},
 }
 OmniCC4Config = {
-	["groups"] = {
-		{
-			["id"] = "TMW",
-			["rules"] = {
-				"TellMeWhen", -- [1]
-			},
-			["enabled"] = true,
-		}, -- [1]
-		{
-			["id"] = "Threat Plates",
-			["rules"] = {
-				"ThreatPlates", -- [1]
-			},
-			["enabled"] = true,
-		}, -- [2]
-	},
-	["version"] = "8.2.5",
+	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["TMW"] = {
 			["enabled"] = true,
@@ -205,20 +209,20 @@ OmniCC4Config = {
 					["scale"] = 1,
 				},
 			},
-			["scaleText"] = true,
+			["fontSize"] = 17,
 			["effect"] = "pulse",
-			["minDuration"] = 0,
-			["mmSSDuration"] = 300,
-			["anchor"] = "CENTER",
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
+			["minEffectDuration"] = 30.0000004470348,
+			["minSize"] = 0,
 			["spiralOpacity"] = 1.00999997742474,
 			["yOff"] = 1,
 			["xOff"] = 0,
 			["tenthsDuration"] = 5.00000007450581,
 			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0,
-			["minEffectDuration"] = 30.0000004470348,
-			["fontFace"] = "Fonts\\ARKai_T.TTF",
-			["fontSize"] = 17,
+			["anchor"] = "CENTER",
+			["mmSSDuration"] = 300,
+			["minDuration"] = 0,
+			["scaleText"] = true,
 		},
 		["base"] = {
 			["enabled"] = true,
@@ -243,18 +247,18 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["fontFace"] = "Fonts\\ARKai_T.TTF",
-			["fontSize"] = 18,
-			["mmSSDuration"] = 300,
-			["spiralOpacity"] = 1.00999997742474,
 			["scaleText"] = true,
+			["yOff"] = 0,
+			["minEffectDuration"] = 30,
+			["spiralOpacity"] = 1.00999997742474,
+			["minDuration"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 5,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0,
-			["minEffectDuration"] = 30,
-			["minDuration"] = 0,
-			["yOff"] = 0,
+			["mmSSDuration"] = 300,
+			["fontSize"] = 18,
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
 		},
 		["Threat Plates"] = {
 			["enabled"] = false,
@@ -279,19 +283,35 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["minDuration"] = 0,
-			["scaleText"] = true,
-			["minEffectDuration"] = 30,
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
+			["fontSize"] = 18,
+			["mmSSDuration"] = 300,
 			["spiralOpacity"] = 1.00999997742474,
 			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 5,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0,
-			["mmSSDuration"] = 300,
-			["fontSize"] = 18,
-			["fontFace"] = "Fonts\\ARKai_T.TTF",
+			["minEffectDuration"] = 30,
+			["scaleText"] = true,
+			["minDuration"] = 0,
 		},
 	},
-	["engine"] = "AniUpdater",
+	["groups"] = {
+		{
+			["id"] = "TMW",
+			["rules"] = {
+				"TellMeWhen", -- [1]
+			},
+			["enabled"] = true,
+		}, -- [1]
+		{
+			["id"] = "Threat Plates",
+			["rules"] = {
+				"ThreatPlates", -- [1]
+			},
+			["enabled"] = true,
+		}, -- [2]
+	},
+	["version"] = "8.2.5",
 }

@@ -1,6 +1,8 @@
 # Elephant
 
-## [9.0.2a](https://github.com/AllInOneMighty/Elephant/tree/9.0.2a) (2020-11-18)
-[Full Changelog](https://github.com/AllInOneMighty/Elephant/compare/9.0.1b...9.0.2a) 
+## [9.0.5](https://github.com/AllInOneMighty/Elephant/tree/9.0.5) (2021-06-07)
+[Full Changelog](https://github.com/AllInOneMighty/Elephant/compare/9.0.2a...9.0.5) 
 
-- Updating TOC  
+- - Updating TOC  
+    - Fixing middle window being transparent  
+    - Increasing size of log title for increased readability on larger monitors  

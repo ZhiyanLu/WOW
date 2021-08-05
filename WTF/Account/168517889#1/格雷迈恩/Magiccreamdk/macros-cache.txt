@@ -67,6 +67,12 @@ VER 3 0100000000000029 "激活鼠标" "INV_Misc_QuestionMark"
 /use 缠结精华之牙
 /script SendChatMessage("给你激活了！！", "WHISPER", nil, UnitName("mouseover"))
 END
+VER 3 010000000000002D "突变" "INV_Misc_QuestionMark"
+#showtooltip 黑暗突变
+/use 黑暗突变
+/use 血性狂怒(种族特长)
+/use 压制能量水晶
+END
 VER 3 010000000000002A "突变" "INV_Misc_QuestionMark"
 #showtooltip 黑暗突变
 /use 黑暗突变

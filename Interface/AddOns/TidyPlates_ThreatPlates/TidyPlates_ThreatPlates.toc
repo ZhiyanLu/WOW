@@ -1,7 +1,7 @@
-## Interface: 90002
+## Interface: 90100
 
 ## Title: Threat Plates
-## Version: 10.0.9
+## Version: 10.2.9
 ## Notes: Threat-reactive nameplates.
 ## Notes-deDE: Bedrohungsreaktive Namensplaketten.
 ## Notes-esES: Placas Identificativas de Amenaza
@@ -10,9 +10,11 @@
 ## SavedVariables: ThreatPlatesDB
 
 ## RequiredDeps:
-## OptionalDeps: Ace3, AceGUI-3.0-SharedMediaWidgets, LibSharedMedia-3.0, LibCustomGlow-1.0, LibDeflate
+## OptionalDeps: Ace3, AceGUI-3.0-SharedMediaWidgets, LibSharedMedia-3.0, LibCustomGlow-1.0, LibDeflate, LibDualSpec-1.0
+## X-Embeds: Ace3, AceGUI-3.0-SharedMediaWidgets, LibSharedMedia-3.0, LibCustomGlow-1.0, LibDeflate, LibDualSpec-1.0
 ## X-Website: https://wow.curseforge.com/projects/tidy-plates-threat-plates
 ## X-Curse-Project-ID: 21217
+## X-WoWI-ID: 15749
 
 ## X-License: GNU General Public License
 ## X-Credits: danltiger (for Tidy Plates), Tosaido (for quest handling code from QuestMobs)

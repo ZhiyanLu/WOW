@@ -6,6 +6,16 @@ U1RegisterAddon("DBM_Mods_WoD", {
     tags = { "TAG_RAID", },
     defaultEnable = 1,
     nolodbutton = 1,
+    dummy = 1,
+    children = {
+        "DBM-Draenor",
+        "DBM-Party-WoD",
+        -- "DBM-GarrisonInvasions",
+        "DBM-HellfireCitadel",
+        "DBM-Highmaul",
+        -- "DBM-HellfireCitadel",
+        "DBM-BlackrockFoundry",
+    },
     toggle = function(name, info, enable, justload)
     end,
 });

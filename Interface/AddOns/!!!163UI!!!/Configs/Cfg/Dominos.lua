@@ -8,11 +8,32 @@
     tags = { "TAG_ACTIONBUTTONCASTBAR", },
     icon = 'Interface\\Addons\\Dominos\\Dominos',
 
-    modifier = "|cffcd1a1c[网易]|r",
 
-    desc = "一个简单易用的动作条移动插件，可以移动动作条、施法条、姿态条、宠物条、图腾条等等。`初次使用会自动加载我们预设的'三行紧凑型'布局，如果以前用过此插件，可能需要手工在控制台里设置一下。`可以左键点击小地图按钮进入设置模式，然后用鼠标拖动位置，或者右键点击打开设置菜单。如果按住shift点击则可以按键绑定模式，鼠标悬停在动作条按钮上就可以快速设置此按钮的热键。`建议配合按钮美化插件一起使用。`特别提示萨满同学，图腾条第一个按钮按Alt点击或鼠标中键点击，就是召回图腾，所以默认隐藏召回按钮了。`网易有爱在原版基础上进行了较彻底的中文化，增加了预设方案、修复了若干BUG，并增加了保留默认载具界面的功能，敬请试用。",
+    desc = "一个简单易用的动作条移动插件，可以移动动作条、施法条、姿态条、宠物条、图腾条等等。`初次使用会自动加载我们预设的'三行紧凑型'布局，如果以前用过此插件，可能需要手工在控制台里设置一下。`可以左键点击小地图按钮进入设置模式，然后用鼠标拖动位置，或者右键点击打开设置菜单。如果按住shift点击则可以按键绑定模式，鼠标悬停在动作条按钮上就可以快速设置此按钮的热键。`建议配合按钮美化插件一起使用。`特别提示萨满同学，图腾条第一个按钮按Alt点击或鼠标中键点击，就是召回图腾，所以默认隐藏召回按钮了。",
 
     runBeforeLoad = function(info, name)
+        local key = UnitName('player') .. " - " .. GetRealmName();
+        if DominosDB == nil or DominosDB.profileKeys == nil or DominosDB.profiles == nil then
+            _G.DominosDB = {
+                profileKeys = { [key] = "Default", },
+                profiles = {
+                    Default = {
+                        frames = Dominos:U1_GetPreset('MINI');
+                    },
+                },
+            };
+        elseif DominosDB.profileKeys[key] == nil then
+            if DominosDB.profiles[key] == nil then
+                DominosDB.profiles[key] = {
+                    frames = Dominos:U1_GetPreset('MINI');
+                };
+            end
+            DominosDB.profileKeys[key] = key;
+        end
+        if GroupLootContainer then
+            GroupLootContainer:EnableMouse(false)
+        end
+
         SLASH_DOMINO_CONFIG1 = '/dmn' SlashCmdList["DOMINO_CONFIG"] = function() Dominos:ToggleLockedFrames() end
         Dominos.ShowOptions = function()
             local _ = InterfaceOptionsFrame:IsShown() and InterfaceOptionsFrame:Hide()
@@ -54,6 +75,7 @@
         end
     end,
 
+
     {
         text = "缩放比例",
         var = "scale",
@@ -82,7 +104,11 @@
         confirm = "注意：当前的动作条设置将重置并无法恢复，您是否确定？",
         tip = "说明`网易有爱预设了几套动作条布局方案，可以选择后自行微调。",
         callback = function(cfg, v, loading)
-            if(loading) then return end
+            if loading then return end
+            if InCombatLockdown() then
+                U1Message("战斗中不能配置Dominos");
+                return;
+            end
             Dominos:Unload()
             -- Dominos.db:ResetProfile()
             -- insert out diff
@@ -110,9 +136,8 @@
             if(not IsAddOnLoaded'Dominos_Config') then
                 LoadAddOn'Dominos_Config'
             end
-            if('Dominos') then
-                InterfaceOptionsFrame_OpenToCategory('Dominos')
-            end
+            InterfaceOptionsFrame_Show()
+            InterfaceOptionsFrame_OpenToCategory('Dominos')
         end,
     },
 
@@ -149,7 +174,8 @@
         callback = function(_, v) return Dominos:SetShowBindingText(v) end,
     },
 
-    --[[ { --no use in 7.0
+    --[[
+    { --no use in 7.0
         type = 'radio',
         var = 'showbutton',
         default = 'STOR',
@@ -186,12 +212,12 @@
         callback = function(_,v) return Dominos:SetShowCombatTooltips(v) end,
     },
 
-    --[[{
+    {
         type = 'button',
         text = '进入布局模式',
         tip = "说明`进入布局设置模式，点击小地图旁边的多米诺按钮也可以进入。",
         callback = function() Dominos:ToggleLockedFrames() end,
-    },--]]
+    },
 
     {
         type = 'button',
@@ -215,10 +241,10 @@ local function dominoModuleToggle(name, info, enable, justload)
     return true
 end
 
-U1RegisterAddon("Dominos_Config", { title = "配置界面模块", protected = 1, hide = 1, });
+U1RegisterAddon("Dominos_Config", { parent = "Dominos", title = "配置界面模块", hide = 1, });
 
-U1RegisterAddon("Dominos_CastClassic", { title = "经典施法条模块", defaultEnable = 1, load="NORMAL", dominoModule = 'CastingBar', toggle = dominoModuleToggle, desc = "令系统默认施法条可以移动和配置的多米诺模块,网易有爱叶子修改。", });
-U1RegisterAddon("Dominos_Cast", { title = "美化施法条模块", defaultEnable = 0, load="NORMAL", ignoreLoadAll = 1, desc = "令系统默认施法条可以移动和配置的多米诺模块,网易有爱叶子修改。",
+U1RegisterAddon("Dominos_CastClassic", { parent = "Dominos", title = "经典施法条模块", defaultEnable = 1, load="NORMAL", dominoModule = 'CastingBar', toggle = dominoModuleToggle, desc = "令系统默认施法条可以移动和配置的多米诺模块,网易有爱叶子修改。", });
+U1RegisterAddon("Dominos_Cast", { parent = "Dominos", title = "美化施法条模块", defaultEnable = 0, load="NORMAL", ignoreLoadAll = 1, desc = "令系统默认施法条可以移动和配置的多米诺模块,网易有爱叶子修改。",
     toggle = function(name, info, enable, justload)
         if justload then
             if IsLoggedIn() then
@@ -240,37 +266,8 @@ U1RegisterAddon("Dominos_Cast", { title = "美化施法条模块", defaultEnable
         end
     end,
 });
-U1RegisterAddon("Dominos_Roll", { title = "拾取提示模块", defaultEnable = 1, load="NORMAL", dominoModule = 'RollBars', toggle = dominoModuleToggle, desc = "让装备掷骰界面和提示获取装备的框体可以移动的多米诺模块", });
-U1RegisterAddon("Dominos_Encounter", { title = "特殊能量条模块", defaultEnable = 1, load="NORMAL", dominoModule = 'EncounterBar', toggle = dominoModuleToggle, desc = "移动某些BOSS战斗时玩家特殊能量槽的多米诺模块", });
-U1RegisterAddon("Dominos_Progress", { title = "经验和神器进度模块", defaultEnable = 1, load="NORMAL", dominoModule = 'ProgressBars', toggle = dominoModuleToggle, desc = "一个可移动的进度条，右键点击可以切换经验/声望/荣誉。7.0新增指示神器能量的进度条。", });
-U1RegisterAddon("Dominos_ActionSets", {title = "动作条保存模块", defaultEnable = 1, load="NORMAL", desc = "可以在配置方案中保存动作条上的技能" });
-
---配置界面的鼠标提示
---[[ --fix7
-CoreOnEvent("ADDON_LOADED", function(event, name)
-    if name=="Dominos_Config" then
-        local L = LibStub('AceLocale-3.0'):GetLocale('Dominos-Config');
-        CoreUIEnableTooltip(_G["DominosProfiles"..L.Set], L.Set, "选择并应用所选方案的设置");
-        CoreUIEnableTooltip(_G["DominosProfiles"..L.Save], L.Save, "创建一个新的方案，并将当前设置复制到其中，然后选择其为当前方案。");
-        CoreUIEnableTooltip(_G["DominosProfiles"..L.Copy], L.Copy, "复制所选方案的设置到当前方案，注意当前方案的设置将无法恢复!");
-        return 1;
-    end
-end)
---]]
---- 调试roll点框 /run if debug_RollFrame then debug_RollFrame() end GroupLootFrame_OpenNewFrame(140005, 10)
-function debug_RollFrame()
-    local times = {}
-    hooksecurefunc("GroupLootFrame_OpenNewFrame", function(id, time)
-        times[id] = GetTime() + time
-    end)
-    GetLootRollItemInfo = function(rollID)
-        local name, link, quality, _, _, _, _, _, _, texture = GetItemInfo(rollID)
-        return texture, name, 1, quality, true, true, true, "", "", "", ""
-    end
-    GetLootRollItemLink = function(rollID) return select(2, GetItemInfo(rollID)) end
-    GetLootRollTimeLeft = function(rollID) return times[rollID] or (GetTime() + 10) - GetTime() end
-    debug_RollFrame = nil
-end
-
-
+U1RegisterAddon("Dominos_Roll", { parent = "Dominos", title = "拾取提示模块", defaultEnable = 1, load="NORMAL", dominoModule = 'RollBars', toggle = dominoModuleToggle, desc = "让装备掷骰界面和提示获取装备的框体可以移动的多米诺模块", });
+U1RegisterAddon("Dominos_Encounter", { parent = "Dominos", title = "特殊能量条模块", defaultEnable = 1, load="NORMAL", dominoModule = 'EncounterBar', toggle = dominoModuleToggle, desc = "移动某些BOSS战斗时玩家特殊能量槽的多米诺模块", });
+U1RegisterAddon("Dominos_Progress", { parent = "Dominos", title = "经验进度模块", defaultEnable = 1, load="NORMAL", dominoModule = 'ProgressBars', toggle = dominoModuleToggle, desc = "一个可移动的进度条，右键点击可以切换经验/声望/荣誉。7.0新增指示神器能量的进度条。", });
+U1RegisterAddon("Dominos_ActionSets", { parent = "Dominos", title = "动作条保存模块", defaultEnable = 1, load="NORMAL", desc = "可以在配置方案中保存动作条上的技能" });
 

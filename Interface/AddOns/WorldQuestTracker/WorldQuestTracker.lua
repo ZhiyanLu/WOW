@@ -76,7 +76,7 @@ if (not LibWindow) then
 	print ("|cFFFFAA00World Quest Tracker|r: libwindow not found, did you just updated the addon? try reopening the client.|r")
 end
 
-local ARROW_UPDATE_FREQUENCE = 0.016
+
 
 local WorldMapScrollFrame = WorldMapFrame.ScrollContainer
 
@@ -145,6 +145,10 @@ function WorldQuestTracker:OnInit()
 	local SharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0")
 	SharedMedia:Register ("statusbar", "Iskar Serenity", [[Interface\AddOns\WorldQuestTracker\media\bar_serenity]])
 	
+	C_Timer.After (5, function()
+		WorldQuestTracker.InitiateFlyMasterTracker()
+	end)
+
 	C_Timer.After (2, function()
 		if (WorldQuestTracker.db:GetCurrentProfile() ~= "Default") then
 			WorldQuestTracker.db:SetProfile ("Default")
@@ -1239,15 +1243,211 @@ local p = CreateFrame("frame")
 p:RegisterEvent("TALKINGHEAD_REQUESTED")
 p:SetScript("OnEvent", function (self, event, arg1)
 	if (event == "TALKINGHEAD_REQUESTED") then
+
+		--get where the player is
+		local _, zoneType = GetInstanceInfo()
+
+		if (zoneType == "none") then
+			if (not WorldQuestTracker.db.profile.talking_heads_openworld) then
+				return
+			end
+
+		elseif (zoneType == "party") then
+			if (not WorldQuestTracker.db.profile.talking_heads_dungeon) then
+				return
+			end
+			
+		elseif (zoneType == "raid") then
+			if (not WorldQuestTracker.db.profile.talking_heads_raid) then
+				return
+			end
+
+		elseif (zoneType == "scenario") then
+			if (not WorldQuestTracker.db.profile.talking_heads_torgast) then
+				return
+			end
+		end
+
 		local displayInfo, cameraID, vo, duration, lineNumber, numLines, name, text, isNewTalkingHead = C_TalkingHead.GetCurrentLineInfo()
-		if (WorldQuestTracker.db.profile.talking_heads[vo]) then
+		if (WorldQuestTracker.db.profile.talking_heads_heard[vo]) then
 			C_Timer.After(0.1, TalkingHeadFrame_CloseImmediately)
 		else
-			WorldQuestTracker.db.profile.talking_heads[vo] = true
+			WorldQuestTracker.db.profile.talking_heads_heard[vo] = true
 		end
 	end
 end)
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function WorldQuestTracker.InitiateFlyMasterTracker()
+	--get the location
+	--/dump C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player")
+	--flymaster npc location
+	local flymasterX = 0.60903662443161 -- -1906.8000488281
+	local flymasterY = 0.6869769692421 -- 1210.3000488281
+	--korthia portal location
+	local korthiaPortalX = 0.35661220550537 --0.31601178646088
+	local korthiaPortalY = 0.30656772851944 --0.24368673563004
+
+	--upper oribos map id
+	local secondFloormapId = 1671
+	local isFlymasterTrakcerEnabled = false
+
+	local currentPlayerX = 0
+	local currentPlayerY = 0
+
+	local oribosFlyMasterFrame = CreateFrame("frame", "WorldQuestTrackerOribosFlyMasterFrame", UIParent, "BackdropTemplate")
+	oribosFlyMasterFrame:SetPoint("center", "UIParent", "center", 0, 0)
+	oribosFlyMasterFrame:SetSize(116, 60)
+	DetailsFramework:ApplyStandardBackdrop(oribosFlyMasterFrame)
+	oribosFlyMasterFrame:Hide()
+
+	oribosFlyMasterFrame.statusBar = CreateFrame("frame", "WorldQuestTrackerOribosFlyMasterFrameStatusBar", oribosFlyMasterFrame, "BackdropTemplate")
+	oribosFlyMasterFrame.statusBar:SetPoint("bottomleft", oribosFlyMasterFrame, "bottomleft", 0, 0)
+	oribosFlyMasterFrame.statusBar:SetPoint("bottomright", oribosFlyMasterFrame, "bottomright", 0, 0)
+	oribosFlyMasterFrame.statusBar:SetHeight(12)
+	DetailsFramework:ApplyStandardBackdrop(oribosFlyMasterFrame.statusBar)
+
+	oribosFlyMasterFrame.FlightMasterIcon = oribosFlyMasterFrame:CreateTexture(nil, "overlay")
+	oribosFlyMasterFrame.FlightMasterIcon:SetPoint("topleft", oribosFlyMasterFrame, "topleft", 35, -3)
+	oribosFlyMasterFrame.FlightMasterIcon:SetSize(16, 16)
+	oribosFlyMasterFrame.FlightMasterIcon:SetAlpha(0.7)
+	oribosFlyMasterFrame.FlightMasterIcon:SetTexture([[Interface\TAXIFRAME\UI-Taxi-Icon-White]])
+
+	oribosFlyMasterFrame.KorthiaIcon = oribosFlyMasterFrame:CreateTexture(nil, "overlay")
+	oribosFlyMasterFrame.KorthiaIcon:SetPoint("topleft", oribosFlyMasterFrame.FlightMasterIcon, "topright", 15, 0)
+	oribosFlyMasterFrame.KorthiaIcon:SetSize(16, 16)
+	oribosFlyMasterFrame.KorthiaIcon:SetAlpha(0.7)
+	oribosFlyMasterFrame.KorthiaIcon:SetBlendMode("ADD")
+	oribosFlyMasterFrame.KorthiaIcon:SetTexture([[Interface\AddOns\WorldQuestTracker\media\korthia_portal_icon]])
+
+	oribosFlyMasterFrame.Arrow = oribosFlyMasterFrame:CreateTexture(nil, "overlay")
+	oribosFlyMasterFrame.Arrow:SetPoint("top", oribosFlyMasterFrame.FlightMasterIcon, "bottom", 6, 1)
+	oribosFlyMasterFrame.Arrow:SetSize(32, 32)
+	oribosFlyMasterFrame.Arrow:SetAlpha(1)
+	oribosFlyMasterFrame.Arrow:SetTexture([[Interface\AddOns\WorldQuestTracker\media\ArrowGridT]])
+
+	oribosFlyMasterFrame.KorthiaArrow = oribosFlyMasterFrame:CreateTexture(nil, "overlay")
+	oribosFlyMasterFrame.KorthiaArrow:SetPoint("topleft", oribosFlyMasterFrame.Arrow, "topright", 0, 0)
+	oribosFlyMasterFrame.KorthiaArrow:SetSize(32, 32)
+	oribosFlyMasterFrame.KorthiaArrow:SetAlpha(1)
+	oribosFlyMasterFrame.KorthiaArrow:SetTexture([[Interface\AddOns\WorldQuestTracker\media\ArrowGridT]])
+
+	local onCloseButton = function()
+		oribosFlyMasterFrame:Hide()
+		WorldQuestTracker.db.profile.flymaster_tracker_enabled = false
+	end
+	oribosFlyMasterFrame.CloseButton = DF:CreateButton(oribosFlyMasterFrame, onCloseButton, 20, 20, "X", -1, nil, nil, nil, nil, nil, DF:GetTemplate ("button", "WQT_NEWS_BUTTON"), DF:GetTemplate ("font", "WQT_TOGGLEQUEST_TEXT"))
+	oribosFlyMasterFrame.CloseButton:SetPoint("topleft", oribosFlyMasterFrame, "topleft", 1, -1)
+	oribosFlyMasterFrame.CloseButton:SetSize(20, 20)
+	oribosFlyMasterFrame.CloseButton:SetAlpha(.2)
+
+	oribosFlyMasterFrame.CloseButton.have_tooltip = "Disable this window, can be enabled again in the World Quest Tracker options."
+
+	oribosFlyMasterFrame.Title = DF:CreateLabel(oribosFlyMasterFrame.statusBar, "World Quest Tracker")
+	oribosFlyMasterFrame.Title:SetPoint("bottom", oribosFlyMasterFrame, "bottom", 0, 1)
+	oribosFlyMasterFrame.Title.align =  "|"
+	oribosFlyMasterFrame.Title.textcolor = {.8, .8, .8, .35}
+
+	local trackerOnTick = function(self, deltaTime)
+		--update the player position
+		local mapPosition = C_Map.GetPlayerMapPosition(WorldQuestTracker.GetCurrentStandingMapAreaID(), "player")
+		if (not mapPosition) then
+			return
+		end
+		currentPlayerX, currentPlayerY = mapPosition.x, mapPosition.y
+
+		--update flight master arrow
+			local questYaw = (DF.FindLookAtRotation (_, currentPlayerX, currentPlayerY, flymasterX, flymasterY) + (math.pi/2)) % (math.pi*2)
+			local playerYaw = GetPlayerFacing() or 0
+			local angle = (((questYaw + playerYaw)%(math.pi*2))+math.pi)%(math.pi*2)
+			local imageIndex = 1+(floor (DF.MapRangeClamped (_, 0, (math.pi*2), 1, 144, angle)) + 48)%144 --48� quadro � o que aponta para o norte
+			local line = ceil (imageIndex / 12)
+			local coord = (imageIndex - ((line-1) * 12)) / 12
+			self.Arrow:SetTexCoord (coord-0.0833, coord, 0.0833 * (line-1), 0.0833 * line)
+
+			--[=[
+				local distance = CalculateDistance(currentPlayerX, currentPlayerY, flymasterX, flymasterY)
+				if (distance < 0.1) then
+					local alpha = DF:GetRangePercent(0, 0.1, distance)
+					oribosFlyMasterFrame:SetAlpha(alpha)
+				else
+					oribosFlyMasterFrame:SetAlpha(1)
+				end
+			--]=]
+
+		--update korthia arrow
+			local questYaw = (DF.FindLookAtRotation (_, currentPlayerX, currentPlayerY, korthiaPortalX, korthiaPortalY) + (math.pi/2)) % (math.pi*2)
+			local playerYaw = GetPlayerFacing() or 0
+			local angle = (((questYaw + playerYaw)%(math.pi*2))+math.pi)%(math.pi*2)
+			local imageIndex = 1+(floor (DF.MapRangeClamped (_, 0, (math.pi*2), 1, 144, angle)) + 48)%144 --48� quadro � o que aponta para o norte
+			local line = ceil (imageIndex / 12)
+			local coord = (imageIndex - ((line-1) * 12)) / 12
+			self.KorthiaArrow:SetTexCoord (coord-0.0833, coord, 0.0833 * (line-1), 0.0833 * line)
+
+			--[=[
+				local distance = CalculateDistance(currentPlayerX, currentPlayerY, korthiaPortalX, korthiaPortalY)
+				if (distance < 0.1) then
+					local alpha = DF:GetRangePercent(0, 0.1, distance)
+					oribosFlyMasterFrame:SetAlpha(alpha)
+				else
+					oribosFlyMasterFrame:SetAlpha(1)
+				end
+			--]=]
+
+		if (UnitOnTaxi("player")) then
+			oribosFlyMasterFrame.disableFlymasterTracker()
+			return
+		end
+	end
+
+	local LibWindow = LibStub("LibWindow-1.1")
+	LibWindow.RegisterConfig(oribosFlyMasterFrame, WorldQuestTracker.db.profile.flymaster_tracker_frame_pos)
+	LibWindow.MakeDraggable(oribosFlyMasterFrame)
+	LibWindow.RestorePosition(oribosFlyMasterFrame)
+	oribosFlyMasterFrame:EnableMouse(true)
+
+	local enableFlymasterTracker = function()
+		if (WorldQuestTracker.db.profile.flymaster_tracker_enabled) then
+			oribosFlyMasterFrame:Show()
+			oribosFlyMasterFrame:SetScript("OnUpdate", trackerOnTick)
+			isFlymasterTrakcerEnabled = true
+		end
+	end
+	oribosFlyMasterFrame.enableFlymasterTracker = enableFlymasterTracker
+
+	local disableFlymasterTracker = function()
+		oribosFlyMasterFrame:Hide()
+		oribosFlyMasterFrame:SetScript("OnUpdate", nil)
+		isFlymasterTrakcerEnabled = false
+	end
+	oribosFlyMasterFrame.disableFlymasterTracker = disableFlymasterTracker
+
+	local checkIfIsInOribosSecondFloor = function()
+		local currentMapId = C_Map.GetBestMapForUnit("player")
+		if (currentMapId == secondFloormapId) then
+			if (not UnitOnTaxi("player")) then
+				if (not isFlymasterTrakcerEnabled) then
+					enableFlymasterTracker()
+				end
+			end
+		else
+			if (isFlymasterTrakcerEnabled) then
+				disableFlymasterTracker()
+			end
+		end
+	end
+
+	local oribosFlyMasterEventFrame = CreateFrame("frame", "WorldQuestTrackerOribosFlyMasterEventFrame")
+	oribosFlyMasterEventFrame:SetScript("OnEvent", function(self, event, ...)
+		C_Timer.After(1, checkIfIsInOribosSecondFloor)
+	end)
+	oribosFlyMasterEventFrame:RegisterEvent("ZONE_CHANGED_INDOORS")
+	oribosFlyMasterEventFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
+
+	C_Timer.After(0.1, checkIfIsInOribosSecondFloor)
+end
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> faction bounty
 

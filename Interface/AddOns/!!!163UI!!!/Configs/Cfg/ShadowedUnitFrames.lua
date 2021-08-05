@@ -12,8 +12,37 @@ U1RegisterAddon("ShadowedUnitFrames", {
     conflicts = { "EN_UnitFrames", },
 
     runBeforeLoad = function(info, name)
-        info.neverUsedSUF = ShadowedUFDB == nil
+        -- info.neverUsedSUF = ShadowedUFDB == nil
+        if ShadowedUFDB == nil or ShadowedUFDB.profiles == nil or ShadowedUFDB.profileKeys == nil then
+          info.neverUsedSUF = true;
+        else
+          local key = ShadowedUFDB.profileKeys[UnitName('player') .. " - " .. GetRealmName()];
+          if key == nil or ShadowedUFDB.profiles[key] == nil then
+            info.neverUsedSUF = true;
+          end
+        end
+        CoreMakeAce3DBSingleProfile("ShadowedUFDB", U1GetCfgValue("ShadowedUnitFrames", "accoutwide"), Default);
     end,
+
+    {
+        text = "帐号统一配置",
+        var = "accoutwide",
+        tip = "开启时，将使用帐号通用配置`关闭时，将重置当前角色设置为开启前的状态",
+        default = true,
+        callback = function(cfg, v, loading)
+            if not loading and ShadowedUFDB ~= nil then
+                local key = UnitName('player') .. " - " .. GetRealmName();
+                if v then
+                    local pk = ShadowedUFDB.profileKeys[key];
+                    ShadowedUFDB.profiles.Default = ShadowedUFDB.profiles[pk];
+                    ShadowedUFDB.profileKeys[key] = "Default";
+                else
+                    ShadowedUFDB.profileKeys = {  };
+                end
+            end
+        end,
+        reload = 1,
+    },
 
     toggle = function(name, info, enable, justload)
         if justload and enable and info.neverUsedSUF then

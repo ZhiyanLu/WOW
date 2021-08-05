@@ -18,11 +18,8 @@ AtlasLootCharDB = {
 			69.7778091430664, -- [5]
 		},
 		["selected"] = {
-			"AtlasLoot_Legion", -- [1]
-			"TheEmeraldNightmare", -- [2]
-			nil, -- [3]
-			1, -- [4]
-			0, -- [5]
+			[4] = 1,
+			[5] = 0,
 		},
 		["transMogHighlighter"] = true,
 	},

@@ -1,4 +1,4 @@
-## Interface: 90002
+## Interface: 90100
 ## Title: !!!|cff880303[163UI]|r Core and Lib
 ## Title-zhCN: !!!|cff880303[网易有爱]|r 控制台和基本库
 ## Author: NetEase Inc. (warbaby & yleaf & ff & alex)
@@ -9,4 +9,4 @@
 
 !!!163UI!!!.xml
 
-## X-163UI-Version: 20201231144205
+## X-163UI-Version: 20210715135342

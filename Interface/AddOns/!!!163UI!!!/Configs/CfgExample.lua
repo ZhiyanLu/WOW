@@ -72,6 +72,10 @@ U1RegisterAddon("$NAME$", {
         cols = 3, --每行的选项数
         indent = 1, 是否缩进
 
+        --范围
+        type = "spin",
+        range = { min, max, step, },
+
         --段落分割
         type = "text",
 

@@ -1,10 +1,10 @@
-lightweight tag 778cfba35566707c44493931f2daa34bbb86be22 v9.0.2.416
+tag 7c1c2fe40c9b1d59aec433b58b5dda46d0e86f31 v9.1.0.427
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Mon Jan 18 10:10:41 2021 -0300
+Date:	Fri Jul 2 18:19:23 2021 -0300
 
-commit 778cfba35566707c44493931f2daa34bbb86be22
+commit 9518fadfdc862c57b9daaf257e9bca1a73bbafd8
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Mon Jan 18 10:10:41 2021 -0300
+Date:   Fri Jul 2 18:19:02 2021 -0300
 
-    Framework update and small bug fixes
+    Fixing anima amount on Spanish and Portugues languages
 

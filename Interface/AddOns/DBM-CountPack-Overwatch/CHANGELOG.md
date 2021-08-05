@@ -1,11 +1,24 @@
 # <DBM> Countpack Overwatch
 
-## [1.4.14-6-g36138b6](https://github.com/DeadlyBossMods/DBM-CountPack-Overwatch/tree/36138b67882cc5d9e6e6c3c291cb4a95d86a85e7) (2020-12-18)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-CountPack-Overwatch/compare/1.4.14...36138b67882cc5d9e6e6c3c291cb4a95d86a85e7) [Previous Releases](https://github.com/DeadlyBossMods/DBM-CountPack-Overwatch/releases)
+## [1.4.16](https://github.com/DeadlyBossMods/DBM-CountPack-Overwatch/tree/1.4.16) (2021-06-29)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-CountPack-Overwatch/compare/1.4.15...1.4.16) [Previous Releases](https://github.com/DeadlyBossMods/DBM-CountPack-Overwatch/releases)
 
-- Derp  
-- Derp  
-- Ci updates from master  
-- Update CI  
-- Delete .travis.yml  
-- Create ci.yml  
+- toc bump  
+- Update LICENSE  
+- All Rights Reserved license  
+- here too  
+- Update ci.yml  
+    update build  
+- Bump Classic TOC  
+- remove BOM  
+- Update ci.yml  
+    create tbc as well  
+- update toc for packager  
+- Neutral terminology for addon clients.  
+- Never actually bumped classic toc for 1.13.6  
+- Update ci.yml  
+    Fix wago building for both wow versions  
+- Wago project ID  
+- Update README.md  
+- Update ci.yml  
+    Wago  

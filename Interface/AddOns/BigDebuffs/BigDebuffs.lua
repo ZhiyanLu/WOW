@@ -31,13 +31,15 @@ local defaults = {
             interrupts = 55,
             roots = 40,
             warning = 40,
+            debuffs_offensive = 35,
             default = 30,
             special = 30,
             pve = 50,
             warningList = {
                 [212183] = true, -- Smoke Bomb
                 [81261] = true, -- Solar Beam
-                [233490] = true, -- Unstable Affliction
+                [316099] = true, -- Unstable Affliction
+                [342938] = true, -- Unstable Affliction
                 [34914] = true, -- Vampiric Touch
             },
             inRaid = {
@@ -55,21 +57,41 @@ local defaults = {
             player = {
                 enabled = true,
                 anchor = "auto",
+                anchorPoint = "auto",
+                relativePoint = "auto",
+                x = 0,
+                y = 0,
+                matchFrameHeight = true,
                 size = 50,
             },
             target = {
                 enabled = true,
                 anchor = "auto",
+                anchorPoint = "auto",
+                relativePoint = "auto",
+                x = 0,
+                y = 0,
+                matchFrameHeight = true,
                 size = 50,
             },
             pet = {
                 enabled = true,
                 anchor = "auto",
+                anchorPoint = "auto",
+                relativePoint = "auto",
+                x = 0,
+                y = 0,
+                matchFrameHeight = true,
                 size = 50,
             },
             party = {
                 enabled = true,
                 anchor = "auto",
+                anchorPoint = "auto",
+                relativePoint = "auto",
+                x = 0,
+                y = 0,
+                matchFrameHeight = true,
                 size = 50,
             },
             cc = true,
@@ -79,7 +101,9 @@ local defaults = {
             buffs_defensive = true,
             buffs_offensive = true,
             buffs_other = true,
+            debuffs_offensive = true,
             roots = true,
+            buffs_speed_boost = true,
         },
 		nameplates = {
 			enabled = true,
@@ -91,10 +115,19 @@ local defaults = {
 			enemy = true,
 			friendly = true,
 			npc = true,
-			anchor = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC and "TOP" or "RIGHT",
-			size = 40,
-			x = 0,
-			y = 0,
+            enemyAnchor = {
+                anchor = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE and "RIGHT" or "TOP",
+                size = 40,
+                x = 0,
+                y = 0,
+            },
+            friendlyAnchor = {
+                friendlyAnchorEnabled = false,
+                anchor = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE and "RIGHT" or "TOP",
+                size = 40,
+                x = 0,
+                y = 0,
+            },
 			cc = true,
             interrupts = true,
             immunities = true,
@@ -102,7 +135,9 @@ local defaults = {
             buffs_defensive = true,
             buffs_offensive = true,
             buffs_other = true,
+            debuffs_offensive = true,
             roots = true,
+            buffs_speed_boost = true,
 		},
         priority = {
             immunities = 80,
@@ -111,9 +146,11 @@ local defaults = {
             interrupts = 55,
             buffs_defensive = 50,
             buffs_offensive = 40,
+            debuffs_offensive = 35,
             buffs_other = 30,
             roots = 20,
             special = 19,
+            buffs_speed_boost = 10,
         },
         spells = {},
     }
@@ -129,6 +166,114 @@ if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
     for id, value in pairs(BigDebuffs.Spells) do
         if not value.parent then spellIdByName[GetSpellInfo(id)] = id end
     end
+else
+    defaults.profile.unitFrames.focus = {
+        enabled = true,
+        anchor = "auto",
+        anchorPoint = "auto",
+        relativePoint = "auto",
+        x = 0,
+        y = 0,
+        matchFrameHeight = true,
+        size = 50,
+    }
+
+    defaults.profile.unitFrames.arena = {
+        enabled = true,
+        anchor = "auto",
+        anchorPoint = "auto",
+        relativePoint = "auto",
+        x = 0,
+        y = 0,
+        matchFrameHeight = true,
+        size = 50,
+    }
+end
+
+if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+    BigDebuffs.specDispelTypes = {
+            [62] = { -- Arcane Mage
+                Curse = true,
+            },
+            [63] = { -- Fire Mage
+                Curse = true,
+            },
+            [64] = { -- Frost Mage
+                Curse = true,
+            },
+            [65] = { -- Holy Paladin
+                Magic = true,
+                Poison = true,
+                Disease = true,
+            },
+            [66] = { -- Protection Paladin
+                Poison = true,
+                Disease = true,
+            },
+            [70] = { -- Retribution Paladin
+                Poison = true,
+                Disease = true,
+            },
+            [102] = { -- Balance Druid
+                Curse = true,
+                Poison = true,
+            },
+            [103] = { -- Feral Druid
+                Curse = true,
+                Poison = true,
+            },
+            [104] = { -- Guardian Druid
+                Curse = true,
+                Poison = true,
+            },
+            [105] = { -- Restoration Druid
+                Magic = true,
+                Curse = true,
+                Poison = true,
+            },
+            [256] = { -- Discipline Priest
+                Magic = true,
+                Disease = true,
+            },
+            [257] = { -- Holy Priest
+                Magic = true,
+                Disease = true,
+            },
+            [258] = { -- Shadow Priest
+                Magic = true,
+                Disease = true,
+            },
+            [262] = { -- Elemental Shaman
+                Curse = true,
+            },
+            [263] = { -- Enhancement Shaman
+                Curse = true,
+            },
+            [264] = { -- Restoration Shaman
+                Magic = true,
+                Curse = true,
+            },
+            [268] = { -- Brewmaster Monk
+                Poison = true,
+                Disease = true,
+            },
+            [269] = { -- Windwalker Monk
+                Poison = true,
+                Disease = true,
+            },
+            [270] = { -- Mistweaver Monk
+                Magic = true,
+                Poison = true,
+                Disease = true,
+            },
+            [577] = {
+                Magic = function() return GetSpellInfo(205604) end, -- Reverse Magic
+            },
+            [581] = {
+                Magic = function() return GetSpellInfo(205604) end, -- Reverse Magic
+            },
+        }
+else
     local classDispel = {
         PRIEST = {
             Magic = true,
@@ -155,103 +300,8 @@ if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
             Magic = function() return IsUsableSpell(GetSpellInfo(19736)) or IsUsableSpell(GetSpellInfo(19476)) end,
         },
     }
-    local _, class = UnitClass(PLAYER)
+    local _, class = UnitClass("player")
     BigDebuffs.dispelTypes = classDispel[class]
-else
-    defaults.profile.unitFrames.focus = {
-        enabled = true,
-        anchor = "auto",
-        size = 50,
-    }
-
-    defaults.profile.unitFrames.arena = {
-        enabled = true,
-        anchor = "auto",
-        size = 50,
-    }
-
-    BigDebuffs.specDispelTypes = {
-        [62] = { -- Arcane Mage
-            Curse = true,
-        },
-        [63] = { -- Fire Mage
-            Curse = true,
-        },
-        [64] = { -- Frost Mage
-            Curse = true,
-        },
-        [65] = { -- Holy Paladin
-            Magic = true,
-            Poison = true,
-            Disease = true,
-        },
-        [66] = { -- Protection Paladin
-            Poison = true,
-            Disease = true,
-        },
-        [70] = { -- Retribution Paladin
-            Poison = true,
-            Disease = true,
-        },
-        [102] = { -- Balance Druid
-            Curse = true,
-            Poison = true,
-        },
-        [103] = { -- Feral Druid
-            Curse = true,
-            Poison = true,
-        },
-        [104] = { -- Guardian Druid
-            Curse = true,
-            Poison = true,
-        },
-        [105] = { -- Restoration Druid
-            Magic = true,
-            Curse = true,
-            Poison = true,
-        },
-        [256] = { -- Discipline Priest
-            Magic = true,
-            Disease = true,
-        },
-        [257] = { -- Holy Priest
-            Magic = true,
-            Disease = true,
-        },
-        [258] = { -- Shadow Priest
-            Magic = true,
-            Disease = true,
-        },
-        [262] = { -- Elemental Shaman
-            Curse = true,
-        },
-        [263] = { -- Enhancement Shaman
-            Curse = true,
-        },
-        [264] = { -- Restoration Shaman
-            Magic = true,
-            Curse = true,
-        },
-        [268] = { -- Brewmaster Monk
-            Poison = true,
-            Disease = true,
-        },
-        [269] = { -- Windwalker Monk
-            Poison = true,
-            Disease = true,
-        },
-        [270] = { -- Mistweaver Monk
-            Magic = true,
-            Poison = true,
-            Disease = true,
-        },
-        [577] = {
-            Magic = function() return GetSpellInfo(205604) end, -- Reverse Magic
-        },
-        [581] = {
-            Magic = function() return GetSpellInfo(205604) end, -- Reverse Magic
-        },
-    }
 end
 
 BigDebuffs.PriorityDebuffs = addon.PriorityDebuffs
@@ -274,6 +324,44 @@ end
 local UnitDebuff, UnitBuff = UnitDebuff, UnitBuff
 
 local GetAnchor = {
+    ElvUIFrames = function(anchor)
+        local anchors, unit = BigDebuffs.anchors
+
+        for u,configAnchor in pairs(anchors.ElvUI.units) do
+            if anchor == configAnchor then
+                unit = u
+                break
+            end
+        end
+
+        if unit and ( unit:match("party") or unit:match("player") ) then
+            local unitGUID = UnitGUID(unit)
+            for i = 1,5,1 do
+                local elvUIFrame = _G["ElvUF_PartyGroup1UnitButton"..i]
+                if elvUIFrame and elvUIFrame:IsVisible() and elvUIFrame.unit then
+                    if unitGUID == UnitGUID(elvUIFrame.unit) then
+                        return elvUIFrame
+                    end
+                end
+            end
+            return
+        end
+
+        if unit and ( unit:match("arena") or unit:match("arena") ) then
+            local unitGUID = UnitGUID(unit)
+            for i = 1,5,1 do
+                local elvUIFrame = _G["ElvUF_Arena"..i]
+                if elvUIFrame and elvUIFrame:IsVisible() and elvUIFrame.unit then
+                    if unitGUID == UnitGUID(elvUIFrame.unit) then
+                        return elvUIFrame
+                    end
+                end
+            end
+            return
+        end
+
+        return _G[anchor]
+    end,
     ShadowedUnitFrames = function(anchor)
         local frame = _G[anchor]
         if not frame then return end
@@ -340,6 +428,11 @@ local GetNameplateAnchor = {
       end
     end
   end,
+  TidyPlates = function(frame)
+    if frame.carrier and frame.extended and frame.extended.bars and frame.carrier:IsShown() then
+        return frame.extended.bars.healthbar, frame.extended
+    end
+  end,
 	Blizzard = function(frame)
         if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
             return frame.UnitFrame, frame.UnitFrame
@@ -375,25 +468,52 @@ local nameplatesAnchors = {
     },
     [4] = {
         used = function()
-            return NeatPlates ~= nil -- or TidyPlates ~= nil -- Should be the same but haven't confirmed
+            return NeatPlates ~= nil
         end,
         func = GetNameplateAnchor.NeatPlates,
     },
-  [5] = {
-      used = function()
-          -- IsAddOnLoaded("TidyPlates_ThreatPlates") should be better
-          return TidyPlatesThreat ~= nil
-      end,
-      func = GetNameplateAnchor.ThreatPlates,
+    [5] = {
+        used = function()
+            -- IsAddOnLoaded("TidyPlates_ThreatPlates") should be better
+            return TidyPlatesThreat ~= nil
+        end,
+        func = GetNameplateAnchor.ThreatPlates,
     },
-  [6] = {
-      used = function(frame) return frame.UnitFrame ~= nil end,
-      func = GetNameplateAnchor.Blizzard,
-  },
+    [6] = {
+        used = function()
+            return TidyPlates ~= nil
+        end,
+        func = GetNameplateAnchor.TidyPlates,
+    },
+    [7] = {
+        used = function(frame) return frame.UnitFrame ~= nil end,
+        func = GetNameplateAnchor.Blizzard,
+    },
 }
 
 local anchors = {
+    ["GladiusExParty"] = {
+        noPortait = true,
+        units = {
+            party1 = "GladiusExButtonFrameparty1",
+            party2 = "GladiusExButtonFrameparty2",
+            party3 = "GladiusExButtonFrameparty3",
+            party4 = "GladiusExButtonFrameparty4"
+        }
+    },
+    ["GladiusExArena"] = {
+        noPortait = true,
+        alignLeft = true,
+        units = {
+            arena1 = "GladiusExButtonFramearena1",
+            arena2 = "GladiusExButtonFramearena2",
+            arena3 = "GladiusExButtonFramearena3",
+            arena4 = "GladiusExButtonFramearena4",
+            arena5 = "GladiusExButtonFramearena5",
+        }
+    },
     ["ElvUI"] = {
+        func = GetAnchor.ElvUIFrames,
         noPortait = true,
         units = {
             player = "ElvUF_Player",
@@ -404,6 +524,11 @@ local anchors = {
             party2 = "ElvUF_PartyGroup1UnitButton3",
             party3 = "ElvUF_PartyGroup1UnitButton4",
             party4 = "ElvUF_PartyGroup1UnitButton5",
+            arena1 = "ElvUF_Arena1",
+            arena2 = "ElvUF_Arena2",
+            arena3 = "ElvUF_Arena3",
+            arena4 = "ElvUF_Arena4",
+            arena5 = "ElvUF_Arena5",
         },
     },
     ["bUnitFrames"] = {
@@ -465,6 +590,8 @@ local anchors = {
     },
 }
 
+BigDebuffs.anchors = anchors
+
 function BigDebuffs:OnInitialize()
     self.db = LibStub("AceDB-3.0"):New("BigDebuffsDB", defaults, true)
 
@@ -481,7 +608,33 @@ function BigDebuffs:OnInitialize()
             self.db.profile.unitFrames[key] = {
                 enabled = self.db.profile.unitFrames[key],
                 anchor = "auto",
+                anchorPoint = "auto",
+                relativePoint = "auto",
+                x = 0,
+                y = 0,
+                matchFrameHeight = true,
+                size = 50
             }
+        else
+            if type(self.db.profile.unitFrames[key].anchorPoint) ~= "string" then
+                self.db.profile.unitFrames[key].anchorPoint = "auto"
+            end
+
+            if type(self.db.profile.unitFrames[key].relativePoint) ~= "string" then
+                self.db.profile.unitFrames[key].relativePoint = "auto"
+            end
+
+            if type(self.db.profile.unitFrames[key].x) ~= "number" then
+                self.db.profile.unitFrames[key].x = 0
+            end
+
+            if type(self.db.profile.unitFrames[key].y) ~= "number" then
+                self.db.profile.unitFrames[key].y = 0
+            end
+
+            if type(self.db.profile.unitFrames[key].matchFrameHeight) ~= "boolean" then
+                self.db.profile.unitFrames[key].matchFrameHeight = true
+            end
         end
     end
 
@@ -612,15 +765,46 @@ function BigDebuffs:AttachUnitFrame(unit)
 
         frame:ClearAllPoints()
 
-        if frame.noPortait then
-            -- No portrait, so attach to the side
-            if frame.alignLeft then
-                frame:SetPoint("TOPRIGHT", frame.anchor, "TOPLEFT")
+        if config.anchorPoint ~= "auto" or frame.noPortait then
+            if config.anchorPoint == "auto" then
+                -- No portrait, so attach to the side
+                if frame.alignLeft then
+                    frame:SetPoint("TOPRIGHT", frame.anchor, "TOPLEFT")
+                else
+                    frame:SetPoint("TOPLEFT", frame.anchor, "TOPRIGHT")
+                end
             else
-                frame:SetPoint("TOPLEFT", frame.anchor, "TOPRIGHT")
+                if config.relativePoint == "auto" then
+                    if config.anchorPoint == "BOTTOM" then
+                        frame:SetPoint("TOP", frame.anchor, config.anchorPoint, config.x, config.y)
+                    elseif config.anchorPoint == "BOTTOMLEFT" then
+                        frame:SetPoint("BOTTOMRIGHT", frame.anchor, config.anchorPoint, config.x, config.y)
+                    elseif config.anchorPoint == "BOTTOMRIGHT" then
+                        frame:SetPoint("BOTTOMLEFT", frame.anchor, config.anchorPoint, config.x, config.y)
+                    elseif config.anchorPoint == "CENTER" then
+                        frame:SetPoint("CENTER", frame.anchor, config.anchorPoint, config.x, config.y)
+                    elseif config.anchorPoint == "LEFT" then
+                        frame:SetPoint("RIGHT", frame.anchor, config.anchorPoint, config.x, config.y)
+                    elseif config.anchorPoint == "RIGHT" then
+                        frame:SetPoint("LEFT", frame.anchor, config.anchorPoint, config.x, config.y)
+                    elseif config.anchorPoint == "TOP" then
+                        frame:SetPoint("BOTTOM", frame.anchor, config.anchorPoint, config.x, config.y)
+                    elseif config.anchorPoint == "TOPLEFT" then
+                        frame:SetPoint("TOPRIGHT", frame.anchor, config.anchorPoint, config.x, config.y)
+                    elseif config.anchorPoint == "TOPRIGHT" then
+                        frame:SetPoint("TOPLEFT", frame.anchor, config.anchorPoint, config.x, config.y)
+                    end
+                else
+                    frame:SetPoint(config.relativePoint, frame.anchor, config.anchorPoint, config.x, config.y)
+                end
             end
-            local height = frame.anchor:GetHeight()
-            frame:SetSize(height, height)
+
+            if not config.matchFrameHeight then
+                frame:SetSize(config.size, config.size)
+            else
+                local height = frame.anchor:GetHeight()
+                frame:SetSize(height, height)
+            end
         else
             frame:SetAllPoints(frame.anchor)
         end
@@ -663,18 +847,23 @@ function BigDebuffs:AttachNameplate(unit)
 
 	frame:EnableMouse(config.tooltips)
 
+    local anchorStyle = "enemyAnchor"
+    if (not UnitCanAttack("player", unit) and config["friendlyAnchor"].friendlyAnchorEnabled == true) then
+        anchorStyle = "friendlyAnchor"
+    end
+
 	frame:ClearAllPoints()
-	if config.anchor == "RIGHT" then
-		frame:SetPoint("LEFT", frame.anchor, "RIGHT", config.x, config.y)
-	elseif config.anchor == "TOP" then
-		frame:SetPoint("BOTTOM", frame.anchor, "TOP", config.x, config.y)
-	elseif config.anchor == "LEFT" then
-		frame:SetPoint("RIGHT", frame.anchor, "LEFT", config.x, config.y)
-	elseif config.anchor == "BOTTOM" then
-		frame:SetPoint("TOP", frame.anchor, "BOTTOM", config.x, config.y)
+	if config[anchorStyle].anchor == "RIGHT" then
+		frame:SetPoint("LEFT", frame.anchor, "RIGHT", config[anchorStyle].x, config[anchorStyle].y)
+	elseif config[anchorStyle].anchor == "TOP" then
+		frame:SetPoint("BOTTOM", frame.anchor, "TOP", config[anchorStyle].x, config[anchorStyle].y)
+	elseif config[anchorStyle].anchor == "LEFT" then
+		frame:SetPoint("RIGHT", frame.anchor, "LEFT", config[anchorStyle].x, config[anchorStyle].y)
+	elseif config[anchorStyle].anchor == "BOTTOM" then
+		frame:SetPoint("TOP", frame.anchor, "BOTTOM", config[anchorStyle].x, config[anchorStyle].y)
 	end
 
-	frame:SetSize(config.size, config.size)
+	frame:SetSize(config[anchorStyle].size, config[anchorStyle].size)
 end
 
 function BigDebuffs:SaveUnitFramePosition(frame)
@@ -710,18 +899,23 @@ function BigDebuffs:OnEnable()
     self:RegisterEvent("NAME_PLATE_UNIT_ADDED")
 	self:RegisterEvent("NAME_PLATE_UNIT_REMOVED")
 
-    if WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC then
+    if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
         self:RegisterEvent("PLAYER_TALENT_UPDATE")
-        self:RegisterEvent("PLAYER_FOCUS_CHANGED")
         self:PLAYER_TALENT_UPDATE()
+    end
+
+    if WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC then
+        self:RegisterEvent("PLAYER_FOCUS_CHANGED")
     end
 
     InsertTestDebuff(8122, "Magic") -- Psychic Scream
     InsertTestDebuff(408, nil) -- Kidney Shot
+    InsertTestDebuff(1766, nil) -- Kick
 
     if WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC then
-        InsertTestDebuff(233490, "Magic") -- Unstable Affliction
-        InsertTestDebuff(114404, nil) -- Void Tendrils
+        InsertTestDebuff(51514, "Curse") -- Hex
+        InsertTestDebuff(316099, "Magic") -- Unstable Affliction
+        InsertTestDebuff(208086, nil) -- Colossus Smash
     end
 
     InsertTestDebuff(339, "Magic") -- Entangling Roots
@@ -883,7 +1077,7 @@ hooksecurefunc("CompactUnitFrame_UpdateAll", function(frame)
     end
 end)
 
-if WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC then
+if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
     function BigDebuffs:PLAYER_TALENT_UPDATE()
         local specID = GetSpecializationInfo(GetSpecialization() or 1)
         self.specDispel = specID and self.specDispelTypes[specID] and self.specDispelTypes[specID]
@@ -908,8 +1102,7 @@ end
 hooksecurefunc("CompactUnitFrame_HideAllDebuffs", HideBigDebuffs)
 
 function BigDebuffs:IsDispellable(unit, dispelType)
-    if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
-        -- if stoneform is usable and it's on player
+    if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
         if (not dispelType) or (not self.dispelTypes) then return end
         if type(self.dispelTypes[dispelType]) == "function" then return self.dispelTypes[dispelType]() end
 
@@ -1010,7 +1203,7 @@ function BigDebuffs:GetNameplatesPriority(id)
         if self.db.profile.spells[id].priority then return self.db.profile.spells[id].priority end
     end
 
-    if self.Spells[id].nounitFrames and
+    if self.Spells[id].nonameplates and
         (not self.db.profile.spells[id] or not self.db.profile.spells[id].nameplates)
     then
         return
@@ -1116,184 +1309,7 @@ local function CompactUnitFrame_UtilSetDebuff(debuffFrame, unit, index, filter, 
     debuffFrame:Show();
 end
 
-if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
-    local Default_CompactUnitFrame_UtilIsPriorityDebuff = CompactUnitFrame_UtilIsPriorityDebuff
-
-    local function CompactUnitFrame_UtilIsPriorityDebuff(...)
-        local _,_,_,_,_,_,_,_,_, spellId = UnitDebuff(...)
-        return BigDebuffs:IsPriorityDebuff(spellId) or Default_CompactUnitFrame_UtilIsPriorityDebuff(...)
-    end
-
-    local Default_SpellGetVisibilityInfo = SpellGetVisibilityInfo
-
-    local function CompactUnitFrame_UtilShouldDisplayBuff(unit, index, filter)
-        local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura = UnitBuff(unit, index, filter);
-
-        local hasCustom, alwaysShowMine, showForMySpec = SpellGetVisibilityInfo(spellId, UnitAffectingCombat("player") and "RAID_INCOMBAT" or "RAID_OUTOFCOMBAT");
-
-        local showAllClassBuffs = BigDebuffs.db.profile.raidFrames.showAllClassBuffs and canApplyAura
-
-        if ( hasCustom ) then
-            return showForMySpec or (alwaysShowMine and (showAllClassBuffs or unitCaster == "player" or unitCaster == "pet" or unitCaster == "vehicle"));
-        else
-            return (showAllClassBuffs or unitCaster == "player" or unitCaster == "pet" or unitCaster == "vehicle") and canApplyAura and not SpellIsSelfBuff(spellId);
-        end
-    end
-
-    local function CompactUnitFrame_UtilShouldDisplayDebuff(unit, index, filter)
-        local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff(unit, index, filter);
-
-        local hasCustom, alwaysShowMine, showForMySpec = SpellGetVisibilityInfo(spellId, UnitAffectingCombat("player") and "RAID_INCOMBAT" or "RAID_OUTOFCOMBAT");
-
-        local showAllClassBuffs = BigDebuffs.db.profile.raidFrames.showAllClassBuffs and canApplyAura
-
-        if ( hasCustom ) then
-            return showForMySpec or (alwaysShowMine and (showAllClassBuffs or unitCaster == "player" or unitCaster == "pet" or unitCaster == "vehicle") );   --Would only be "mine" in the case of something like forbearance.
-        else
-            return true;
-        end
-    end
-
-    hooksecurefunc("CompactUnitFrame_UpdateDebuffs", function(frame)
-        if ( not frame.debuffFrames or not frame.optionTable.displayDebuffs ) then
-            CompactUnitFrame_HideAllDebuffs(frame);
-            return;
-        end
-
-        local index = 1;
-        local frameNum = 1;
-        local filter = nil;
-        local maxDebuffs = frame.maxDebuffs;
-        --Show both Boss buffs & debuffs in the debuff location
-        --First, we go through all the debuffs looking for any boss flagged ones.
-        while ( frameNum <= maxDebuffs ) do
-            local debuffName = UnitDebuff(frame.displayedUnit, index, filter);
-            if ( debuffName ) then
-                if ( CompactUnitFrame_UtilIsBossAura(frame.displayedUnit, index, filter, false) ) then
-                    local debuffFrame = frame.debuffFrames[frameNum];
-                    CompactUnitFrame_UtilSetDebuff(debuffFrame, frame.displayedUnit, index, filter, true, false);
-                    frameNum = frameNum + 1;
-                    --Boss debuffs are about twice as big as normal debuffs, so display one less.
-                    local bossDebuffScale = (debuffFrame.baseSize + BOSS_DEBUFF_SIZE_INCREASE)/debuffFrame.baseSize
-                    maxDebuffs = maxDebuffs - (bossDebuffScale - 1);
-                end
-            else
-                break;
-            end
-            index = index + 1;
-        end
-        --Then we go through all the buffs looking for any boss flagged ones.
-        index = 1;
-        while ( frameNum <= maxDebuffs ) do
-            local debuffName = UnitBuff(frame.displayedUnit, index, filter);
-            if ( debuffName ) then
-                if ( CompactUnitFrame_UtilIsBossAura(frame.displayedUnit, index, filter, true) ) then
-                    local debuffFrame = frame.debuffFrames[frameNum];
-                    CompactUnitFrame_UtilSetDebuff(debuffFrame, frame.displayedUnit, index, filter, true, true);
-                    frameNum = frameNum + 1;
-                    --Boss debuffs are about twice as big as normal debuffs, so display one less.
-                    local bossDebuffScale = (debuffFrame.baseSize + BOSS_DEBUFF_SIZE_INCREASE)/debuffFrame.baseSize
-                    maxDebuffs = maxDebuffs - (bossDebuffScale - 1);
-                end
-            else
-                break;
-            end
-            index = index + 1;
-        end
-
-        --Now we go through the debuffs with a priority (e.g. Weakened Soul and Forbearance)
-        index = 1;
-        while ( frameNum <= maxDebuffs ) do
-            local debuffName = UnitDebuff(frame.displayedUnit, index, filter);
-            if ( debuffName ) then
-                if ( CompactUnitFrame_UtilIsPriorityDebuff(frame.displayedUnit, index, filter) ) then
-                    local debuffFrame = frame.debuffFrames[frameNum];
-                    CompactUnitFrame_UtilSetDebuff(debuffFrame, frame.displayedUnit, index, filter, false, false);
-                    frameNum = frameNum + 1;
-                end
-            else
-                break;
-            end
-            index = index + 1;
-        end
-
-        if ( frame.optionTable.displayOnlyDispellableDebuffs ) then
-            filter = "RAID";
-        end
-
-        index = 1;
-        --Now, we display all normal debuffs.
-        if ( frame.optionTable.displayNonBossDebuffs ) then
-        while ( frameNum <= maxDebuffs ) do
-            local debuffName = UnitDebuff(frame.displayedUnit, index, filter);
-            if ( debuffName ) then
-                if ( CompactUnitFrame_UtilShouldDisplayDebuff(frame.displayedUnit, index, filter) and not CompactUnitFrame_UtilIsBossAura(frame.displayedUnit, index, filter, false) and
-                    not CompactUnitFrame_UtilIsPriorityDebuff(frame.displayedUnit, index, filter)) then
-                    local debuffFrame = frame.debuffFrames[frameNum];
-                    CompactUnitFrame_UtilSetDebuff(debuffFrame, frame.displayedUnit, index, filter, false, false);
-                    frameNum = frameNum + 1;
-                end
-            else
-                break;
-            end
-            index = index + 1;
-        end
-        end
-
-        for i=frameNum, frame.maxDebuffs do
-            local debuffFrame = frame.debuffFrames[i];
-            debuffFrame:Hide();
-        end
-
-        BigDebuffs:ShowBigDebuffs(frame)
-    end)
-
-    -- Show extra buffs
-    local MAX_BUFFS = 6
-    hooksecurefunc("CompactUnitFrame_UpdateBuffs", function(frame)
-        if ( not frame.buffFrames or not frame.optionTable.displayBuffs ) then
-            CompactUnitFrame_HideAllBuffs(frame);
-            return;
-        end
-
-        if not UnitIsPlayer(frame.displayedUnit) then
-            return
-        end
-
-        if (not BigDebuffs.db.profile.raidFrames.increaseBuffs) and
-           (not BigDebuffs.db.profile.raidFrames.showAllClassBuffs)
-        then
-            return
-        end
-
-        local maxBuffs = BigDebuffs.db.profile.raidFrames.increaseBuffs and MAX_BUFFS or frame.maxBuffs
-
-        local index = 1;
-        local frameNum = 1;
-        local filter = nil;
-        while ( frameNum <= maxBuffs ) do
-            local buffName = UnitBuff(frame.displayedUnit, index, filter);
-            if ( buffName ) then
-                if ( CompactUnitFrame_UtilShouldDisplayBuff(frame.displayedUnit, index, filter) and
-                    not CompactUnitFrame_UtilIsBossAura(frame.displayedUnit, index, filter, true) )
-                then
-                    local buffFrame = frame.buffFrames[frameNum];
-                    if buffFrame then
-                       CompactUnitFrame_UtilSetBuff(buffFrame, frame.displayedUnit, index, filter);
-                       frameNum = frameNum + 1;
-                    end
-                end
-            else
-                break;
-            end
-            index = index + 1;
-        end
-        for i=frameNum, maxBuffs do
-            local buffFrame = frame.buffFrames[i];
-            if buffFrame then buffFrame:Hide() end
-        end
-    end)
-else
+if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
     local Default_CompactUnitFrame_Util_IsPriorityDebuff = CompactUnitFrame_Util_IsPriorityDebuff
     local function CompactUnitFrame_Util_IsPriorityDebuff(...)
         local default = Default_CompactUnitFrame_Util_IsPriorityDebuff(...)
@@ -1490,6 +1506,182 @@ else
 
         BigDebuffs:ShowBigDebuffs(frame)
     end)
+else
+    local Default_CompactUnitFrame_UtilIsPriorityDebuff = CompactUnitFrame_UtilIsPriorityDebuff
+
+    local function CompactUnitFrame_UtilIsPriorityDebuff(...)
+        local _,_,_,_,_,_,_,_,_, spellId = UnitDebuff(...)
+        return BigDebuffs:IsPriorityDebuff(spellId) or Default_CompactUnitFrame_UtilIsPriorityDebuff(...)
+    end
+
+    local Default_SpellGetVisibilityInfo = SpellGetVisibilityInfo
+
+    local function CompactUnitFrame_UtilShouldDisplayBuff(unit, index, filter)
+        local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura = UnitBuff(unit, index, filter);
+
+        local hasCustom, alwaysShowMine, showForMySpec = SpellGetVisibilityInfo(spellId, UnitAffectingCombat("player") and "RAID_INCOMBAT" or "RAID_OUTOFCOMBAT");
+
+        local showAllClassBuffs = BigDebuffs.db.profile.raidFrames.showAllClassBuffs and canApplyAura
+
+        if ( hasCustom ) then
+            return showForMySpec or (alwaysShowMine and (showAllClassBuffs or unitCaster == "player" or unitCaster == "pet" or unitCaster == "vehicle"));
+        else
+            return (showAllClassBuffs or unitCaster == "player" or unitCaster == "pet" or unitCaster == "vehicle") and canApplyAura and not SpellIsSelfBuff(spellId);
+        end
+    end
+
+    local function CompactUnitFrame_UtilShouldDisplayDebuff(unit, index, filter)
+        local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff(unit, index, filter);
+
+        local hasCustom, alwaysShowMine, showForMySpec = SpellGetVisibilityInfo(spellId, UnitAffectingCombat("player") and "RAID_INCOMBAT" or "RAID_OUTOFCOMBAT");
+
+        local showAllClassBuffs = BigDebuffs.db.profile.raidFrames.showAllClassBuffs and canApplyAura
+
+        if ( hasCustom ) then
+            return showForMySpec or (alwaysShowMine and (showAllClassBuffs or unitCaster == "player" or unitCaster == "pet" or unitCaster == "vehicle") );   --Would only be "mine" in the case of something like forbearance.
+        else
+            return true;
+        end
+    end
+
+    hooksecurefunc("CompactUnitFrame_UpdateDebuffs", function(frame)
+        if ( not frame.debuffFrames or not frame.optionTable.displayDebuffs ) then
+            CompactUnitFrame_HideAllDebuffs(frame);
+            return;
+        end
+
+        local index = 1;
+        local frameNum = 1;
+        local filter = nil;
+        local maxDebuffs = frame.maxDebuffs;
+        --Show both Boss buffs & debuffs in the debuff location
+        --First, we go through all the debuffs looking for any boss flagged ones.
+        while ( frameNum <= maxDebuffs ) do
+            local debuffName = UnitDebuff(frame.displayedUnit, index, filter);
+            if ( debuffName ) then
+                if ( CompactUnitFrame_UtilIsBossAura(frame.displayedUnit, index, filter, false) ) then
+                    local debuffFrame = frame.debuffFrames[frameNum];
+                    CompactUnitFrame_UtilSetDebuff(debuffFrame, frame.displayedUnit, index, filter, true, false);
+                    frameNum = frameNum + 1;
+                    --Boss debuffs are about twice as big as normal debuffs, so display one less.
+                    local bossDebuffScale = (debuffFrame.baseSize + BOSS_DEBUFF_SIZE_INCREASE)/debuffFrame.baseSize
+                    maxDebuffs = maxDebuffs - (bossDebuffScale - 1);
+                end
+            else
+                break;
+            end
+            index = index + 1;
+        end
+        --Then we go through all the buffs looking for any boss flagged ones.
+        index = 1;
+        while ( frameNum <= maxDebuffs ) do
+            local debuffName = UnitBuff(frame.displayedUnit, index, filter);
+            if ( debuffName ) then
+                if ( CompactUnitFrame_UtilIsBossAura(frame.displayedUnit, index, filter, true) ) then
+                    local debuffFrame = frame.debuffFrames[frameNum];
+                    CompactUnitFrame_UtilSetDebuff(debuffFrame, frame.displayedUnit, index, filter, true, true);
+                    frameNum = frameNum + 1;
+                    --Boss debuffs are about twice as big as normal debuffs, so display one less.
+                    local bossDebuffScale = (debuffFrame.baseSize + BOSS_DEBUFF_SIZE_INCREASE)/debuffFrame.baseSize
+                    maxDebuffs = maxDebuffs - (bossDebuffScale - 1);
+                end
+            else
+                break;
+            end
+            index = index + 1;
+        end
+
+        --Now we go through the debuffs with a priority (e.g. Weakened Soul and Forbearance)
+        index = 1;
+        while ( frameNum <= maxDebuffs ) do
+            local debuffName = UnitDebuff(frame.displayedUnit, index, filter);
+            if ( debuffName ) then
+                if ( CompactUnitFrame_UtilIsPriorityDebuff(frame.displayedUnit, index, filter) ) then
+                    local debuffFrame = frame.debuffFrames[frameNum];
+                    CompactUnitFrame_UtilSetDebuff(debuffFrame, frame.displayedUnit, index, filter, false, false);
+                    frameNum = frameNum + 1;
+                end
+            else
+                break;
+            end
+            index = index + 1;
+        end
+
+        if ( frame.optionTable.displayOnlyDispellableDebuffs ) then
+            filter = "RAID";
+        end
+
+        index = 1;
+        --Now, we display all normal debuffs.
+        if ( frame.optionTable.displayNonBossDebuffs ) then
+        while ( frameNum <= maxDebuffs ) do
+            local debuffName = UnitDebuff(frame.displayedUnit, index, filter);
+            if ( debuffName ) then
+                if ( CompactUnitFrame_UtilShouldDisplayDebuff(frame.displayedUnit, index, filter) and not CompactUnitFrame_UtilIsBossAura(frame.displayedUnit, index, filter, false) and
+                    not CompactUnitFrame_UtilIsPriorityDebuff(frame.displayedUnit, index, filter)) then
+                    local debuffFrame = frame.debuffFrames[frameNum];
+                    CompactUnitFrame_UtilSetDebuff(debuffFrame, frame.displayedUnit, index, filter, false, false);
+                    frameNum = frameNum + 1;
+                end
+            else
+                break;
+            end
+            index = index + 1;
+        end
+        end
+
+        for i=frameNum, frame.maxDebuffs do
+            local debuffFrame = frame.debuffFrames[i];
+            debuffFrame:Hide();
+        end
+
+        BigDebuffs:ShowBigDebuffs(frame)
+    end)
+
+    -- Show extra buffs
+    hooksecurefunc("CompactUnitFrame_UpdateBuffs", function(frame)
+        if ( not frame.buffFrames or not frame.optionTable.displayBuffs ) then
+            CompactUnitFrame_HideAllBuffs(frame);
+            return;
+        end
+
+        if not UnitIsPlayer(frame.displayedUnit) then
+            return
+        end
+
+        if (not BigDebuffs.db.profile.raidFrames.increaseBuffs) and
+           (not BigDebuffs.db.profile.raidFrames.showAllClassBuffs)
+        then
+            return
+        end
+
+        local maxBuffs = BigDebuffs.db.profile.raidFrames.increaseBuffs and MAX_BUFFS or frame.maxBuffs
+
+        local index = 1;
+        local frameNum = 1;
+        local filter = nil;
+        while ( frameNum <= maxBuffs ) do
+            local buffName = UnitBuff(frame.displayedUnit, index, filter);
+            if ( buffName ) then
+                if ( CompactUnitFrame_UtilShouldDisplayBuff(frame.displayedUnit, index, filter) and
+                    not CompactUnitFrame_UtilIsBossAura(frame.displayedUnit, index, filter, true) )
+                then
+                    local buffFrame = frame.buffFrames[frameNum];
+                    if buffFrame then
+                       CompactUnitFrame_UtilSetBuff(buffFrame, frame.displayedUnit, index, filter);
+                       frameNum = frameNum + 1;
+                    end
+                end
+            else
+                break;
+            end
+            index = index + 1;
+        end
+        for i=frameNum, maxBuffs do
+            local buffFrame = frame.buffFrames[i];
+            if buffFrame then buffFrame:Hide() end
+        end
+    end)
 end
 
 function BigDebuffs:ShowBigDebuffs(frame)
@@ -1618,7 +1810,8 @@ end
 
 function BigDebuffs:UNIT_AURA(unit)
     if not self.db.profile.unitFrames.enabled or
-        not self.db.profile.unitFrames[unit:gsub("%d", "")].enabled
+        not self.db.profile.unitFrames[unit:gsub("%d", "")].enabled or
+        (GetNumGroupMembers() > 5 and unit:match("party"))
     then
         return
     end
@@ -1741,15 +1934,7 @@ function BigDebuffs:UNIT_AURA(unit)
 end
 
 function BigDebuffs:UNIT_AURA_NAMEPLATE(unit)
-    if not self.db.profile.nameplates.enabled
-		or not unit:find("nameplate")
-		or (not UnitCanAttack("player", unit) and not self.db.profile.nameplates.friendly)
-		or (UnitCanAttack("player", unit) and not self.db.profile.nameplates.enemy)
-		or (not UnitIsPlayer(unit) and not self.db.profile.nameplates.npc)
-		or (UnitIsUnit("player", unit))
-    then
-        return
-    end
+    if not self.db.profile.nameplates.enabled then return end
 
 	self:AttachNameplate(unit)
 
@@ -1854,6 +2039,17 @@ function BigDebuffs:UNIT_AURA_NAMEPLATE(unit)
         frame.interrupt = interrupt
         frame.current = icon
     else
+        frame:Hide()
+        frame.current = nil
+    end
+
+    --Hide/Disable auras which shouldn't be shown. Seems to fix false icons from appearing and getting stuck.
+    if frame.current ~= nil and (not unit:find("nameplate")
+        or (not UnitCanAttack("player", unit) and not self.db.profile.nameplates.friendly)
+        or (UnitCanAttack("player", unit) and not self.db.profile.nameplates.enemy)
+        or (not UnitIsPlayer(unit) and not self.db.profile.nameplates.npc)
+        or (UnitIsUnit("player", unit)))
+    then
         frame:Hide()
         frame.current = nil
     end

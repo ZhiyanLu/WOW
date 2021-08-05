@@ -1,4 +1,0 @@
-﻿
-FENCE_SCAN_LAST_TIME = false
-FENCE_SCAN_ITEMINFO = {
-}

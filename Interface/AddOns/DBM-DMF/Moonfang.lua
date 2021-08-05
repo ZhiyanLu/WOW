@@ -1,10 +1,9 @@
 local mod	= DBM:NewMod("Moonfang", "DBM-DMF")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20201206233709")
+mod:SetRevision("20210721040757")
 mod:SetCreatureID(71992)
 --mod:SetModelID(328)
-mod:DisableWBEngageSync()
 
 mod:RegisterCombat("combat")
 
@@ -17,7 +16,7 @@ mod:RegisterEventsInCombat(
 local warnLeap				= mod:NewTargetAnnounce(144546, 2)
 
 local specWarnLeap			= mod:NewSpecialWarningYou(144546, nil, nil, nil, 1, 2)
-local yellLeap				= mod:NewYell(144546)
+--local yellLeap				= mod:NewYell(144546)
 local specWarnCallPack		= mod:NewSpecialWarning("specWarnCallPack", "Ranged|Tank", nil, 2, 4, 2)--Summons add for every person within 40 yards of boss. Ranged should be able to avoid this. Tank in warning to pick ones up spawned by melee
 local specWarnTears			= mod:NewSpecialWarningSpell(144702, nil, nil, nil, 2, 2)
 local specWarnMoonfangCurse	= mod:NewSpecialWarning("specWarnMoonfangCurse", "Melee", nil, 2, 4, 2)
@@ -33,7 +32,7 @@ function mod:LeapTarget(targetname)
 	if targetname == UnitName("player") then
 		specWarnLeap:Show()
 		specWarnLeap:Play("targetyou")
-		yellLeap:Yell()
+--		yellLeap:Yell()
 	end
 end
 

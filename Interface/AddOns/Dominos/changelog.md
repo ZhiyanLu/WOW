@@ -1,5 +1,50 @@
 # Dominos Changelog
 
+## 9.1.0
+
+* TOC update for WoW 9.1.0
+
+## 9.0.29
+
+* Banished the MainMenuBarMaxLevelBar
+
+## 9.0.28
+
+* Added support for Burning Crusade Classic
+
+## 9.0.27
+
+* Fix progress bar text showing up under the actual progress bar
+
+## 9.0.26
+
+* You can now make adjustments to strata and level of bars (thanks Goranaws)
+* Fixed issues with the talking head bar not working if the Blizzard Talking Head UI was already loaded
+* All bars should now have the advanced options panel for display states
+
+## 9.0.25
+
+* Update TOCs for 9.0.5
+* Force the talking head UI to reposition upon load
+
+## 9.0.24
+
+* Adjusted the alignment grid thickness to prevent issues with displaying at various scaled resolutions
+
+## 9.0.23
+
+* The alignment grid is now drawn from the center, and uses a square grid instead of rectangles (thanks Swanarog)
+* Fix issues with calculating which way flyout button should open
+* Fix issues with saving bar positions when not anchoring to an edge, grid point, or other bar
+* Prevent the Talking Head and Group Loot frames from moving to unexpected places (Needs more testing)
+
+## 9.0.22
+
+* Fixed an issue where flyout locations (ex Warlock minion/Hunter pet) would be used for fading detection, even if the flyout was closed
+* Fixed an issue where moving a pet ability could trigger an error in classic
+* Forced the cast bar to be enabled when in a vehicle/override UI state
+* Added a fading panel to the cast bar
+
 ## 9.0.21
 
 * Work around an issue with the stock UI expecting the possess bar to be positioned on the screen somewhere

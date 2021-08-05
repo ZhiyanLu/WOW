@@ -7,6 +7,18 @@ U1RegisterAddon("DBM_Mods_WotLK", {
     tags = { "TAG_RAID", },
     defaultEnable = 1,
     nolodbutton = 1,
+    dummy = 1,
+    children = {
+        "DBM-ChamberOfAspects",
+        "DBM-Coliseum",
+        "DBM-EyeOfEternity",
+        "DBM-Icecrown",
+        "DBM-Naxx",
+        "DBM-Onyxia",
+        "DBM-Party-WotLK",
+        "DBM-Ulduar",
+        "DBM-VoA",
+    },
     toggle = function(name, info, enable, justload)
     end,
 });

@@ -1,3 +1,5 @@
+local _bakup = nil;
+
 U1RegisterAddon("GearStatsSummary", {
     title = "装备统计对比",
     tags = { "TAG_EQUIPMENT", },
@@ -13,7 +15,12 @@ U1RegisterAddon("GearStatsSummary", {
         if(justload and IsAddOnLoaded("Blizzard_InspectUI")) then
             GearStatsSummary_SetupHook();
         end
-        togglehook(nil, "GearStatsSummary_ShowFrame", noop, not enable);
+        _bakup = _bakup or _G["GearStatsSummary_ShowFrame"];
+        if enable then
+            _G["GearStatsSummary_ShowFrame"] = _bakup;
+        else
+            _G["GearStatsSummary_ShowFrame"] = noop;
+        end
         return true;
     end,
 });

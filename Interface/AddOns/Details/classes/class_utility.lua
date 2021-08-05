@@ -229,6 +229,8 @@ function _detalhes:ToolTipDead (instancia, morte, esta_barra, keydown)
 		local time = event [4]
 		local source = event [6]
 
+		local combatObject = instancia:GetShowingCombat()
+
 		if (time + 12 > hora_da_morte) then
 			if (type (evtype) == "boolean") then
 				--> is damage or heal
@@ -263,9 +265,17 @@ function _detalhes:ToolTipDead (instancia, morte, esta_barra, keydown)
 				else
 					--> heal
 					if (amount > _detalhes.deathlog_healingdone_min) then
-						GameCooltip:AddLine ("" .. _cstr ("%.1f", time - hora_da_morte) .. "s " .. spellname .. " (|cFFC6B0D9" .. source .. "|r)", "+" .. _detalhes:ToK (amount) .. " (" .. hp .. "%)", 1, "white", "white")
-						GameCooltip:AddIcon (spellicon)
-						GameCooltip:AddStatusBar (hp, 1, "green", true) --, backgroud_bar_heal
+						if (combatObject.is_arena) then
+							if (amount > _detalhes.deathlog_healingdone_min_arena) then
+								GameCooltip:AddLine ("" .. _cstr ("%.1f", time - hora_da_morte) .. "s " .. spellname .. " (|cFFC6B0D9" .. source .. "|r)", "+" .. _detalhes:ToK (amount) .. " (" .. hp .. "%)", 1, "white", "white")
+								GameCooltip:AddIcon (spellicon)
+								GameCooltip:AddStatusBar (hp, 1, "green", true)
+							end
+						else
+							GameCooltip:AddLine ("" .. _cstr ("%.1f", time - hora_da_morte) .. "s " .. spellname .. " (|cFFC6B0D9" .. source .. "|r)", "+" .. _detalhes:ToK (amount) .. " (" .. hp .. "%)", 1, "white", "white")
+							GameCooltip:AddIcon (spellicon)
+							GameCooltip:AddStatusBar (hp, 1, "green", true)
+						end
 					end
 				end
 				
@@ -574,11 +584,13 @@ function atributo_misc:DeadAtualizarBarra (morte, whichRowLine, colocacao, insta
 	end
 	
 	esta_barra.lineText1:SetText (colocacao .. ". " .. morte [3]:gsub (("%-.*"), ""))
+	esta_barra.lineText2:SetText("")
+	esta_barra.lineText3:SetText("")
 	esta_barra.lineText4:SetText (morte [6])
 	
 	esta_barra:SetValue (100)
 	if (esta_barra.hidden or esta_barra.fading_in or esta_barra.faded) then
-		gump:Fade (esta_barra, "out")
+		Details.FadeHandler.Fader (esta_barra, "out")
 	end
 	
 	--> seta a cor da barra e a cor do texto caso eles esteja mostrando com a cor da classe
@@ -588,17 +600,30 @@ function atributo_misc:DeadAtualizarBarra (morte, whichRowLine, colocacao, insta
 	if (instancia.row_info.use_spec_icons) then
 		local nome = morte[3]
 		local spec = instancia.showing (1, nome) and instancia.showing (1, nome).spec or (instancia.showing (2, nome) and instancia.showing (2, nome).spec)
-		if (spec) then
+		if (spec and spec ~= 0) then
 			esta_barra.icone_classe:SetTexture (instancia.row_info.spec_file)
-			esta_barra.icone_classe:SetTexCoord (_unpack (_detalhes.class_specs_coords [spec]))
+			esta_barra.icone_classe:SetTexCoord (_unpack (_detalhes.class_specs_coords[spec]))
 		else
-			esta_barra.icone_classe:SetTexture (instancia.row_info.icon_file)
-			esta_barra.icone_classe:SetTexCoord (_unpack (CLASS_ICON_TCOORDS [morte[4]]))
+			if (CLASS_ICON_TCOORDS [morte[4]]) then
+				esta_barra.icone_classe:SetTexture (instancia.row_info.icon_file)
+				esta_barra.icone_classe:SetTexCoord (_unpack (CLASS_ICON_TCOORDS [morte[4]]))
+			else
+				local texture, l, r, t, b = Details:GetUnknownClassIcon()
+				esta_barra.icone_classe:SetTexture(texture)
+				esta_barra.icone_classe:SetTexCoord(l, r, t, b)
+			end
 		end
 	else
-		esta_barra.icone_classe:SetTexture (instancia.row_info.icon_file)
-		esta_barra.icone_classe:SetTexCoord (_unpack (CLASS_ICON_TCOORDS [morte[4]]))
+		if (CLASS_ICON_TCOORDS [morte[4]]) then
+			esta_barra.icone_classe:SetTexture (instancia.row_info.icon_file)
+			esta_barra.icone_classe:SetTexCoord (_unpack (CLASS_ICON_TCOORDS [morte[4]]))
+		else
+			local texture, l, r, t, b = Details:GetUnknownClassIcon()
+			esta_barra.icone_classe:SetTexture(texture)
+			esta_barra.icone_classe:SetTexCoord(l, r, t, b)
+		end
 	end
+	
 	esta_barra.icone_classe:SetVertexColor (1, 1, 1)
 	
 	if (esta_barra.mouse_over and not instancia.baseframe.isMoving) then --> precisa atualizar o tooltip
@@ -839,7 +864,7 @@ function atributo_misc:RefreshWindow (instancia, tabela_do_combate, forcar, expo
 	if (forcar) then
 		if (instancia.modo == 2) then --> group
 			for i = whichRowLine, instancia.rows_fit_in_window  do
-				gump:Fade (instancia.barras [i], "in", 0.3)
+				Details.FadeHandler.Fader (instancia.barras [i], "in", Details.fade_speed)
 			end
 		end
 	end
@@ -918,7 +943,7 @@ function atributo_misc:RefreshBarra2 (esta_barra, instancia, tabela_anterior, fo
 			esta_barra:SetValue (100)
 			
 			if (esta_barra.hidden or esta_barra.fading_in or esta_barra.faded) then
-				gump:Fade (esta_barra, "out")
+				Details.FadeHandler.Fader (esta_barra, "out")
 			end
 			
 			return self:RefreshBarra (esta_barra, instancia)
@@ -936,7 +961,7 @@ function atributo_misc:RefreshBarra2 (esta_barra, instancia, tabela_anterior, fo
 				esta_barra.animacao_ignorar = true
 			end
 			
-			gump:Fade (esta_barra, "out")
+			Details.FadeHandler.Fader (esta_barra, "out")
 			
 			if (instancia.row_info.texture_class_colors) then
 				esta_barra.textura:SetVertexColor (actor_class_color_r, actor_class_color_g, actor_class_color_b)
@@ -1105,7 +1130,11 @@ function atributo_misc:ToolTipDispell (instancia, numero, barra)
 --> habilidade usada para dispelar
 	local meus_dispells = {}
 	for _spellid, _tabela in _pairs (habilidades) do
-		meus_dispells [#meus_dispells+1] = {_spellid, _math_floor (_tabela.dispell)}
+		if (_tabela.dispell) then
+			meus_dispells [#meus_dispells+1] = {_spellid, _math_floor (_tabela.dispell)} --_math_floor valor é nil, uma magia na tabela de dispel, sem dispel?
+		else
+			Details:Msg("D! table.dispell is invalid. spellId:", _spellid)
+		end
 	end
 	_table_sort (meus_dispells, _detalhes.Sort2)
 	

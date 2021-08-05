@@ -3,9 +3,9 @@ local L		= mod:GetLocalizedStrings()
 
 mod.statTypes = "normal,heroic,timewalker"
 
-mod:SetRevision("20200912133955")
+mod:SetRevision("20210614202848")
 mod:SetCreatureID(26693)
-mod:SetEncounterID(581, 582, 2029)
+mod:SetEncounterID(2029)
 
 mod:RegisterCombat("yell", L.Phase2)
 
@@ -33,7 +33,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		timerPoison:Start(args.destName)
 	elseif args:IsSpellID(59322, 50228) then
 		timerWhirlwindCD:Start()
-		if not self:IsTrivial(90) then
+		if not self:IsTrivial() then
 			specWarnWhirlwind:Show()
 			specWarnWhirlwind:Play("runout")
 		end

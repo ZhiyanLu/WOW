@@ -1,4 +1,4 @@
-﻿--[[ TrinketMenuOpt.lua : Options and sort window for TrinketMenu ]]
+--[[ TrinketMenuOpt.lua : Options and sort window for TrinketMenu ]]
 
 local _G, math, string, table = _G, math, string, table
 
@@ -6,7 +6,7 @@ TrinketMenu.CheckOptInfo = {
 	{"ShowIcon", "ON", "Minimap Button", "Show or hide minimap button."},
 	{"SquareMinimap", "OFF", "Square Minimap", "Move minimap button as if around a square minimap.", "ShowIcon"},
 	{"CooldownCount", "OFF", "Cooldown Numbers", "Display time remaining on cooldowns ontop of the button."},
-	{"TooltipFollow", "ON", "At Mouse", "Display all tooltips near the mouse.", "ShowTooltips"},
+	{"TooltipFollow", "OFF", "At Mouse", "Display all tooltips near the mouse.", "ShowTooltips"},
 	{"KeepOpen", "OFF", "Keep Menu Open", "Keep menu open at all times."},
 	{"KeepDocked", "ON", "Keep Menu Docked", "Keep menu docked at all times."},
 	{"Notify", "OFF", "Notify When Ready", "Sends an overhead notification when a trinket's cooldown is complete."},
@@ -181,7 +181,7 @@ function TrinketMenu.OptColumnsSlider_OnValueChanged(self, value)
 	end
 	if TrinketMenuOptions then
 		TrinketMenuOptions.Columns = self:GetValue()
-		TrinketMenu_OptColumnsSliderText:SetText(TrinketMenuOptions.Columns)
+		TrinketMenu_OptColumnsSliderText:SetText(TrinketMenuOptions.Columns.." trinkets")
 		if TrinketMenu_MenuFrame:IsVisible() then
 			TrinketMenu.BuildMenu()
 		end

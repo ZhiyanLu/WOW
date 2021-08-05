@@ -40,25 +40,29 @@ function AuctionatorIncrementalScanFrameMixin:OnEvent(event, ...)
 
   elseif event == "AUCTION_HOUSE_CLOSED" and self.doingFullScan then
     self.doingFullScan = false
-    Auctionator.Utilities.Message(AUCTIONATOR_L_FULL_SCAN_FAILED)
+    Auctionator.Utilities.Message(AUCTIONATOR_L_FULL_SCAN_ALTERNATE_FAILED)
     Auctionator.EventBus:Fire(self, Auctionator.IncrementalScan.Events.ScanFailed)
   end
 end
 
 function AuctionatorIncrementalScanFrameMixin:IsAutoscanReady()
-  local timeSinceLastScan = time() - (self.state.TimeOfLastScan or 0)
+  local timeSinceLastScan = time() - (self.state.TimeOfLastBrowseScan or 0)
 
   return timeSinceLastScan >= (Auctionator.Config.Get(Auctionator.Config.Options.AUTOSCAN_INTERVAL) * 60)
 end
 
 function AuctionatorIncrementalScanFrameMixin:InitiateScan()
-  Auctionator.Utilities.Message(AUCTIONATOR_L_STARTING_FULL_SCAN)
-  Auctionator.AH.SendBrowseQuery({searchString = "", sorts = {}, filters = {}, itemClassFilters = {}})
-  self.previousDatabaseCount = Auctionator.Database:GetItemCount()
-  self.doingFullScan = true
+  if not self.doingFullScan then
+    Auctionator.Utilities.Message(AUCTIONATOR_L_STARTING_FULL_SCAN_ALTERNATE)
+    Auctionator.AH.SendBrowseQuery({searchString = "", sorts = {}, filters = {}, itemClassFilters = {}})
+    self.previousDatabaseCount = Auctionator.Database:GetItemCount()
+    self.doingFullScan = true
 
-  Auctionator.EventBus:Fire(self, Auctionator.IncrementalScan.Events.ScanStart)
-  self:FireProgressEvent()
+    Auctionator.EventBus:Fire(self, Auctionator.IncrementalScan.Events.ScanStart)
+    self:FireProgressEvent()
+  else
+    Auctionator.Utilities.Message(AUCTIONATOR_L_FULL_SCAN_IN_PROGRESS)
+  end
 end
 
 function AuctionatorIncrementalScanFrameMixin:FireProgressEvent()
@@ -94,14 +98,17 @@ function AuctionatorIncrementalScanFrameMixin:AddPrices(results)
 
   for _, resultInfo in ipairs(results) do
     if resultInfo.totalQuantity ~= 0 then
-      local itemKey = Auctionator.Utilities.ItemKeyFromBrowseResult(resultInfo)
-      if self.info[itemKey] == nil then
-        self.info[itemKey] = {}
-      end
+      local allDBKeys = Auctionator.Utilities.DBKeyFromBrowseResult(resultInfo)
 
-      table.insert(self.info[itemKey],
-        { price = resultInfo.minPrice, available = resultInfo.totalQuantity }
-      )
+      for index, dbKey in ipairs(allDBKeys) do
+        if self.info[dbKey] == nil then
+          self.info[dbKey] = {}
+        end
+
+        table.insert(self.info[dbKey],
+          { price = resultInfo.minPrice, available = resultInfo.totalQuantity }
+        )
+      end
     end
   end
 
@@ -121,7 +128,7 @@ function AuctionatorIncrementalScanFrameMixin:NextStep()
       self.doingFullScan = false
 
       Auctionator.EventBus:Fire(self, Auctionator.IncrementalScan.Events.ScanComplete)
-      self.state.TimeOfLastScan = time()
+      self.state.TimeOfLastBrowseScan = time()
     end
     Auctionator.EventBus:Fire(self, Auctionator.IncrementalScan.Events.PricesProcessed)
 

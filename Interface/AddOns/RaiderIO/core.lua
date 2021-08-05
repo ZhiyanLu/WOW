@@ -87,7 +87,7 @@ do
         },
         tank = {
             full = "|TInterface\\AddOns\\RaiderIO\\icons\\roles:14:14:0:0:64:64:38:56:0:18|t",
-            partial	= "|TInterface\\AddOns\\RaiderIO\\icons\\roles:14:14:0:0:64:64:38:56:36:54|t"
+            partial = "|TInterface\\AddOns\\RaiderIO\\icons\\roles:14:14:0:0:64:64:38:56:36:54|t"
         }
     }
 
@@ -130,7 +130,7 @@ do
         [30] = 673
     }
 
-    ---@class RaidDifficultyColor[]
+    ---@class RaidDifficultyColor : table
     ---@field public pos1 number @red (0-1.0) - this table can be unpacked to get r, g, b
     ---@field public pos2 number @green (0-1.0) - this table can be unpacked to get r, g, b
     ---@field public pos3 number @blue (0-1.0) - this table can be unpacked to get r, g, b
@@ -192,6 +192,8 @@ do
     ---@field public best CharacterMythicKeystoneRun
     ---@field public runs CharacterMythicKeystoneRun[]
 
+    ---@class Character
+
     ---@return Character<string, CharacterCollection>
     function ns:GetClientData()
         return ns.CLIENT_CHARACTERS
@@ -200,6 +202,8 @@ do
     ---@class ScoreColor
     ---@field public score number
     ---@field public color number[]
+
+    ---@class ScoreColorCollection
 
     ---@return ScoreColorCollection<number, ScoreColor>
     function ns:GetClientColorData()
@@ -229,6 +233,8 @@ do
     ---@field public season_best GuildMythicKeystoneRun[]
     ---@field public weekly_best GuildMythicKeystoneRun[]
 
+    ---@class Guild
+
     ---@return Guild<string, GuildCollection>
     function ns:GetClientGuildData()
         return ns.GUILD_BEST_DATA
@@ -239,13 +245,13 @@ do
     ---@field public enableCombatLogTracking boolean
     ---@field public syncMode string @"all"
     ---@field public syncAmericasHorde boolean
-	---@field public syncEuropeHorde boolean
-	---@field public syncKoreaHorde boolean
-	---@field public syncTaiwanHorde boolean
-	---@field public syncAmericasAlliance boolean
-	---@field public syncEuropeAlliance boolean
-	---@field public syncKoreaAlliance boolean
-	---@field public syncTaiwanAlliance boolean
+    ---@field public syncEuropeHorde boolean
+    ---@field public syncKoreaHorde boolean
+    ---@field public syncTaiwanHorde boolean
+    ---@field public syncAmericasAlliance boolean
+    ---@field public syncEuropeAlliance boolean
+    ---@field public syncKoreaAlliance boolean
+    ---@field public syncTaiwanAlliance boolean
 
     ---@return ClientConfig
     function ns:GetClientConfig()
@@ -275,15 +281,21 @@ do
         return DUNGEONS
     end
 
+    ---@class RealmCollection
+
     ---@return RealmCollection<string, string>
     function ns:GetRealmData()
         return ns.REALMS or ns.realmSlugs -- DEPRECATED: ns.realmSlugs
     end
 
+    ---@class RegionCollection
+
     ---@return RegionCollection<number, number>
     function ns:GetRegionData()
         return ns.REGIONS or ns.regionIDs -- DEPRECATED: ns.regionIDs
     end
+
+    ---@class ScoreStatsCollection
 
     ---@return ScoreStatsCollection<number, number>
     function ns:GetScoreStatsData()
@@ -298,6 +310,8 @@ do
     ---@class ScoreTierSimple
     ---@field public score number
     ---@field public quality number
+
+    ---@class ScoreTiersSimpleCollection
 
     ---@return ScoreTiersSimpleCollection<number, ScoreTierSimple>
     function ns:GetScoreTiersSimpleData()
@@ -811,7 +825,7 @@ do
         return util:GetDungeonByKeyValue("shortName", name) or util:GetDungeonByKeyValue("shortNameLocale", name)
     end
 
-    ---@param object Widget @Any interface widget object that supports the methods GetScript.
+    ---@param object Region @Any interface widget object that supports the methods GetScript.
     ---@param handler string @The script handler like OnEnter, OnClick, etc.
     ---@return boolean|nil @If successfully executed returns true, otherwise false if nothing has been called. nil if the widget had no handler to execute.
     function util:ExecuteWidgetHandler(object, handler, ...)
@@ -828,12 +842,12 @@ do
         return true
     end
 
-    ---@param object Widget @Any interface widget object that supports the methods GetOwner.
-    ---@param owner Widget @Any interface widget object.
+    ---@param object Region @Any interface widget object that supports the methods GetOwner.
+    ---@param owner Region @Any interface widget object.
     ---@param anchor string @`ANCHOR_TOPLEFT`, `ANCHOR_NONE`, `ANCHOR_CURSOR`, etc.
     ---@param offsetX number @Optional offset X for some of the anchors.
     ---@param offsetY number @Optional offset Y for some of the anchors.
-    ---@return boolean, boolean @If owner was set arg1 is true. If owner was updated arg2 is true. Otherwise both will be set to face to indicate we did not update the Owner of the widget.
+    ---@return boolean, boolean, boolean @If owner was set arg1 is true. If owner was updated arg2 is true. Otherwise both will be set to face to indicate we did not update the Owner of the widget. If the owner is set to the preferred owner arg3 is true.
     function util:SetOwnerSafely(object, owner, anchor, offsetX, offsetY)
         if type(object) ~= "table" or type(object.GetOwner) ~= "function" then
             return
@@ -841,16 +855,16 @@ do
         local currentOwner = object:GetOwner()
         if not currentOwner then
             object:SetOwner(owner, anchor, offsetX, offsetY)
-            return true
+            return true, false, true
         end
         offsetX, offsetY = offsetX or 0, offsetY or 0
         local currentAnchor, currentOffsetX, currentOffsetY = object:GetAnchorType()
         currentOffsetX, currentOffsetY = currentOffsetX or 0, currentOffsetY or 0
         if currentAnchor ~= anchor or (currentOffsetX ~= offsetX and abs(currentOffsetX - offsetX) > 0.01) or (currentOffsetY ~= offsetY and abs(currentOffsetY - offsetY) > 0.01) then
             object:SetOwner(owner, anchor, offsetX, offsetY)
-            return true
+            return true, true, true
         end
-        return false, true
+        return false, true, currentOwner == owner
     end
 
     ---@param text string @The format string like "Greetings %s! How are you?"
@@ -906,6 +920,22 @@ do
         end
         if not regionId then
             return false
+        end
+        local ltd = ns.REGION_TO_LTD[regionId]
+        if not ltd then
+            return false, regionId
+        end
+        return ltd, regionId
+    end
+
+    ---@return any, number @arg1 can be nil (no data), false (server is unknown), string (the ltd). arg2 can be nil (no data), or region ID.
+    function util:GetRegionForServerId(serverId)
+        if not serverId then
+            return
+        end
+        local regionId = REGION[serverId]
+        if not regionId then
+            return
         end
         local ltd = ns.REGION_TO_LTD[regionId]
         if not ltd then
@@ -1151,7 +1181,11 @@ do
     ---@return LFDStatus
     function util:GetLFDStatus()
         ---@type LFDStatus
-        local temp = { dungeon = nil, hosting = false, queued = false }
+        local temp = {
+            dungeon = nil,
+            hosting = false,
+            queued = false,
+        }
         local index = 0
         local activityInfo = C_LFGList.GetActiveEntryInfo()
         if activityInfo and activityInfo.activityID then
@@ -1476,7 +1510,7 @@ do
         elseif IsInGroup() then
             unitPrefix = "party"
             startIndex = 0
-            endIndex = endIndex - 1 
+            endIndex = endIndex - 1
         end
         if unitPrefix then
             data.group = GetGroupData(unitPrefix, startIndex, endIndex)
@@ -1842,6 +1876,63 @@ do
     ---@type DataProvider[]
     local providers = {}
 
+    local function InjectTestBuildData()
+        local REGIONS = ns:GetRegionData()
+        local REALMS = ns:GetRealmData()
+        -- unique client string
+        local clientversion = format("PTR_%s", GetBuildInfo())
+        -- player region fallback
+        ns.PLAYER_REGION = ns.PLAYER_REGION or "us"
+        ns.PLAYER_REGION_ID = ns.PLAYER_REGION_ID or 1
+        -- region fallback for test realms
+        REGIONS[969] = REGIONS[969] or ns.PLAYER_REGION_ID -- 969 = Nobundo-US (PTR)
+        REGIONS[3299] = REGIONS[3299] or ns.PLAYER_REGION_ID -- 3299 = Broxigar-US (PTR) | Lycanthoth-US (PTR)
+        REGIONS[3296] = REGIONS[3296] or ns.PLAYER_REGION_ID -- 3296 = Anasterian-US (PTR) | Benedictus-US (PTR)
+        -- realm fallback
+        ns.PLAYER_REALM_SLUG = ns.PLAYER_REALM_SLUG or format("%s_%s", clientversion, ns.PLAYER_REALM)
+        REALMS[ns.PLAYER_REALM] = REALMS[ns.PLAYER_REALM] or ns.PLAYER_REALM_SLUG
+        -- first available providers matching our faction and region
+        local firstKeystoneProvider = provider:GetProviderByType(ns.PROVIDER_DATA_TYPE.MythicKeystone, ns.PLAYER_FACTION, ns.PLAYER_REGION)
+        local firstRaidProvider = provider:GetProviderByType(ns.PROVIDER_DATA_TYPE.Raid, ns.PLAYER_FACTION, ns.PLAYER_REGION)
+        local firstPvpProvider = provider:GetProviderByType(ns.PROVIDER_DATA_TYPE.PvP, ns.PLAYER_FACTION, ns.PLAYER_REGION)
+        -- create and append proxy providers (fallback to false to avoid nil gaps in the table for the ipairs)
+        local aliasRealm
+        for _, aliasProvider in ipairs({
+            firstKeystoneProvider or false,
+            firstRaidProvider or false,
+            firstPvpProvider or false,
+        }) do
+            if aliasProvider then
+                if not aliasRealm and (aliasProvider.db1 or aliasProvider.db2) then
+                    local names = {}
+                    for name, _ in pairs(aliasProvider.db1 or aliasProvider.db2) do
+                        names[#names + 1] = name
+                    end
+                    table.sort(names, function(a, b) return strcmputf8i(a, b) < 0 end)
+                    aliasRealm = names[1]
+                end
+                if aliasRealm then
+                    aliasProvider.name = format("%s_%s", aliasProvider.name, clientversion)
+                    for _, key in ipairs({
+                        "db1",
+                        "db2",
+                    }) do
+                        local db = aliasProvider[key]
+                        if db then
+                            db[ns.PLAYER_REALM] = db[aliasRealm]
+                        end
+                    end
+                end
+            end
+        end
+        -- print result of this injection
+        if aliasRealm then
+            ns.Print(format("|cffFFFFFF%s|r Test client detected. Because |cffFFFFFF%s|r doesn't exist we are borrowing data from |cffFFFFFF%s|r. Region is set to |cffFFFFFF%s|r.", addonName, ns.PLAYER_REALM, aliasRealm, ns.PLAYER_REGION))
+        else
+            ns.Print(format("|cffFFFFFF%s|r Test client detected. Couldn't borrow test data from anywhere as no providers appear to be loaded for the region |cffFFFFFF%s|r.", addonName, ns.PLAYER_REGION))
+        end
+    end
+
     local function CheckQueuedProviders()
         local desynced
         local outdated
@@ -1883,6 +1974,9 @@ do
     end
 
     local function OnPlayerLogin()
+        if IsTestBuild() and config:Get("debugMode") then
+            InjectTestBuildData()
+        end
         CheckQueuedProviders()
         provider:Enable()
     end
@@ -1895,10 +1989,10 @@ do
         return providers
     end
 
-    function provider:GetProviderByType(providerDataType)
+    function provider:GetProviderByType(dataType, optionalFaction, optionalRegion)
         for i = 1, #providers do
             local provider = providers[i]
-            if provider.data == providerDataType then
+            if provider.data == dataType and (not optionalFaction or provider.faction == optionalFaction) and (not optionalRegion or provider.region == optionalRegion) then
                 return provider
             end
         end
@@ -1980,14 +2074,15 @@ do
     local function BinarySearchGetIndexFromName(data, name, startIndex, endIndex)
         local minIndex = startIndex
         local maxIndex = endIndex
-        local mid, current
+        local mid, current, cmp
 
         while minIndex <= maxIndex do
             mid = floor((maxIndex + minIndex) / 2)
             current = data[mid]
-            if current == name then
-                return mid
-            elseif current < name then
+            cmp = strcmputf8i(current, name)
+            if cmp == 0 then
+                return mid, current
+            elseif cmp < 0 then
                 minIndex = mid + 1
             else
                 maxIndex = mid - 1
@@ -2013,11 +2108,21 @@ do
     ---@param provider DataProvider
     ---@return table, number, string
     local function SearchForBucketByName(provider, lookup, data, name, realm)
+        local internalRealm = realm
         local realmData = data[realm]
+        if not realmData then
+            for rn, rd in pairs(data) do
+                if rn ~= realm and strcmputf8i(rn, realm) == 0 then
+                    internalRealm = rn
+                    realmData = rd
+                    break
+                end
+            end
+        end
         if not realmData then
             return
         end
-        local nameIndex = BinarySearchGetIndexFromName(realmData, name, 2, #realmData)
+        local nameIndex, internalName = BinarySearchGetIndexFromName(realmData, name, 2, #realmData)
         if not nameIndex then
             return
         end
@@ -2038,7 +2143,7 @@ do
         elseif provider.data == ns.PROVIDER_DATA_TYPE.PvP then
             -- TODO
         end
-        return bucket, baseOffset, guid, name, realm
+        return bucket, baseOffset, guid, internalName, internalRealm
     end
 
     local function ReadBitsFromString(data, offset, length)
@@ -2094,7 +2199,7 @@ do
         return 200 + (value - 200) * 2
     end
 
-	local function Split64BitNumber(dword)
+    local function Split64BitNumber(dword)
         local lo = band(dword, 0xfffffffff)
         return lo, (dword - lo) / 0x100000000
     end
@@ -2208,16 +2313,20 @@ do
     ---@class DataProviderMythicKeystoneScore
     ---@field public season number @The previous season number, otherwise nil if current season
     ---@field public score number @The score amount
+    ---@field public originalScore number @If set to a number, it means we did override the score but kept a backup of the original here
     ---@field public roles OrderedRolesItem[] @table of roles associated with the score
 
     ---@class DataProviderMythicKeystoneProfile
     ---@field public outdated number|nil @number or nil
     ---@field public hasRenderableData boolean @True if we have any actual data to render in the tooltip without the profile appearing incomplete or empty.
+    ---@field public hasOverrideScore boolean @True if we override the score shown using in-game score data for the profile tooltip.
+    ---@field public hasOverrideDungeonRuns boolean @True if we override the dungeon runs shown using in-game data for the profile tooltip.
     ---@field public blocked number|nil @number or nil
     ---@field public blockedPurged boolean|nil @True if the provider has been blocked and purged
     ---@field public softBlocked number|nil @number or nil - Only defined when the profile looked up is the players own profile
     ---@field public isEnhanced boolean|nil @true if client enhanced data (fractionalTime and .dungeonTimes are 1 for timed and 3 for depleted, but when enhanced it's the actual time fraction)
     ---@field public currentScore number
+    ---@field public originalCurrentScore number @If set to a number, it means we did override the score but kept a backup of the original here
     ---@field public currentRoleOrdinalIndex number
     ---@field public previousScore number
     ---@field public previousScoreSeason number
@@ -2274,16 +2383,18 @@ do
         local maxDungeonIndex = 0
         local maxDungeonTime = 999
         local maxDungeonLevel = 0
+        local maxDungeonScore = 0
         local maxDungeonUpgrades = 0
         for i = 1, #keystoneData.all.runs do
             local run = keystoneData.all.runs[i]
             results.dungeons[i] = run.level
             results.dungeonUpgrades[i] = run.upgrades
             results.dungeonTimes[i] = run.fraction
-            if run.level > maxDungeonLevel or (run.level == maxDungeonLevel and run.fraction < maxDungeonTime) then
+            if run.upgrades > 0 and (run.score > maxDungeonScore or (run.score == maxDungeonScore and run.fraction < maxDungeonTime)) then
                 maxDungeonIndex = i
                 maxDungeonTime = run.fraction
                 maxDungeonLevel = run.level
+                maxDungeonScore = run.score
                 maxDungeonUpgrades = run.upgrades
             end
         end
@@ -2712,6 +2823,185 @@ do
         return profile
     end
 
+    local function CreateEmptyMythicKeystoneData()
+        ---@type DataProviderMythicKeystoneProfile
+        local results = {
+            mplusCurrent = {
+                score = 0,
+                roles = {}
+            },
+            mplusPrevious = {
+                score = 0,
+                roles = {}
+            },
+            mplusMainCurrent = {
+                score = 0,
+                roles = {}
+            },
+            mplusMainPrevious = {
+                score = 0,
+                roles = {}
+            },
+            dungeons = {},
+            dungeonUpgrades = {},
+            dungeonTimes = {},
+            maxDungeon = 0,
+            maxDungeonLevel = 0,
+            maxDungeonUpgrades = 0,
+            sortedDungeons = {},
+            sortedMilestones = {}
+        }
+        for i = 1, #DUNGEONS do
+            results.dungeons[i] = 0
+            results.dungeonUpgrades[i] = 0
+            results.dungeonTimes[i] = 0
+            results.sortedDungeons[i] = {
+                dungeon = DUNGEONS[i],
+                level = 0,
+                chests = 0,
+                fractionalTime = 999
+            }
+        end
+        table.sort(results.sortedDungeons, SortDungeons)
+        return results
+    end
+
+    ---@class BlizzardKeystoneRun
+    ---@field public bestRunDurationMS number @Timer in milliseconds
+    ---@field public bestRunLevel number @Keystone level
+    ---@field public challengeModeID number @Keystone instance ID
+    ---@field public finishedSuccess boolean @If the run was timed or not
+    ---@field public mapScore number @The score worth for the run
+
+    -- override or inject cache entry for tooltip rendering for this character with their BIO score and keystune run data
+    ---@param name string @Character name
+    ---@param realm string @Realm name
+    ---@param faction number @1 = Alliance, 2 = Horde
+    ---@param overallScore number @BIO score directly from the game.
+    ---@param keystoneRuns BlizzardKeystoneRun[] @BIO runs directly from the game.
+    function provider:OverrideProfile(name, realm, faction, overallScore, keystoneRuns)
+        if type(name) ~= "string" or type(realm) ~= "string" or type(faction) ~= "number" or type(overallScore) ~= "number" or overallScore < 1 then
+            return
+        end
+        local region = ns.PLAYER_REGION
+        local guid = region .. " " .. faction .. " " .. realm .. " " .. name
+        local cache = provider:GetProfile(name, realm, faction, region) ---@type DataProviderCharacterProfile
+        local mythicKeystoneProfile
+        if cache and cache.success and cache.mythicKeystoneProfile then
+            mythicKeystoneProfile = cache.mythicKeystoneProfile
+        end
+        if not mythicKeystoneProfile then
+            mythicKeystoneProfile = CreateEmptyMythicKeystoneData()
+        end
+
+		-- Avoid reducing the score of a player
+		if overallScore > mythicKeystoneProfile.mplusCurrent.score then
+			mythicKeystoneProfile.hasOverrideScore = true
+			if not mythicKeystoneProfile.hasOverrideScore then
+				mythicKeystoneProfile.originalCurrentScore = mythicKeystoneProfile.currentScore
+				mythicKeystoneProfile.mplusCurrent.originalScore = mythicKeystoneProfile.mplusCurrent.score
+			end
+			mythicKeystoneProfile.currentScore = overallScore
+			mythicKeystoneProfile.mplusCurrent.score = overallScore
+		end
+
+        if type(keystoneRuns) == "table" then
+            local maxDungeonIndex = 0
+            local maxDungeonLevel = 0
+            local maxDungeonUpgrades = 0
+			local maxDungeonRunTimer = 2
+            local needsMaxDungeonUpgrade
+            local needsDungeonSort
+            for i = 1, #keystoneRuns do
+                local run = keystoneRuns[i]
+                local dungeonIndex
+                local dungeon
+                for j = 1, #DUNGEONS do
+                    dungeon = DUNGEONS[j]
+                    if dungeon.keystone_instance == run.challengeModeID then
+                        dungeonIndex = j
+                        break
+                    end
+                    dungeon = nil
+                end
+                local runLevel = run.bestRunLevel
+                if dungeonIndex and mythicKeystoneProfile.dungeons[dungeonIndex] <= runLevel then
+					mythicKeystoneProfile.hasOverrideDungeonRuns = true
+                    local _, _, dungeonTimeLimit = C_ChallengeMode.GetMapUIInfo(run.challengeModeID)
+                    local goldTimeLimit, silverTimeLimit, bronzeTimeLimit = -1, -1, dungeonTimeLimit
+                    if dungeon.timers then
+                        goldTimeLimit, silverTimeLimit, bronzeTimeLimit = dungeon.timers[1], dungeon.timers[2], dungeonTimeLimit or dungeon.timers[3] -- TODO: always prefer the game data time limit for bronze or the addons time limit?
+                    end
+                    local runSeconds = run.bestRunDurationMS / 1000
+                    local runNumUpgrades = 0
+                    if run.finishedSuccess then
+						runNumUpgrades = 1 -- minimum 1 if timed
+                        if runSeconds <= goldTimeLimit then
+                            runNumUpgrades = 3
+                        elseif runSeconds <= silverTimeLimit then
+                            runNumUpgrades = 2
+                        end
+                    end
+                    local runTimerAsFraction = runSeconds / (dungeonTimeLimit and dungeonTimeLimit > 0 and dungeonTimeLimit or 1) -- convert game timer to a fraction (1 or below is timed, above is depleted)
+                    local fractionalTime = run.finishedSuccess and (mythicKeystoneProfile.isEnhanced and runTimerAsFraction or (3 - runNumUpgrades)) or 3 -- the data here depends if we are using client enhanced data or not
+                    local runScore = run.mapScore
+                    needsMaxDungeonUpgrade = true
+                    mythicKeystoneProfile.dungeons[dungeonIndex] = runLevel
+                    mythicKeystoneProfile.dungeonUpgrades[dungeonIndex] = runNumUpgrades
+                    mythicKeystoneProfile.dungeonTimes[dungeonIndex] = fractionalTime
+                    if runNumUpgrades > 0 and (runLevel > maxDungeonLevel or (runLevel == maxDungeonLevel and runTimerAsFraction < maxDungeonRunTimer)) then
+                        maxDungeonIndex = dungeonIndex
+                        maxDungeonLevel = runLevel
+                        maxDungeonUpgrades = runNumUpgrades
+						maxDungeonRunTimer = runTimerAsFraction
+                    end
+                    local sortedDungeon
+                    for j = 1, #mythicKeystoneProfile.sortedDungeons do
+                        sortedDungeon = mythicKeystoneProfile.sortedDungeons[j]
+                        if sortedDungeon.dungeon == dungeon then
+                            break
+                        end
+                        sortedDungeon = nil
+                    end
+                    if sortedDungeon and sortedDungeon.level <= runLevel then
+                        needsDungeonSort = true
+                        sortedDungeon.level = runLevel
+                        sortedDungeon.chests = runNumUpgrades
+                        sortedDungeon.fractionalTime = fractionalTime
+                    end
+                end
+            end
+            if needsMaxDungeonUpgrade then
+                mythicKeystoneProfile.maxDungeon = DUNGEONS[maxDungeonIndex]
+                mythicKeystoneProfile.maxDungeonLevel = maxDungeonLevel
+                mythicKeystoneProfile.maxDungeonUpgrades = maxDungeonUpgrades
+            end
+            if needsDungeonSort then
+                table.sort(mythicKeystoneProfile.sortedDungeons, SortDungeons)
+            end
+        end
+        if mythicKeystoneProfile.hasOverrideScore or mythicKeystoneProfile.hasOverrideDungeonRuns then
+            mythicKeystoneProfile.blocked = nil
+            mythicKeystoneProfile.blockedPurged = nil
+            mythicKeystoneProfile.softBlocked = nil
+            mythicKeystoneProfile.outdated = nil
+            mythicKeystoneProfile.hasRenderableData = true
+        end
+        if not cache then
+            cache = {
+                guid = guid,
+                name = name,
+                realm = realm,
+                faction = faction,
+                region = region
+            }
+        end
+        cache.success = true
+        cache.mythicKeystoneProfile = mythicKeystoneProfile
+        profileCache[guid] = cache
+        return cache
+    end
+
     ---@param name string
     ---@param realm string
     ---@param faction number
@@ -2785,25 +3075,36 @@ do
         return cache
     end
 
+    local function OverridePlayerData()
+        local bioSummary = C_PlayerInfo.GetPlayerMythicPlusRatingSummary("player")
+        if bioSummary and bioSummary.currentSeasonScore then
+            provider:OverrideProfile(ns.PLAYER_NAME, ns.PLAYER_REALM, ns.PLAYER_FACTION, bioSummary.currentSeasonScore, bioSummary.runs)
+        end
+    end
+
     local function OnPlayerEnteringWorld()
         table.wipe(mythicKeystoneProfileCache)
         table.wipe(raidProfileCache)
         table.wipe(pvpProfileCache)
         table.wipe(profileCache)
+        OverridePlayerData()
     end
 
     callback:RegisterEvent(OnPlayerEnteringWorld, "PLAYER_ENTERING_WORLD")
 
+    function provider:WipeCache()
+        OnPlayerEnteringWorld()
+    end
+
 end
 
 -- loader.lua (internal)
--- dependencies: module, callback, config, util, provider
+-- dependencies: module, callback, config, util
 do
 
     local callback = ns:GetModule("Callback") ---@type CallbackModule
     local config = ns:GetModule("Config") ---@type ConfigModule
     local util = ns:GetModule("Util") ---@type UtilModule
-    local provider = ns:GetModule("Provider") ---@type ProviderModule
 
     local loadingAgainSoon
     local LoadModules
@@ -2838,6 +3139,7 @@ do
         ns.PLAYER_REALM_SLUG = util:GetRealmSlug(ns.PLAYER_REALM)
         _G.RaiderIO_LastCharacter = format("%s-%s-%s", ns.PLAYER_REGION, ns.PLAYER_NAME, ns.PLAYER_REALM_SLUG or ns.PLAYER_REALM)
         _G.RaiderIO_MissingCharacters = {}
+        _G.RaiderIO_MissingServers = {}
         callback:SendEvent("RAIDERIO_PLAYER_LOGIN")
         LoadModules()
     end
@@ -3010,6 +3312,8 @@ do
     ---@field public region string @"us","kr","eu","tw","cn"
     ---@field public options number @render.Flags
 
+    ---@class TooltipStates
+
     ---@type TooltipStates<table, TooltipState>
     local tooltipStates = {}
 
@@ -3088,9 +3392,9 @@ do
             ["Skullcrusher"] = {
                 ["Aspyric"] = "Raider.IO Creator",
                 ["Ulsoga"] = "Raider.IO Creator",
-				["Mccaffrey"] = "Killing Keys Since 1977!",
-				["Oscassey"] = "Master of dis guys"
-			},
+                ["Mccaffrey"] = "Killing Keys Since 1977!",
+                ["Oscassey"] = "Master of dis guys"
+            },
             ["Thrall"] = {
                 ["Firstclass"] = "Author of mythicpl.us"
             },
@@ -3322,7 +3626,7 @@ do
                         local sortedMilestone = keystoneProfile.sortedMilestones[i]
                         tooltip:AddDoubleLine(sortedMilestone.label, sortedMilestone.text, 1, 1, 1, 1, 1, 1)
                     end
-                    if isExtendedProfile and (hasMod or hasModSticky) then
+                    if isExtendedProfile and (hasMod or hasModSticky) and keystoneProfile.sortedDungeons[1] then
                         local hasBestDungeons = false
                         for i = 1, #keystoneProfile.sortedDungeons do
                             local sortedDungeon = keystoneProfile.sortedDungeons[i]
@@ -3369,7 +3673,7 @@ do
                     end
                     if isExtendedProfile then
                         if showRaidEncounters then
-                            local raidProvider = provider:GetProviderByType(ns.PROVIDER_DATA_TYPE.Raid)
+                            local raidProvider = provider:GetProviderByType(ns.PROVIDER_DATA_TYPE.Raid, state.faction, state.region)
                             for i = 1, raidProvider.currentRaid.bossCount do
                                 local progressFound = false
                                 for j = 1, #raidProfile.progress do
@@ -3698,12 +4002,14 @@ do
 end
 
 -- gametooltip.lua
--- dependencies: module, config, util, render
+-- dependencies: module, config, util, provider, render
 do
 
+    ---@class GameTooltipModule : Module
     local tooltip = ns:NewModule("GameTooltip") ---@type GameTooltipModule
     local config = ns:GetModule("Config") ---@type ConfigModule
     local util = ns:GetModule("Util") ---@type UtilModule
+    local provider = ns:GetModule("Provider") ---@type ProviderModule
     local render = ns:GetModule("Render") ---@type RenderModule
 
     local function OnTooltipSetUnit(self)
@@ -3718,6 +4024,12 @@ do
             return
         end
         if util:IsUnitMaxLevel(unit) then
+            local bioSummary = C_PlayerInfo.GetPlayerMythicPlusRatingSummary(unit)
+            if bioSummary and bioSummary.currentSeasonScore then
+                local name, realm = util:GetNameRealm(unit)
+                local faction = util:GetFaction(unit)
+                provider:OverrideProfile(name, realm, faction, bioSummary.currentSeasonScore, bioSummary.runs)
+            end
             render:ShowProfile(self, unit)
         end
     end
@@ -3747,6 +4059,7 @@ end
 -- dependencies: module, config, util, render
 do
 
+    ---@class FriendTooltipModule : Module
     local tooltip = ns:NewModule("FriendTooltip") ---@type FriendTooltipModule
     local config = ns:GetModule("Config") ---@type ConfigModule
     local util = ns:GetModule("Util") ---@type UtilModule
@@ -3773,11 +4086,18 @@ do
         if not fullName or not util:IsMaxLevel(level) then
             return
         end
-        local ownerSet, ownerExisted = util:SetOwnerSafely(GameTooltip, FriendsTooltip, "ANCHOR_BOTTOMRIGHT", -FriendsTooltip:GetWidth(), -4)
+        local ownerSet, ownerExisted, ownerSetSame = util:SetOwnerSafely(GameTooltip, FriendsTooltip, "ANCHOR_BOTTOMRIGHT", -FriendsTooltip:GetWidth(), -4)
+        -- HOTFIX: attempt to fix the issue with a bnet friend with a notification causes the update to be called each frame without a proper hide event and this makes it so we append an empty line due to the smart padding check
+        do
+            local firstText = GameTooltipTextLeft1:GetText()
+            if not firstText or firstText == "" or firstText == " " then
+                ownerExisted = false
+            end
+        end
         if render:ShowProfile(GameTooltip, fullName, faction, render.Preset.UnitSmartPadding(ownerExisted)) then
             return
         end
-        if ownerSet then
+        if ownerSet and not ownerExisted and ownerSetSame then
             GameTooltip:Hide()
         end
     end
@@ -3815,11 +4135,11 @@ do
         if not info or not info.fullName or not util:IsMaxLevel(info.level) then
             return
         end
-        local ownerSet, ownerExisted = util:SetOwnerSafely(GameTooltip, self, "ANCHOR_LEFT")
+        local ownerSet, ownerExisted, ownerSetSame = util:SetOwnerSafely(GameTooltip, self, "ANCHOR_LEFT")
         if render:ShowProfile(GameTooltip, info.fullName, ns.PLAYER_FACTION, render.Preset.UnitSmartPadding(ownerExisted)) then
             return
         end
-        if ownerSet then
+        if ownerSet and not ownerExisted and ownerSetSame then
             GameTooltip:Hide()
         end
     end
@@ -4314,6 +4634,25 @@ do
         end
     end
 
+    local hooked
+
+    local function TopBannerManager_Show(self)
+        if hooked then
+            return
+        end
+        local frame = _G.ChallengeModeCompleteBanner
+        if not frame or frame ~= self then
+            return
+        end
+        hooked = true
+        hooksecurefunc(frame, "PlayBanner", OnChallengeModeCompleteBannerPlay)
+        local mapID, level, time, onTime, keystoneUpgradeLevels, practiceRun = C_ChallengeMode.GetCompletionInfo()
+        if not practiceRun then
+            local bannerData = { mapID = mapID, level = level, time = time, onTime = onTime, keystoneUpgradeLevels = keystoneUpgradeLevels } ---@type ChallengeModeCompleteBannerData
+            OnChallengeModeCompleteBannerPlay(frame, bannerData)
+        end
+    end
+
     local function CheckCachedData()
         local cachedRuns = _G.RaiderIO_CachedRuns
         if not cachedRuns then
@@ -4338,19 +4677,19 @@ do
     end
 
     function fanfare:CanLoad()
-        return config:IsEnabled() and _G.ChallengeModeCompleteBanner and config:Get("debugMode") -- TODO: do not load this module by default (it's not yet tested well enough) but we do load it if debug mode is enabled
+        return config:IsEnabled() and config:Get("debugMode") -- TODO: do not load this module by default (it's not yet tested well enough) but we do load it if debug mode is enabled
     end
 
     function fanfare:OnLoad()
         self:Enable()
         KEYSTONE_DATE = provider:GetProvidersDates()
         CheckCachedData()
-        hooksecurefunc(_G.ChallengeModeCompleteBanner, "PlayBanner", OnChallengeModeCompleteBannerPlay)
+        hooksecurefunc("TopBannerManager_Show", TopBannerManager_Show)
     end
 
-    -- DEBUG: force show the end screen for UR+15 (1950 is the timer)
+    -- DEBUG: force show the end screen for MIST+15 (1800/1440/1080 is the timer)
     -- /run wipe(RaiderIO_CachedRuns)
-    -- /run C_ChallengeMode.GetCompletionInfo=function()return 251, 15, 1950, true, 1, false end
+    -- /run C_ChallengeMode.GetCompletionInfo=function()return 375, 15, 1800, true, 1, false end
     -- /run for _,f in ipairs({GetFramesRegisteredForEvent("CHALLENGE_MODE_COMPLETED")})do f:GetScript("OnEvent")(f,"CHALLENGE_MODE_COMPLETED")end
 
 end
@@ -4399,6 +4738,11 @@ do
         tooltip:SetFrameStrata(frameStrata or FALLBACK_ANCHOR_STRATA)
         return frame, strata
     end
+
+    ---@class ConfigProfilePoint
+    ---@field public point string|nil
+    ---@field public x number|nil
+    ---@field public y number|nil
 
     ---@return table, string @Returns the used frame and strata after logical checks have been performed on the provided frame and strata values.
     local function SetUserAnchor()
@@ -4560,6 +4904,7 @@ do
     local util = ns:GetModule("Util") ---@type UtilModule
     local render = ns:GetModule("Render") ---@type RenderModule
     local profile = ns:GetModule("Profile") ---@type ProfileModule
+    local provider = ns:GetModule("Provider") ---@type ProviderModule
 
     ---@class LfgResult
     ---@field public activityID number|nil
@@ -4582,6 +4927,11 @@ do
             table.wipe(currentResult)
             return
         end
+        local _, _, _, _, _, _, _, _, _, _, _, _, isMythicPlusActivity = C_LFGList.GetActivityInfo(entry.activityID, nil, entry.isWarMode)
+        if isMythicPlusActivity and entry.leaderOverallDungeonScore then
+            local leaderName, leaderRealm = util:GetNameRealm(entry.leaderName)
+            provider:OverrideProfile(leaderName, leaderRealm, ns.PLAYER_FACTION, entry.leaderOverallDungeonScore)
+        end
         currentResult.activityID = entry.activityID
         currentResult.leaderName = entry.leaderName
         currentResult.keystoneLevel = util:GetKeystoneLevelFromText(entry.title) or util:GetKeystoneLevelFromText(entry.description) or 0
@@ -4600,15 +4950,19 @@ do
     end
 
     local function ShowApplicantProfile(parent, applicantID, memberIdx)
-        local fullName = C_LFGList.GetApplicantMemberInfo(applicantID, memberIdx)
+        local fullName, _, _, _, _, _, _, _, _, _, _, dungeonScore = C_LFGList.GetApplicantMemberInfo(applicantID, memberIdx)
         if not fullName then
             return false
         end
-        local ownerSet, ownerExisted = util:SetOwnerSafely(GameTooltip, parent, "ANCHOR_NONE", 0, 0)
+        if dungeonScore then
+            local name, realm = util:GetNameRealm(fullName)
+            provider:OverrideProfile(name, realm, ns.PLAYER_FACTION, dungeonScore)
+        end
+        local ownerSet, ownerExisted, ownerSetSame = util:SetOwnerSafely(GameTooltip, parent, "ANCHOR_NONE", 0, 0)
         if render:ShowProfile(GameTooltip, fullName, ns.PLAYER_FACTION, render.Preset.Unit(render.Flags.MOD_STICKY), currentResult) then
             return true, fullName
         end
-        if ownerSet then
+        if ownerSet and not ownerExisted and ownerSetSame then
             GameTooltip:Hide()
         end
         return false
@@ -4686,11 +5040,11 @@ do
         if not fullName or not util:IsMaxLevel(level) then
             return
         end
-        local ownerSet, ownerExisted = util:SetOwnerSafely(GameTooltip, self, "ANCHOR_TOPLEFT", 0, 0)
+        local ownerSet, ownerExisted, ownerSetSame = util:SetOwnerSafely(GameTooltip, self, "ANCHOR_TOPLEFT", 0, 0)
         if render:ShowProfile(GameTooltip, fullName, ns.PLAYER_FACTION, render.Preset.UnitSmartPadding(ownerExisted)) then
             return
         end
-        if ownerSet then
+        if ownerSet and not ownerExisted and ownerSetSame then
             GameTooltip:Hide()
         end
     end
@@ -4749,6 +5103,11 @@ do
         local faction = ns.PLAYER_FACTION
         if type(self.GetMemberInfo) == "function" then
             local info = self:GetMemberInfo()
+            -- function exists but returns null when on "Pending Invites" header
+            if not info then
+                return
+            end
+
             clubType = info.clubType
             nameAndRealm = info.name
             level = info.level
@@ -4769,11 +5128,11 @@ do
         if (clubType and clubType ~= Enum.ClubType.Guild and clubType ~= Enum.ClubType.Character) or not nameAndRealm or not util:IsMaxLevel(level, true) then
             return
         end
-        local ownerSet, ownerExisted = util:SetOwnerSafely(GameTooltip, self, "ANCHOR_LEFT", 0, 0)
+        local ownerSet, ownerExisted, ownerSetSame = util:SetOwnerSafely(GameTooltip, self, "ANCHOR_LEFT", 0, 0)
         if render:ShowProfile(GameTooltip, nameAndRealm, faction, render.Preset.UnitSmartPadding(ownerExisted)) then
             return
         end
-        if ownerSet then
+        if ownerSet and not ownerExisted and ownerSetSame then
             GameTooltip:Hide()
         end
     end
@@ -5176,16 +5535,16 @@ do
         for i = 1, numVisibleRuns do
             self.GuildBests[i]:SetUp(currentRuns[i + self.offset])
         end
-    
+
         if self:IsMouseOver() then
             local focus = GetMouseFocus()
             if focus and focus ~= GameTooltip:GetOwner() then
                 util:ExecuteWidgetHandler(focus, "OnEnter")
             end
         end
-    
+
         self:SetHeight(35 + (numVisibleRuns > 0 and numVisibleRuns * self.GuildBests[1]:GetHeight() or 0) + switchRealHeight)
-    
+
         return numRuns, numVisibleRuns
     end
 
@@ -5221,7 +5580,7 @@ do
 
     local function CreateGuildWeeklyFrame()
         ---@type GuildWeeklyFrame
-        local frame = CreateFrame("Frame", nil, ChallengesFrame, BackdropTemplateMixin and "BackdropTemplate")
+        local frame = CreateFrame("Frame", "RaiderIO_GuildWeeklyFrame", ChallengesFrame, BackdropTemplateMixin and "BackdropTemplate")
         frame.maxVisible = 5
         -- inherit from the mixin
         for k, v in pairs(GuildWeeklyFrameMixin) do
@@ -5348,7 +5707,7 @@ do
     local profile = ns:GetModule("Profile") ---@type ProfileModule
 
     local function SortByName(a, b)
-        return a.name < b.name
+        return strcmputf8i(a.name, b.name) < 0
     end
 
     local PROVIDERS = provider:GetProviders()
@@ -6546,11 +6905,15 @@ do
         callback:RegisterEvent(UpdateModuleState, "RAIDERIO_SETTINGS_SAVED")
     end
 
+    local LibCombatLogging = LibStub and LibStub:GetLibrary("LibCombatLogging-1.0", true) ---@type LibCombatLogging
+    local LoggingCombat = LibCombatLogging and function(...) return LibCombatLogging.LoggingCombat("Raider.IO", ...) end or _G.LoggingCombat
+
     local autoLogInstanceMapIDs
     local autoLogDifficultyIDs do
         autoLogInstanceMapIDs = {
             -- [2162] = true, -- Torghast, Tower of the Damned
             [2296] = true, -- Castle Nathria
+            [2450] = true, -- Sanctum of Domination
         }
         autoLogDifficultyIDs = {
             -- scenario
@@ -6602,14 +6965,16 @@ do
         previouslyEnabledLogging = setLogging
         config:Set("previouslyEnabledLogging", setLogging)
         LoggingCombat(setLogging)
-        local info = ChatTypeInfo["SYSTEM"]
-        DEFAULT_CHAT_FRAME:AddMessage("|cffFFFFFFRaider.IO|r: " .. (setLogging and COMBATLOGENABLED or COMBATLOGDISABLED), info.r, info.g, info.b, info.id)
+        if not LibCombatLogging then
+            local info = ChatTypeInfo.SYSTEM
+            DEFAULT_CHAT_FRAME:AddMessage("|cffFFFFFFRaider.IO|r: " .. (setLogging and COMBATLOGENABLED or COMBATLOGDISABLED), info.r, info.g, info.b, info.id)
+        end
     end
 
     function combatlog:OnEnable()
         previouslyEnabledLogging = config:Get("previouslyEnabledLogging")
         CheckInstance(true)
-        callback:RegisterEvent(CheckInstance, "PLAYER_ENTERING_WORLD", "ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA")
+        callback:RegisterEvent(CheckInstance, "PLAYER_ENTERING_WORLD", "ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA", "ZONE_CHANGED_INDOORS")
     end
 
     function combatlog:OnDisable()
@@ -6617,6 +6982,2492 @@ do
         CheckInstance(false)
         callback:UnregisterCallback(CheckInstance)
         lastActive = nil
+    end
+
+end
+
+-- serverlog.lua
+-- dependencies: module, callback, config, util
+do
+
+    ---@class ServerLogModule : Module
+    local serverlog = ns:NewModule("ServerLog") ---@type ServerLogModule
+    local callback = ns:GetModule("Callback") ---@type CallbackModule
+    local config = ns:GetModule("Config") ---@type ConfigModule
+    local util = ns:GetModule("Util") ---@type UtilModule
+
+    local TRACKING_EVENTS = {
+        "COMBAT_LOG_EVENT_UNFILTERED",
+        "UNIT_AURA",
+        "UNIT_FLAGS",
+        "UNIT_MODEL_CHANGED",
+        "UNIT_NAME_UPDATE",
+        "UNIT_PHASE",
+        "UNIT_SPELLCAST_CHANNEL_START",
+        "UNIT_SPELLCAST_CHANNEL_STOP",
+        "UNIT_SPELLCAST_START",
+        "UNIT_SPELLCAST_STOP",
+        "UNIT_TARGET",
+    }
+
+    local COMBATLOG_OBJECT_AFFILIATION_MINE = _G.COMBATLOG_OBJECT_AFFILIATION_MINE or 0x00000001
+    local COMBATLOG_OBJECT_AFFILIATION_OUTSIDER = _G.COMBATLOG_OBJECT_AFFILIATION_OUTSIDER or 0x00000008
+    local COMBATLOG_OBJECT_CONTROL_PLAYER = _G.COMBATLOG_OBJECT_CONTROL_PLAYER or 0x00000100
+    local COMBATLOG_OBJECT_TYPE_PLAYER = _G.COMBATLOG_OBJECT_TYPE_PLAYER or 0x00000400
+
+    local MINE = bor(COMBATLOG_OBJECT_AFFILIATION_MINE, COMBATLOG_OBJECT_CONTROL_PLAYER)
+    local OTHER_PLAYER = bor(COMBATLOG_OBJECT_AFFILIATION_OUTSIDER, COMBATLOG_OBJECT_CONTROL_PLAYER, COMBATLOG_OBJECT_TYPE_PLAYER)
+
+    local CHECKED = {}
+
+    ---@return boolean @`true` if the provided guid is another player (context assumes we do check the flags for this information, if flags is nil we only care that guid exists).
+    local function IsOtherPlayerGUID(guid, flags)
+        if not guid then
+            return false
+        end
+        if flags ~= nil and (band(flags, MINE) == MINE or band(flags, OTHER_PLAYER) ~= OTHER_PLAYER) then
+            return false
+        end
+        return true
+    end
+
+    ---@return nil @The provided guid is checked if it's a player, and if the serverId is unknown, if that's the case we will log it into the SV and map it to our known regionId.
+    local function InspectPlayerGUID(guid)
+        if not guid then
+            return
+        end
+        local guidType, serverId = strsplit("-", guid)
+        if guidType ~= "Player" then
+            return
+        end
+        if CHECKED[serverId] then
+            return
+        end
+        CHECKED[serverId] = true
+        serverId = tonumber(serverId) or 0
+        if serverId < 1 then
+            return
+        end
+        local ltd, regionId = util:GetRegionForServerId(serverId)
+        if ltd or regionId then
+            return
+        end
+        local cache = _G.RaiderIO_MissingServers[serverId]
+        if cache ~= nil then
+            return
+        end
+        _G.RaiderIO_MissingServers[serverId] = ns.PLAYER_REGION_ID
+    end
+
+    local function OnEvent(event, ...)
+        if event == "COMBAT_LOG_EVENT_UNFILTERED" then
+            local _, _, _, sourceGUID, _, sourceFlags, _, destGUID, _, destFlags = ...
+            if IsOtherPlayerGUID(sourceGUID, sourceFlags) then
+                InspectPlayerGUID(sourceGUID)
+            end
+            if IsOtherPlayerGUID(destGUID, destFlags) then
+                InspectPlayerGUID(destGUID)
+            end
+        else
+            local unit = ...
+            if not unit or not UnitIsPlayer(unit) or UnitIsUnit(unit, "player") then
+                return
+            end
+            local guid = UnitGUID(unit)
+            if guid then
+                InspectPlayerGUID(guid)
+            end
+        end
+    end
+
+    function serverlog:CanLoad()
+        return config:IsEnabled() and config:Get("debugMode") -- TODO: do not load this module by default (it's not yet tested well enough) but we do load it if debug mode is enabled
+    end
+
+    function serverlog:OnLoad()
+        self:Enable()
+        InspectPlayerGUID(UnitGUID("player")) -- in case we are on a missing server we will ensure we log it with this call
+    end
+
+    function serverlog:OnEnable()
+        callback:RegisterEvent(OnEvent, unpack(TRACKING_EVENTS))
+    end
+
+    function serverlog:OnDisable()
+        callback:UnregisterEvent(OnEvent, unpack(TRACKING_EVENTS))
+    end
+
+end
+
+-- tests.lua
+-- dependencies: module, config, provider
+do
+
+    ---@class TestsModule : Module
+    local tests = ns:NewModule("Tests") ---@type TestsModule
+    local config = ns:GetModule("Config") ---@type ConfigModule
+    local provider = ns:GetModule("Provider") ---@type ProviderModule
+
+    ---@class TestData @This can either be a `table` object with the structure as described in the class, or a `function` we call that returns `status` and `explanation` if there is something to report.
+    ---@field public skip boolean @Set `true` to skip this test.
+    ---@field public region string @`eu`, `us`, etc.
+    ---@field public faction string @`1` for Alliance, `2` for Horde.
+    ---@field public realm string @The character realm same format as the whisper friendly `GetNormalizedRealmName()` format.
+    ---@field public name string @The character name.
+    ---@field public success boolean @Set `true` if the profile exists and contains data, otherwise `false` to ensure it is empty or missing.
+    ---@field public exists boolean @Set `true` if the test expects the profile to exist, otherwise `false` to ensure it doesn't exist
+    ---@field private profile DataProviderCharacterProfile @Set internally once the test runs and the profile is attempted retrieved.
+    ---@field private status boolean @Set internally to `true` if the test passed, otherwise `false` if something went wrong.
+    ---@field private explanation string @Set internally to describe what went wrong, or what went right depending on the test.
+
+    ---@return boolean @If the GUID strings match (strcmputf8i) we return `true` otherwise `false`, if `nil` it means one GUID is missing from the call.
+    local function CompareProfileGUIDs(guid1, guid2)
+        if type(guid1) ~= "string" or type(guid2) ~= "string" then
+            return
+        end
+        return guid1 == guid2 or strcmputf8i(guid1, guid2) == 0
+    end
+
+    ---@param profile1 DataProviderCharacterProfile
+    ---@param profile2 DataProviderCharacterProfile
+    ---@return boolean @If the profiles reference the same person we return `true` otherwise `false` for different people, `nil` if one profile is missing from the call.
+    local function CompareProfiles(profile1, profile2)
+        if type(profile1) ~= "table" or type(profile2) ~= "table" then
+            return
+        end
+        return profile1 == profile2 or (profile1.mythicKeystoneProfile and profile1.mythicKeystoneProfile == profile2.mythicKeystoneProfile) or (profile1.raidProfile and profile1.raidProfile == profile2.raidProfile) or (profile1.pvpProfile and profile1.pvpProfile == profile2.pvpProfile)
+    end
+
+    ---@param collection TestData[]
+    local function CheckBothTestsAboveForSameProfiles(collection, id)
+        local id1 = id - 2
+        local id2 = id - 1
+        local test1 = collection[id1]
+        local test2 = collection[id2]
+        if not test1 or not test2 then
+            return nil, format("Test#%d/#%d missing.", id1, id2)
+        elseif test1.skip or test2.skip then
+            return nil, format("Test#%d/#%d marked for skipping.", id1, id2)
+        elseif test1.status and test2.status and CompareProfiles(test1.profile, test2.profile) then
+            return true, format("Test#%d/#%d looked up the same profile.", id1, id2)
+        elseif test1.status and test2.status and test1.exists ~= nil and test2.exists ~= nil and (test1.exists and CompareProfiles(test1.profile, test2.profile) or not CompareProfiles(test1.profile, test2.profile)) then
+            return true, format("Test#%d/#%d looked up %s profile.", id1, id2, test1.exists and "existing" or "missing")
+        elseif not test1.status or not test2.status then
+            return nil, format("Test#%d/#%d failed.", id1, id2)
+        elseif not CompareProfiles(test1.profile, test2.profile) then
+            return false, format("Test#%d/#%d looked up different profiles.", id1, id2)
+        end
+        return false, format("Unhandled logic branch.", id)
+    end
+
+    ---@type TestData[]
+    local collection = {
+        { region = "eu", faction = 1, realm = "Ravencrest", name = "Voidzone", success = true },
+        { region = "eu", faction = 1, realm = "rAvEnCrEsT", name = "vOIdZoNe", success = true },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "us", faction = 2, realm = "Skullcrusher", name = "Aspyrox", exists = false },
+        { region = "us", faction = 2, realm = "sKuLLcRuSHeR", name = "aSpYrOx", exists = false },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "eu", faction = 1, realm = "Ysondre", name = "Isak", success = true },
+        { region = "eu", faction = 1, realm = "ySoNdRe", name = "iSaK", success = true },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "us", faction = 2, realm = "tichondrius", name = "proview", success = true },
+        { region = "us", faction = 2, realm = "TiChOnDrIuS", name = "pRoViEw", success = true },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "eu", faction = 2, realm = "СвежевательДуш", name = "Хитей", success = true },
+        { region = "eu", faction = 2, realm = "СВЕЖЕВАТЕЛЬДУШ", name = "ХИТЕЙ", success = true },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "eu", faction = 2, realm = "Ravencrest", name = "Mßx", success = true },
+        { region = "eu", faction = 2, realm = "RAVENCREST", name = "MßX", success = true },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "eu", faction = 2, realm = "Kazzak", name = "Donskís", success = true },
+        { region = "eu", faction = 2, realm = "KAZZAK", name = "DONSKÍS", success = true },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "tw", faction = 2, realm = "憤怒使者", name = "凸姿姿凸", success = true },
+        { region = "tw", faction = 2, realm = "憤怒使者", name = "凸姿姿凸", success = true },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "kr", faction = 1, realm = "윈드러너", name = "갊깖읾옮짊맒", success = true },
+        { region = "kr", faction = 1, realm = "윈드러너", name = "갊깖읾옮짊맒", success = true },
+        CheckBothTestsAboveForSameProfiles,
+        { region = "kr", faction = 2, realm = "아즈샤라", name = "벤쉬", success = true },
+        { region = "kr", faction = 2, realm = "아즈샤라", name = "벤쉬", success = true },
+        CheckBothTestsAboveForSameProfiles,
+    }
+
+    local providers = provider:GetProviders()
+
+    local function AppendTestsFromProviders(callback, progress)
+
+        -- "UTF8" by phanxaddons and pastamancer_wow (https://www.wowace.com/projects/utf8)
+        local utf8lower
+        local utf8upper do
+
+            -- $Id: utf8.lua 179 2009-04-03 18:10:03Z pasta $
+            --
+            -- Provides UTF-8 aware string functions implemented in pure lua:
+            -- * string.utf8len(s)
+            -- * string.utf8sub(s, i, j)
+            -- * string.utf8reverse(s)
+            --
+            -- If utf8data.lua (containing the lower<->upper case mappings) is loaded, these
+            -- additional functions are available:
+            -- * string.utf8upper(s)
+            -- * string.utf8lower(s)
+            --
+            -- All functions behave as their non UTF-8 aware counterparts with the exception
+            -- that UTF-8 characters are used instead of bytes for all units.
+
+            --[[
+            Copyright (c) 2006-2007, Kyle Smith
+            All rights reserved.
+
+            Redistribution and use in source and binary forms, with or without
+            modification, are permitted provided that the following conditions are met:
+
+                * Redistributions of source code must retain the above copyright notice,
+                this list of conditions and the following disclaimer.
+                * Redistributions in binary form must reproduce the above copyright
+                notice, this list of conditions and the following disclaimer in the
+                documentation and/or other materials provided with the distribution.
+                * Neither the name of the author nor the names of its contributors may be
+                used to endorse or promote products derived from this software without
+                specific prior written permission.
+
+            THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+            AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+            IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+            DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+            FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+            DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+            SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+            CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+            OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+            OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+            --]]
+
+            -- ABNF from RFC 3629
+            --
+            -- UTF8-octets = *( UTF8-char )
+            -- UTF8-char   = UTF8-1 / UTF8-2 / UTF8-3 / UTF8-4
+            -- UTF8-1      = %x00-7F
+            -- UTF8-2      = %xC2-DF UTF8-tail
+            -- UTF8-3      = %xE0 %xA0-BF UTF8-tail / %xE1-EC 2( UTF8-tail ) /
+            --               %xED %x80-9F UTF8-tail / %xEE-EF 2( UTF8-tail )
+            -- UTF8-4      = %xF0 %x90-BF 2( UTF8-tail ) / %xF1-F3 3( UTF8-tail ) /
+            --               %xF4 %x80-8F 2( UTF8-tail )
+            -- UTF8-tail   = %x80-BF
+            --
+
+            local strbyte, strlen, strsub, type = string.byte, string.len, string.sub, type
+
+            local utf8_lc_uc = {
+                ["a"] = "A",
+                ["b"] = "B",
+                ["c"] = "C",
+                ["d"] = "D",
+                ["e"] = "E",
+                ["f"] = "F",
+                ["g"] = "G",
+                ["h"] = "H",
+                ["i"] = "I",
+                ["j"] = "J",
+                ["k"] = "K",
+                ["l"] = "L",
+                ["m"] = "M",
+                ["n"] = "N",
+                ["o"] = "O",
+                ["p"] = "P",
+                ["q"] = "Q",
+                ["r"] = "R",
+                ["s"] = "S",
+                ["t"] = "T",
+                ["u"] = "U",
+                ["v"] = "V",
+                ["w"] = "W",
+                ["x"] = "X",
+                ["y"] = "Y",
+                ["z"] = "Z",
+                ["µ"] = "Μ",
+                ["à"] = "À",
+                ["á"] = "Á",
+                ["â"] = "Â",
+                ["ã"] = "Ã",
+                ["ä"] = "Ä",
+                ["å"] = "Å",
+                ["æ"] = "Æ",
+                ["ç"] = "Ç",
+                ["è"] = "È",
+                ["é"] = "É",
+                ["ê"] = "Ê",
+                ["ë"] = "Ë",
+                ["ì"] = "Ì",
+                ["í"] = "Í",
+                ["î"] = "Î",
+                ["ï"] = "Ï",
+                ["ð"] = "Ð",
+                ["ñ"] = "Ñ",
+                ["ò"] = "Ò",
+                ["ó"] = "Ó",
+                ["ô"] = "Ô",
+                ["õ"] = "Õ",
+                ["ö"] = "Ö",
+                ["ø"] = "Ø",
+                ["ù"] = "Ù",
+                ["ú"] = "Ú",
+                ["û"] = "Û",
+                ["ü"] = "Ü",
+                ["ý"] = "Ý",
+                ["þ"] = "Þ",
+                ["ÿ"] = "Ÿ",
+                ["ā"] = "Ā",
+                ["ă"] = "Ă",
+                ["ą"] = "Ą",
+                ["ć"] = "Ć",
+                ["ĉ"] = "Ĉ",
+                ["ċ"] = "Ċ",
+                ["č"] = "Č",
+                ["ď"] = "Ď",
+                ["đ"] = "Đ",
+                ["ē"] = "Ē",
+                ["ĕ"] = "Ĕ",
+                ["ė"] = "Ė",
+                ["ę"] = "Ę",
+                ["ě"] = "Ě",
+                ["ĝ"] = "Ĝ",
+                ["ğ"] = "Ğ",
+                ["ġ"] = "Ġ",
+                ["ģ"] = "Ģ",
+                ["ĥ"] = "Ĥ",
+                ["ħ"] = "Ħ",
+                ["ĩ"] = "Ĩ",
+                ["ī"] = "Ī",
+                ["ĭ"] = "Ĭ",
+                ["į"] = "Į",
+                ["ı"] = "I",
+                ["ĳ"] = "Ĳ",
+                ["ĵ"] = "Ĵ",
+                ["ķ"] = "Ķ",
+                ["ĺ"] = "Ĺ",
+                ["ļ"] = "Ļ",
+                ["ľ"] = "Ľ",
+                ["ŀ"] = "Ŀ",
+                ["ł"] = "Ł",
+                ["ń"] = "Ń",
+                ["ņ"] = "Ņ",
+                ["ň"] = "Ň",
+                ["ŋ"] = "Ŋ",
+                ["ō"] = "Ō",
+                ["ŏ"] = "Ŏ",
+                ["ő"] = "Ő",
+                ["œ"] = "Œ",
+                ["ŕ"] = "Ŕ",
+                ["ŗ"] = "Ŗ",
+                ["ř"] = "Ř",
+                ["ś"] = "Ś",
+                ["ŝ"] = "Ŝ",
+                ["ş"] = "Ş",
+                ["š"] = "Š",
+                ["ţ"] = "Ţ",
+                ["ť"] = "Ť",
+                ["ŧ"] = "Ŧ",
+                ["ũ"] = "Ũ",
+                ["ū"] = "Ū",
+                ["ŭ"] = "Ŭ",
+                ["ů"] = "Ů",
+                ["ű"] = "Ű",
+                ["ų"] = "Ų",
+                ["ŵ"] = "Ŵ",
+                ["ŷ"] = "Ŷ",
+                ["ź"] = "Ź",
+                ["ż"] = "Ż",
+                ["ž"] = "Ž",
+                ["ſ"] = "S",
+                ["ƀ"] = "Ƀ",
+                ["ƃ"] = "Ƃ",
+                ["ƅ"] = "Ƅ",
+                ["ƈ"] = "Ƈ",
+                ["ƌ"] = "Ƌ",
+                ["ƒ"] = "Ƒ",
+                ["ƕ"] = "Ƕ",
+                ["ƙ"] = "Ƙ",
+                ["ƚ"] = "Ƚ",
+                ["ƞ"] = "Ƞ",
+                ["ơ"] = "Ơ",
+                ["ƣ"] = "Ƣ",
+                ["ƥ"] = "Ƥ",
+                ["ƨ"] = "Ƨ",
+                ["ƭ"] = "Ƭ",
+                ["ư"] = "Ư",
+                ["ƴ"] = "Ƴ",
+                ["ƶ"] = "Ƶ",
+                ["ƹ"] = "Ƹ",
+                ["ƽ"] = "Ƽ",
+                ["ƿ"] = "Ƿ",
+                ["ǅ"] = "Ǆ",
+                ["ǆ"] = "Ǆ",
+                ["ǈ"] = "Ǉ",
+                ["ǉ"] = "Ǉ",
+                ["ǋ"] = "Ǌ",
+                ["ǌ"] = "Ǌ",
+                ["ǎ"] = "Ǎ",
+                ["ǐ"] = "Ǐ",
+                ["ǒ"] = "Ǒ",
+                ["ǔ"] = "Ǔ",
+                ["ǖ"] = "Ǖ",
+                ["ǘ"] = "Ǘ",
+                ["ǚ"] = "Ǚ",
+                ["ǜ"] = "Ǜ",
+                ["ǝ"] = "Ǝ",
+                ["ǟ"] = "Ǟ",
+                ["ǡ"] = "Ǡ",
+                ["ǣ"] = "Ǣ",
+                ["ǥ"] = "Ǥ",
+                ["ǧ"] = "Ǧ",
+                ["ǩ"] = "Ǩ",
+                ["ǫ"] = "Ǫ",
+                ["ǭ"] = "Ǭ",
+                ["ǯ"] = "Ǯ",
+                ["ǲ"] = "Ǳ",
+                ["ǳ"] = "Ǳ",
+                ["ǵ"] = "Ǵ",
+                ["ǹ"] = "Ǹ",
+                ["ǻ"] = "Ǻ",
+                ["ǽ"] = "Ǽ",
+                ["ǿ"] = "Ǿ",
+                ["ȁ"] = "Ȁ",
+                ["ȃ"] = "Ȃ",
+                ["ȅ"] = "Ȅ",
+                ["ȇ"] = "Ȇ",
+                ["ȉ"] = "Ȉ",
+                ["ȋ"] = "Ȋ",
+                ["ȍ"] = "Ȍ",
+                ["ȏ"] = "Ȏ",
+                ["ȑ"] = "Ȑ",
+                ["ȓ"] = "Ȓ",
+                ["ȕ"] = "Ȕ",
+                ["ȗ"] = "Ȗ",
+                ["ș"] = "Ș",
+                ["ț"] = "Ț",
+                ["ȝ"] = "Ȝ",
+                ["ȟ"] = "Ȟ",
+                ["ȣ"] = "Ȣ",
+                ["ȥ"] = "Ȥ",
+                ["ȧ"] = "Ȧ",
+                ["ȩ"] = "Ȩ",
+                ["ȫ"] = "Ȫ",
+                ["ȭ"] = "Ȭ",
+                ["ȯ"] = "Ȯ",
+                ["ȱ"] = "Ȱ",
+                ["ȳ"] = "Ȳ",
+                ["ȼ"] = "Ȼ",
+                ["ɂ"] = "Ɂ",
+                ["ɇ"] = "Ɇ",
+                ["ɉ"] = "Ɉ",
+                ["ɋ"] = "Ɋ",
+                ["ɍ"] = "Ɍ",
+                ["ɏ"] = "Ɏ",
+                ["ɓ"] = "Ɓ",
+                ["ɔ"] = "Ɔ",
+                ["ɖ"] = "Ɖ",
+                ["ɗ"] = "Ɗ",
+                ["ə"] = "Ə",
+                ["ɛ"] = "Ɛ",
+                ["ɠ"] = "Ɠ",
+                ["ɣ"] = "Ɣ",
+                ["ɨ"] = "Ɨ",
+                ["ɩ"] = "Ɩ",
+                ["ɫ"] = "Ɫ",
+                ["ɯ"] = "Ɯ",
+                ["ɲ"] = "Ɲ",
+                ["ɵ"] = "Ɵ",
+                ["ɽ"] = "Ɽ",
+                ["ʀ"] = "Ʀ",
+                ["ʃ"] = "Ʃ",
+                ["ʈ"] = "Ʈ",
+                ["ʉ"] = "Ʉ",
+                ["ʊ"] = "Ʊ",
+                ["ʋ"] = "Ʋ",
+                ["ʌ"] = "Ʌ",
+                ["ʒ"] = "Ʒ",
+                ["ͅ"] = "Ι",
+                ["ͻ"] = "Ͻ",
+                ["ͼ"] = "Ͼ",
+                ["ͽ"] = "Ͽ",
+                ["ά"] = "Ά",
+                ["έ"] = "Έ",
+                ["ή"] = "Ή",
+                ["ί"] = "Ί",
+                ["α"] = "Α",
+                ["β"] = "Β",
+                ["γ"] = "Γ",
+                ["δ"] = "Δ",
+                ["ε"] = "Ε",
+                ["ζ"] = "Ζ",
+                ["η"] = "Η",
+                ["θ"] = "Θ",
+                ["ι"] = "Ι",
+                ["κ"] = "Κ",
+                ["λ"] = "Λ",
+                ["μ"] = "Μ",
+                ["ν"] = "Ν",
+                ["ξ"] = "Ξ",
+                ["ο"] = "Ο",
+                ["π"] = "Π",
+                ["ρ"] = "Ρ",
+                ["ς"] = "Σ",
+                ["σ"] = "Σ",
+                ["τ"] = "Τ",
+                ["υ"] = "Υ",
+                ["φ"] = "Φ",
+                ["χ"] = "Χ",
+                ["ψ"] = "Ψ",
+                ["ω"] = "Ω",
+                ["ϊ"] = "Ϊ",
+                ["ϋ"] = "Ϋ",
+                ["ό"] = "Ό",
+                ["ύ"] = "Ύ",
+                ["ώ"] = "Ώ",
+                ["ϐ"] = "Β",
+                ["ϑ"] = "Θ",
+                ["ϕ"] = "Φ",
+                ["ϖ"] = "Π",
+                ["ϙ"] = "Ϙ",
+                ["ϛ"] = "Ϛ",
+                ["ϝ"] = "Ϝ",
+                ["ϟ"] = "Ϟ",
+                ["ϡ"] = "Ϡ",
+                ["ϣ"] = "Ϣ",
+                ["ϥ"] = "Ϥ",
+                ["ϧ"] = "Ϧ",
+                ["ϩ"] = "Ϩ",
+                ["ϫ"] = "Ϫ",
+                ["ϭ"] = "Ϭ",
+                ["ϯ"] = "Ϯ",
+                ["ϰ"] = "Κ",
+                ["ϱ"] = "Ρ",
+                ["ϲ"] = "Ϲ",
+                ["ϵ"] = "Ε",
+                ["ϸ"] = "Ϸ",
+                ["ϻ"] = "Ϻ",
+                ["а"] = "А",
+                ["б"] = "Б",
+                ["в"] = "В",
+                ["г"] = "Г",
+                ["д"] = "Д",
+                ["е"] = "Е",
+                ["ж"] = "Ж",
+                ["з"] = "З",
+                ["и"] = "И",
+                ["й"] = "Й",
+                ["к"] = "К",
+                ["л"] = "Л",
+                ["м"] = "М",
+                ["н"] = "Н",
+                ["о"] = "О",
+                ["п"] = "П",
+                ["р"] = "Р",
+                ["с"] = "С",
+                ["т"] = "Т",
+                ["у"] = "У",
+                ["ф"] = "Ф",
+                ["х"] = "Х",
+                ["ц"] = "Ц",
+                ["ч"] = "Ч",
+                ["ш"] = "Ш",
+                ["щ"] = "Щ",
+                ["ъ"] = "Ъ",
+                ["ы"] = "Ы",
+                ["ь"] = "Ь",
+                ["э"] = "Э",
+                ["ю"] = "Ю",
+                ["я"] = "Я",
+                ["ѐ"] = "Ѐ",
+                ["ё"] = "Ё",
+                ["ђ"] = "Ђ",
+                ["ѓ"] = "Ѓ",
+                ["є"] = "Є",
+                ["ѕ"] = "Ѕ",
+                ["і"] = "І",
+                ["ї"] = "Ї",
+                ["ј"] = "Ј",
+                ["љ"] = "Љ",
+                ["њ"] = "Њ",
+                ["ћ"] = "Ћ",
+                ["ќ"] = "Ќ",
+                ["ѝ"] = "Ѝ",
+                ["ў"] = "Ў",
+                ["џ"] = "Џ",
+                ["ѡ"] = "Ѡ",
+                ["ѣ"] = "Ѣ",
+                ["ѥ"] = "Ѥ",
+                ["ѧ"] = "Ѧ",
+                ["ѩ"] = "Ѩ",
+                ["ѫ"] = "Ѫ",
+                ["ѭ"] = "Ѭ",
+                ["ѯ"] = "Ѯ",
+                ["ѱ"] = "Ѱ",
+                ["ѳ"] = "Ѳ",
+                ["ѵ"] = "Ѵ",
+                ["ѷ"] = "Ѷ",
+                ["ѹ"] = "Ѹ",
+                ["ѻ"] = "Ѻ",
+                ["ѽ"] = "Ѽ",
+                ["ѿ"] = "Ѿ",
+                ["ҁ"] = "Ҁ",
+                ["ҋ"] = "Ҋ",
+                ["ҍ"] = "Ҍ",
+                ["ҏ"] = "Ҏ",
+                ["ґ"] = "Ґ",
+                ["ғ"] = "Ғ",
+                ["ҕ"] = "Ҕ",
+                ["җ"] = "Җ",
+                ["ҙ"] = "Ҙ",
+                ["қ"] = "Қ",
+                ["ҝ"] = "Ҝ",
+                ["ҟ"] = "Ҟ",
+                ["ҡ"] = "Ҡ",
+                ["ң"] = "Ң",
+                ["ҥ"] = "Ҥ",
+                ["ҧ"] = "Ҧ",
+                ["ҩ"] = "Ҩ",
+                ["ҫ"] = "Ҫ",
+                ["ҭ"] = "Ҭ",
+                ["ү"] = "Ү",
+                ["ұ"] = "Ұ",
+                ["ҳ"] = "Ҳ",
+                ["ҵ"] = "Ҵ",
+                ["ҷ"] = "Ҷ",
+                ["ҹ"] = "Ҹ",
+                ["һ"] = "Һ",
+                ["ҽ"] = "Ҽ",
+                ["ҿ"] = "Ҿ",
+                ["ӂ"] = "Ӂ",
+                ["ӄ"] = "Ӄ",
+                ["ӆ"] = "Ӆ",
+                ["ӈ"] = "Ӈ",
+                ["ӊ"] = "Ӊ",
+                ["ӌ"] = "Ӌ",
+                ["ӎ"] = "Ӎ",
+                ["ӏ"] = "Ӏ",
+                ["ӑ"] = "Ӑ",
+                ["ӓ"] = "Ӓ",
+                ["ӕ"] = "Ӕ",
+                ["ӗ"] = "Ӗ",
+                ["ә"] = "Ә",
+                ["ӛ"] = "Ӛ",
+                ["ӝ"] = "Ӝ",
+                ["ӟ"] = "Ӟ",
+                ["ӡ"] = "Ӡ",
+                ["ӣ"] = "Ӣ",
+                ["ӥ"] = "Ӥ",
+                ["ӧ"] = "Ӧ",
+                ["ө"] = "Ө",
+                ["ӫ"] = "Ӫ",
+                ["ӭ"] = "Ӭ",
+                ["ӯ"] = "Ӯ",
+                ["ӱ"] = "Ӱ",
+                ["ӳ"] = "Ӳ",
+                ["ӵ"] = "Ӵ",
+                ["ӷ"] = "Ӷ",
+                ["ӹ"] = "Ӹ",
+                ["ӻ"] = "Ӻ",
+                ["ӽ"] = "Ӽ",
+                ["ӿ"] = "Ӿ",
+                ["ԁ"] = "Ԁ",
+                ["ԃ"] = "Ԃ",
+                ["ԅ"] = "Ԅ",
+                ["ԇ"] = "Ԇ",
+                ["ԉ"] = "Ԉ",
+                ["ԋ"] = "Ԋ",
+                ["ԍ"] = "Ԍ",
+                ["ԏ"] = "Ԏ",
+                ["ԑ"] = "Ԑ",
+                ["ԓ"] = "Ԓ",
+                ["ա"] = "Ա",
+                ["բ"] = "Բ",
+                ["գ"] = "Գ",
+                ["դ"] = "Դ",
+                ["ե"] = "Ե",
+                ["զ"] = "Զ",
+                ["է"] = "Է",
+                ["ը"] = "Ը",
+                ["թ"] = "Թ",
+                ["ժ"] = "Ժ",
+                ["ի"] = "Ի",
+                ["լ"] = "Լ",
+                ["խ"] = "Խ",
+                ["ծ"] = "Ծ",
+                ["կ"] = "Կ",
+                ["հ"] = "Հ",
+                ["ձ"] = "Ձ",
+                ["ղ"] = "Ղ",
+                ["ճ"] = "Ճ",
+                ["մ"] = "Մ",
+                ["յ"] = "Յ",
+                ["ն"] = "Ն",
+                ["շ"] = "Շ",
+                ["ո"] = "Ո",
+                ["չ"] = "Չ",
+                ["պ"] = "Պ",
+                ["ջ"] = "Ջ",
+                ["ռ"] = "Ռ",
+                ["ս"] = "Ս",
+                ["վ"] = "Վ",
+                ["տ"] = "Տ",
+                ["ր"] = "Ր",
+                ["ց"] = "Ց",
+                ["ւ"] = "Ւ",
+                ["փ"] = "Փ",
+                ["ք"] = "Ք",
+                ["օ"] = "Օ",
+                ["ֆ"] = "Ֆ",
+                ["ᵽ"] = "Ᵽ",
+                ["ḁ"] = "Ḁ",
+                ["ḃ"] = "Ḃ",
+                ["ḅ"] = "Ḅ",
+                ["ḇ"] = "Ḇ",
+                ["ḉ"] = "Ḉ",
+                ["ḋ"] = "Ḋ",
+                ["ḍ"] = "Ḍ",
+                ["ḏ"] = "Ḏ",
+                ["ḑ"] = "Ḑ",
+                ["ḓ"] = "Ḓ",
+                ["ḕ"] = "Ḕ",
+                ["ḗ"] = "Ḗ",
+                ["ḙ"] = "Ḙ",
+                ["ḛ"] = "Ḛ",
+                ["ḝ"] = "Ḝ",
+                ["ḟ"] = "Ḟ",
+                ["ḡ"] = "Ḡ",
+                ["ḣ"] = "Ḣ",
+                ["ḥ"] = "Ḥ",
+                ["ḧ"] = "Ḧ",
+                ["ḩ"] = "Ḩ",
+                ["ḫ"] = "Ḫ",
+                ["ḭ"] = "Ḭ",
+                ["ḯ"] = "Ḯ",
+                ["ḱ"] = "Ḱ",
+                ["ḳ"] = "Ḳ",
+                ["ḵ"] = "Ḵ",
+                ["ḷ"] = "Ḷ",
+                ["ḹ"] = "Ḹ",
+                ["ḻ"] = "Ḻ",
+                ["ḽ"] = "Ḽ",
+                ["ḿ"] = "Ḿ",
+                ["ṁ"] = "Ṁ",
+                ["ṃ"] = "Ṃ",
+                ["ṅ"] = "Ṅ",
+                ["ṇ"] = "Ṇ",
+                ["ṉ"] = "Ṉ",
+                ["ṋ"] = "Ṋ",
+                ["ṍ"] = "Ṍ",
+                ["ṏ"] = "Ṏ",
+                ["ṑ"] = "Ṑ",
+                ["ṓ"] = "Ṓ",
+                ["ṕ"] = "Ṕ",
+                ["ṗ"] = "Ṗ",
+                ["ṙ"] = "Ṙ",
+                ["ṛ"] = "Ṛ",
+                ["ṝ"] = "Ṝ",
+                ["ṟ"] = "Ṟ",
+                ["ṡ"] = "Ṡ",
+                ["ṣ"] = "Ṣ",
+                ["ṥ"] = "Ṥ",
+                ["ṧ"] = "Ṧ",
+                ["ṩ"] = "Ṩ",
+                ["ṫ"] = "Ṫ",
+                ["ṭ"] = "Ṭ",
+                ["ṯ"] = "Ṯ",
+                ["ṱ"] = "Ṱ",
+                ["ṳ"] = "Ṳ",
+                ["ṵ"] = "Ṵ",
+                ["ṷ"] = "Ṷ",
+                ["ṹ"] = "Ṹ",
+                ["ṻ"] = "Ṻ",
+                ["ṽ"] = "Ṽ",
+                ["ṿ"] = "Ṿ",
+                ["ẁ"] = "Ẁ",
+                ["ẃ"] = "Ẃ",
+                ["ẅ"] = "Ẅ",
+                ["ẇ"] = "Ẇ",
+                ["ẉ"] = "Ẉ",
+                ["ẋ"] = "Ẋ",
+                ["ẍ"] = "Ẍ",
+                ["ẏ"] = "Ẏ",
+                ["ẑ"] = "Ẑ",
+                ["ẓ"] = "Ẓ",
+                ["ẕ"] = "Ẕ",
+                ["ẛ"] = "Ṡ",
+                ["ạ"] = "Ạ",
+                ["ả"] = "Ả",
+                ["ấ"] = "Ấ",
+                ["ầ"] = "Ầ",
+                ["ẩ"] = "Ẩ",
+                ["ẫ"] = "Ẫ",
+                ["ậ"] = "Ậ",
+                ["ắ"] = "Ắ",
+                ["ằ"] = "Ằ",
+                ["ẳ"] = "Ẳ",
+                ["ẵ"] = "Ẵ",
+                ["ặ"] = "Ặ",
+                ["ẹ"] = "Ẹ",
+                ["ẻ"] = "Ẻ",
+                ["ẽ"] = "Ẽ",
+                ["ế"] = "Ế",
+                ["ề"] = "Ề",
+                ["ể"] = "Ể",
+                ["ễ"] = "Ễ",
+                ["ệ"] = "Ệ",
+                ["ỉ"] = "Ỉ",
+                ["ị"] = "Ị",
+                ["ọ"] = "Ọ",
+                ["ỏ"] = "Ỏ",
+                ["ố"] = "Ố",
+                ["ồ"] = "Ồ",
+                ["ổ"] = "Ổ",
+                ["ỗ"] = "Ỗ",
+                ["ộ"] = "Ộ",
+                ["ớ"] = "Ớ",
+                ["ờ"] = "Ờ",
+                ["ở"] = "Ở",
+                ["ỡ"] = "Ỡ",
+                ["ợ"] = "Ợ",
+                ["ụ"] = "Ụ",
+                ["ủ"] = "Ủ",
+                ["ứ"] = "Ứ",
+                ["ừ"] = "Ừ",
+                ["ử"] = "Ử",
+                ["ữ"] = "Ữ",
+                ["ự"] = "Ự",
+                ["ỳ"] = "Ỳ",
+                ["ỵ"] = "Ỵ",
+                ["ỷ"] = "Ỷ",
+                ["ỹ"] = "Ỹ",
+                ["ἀ"] = "Ἀ",
+                ["ἁ"] = "Ἁ",
+                ["ἂ"] = "Ἂ",
+                ["ἃ"] = "Ἃ",
+                ["ἄ"] = "Ἄ",
+                ["ἅ"] = "Ἅ",
+                ["ἆ"] = "Ἆ",
+                ["ἇ"] = "Ἇ",
+                ["ἐ"] = "Ἐ",
+                ["ἑ"] = "Ἑ",
+                ["ἒ"] = "Ἒ",
+                ["ἓ"] = "Ἓ",
+                ["ἔ"] = "Ἔ",
+                ["ἕ"] = "Ἕ",
+                ["ἠ"] = "Ἠ",
+                ["ἡ"] = "Ἡ",
+                ["ἢ"] = "Ἢ",
+                ["ἣ"] = "Ἣ",
+                ["ἤ"] = "Ἤ",
+                ["ἥ"] = "Ἥ",
+                ["ἦ"] = "Ἦ",
+                ["ἧ"] = "Ἧ",
+                ["ἰ"] = "Ἰ",
+                ["ἱ"] = "Ἱ",
+                ["ἲ"] = "Ἲ",
+                ["ἳ"] = "Ἳ",
+                ["ἴ"] = "Ἴ",
+                ["ἵ"] = "Ἵ",
+                ["ἶ"] = "Ἶ",
+                ["ἷ"] = "Ἷ",
+                ["ὀ"] = "Ὀ",
+                ["ὁ"] = "Ὁ",
+                ["ὂ"] = "Ὂ",
+                ["ὃ"] = "Ὃ",
+                ["ὄ"] = "Ὄ",
+                ["ὅ"] = "Ὅ",
+                ["ὑ"] = "Ὑ",
+                ["ὓ"] = "Ὓ",
+                ["ὕ"] = "Ὕ",
+                ["ὗ"] = "Ὗ",
+                ["ὠ"] = "Ὠ",
+                ["ὡ"] = "Ὡ",
+                ["ὢ"] = "Ὢ",
+                ["ὣ"] = "Ὣ",
+                ["ὤ"] = "Ὤ",
+                ["ὥ"] = "Ὥ",
+                ["ὦ"] = "Ὦ",
+                ["ὧ"] = "Ὧ",
+                ["ὰ"] = "Ὰ",
+                ["ά"] = "Ά",
+                ["ὲ"] = "Ὲ",
+                ["έ"] = "Έ",
+                ["ὴ"] = "Ὴ",
+                ["ή"] = "Ή",
+                ["ὶ"] = "Ὶ",
+                ["ί"] = "Ί",
+                ["ὸ"] = "Ὸ",
+                ["ό"] = "Ό",
+                ["ὺ"] = "Ὺ",
+                ["ύ"] = "Ύ",
+                ["ὼ"] = "Ὼ",
+                ["ώ"] = "Ώ",
+                ["ᾀ"] = "ᾈ",
+                ["ᾁ"] = "ᾉ",
+                ["ᾂ"] = "ᾊ",
+                ["ᾃ"] = "ᾋ",
+                ["ᾄ"] = "ᾌ",
+                ["ᾅ"] = "ᾍ",
+                ["ᾆ"] = "ᾎ",
+                ["ᾇ"] = "ᾏ",
+                ["ᾐ"] = "ᾘ",
+                ["ᾑ"] = "ᾙ",
+                ["ᾒ"] = "ᾚ",
+                ["ᾓ"] = "ᾛ",
+                ["ᾔ"] = "ᾜ",
+                ["ᾕ"] = "ᾝ",
+                ["ᾖ"] = "ᾞ",
+                ["ᾗ"] = "ᾟ",
+                ["ᾠ"] = "ᾨ",
+                ["ᾡ"] = "ᾩ",
+                ["ᾢ"] = "ᾪ",
+                ["ᾣ"] = "ᾫ",
+                ["ᾤ"] = "ᾬ",
+                ["ᾥ"] = "ᾭ",
+                ["ᾦ"] = "ᾮ",
+                ["ᾧ"] = "ᾯ",
+                ["ᾰ"] = "Ᾰ",
+                ["ᾱ"] = "Ᾱ",
+                ["ᾳ"] = "ᾼ",
+                ["ι"] = "Ι",
+                ["ῃ"] = "ῌ",
+                ["ῐ"] = "Ῐ",
+                ["ῑ"] = "Ῑ",
+                ["ῠ"] = "Ῠ",
+                ["ῡ"] = "Ῡ",
+                ["ῥ"] = "Ῥ",
+                ["ῳ"] = "ῼ",
+                ["ⅎ"] = "Ⅎ",
+                ["ⅰ"] = "Ⅰ",
+                ["ⅱ"] = "Ⅱ",
+                ["ⅲ"] = "Ⅲ",
+                ["ⅳ"] = "Ⅳ",
+                ["ⅴ"] = "Ⅴ",
+                ["ⅵ"] = "Ⅵ",
+                ["ⅶ"] = "Ⅶ",
+                ["ⅷ"] = "Ⅷ",
+                ["ⅸ"] = "Ⅸ",
+                ["ⅹ"] = "Ⅹ",
+                ["ⅺ"] = "Ⅺ",
+                ["ⅻ"] = "Ⅻ",
+                ["ⅼ"] = "Ⅼ",
+                ["ⅽ"] = "Ⅽ",
+                ["ⅾ"] = "Ⅾ",
+                ["ⅿ"] = "Ⅿ",
+                ["ↄ"] = "Ↄ",
+                ["ⓐ"] = "Ⓐ",
+                ["ⓑ"] = "Ⓑ",
+                ["ⓒ"] = "Ⓒ",
+                ["ⓓ"] = "Ⓓ",
+                ["ⓔ"] = "Ⓔ",
+                ["ⓕ"] = "Ⓕ",
+                ["ⓖ"] = "Ⓖ",
+                ["ⓗ"] = "Ⓗ",
+                ["ⓘ"] = "Ⓘ",
+                ["ⓙ"] = "Ⓙ",
+                ["ⓚ"] = "Ⓚ",
+                ["ⓛ"] = "Ⓛ",
+                ["ⓜ"] = "Ⓜ",
+                ["ⓝ"] = "Ⓝ",
+                ["ⓞ"] = "Ⓞ",
+                ["ⓟ"] = "Ⓟ",
+                ["ⓠ"] = "Ⓠ",
+                ["ⓡ"] = "Ⓡ",
+                ["ⓢ"] = "Ⓢ",
+                ["ⓣ"] = "Ⓣ",
+                ["ⓤ"] = "Ⓤ",
+                ["ⓥ"] = "Ⓥ",
+                ["ⓦ"] = "Ⓦ",
+                ["ⓧ"] = "Ⓧ",
+                ["ⓨ"] = "Ⓨ",
+                ["ⓩ"] = "Ⓩ",
+                ["ⰰ"] = "Ⰰ",
+                ["ⰱ"] = "Ⰱ",
+                ["ⰲ"] = "Ⰲ",
+                ["ⰳ"] = "Ⰳ",
+                ["ⰴ"] = "Ⰴ",
+                ["ⰵ"] = "Ⰵ",
+                ["ⰶ"] = "Ⰶ",
+                ["ⰷ"] = "Ⰷ",
+                ["ⰸ"] = "Ⰸ",
+                ["ⰹ"] = "Ⰹ",
+                ["ⰺ"] = "Ⰺ",
+                ["ⰻ"] = "Ⰻ",
+                ["ⰼ"] = "Ⰼ",
+                ["ⰽ"] = "Ⰽ",
+                ["ⰾ"] = "Ⰾ",
+                ["ⰿ"] = "Ⰿ",
+                ["ⱀ"] = "Ⱀ",
+                ["ⱁ"] = "Ⱁ",
+                ["ⱂ"] = "Ⱂ",
+                ["ⱃ"] = "Ⱃ",
+                ["ⱄ"] = "Ⱄ",
+                ["ⱅ"] = "Ⱅ",
+                ["ⱆ"] = "Ⱆ",
+                ["ⱇ"] = "Ⱇ",
+                ["ⱈ"] = "Ⱈ",
+                ["ⱉ"] = "Ⱉ",
+                ["ⱊ"] = "Ⱊ",
+                ["ⱋ"] = "Ⱋ",
+                ["ⱌ"] = "Ⱌ",
+                ["ⱍ"] = "Ⱍ",
+                ["ⱎ"] = "Ⱎ",
+                ["ⱏ"] = "Ⱏ",
+                ["ⱐ"] = "Ⱐ",
+                ["ⱑ"] = "Ⱑ",
+                ["ⱒ"] = "Ⱒ",
+                ["ⱓ"] = "Ⱓ",
+                ["ⱔ"] = "Ⱔ",
+                ["ⱕ"] = "Ⱕ",
+                ["ⱖ"] = "Ⱖ",
+                ["ⱗ"] = "Ⱗ",
+                ["ⱘ"] = "Ⱘ",
+                ["ⱙ"] = "Ⱙ",
+                ["ⱚ"] = "Ⱚ",
+                ["ⱛ"] = "Ⱛ",
+                ["ⱜ"] = "Ⱜ",
+                ["ⱝ"] = "Ⱝ",
+                ["ⱞ"] = "Ⱞ",
+                ["ⱡ"] = "Ⱡ",
+                ["ⱥ"] = "Ⱥ",
+                ["ⱦ"] = "Ⱦ",
+                ["ⱨ"] = "Ⱨ",
+                ["ⱪ"] = "Ⱪ",
+                ["ⱬ"] = "Ⱬ",
+                ["ⱶ"] = "Ⱶ",
+                ["ⲁ"] = "Ⲁ",
+                ["ⲃ"] = "Ⲃ",
+                ["ⲅ"] = "Ⲅ",
+                ["ⲇ"] = "Ⲇ",
+                ["ⲉ"] = "Ⲉ",
+                ["ⲋ"] = "Ⲋ",
+                ["ⲍ"] = "Ⲍ",
+                ["ⲏ"] = "Ⲏ",
+                ["ⲑ"] = "Ⲑ",
+                ["ⲓ"] = "Ⲓ",
+                ["ⲕ"] = "Ⲕ",
+                ["ⲗ"] = "Ⲗ",
+                ["ⲙ"] = "Ⲙ",
+                ["ⲛ"] = "Ⲛ",
+                ["ⲝ"] = "Ⲝ",
+                ["ⲟ"] = "Ⲟ",
+                ["ⲡ"] = "Ⲡ",
+                ["ⲣ"] = "Ⲣ",
+                ["ⲥ"] = "Ⲥ",
+                ["ⲧ"] = "Ⲧ",
+                ["ⲩ"] = "Ⲩ",
+                ["ⲫ"] = "Ⲫ",
+                ["ⲭ"] = "Ⲭ",
+                ["ⲯ"] = "Ⲯ",
+                ["ⲱ"] = "Ⲱ",
+                ["ⲳ"] = "Ⲳ",
+                ["ⲵ"] = "Ⲵ",
+                ["ⲷ"] = "Ⲷ",
+                ["ⲹ"] = "Ⲹ",
+                ["ⲻ"] = "Ⲻ",
+                ["ⲽ"] = "Ⲽ",
+                ["ⲿ"] = "Ⲿ",
+                ["ⳁ"] = "Ⳁ",
+                ["ⳃ"] = "Ⳃ",
+                ["ⳅ"] = "Ⳅ",
+                ["ⳇ"] = "Ⳇ",
+                ["ⳉ"] = "Ⳉ",
+                ["ⳋ"] = "Ⳋ",
+                ["ⳍ"] = "Ⳍ",
+                ["ⳏ"] = "Ⳏ",
+                ["ⳑ"] = "Ⳑ",
+                ["ⳓ"] = "Ⳓ",
+                ["ⳕ"] = "Ⳕ",
+                ["ⳗ"] = "Ⳗ",
+                ["ⳙ"] = "Ⳙ",
+                ["ⳛ"] = "Ⳛ",
+                ["ⳝ"] = "Ⳝ",
+                ["ⳟ"] = "Ⳟ",
+                ["ⳡ"] = "Ⳡ",
+                ["ⳣ"] = "Ⳣ",
+                ["ⴀ"] = "Ⴀ",
+                ["ⴁ"] = "Ⴁ",
+                ["ⴂ"] = "Ⴂ",
+                ["ⴃ"] = "Ⴃ",
+                ["ⴄ"] = "Ⴄ",
+                ["ⴅ"] = "Ⴅ",
+                ["ⴆ"] = "Ⴆ",
+                ["ⴇ"] = "Ⴇ",
+                ["ⴈ"] = "Ⴈ",
+                ["ⴉ"] = "Ⴉ",
+                ["ⴊ"] = "Ⴊ",
+                ["ⴋ"] = "Ⴋ",
+                ["ⴌ"] = "Ⴌ",
+                ["ⴍ"] = "Ⴍ",
+                ["ⴎ"] = "Ⴎ",
+                ["ⴏ"] = "Ⴏ",
+                ["ⴐ"] = "Ⴐ",
+                ["ⴑ"] = "Ⴑ",
+                ["ⴒ"] = "Ⴒ",
+                ["ⴓ"] = "Ⴓ",
+                ["ⴔ"] = "Ⴔ",
+                ["ⴕ"] = "Ⴕ",
+                ["ⴖ"] = "Ⴖ",
+                ["ⴗ"] = "Ⴗ",
+                ["ⴘ"] = "Ⴘ",
+                ["ⴙ"] = "Ⴙ",
+                ["ⴚ"] = "Ⴚ",
+                ["ⴛ"] = "Ⴛ",
+                ["ⴜ"] = "Ⴜ",
+                ["ⴝ"] = "Ⴝ",
+                ["ⴞ"] = "Ⴞ",
+                ["ⴟ"] = "Ⴟ",
+                ["ⴠ"] = "Ⴠ",
+                ["ⴡ"] = "Ⴡ",
+                ["ⴢ"] = "Ⴢ",
+                ["ⴣ"] = "Ⴣ",
+                ["ⴤ"] = "Ⴤ",
+                ["ⴥ"] = "Ⴥ",
+                ["ａ"] = "Ａ",
+                ["ｂ"] = "Ｂ",
+                ["ｃ"] = "Ｃ",
+                ["ｄ"] = "Ｄ",
+                ["ｅ"] = "Ｅ",
+                ["ｆ"] = "Ｆ",
+                ["ｇ"] = "Ｇ",
+                ["ｈ"] = "Ｈ",
+                ["ｉ"] = "Ｉ",
+                ["ｊ"] = "Ｊ",
+                ["ｋ"] = "Ｋ",
+                ["ｌ"] = "Ｌ",
+                ["ｍ"] = "Ｍ",
+                ["ｎ"] = "Ｎ",
+                ["ｏ"] = "Ｏ",
+                ["ｐ"] = "Ｐ",
+                ["ｑ"] = "Ｑ",
+                ["ｒ"] = "Ｒ",
+                ["ｓ"] = "Ｓ",
+                ["ｔ"] = "Ｔ",
+                ["ｕ"] = "Ｕ",
+                ["ｖ"] = "Ｖ",
+                ["ｗ"] = "Ｗ",
+                ["ｘ"] = "Ｘ",
+                ["ｙ"] = "Ｙ",
+                ["ｚ"] = "Ｚ",
+                ["𐐨"] = "𐐀",
+                ["𐐩"] = "𐐁",
+                ["𐐪"] = "𐐂",
+                ["𐐫"] = "𐐃",
+                ["𐐬"] = "𐐄",
+                ["𐐭"] = "𐐅",
+                ["𐐮"] = "𐐆",
+                ["𐐯"] = "𐐇",
+                ["𐐰"] = "𐐈",
+                ["𐐱"] = "𐐉",
+                ["𐐲"] = "𐐊",
+                ["𐐳"] = "𐐋",
+                ["𐐴"] = "𐐌",
+                ["𐐵"] = "𐐍",
+                ["𐐶"] = "𐐎",
+                ["𐐷"] = "𐐏",
+                ["𐐸"] = "𐐐",
+                ["𐐹"] = "𐐑",
+                ["𐐺"] = "𐐒",
+                ["𐐻"] = "𐐓",
+                ["𐐼"] = "𐐔",
+                ["𐐽"] = "𐐕",
+                ["𐐾"] = "𐐖",
+                ["𐐿"] = "𐐗",
+                ["𐑀"] = "𐐘",
+                ["𐑁"] = "𐐙",
+                ["𐑂"] = "𐐚",
+                ["𐑃"] = "𐐛",
+                ["𐑄"] = "𐐜",
+                ["𐑅"] = "𐐝",
+                ["𐑆"] = "𐐞",
+                ["𐑇"] = "𐐟",
+                ["𐑈"] = "𐐠",
+                ["𐑉"] = "𐐡",
+                ["𐑊"] = "𐐢",
+                ["𐑋"] = "𐐣",
+                ["𐑌"] = "𐐤",
+                ["𐑍"] = "𐐥",
+                ["𐑎"] = "𐐦",
+                ["𐑏"] = "𐐧",
+            }
+
+            local utf8_uc_lc = {
+                ["A"] = "a",
+                ["B"] = "b",
+                ["C"] = "c",
+                ["D"] = "d",
+                ["E"] = "e",
+                ["F"] = "f",
+                ["G"] = "g",
+                ["H"] = "h",
+                ["I"] = "i",
+                ["J"] = "j",
+                ["K"] = "k",
+                ["L"] = "l",
+                ["M"] = "m",
+                ["N"] = "n",
+                ["O"] = "o",
+                ["P"] = "p",
+                ["Q"] = "q",
+                ["R"] = "r",
+                ["S"] = "s",
+                ["T"] = "t",
+                ["U"] = "u",
+                ["V"] = "v",
+                ["W"] = "w",
+                ["X"] = "x",
+                ["Y"] = "y",
+                ["Z"] = "z",
+                ["À"] = "à",
+                ["Á"] = "á",
+                ["Â"] = "â",
+                ["Ã"] = "ã",
+                ["Ä"] = "ä",
+                ["Å"] = "å",
+                ["Æ"] = "æ",
+                ["Ç"] = "ç",
+                ["È"] = "è",
+                ["É"] = "é",
+                ["Ê"] = "ê",
+                ["Ë"] = "ë",
+                ["Ì"] = "ì",
+                ["Í"] = "í",
+                ["Î"] = "î",
+                ["Ï"] = "ï",
+                ["Ð"] = "ð",
+                ["Ñ"] = "ñ",
+                ["Ò"] = "ò",
+                ["Ó"] = "ó",
+                ["Ô"] = "ô",
+                ["Õ"] = "õ",
+                ["Ö"] = "ö",
+                ["Ø"] = "ø",
+                ["Ù"] = "ù",
+                ["Ú"] = "ú",
+                ["Û"] = "û",
+                ["Ü"] = "ü",
+                ["Ý"] = "ý",
+                ["Þ"] = "þ",
+                ["Ā"] = "ā",
+                ["Ă"] = "ă",
+                ["Ą"] = "ą",
+                ["Ć"] = "ć",
+                ["Ĉ"] = "ĉ",
+                ["Ċ"] = "ċ",
+                ["Č"] = "č",
+                ["Ď"] = "ď",
+                ["Đ"] = "đ",
+                ["Ē"] = "ē",
+                ["Ĕ"] = "ĕ",
+                ["Ė"] = "ė",
+                ["Ę"] = "ę",
+                ["Ě"] = "ě",
+                ["Ĝ"] = "ĝ",
+                ["Ğ"] = "ğ",
+                ["Ġ"] = "ġ",
+                ["Ģ"] = "ģ",
+                ["Ĥ"] = "ĥ",
+                ["Ħ"] = "ħ",
+                ["Ĩ"] = "ĩ",
+                ["Ī"] = "ī",
+                ["Ĭ"] = "ĭ",
+                ["Į"] = "į",
+                ["İ"] = "i",
+                ["Ĳ"] = "ĳ",
+                ["Ĵ"] = "ĵ",
+                ["Ķ"] = "ķ",
+                ["Ĺ"] = "ĺ",
+                ["Ļ"] = "ļ",
+                ["Ľ"] = "ľ",
+                ["Ŀ"] = "ŀ",
+                ["Ł"] = "ł",
+                ["Ń"] = "ń",
+                ["Ņ"] = "ņ",
+                ["Ň"] = "ň",
+                ["Ŋ"] = "ŋ",
+                ["Ō"] = "ō",
+                ["Ŏ"] = "ŏ",
+                ["Ő"] = "ő",
+                ["Œ"] = "œ",
+                ["Ŕ"] = "ŕ",
+                ["Ŗ"] = "ŗ",
+                ["Ř"] = "ř",
+                ["Ś"] = "ś",
+                ["Ŝ"] = "ŝ",
+                ["Ş"] = "ş",
+                ["Š"] = "š",
+                ["Ţ"] = "ţ",
+                ["Ť"] = "ť",
+                ["Ŧ"] = "ŧ",
+                ["Ũ"] = "ũ",
+                ["Ū"] = "ū",
+                ["Ŭ"] = "ŭ",
+                ["Ů"] = "ů",
+                ["Ű"] = "ű",
+                ["Ų"] = "ų",
+                ["Ŵ"] = "ŵ",
+                ["Ŷ"] = "ŷ",
+                ["Ÿ"] = "ÿ",
+                ["Ź"] = "ź",
+                ["Ż"] = "ż",
+                ["Ž"] = "ž",
+                ["Ɓ"] = "ɓ",
+                ["Ƃ"] = "ƃ",
+                ["Ƅ"] = "ƅ",
+                ["Ɔ"] = "ɔ",
+                ["Ƈ"] = "ƈ",
+                ["Ɖ"] = "ɖ",
+                ["Ɗ"] = "ɗ",
+                ["Ƌ"] = "ƌ",
+                ["Ǝ"] = "ǝ",
+                ["Ə"] = "ə",
+                ["Ɛ"] = "ɛ",
+                ["Ƒ"] = "ƒ",
+                ["Ɠ"] = "ɠ",
+                ["Ɣ"] = "ɣ",
+                ["Ɩ"] = "ɩ",
+                ["Ɨ"] = "ɨ",
+                ["Ƙ"] = "ƙ",
+                ["Ɯ"] = "ɯ",
+                ["Ɲ"] = "ɲ",
+                ["Ɵ"] = "ɵ",
+                ["Ơ"] = "ơ",
+                ["Ƣ"] = "ƣ",
+                ["Ƥ"] = "ƥ",
+                ["Ʀ"] = "ʀ",
+                ["Ƨ"] = "ƨ",
+                ["Ʃ"] = "ʃ",
+                ["Ƭ"] = "ƭ",
+                ["Ʈ"] = "ʈ",
+                ["Ư"] = "ư",
+                ["Ʊ"] = "ʊ",
+                ["Ʋ"] = "ʋ",
+                ["Ƴ"] = "ƴ",
+                ["Ƶ"] = "ƶ",
+                ["Ʒ"] = "ʒ",
+                ["Ƹ"] = "ƹ",
+                ["Ƽ"] = "ƽ",
+                ["Ǆ"] = "ǆ",
+                ["ǅ"] = "ǆ",
+                ["Ǉ"] = "ǉ",
+                ["ǈ"] = "ǉ",
+                ["Ǌ"] = "ǌ",
+                ["ǋ"] = "ǌ",
+                ["Ǎ"] = "ǎ",
+                ["Ǐ"] = "ǐ",
+                ["Ǒ"] = "ǒ",
+                ["Ǔ"] = "ǔ",
+                ["Ǖ"] = "ǖ",
+                ["Ǘ"] = "ǘ",
+                ["Ǚ"] = "ǚ",
+                ["Ǜ"] = "ǜ",
+                ["Ǟ"] = "ǟ",
+                ["Ǡ"] = "ǡ",
+                ["Ǣ"] = "ǣ",
+                ["Ǥ"] = "ǥ",
+                ["Ǧ"] = "ǧ",
+                ["Ǩ"] = "ǩ",
+                ["Ǫ"] = "ǫ",
+                ["Ǭ"] = "ǭ",
+                ["Ǯ"] = "ǯ",
+                ["Ǳ"] = "ǳ",
+                ["ǲ"] = "ǳ",
+                ["Ǵ"] = "ǵ",
+                ["Ƕ"] = "ƕ",
+                ["Ƿ"] = "ƿ",
+                ["Ǹ"] = "ǹ",
+                ["Ǻ"] = "ǻ",
+                ["Ǽ"] = "ǽ",
+                ["Ǿ"] = "ǿ",
+                ["Ȁ"] = "ȁ",
+                ["Ȃ"] = "ȃ",
+                ["Ȅ"] = "ȅ",
+                ["Ȇ"] = "ȇ",
+                ["Ȉ"] = "ȉ",
+                ["Ȋ"] = "ȋ",
+                ["Ȍ"] = "ȍ",
+                ["Ȏ"] = "ȏ",
+                ["Ȑ"] = "ȑ",
+                ["Ȓ"] = "ȓ",
+                ["Ȕ"] = "ȕ",
+                ["Ȗ"] = "ȗ",
+                ["Ș"] = "ș",
+                ["Ț"] = "ț",
+                ["Ȝ"] = "ȝ",
+                ["Ȟ"] = "ȟ",
+                ["Ƞ"] = "ƞ",
+                ["Ȣ"] = "ȣ",
+                ["Ȥ"] = "ȥ",
+                ["Ȧ"] = "ȧ",
+                ["Ȩ"] = "ȩ",
+                ["Ȫ"] = "ȫ",
+                ["Ȭ"] = "ȭ",
+                ["Ȯ"] = "ȯ",
+                ["Ȱ"] = "ȱ",
+                ["Ȳ"] = "ȳ",
+                ["Ⱥ"] = "ⱥ",
+                ["Ȼ"] = "ȼ",
+                ["Ƚ"] = "ƚ",
+                ["Ⱦ"] = "ⱦ",
+                ["Ɂ"] = "ɂ",
+                ["Ƀ"] = "ƀ",
+                ["Ʉ"] = "ʉ",
+                ["Ʌ"] = "ʌ",
+                ["Ɇ"] = "ɇ",
+                ["Ɉ"] = "ɉ",
+                ["Ɋ"] = "ɋ",
+                ["Ɍ"] = "ɍ",
+                ["Ɏ"] = "ɏ",
+                ["Ά"] = "ά",
+                ["Έ"] = "έ",
+                ["Ή"] = "ή",
+                ["Ί"] = "ί",
+                ["Ό"] = "ό",
+                ["Ύ"] = "ύ",
+                ["Ώ"] = "ώ",
+                ["Α"] = "α",
+                ["Β"] = "β",
+                ["Γ"] = "γ",
+                ["Δ"] = "δ",
+                ["Ε"] = "ε",
+                ["Ζ"] = "ζ",
+                ["Η"] = "η",
+                ["Θ"] = "θ",
+                ["Ι"] = "ι",
+                ["Κ"] = "κ",
+                ["Λ"] = "λ",
+                ["Μ"] = "μ",
+                ["Ν"] = "ν",
+                ["Ξ"] = "ξ",
+                ["Ο"] = "ο",
+                ["Π"] = "π",
+                ["Ρ"] = "ρ",
+                ["Σ"] = "σ",
+                ["Τ"] = "τ",
+                ["Υ"] = "υ",
+                ["Φ"] = "φ",
+                ["Χ"] = "χ",
+                ["Ψ"] = "ψ",
+                ["Ω"] = "ω",
+                ["Ϊ"] = "ϊ",
+                ["Ϋ"] = "ϋ",
+                ["Ϙ"] = "ϙ",
+                ["Ϛ"] = "ϛ",
+                ["Ϝ"] = "ϝ",
+                ["Ϟ"] = "ϟ",
+                ["Ϡ"] = "ϡ",
+                ["Ϣ"] = "ϣ",
+                ["Ϥ"] = "ϥ",
+                ["Ϧ"] = "ϧ",
+                ["Ϩ"] = "ϩ",
+                ["Ϫ"] = "ϫ",
+                ["Ϭ"] = "ϭ",
+                ["Ϯ"] = "ϯ",
+                ["ϴ"] = "θ",
+                ["Ϸ"] = "ϸ",
+                ["Ϲ"] = "ϲ",
+                ["Ϻ"] = "ϻ",
+                ["Ͻ"] = "ͻ",
+                ["Ͼ"] = "ͼ",
+                ["Ͽ"] = "ͽ",
+                ["Ѐ"] = "ѐ",
+                ["Ё"] = "ё",
+                ["Ђ"] = "ђ",
+                ["Ѓ"] = "ѓ",
+                ["Є"] = "є",
+                ["Ѕ"] = "ѕ",
+                ["І"] = "і",
+                ["Ї"] = "ї",
+                ["Ј"] = "ј",
+                ["Љ"] = "љ",
+                ["Њ"] = "њ",
+                ["Ћ"] = "ћ",
+                ["Ќ"] = "ќ",
+                ["Ѝ"] = "ѝ",
+                ["Ў"] = "ў",
+                ["Џ"] = "џ",
+                ["А"] = "а",
+                ["Б"] = "б",
+                ["В"] = "в",
+                ["Г"] = "г",
+                ["Д"] = "д",
+                ["Е"] = "е",
+                ["Ж"] = "ж",
+                ["З"] = "з",
+                ["И"] = "и",
+                ["Й"] = "й",
+                ["К"] = "к",
+                ["Л"] = "л",
+                ["М"] = "м",
+                ["Н"] = "н",
+                ["О"] = "о",
+                ["П"] = "п",
+                ["Р"] = "р",
+                ["С"] = "с",
+                ["Т"] = "т",
+                ["У"] = "у",
+                ["Ф"] = "ф",
+                ["Х"] = "х",
+                ["Ц"] = "ц",
+                ["Ч"] = "ч",
+                ["Ш"] = "ш",
+                ["Щ"] = "щ",
+                ["Ъ"] = "ъ",
+                ["Ы"] = "ы",
+                ["Ь"] = "ь",
+                ["Э"] = "э",
+                ["Ю"] = "ю",
+                ["Я"] = "я",
+                ["Ѡ"] = "ѡ",
+                ["Ѣ"] = "ѣ",
+                ["Ѥ"] = "ѥ",
+                ["Ѧ"] = "ѧ",
+                ["Ѩ"] = "ѩ",
+                ["Ѫ"] = "ѫ",
+                ["Ѭ"] = "ѭ",
+                ["Ѯ"] = "ѯ",
+                ["Ѱ"] = "ѱ",
+                ["Ѳ"] = "ѳ",
+                ["Ѵ"] = "ѵ",
+                ["Ѷ"] = "ѷ",
+                ["Ѹ"] = "ѹ",
+                ["Ѻ"] = "ѻ",
+                ["Ѽ"] = "ѽ",
+                ["Ѿ"] = "ѿ",
+                ["Ҁ"] = "ҁ",
+                ["Ҋ"] = "ҋ",
+                ["Ҍ"] = "ҍ",
+                ["Ҏ"] = "ҏ",
+                ["Ґ"] = "ґ",
+                ["Ғ"] = "ғ",
+                ["Ҕ"] = "ҕ",
+                ["Җ"] = "җ",
+                ["Ҙ"] = "ҙ",
+                ["Қ"] = "қ",
+                ["Ҝ"] = "ҝ",
+                ["Ҟ"] = "ҟ",
+                ["Ҡ"] = "ҡ",
+                ["Ң"] = "ң",
+                ["Ҥ"] = "ҥ",
+                ["Ҧ"] = "ҧ",
+                ["Ҩ"] = "ҩ",
+                ["Ҫ"] = "ҫ",
+                ["Ҭ"] = "ҭ",
+                ["Ү"] = "ү",
+                ["Ұ"] = "ұ",
+                ["Ҳ"] = "ҳ",
+                ["Ҵ"] = "ҵ",
+                ["Ҷ"] = "ҷ",
+                ["Ҹ"] = "ҹ",
+                ["Һ"] = "һ",
+                ["Ҽ"] = "ҽ",
+                ["Ҿ"] = "ҿ",
+                ["Ӏ"] = "ӏ",
+                ["Ӂ"] = "ӂ",
+                ["Ӄ"] = "ӄ",
+                ["Ӆ"] = "ӆ",
+                ["Ӈ"] = "ӈ",
+                ["Ӊ"] = "ӊ",
+                ["Ӌ"] = "ӌ",
+                ["Ӎ"] = "ӎ",
+                ["Ӑ"] = "ӑ",
+                ["Ӓ"] = "ӓ",
+                ["Ӕ"] = "ӕ",
+                ["Ӗ"] = "ӗ",
+                ["Ә"] = "ә",
+                ["Ӛ"] = "ӛ",
+                ["Ӝ"] = "ӝ",
+                ["Ӟ"] = "ӟ",
+                ["Ӡ"] = "ӡ",
+                ["Ӣ"] = "ӣ",
+                ["Ӥ"] = "ӥ",
+                ["Ӧ"] = "ӧ",
+                ["Ө"] = "ө",
+                ["Ӫ"] = "ӫ",
+                ["Ӭ"] = "ӭ",
+                ["Ӯ"] = "ӯ",
+                ["Ӱ"] = "ӱ",
+                ["Ӳ"] = "ӳ",
+                ["Ӵ"] = "ӵ",
+                ["Ӷ"] = "ӷ",
+                ["Ӹ"] = "ӹ",
+                ["Ӻ"] = "ӻ",
+                ["Ӽ"] = "ӽ",
+                ["Ӿ"] = "ӿ",
+                ["Ԁ"] = "ԁ",
+                ["Ԃ"] = "ԃ",
+                ["Ԅ"] = "ԅ",
+                ["Ԇ"] = "ԇ",
+                ["Ԉ"] = "ԉ",
+                ["Ԋ"] = "ԋ",
+                ["Ԍ"] = "ԍ",
+                ["Ԏ"] = "ԏ",
+                ["Ԑ"] = "ԑ",
+                ["Ԓ"] = "ԓ",
+                ["Ա"] = "ա",
+                ["Բ"] = "բ",
+                ["Գ"] = "գ",
+                ["Դ"] = "դ",
+                ["Ե"] = "ե",
+                ["Զ"] = "զ",
+                ["Է"] = "է",
+                ["Ը"] = "ը",
+                ["Թ"] = "թ",
+                ["Ժ"] = "ժ",
+                ["Ի"] = "ի",
+                ["Լ"] = "լ",
+                ["Խ"] = "խ",
+                ["Ծ"] = "ծ",
+                ["Կ"] = "կ",
+                ["Հ"] = "հ",
+                ["Ձ"] = "ձ",
+                ["Ղ"] = "ղ",
+                ["Ճ"] = "ճ",
+                ["Մ"] = "մ",
+                ["Յ"] = "յ",
+                ["Ն"] = "ն",
+                ["Շ"] = "շ",
+                ["Ո"] = "ո",
+                ["Չ"] = "չ",
+                ["Պ"] = "պ",
+                ["Ջ"] = "ջ",
+                ["Ռ"] = "ռ",
+                ["Ս"] = "ս",
+                ["Վ"] = "վ",
+                ["Տ"] = "տ",
+                ["Ր"] = "ր",
+                ["Ց"] = "ց",
+                ["Ւ"] = "ւ",
+                ["Փ"] = "փ",
+                ["Ք"] = "ք",
+                ["Օ"] = "օ",
+                ["Ֆ"] = "ֆ",
+                ["Ⴀ"] = "ⴀ",
+                ["Ⴁ"] = "ⴁ",
+                ["Ⴂ"] = "ⴂ",
+                ["Ⴃ"] = "ⴃ",
+                ["Ⴄ"] = "ⴄ",
+                ["Ⴅ"] = "ⴅ",
+                ["Ⴆ"] = "ⴆ",
+                ["Ⴇ"] = "ⴇ",
+                ["Ⴈ"] = "ⴈ",
+                ["Ⴉ"] = "ⴉ",
+                ["Ⴊ"] = "ⴊ",
+                ["Ⴋ"] = "ⴋ",
+                ["Ⴌ"] = "ⴌ",
+                ["Ⴍ"] = "ⴍ",
+                ["Ⴎ"] = "ⴎ",
+                ["Ⴏ"] = "ⴏ",
+                ["Ⴐ"] = "ⴐ",
+                ["Ⴑ"] = "ⴑ",
+                ["Ⴒ"] = "ⴒ",
+                ["Ⴓ"] = "ⴓ",
+                ["Ⴔ"] = "ⴔ",
+                ["Ⴕ"] = "ⴕ",
+                ["Ⴖ"] = "ⴖ",
+                ["Ⴗ"] = "ⴗ",
+                ["Ⴘ"] = "ⴘ",
+                ["Ⴙ"] = "ⴙ",
+                ["Ⴚ"] = "ⴚ",
+                ["Ⴛ"] = "ⴛ",
+                ["Ⴜ"] = "ⴜ",
+                ["Ⴝ"] = "ⴝ",
+                ["Ⴞ"] = "ⴞ",
+                ["Ⴟ"] = "ⴟ",
+                ["Ⴠ"] = "ⴠ",
+                ["Ⴡ"] = "ⴡ",
+                ["Ⴢ"] = "ⴢ",
+                ["Ⴣ"] = "ⴣ",
+                ["Ⴤ"] = "ⴤ",
+                ["Ⴥ"] = "ⴥ",
+                ["Ḁ"] = "ḁ",
+                ["Ḃ"] = "ḃ",
+                ["Ḅ"] = "ḅ",
+                ["Ḇ"] = "ḇ",
+                ["Ḉ"] = "ḉ",
+                ["Ḋ"] = "ḋ",
+                ["Ḍ"] = "ḍ",
+                ["Ḏ"] = "ḏ",
+                ["Ḑ"] = "ḑ",
+                ["Ḓ"] = "ḓ",
+                ["Ḕ"] = "ḕ",
+                ["Ḗ"] = "ḗ",
+                ["Ḙ"] = "ḙ",
+                ["Ḛ"] = "ḛ",
+                ["Ḝ"] = "ḝ",
+                ["Ḟ"] = "ḟ",
+                ["Ḡ"] = "ḡ",
+                ["Ḣ"] = "ḣ",
+                ["Ḥ"] = "ḥ",
+                ["Ḧ"] = "ḧ",
+                ["Ḩ"] = "ḩ",
+                ["Ḫ"] = "ḫ",
+                ["Ḭ"] = "ḭ",
+                ["Ḯ"] = "ḯ",
+                ["Ḱ"] = "ḱ",
+                ["Ḳ"] = "ḳ",
+                ["Ḵ"] = "ḵ",
+                ["Ḷ"] = "ḷ",
+                ["Ḹ"] = "ḹ",
+                ["Ḻ"] = "ḻ",
+                ["Ḽ"] = "ḽ",
+                ["Ḿ"] = "ḿ",
+                ["Ṁ"] = "ṁ",
+                ["Ṃ"] = "ṃ",
+                ["Ṅ"] = "ṅ",
+                ["Ṇ"] = "ṇ",
+                ["Ṉ"] = "ṉ",
+                ["Ṋ"] = "ṋ",
+                ["Ṍ"] = "ṍ",
+                ["Ṏ"] = "ṏ",
+                ["Ṑ"] = "ṑ",
+                ["Ṓ"] = "ṓ",
+                ["Ṕ"] = "ṕ",
+                ["Ṗ"] = "ṗ",
+                ["Ṙ"] = "ṙ",
+                ["Ṛ"] = "ṛ",
+                ["Ṝ"] = "ṝ",
+                ["Ṟ"] = "ṟ",
+                ["Ṡ"] = "ṡ",
+                ["Ṣ"] = "ṣ",
+                ["Ṥ"] = "ṥ",
+                ["Ṧ"] = "ṧ",
+                ["Ṩ"] = "ṩ",
+                ["Ṫ"] = "ṫ",
+                ["Ṭ"] = "ṭ",
+                ["Ṯ"] = "ṯ",
+                ["Ṱ"] = "ṱ",
+                ["Ṳ"] = "ṳ",
+                ["Ṵ"] = "ṵ",
+                ["Ṷ"] = "ṷ",
+                ["Ṹ"] = "ṹ",
+                ["Ṻ"] = "ṻ",
+                ["Ṽ"] = "ṽ",
+                ["Ṿ"] = "ṿ",
+                ["Ẁ"] = "ẁ",
+                ["Ẃ"] = "ẃ",
+                ["Ẅ"] = "ẅ",
+                ["Ẇ"] = "ẇ",
+                ["Ẉ"] = "ẉ",
+                ["Ẋ"] = "ẋ",
+                ["Ẍ"] = "ẍ",
+                ["Ẏ"] = "ẏ",
+                ["Ẑ"] = "ẑ",
+                ["Ẓ"] = "ẓ",
+                ["Ẕ"] = "ẕ",
+                ["Ạ"] = "ạ",
+                ["Ả"] = "ả",
+                ["Ấ"] = "ấ",
+                ["Ầ"] = "ầ",
+                ["Ẩ"] = "ẩ",
+                ["Ẫ"] = "ẫ",
+                ["Ậ"] = "ậ",
+                ["Ắ"] = "ắ",
+                ["Ằ"] = "ằ",
+                ["Ẳ"] = "ẳ",
+                ["Ẵ"] = "ẵ",
+                ["Ặ"] = "ặ",
+                ["Ẹ"] = "ẹ",
+                ["Ẻ"] = "ẻ",
+                ["Ẽ"] = "ẽ",
+                ["Ế"] = "ế",
+                ["Ề"] = "ề",
+                ["Ể"] = "ể",
+                ["Ễ"] = "ễ",
+                ["Ệ"] = "ệ",
+                ["Ỉ"] = "ỉ",
+                ["Ị"] = "ị",
+                ["Ọ"] = "ọ",
+                ["Ỏ"] = "ỏ",
+                ["Ố"] = "ố",
+                ["Ồ"] = "ồ",
+                ["Ổ"] = "ổ",
+                ["Ỗ"] = "ỗ",
+                ["Ộ"] = "ộ",
+                ["Ớ"] = "ớ",
+                ["Ờ"] = "ờ",
+                ["Ở"] = "ở",
+                ["Ỡ"] = "ỡ",
+                ["Ợ"] = "ợ",
+                ["Ụ"] = "ụ",
+                ["Ủ"] = "ủ",
+                ["Ứ"] = "ứ",
+                ["Ừ"] = "ừ",
+                ["Ử"] = "ử",
+                ["Ữ"] = "ữ",
+                ["Ự"] = "ự",
+                ["Ỳ"] = "ỳ",
+                ["Ỵ"] = "ỵ",
+                ["Ỷ"] = "ỷ",
+                ["Ỹ"] = "ỹ",
+                ["Ἀ"] = "ἀ",
+                ["Ἁ"] = "ἁ",
+                ["Ἂ"] = "ἂ",
+                ["Ἃ"] = "ἃ",
+                ["Ἄ"] = "ἄ",
+                ["Ἅ"] = "ἅ",
+                ["Ἆ"] = "ἆ",
+                ["Ἇ"] = "ἇ",
+                ["Ἐ"] = "ἐ",
+                ["Ἑ"] = "ἑ",
+                ["Ἒ"] = "ἒ",
+                ["Ἓ"] = "ἓ",
+                ["Ἔ"] = "ἔ",
+                ["Ἕ"] = "ἕ",
+                ["Ἠ"] = "ἠ",
+                ["Ἡ"] = "ἡ",
+                ["Ἢ"] = "ἢ",
+                ["Ἣ"] = "ἣ",
+                ["Ἤ"] = "ἤ",
+                ["Ἥ"] = "ἥ",
+                ["Ἦ"] = "ἦ",
+                ["Ἧ"] = "ἧ",
+                ["Ἰ"] = "ἰ",
+                ["Ἱ"] = "ἱ",
+                ["Ἲ"] = "ἲ",
+                ["Ἳ"] = "ἳ",
+                ["Ἴ"] = "ἴ",
+                ["Ἵ"] = "ἵ",
+                ["Ἶ"] = "ἶ",
+                ["Ἷ"] = "ἷ",
+                ["Ὀ"] = "ὀ",
+                ["Ὁ"] = "ὁ",
+                ["Ὂ"] = "ὂ",
+                ["Ὃ"] = "ὃ",
+                ["Ὄ"] = "ὄ",
+                ["Ὅ"] = "ὅ",
+                ["Ὑ"] = "ὑ",
+                ["Ὓ"] = "ὓ",
+                ["Ὕ"] = "ὕ",
+                ["Ὗ"] = "ὗ",
+                ["Ὠ"] = "ὠ",
+                ["Ὡ"] = "ὡ",
+                ["Ὢ"] = "ὢ",
+                ["Ὣ"] = "ὣ",
+                ["Ὤ"] = "ὤ",
+                ["Ὥ"] = "ὥ",
+                ["Ὦ"] = "ὦ",
+                ["Ὧ"] = "ὧ",
+                ["ᾈ"] = "ᾀ",
+                ["ᾉ"] = "ᾁ",
+                ["ᾊ"] = "ᾂ",
+                ["ᾋ"] = "ᾃ",
+                ["ᾌ"] = "ᾄ",
+                ["ᾍ"] = "ᾅ",
+                ["ᾎ"] = "ᾆ",
+                ["ᾏ"] = "ᾇ",
+                ["ᾘ"] = "ᾐ",
+                ["ᾙ"] = "ᾑ",
+                ["ᾚ"] = "ᾒ",
+                ["ᾛ"] = "ᾓ",
+                ["ᾜ"] = "ᾔ",
+                ["ᾝ"] = "ᾕ",
+                ["ᾞ"] = "ᾖ",
+                ["ᾟ"] = "ᾗ",
+                ["ᾨ"] = "ᾠ",
+                ["ᾩ"] = "ᾡ",
+                ["ᾪ"] = "ᾢ",
+                ["ᾫ"] = "ᾣ",
+                ["ᾬ"] = "ᾤ",
+                ["ᾭ"] = "ᾥ",
+                ["ᾮ"] = "ᾦ",
+                ["ᾯ"] = "ᾧ",
+                ["Ᾰ"] = "ᾰ",
+                ["Ᾱ"] = "ᾱ",
+                ["Ὰ"] = "ὰ",
+                ["Ά"] = "ά",
+                ["ᾼ"] = "ᾳ",
+                ["Ὲ"] = "ὲ",
+                ["Έ"] = "έ",
+                ["Ὴ"] = "ὴ",
+                ["Ή"] = "ή",
+                ["ῌ"] = "ῃ",
+                ["Ῐ"] = "ῐ",
+                ["Ῑ"] = "ῑ",
+                ["Ὶ"] = "ὶ",
+                ["Ί"] = "ί",
+                ["Ῠ"] = "ῠ",
+                ["Ῡ"] = "ῡ",
+                ["Ὺ"] = "ὺ",
+                ["Ύ"] = "ύ",
+                ["Ῥ"] = "ῥ",
+                ["Ὸ"] = "ὸ",
+                ["Ό"] = "ό",
+                ["Ὼ"] = "ὼ",
+                ["Ώ"] = "ώ",
+                ["ῼ"] = "ῳ",
+                ["Ω"] = "ω",
+                ["K"] = "k",
+                ["Å"] = "å",
+                ["Ⅎ"] = "ⅎ",
+                ["Ⅰ"] = "ⅰ",
+                ["Ⅱ"] = "ⅱ",
+                ["Ⅲ"] = "ⅲ",
+                ["Ⅳ"] = "ⅳ",
+                ["Ⅴ"] = "ⅴ",
+                ["Ⅵ"] = "ⅵ",
+                ["Ⅶ"] = "ⅶ",
+                ["Ⅷ"] = "ⅷ",
+                ["Ⅸ"] = "ⅸ",
+                ["Ⅹ"] = "ⅹ",
+                ["Ⅺ"] = "ⅺ",
+                ["Ⅻ"] = "ⅻ",
+                ["Ⅼ"] = "ⅼ",
+                ["Ⅽ"] = "ⅽ",
+                ["Ⅾ"] = "ⅾ",
+                ["Ⅿ"] = "ⅿ",
+                ["Ↄ"] = "ↄ",
+                ["Ⓐ"] = "ⓐ",
+                ["Ⓑ"] = "ⓑ",
+                ["Ⓒ"] = "ⓒ",
+                ["Ⓓ"] = "ⓓ",
+                ["Ⓔ"] = "ⓔ",
+                ["Ⓕ"] = "ⓕ",
+                ["Ⓖ"] = "ⓖ",
+                ["Ⓗ"] = "ⓗ",
+                ["Ⓘ"] = "ⓘ",
+                ["Ⓙ"] = "ⓙ",
+                ["Ⓚ"] = "ⓚ",
+                ["Ⓛ"] = "ⓛ",
+                ["Ⓜ"] = "ⓜ",
+                ["Ⓝ"] = "ⓝ",
+                ["Ⓞ"] = "ⓞ",
+                ["Ⓟ"] = "ⓟ",
+                ["Ⓠ"] = "ⓠ",
+                ["Ⓡ"] = "ⓡ",
+                ["Ⓢ"] = "ⓢ",
+                ["Ⓣ"] = "ⓣ",
+                ["Ⓤ"] = "ⓤ",
+                ["Ⓥ"] = "ⓥ",
+                ["Ⓦ"] = "ⓦ",
+                ["Ⓧ"] = "ⓧ",
+                ["Ⓨ"] = "ⓨ",
+                ["Ⓩ"] = "ⓩ",
+                ["Ⰰ"] = "ⰰ",
+                ["Ⰱ"] = "ⰱ",
+                ["Ⰲ"] = "ⰲ",
+                ["Ⰳ"] = "ⰳ",
+                ["Ⰴ"] = "ⰴ",
+                ["Ⰵ"] = "ⰵ",
+                ["Ⰶ"] = "ⰶ",
+                ["Ⰷ"] = "ⰷ",
+                ["Ⰸ"] = "ⰸ",
+                ["Ⰹ"] = "ⰹ",
+                ["Ⰺ"] = "ⰺ",
+                ["Ⰻ"] = "ⰻ",
+                ["Ⰼ"] = "ⰼ",
+                ["Ⰽ"] = "ⰽ",
+                ["Ⰾ"] = "ⰾ",
+                ["Ⰿ"] = "ⰿ",
+                ["Ⱀ"] = "ⱀ",
+                ["Ⱁ"] = "ⱁ",
+                ["Ⱂ"] = "ⱂ",
+                ["Ⱃ"] = "ⱃ",
+                ["Ⱄ"] = "ⱄ",
+                ["Ⱅ"] = "ⱅ",
+                ["Ⱆ"] = "ⱆ",
+                ["Ⱇ"] = "ⱇ",
+                ["Ⱈ"] = "ⱈ",
+                ["Ⱉ"] = "ⱉ",
+                ["Ⱊ"] = "ⱊ",
+                ["Ⱋ"] = "ⱋ",
+                ["Ⱌ"] = "ⱌ",
+                ["Ⱍ"] = "ⱍ",
+                ["Ⱎ"] = "ⱎ",
+                ["Ⱏ"] = "ⱏ",
+                ["Ⱐ"] = "ⱐ",
+                ["Ⱑ"] = "ⱑ",
+                ["Ⱒ"] = "ⱒ",
+                ["Ⱓ"] = "ⱓ",
+                ["Ⱔ"] = "ⱔ",
+                ["Ⱕ"] = "ⱕ",
+                ["Ⱖ"] = "ⱖ",
+                ["Ⱗ"] = "ⱗ",
+                ["Ⱘ"] = "ⱘ",
+                ["Ⱙ"] = "ⱙ",
+                ["Ⱚ"] = "ⱚ",
+                ["Ⱛ"] = "ⱛ",
+                ["Ⱜ"] = "ⱜ",
+                ["Ⱝ"] = "ⱝ",
+                ["Ⱞ"] = "ⱞ",
+                ["Ⱡ"] = "ⱡ",
+                ["Ɫ"] = "ɫ",
+                ["Ᵽ"] = "ᵽ",
+                ["Ɽ"] = "ɽ",
+                ["Ⱨ"] = "ⱨ",
+                ["Ⱪ"] = "ⱪ",
+                ["Ⱬ"] = "ⱬ",
+                ["Ⱶ"] = "ⱶ",
+                ["Ⲁ"] = "ⲁ",
+                ["Ⲃ"] = "ⲃ",
+                ["Ⲅ"] = "ⲅ",
+                ["Ⲇ"] = "ⲇ",
+                ["Ⲉ"] = "ⲉ",
+                ["Ⲋ"] = "ⲋ",
+                ["Ⲍ"] = "ⲍ",
+                ["Ⲏ"] = "ⲏ",
+                ["Ⲑ"] = "ⲑ",
+                ["Ⲓ"] = "ⲓ",
+                ["Ⲕ"] = "ⲕ",
+                ["Ⲗ"] = "ⲗ",
+                ["Ⲙ"] = "ⲙ",
+                ["Ⲛ"] = "ⲛ",
+                ["Ⲝ"] = "ⲝ",
+                ["Ⲟ"] = "ⲟ",
+                ["Ⲡ"] = "ⲡ",
+                ["Ⲣ"] = "ⲣ",
+                ["Ⲥ"] = "ⲥ",
+                ["Ⲧ"] = "ⲧ",
+                ["Ⲩ"] = "ⲩ",
+                ["Ⲫ"] = "ⲫ",
+                ["Ⲭ"] = "ⲭ",
+                ["Ⲯ"] = "ⲯ",
+                ["Ⲱ"] = "ⲱ",
+                ["Ⲳ"] = "ⲳ",
+                ["Ⲵ"] = "ⲵ",
+                ["Ⲷ"] = "ⲷ",
+                ["Ⲹ"] = "ⲹ",
+                ["Ⲻ"] = "ⲻ",
+                ["Ⲽ"] = "ⲽ",
+                ["Ⲿ"] = "ⲿ",
+                ["Ⳁ"] = "ⳁ",
+                ["Ⳃ"] = "ⳃ",
+                ["Ⳅ"] = "ⳅ",
+                ["Ⳇ"] = "ⳇ",
+                ["Ⳉ"] = "ⳉ",
+                ["Ⳋ"] = "ⳋ",
+                ["Ⳍ"] = "ⳍ",
+                ["Ⳏ"] = "ⳏ",
+                ["Ⳑ"] = "ⳑ",
+                ["Ⳓ"] = "ⳓ",
+                ["Ⳕ"] = "ⳕ",
+                ["Ⳗ"] = "ⳗ",
+                ["Ⳙ"] = "ⳙ",
+                ["Ⳛ"] = "ⳛ",
+                ["Ⳝ"] = "ⳝ",
+                ["Ⳟ"] = "ⳟ",
+                ["Ⳡ"] = "ⳡ",
+                ["Ⳣ"] = "ⳣ",
+                ["Ａ"] = "ａ",
+                ["Ｂ"] = "ｂ",
+                ["Ｃ"] = "ｃ",
+                ["Ｄ"] = "ｄ",
+                ["Ｅ"] = "ｅ",
+                ["Ｆ"] = "ｆ",
+                ["Ｇ"] = "ｇ",
+                ["Ｈ"] = "ｈ",
+                ["Ｉ"] = "ｉ",
+                ["Ｊ"] = "ｊ",
+                ["Ｋ"] = "ｋ",
+                ["Ｌ"] = "ｌ",
+                ["Ｍ"] = "ｍ",
+                ["Ｎ"] = "ｎ",
+                ["Ｏ"] = "ｏ",
+                ["Ｐ"] = "ｐ",
+                ["Ｑ"] = "ｑ",
+                ["Ｒ"] = "ｒ",
+                ["Ｓ"] = "ｓ",
+                ["Ｔ"] = "ｔ",
+                ["Ｕ"] = "ｕ",
+                ["Ｖ"] = "ｖ",
+                ["Ｗ"] = "ｗ",
+                ["Ｘ"] = "ｘ",
+                ["Ｙ"] = "ｙ",
+                ["Ｚ"] = "ｚ",
+                ["𐐀"] = "𐐨",
+                ["𐐁"] = "𐐩",
+                ["𐐂"] = "𐐪",
+                ["𐐃"] = "𐐫",
+                ["𐐄"] = "𐐬",
+                ["𐐅"] = "𐐭",
+                ["𐐆"] = "𐐮",
+                ["𐐇"] = "𐐯",
+                ["𐐈"] = "𐐰",
+                ["𐐉"] = "𐐱",
+                ["𐐊"] = "𐐲",
+                ["𐐋"] = "𐐳",
+                ["𐐌"] = "𐐴",
+                ["𐐍"] = "𐐵",
+                ["𐐎"] = "𐐶",
+                ["𐐏"] = "𐐷",
+                ["𐐐"] = "𐐸",
+                ["𐐑"] = "𐐹",
+                ["𐐒"] = "𐐺",
+                ["𐐓"] = "𐐻",
+                ["𐐔"] = "𐐼",
+                ["𐐕"] = "𐐽",
+                ["𐐖"] = "𐐾",
+                ["𐐗"] = "𐐿",
+                ["𐐘"] = "𐑀",
+                ["𐐙"] = "𐑁",
+                ["𐐚"] = "𐑂",
+                ["𐐛"] = "𐑃",
+                ["𐐜"] = "𐑄",
+                ["𐐝"] = "𐑅",
+                ["𐐞"] = "𐑆",
+                ["𐐟"] = "𐑇",
+                ["𐐠"] = "𐑈",
+                ["𐐡"] = "𐑉",
+                ["𐐢"] = "𐑊",
+                ["𐐣"] = "𐑋",
+                ["𐐤"] = "𐑌",
+                ["𐐥"] = "𐑍",
+                ["𐐦"] = "𐑎",
+                ["𐐧"] = "𐑏",
+            }
+
+            -- returns the number of bytes used by the UTF-8 character at byte i in s
+            -- also doubles as a UTF-8 character validator
+            local function utf8charbytes(s, i)
+                -- argument defaults
+                i = i or 1
+
+                -- argument checking
+                if type(s) ~= "string" then
+                    error("bad argument #1 to 'utf8charbytes' (string expected, got ".. type(s).. ")")
+                end
+                if type(i) ~= "number" then
+                    error("bad argument #2 to 'utf8charbytes' (number expected, got ".. type(i).. ")")
+                end
+
+                local c = strbyte(s, i)
+
+                -- determine bytes needed for character, based on RFC 3629
+                -- validate byte 1
+                if c > 0 and c <= 127 then
+                    -- UTF8-1
+                    return 1
+
+                elseif c >= 194 and c <= 223 then
+                    -- UTF8-2
+                    local c2 = strbyte(s, i + 1)
+
+                    if not c2 then
+                        error("UTF-8 string terminated early")
+                    end
+
+                    -- validate byte 2
+                    if c2 < 128 or c2 > 191 then
+                        error("Invalid UTF-8 character")
+                    end
+
+                    return 2
+
+                elseif c >= 224 and c <= 239 then
+                    -- UTF8-3
+                    local c2 = strbyte(s, i + 1)
+                    local c3 = strbyte(s, i + 2)
+
+                    if not c2 or not c3 then
+                        error("UTF-8 string terminated early")
+                    end
+
+                    -- validate byte 2
+                    if c == 224 and (c2 < 160 or c2 > 191) then
+                        error("Invalid UTF-8 character")
+                    elseif c == 237 and (c2 < 128 or c2 > 159) then
+                        error("Invalid UTF-8 character")
+                    elseif c2 < 128 or c2 > 191 then
+                        error("Invalid UTF-8 character")
+                    end
+
+                    -- validate byte 3
+                    if c3 < 128 or c3 > 191 then
+                        error("Invalid UTF-8 character")
+                    end
+
+                    return 3
+
+                elseif c >= 240 and c <= 244 then
+                    -- UTF8-4
+                    local c2 = strbyte(s, i + 1)
+                    local c3 = strbyte(s, i + 2)
+                    local c4 = strbyte(s, i + 3)
+
+                    if not c2 or not c3 or not c4 then
+                        error("UTF-8 string terminated early")
+                    end
+
+                    -- validate byte 2
+                    if c == 240 and (c2 < 144 or c2 > 191) then
+                        error("Invalid UTF-8 character")
+                    elseif c == 244 and (c2 < 128 or c2 > 143) then
+                        error("Invalid UTF-8 character")
+                    elseif c2 < 128 or c2 > 191 then
+                        error("Invalid UTF-8 character")
+                    end
+
+                    -- validate byte 3
+                    if c3 < 128 or c3 > 191 then
+                        error("Invalid UTF-8 character")
+                    end
+
+                    -- validate byte 4
+                    if c4 < 128 or c4 > 191 then
+                        error("Invalid UTF-8 character")
+                    end
+
+                    return 4
+
+                else
+                    error("Invalid UTF-8 character")
+                end
+            end
+
+            -- replace UTF-8 characters based on a mapping table
+            local function utf8replace(s, mapping)
+                -- argument checking
+                if type(s) ~= "string" then
+                    error("bad argument #1 to 'utf8replace' (string expected, got ".. type(s).. ")")
+                end
+                if type(mapping) ~= "table" then
+                    error("bad argument #2 to 'utf8replace' (table expected, got ".. type(mapping).. ")")
+                end
+
+                local pos = 1
+                local bytes = strlen(s)
+                local charbytes
+                local newstr = ""
+
+                while pos <= bytes do
+                    charbytes = utf8charbytes(s, pos)
+                    local c = strsub(s, pos, pos + charbytes - 1)
+
+                    newstr = newstr .. (mapping[c] or c)
+
+                    pos = pos + charbytes
+                end
+
+                return newstr
+            end
+
+            -- identical to string.upper except it knows about unicode simple case conversions
+            function utf8upper(s)
+                return utf8replace(s, utf8_lc_uc)
+            end
+
+            -- identical to string.lower except it knows about unicode simple case conversions
+            function utf8lower(s)
+                return utf8replace(s, utf8_uc_lc)
+            end
+
+        end
+
+        local index = #collection
+
+        local function CreateTestFromDB(_, region, faction, db)
+            if not db then
+                return
+            end
+            for realmName, realmData in pairs(db) do
+                local realmNameLC = utf8lower(realmName)
+                local realmNameUC
+                if strcmputf8i(realmNameLC, realmName) == 0 then
+                    realmNameUC = utf8upper(realmName)
+                else
+                    realmNameLC = nil
+                end
+                for i = 2, #realmData do
+                    local characterName = realmData[i]
+                    local characterNameLC = utf8lower(characterName)
+                    local characterNameUC
+                    if strcmputf8i(characterNameLC, characterName) == 0 then
+                        characterNameUC = utf8upper(characterName)
+                    else
+                        characterNameLC = nil
+                    end
+                    index = index + 3
+                    collection[index - 2] = { region = region, faction = faction, realm = realmNameLC or realmName, name = characterNameLC or characterName, success = true }
+                    collection[index - 1] = { region = region, faction = faction, realm = realmNameUC or realmName, name = characterNameUC or characterName, success = true }
+                    collection[index] = CheckBothTestsAboveForSameProfiles
+                end
+            end
+        end
+
+        local function RunQueuedTest(self)
+            wipe(collection)
+            index = 0
+            for i = #self, #self - (3 * 1000) + 1, -1 do
+                local task = table.remove(self, i)
+                if not task then
+                    break
+                end
+                index = index + 1
+                collection[index] = task
+            end
+            tests:RunTests(true, true)
+            provider:WipeCache()
+            return index > 0
+        end
+
+        local frame = CreateFrame("Frame")
+        local co, cq, ch, cc, cp
+        local queue, qindex = {}, 0
+        local testqueue, tqindex = {}, 0
+
+        frame:SetScript("OnUpdate", function(frame)
+            frame:Hide()
+            if co then
+                coroutine.resume(co, cq)
+            end
+        end)
+
+        local function OnUpdate(self, ...)
+            while 1 do
+                if ch == CreateTestFromDB then
+                    local args = table.remove(self, 1)
+                    if not args then
+                        break
+                    end
+                    ch(self, args[1], args[2], args[3])
+                    if cp then
+                        cp(self, args)
+                    end
+                else
+                    local continue = ch(self)
+                    if cp then
+                        cp(self)
+                    end
+                    if not continue then
+                        break
+                    end
+                end
+                frame:Show()
+                coroutine.yield()
+            end
+            co = nil
+            if cc then
+                cc()
+            end
+        end
+
+        for _, provider in pairs(providers) do
+            qindex = qindex + 2
+            queue[qindex - 1] = { provider.region, provider.faction, provider.db1 }
+            queue[qindex] = { provider.region, provider.faction, provider.db2 }
+        end
+
+        local function OnCreateSuccess()
+            for _, test in ipairs(collection) do
+                tqindex = tqindex + 1
+                testqueue[tqindex] = test
+            end
+            wipe(collection)
+            co = coroutine.create(OnUpdate)
+            cq = testqueue
+            ch = RunQueuedTest
+            cc = callback
+            cp = progress
+            coroutine.resume(co, cq)
+        end
+
+        ns.Print("|cffFFFFFFRaiderIO|r Running excessive built-in tests:")
+
+        co = coroutine.create(OnUpdate)
+        cq = queue
+        ch = CreateTestFromDB
+        cc = OnCreateSuccess
+        cp = progress
+        coroutine.resume(co, cq)
+
+    end
+
+    local function OnAppendProviderTestsCompleted()
+        provider:WipeCache()
+        ns.Print("|cffFFFFFFRaiderIO|r Done!")
+    end
+
+    local function CountProfilesInDataSet(data)
+        if type(data) ~= "table" then
+            return 0
+        end
+        local count = 0
+        for _, items in pairs(data) do
+            if type(items) == "table" then
+                count = count + #items - 1
+            end
+        end
+        return count
+    end
+
+    local function OnAppendProviderTestsProgress(queue, args)
+        if not args or type(args) ~= "table" then
+            ns.Print(format("[#%d] remaining...", #queue + 1))
+        else
+            ns.Print(format("[#%d] Checking |cffFFFFFF%s %s|r (%d profiles)", #queue + 1, tostring(args[1]), tostring(args[2]), CountProfilesInDataSet(args[3])))
+        end
+    end
+
+    local function HasRegionAndFactionData(region, faction)
+        for _, provider in pairs(providers) do
+            if provider.region == region and provider.faction == faction then
+                return true
+            end
+        end
+        return false
+    end
+
+    function tests:RunTests(showOnlyFailed, noHeaderOrFooter)
+        if not noHeaderOrFooter then
+            ns.Print(format("|cffFFFFFFRaiderIO|r Running %d built-in tests:", #collection))
+        end
+        local printed
+        for id, test in ipairs(collection) do
+            local status, explanation
+            if type(test) == "function" then
+                status, explanation = test(collection, id)
+            elseif type(test) == "table" then
+                if not test.skip and HasRegionAndFactionData(test.region, test.faction) then
+                    test.profile = provider:GetProfile(test.name, test.realm, test.faction, test.region)
+                    if test.profile and not test.profile.success and test.success == true then
+                        test.status = false
+                        test.explanation = "Profile exists, no data."
+                    elseif test.profile and test.profile.success and test.success == false then
+                        test.status = false
+                        test.explanation = "Profile exists, has data."
+                    elseif not test.profile and test.success ~= nil then
+                        test.status = false
+                        test.explanation = "Profile doesn't exist."
+                    elseif not test.profile and test.exists == true then
+                        test.status = false
+                        test.explanation = "Profile doesn't exist."
+                    elseif test.profile and test.exists == false then
+                        test.status = false
+                        test.explanation = "Profile exists exist."
+                    else
+                        test.status = true
+                    end
+                    if test.status == false and test.explanation then
+                        test.explanation = format("%s |cffFFFFFF(%s-%s-%s)|r", test.explanation, test.region, test.realm, test.name)
+                    end
+                    status, explanation = test.status, test.explanation
+                end
+            else
+                printed = true
+                ns.Print(format("|cffFFFFFFRaiderIO|r Test#%d is not supported, skipping.", id))
+            end
+            if status ~= nil and (not showOnlyFailed or not status) then
+                printed = true
+                ns.Print(format("|cffFFFFFFRaiderIO|r Test#%d |cff%s%s|r", id, status and "55FF55" or "FF5555", explanation or (status and "Passed!" or "Failed!")))
+            end
+        end
+        if not noHeaderOrFooter then
+            ns.Print(format("|cffFFFFFFRaiderIO|r Done! %s", printed and "" or "|cff55FF55Nothing to report.|r"))
+        end
+    end
+
+    function tests:CanLoad()
+        return config:IsEnabled() and config:Get("debugMode") -- TODO: do not load this module by default as we only care if tests pass or fail when in debug mode
+    end
+
+    function tests:OnLoad()
+        self:Enable()
+        self:RunTests(true)
+        provider:WipeCache()
+        -- AppendTestsFromProviders(OnAppendProviderTestsCompleted, OnAppendProviderTestsProgress) -- DEBUG: excessive testing so we might wanna comment this out when it's not required
     end
 
 end

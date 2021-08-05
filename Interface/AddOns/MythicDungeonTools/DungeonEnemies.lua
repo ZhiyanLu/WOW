@@ -489,7 +489,7 @@ function MDT:DisplayBlipTooltip(blip, shown)
     ]]
     local occurence = (blip.data.isBoss and "") or blip.cloneIdx
 
-    local text = data.name.." "..occurence..group.."\n"..string.format(L["Level %d %s"],data.level,data.creatureType).."\n".. string.format(L["%s HP"],MDT:FormatEnemyHealth(health)).."\n"
+    local text = L[data.name].." "..occurence..group.."\n"..string.format(L["Level %d %s"],data.level,L[data.creatureType]).."\n".. string.format(L["%s HP"],MDT:FormatEnemyHealth(health)).."\n"
     local count = MDT:IsCurrentPresetTeeming() and data.teemingCount or data.count
     text = text ..L["Forces"]..": ".. MDT:FormatEnemyForces(count)
     local reapingText
@@ -606,6 +606,7 @@ local function blipDevModeSetup(blip)
 end
 
 local emissaryIds = {[155432]=true,[155433]=true,[155434]=true}
+local tormentedIds = {[179891]=true,[179892]=true,[179890]=true,[179446]=true}
 
 function MDTDungeonEnemyMixin:SetUp(data,clone)
     local scale = MDT:GetScale()
@@ -655,6 +656,11 @@ function MDTDungeonEnemyMixin:SetUp(data,clone)
         self:Hide()--hide by default, DungeonEnemies_UpdateSeasonalAffix handles showing
     else
         setUpMouseHandlers(self)
+    end
+    --tormented visual
+    if data.powers then
+        local tormentedColor = {0.7,0,1,1}
+        self.texture_Background:SetVertexColor(unpack(tormentedColor))
     end
     if emissaryIds[self.data.id] then self:Hide() end --hide beguiling emissaries by default
     tinsert(blips,self)
@@ -947,9 +953,11 @@ function MDT:DungeonEnemies_UpdateSeasonalAffix()
     for _,blip in pairs(blips) do
         if blip.data.corrupted then blip:Hide() end
         if emissaryIds[blip.data.id] then blip:Hide() end
+        if tormentedIds[blip.data.id] then blip:Hide() end
     end
     local week = self:GetEffectivePresetWeek()
     for _,blip in pairs(blips) do
+        if db.currentSeason == 6 and tormentedIds[blip.data.id] and db.currentDifficulty >= 10 then blip:Show() end
         if (db.currentSeason == 4 and blip.data.corrupted) or(db.currentSeason == 3 and emissaryIds[blip.data.id]) then
             local weekData =  blip.clone.week
             if weekData and (not weekData[week] or db.currentDifficulty < 10) then

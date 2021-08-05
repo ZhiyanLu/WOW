@@ -40,7 +40,7 @@ local function valid(s)
 end
 
 CoreDependCall("MySlot", function()
-    RunOnNextFrame(function()
+    C_Timer.After(1.0, function()
 	--MYSLOT_ReportFrame:SetHeight(370)
 	--MYSLOT_ScrollFrame:SetHeight(300)
 	--MYSLOT_ScrollFrame_Child:SetHeight(300)

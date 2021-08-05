@@ -37,7 +37,7 @@ U1RegisterAddon("MasterPlan", {
     nopic = true,
 });
 
-U1RegisterAddon("KayrCovenantMissions", {
+U1RegisterAddon("VenturePlan", {
     title = "盟约随从任务助手",
     parent = "MasterPlanA",
     defaultEnable = 1,
@@ -47,6 +47,6 @@ U1RegisterAddon("KayrCovenantMissions", {
 
     tags = { "TAG_QUEST", },
     icon = [[Interface\Icons\UI_Promotion_Garrisons]],
-    desc = "在盟约随从任务界面显示成功率",
+    desc = "增强随从任务界面",
     nopic = true,
 });

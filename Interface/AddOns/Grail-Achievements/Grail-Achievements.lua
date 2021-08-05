@@ -26,7 +26,7 @@
 --
 
 local pairs, tContains, tinsert, tonumber, wipe = pairs, tContains, tinsert, tonumber, wipe
-local GetAchievementInfo, GetBuildInfo = GetAchievementInfo, GetBuildInfo
+local GetBuildInfo = GetBuildInfo
 
 local Grail_Achievements_File_Version = 010
 
@@ -155,7 +155,7 @@ Grail.extraAchievements = {
 		[mapArgus] = { 512066, 512073, },
 		[mapZandalar] = { 512771, 512849, 512851, },
 		[mapKulTiras] = { 512510, 512853, 512852, 512995, },
-		[mapShadowlands] = { 514801, 514800, 514799, 514798, },
+		[mapShadowlands] = { 514801, 514800, 514799, 514798, 513997, 514234, 514282, },
 		},
 	[factionHorde] = {
 		[mapKalimdor] = { 504961, 505859, 505866, },
@@ -169,7 +169,7 @@ Grail.extraAchievements = {
 		[mapArgus] = { 512066, 512073, },
 		[mapZandalar] = { 512555, 512771, 512849, 512851, },
 		[mapKulTiras] = { 512509, 512853, 512852, 512995, },
-		[mapShadowlands] = { 514801, 514800, 514799, 514798, },
+		[mapShadowlands] = { 514801, 514800, 514799, 514798, 513997, 514234, 514282, },
 		},
 	}
 
@@ -6854,7 +6854,7 @@ G[33271]={508845}	-- needed for Gloomshade Grove of As I Walk Through the Valley
 G[33427]={509492}	-- needed for Ours is the Fury part of Garrison Campaign (Horde)
 G[33473]={508671}	-- needed for Defense of Wor'gol part of You'll Get Caught Up In The... Frostfire!
 G[33527]={508671}	-- needed for Die Belagerung der Speerspießerfestung part of Ein Lied von Frost und Feuer
-G[33582]={508919,508920}	-- needed for The Plight of the Arakkoa of Tala-done With This
+G[33582]={508919,508920}	-- needed for The Plight of the Arakkoa of Tala-done With This	[Don't Let the Tala-door Hit You on the Way Out]
 G[33731]={508919}	-- needed for The Battle for Shattrath part of Don't Let the Tala-door Hit You on the Way Out
 G[33828]={508671}	-- needed for Thunder's Fall part of You'll Get Caught Up In The... Frostfire!
 G[34019]={508845}	-- needed for Shadows Awaken part of As I Walk Through the Valley of the Shadow of Moon
@@ -6915,21 +6915,22 @@ G[35317]={508928}
 G[35379]={509615}
 G[35396]={508927}	-- needed for The Dark Heart of Oshu'Gun part of Nagrandeur
 G[35416]={508924}
-G[35687]={509492}	-- needed for The Fall of Shattrath part of Garrison Campaign (Horde)
-G[35835]={508925}   -- SECURING SOUTHPORT, SMUGGLER'S DEN, Between Arak and a Hard Place
-G[36473]={509607}
-G[36476]={509607}
 G[35482]={508925}	-- needed for Admiral Taylor's Garrison part of Between Arak and a Hard Place
 G[35634]={508925,508926}	-- needed for Legacy of the Apexis part of Between Arak and a Hard Place
 G[35649]={509605}
 G[35671]={508925,508926}	-- needed for Shadows Gather part of Between Arak and a Hard Place
+G[35687]={509492}	-- needed for The Fall of Shattrath part of Garrison Campaign (Horde)
 G[35702]={508923}	--	needed for In the Land of Giants  -  Chains of Iron
 G[35704]={508925,508926}	-- needed for When the Raven Swallows the Day part of Between Arak and a Hard Place
+G[35835]={508925}   -- SECURING SOUTHPORT, SMUGGLER'S DEN, Between Arak and a Hard Place
 G[35881]={509607}
 G[35884]={508921}	-- needed for Welcome to Draenor
 G[35896]={508925,508926}	-- needed for Terrok's Legend part of Between Arak and a Hard Place
+--G[36165]={}	-- needed for Securing Southport
 G[36183]={508926}
 G[36290]={509492}	-- needed for The Ring of Blood part of Garrison Campaign (Horde)
+G[36473]={509607}
+G[36476]={509607}
 G[36480]={509607}
 G[36500]={509607}
 G[36504]={509607}
@@ -7227,15 +7228,16 @@ G[57787]={514164}	-- Welcome to Ardenweald (Awaken, Ardenweald) (Ardenweald) (Sh
 G[57677]={514281}	-- Eternity's Call (The Path to Ascension) (Bastion) (Shadownlands)
 G[57694]={513878}	-- Prince Renathal (The Master of Revendreth) (Revendreth) (Shadowlands)
 G[57724]={513878}	-- The Mad Duke (The Master of Revendreth) (Revendreth) (Shadowlands)
--- Assumption is 57865 57866 57867 not needed for Tricky Spriggans
 G[57871]={514800}	-- Tricky Spriggans (Sojourner of Ardenweald) (Ardenweald) (Shadowlands)
 G[57951]={514164}	-- Spirit Glen (Awaken, Ardenweald) (Ardenweald) (Shadowlands)
 G[58026]={514800}	-- When a Gorm Eats a God (Sojourner of Ardenweald) (Ardenweald) (Shadowlands)
 G[58086]={513878}	-- The Master of Lies (The Master of Revendreth) (Revendreth) (Shadowlands)
 G[58092]={514798}	-- The Final Atonement (Sojourner of Revendreth) (Revendreth) (Shadowlands)
+G[58103]={514801}	-- Pride or Unit (Sojourner of Bastion) (Bastion) (Shadowlands)
 G[58166]={514800}	-- An Ominous Stone (Sojourner of Ardenweald) (Ardenweald) (Shadowlands)
 G[58174]={514281}	-- The Aspirant's Crucible (The Path to Ascension) (Bastion) (Shadownlands)
 G[58267]={514800}	-- Wicked Plan (Sojourner of Ardenweald) (Ardenweald) (Shadowlands)
+G[58407]={513997}	-- Dominion (Venthyr Campaign) (Revendreth) (Shadowlands)
 G[58524]={514164}	-- The Fallen Tree (Awaken, Ardenweald) (Ardenweald) (Shadowlands)
 G[58593]={514164}	-- Visions of the Dreamer (Awaken, Ardenweald) (Ardenweald) (Shadowlands)
 G[58623]={514799}	-- Archival Protection (Sojourner of Maldraxxus) (Maldraxxus) (Shadowlands)
@@ -7246,6 +7248,7 @@ G[59200]={514281}	-- By the Archon's Will (The Path to Ascension) (Bastion) (Sha
 G[59231]={514206}	-- House of Plagues (Blade of the Primus) (Maldraxxus) (Shadowlands)
 G[59232]={513878}	-- The Accuser (The Master of Revendreth) (Revendreth) (Shadowlands)
 G[59256]={513878}	-- The Penitent Hunt (The Master of Revendreth) (Revendreth) (Shadowlands)
+G[59343]={513997}	-- A Resolute Bond (Venthyr Campaign) (Revendreth) (Shadowlands)
 G[59426]={514281}	-- Your Personal Assistant (The Path to Ascension) (Bastion) (Shadownlands)
 G[59656]={514800}	-- Trouble at the Gormling Corral (Sojourner of Ardenweald) (Ardenweald) (Shadowlands)
 G[59726]={514798}	-- The Duelist's Debt (Sojourner of Revendreth) (Revendreth) (Shadowlands)
@@ -7255,7 +7258,10 @@ G[59974]={514206}	-- Ritual for the Damned (Blade of the Primus) (Maldraxxus) (S
 G[60013]={514281}	-- Chasing a Memory (The Path to Ascension) (Bastion) (Shadownlands)
 G[60055]={514281}	-- The Temple of Courage (The Path to Ascension) (Bastion) (Shadownlands)
 G[60066]={514800}	-- Thread of Hope (Sojourner of Ardenweald) (Ardenweald) (Shadowlands)
+G[60108]={514282}	-- (Night Fall Campaign) (Ardenweald) (Shadowlands)
 G[60178]={514798}	-- Tithes of Darkhaven (Sojourner of Revendreth) (Revendreth) (Shadowlands)
+G[60272]={513997}	-- The Forgotten One (Venthyr Campaign) (Revendreth) (Shadowlands)
+G[60296]={514801}	-- Pride or Unit (Sojourner of Bastion) (Bastion) (Shadowlands)
 G[60470]={514798}	-- Revelations of the Light (Sojourner of Revendreth) (Revendreth) (Shadowlands)
 G[60519]={514164}	-- Waning Grove (Awaken, Ardenweald) (Ardenweald) (Shadowlands)
 G[60520]={514164}	-- Glitterfall Heights (Awaken, Ardenweald) (Ardenweald) (Shadowlands)
@@ -7264,7 +7270,10 @@ G[60733]={514206}	-- House of Constructs (Blade of the Primus) (Maldraxxus) (Sha
 G[60737]={514206}	-- The Empty Throne (Blade of the Primus) (Maldraxxus) (Shadowlands)
 G[60886]={514206}	-- House of the Chosen (Blade of the Primus) (Maldraxxus) (Shadowlands)
 G[60905]={514164}	-- This is the Way (Awaken, Ardenweald) (Ardenweald) (Shadowlands)
+G[60906]={514801}	-- The Spear of Kallipe (Sojourner of Bastion) (Bastion) (Shadowlands)
 G[61107]={514281}	-- A Land of Strife (The Path to Ascension) (Bastion) (Shadownlands)
+G[62557]={514234}	-- The Bell Tolls (Bastion Campaign) (Bastion) Shadowlands
+G[62921]={513997}	-- Sinfall (Venthyr Campaign) (Revendreth) (Shadowlands)
 
 Grail.timings.AchievementsInitialSetup = debugprofilestop() - debugStartTime
 debugStartTime = debugprofilestop()
@@ -7301,7 +7310,7 @@ for questId, achs in pairs(G) do
 				end
 				Grail.questsLoremaster[questId] = achievementId
 			else
-				local _, title = GetAchievementInfo(achievementId - Grail.mapAreaBaseAchievement)
+				local title = Grail:GetBasicAchievementInfo(achievementId - Grail.mapAreaBaseAchievement)
 				Grail:AddQuestToMapArea(questId, achievementId, title)
 			end
 		end
@@ -7322,7 +7331,7 @@ for expansionIndex = 4, highestSupportedExpansion do
 	local expansions = expansionMaps[expansionIndex]
 	for _, faction in pairs(supportedFactions) do
 		for _, expansion in pairs(expansions) do
-			for _, achievement in pairs(Grail.loremasterAchievements[faction][expansion]) do
+			for _, achievement in pairs(Grail.achievements[faction][expansion]) do
 				if not tContains(achievementsDone, achievement) then
 					local newTable = {}
 					for _, questId in pairs(Grail.indexedQuests[achievement]) do

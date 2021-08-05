@@ -1,8 +1,35 @@
+## v9.1.0
+* Version bump for WoW 9.1
+* Minor performance improvements
+
+## v9.0.7
+## Bug Fixes
+* Fixed #1886 - invalid key to "next" (new version of LibDogTag-Unit-3.0 should resolve this).
+* Fixed #1889 - error thrown when attempting to import corrupted strings
+
+## v9.0.6
+* New Condition: Covenant Membership
+* New group sort option: Timer start
+* New slash command: `/tmw counter counter-name operation value`. E.g. `/tmw counter casts = 0`
+
+### Bug Fixes
+* Fixed an issue with some types of items in the item suggestion list.
+
+## v9.0.5
+
+### Bug Fixes
+* Fixed an error with the `[Name]` DogTag breaking when LibDogTag-Unit gets upgraded after TMW loads.
+* Fixed incorrect labels on Text Display editboxes after changing an icon's text layout.
+* Fixed #1868 - Lua errors and broken sliders in WoW 9.0.5.
+
 ## v9.0.4
 * New Condition: Torghast Anima Power Count
+* New Condition: Soulbind Active
 * #1811 - The group/target point of a group will now be preserved when moving a shrunk group via click-and-drag.
 ### Bug Fixes
 * #1840 - Talents granted by Torghast powers are now correctly reflected by the Talent Learned condition.
+* #1844 - The Totem icon type has been updated for Monks to better support the wide range of "totems" that Monks have.
+* #1842 - Fixed handling of Shadowlands legendaries in item suggestion lists
 
 ## v9.0.3
 ### Bug Fixes

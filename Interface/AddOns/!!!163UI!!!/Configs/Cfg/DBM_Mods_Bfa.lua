@@ -7,6 +7,16 @@ U1RegisterAddon("DBM_Mods_Bfa", {
     tags = { "TAG_RAID", },
     defaultEnable = 1,
     nolodbutton = 1,
+    dummy = 1,
+    children = {
+        "DBM-BfA",
+        "DBM-Party-BfA",
+        "DBM-CrucibleofStorms",
+        "DBM-EternalPalace",
+        "DBM-Nyalotha",
+        "DBM-Uldir",
+        "DBM-ZuldazarRaid",
+    },
     toggle = function(name, info, enable, justload)
     end,
 });

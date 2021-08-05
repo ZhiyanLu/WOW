@@ -8,4610 +8,4544 @@ ElephantDBPerChar = {
 			["logs"] = {
 				{
 					["enabled"] = true,
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["name"] = "悄悄话",
 					["logs"] = {
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1608740694,
-							["arg1"] = "演员？？",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627399539,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [1]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1608740861,
-							["arg1"] = "惜败",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627399570,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [2]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1608741006,
-							["arg1"] = "晚安",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627400187,
+							["arg1"] = "精彩的胜利。你证明在佐瓦尔的军队里，无人能与你匹敌。",
 						}, -- [3]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1608741010,
-							["arg1"] = "晚安",
-							["clColor"] = "fff38bb9",
+							["arg1"] = " ",
 						}, -- [4]
 						{
 							["arg1"] = " ",
 						}, -- [5]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 23:08:33。",
 						}, -- [6]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 21:39:26。",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627486854,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [7]
 						{
-							["arg2"] = "尼古拉斯开机-熵魔",
-							["type"] = "WHISPER",
-							["time"] = 1608817672,
-							["arg1"] = "😀《来._.吗》？_ 。《.纳_斯. 😀.利_亚.》__ 。<马>._ <上> _.<开>。__.. YXh1vW",
-							["clColor"] = "ff8687ed",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627486967,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [8]
 						{
-							["arg2"] = "張君雅發财-巴尔古恩",
-							["type"] = "WHISPER",
-							["time"] = 1608819596,
-							["arg1"] = "😣普通全通，进组 哥！",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627487143,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [9]
 						{
-							["arg2"] = "張君雅發财-巴尔古恩",
-							["type"] = "WHISPER",
-							["time"] = 1608819611,
-							["arg1"] = "方便的话上下YY  4 2 9 0 到了说下",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627487186,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [10]
 						{
-							["arg2"] = "張君雅發财-巴尔古恩",
-							["type"] = "WHISPER",
-							["time"] = 1608819649,
-							["arg1"] = "😛 是  消费  PT  1-10 吗",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627487254,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [11]
 						{
-							["arg2"] = "凤歌丶-无尽之海",
-							["type"] = "WHISPER",
-							["time"] = 1608819673,
-							["arg1"] = "<大脚团队提示>欢迎加入本团队，希望我们合作愉快，拥有一次快乐的冒险旅程。",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627487312,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [12]
 						{
-							["arg2"] = "張君雅發财-巴尔古恩",
-							["type"] = "WHISPER",
-							["time"] = 1608819728,
-							["arg1"] = " 在吗",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627487451,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [13]
 						{
-							["arg2"] = "張君雅發财-巴尔古恩",
-							["type"] = "WHISPER",
-							["time"] = 1608819729,
-							["arg1"] = " 在吗",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627487692,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [14]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627488616,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [15]
 						{
 							["arg1"] = " ",
 						}, -- [16]
 						{
-							["arg1"] = "记录开始于 12/27/2020 的 20:37:35。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [17]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609075474,
-							["arg1"] = "YY",
-							["clColor"] = "fff38bb9",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 19:08:35。",
 						}, -- [18]
 						{
-							["arg2"] = "|Kq25|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609076586,
-							["arg1"] = "多少装等了",
+							["arg2"] = "沐雨丶澄風-凤凰之神",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627557695,
+							["arg1"] = "球ZF",
+							["clColor"] = "fffe7b09",
 						}, -- [19]
 						{
-							["arg2"] = "|Kq25|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609076595,
-							["arg1"] = "186",
+							["arg2"] = "江海余生-影之哀伤",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627557700,
+							["arg1"] = "球ZF",
+							["clColor"] = "fffe7b09",
 						}, -- [20]
 						{
-							["arg2"] = "|Kq25|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609076612,
-							["arg1"] = "。。还说喊你奶我  186 奶不动",
+							["arg2"] = "牛不牛看我德-狂热之刃",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627557707,
+							["arg1"] = "球ZF",
+							["clColor"] = "fffe7b09",
 						}, -- [21]
 						{
-							["arg2"] = "|Kq25|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609076633,
-							["arg1"] = "害",
+							["arg2"] = "丷初见丷-格瑞姆巴托",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627557710,
+							["arg1"] = "球ZF",
+							["clColor"] = "fffe7b09",
 						}, -- [22]
 						{
-							["arg2"] = "|Kq25|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609076841,
-							["arg1"] = "哈哈我不打奶",
+							["arg2"] = "诚星橙意-红龙军团",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627557714,
+							["arg1"] = "球ZF",
+							["clColor"] = "fffe7b09",
 						}, -- [23]
 						{
-							["arg1"] = " ",
+							["arg2"] = "秋力心-安苏",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627557718,
+							["arg1"] = "球ZF",
+							["clColor"] = "fffe7b09",
 						}, -- [24]
 						{
 							["arg1"] = " ",
 						}, -- [25]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/27/2020 的 22:09:01。",
+							["arg1"] = " ",
 						}, -- [26]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609079180,
-							["arg1"] = "还 不带我",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = "记录开始于 07/29/2021 的 21:32:28。",
+							["type"] = "SYSTEM",
 						}, -- [27]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "Valkeuterpe-格雷迈恩",
 							["type"] = "WHISPER_INFORM",
-							["time"] = 1609079185,
-							["arg1"] = "害",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627570869,
+							["arg1"] = "把我DK降个职",
+							["clColor"] = "fff38bb9",
 						}, -- [28]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609079196,
-							["arg1"] = "就这样8",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = " ",
 						}, -- [29]
 						{
-							["arg2"] = "你要我背-布兰卡德",
-							["type"] = "WHISPER",
-							["time"] = 1609079413,
-							["arg1"] = "<大脚团队提示>欢迎加入本团队，希望我们合作愉快，拥有一次快乐的冒险旅程。",
-							["clColor"] = "fffefefe",
+							["arg1"] = " ",
 						}, -- [30]
 						{
-							["arg2"] = "Onix-狂热之刃",
-							["type"] = "WHISPER",
-							["time"] = 1609082548,
-							["arg1"] = "DPS稳定",
-							["clColor"] = "fffe7b09",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 23:33:47。",
 						}, -- [31]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627574717,
+							["arg1"] = "做235的合算",
+							["clColor"] = "fff38bb9",
 						}, -- [32]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627574723,
+							["arg1"] = "还是249的？",
+							["clColor"] = "fff38bb9",
 						}, -- [33]
 						{
-							["arg1"] = "记录开始于 12/28/2020 的 22:22:36。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [34]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609165711,
-							["arg1"] = "你来么？？？",
-							["clColor"] = "fff38bb9",
+							["arg1"] = " ",
 						}, -- [35]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1609165736,
-							["arg1"] = "刚刚进本",
-							["clColor"] = "fff38bb9",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/30/2021 的 22:27:45。",
 						}, -- [36]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609165739,
-							["arg1"] = "好的",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627655504,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [37]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1609165741,
-							["arg1"] = "gg",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627655607,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [38]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609165884,
-							["arg1"] = "你这装备哪来的？？",
-							["clColor"] = "fffefefe",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627655710,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [39]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1609165893,
-							["arg1"] = "额",
-							["clColor"] = "fffefefe",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627655757,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [40]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1609165900,
-							["arg1"] = "DL",
-							["clColor"] = "fffefefe",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627655916,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [41]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609165911,
-							["arg1"] = "YY",
-							["clColor"] = "fffefefe",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627655956,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [42]
 						{
-							["arg1"] = " ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627656660,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [43]
 						{
-							["arg1"] = " ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627656744,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [44]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/31/2020 的 19:34:21。",
+							["arg1"] = " ",
 						}, -- [45]
 						{
-							["arg2"] = "黑暗守魂者",
-							["type"] = "MONSTER_WHISPER",
-							["time"] = 1609415023,
-							["arg1"] = "过来，任性的灵魂。我有话要对你说。",
+							["arg1"] = " ",
 						}, -- [46]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 07/31/2021 的 12:12:28。",
+							["type"] = "SYSTEM",
 						}, -- [47]
 						{
-							["arg1"] = " ",
+							["arg2"] = "小楼昨夜又风-安苏",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627706980,
+							["arg1"] = "大哥， |cffa335ee|Hitem:186337::::::::60:105::4:4:7186:6652:1459:6646:1:28:2107:::::|h[尖刻好战者的足具]|h|r 需求吗？",
+							["clColor"] = "ffa22fc8",
 						}, -- [48]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/31/2020 的 23:14:50。",
+							["arg2"] = "大艳艳-库尔提拉斯",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627706983,
+							["arg1"] = "大哥， |cffa335ee|Hitem:186289::::::::60:105::4:4:7186:40:1459:6646:1:28:2107:::::|h[伤痕荣耀斗篷]|h|r 需求吗？",
+							["clColor"] = "ffc59a6c",
 						}, -- [49]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609427831,
-							["arg1"] = "你鸟德转法夜了？",
+							["arg2"] = "小楼昨夜又风-安苏",
+							["type"] = "WHISPER",
+							["time"] = 1627707000,
+							["arg1"] = "交易我",
+							["clColor"] = "ffa22fc8",
 						}, -- [50]
 						{
-							["arg1"] = " ",
+							["arg2"] = "小楼昨夜又风-安苏",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627707003,
+							["arg1"] = "1",
+							["clColor"] = "ffa22fc8",
 						}, -- [51]
 						{
-							["arg1"] = " ",
+							["arg2"] = "小楼昨夜又风-安苏",
+							["type"] = "WHISPER",
+							["time"] = 1627707026,
+							["arg1"] = "与[Magiccream-格雷迈恩]交易成功。(交出)|cffa335ee|Hitem:186337::::::::60:577::4:4:7186:6652:1459:6646:1:28:2107:::::|h[尖刻好战者的足具]|h|r",
+							["clColor"] = "ffa22fc8",
 						}, -- [52]
 						{
-							["arg1"] = "记录开始于 12/31/2020 的 23:18:24。",
-							["type"] = "SYSTEM",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627707603,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [53]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609427926,
-							["arg1"] = "你有钥匙么？",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627707603,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [54]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609427926,
-							["arg1"] = "2层",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627708230,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [55]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609427926,
-							["arg1"] = "大米，。我170咋打",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708230,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [56]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609427933,
-							["arg1"] = "170咋不能打？。。",
+							["arg2"] = "陆尊-燃烧军团",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708423,
+							["arg1"] = "大哥， |cffa335ee|Hitem:186388::::::::60:105::4:4:7186:6652:1459:6646:1:28:2107:::::|h[十字型动脉切割器]|h|r 需求吗？",
+							["clColor"] = "ffa22fc8",
 						}, -- [57]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609427948,
-							["arg1"] = "2c的大米，没有PT M，效率高",
+							["arg2"] = "狄帛菈-凤凰之神",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708423,
+							["arg1"] = "大哥， |cffa335ee|Hitem:186388::::::::60:105::4:4:7186:6652:1459:6646:1:28:2107:::::|h[十字型动脉切割器]|h|r 需求吗？",
+							["clColor"] = "ffa22fc8",
 						}, -- [58]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609427975,
-							["arg1"] = "。",
+							["arg2"] = "饮血者玛鲁斯-阿曼尼",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708424,
+							["arg1"] = "大哥， |cffa335ee|Hitem:186430::::::::60:105::4:4:7186:6652:1459:6646:1:28:2107:::::|h[折磨刑具碎片]|h|r 需求吗？",
+							["clColor"] = "fffef367",
 						}, -- [59]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609427989,
-							["arg1"] = "那你换个号啊",
+							["arg2"] = "饮血者玛鲁斯-阿曼尼",
+							["type"] = "WHISPER",
+							["time"] = 1627708449,
+							["arg1"] = "不要",
+							["clColor"] = "fffef367",
 						}, -- [60]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609427990,
-							["arg1"] = "陪我们打打6 7层",
+							["arg2"] = "饮血者玛鲁斯-阿曼尼",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708461,
+							["arg1"] = "谢谢",
+							["clColor"] = "fffef367",
 						}, -- [61]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428000,
-							["arg1"] = "我鸟？",
+							["arg2"] = "狄帛菈-凤凰之神",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708473,
+							["arg1"] = "哥们 全套需求嘛？",
+							["clColor"] = "ffa22fc8",
 						}, -- [62]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428006,
-							["arg1"] = "都行 或者N",
+							["arg2"] = "陆尊-燃烧军团",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708478,
+							["arg1"] = "哥们 全套需求嘛？",
+							["clColor"] = "ffa22fc8",
 						}, -- [63]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428019,
-							["arg1"] = "不想奶，，奶吐 了",
+							["arg2"] = "狄帛菈-凤凰之神",
+							["type"] = "WHISPER",
+							["time"] = 1627708494,
+							["arg1"] = "已经分解了 ",
+							["clColor"] = "ffa22fc8",
 						}, -- [64]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428023,
-							["arg1"] = "那就鸟 ",
+							["arg2"] = "狄帛菈-凤凰之神",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708502,
+							["arg1"] = "额。。",
+							["clColor"] = "ffa22fc8",
 						}, -- [65]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428030,
-							["arg1"] = "组我",
+							["arg2"] = "狄帛菈-凤凰之神",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627708505,
+							["arg1"] = "行吧",
+							["clColor"] = "ffa22fc8",
 						}, -- [66]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428037,
-							["arg1"] = "我钥匙9C的",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627709001,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [67]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428049,
-							["arg1"] = "你熊？",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627709001,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [68]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428056,
-							["arg1"] = "废话",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627709783,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [69]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428067,
-							["arg1"] = "那我肯定不奶",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627709783,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [70]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428069,
-							["arg1"] = "你能语音么",
+							["arg2"] = "Evoque-夏维安",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627709826,
+							["arg1"] = "大哥， |cffa335ee|Hitem:186290::::::::60:105::4:5:7186:6652:7574:1459:6646:1:28:2107:::::|h[九武神的誓言]|h|r 需求吗？",
+							["clColor"] = "ffc59a6c",
 						}, -- [71]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428070,
-							["arg1"] = "打死不奶",
+							["arg2"] = "丨琴伤丨-贫瘠之地",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627709830,
+							["arg1"] = "大哥， |cffa335ee|Hitem:186299::::::::60:105::4:4:7186:6652:1459:6646:1:28:2107:::::|h[达丝琪拉的蔑视护足]|h|r 需求吗？",
+							["clColor"] = "fffef367",
 						}, -- [72]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428074,
-							["arg1"] = "微信",
+							["arg2"] = "专业綵花-戈提克",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627709830,
+							["arg1"] = "大哥， |cffa335ee|Hitem:186385::::::::60:105::4:4:7186:6652:1459:6646:1:28:2107:::::|h[席格妮的洪亮刀锋]|h|r 需求吗？",
+							["clColor"] = "fffe7b09",
 						}, -- [73]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428077,
-							["arg1"] = "你电脑登录一下",
+							["arg2"] = "丨琴伤丨-贫瘠之地",
+							["type"] = "WHISPER",
+							["time"] = 1627709836,
+							["arg1"] = "来",
+							["clColor"] = "fffef367",
 						}, -- [74]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428084,
-							["arg1"] = "？",
+							["arg2"] = "丨琴伤丨-贫瘠之地",
+							["type"] = "WHISPER",
+							["time"] = 1627709848,
+							["arg1"] = "与[Magiccream-格雷迈恩]交易成功。(交出)|cffa335ee|Hitem:186299::::::::60:259::4:4:7186:6652:1459:6646:1:28:2107:::::|h[达丝琪拉的蔑视护足]|h|r",
+							["clColor"] = "fffef367",
 						}, -- [75]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428085,
-							["arg1"] = "？",
+							["arg2"] = "丨琴伤丨-贫瘠之地",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627709850,
+							["arg1"] = "谢谢",
+							["clColor"] = "fffef367",
 						}, -- [76]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428088,
-							["arg1"] = "不是YY吗",
+							["arg2"] = "丶莱克多巴胺-凤凰之神",
+							["type"] = "WHISPER",
+							["time"] = 1627709854,
+							["arg1"] = "99",
+							["clColor"] = "ff8687ed",
 						}, -- [77]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428088,
-							["arg1"] = "能不能微信语音",
+							["arg2"] = "丶莱克多巴胺-凤凰之神",
+							["type"] = "WHISPER",
+							["time"] = 1627709864,
+							["arg1"] = "谢谢",
+							["clColor"] = "ff8687ed",
 						}, -- [78]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428093,
-							["arg1"] = "有人没有YY",
+							["arg2"] = "丶莱克多巴胺-凤凰之神",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627709867,
+							["arg1"] = "客气",
+							["clColor"] = "ff8687ed",
 						}, -- [79]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428097,
-							["arg1"] = "这个哈尼斯斯 是个农民",
+							["arg2"] = "胡艳荣-燃烧之刃",
+							["type"] = "WHISPER",
+							["time"] = 1627714393,
+							["arg1"] = "   y",
+							["clColor"] = "fffe7b09",
 						}, -- [80]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428097,
-							["arg1"] = "。。。。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627715588,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [81]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428101,
-							["arg1"] = "就是你们火影群的",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627715588,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [82]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428103,
-							["arg1"] = "小姚哥哥",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627715588,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [83]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428108,
-							["arg1"] = "微信我不言",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627715588,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [84]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428115,
-							["arg1"] = "微信跟YY不是一样的么？",
+							["arg1"] = " ",
 						}, -- [85]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428118,
-							["arg1"] = "电脑登录一下",
+							["arg1"] = " ",
 						}, -- [86]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428122,
-							["arg1"] = "都在电脑上",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/31/2021 的 19:06:10。",
 						}, -- [87]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428127,
-							["arg1"] = "我电脑没微信",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627730523,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [88]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428153,
-							["arg1"] = "那就眼神吧",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627730554,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [89]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428162,
-							["arg1"] = "害",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627730842,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [90]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428324,
-							["arg1"] = "你现在是格里恩还是法夜啊",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627730920,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [91]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428327,
-							["arg1"] = "格里恩",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627731523,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [92]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428344,
-							["arg1"] = "任务台里，要是刷到一个sp任务",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627731655,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [93]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428358,
-							["arg1"] = "导师的圣钟，记得做，无敌",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627731789,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [94]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428374,
-							["arg1"] = "OK",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627731836,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [95]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428382,
-							["arg1"] = "|Hitem:184842::::::::60:104::74:4:6652:1472:5874:6616:1:28:2060:::|h[导师的圣钟]|h 我有。。",
+							["arg2"] = "淵虹灬-影之哀伤",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627732215,
+							["arg1"] = "交易不了",
+							["clColor"] = "ffa22fc8",
 						}, -- [96]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428382,
-							["arg1"] = "最高171，，，被动加精通500多",
+							["arg2"] = "淵虹灬-影之哀伤",
+							["type"] = "WHISPER",
+							["time"] = 1627732227,
+							["arg1"] = "憨憨   难受   没事",
+							["clColor"] = "ffa22fc8",
 						}, -- [97]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428389,
-							["arg1"] = "明明177",
+							["arg1"] = " ",
 						}, -- [98]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428391,
-							["arg1"] = "卧槽",
+							["arg1"] = " ",
 						}, -- [99]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428397,
-							["arg1"] = "你是狗吗",
+							["arg1"] = "记录开始于 07/31/2021 的 23:00:37。",
+							["type"] = "SYSTEM",
 						}, -- [100]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428401,
-							["arg1"] = "鸟德无敌",
+							["arg2"] = "|Kq61|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1627747773,
+							["arg1"] = "你塔爬到多少了",
 						}, -- [101]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428401,
-							["arg1"] = "毕业了鸟",
+							["arg2"] = "|Kq61|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1627747778,
+							["arg1"] = "10",
 						}, -- [102]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428415,
-							["arg1"] = "嘻嘻",
+							["arg2"] = "|Kq61|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1627747779,
+							["arg1"] = "YY说话",
 						}, -- [103]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428440,
-							["arg1"] = "你这xd",
+							["arg1"] = " ",
 						}, -- [104]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428450,
-							["arg1"] = "胸+护腕没附魔的？",
+							["arg1"] = " ",
 						}, -- [105]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428455,
-							["arg1"] = "也能冲dps?",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 09:01:12。",
 						}, -- [106]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428486,
-							["arg1"] = "胸附魔什么？",
+							["arg2"] = "忆如万宝路-亚雷戈斯",
+							["type"] = "WHISPER",
+							["time"] = 1627783521,
+							["arg1"] = "戒指需要吗",
+							["clColor"] = "ff00fe97",
 						}, -- [107]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428491,
-							["arg1"] = "主属性啊",
+							["arg2"] = "忆如万宝路-亚雷戈斯",
+							["type"] = "WHISPER",
+							["time"] = 1627783523,
+							["arg1"] = "与[Magiccream-格雷迈恩]交易成功。 (收到)|cffa335ee|Hitem:178781::::::::60:268::33:6:7614:7359:6652:7574:1540:6646:1:28:1279:::::|h[仪式指挥官之戒]|h|r",
+							["clColor"] = "ff00fe97",
 						}, -- [108]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428496,
-							["arg1"] = "|Hitem:181655:6230:::::::60:104::27:4:6652:1472:5871:6616:1:28:1707:::|h[骸皮外衣]|h",
+							["arg2"] = "忆如万宝路-亚雷戈斯",
+							["type"] = "WHISPER",
+							["time"] = 1627783529,
+							["arg1"] = "谢谢大哥~",
+							["clColor"] = "ff00fe97",
 						}, -- [109]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428514,
-							["arg1"] = "手腕F智力",
+							["arg2"] = "忆如万宝路-亚雷戈斯",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627783532,
+							["arg1"] = "客气",
+							["clColor"] = "ff00fe97",
 						}, -- [110]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428525,
-							["arg1"] = "有吗？",
+							["arg1"] = " ",
 						}, -- [111]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428528,
-							["arg1"] = "。。",
+							["arg1"] = " ",
 						}, -- [112]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428531,
-							["arg1"] = "|Hitem:184136:6219:::::::60:104::81:4:6652:7193:1492:6646:1:28:2060:::|h[心能充能的腕带]|h",
+							["arg1"] = "记录开始于 08/01/2021 的 12:03:27。",
+							["type"] = "SYSTEM",
 						}, -- [113]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428532,
-							["arg1"] = "你职业是附魔师？",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627791199,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [114]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428547,
-							["arg1"] = "工会可以看全部专业的全部物品的知道么?..",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627791275,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [115]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428556,
-							["arg1"] = "不知道",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627791623,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [116]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428562,
-							["arg1"] = "工会-名单-专业技能",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627791658,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [117]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428567,
-							["arg1"] = "查看所有",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627791972,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [118]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428583,
-							["arg1"] = "我没公会",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627792013,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [119]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428585,
-							["arg1"] = "。。",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627792086,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [120]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428599,
-							["arg1"] = "附魔师才能付吧",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627792123,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [121]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428604,
-							["arg1"] = "我又不是附魔",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627792414,
+							["arg1"] = "精彩的胜利。你证明在佐瓦尔的军队里，无人能与你匹敌。",
 						}, -- [122]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428607,
-							["arg1"] = "直接ah买啊",
+							["arg1"] = " ",
 						}, -- [123]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428610,
-							["arg1"] = "我也而不是fm",
+							["arg1"] = " ",
 						}, -- [124]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428615,
-							["arg1"] = "是吗",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 20:41:30。",
 						}, -- [125]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428618,
-							["arg1"] = "。。",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627824431,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [126]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428622,
-							["arg1"] = "害",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627824505,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [127]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609428626,
-							["arg1"] = "稍微有点不专业了嗷",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627824555,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [128]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428640,
-							["arg1"] = "哦",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627824617,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [129]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428643,
-							["arg1"] = "我买了",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627824734,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [130]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428647,
-							["arg1"] = "忘记付了",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627824768,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [131]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428679,
-							["arg1"] = "这不就有了",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627825305,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [132]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609428683,
-							["arg1"] = "忘了而已",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627825339,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [133]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609429009,
-							["arg1"] = "不卡化身？",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627825757,
+							["arg1"] = "精彩的胜利。你证明在佐瓦尔的军队里，无人能与你匹敌。",
 						}, -- [134]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609429103,
-							["arg1"] = "不卡",
+							["arg1"] = " ",
 						}, -- [135]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609429539,
-							["arg1"] = "害 太脆啦",
+							["arg1"] = " ",
 						}, -- [136]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609429612,
-							["arg1"] = "没大招不要啦一大波啊",
+							["arg1"] = "记录开始于 08/01/2021 的 23:21:42。",
+							["type"] = "SYSTEM",
 						}, -- [137]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609429617,
-							["arg1"] = "被哈尼斯斯骗了",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627832024,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [138]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609429995,
-							["arg1"] = "我啦的有没有问题啊",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627832064,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [139]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609429997,
-							["arg1"] = "你们咋死的？",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627832386,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [140]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609430004,
-							["arg1"] = "没奶我",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627832455,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [141]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430923,
-							["arg1"] = "这T还行吧？",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627832764,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [142]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430929,
-							["arg1"] = "第一次T嗷",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627832813,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [143]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430938,
-							["arg1"] = "这硬度",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627833337,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [144]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609430945,
-							["arg1"] = "好菜",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627833392,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [145]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430947,
-							["arg1"] = "？",
+							["arg1"] = " ",
 						}, -- [146]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430959,
-							["arg1"] = "行吧",
+							["arg1"] = " ",
 						}, -- [147]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430960,
-							["arg1"] = "害",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 18:29:08。",
 						}, -- [148]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609430983,
-							["arg1"] = "这路线",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627901010,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [149]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430988,
-							["arg1"] = "？？",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627901041,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [150]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609430989,
-							["arg1"] = "这进度",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627901186,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [151]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430990,
-							["arg1"] = "说了第一次T",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627901258,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [152]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609430991,
-							["arg1"] = "不能看",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627901323,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [153]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609430997,
-							["arg1"] = "意思是 还能喷路线？",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627901367,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [154]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609431002,
-							["arg1"] = "应该说",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627901602,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [155]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609431006,
-							["arg1"] = "第一次打这个本",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627901631,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [156]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609431022,
-							["arg1"] = "行吧",
+							["arg1"] = " ",
 						}, -- [157]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609431028,
-							["arg1"] = "溜了",
+							["arg1"] = " ",
 						}, -- [158]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609431029,
-							["arg1"] = "不过作为职业玩家",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 22:30:26。",
 						}, -- [159]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609431034,
-							["arg1"] = "要求高一点正常嗷",
+							["arg2"] = "漫雨飞花-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627914742,
+							["arg1"] = "sm是一棵大白菜是吧？",
+							["clColor"] = "ff3ec6ea",
 						}, -- [160]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609431045,
-							["arg1"] = "我会再接再厉哒",
+							["arg2"] = "漫雨飞花-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627914750,
+							["arg1"] = "对·",
+							["clColor"] = "ff3ec6ea",
 						}, -- [161]
 						{
-							["arg2"] = "Superdady-格雷迈恩",
+							["arg2"] = "漫雨飞花-格雷迈恩",
 							["type"] = "WHISPER_INFORM",
-							["time"] = 1609431077,
-							["arg1"] = "歇了",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627914754,
+							["arg1"] = "别又认错了。。",
+							["clColor"] = "ff3ec6ea",
 						}, -- [162]
 						{
-							["arg2"] = "Superdady-格雷迈恩",
+							["arg2"] = "漫雨飞花-格雷迈恩",
 							["type"] = "WHISPER",
-							["time"] = 1609431113,
-							["arg1"] = "88",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627914761,
+							["arg1"] = "这回不错了·",
+							["clColor"] = "ff3ec6ea",
 						}, -- [163]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609431115,
-							["arg1"] = "gawa ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627915195,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [164]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609431118,
-							["arg1"] = "噶哇",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627915327,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [165]
 						{
-							["arg2"] = "|Kq2|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609431712,
-							["arg1"] = "看下微信看",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627915519,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [166]
 						{
-							["arg2"] = "|Kq14|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609432020,
-							["arg1"] = "？",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627915568,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [167]
 						{
-							["arg2"] = "|Kq14|k",
-							["type"] = "BN_WHISPER_INFORM",
-							["time"] = 1609432024,
-							["arg1"] = "？？",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627916399,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [168]
 						{
-							["arg2"] = "|Kq14|k",
-							["type"] = "BN_WHISPER",
-							["time"] = 1609432027,
-							["arg1"] = "不是在语音么",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627916472,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [169]
 						{
-							["arg1"] = " ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627916643,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [170]
 						{
 							["arg1"] = " ",
 						}, -- [171]
 						{
-							["arg1"] = "记录开始于 01/03/2021 的 13:41:40。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [172]
 						{
-							["arg2"] = "黑暗守魂者",
-							["type"] = "MONSTER_WHISPER",
-							["time"] = 1609653022,
-							["arg1"] = "过来，任性的灵魂。我有话要对你说。",
+							["arg1"] = "记录开始于 08/02/2021 的 23:31:06。",
+							["type"] = "SYSTEM",
 						}, -- [173]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1609653160,
-							["arg1"] = "给你激活了！！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627919039,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [174]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609653160,
-							["arg1"] = "给你激活了！！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627919098,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [175]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1609653161,
-							["arg1"] = "给你激活了！！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627919321,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [176]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1609653161,
-							["arg1"] = "给你激活了！！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627919376,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [177]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627919469,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [178]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627919469,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [179]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 20:46:53。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER",
+							["time"] = 1627919756,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [180]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1610023832,
-							["arg1"] = "yy上",
-							["clColor"] = "ffc59a6c",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627919756,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [181]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610023981,
-							["arg1"] = "？",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627920222,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [182]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610023987,
-							["arg1"] = "意思是不带我们？",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627920271,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [183]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "WHISPER",
-							["time"] = 1610024005,
-							["arg1"] = "晚上不打本了",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627920383,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [184]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "WHISPER_INFORM",
-							["time"] = 1610024009,
-							["arg1"] = "？？？",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627920383,
+							["arg1"] = "给你激活了！！",
+							["clColor"] = "fffe7b09",
 						}, -- [185]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610024010,
-							["arg1"] = "啊？",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627920437,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [186]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610024029,
-							["arg1"] = "杂拉拉",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627920500,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [187]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610024031,
-							["arg1"] = "咋啦",
-							["clColor"] = "fff38bb9",
+							["arg1"] = " ",
 						}, -- [188]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1610024384,
-							["arg1"] = "在吗",
-							["clColor"] = "ffc59a6c",
+							["arg1"] = " ",
 						}, -- [189]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1610024435,
-							["arg1"] = "yy",
-							["clColor"] = "ffc59a6c",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 19:21:36。",
 						}, -- [190]
 						{
-							["arg2"] = "梦千涵-凤凰之神",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610027145,
-							["arg1"] = "神木大米好像是没有戒律厉害",
-							["clColor"] = "fffefefe",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627990466,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [191]
 						{
-							["arg2"] = "梦千涵-凤凰之神",
+							["arg2"] = "鲸落南北-天空之墙",
 							["type"] = "WHISPER",
-							["time"] = 1610027161,
-							["arg1"] = "哦哦  下次用戒律",
-							["clColor"] = "fffefefe",
+							["time"] = 1627990561,
+							["arg1"] = "Magiccream, 感谢你使用 |cff71d5ff|Hspell:50769:0|h[起死回生]|h|r 复活我. :)",
+							["clColor"] = "ff006fdc",
 						}, -- [192]
 						{
-							["arg2"] = "梦千涵-凤凰之神",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610027172,
-							["arg1"] = "我也不确定 没玩过ms",
-							["clColor"] = "fffefefe",
+							["arg2"] = "扎小克-燃烧之刃",
+							["type"] = "WHISPER",
+							["time"] = 1627990601,
+							["arg1"] = "Magiccream, 感谢你使用 |cff71d5ff|Hspell:50769:0|h[起死回生]|h|r 复活我. :)",
+							["clColor"] = "ffc59a6c",
 						}, -- [193]
 						{
-							["arg1"] = " ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627990668,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [194]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Gustaa-诺莫瑞根",
+							["type"] = "WHISPER",
+							["time"] = 1627991828,
+							["arg1"] = "法夜？",
+							["clColor"] = "ff00fe97",
 						}, -- [195]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/11/2021 的 19:36:36。",
+							["arg2"] = "Gustaa-诺莫瑞根",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1627991847,
+							["arg1"] = "恩啊 不过是猫德{兴奋}",
+							["clColor"] = "ff00fe97",
 						}, -- [196]
 						{
-							["arg2"] = "懒洋洋-奥杜尔",
+							["arg2"] = "Gustaa-诺莫瑞根",
 							["type"] = "WHISPER",
-							["time"] = 1610365050,
-							["arg1"] = "老哥进组,H后三 马上打，YY 935990",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627991859,
+							["arg1"] = "。。。太难受了 ",
+							["clColor"] = "ff00fe97",
 						}, -- [197]
 						{
-							["arg2"] = "懒洋洋-奥杜尔",
-							["type"] = "WHISPER",
-							["time"] = 1610365053,
-							["arg1"] = "上 YY：935990 【先来接待频道】   到了告诉我",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992297,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [198]
 						{
-							["arg1"] = " ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992349,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [199]
 						{
-							["arg1"] = " ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992462,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [200]
 						{
-							["arg1"] = "记录开始于 01/11/2021 的 19:41:36。",
-							["type"] = "SYSTEM",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992495,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [201]
 						{
-							["arg2"] = "斯巴达灬-萨尔",
-							["type"] = "WHISPER",
-							["time"] = 1610365327,
-							["arg1"] = "老哥进团",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992682,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [202]
 						{
-							["arg2"] = "斯巴达灬-萨尔",
-							["type"] = "WHISPER",
-							["time"] = 1610365335,
-							["arg1"] = "亲是打PT全通还是打H全通。。",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992719,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [203]
 						{
-							["arg2"] = "懒洋洋-奥杜尔",
-							["type"] = "WHISPER",
-							["time"] = 1610365372,
-							["arg1"] = "老哥进组,H后三 马上打，YY 935990",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993306,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [204]
 						{
-							["arg2"] = "懒洋洋-奥杜尔",
-							["type"] = "WHISPER",
-							["time"] = 1610365385,
-							["arg1"] = "上 YY：935990 【先来接待频道】   到了告诉我",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993398,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [205]
 						{
-							["arg2"] = "懒洋洋-奥杜尔",
-							["type"] = "WHISPER",
-							["time"] = 1610365454,
-							["arg1"] = "上 YY：935990 【先来接待频道】   到了告诉我",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993814,
+							["arg1"] = "精彩的胜利。你证明在佐瓦尔的军队里，无人能与你匹敌。",
 						}, -- [206]
 						{
-							["arg2"] = "佳妮魔兽真好-军团要塞",
-							["type"] = "WHISPER",
-							["time"] = 1610365501,
-							["arg1"] = "  Y  Y  7   3 1 1 8 3         ",
-							["clColor"] = "ffc31d39",
+							["arg1"] = " ",
 						}, -- [207]
 						{
-							["arg2"] = "懒洋洋-奥杜尔",
-							["type"] = "WHISPER",
-							["time"] = 1610365508,
-							["arg1"] = "Magiccream-格雷迈恩  在吗 你装等多少？",
-							["clColor"] = "ffc31d39",
+							["arg1"] = " ",
 						}, -- [208]
 						{
-							["arg2"] = "大奔-辛达苟萨",
-							["type"] = "WHISPER",
-							["time"] = 1610365510,
-							["arg1"] = "进组请上yy 到yy团队打11 谢谢",
-							["clColor"] = "fffe7b09",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [209]
 						{
-							["arg2"] = "滴滴打本好三-燃烧之刃",
-							["type"] = "WHISPER",
-							["time"] = 1610365512,
-							["arg1"] = "1",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004195,
+							["arg1"] = "你现在一个月多少K啊？方便说么？",
 						}, -- [210]
 						{
-							["arg2"] = "滴滴打本好三-燃烧之刃",
-							["type"] = "WHISPER",
-							["time"] = 1610365515,
-							["arg1"] = "打吗",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "漫雨飞花-格雷迈恩",
+							["type"] = "WHISPER_INFORM",
+							["time"] = 1628004222,
+							["arg1"] = "？？",
+							["clColor"] = "ff3ec6ea",
 						}, -- [211]
 						{
-							["arg2"] = "滴滴打本好三-燃烧之刃",
-							["type"] = "WHISPER",
-							["time"] = 1610365519,
-							["arg1"] = "马上打",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004310,
+							["arg1"] = "1.2",
 						}, -- [212]
 						{
-							["arg2"] = "大奔-辛达苟萨",
-							["type"] = "WHISPER",
-							["time"] = 1610365523,
-							["arg1"] = " 请上yy 4290 到了团队打 11 ",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004317,
+							["arg1"] = "咋啦",
 						}, -- [213]
 						{
-							["arg2"] = "大奔-辛达苟萨",
-							["type"] = "WHISPER",
-							["time"] = 1610365524,
-							["arg1"] = " 请上yy 4290 到了团队打 11 ",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004323,
+							["arg1"] = "ok 就问一下",
 						}, -- [214]
 						{
-							["arg2"] = "大奔-辛达苟萨",
-							["type"] = "WHISPER",
-							["time"] = 1610365529,
-							["arg1"] = " 是消费英雄/普通全通吗？老哥",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004327,
+							["arg1"] = "了解一下厦门的行情",
 						}, -- [215]
 						{
-							["arg1"] = " ",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004333,
+							["arg1"] = "厦门",
 						}, -- [216]
 						{
-							["arg1"] = " ",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004336,
+							["arg1"] = "辣鸡",
 						}, -- [217]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/16/2021 的 12:34:49。",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004346,
+							["arg1"] = "收入太特么低了",
 						}, -- [218]
 						{
-							["arg2"] = "Exmist-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610771754,
-							["arg1"] = "大么？",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004356,
+							["arg1"] = "你老婆呢现在",
 						}, -- [219]
 						{
-							["arg2"] = "Exmist-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1610771763,
-							["arg1"] = "打",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004366,
+							["arg1"] = "她直接gg",
 						}, -- [220]
 						{
-							["arg2"] = "Exmist-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610771768,
-							["arg1"] = "GO",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004369,
+							["arg1"] = "？？",
 						}, -- [221]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610771800,
-							["arg1"] = "我用dk",
-							["clColor"] = "ff006fdc",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004374,
+							["arg1"] = "以前的零头",
 						}, -- [222]
 						{
-							["arg1"] = " ",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004382,
+							["arg1"] = "以前多少来着？",
 						}, -- [223]
 						{
-							["arg1"] = " ",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004392,
+							["arg1"] = "2W多吧",
 						}, -- [224]
 						{
-							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
-							["type"] = "SYSTEM",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004399,
+							["arg1"] = "现在呢。。",
 						}, -- [225]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610983358,
-							["arg1"] = "在？",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004401,
+							["arg1"] = "1W？",
 						}, -- [226]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610984967,
-							["arg1"] = "？",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER",
+							["time"] = 1628004409,
+							["arg1"] = "2w去掉",
 						}, -- [227]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1610986776,
-							["arg1"] = "贵族？",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "|Kq131|k",
+							["type"] = "BN_WHISPER_INFORM",
+							["time"] = 1628004419,
+							["arg1"] = "。。。",
 						}, -- [228]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610986871,
-							["arg1"] = "？",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628004984,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [229]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610986872,
-							["arg1"] = "没看见",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005089,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [230]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610986874,
-							["arg1"] = "准备睡啦",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005270,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [231]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1610986876,
-							["arg1"] = "不好意思",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005330,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [232]
 						{
-							["arg1"] = " ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006196,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [233]
 						{
-							["arg1"] = " ",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006235,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [234]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/19/2021 的 21:34:05。",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006380,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [235]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1611063364,
-							["arg1"] = "？",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006438,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [236]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1611063419,
-							["arg1"] = "贵族？",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = " ",
 						}, -- [237]
 						{
 							["arg1"] = " ",
 						}, -- [238]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
 						}, -- [239]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628076873,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [240]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1611067561,
-							["arg1"] = "6剧场来不来",
-							["clColor"] = "fffefefe",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077043,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [241]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1611067714,
-							["arg1"] = "本人？",
-							["clColor"] = "ff006fdc",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077071,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [242]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1611067722,
-							["arg1"] = "对的",
-							["clColor"] = "ff006fdc",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077113,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [243]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1611067729,
-							["arg1"] = "剧场来不来",
-							["clColor"] = "ff006fdc",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077415,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [244]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1611067731,
-							["arg1"] = "大米！",
-							["clColor"] = "ff006fdc",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077466,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [245]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1611067736,
-							["arg1"] = "= =",
-							["clColor"] = "ff006fdc",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628078099,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [246]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1611067745,
-							["arg1"] = "几层的",
-							["clColor"] = "ff006fdc",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628078145,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [247]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1611067750,
-							["arg1"] = "6或者9",
-							["clColor"] = "ff006fdc",
+							["arg1"] = " ",
 						}, -- [248]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER",
-							["time"] = 1611067758,
-							["arg1"] = "你们要是早半小时找我，我还能打",
-							["clColor"] = "ff006fdc",
+							["arg1"] = " ",
 						}, -- [249]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "WHISPER_INFORM",
-							["time"] = 1611067761,
-							["arg1"] = "额",
-							["clColor"] = "ff006fdc",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [250]
 					},
 				}, -- [1]
 				{
 					["enabled"] = true,
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["name"] = "团队",
 					["logs"] = {
 						{
-							["arg2"] = "维鲁拉克斯魔药编织者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025380,
-							["arg1"] = "我会亲手宰了你！",
+							["time"] = 1627992554,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [1]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025465,
-							["arg1"] = "谁胆敢闯进我的实验室？！",
+							["time"] = 1627992555,
+							["arg1"] = "要对仙野有信心。",
 						}, -- [2]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025469,
-							["arg1"] = "等我找到你，我会好好展示一下我的研究成果。",
+							["time"] = 1627992557,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [3]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025593,
-							["arg1"] = "你们无法理解我的才华！",
+							["time"] = 1627992569,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [4]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025604,
-							["arg1"] = "它想要的……只有血肉！吃吧！",
+							["time"] = 1627992581,
+							["arg1"] = "我……控制不住……",
 						}, -- [5]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025616,
-							["arg1"] = "接下来可有你们好看的！",
+							["time"] = 1627992589,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [6]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025631,
-							["arg1"] = "先试一下，注入一点攻击性！",
+							["time"] = 1627992592,
+							["arg1"] = "一定要……撑住……",
 						}, -- [7]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025656,
-							["arg1"] = "先拿你试试这只软泥！",
+							["time"] = 1627992602,
+							["arg1"] = "我……控制不住……",
 						}, -- [8]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025668,
-							["arg1"] = "先试一下，注入一点攻击性！",
+							["time"] = 1627992606,
+							["arg1"] = "服从我！",
 						}, -- [9]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025684,
-							["arg1"] = "尝尝这场实验的爆炸性成果吧！",
+							["time"] = 1627992609,
+							["arg1"] = "一定要……撑住……",
 						}, -- [10]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025699,
-							["arg1"] = "智障！",
+							["time"] = 1627992616,
+							["arg1"] = "黑暗拥抱我！",
 						}, -- [11]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025708,
-							["arg1"] = "智障！",
+							["time"] = 1627992619,
+							["arg1"] = "我……控制不住……",
 						}, -- [12]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025724,
-							["arg1"] = "又一份样本！",
+							["time"] = 1627992627,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [13]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025725,
-							["arg1"] = "你们真是不错的小白鼠。",
+							["time"] = 1627992631,
+							["arg1"] = "请……活下来……",
 						}, -- [14]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025860,
-							["arg1"] = "你们无法理解我的才华！",
+							["time"] = 1627992631,
+							["arg1"] = "从我眼前消失！",
 						}, -- [15]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025868,
-							["arg1"] = "它想要的……只有血肉！吃吧！",
+							["time"] = 1627992641,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [16]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025878,
-							["arg1"] = "接下来可有你们好看的！",
+							["time"] = 1627992644,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [17]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025892,
-							["arg1"] = "先试一下，注入一点攻击性！",
+							["time"] = 1627992647,
+							["arg1"] = "请……活下来……",
 						}, -- [18]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025910,
-							["arg1"] = "先拿你试试这只软泥！",
+							["time"] = 1627992657,
+							["arg1"] = "我……控制不住……",
 						}, -- [19]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025930,
-							["arg1"] = "来点催化剂怎么样？",
+							["time"] = 1627992660,
+							["arg1"] = "服从我！",
 						}, -- [20]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025942,
-							["arg1"] = "它想要的……只有血肉！吃吧！",
+							["time"] = 1627992663,
+							["arg1"] = "要对仙野有信心。",
 						}, -- [21]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025943,
-							["arg1"] = "尝尝这场实验的爆炸性成果吧！",
+							["time"] = 1627992664,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [22]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025958,
-							["arg1"] = "先拿你试试这只软泥！",
+							["time"] = 1627992670,
+							["arg1"] = "竟敢违抗我！",
 						}, -- [23]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610025968,
-							["arg1"] = "来点催化剂怎么样？",
+							["time"] = 1627992670,
+							["arg1"] = "你们明明……那么……弱……",
 						}, -- [24]
 						{
-							["arg2"] = "伊库斯博士",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610025985,
-							["arg1"] = "先拿你试试这只软泥！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992682,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [25]
 						{
-							["arg2"] = "伊库斯博士",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026000,
-							["arg1"] = "我明明……就快完成了……",
+							["time"] = 1627992684,
+							["arg1"] = "耶！又有新朋友来玩了！快过来！",
 						}, -- [26]
 						{
-							["arg2"] = "万眼防御者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026021,
-							["arg1"] = "守住阵线！如果多米娜无法夺得斯特拉达玛的魔药，她就会摘走我们的脑袋！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992719,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [27]
 						{
-							["arg2"] = "凋零大鹏骑手",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026040,
-							["arg1"] = "施放骨矛！",
+							["time"] = 1627993113,
+							["arg1"] = "这一定会很有趣！",
 						}, -- [28]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026443,
-							["arg1"] = "你阻止不了我！",
+							["time"] = 1627993122,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [29]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026448,
-							["arg1"] = "我的利刃会劈开你的血肉！",
+							["time"] = 1627993127,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [30]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026454,
-							["arg1"] = "你脚下就是你的葬身之地！",
+							["time"] = 1627993136,
+							["arg1"] = "嘿，接着！",
 						}, -- [31]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026460,
-							["arg1"] = "阴影中的匕首会刺穿你的心脏。",
+							["time"] = 1627993142,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [32]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026470,
-							["arg1"] = "我的利刃会劈开你的血肉！",
+							["time"] = 1627993147,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [33]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026476,
-							["arg1"] = "你脚下就是你的葬身之地！",
+							["time"] = 1627993151,
+							["arg1"] = "嘿，接着！",
 						}, -- [34]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026492,
-							["arg1"] = "只要有一处擦破点皮……",
+							["time"] = 1627993164,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [35]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026497,
-							["arg1"] = "阴影中的匕首会刺穿你的心脏。",
+							["time"] = 1627993167,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [36]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026516,
-							["arg1"] = "我的利刃会劈开你的血肉！",
+							["time"] = 1627993170,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [37]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026522,
-							["arg1"] = "你脚下就是你的葬身之地！",
+							["time"] = 1627993181,
+							["arg1"] = "嘿，接着！",
 						}, -- [38]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026533,
-							["arg1"] = "暗影会拥抱你的陨灭。",
+							["time"] = 1627993191,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [39]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026540,
-							["arg1"] = "我的利刃会劈开你的血肉！",
+							["time"] = 1627993196,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [40]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026546,
-							["arg1"] = "你脚下就是你的葬身之地！",
+							["time"] = 1627993199,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [41]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026550,
-							["arg1"] = "我……必将……复仇……",
+							["time"] = 1627993209,
+							["arg1"] = "嘿，接着！",
 						}, -- [42]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026615,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
+							["time"] = 1627993220,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [43]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026640,
-							["arg1"] = "仆从们，用餐时间到！",
+							["time"] = 1627993223,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [44]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026681,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
+							["time"] = 1627993223,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [45]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026691,
-							["arg1"] = "仆从们，用餐时间到！",
+							["time"] = 1627993237,
+							["arg1"] = "动作快！",
 						}, -- [46]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026765,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
+							["time"] = 1627993242,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [47]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026776,
-							["arg1"] = "起来吧，凋零的仆从！",
+							["time"] = 1627993252,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [48]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026800,
-							["arg1"] = "腐败的守护者，听我号令！",
+							["time"] = 1627993256,
+							["arg1"] = "嘿，接着！",
 						}, -- [49]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026808,
-							["arg1"] = "凋零之母……来找你了……",
+							["time"] = 1627993264,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [50]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026870,
-							["arg1"] = "见证我最后的杰作！我的骄傲，我的末日！",
+							["time"] = 1627993270,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [51]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026879,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
+							["time"] = 1627993271,
+							["arg1"] = "动作快！",
 						}, -- [52]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026888,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993306,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [53]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026899,
-							["arg1"] = "一切都将毁灭！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993398,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [54]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026923,
-							["arg1"] = "它在扩散！无法束缚！",
+							["time"] = 1627993620,
+							["arg1"] = "毁灭！吞噬！饕餮大餐！",
 						}, -- [55]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026935,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
+							["time"] = 1627993625,
+							["arg1"] = "炸开花！炸开花！",
 						}, -- [56]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026944,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["time"] = 1627993640,
+							["arg1"] = "黑暗！",
 						}, -- [57]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026958,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
+							["time"] = 1627993640,
+							["arg1"] = "我吃到了……我……进化了……",
 						}, -- [58]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026969,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["time"] = 1627993655,
+							["arg1"] = "你们无路可逃。",
 						}, -- [59]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026972,
-							["arg1"] = "一切都将毁灭！",
+							["time"] = 1627993664,
+							["arg1"] = "孩子们，吞掉他们！",
 						}, -- [60]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026995,
-							["arg1"] = "它会吞噬你们！",
+							["time"] = 1627993666,
+							["arg1"] = "诱人的美餐！",
 						}, -- [61]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610027005,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["time"] = 1627993674,
+							["arg1"] = "你们无路可逃。",
 						}, -- [62]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610027022,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["time"] = 1627993683,
+							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
 						}, -- [63]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610027028,
-							["arg1"] = "不要……相信……男爵……",
+							["time"] = 1627993694,
+							["arg1"] = "我能看穿你们的每一步！",
 						}, -- [64]
 						{
-							["arg1"] = " ",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993703,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [65]
 						{
-							["arg1"] = " ",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993706,
+							["arg1"] = "我的孩子饥饿难耐。",
 						}, -- [66]
 						{
-							["arg1"] = "记录开始于 01/11/2021 的 19:41:36。",
-							["type"] = "SYSTEM",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993713,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [67]
 						{
-							["arg2"] = "阿曼尼西斯-冰风岗",
-							["type"] = "RAID",
-							["time"] = 1610365376,
-							["arg1"] = "微信",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993721,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [68]
 						{
-							["arg2"] = "懒洋洋-奥杜尔",
-							["type"] = "RAID",
-							["time"] = 1610365385,
-							["arg1"] = "YY 9 3 5 9 9 0",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993732,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [69]
 						{
-							["arg2"] = "懒洋洋-奥杜尔",
-							["type"] = "RAID",
-							["time"] = 1610365386,
-							["arg1"] = "YY 9 3 5 9 9 0",
-							["clColor"] = "ffc31d39",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993733,
+							["arg1"] = "多么……甘甜的……智慧……",
 						}, -- [70]
 						{
-							["arg2"] = "小鳥伏特加-无尽之海",
-							["type"] = "RAID",
-							["time"] = 1610365411,
-							["arg1"] = "那个团",
-							["clColor"] = "fff38bb9",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993814,
+							["arg1"] = "精彩的胜利。你证明在佐瓦尔的军队里，无人能与你匹敌。",
 						}, -- [71]
 						{
-							["arg2"] = "Beilite-海克泰尔",
-							["type"] = "RAID",
-							["time"] = 1610365437,
-							["arg1"] = "1",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "卡达威鲁斯",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627994368,
+							["arg1"] = "搜遍每一条缝隙，寻找通灵师的尸体！",
 						}, -- [72]
 						{
-							["arg2"] = "Beilite-海克泰尔",
-							["type"] = "RAID",
-							["time"] = 1610365446,
-							["arg1"] = "3",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "波波",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627994952,
+							["arg1"] = "救兵就快到了，朋友！",
 						}, -- [73]
 						{
-							["arg2"] = "阿曼尼西斯-冰风岗",
-							["type"] = "RAID",
-							["time"] = 1610365457,
-							["arg1"] = "发了",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "波波",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627995139,
+							["arg1"] = "出来面对波波吧，你这个大号的蓝色坏蛋！",
 						}, -- [74]
 						{
-							["arg2"] = "Beilite-海克泰尔",
-							["type"] = "RAID",
-							["time"] = 1610365467,
-							["arg1"] = "后2",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "阿滴",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627995329,
+							["arg1"] = "为了堕罪堡！",
 						}, -- [75]
 						{
-							["arg2"] = "Beilite-海克泰尔",
-							["type"] = "RAID",
-							["time"] = 1610365481,
-							["arg1"] = "都行",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "卡达威鲁斯",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627995495,
+							["arg1"] = "搜遍每一条缝隙，寻找通灵师的尸体！",
 						}, -- [76]
 						{
-							["arg2"] = "Beilite-海克泰尔",
-							["type"] = "RAID",
-							["time"] = 1610365492,
-							["arg1"] = "wx吧",
-							["clColor"] = "ff00fe97",
+							["arg1"] = " ",
 						}, -- [77]
 						{
 							["arg1"] = " ",
 						}, -- [78]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
+							["type"] = "SYSTEM",
 						}, -- [79]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["arg2"] = "Magiccream",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628000727,
+							["arg1"] = "没有人胆敢挑战兄弟会！",
+							["clColor"] = "fffe7b09",
 						}, -- [80]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068220,
-							["arg1"] = "诸位，欢迎光临伤逝剧场！",
+							["arg1"] = " ",
 						}, -- [81]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068226,
-							["arg1"] = "看来有些人真是没有自知之明，居然来挑战玛卓克萨斯最优秀的斗士！哈哈！我们等着瞧吧！",
+							["arg1"] = " ",
 						}, -- [82]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068239,
-							["arg1"] = "无论如何……这一定会是场好戏。有请挑战者登场！",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [83]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "Magiccream",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068258,
-							["arg1"] = "血流成河吧！",
+							["time"] = 1628003409,
+							["arg1"] = "你们都是些不值一提的渣滓！",
+							["clColor"] = "fffe7b09",
 						}, -- [84]
 						{
-							["arg2"] = "受诅者赛泽尔",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068283,
-							["arg1"] = "不！我绝不会消亡！",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "RAID",
+							["time"] = 1628004039,
+							["arg1"] = "赎罪大厅 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [85]
 						{
-							["arg2"] = "斩首者德茜雅",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068286,
-							["arg1"] = "我的刀刃会畅饮你们的灵魂！",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "RAID",
+							["time"] = 1628004041,
+							["arg1"] = "我去洗钥匙",
+							["clColor"] = "ff3ec6ea",
 						}, -- [86]
 						{
-							["arg2"] = "疫毒者巴瑟兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068318,
-							["arg1"] = "你的痛苦很有信息量。",
+							["arg2"] = "蘭小蘭-格雷迈恩",
+							["type"] = "RAID",
+							["time"] = 1628004102,
+							["arg1"] = "我主要想试试DZ的DPS咋样···DH感觉完全不会输出了",
+							["clColor"] = "fffef367",
 						}, -- [87]
 						{
-							["arg2"] = "斩首者德茜雅",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068322,
-							["arg1"] = "替我……复仇……",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "RAID_LEADER",
+							["time"] = 1628004109,
+							["arg1"] = "DZ很猛啊现在 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [88]
 						{
-							["arg2"] = "受诅者赛泽尔",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068333,
-							["arg1"] = "你……必将……消亡……",
+							["arg2"] = "蘭小蘭-格雷迈恩",
+							["type"] = "RAID",
+							["time"] = 1628004142,
+							["arg1"] = "我估计我还是手法有问题",
+							["clColor"] = "fffef367",
 						}, -- [89]
 						{
-							["arg2"] = "疫毒者巴瑟兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068355,
-							["arg1"] = "我……最伟大的……造物……",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628004984,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [90]
 						{
-							["arg2"] = "卑劣的席拉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068355,
-							["arg1"] = "停！我受够这场闹剧了！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005089,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [91]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068356,
-							["arg1"] = "这就完了？说好的跌宕起伏呢！太令人失望了。",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005270,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [92]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068367,
-							["arg1"] = "难以置信！看来狗虽小，但还是会咬人的！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005330,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [93]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068373,
-							["arg1"] = "不过预赛好歹是结束了，是时候开始真正的试炼了！",
+							["time"] = 1628005983,
+							["arg1"] = "滚开！叛军的废物！",
 						}, -- [94]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068393,
-							["arg1"] = "新来的挑战者？哼，我倒要瞧瞧你能坚持多久。",
+							["time"] = 1628005990,
+							["arg1"] = "鲜血会吞没你！",
 						}, -- [95]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068596,
-							["arg1"] = "你最好会点有意思的招式。",
+							["time"] = 1628005995,
+							["arg1"] = "听我的指令，奴仆们！",
 						}, -- [96]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068602,
-							["arg1"] = "狂风将会把你吹散。",
+							["time"] = 1628006003,
+							["arg1"] = "不许动，凡人！",
 						}, -- [97]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068614,
-							["arg1"] = "你们的力量也配跟我比？！",
+							["time"] = 1628006006,
+							["arg1"] = "尘归尘！",
 						}, -- [98]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068627,
-							["arg1"] = "为荣耀而战！",
+							["time"] = 1628006012,
+							["arg1"] = "你们毫无胜算。",
 						}, -- [99]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068633,
-							["arg1"] = "狂风将会把你吹散。",
+							["time"] = 1628006013,
+							["arg1"] = "鲜血会吞没你！",
 						}, -- [100]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068648,
-							["arg1"] = "我的利刃无可匹敌。",
+							["time"] = 1628006030,
+							["arg1"] = "鲜血会吞没你！",
 						}, -- [101]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068654,
-							["arg1"] = "屈服于我的力量！",
+							["time"] = 1628006035,
+							["arg1"] = "血肉真是脆弱！",
 						}, -- [102]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068675,
-							["arg1"] = "我的利刃无可匹敌。",
+							["time"] = 1628006038,
+							["arg1"] = "我要碾碎你！",
 						}, -- [103]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068685,
-							["arg1"] = "屈服于我的力量！",
+							["time"] = 1628006044,
+							["arg1"] = "总算闭嘴了。",
 						}, -- [104]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068697,
-							["arg1"] = "为荣耀而战！",
+							["time"] = 1628006045,
+							["arg1"] = "听我的指令，奴仆们！",
 						}, -- [105]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068706,
-							["arg1"] = "狂风将会把你吹散。",
+							["time"] = 1628006050,
+							["arg1"] = "大地正在流血！",
 						}, -- [106]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068720,
-							["arg1"] = "屈服于我的力量！",
+							["time"] = 1628006052,
+							["arg1"] = "你们彻底失败了。",
 						}, -- [107]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068741,
-							["arg1"] = "狂风将会把你吹散。",
+							["time"] = 1628006064,
+							["arg1"] = "你的命运早已刻在了石头上！",
 						}, -- [108]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068743,
-							["arg1"] = "打得……真……棒……",
+							["time"] = 1628006067,
+							["arg1"] = "尘归尘！",
 						}, -- [109]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068747,
-							["arg1"] = "挑战者通过了第一场试炼！但要想获胜还有很长的路要走！",
+							["time"] = 1628006073,
+							["arg1"] = "你们彻底失败了。",
 						}, -- [110]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068767,
-							["arg1"] = "凡人的生命如此短促……如此脆弱。",
+							["time"] = 1628006074,
+							["arg1"] = "溺毙在鲜血中！",
 						}, -- [111]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069044,
-							["arg1"] = "你们的灵魂都归我了！",
+							["time"] = 1628006087,
+							["arg1"] = "听我的指令，奴仆们！",
 						}, -- [112]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069048,
-							["arg1"] = "让恐惧吞噬你！",
+							["time"] = 1628006092,
+							["arg1"] = "溺毙在鲜血中！",
 						}, -- [113]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069053,
-							["arg1"] = "在我的手中凋零吧。",
+							["time"] = 1628006097,
+							["arg1"] = "你的命运早已刻在了石头上！",
 						}, -- [114]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069060,
-							["arg1"] = "放弃你的灵魂吧。",
+							["time"] = 1628006100,
+							["arg1"] = "死从天降！",
 						}, -- [115]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069074,
-							["arg1"] = "在我的手中凋零吧。",
+							["time"] = 1628006106,
+							["arg1"] = "你们彻底失败了。",
 						}, -- [116]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069075,
-							["arg1"] = "让恐惧吞噬你！",
+							["time"] = 1628006109,
+							["arg1"] = "大地正在流血！",
 						}, -- [117]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069081,
-							["arg1"] = "我会剥夺你的灵魂。",
+							["time"] = 1628006126,
+							["arg1"] = "你的命运早已刻在了石头上！",
 						}, -- [118]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069094,
-							["arg1"] = "你已经无路可逃了。",
+							["time"] = 1628006129,
+							["arg1"] = "我要碾碎你！",
 						}, -- [119]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069100,
-							["arg1"] = "让恐惧吞噬你！",
+							["time"] = 1628006135,
+							["arg1"] = "你们毫无胜算。",
 						}, -- [120]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069101,
-							["arg1"] = "放弃你的灵魂吧。",
+							["time"] = 1628006136,
+							["arg1"] = "大地正在流血！",
 						}, -- [121]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069115,
-							["arg1"] = "你已经无路可逃了。",
+							["time"] = 1628006141,
+							["arg1"] = "过来！",
 						}, -- [122]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069122,
-							["arg1"] = "放弃你的灵魂吧。",
+							["time"] = 1628006153,
+							["arg1"] = "大地正在流血！",
 						}, -- [123]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069129,
-							["arg1"] = "让恐惧吞噬你！",
+							["time"] = 1628006158,
+							["arg1"] = "血肉真是脆弱！",
 						}, -- [124]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069136,
-							["arg1"] = "在我的手中凋零吧。",
+							["time"] = 1628006161,
+							["arg1"] = "死从天降！",
 						}, -- [125]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069143,
-							["arg1"] = "我会剥夺你的灵魂。",
+							["time"] = 1628006167,
+							["arg1"] = "这……怎么……可能……",
 						}, -- [126]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069155,
-							["arg1"] = "让恐惧吞噬你！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006196,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [127]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069156,
-							["arg1"] = "在我的手中凋零吧。",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006235,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [128]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069159,
-							["arg1"] = "不会在这里结束……",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006380,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [129]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069164,
-							["arg1"] = "又通过了一场试炼！看来我们得准备点真正的挑战了！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006438,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [130]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069185,
-							["arg1"] = "看看这是什么！新鲜的肉！",
+							["time"] = 1628006475,
+							["arg1"] = "你们的忏悔已经刻不容缓！",
 						}, -- [131]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069417,
-							["arg1"] = "撕碎扯烂！",
+							["time"] = 1628006490,
+							["arg1"] = "他们的痛苦会给你启迪。",
 						}, -- [132]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069423,
-							["arg1"] = "又有备用部件了！",
+							["time"] = 1628006511,
+							["arg1"] = "他们的痛苦会给你启迪。",
 						}, -- [133]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069427,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006532,
+							["arg1"] = "他们的痛苦会给你启迪。",
 						}, -- [134]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069432,
-							["arg1"] = "砸扁你！",
+							["time"] = 1628006556,
+							["arg1"] = "他们的痛苦会给你启迪。",
 						}, -- [135]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069442,
-							["arg1"] = "得把你剁成肉酱！",
+							["time"] = 1628006564,
+							["arg1"] = "我的羊群……还需要我……",
 						}, -- [136]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "审判官西加尔",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069451,
-							["arg1"] = "砸扁你！",
+							["time"] = 1628006589,
+							["arg1"] = "离我的教民远点，你这暴躁的傻瓜！",
 						}, -- [137]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069457,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006709,
+							["arg1"] = "我受够你们这些粗野的乡巴佬了。看来我得亲自动手。",
 						}, -- [138]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069471,
-							["arg1"] = "砸扁你！",
+							["time"] = 1628006782,
+							["arg1"] = "滚开，贱民！",
 						}, -- [139]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069477,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006789,
+							["arg1"] = "你们还没有骄傲的资格。",
 						}, -- [140]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069491,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006793,
+							["arg1"] = "你脏了我的眼睛！",
 						}, -- [141]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069496,
-							["arg1"] = "往哪儿逃！",
+							["time"] = 1628006799,
+							["arg1"] = "可悲的蝼蚁！",
 						}, -- [142]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069506,
-							["arg1"] = "得把你剁成肉酱！",
+							["time"] = 1628006805,
+							["arg1"] = "别挡我的道。",
 						}, -- [143]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069516,
-							["arg1"] = "往哪儿逃！",
+							["time"] = 1628006819,
+							["arg1"] = "心能在宣泄！",
 						}, -- [144]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069522,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006836,
+							["arg1"] = "你们还没有骄傲的资格。",
 						}, -- [145]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069535,
-							["arg1"] = "往哪儿逃！",
+							["time"] = 1628006840,
+							["arg1"] = "你脏了我的眼睛！",
 						}, -- [146]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069541,
-							["arg1"] = "得把你剁成肉酱！",
+							["time"] = 1628006855,
+							["arg1"] = "心能任我挥霍！",
 						}, -- [147]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069551,
-							["arg1"] = "需要……更好的……部件……",
+							["time"] = 1628006872,
+							["arg1"] = "好好感受你们深重的罪孽吧。",
 						}, -- [148]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069556,
-							["arg1"] = "难以置信！我们的挑战者通过了这次试炼，正在前往最后的战场！",
+							["time"] = 1628006875,
+							["arg1"] = "你脏了我的眼睛！",
 						}, -- [149]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069565,
-							["arg1"] = "回到中间的房间吧！重头戏就要开场了！",
+							["time"] = 1628006887,
+							["arg1"] = "我快失去耐心了！",
 						}, -- [150]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069581,
-							["arg1"] = "玛卓克萨斯的士兵们！想欣赏暴力美学了吗？！",
+							["time"] = 1628006893,
+							["arg1"] = "好好感受你们深重的罪孽吧。",
 						}, -- [151]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069590,
-							["arg1"] = "我们的新星现在面对的，正是伤逝剧场有史以来卫冕时期最长的冠军：无尽女皇莫德蕾莎！",
+							["time"] = 1628006897,
+							["arg1"] = "可悲的蝼蚁！",
 						}, -- [152]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069606,
-							["arg1"] = "等了这么久，终于来了个像样的对手……",
+							["time"] = 1628006897,
+							["arg1"] = "没用的……仆人……",
 						}, -- [153]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069614,
-							["arg1"] = "见证我的力量，绝望吧！",
+							["arg1"] = " ",
 						}, -- [154]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069630,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["arg1"] = " ",
 						}, -- [155]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069638,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
 						}, -- [156]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069656,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628076873,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [157]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069670,
-							["arg1"] = "死亡之手渴望着你的灵魂。",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077043,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [158]
-						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069671,
-							["arg1"] = "你刀下的亡魂哭喊着复仇！",
-						}, -- [159]
-						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069690,
-							["arg1"] = "你们都将灰飞烟灭。",
-						}, -- [160]
-						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069698,
-							["arg1"] = "现实向你宣泄着怒火。",
-						}, -- [161]
-						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069716,
-							["arg1"] = "我的魔法超乎你们这些凡人的想象。",
-						}, -- [162]
-						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069728,
-							["arg1"] = "现实向你宣泄着怒火。",
-						}, -- [163]
-						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069741,
-							["arg1"] = "万物……必须……消亡……",
-						}, -- [164]
-						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069746,
-							["arg1"] = "没错！莫德蕾莎被打败了！简直不敢相信！为竞技场的新任冠军欢呼吧！",
-						}, -- [165]
-						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069757,
-							["arg1"] = "胜利与荣耀属于你们！愿你们奋战不息，噬渊行者！",
-						}, -- [166]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070541,
+							["time"] = 1628077053,
 							["arg1"] = "可悲的生物。居然崇拜枯枝和落叶……",
+						}, -- [159]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077059,
+							["arg1"] = "自然注定被我们掌控和驯服。德鲁斯特必将征服万物！",
+						}, -- [160]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077071,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
+						}, -- [161]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077113,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
+						}, -- [162]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077215,
+							["arg1"] = "仙木灵！碾碎这些爬虫！",
+						}, -- [163]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077219,
+							["arg1"] = "快逃。我的心智……背叛了我……",
+						}, -- [164]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077226,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [165]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077230,
+							["arg1"] = "一定要……撑住……",
+						}, -- [166]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077240,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [167]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070547,
-							["arg1"] = "自然注定被我们掌控和驯服。德鲁斯特必将征服万物！",
+							["time"] = 1628077242,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [168]
 						{
-							["arg2"] = "英格拉·马洛克",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070615,
-							["arg1"] = "你会听从我的命令！",
+							["time"] = 1628077246,
+							["arg1"] = "一定要……撑住……",
 						}, -- [169]
 						{
-							["arg2"] = "宗主奥法兰",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070619,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077246,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [170]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070629,
-							["arg1"] = "我……控制不住……",
-						}, -- [171]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070633,
-							["arg1"] = "服从我！",
-						}, -- [172]
+							["time"] = 1628077250,
+							["arg1"] = "黑暗拥抱我！",
+						}, -- [171]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070636,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077256,
+							["arg1"] = "痛苦……困惑……",
+						}, -- [172]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077259,
+							["arg1"] = "服从我！",
 						}, -- [173]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070638,
-							["arg1"] = "要对仙野有信心。",
+							["time"] = 1628077263,
+							["arg1"] = "森林渴望着你们的胜利，凡人。",
 						}, -- [174]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070652,
-							["arg1"] = "竟敢违抗我！",
+							["time"] = 1628077277,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [175]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070664,
-							["arg1"] = "痛苦……困惑……",
+							["time"] = 1628077290,
+							["arg1"] = "我……控制不住……",
 						}, -- [176]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070670,
-							["arg1"] = "服从我！",
+							["time"] = 1628077295,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [177]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070674,
+							["time"] = 1628077298,
 							["arg1"] = "一定要……撑住……",
 						}, -- [178]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070684,
+							["time"] = 1628077308,
 							["arg1"] = "痛苦……困惑……",
 						}, -- [179]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070686,
+							["time"] = 1628077313,
 							["arg1"] = "服从我！",
 						}, -- [180]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070690,
-							["arg1"] = "请……活下来……",
+							["time"] = 1628077315,
+							["arg1"] = "森林渴望着你们的胜利，凡人。",
 						}, -- [181]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070693,
-							["arg1"] = "从我眼前消失！",
+							["time"] = 1628077329,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [182]
-						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070697,
-							["arg1"] = "黑暗拥抱我！",
-						}, -- [183]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070700,
+							["time"] = 1628077342,
 							["arg1"] = "痛苦……困惑……",
-						}, -- [184]
+						}, -- [183]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070702,
+							["time"] = 1628077349,
 							["arg1"] = "服从我！",
+						}, -- [184]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077352,
+							["arg1"] = "请……活下来……",
 						}, -- [185]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070706,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077363,
+							["arg1"] = "我……控制不住……",
 						}, -- [186]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070708,
-							["arg1"] = "要对仙野有信心。",
-						}, -- [187]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070722,
-							["arg1"] = "我会把你们碾成粉末！",
-						}, -- [188]
+							["time"] = 1628077367,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [187]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070735,
-							["arg1"] = "痛苦……困惑……",
+							["time"] = 1628077371,
+							["arg1"] = "一定要……撑住……",
+						}, -- [188]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077371,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [189]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070742,
-							["arg1"] = "你会听从我的命令！",
+							["time"] = 1628077375,
+							["arg1"] = "黑暗拥抱我！",
 						}, -- [190]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077381,
+							["arg1"] = "我……控制不住……",
+						}, -- [191]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070744,
-							["arg1"] = "你们明明……那么……弱……",
-						}, -- [191]
-						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070755,
-							["arg1"] = "耶！又有新朋友来玩了！快过来！",
+							["time"] = 1628077388,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [192]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071004,
-							["arg1"] = "这一定会很有趣！",
+							["time"] = 1628077392,
+							["arg1"] = "要对仙野有信心。",
 						}, -- [193]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071010,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077400,
+							["arg1"] = "你们明明……那么……弱……",
 						}, -- [194]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071017,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628077400,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [195]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071025,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077415,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [196]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071028,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077417,
+							["arg1"] = "耶！又有新朋友来玩了！快过来！",
 						}, -- [197]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071041,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077466,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [198]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071043,
-							["arg1"] = "噢，你玩累了吗？",
+							["time"] = 1628077875,
+							["arg1"] = "这一定会很有趣！",
 						}, -- [199]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071044,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077883,
+							["arg1"] = "嘿，接着！",
 						}, -- [200]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071055,
-							["arg1"] = "动作快！",
+							["time"] = 1628077890,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [201]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071066,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077894,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [202]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071111,
-							["arg1"] = "这一定会很有趣！",
+							["time"] = 1628077899,
+							["arg1"] = "嘿，接着！",
 						}, -- [203]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071120,
-							["arg1"] = "动作快！",
+							["time"] = 1628077910,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [204]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071125,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077913,
+							["arg1"] = "嘿，接着！",
 						}, -- [205]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071137,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077914,
+							["arg1"] = "我在这！嘿嘿！",
 						}, -- [206]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071147,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628077926,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [207]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071150,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077933,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [208]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071155,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077938,
+							["arg1"] = "嘿，接着！",
 						}, -- [209]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071169,
-							["arg1"] = "我在这！嘿嘿！",
+							["time"] = 1628077949,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [210]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071169,
+							["time"] = 1628077954,
 							["arg1"] = "嘿，接着！",
 						}, -- [211]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071173,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077960,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [212]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071183,
+							["time"] = 1628077967,
 							["arg1"] = "嘿，接着！",
 						}, -- [213]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071196,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077970,
+							["arg1"] = "不玩了？",
 						}, -- [214]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071201,
-							["arg1"] = "动作快！",
+							["time"] = 1628077979,
+							["arg1"] = "你找到我了！真棒！",
 						}, -- [215]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071206,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077982,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [216]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071217,
-							["arg1"] = "嘿，接着！",
+							["time"] = 1628077988,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [217]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071221,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077996,
+							["arg1"] = "嘿，接着！",
 						}, -- [218]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071222,
-							["arg1"] = "你找到我了！真棒！",
+							["time"] = 1628078012,
+							["arg1"] = "动作快！",
 						}, -- [219]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071230,
-							["arg1"] = "动作快！",
+							["time"] = 1628078016,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [220]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071243,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628078024,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [221]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071246,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628078029,
+							["arg1"] = "嘿，接着！",
 						}, -- [222]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071258,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628078037,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [223]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071262,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628078044,
+							["arg1"] = "动作快！",
 						}, -- [224]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071268,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628078056,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [225]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071273,
-							["arg1"] = "动作快！",
+							["time"] = 1628078056,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [226]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071282,
-							["arg1"] = "噢，你可真有两下子！",
+							["time"] = 1628078058,
+							["arg1"] = "嘿，接着！",
 						}, -- [227]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071287,
-							["arg1"] = "嘿，接着！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628078099,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [228]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071527,
-							["arg1"] = "毁灭！吞噬！饕餮大餐！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628078145,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [229]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071532,
-							["arg1"] = "炸开花！炸开花！",
+							["time"] = 1628078582,
+							["arg1"] = "毁灭！吞噬！饕餮大餐！",
 						}, -- [230]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071548,
-							["arg1"] = "黑暗！",
+							["time"] = 1628078588,
+							["arg1"] = "痛死你！痛死你！",
 						}, -- [231]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071550,
-							["arg1"] = "饿了！要吃饭！",
+							["time"] = 1628078602,
+							["arg1"] = "暗影！",
 						}, -- [232]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071552,
-							["arg1"] = "痛死你！痛死你！",
+							["time"] = 1628078602,
+							["arg1"] = "我吃到了……我……进化了……",
 						}, -- [233]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071554,
-							["arg1"] = "我吃到了……我……进化了……",
+							["time"] = 1628078609,
+							["arg1"] = "这下可没法躲了！",
 						}, -- [234]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071572,
-							["arg1"] = "这下可没法躲了！",
+							["time"] = 1628078627,
+							["arg1"] = "来吧孩子们。开动。",
 						}, -- [235]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071581,
-							["arg1"] = "孩子们，吞掉他们！",
+							["time"] = 1628078628,
+							["arg1"] = "他们能闻到你！",
 						}, -- [236]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071582,
-							["arg1"] = "诱人的美餐！",
+							["time"] = 1628078628,
+							["arg1"] = "这下可没法躲了！",
 						}, -- [237]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071591,
-							["arg1"] = "你们无路可逃。",
+							["time"] = 1628078638,
+							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
 						}, -- [238]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071604,
-							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
+							["time"] = 1628078648,
+							["arg1"] = "我能看穿你们的每一步！",
 						}, -- [239]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071614,
-							["arg1"] = "你们的行动太明显了。",
+							["time"] = 1628078659,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [240]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071628,
-							["arg1"] = "这是你们神智中幽暗的深渊。",
+							["time"] = 1628078661,
+							["arg1"] = "我的孩子饥饿难耐。",
 						}, -- [241]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071631,
-							["arg1"] = "你们的血肉将滋养我的后代。",
+							["time"] = 1628078667,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [242]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071634,
-							["arg1"] = "我能看穿你们的每一步！",
+							["time"] = 1628078675,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [243]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071644,
-							["arg1"] = "这是你们神智中幽暗的深渊。",
+							["time"] = 1628078686,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [244]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071653,
-							["arg1"] = "你们的行动太明显了。",
+							["time"] = 1628078695,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [245]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071661,
-							["arg1"] = "你们的无知清晰可见。",
+							["time"] = 1628078697,
+							["arg1"] = "你们的血肉将滋养我的后代。",
 						}, -- [246]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071664,
-							["arg1"] = "我的孩子饥饿难耐。",
+							["time"] = 1628078697,
+							["arg1"] = "多么……甘甜的……智慧……",
 						}, -- [247]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071672,
-							["arg1"] = "你们的行动太明显了。",
+							["arg1"] = " ",
 						}, -- [248]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071683,
-							["arg1"] = "你们的无知清晰可见。",
+							["arg1"] = " ",
 						}, -- [249]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071686,
-							["arg1"] = "多么……甘甜的……智慧……",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [250]
 					},
 				}, -- [2]
 				{
 					["enabled"] = true,
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["name"] = "小队",
 					["logs"] = {
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069201,
-							["arg1"] = "大呆萌德-寒冰皇冠 interrupted {rt1}凋零淤泥喷射者's |cff71d5ff|Hspell:330703:0|h[腐烂污秽]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628006847,
+							["arg1"] = "<EH> Magiccream got hit by |cff71d5ff|Hspell:323126:0|h[念力碰撞]|h|r for 25.9k (58%).",
 							["clColor"] = "fffe7b09",
 						}, -- [1]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611069201,
-							["arg1"] = "我已打断凋零淤泥喷射者的|cff71d5ff|Hspell:330703:0|h[腐烂污秽]|h|r!",
+							["time"] = 1628006847,
+							["arg1"] = "<EH> 竹月 got hit by |cff71d5ff|Hspell:323126:0|h[念力碰撞]|h|r for 25.0k (71%).",
 							["clColor"] = "fffe7b09",
 						}, -- [2]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069217,
-							["arg1"] = "少年丶来搞基-血色十字军 interrupted 染病恐魔's |cff71d5ff|Hspell:341977:0|h[血肉之盾]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006855,
+							["arg1"] = "心能任我挥霍！",
 						}, -- [3]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069231,
-							["arg1"] = "Interrupted {rt1}凋零淤泥喷射者's |cff71d5ff|Hspell:341969:0|h[凋零释放]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006872,
+							["arg1"] = "好好感受你们深重的罪孽吧。",
 						}, -- [4]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069241,
-							["arg1"] = "少年丶来搞基-血色十字军 interrupted {rt3}凋零淤泥喷射者's |cff71d5ff|Hspell:341969:0|h[凋零释放]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006875,
+							["arg1"] = "你脏了我的眼睛！",
 						}, -- [5]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069259,
-							["arg1"] = "Interrupted {rt2}凋零淤泥喷射者's |cff71d5ff|Hspell:341969:0|h[凋零释放]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628006882,
+							["arg1"] = "<EH> Magiccream got hit by |cff71d5ff|Hspell:323126:0|h[念力碰撞]|h|r for 25.9k (49%).",
 							["clColor"] = "fffe7b09",
 						}, -- [6]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069260,
-							["arg1"] = "少年丶来搞基-血色十字军 interrupted {rt3}凋零淤泥喷射者's |cff71d5ff|Hspell:341969:0|h[凋零释放]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006887,
+							["arg1"] = "我快失去耐心了！",
 						}, -- [7]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069327,
-							["arg1"] = "Interrupted 染病恐魔's |cff71d5ff|Hspell:341977:0|h[血肉之盾]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006893,
+							["arg1"] = "好好感受你们深重的罪孽吧。",
 						}, -- [8]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069350,
-							["arg1"] = "Interrupted {rt1}凋零淤泥喷射者's |cff71d5ff|Hspell:330703:0|h[腐烂污秽]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006897,
+							["arg1"] = "可悲的蝼蚁！",
 						}, -- [9]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "PARTY",
-							["time"] = 1611069356,
-							["arg1"] = "我已打断凋零淤泥喷射者的|cff71d5ff|Hspell:341969:0|h[凋零释放]|h|r!",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006897,
+							["arg1"] = "没用的……仆人……",
 						}, -- [10]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069356,
-							["arg1"] = "大呆萌德-寒冰皇冠 interrupted {rt1}凋零淤泥喷射者's |cff71d5ff|Hspell:341969:0|h[凋零释放]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628006897,
+							["arg1"] = "Thank you for travelling with ElitismHelper. Amount of failure damage:",
 							["clColor"] = "fffe7b09",
 						}, -- [11]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069404,
-							["arg1"] = "Interrupted 染病恐魔's |cff71d5ff|Hspell:341977:0|h[血肉之盾]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628006897,
+							["arg1"] = "1. 晒月亮补爱 115.2k",
 							["clColor"] = "fffe7b09",
 						}, -- [12]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069417,
-							["arg1"] = "撕碎扯烂！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006897,
+							["arg1"] = "2. 彼岸丶花开 195.0k",
+							["clColor"] = "fffe7b09",
 						}, -- [13]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069423,
-							["arg1"] = "又有备用部件了！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006897,
+							["arg1"] = "3. 竹月 276.0k",
+							["clColor"] = "fffe7b09",
 						}, -- [14]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069427,
-							["arg1"] = "开膛破肚！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006897,
+							["arg1"] = "4. 蘭小蘭 338.6k",
+							["clColor"] = "fffe7b09",
 						}, -- [15]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069432,
-							["arg1"] = "砸扁你！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006897,
+							["arg1"] = "5. Magiccream 620.1k",
+							["clColor"] = "fffe7b09",
 						}, -- [16]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069439,
-							["arg1"] = "<EH> 大呆萌德-寒冰皇冠 got hit by |cff71d5ff|Hspell:318406:0|h[软肉碎击]|h|r for 16.9k (41%).",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006900,
+							["arg1"] = "我的新钥石是 |cffa335ee|Hkeystone:180653:376:11:10:7:14:128|h[钥石：通灵战潮 (11)]|h|r.",
+							["clColor"] = "ff3ec6ea",
 						}, -- [17]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069442,
-							["arg1"] = "得把你剁成肉酱！",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006900,
+							["arg1"] = "Astral Keys: New key Keystone: 通灵战潮 (11)",
+							["clColor"] = "ff3ec6ea",
 						}, -- [18]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069451,
-							["arg1"] = "砸扁你！",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006931,
+							["arg1"] = "晒月亮补爱开启了|cff71d5ff|Hspell:344597:0|h[传送门：奥利波斯]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [19]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069457,
-							["arg1"] = "开膛破肚！",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006931,
+							["arg1"] = "明天打了 ，你这个大不了15低保 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [20]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069471,
-							["arg1"] = "砸扁你！",
+							["arg2"] = "蘭小蘭-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006960,
+							["arg1"] = "en ",
+							["clColor"] = "fffef367",
 						}, -- [21]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069477,
-							["arg1"] = "开膛破肚！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006997,
+							["arg1"] = "新钥石：|cffa335ee|Hkeystone:180653:377:14:10:7:14:128|h[钥石：彼界 (14)]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [22]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069491,
-							["arg1"] = "开膛破肚！",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628006999,
+							["arg1"] = "下周残暴，一周残暴一周强人 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [23]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069496,
-							["arg1"] = "往哪儿逃！",
+							["arg1"] = " ",
 						}, -- [24]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069503,
-							["arg1"] = "<EH> 哈尼斯斯 got hit by |cff71d5ff|Hspell:318406:0|h[软肉碎击]|h|r for 17.9k (53%).",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [25]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069506,
-							["arg1"] = "得把你剁成肉酱！",
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
 						}, -- [26]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069516,
-							["arg1"] = "往哪儿逃！",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "PARTY_LEADER",
+							["time"] = 1628076339,
+							["arg1"] = "<大脚组队提示>欢迎新的小队成员  [德鲁伊] Magiccream-格雷迈恩",
+							["clColor"] = "ffc59a6c",
 						}, -- [27]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069522,
-							["arg1"] = "开膛破肚！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076357,
+							["arg1"] = "------------------------------",
+							["clColor"] = "fffe7b09",
 						}, -- [28]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069523,
-							["arg1"] = "<EH> 哈尼斯斯 got hit by |cff71d5ff|Hspell:318406:0|h[软肉碎击]|h|r for 17.9k (53%).",
+							["type"] = "PARTY",
+							["time"] = 1628076357,
+							["arg1"] = "<iLvl> 228.5 深秋之黎明 (神圣)",
 							["clColor"] = "fffe7b09",
 						}, -- [29]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069535,
-							["arg1"] = "往哪儿逃！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076357,
+							["arg1"] = "<iLvl> 227.4 Magiccream (平衡)",
+							["clColor"] = "fffe7b09",
 						}, -- [30]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069541,
-							["arg1"] = "得把你剁成肉酱！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076357,
+							["arg1"] = "<iLvl> 228.1 此角色不取名 (狂怒)",
+							["clColor"] = "fffe7b09",
 						}, -- [31]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069551,
-							["arg1"] = "需要……更好的……部件……",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076357,
+							["arg1"] = "------------------------------",
+							["clColor"] = "fffe7b09",
 						}, -- [32]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069556,
-							["arg1"] = "难以置信！我们的挑战者通过了这次试炼，正在前往最后的战场！",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "PARTY_LEADER",
+							["time"] = 1628076362,
+							["arg1"] = "<大脚组队提示>欢迎新的小队成员  [萨满祭司] 数个三二一-安苏",
+							["clColor"] = "ffc59a6c",
 						}, -- [33]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069565,
-							["arg1"] = "回到中间的房间吧！重头戏就要开场了！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076374,
+							["arg1"] = "------------------------------",
+							["clColor"] = "fffe7b09",
 						}, -- [34]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069581,
-							["arg1"] = "玛卓克萨斯的士兵们！想欣赏暴力美学了吗？！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076374,
+							["arg1"] = "<iLvl> 228.5 深秋之黎明 (神圣)",
+							["clColor"] = "fffe7b09",
 						}, -- [35]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069590,
-							["arg1"] = "我们的新星现在面对的，正是伤逝剧场有史以来卫冕时期最长的冠军：无尽女皇莫德蕾莎！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076374,
+							["arg1"] = "<iLvl> 230.0 数个三二一 (元素)",
+							["clColor"] = "fffe7b09",
 						}, -- [36]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069606,
-							["arg1"] = "等了这么久，终于来了个像样的对手……",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076374,
+							["arg1"] = "<iLvl> 226.6 Magiccream (平衡)",
+							["clColor"] = "fffe7b09",
 						}, -- [37]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069614,
-							["arg1"] = "见证我的力量，绝望吧！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076374,
+							["arg1"] = "<iLvl> 228.1 此角色不取名 (狂怒)",
+							["clColor"] = "fffe7b09",
 						}, -- [38]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069630,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076374,
+							["arg1"] = "------------------------------",
+							["clColor"] = "fffe7b09",
 						}, -- [39]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069638,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "PARTY_LEADER",
+							["time"] = 1628076461,
+							["arg1"] = "<大脚组队提示>欢迎新的小队成员  [恶魔猎手] 大米恶魔-燃烧之刃",
+							["clColor"] = "ffc59a6c",
 						}, -- [40]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069656,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076475,
+							["arg1"] = "------------------------------",
+							["clColor"] = "fffe7b09",
 						}, -- [41]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069670,
-							["arg1"] = "死亡之手渴望着你的灵魂。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076475,
+							["arg1"] = "<iLvl> 230.0 数个三二一 (元素)",
+							["clColor"] = "fffe7b09",
 						}, -- [42]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069671,
-							["arg1"] = "你刀下的亡魂哭喊着复仇！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076475,
+							["arg1"] = "<iLvl> 229.6 大米恶魔 (复仇)",
+							["clColor"] = "fffe7b09",
 						}, -- [43]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069690,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076475,
+							["arg1"] = "<iLvl> 228.1 此角色不取名 (狂怒)",
+							["clColor"] = "fffe7b09",
 						}, -- [44]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069698,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076475,
+							["arg1"] = "<iLvl> 226.6 Magiccream (平衡)",
+							["clColor"] = "fffe7b09",
 						}, -- [45]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069715,
-							["arg1"] = "少年丶来搞基-血色十字军 interrupted 死亡行者's |cff71d5ff|Hspell:324589:0|h[湮灭之箭]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628076475,
+							["arg1"] = "<iLvl> 228.5 深秋之黎明 (神圣)",
 							["clColor"] = "fffe7b09",
 						}, -- [46]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069716,
-							["arg1"] = "我的魔法超乎你们这些凡人的想象。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076475,
+							["arg1"] = "------------------------------",
+							["clColor"] = "fffe7b09",
 						}, -- [47]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069723,
-							["arg1"] = "<EH> 大呆萌德-寒冰皇冠 got hit by |cff71d5ff|Hspell:323681:0|h[黑暗毁灭]|h|r for 40.7k (124%).",
+							["type"] = "PARTY",
+							["time"] = 1628076633,
+							["arg1"] = "新钥石：|cffa335ee|Hkeystone:180653:377:14:10:7:14:128|h[钥石：彼界 (14)]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [48]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069728,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "PARTY_LEADER",
+							["time"] = 1628076666,
+							["arg1"] = "打你的？",
+							["clColor"] = "ffc59a6c",
 						}, -- [49]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069741,
-							["arg1"] = "万物……必须……消亡……",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "PARTY_LEADER",
+							["time"] = 1628076704,
+							["arg1"] = "萨满？",
+							["clColor"] = "ffc59a6c",
 						}, -- [50]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069741,
-							["arg1"] = "Thank you for travelling with ElitismHelper. Amount of failure damage:",
+							["type"] = "PARTY",
+							["time"] = 1628076775,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [51]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069741,
-							["arg1"] = "1. Magiccream 28.1k",
+							["type"] = "PARTY",
+							["time"] = 1628076819,
+							["arg1"] = "<EH> 数个三二一-安苏 got hit by |cff71d5ff|Hspell:321968:0|h[迷乱花粉]|h|r for 28.4k (68%).",
 							["clColor"] = "fffe7b09",
 						}, -- [52]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069741,
-							["arg1"] = "2. 少年丶来搞基-血色十字军 29.8k",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628076873,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
 						}, -- [53]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069741,
-							["arg1"] = "3. 丶臭弟弟丶-丽丽（四川） 35.1k",
+							["type"] = "PARTY",
+							["time"] = 1628076875,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [54]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069741,
-							["arg1"] = "4. 大呆萌德-寒冰皇冠 85.5k",
+							["type"] = "PARTY",
+							["time"] = 1628076885,
+							["arg1"] = "<EH> 数个三二一-安苏 got hit by |cff71d5ff|Hspell:325027:0|h[荆棘爆发]|h|r for 23.6k (57%).",
 							["clColor"] = "fffe7b09",
 						}, -- [55]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069741,
-							["arg1"] = "5. 哈尼斯斯 122.4k",
+							["type"] = "PARTY",
+							["time"] = 1628076886,
+							["arg1"] = "此角色不取名-奥尔加隆 interrupted {rt3}德鲁斯特收割者's |cff71d5ff|Hspell:322938:0|h[收割精魂]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [56]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069742,
-							["arg1"] = "新钥石：|cffa335ee|Hkeystone:180653:375:8:9:6:13:0|h[钥石：塞兹仙林的迷雾 (8)]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628076888,
+							["arg1"] = "Interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [57]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "大米恶魔-燃烧之刃",
 							["type"] = "PARTY",
-							["time"] = 1611069745,
-							["arg1"] = "感谢各位!",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628076895,
+							["arg1"] = "什么呀这个",
+							["clColor"] = "ffa22fc8",
 						}, -- [58]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069746,
-							["arg1"] = "没错！莫德蕾莎被打败了！简直不敢相信！为竞技场的新任冠军欢呼吧！",
+							["arg2"] = "深秋之黎明-埃德萨拉",
+							["type"] = "PARTY",
+							["time"] = 1628076899,
+							["arg1"] = "？",
+							["clColor"] = "fff38bb9",
 						}, -- [59]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069748,
-							["arg1"] = "大脚任务进度提示: 收集心能：1/1(完成)",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "PARTY",
+							["time"] = 1628076903,
+							["arg1"] = "我的。。。",
+							["clColor"] = "ff006fdc",
 						}, -- [60]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069749,
-							["arg1"] = "补充储备 (任务完成)",
+							["type"] = "PARTY",
+							["time"] = 1628076946,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt3}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [61]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069757,
-							["arg1"] = "胜利与荣耀属于你们！愿你们奋战不息，噬渊行者！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628076947,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [62]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611069757,
-							["arg1"] = "求不要的 = =",
+							["time"] = 1628076955,
+							["arg1"] = "此角色不取名-奥尔加隆 interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [63]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069762,
-							["arg1"] = "|cffa335ee|Hitem:178801::::::::60:104::16:5:7205:6652:1501:5855:6646:1:28:1279:::|h[无畏挑战者的护腿]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628076967,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322938:0|h[收割精魂]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [64]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611069772,
-							["arg1"] = "感谢",
+							["time"] = 1628076974,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [65]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069773,
-							["arg1"] = "ws xd R？",
+							["type"] = "PARTY",
+							["time"] = 1628077009,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 焚化者阿寇拉斯's |cff71d5ff|Hspell:358967:0|h[地狱烈火]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [66]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611069779,
-							["arg1"] = "裤子我有了",
+							["time"] = 1628077019,
+							["arg1"] = "此角色不取名-奥尔加隆 interrupted 焚化者阿寇拉斯's |cff71d5ff|Hspell:358967:0|h[地狱烈火]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [67]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069781,
-							["arg1"] = "。",
+							["type"] = "PARTY",
+							["time"] = 1628077030,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 焚化者阿寇拉斯's |cff71d5ff|Hspell:358967:0|h[地狱烈火]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [68]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611069786,
-							["arg1"] = "没人给我",
-							["clColor"] = "ff00fe97",
+							["time"] = 1628077039,
+							["arg1"] = "数个三二一-安苏 interrupted 焚化者阿寇拉斯's |cff71d5ff|Hspell:358967:0|h[地狱烈火]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [69]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "PARTY",
-							["time"] = 1611069787,
-							["arg1"] = "谢谢",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077043,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
 						}, -- [70]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069800,
-							["arg1"] = "<SavedInstances> 重置所有副本",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077053,
+							["arg1"] = "可悲的生物。居然崇拜枯枝和落叶……",
 						}, -- [71]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "PARTY",
-							["time"] = 1611069813,
-							["arg1"] = "感谢",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077059,
+							["arg1"] = "自然注定被我们掌控和驯服。德鲁斯特必将征服万物！",
 						}, -- [72]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069848,
-							["arg1"] = "<大脚组队提示>欢迎新的小队成员  [法师] 哈尼斯斯",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "大米恶魔-燃烧之刃",
+							["type"] = "PARTY",
+							["time"] = 1628077062,
+							["arg1"] = "还有猫德诶 ",
+							["clColor"] = "ffa22fc8",
 						}, -- [73]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611069854,
-							["arg1"] = "<大脚组队提示>欢迎新的小队成员  [德鲁伊] 大呆萌德-寒冰皇冠",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "大米恶魔-燃烧之刃",
+							["type"] = "PARTY",
+							["time"] = 1628077068,
+							["arg1"] = "帅呀",
+							["clColor"] = "ffa22fc8",
 						}, -- [74]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY",
-							["time"] = 1611069864,
-							["arg1"] = "------------------------------",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077071,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
 						}, -- [75]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY",
-							["time"] = 1611069864,
-							["arg1"] = "<iLvl> 204.5 大呆萌德 (平衡)",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077113,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
 						}, -- [76]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611069864,
-							["arg1"] = "<iLvl> 206.9 哈尼斯斯 (冰霜)",
+							["time"] = 1628077178,
+							["arg1"] = "<EH> 此角色不取名-奥尔加隆 got hit by |cff71d5ff|Hspell:325027:0|h[荆棘爆发]|h|r for 20.1k (45%).",
 							["clColor"] = "fffe7b09",
 						}, -- [77]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY",
-							["time"] = 1611069864,
-							["arg1"] = "<iLvl> 196.4 Magiccream (守护)",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077215,
+							["arg1"] = "仙木灵！碾碎这些爬虫！",
 						}, -- [78]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY",
-							["time"] = 1611069864,
-							["arg1"] = "------------------------------",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077219,
+							["arg1"] = "快逃。我的心智……背叛了我……",
 						}, -- [79]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070179,
-							["arg1"] = "<大脚组队提示>欢迎新的小队成员  [萨满祭司] 暮光尐夫君-萨菲隆",
+							["type"] = "PARTY",
+							["time"] = 1628077220,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [80]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070192,
-							["arg1"] = "<大脚组队提示>欢迎新的小队成员  [德鲁伊] 钟孖期-影之哀伤",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077226,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [81]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070194,
-							["arg1"] = "<大脚组队提示>欢迎新的小队成员  [德鲁伊] 皂壮壮-燃烧平原",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077230,
+							["arg1"] = "一定要……撑住……",
 						}, -- [82]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070202,
-							["arg1"] = "潜行队",
+							["type"] = "PARTY",
+							["time"] = 1628077239,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [83]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY",
-							["time"] = 1611070224,
-							["arg1"] = "------------------------------",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077240,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [84]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY",
-							["time"] = 1611070224,
-							["arg1"] = "<iLvl> 204.5 大呆萌德 (平衡)",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077242,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [85]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611070224,
-							["arg1"] = "<iLvl> 206.9 哈尼斯斯 (冰霜)",
+							["time"] = 1628077243,
+							["arg1"] = "<EH> 此角色不取名-奥尔加隆 got hit by |cff71d5ff|Hspell:323137:0|h[迷乱花粉]|h|r.",
 							["clColor"] = "fffe7b09",
 						}, -- [86]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY",
-							["time"] = 1611070224,
-							["arg1"] = "<iLvl> 196.4 Magiccream (守护)",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077246,
+							["arg1"] = "一定要……撑住……",
 						}, -- [87]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY",
-							["time"] = 1611070224,
-							["arg1"] = "------------------------------",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077246,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [88]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070313,
-							["arg1"] = "新钥石：|cffa335ee|Hkeystone:180653:375:8:9:6:13:0|h[钥石：塞兹仙林的迷雾 (8)]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077250,
+							["arg1"] = "黑暗拥抱我！",
 						}, -- [89]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "PARTY",
-							["time"] = 1611070379,
-							["arg1"] = "哈尼斯斯使用了|cff71d5ff|Hspell:190336:0|h[造餐术]|h|r, 各位快来领面包哦!",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077256,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [90]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070454,
-							["arg1"] = "Interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077256,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [91]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070500,
-							["arg1"] = "大呆萌德-寒冰皇冠 interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077259,
+							["arg1"] = "服从我！",
 						}, -- [92]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "PARTY",
-							["time"] = 1611070500,
-							["arg1"] = "我已打断德鲁斯特收割者的|cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r!",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077263,
+							["arg1"] = "森林渴望着你们的胜利，凡人。",
 						}, -- [93]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070505,
-							["arg1"] = "Interrupted {rt2}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077265,
+							["arg1"] = "Interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [94]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070527,
-							["arg1"] = "Interrupted {rt1}德鲁斯特收割者's |cff71d5ff|Hspell:322767:0|h[灵魂之箭]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077273,
+							["arg1"] = "Interrupted Magiccream's |cff71d5ff|Hspell:323764:0|h[万灵之召]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [95]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070541,
-							["arg1"] = "可悲的生物。居然崇拜枯枝和落叶……",
+							["time"] = 1628077277,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [96]
 						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070547,
-							["arg1"] = "自然注定被我们掌控和驯服。德鲁斯特必将征服万物！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077283,
+							["arg1"] = "数个三二一-安苏 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [97]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070587,
-							["arg1"] = "<EH> 大呆萌德-寒冰皇冠 got hit by |cff71d5ff|Hspell:325027:0|h[荆棘爆发]|h|r for 13.8k (42%).",
+							["type"] = "PARTY",
+							["time"] = 1628077289,
+							["arg1"] = "Interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [98]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070604,
-							["arg1"] = "Interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077290,
+							["arg1"] = "我……控制不住……",
 						}, -- [99]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070615,
+							["time"] = 1628077295,
 							["arg1"] = "你会听从我的命令！",
 						}, -- [100]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070619,
+							["time"] = 1628077298,
 							["arg1"] = "一定要……撑住……",
 						}, -- [101]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070621,
-							["arg1"] = "Interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077303,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [102]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070629,
-							["arg1"] = "我……控制不住……",
+							["time"] = 1628077308,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [103]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070633,
+							["time"] = 1628077313,
 							["arg1"] = "服从我！",
 						}, -- [104]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070633,
-							["arg1"] = "<EH> 大呆萌德-寒冰皇冠 got hit by |cff71d5ff|Hspell:323137:0|h[迷乱花粉]|h|r.",
+							["type"] = "PARTY",
+							["time"] = 1628077313,
+							["arg1"] = "数个三二一-安苏 interrupted 数个三二一-安苏's |cff71d5ff|Hspell:188443:0|h[闪电链]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [105]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070636,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077315,
+							["arg1"] = "森林渴望着你们的胜利，凡人。",
 						}, -- [106]
 						{
-							["arg2"] = "宗主奥法兰",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070638,
-							["arg1"] = "要对仙野有信心。",
+							["time"] = 1628077329,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [107]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070639,
-							["arg1"] = "Interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077336,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [108]
 						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070652,
-							["arg1"] = "竟敢违抗我！",
-						}, -- [109]
-						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070659,
-							["arg1"] = "Interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077341,
+							["arg1"] = "此角色不取名-奥尔加隆 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
-						}, -- [110]
+						}, -- [109]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070664,
+							["time"] = 1628077342,
 							["arg1"] = "痛苦……困惑……",
-						}, -- [111]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070668,
-							["arg1"] = "<EH> 皂壮壮-燃烧平原 got hit by |cff71d5ff|Hspell:323137:0|h[迷乱花粉]|h|r.",
-							["clColor"] = "fffe7b09",
-						}, -- [112]
+						}, -- [110]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070670,
+							["time"] = 1628077349,
 							["arg1"] = "服从我！",
+						}, -- [111]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077352,
+							["arg1"] = "请……活下来……",
+						}, -- [112]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077354,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [113]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070674,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077363,
+							["arg1"] = "我……控制不住……",
 						}, -- [114]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070678,
+							["type"] = "PARTY",
+							["time"] = 1628077363,
 							["arg1"] = "Interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [115]
 						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077367,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [116]
+						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070684,
-							["arg1"] = "痛苦……困惑……",
-						}, -- [116]
+							["time"] = 1628077371,
+							["arg1"] = "一定要……撑住……",
+						}, -- [117]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070686,
-							["arg1"] = "服从我！",
-						}, -- [117]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070690,
-							["arg1"] = "请……活下来……",
+							["time"] = 1628077371,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [118]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070693,
-							["arg1"] = "从我眼前消失！",
+							["time"] = 1628077375,
+							["arg1"] = "黑暗拥抱我！",
 						}, -- [119]
 						{
-							["arg2"] = "英格拉·马洛克",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070697,
-							["arg1"] = "黑暗拥抱我！",
+							["time"] = 1628077381,
+							["arg1"] = "我……控制不住……",
 						}, -- [120]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070700,
-							["arg1"] = "痛苦……困惑……",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077381,
+							["arg1"] = "<EH> Magiccream got hit by |cff71d5ff|Hspell:323250:0|h[心能泥浆]|h|r for 18.5k (41%).",
+							["clColor"] = "fffe7b09",
 						}, -- [121]
 						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070702,
-							["arg1"] = "服从我！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077384,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [122]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070706,
-							["arg1"] = "一定要……撑住……",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077384,
+							["arg1"] = "<EH> Magiccream got hit by |cff71d5ff|Hspell:323137:0|h[迷乱花粉]|h|r.",
+							["clColor"] = "fffe7b09",
 						}, -- [123]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070708,
-							["arg1"] = "要对仙野有信心。",
-						}, -- [124]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070722,
-							["arg1"] = "我会把你们碾成粉末！",
+							["time"] = 1628077388,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [124]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077392,
+							["arg1"] = "要对仙野有信心。",
 						}, -- [125]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611070729,
-							["arg1"] = "我已打断英格拉·马洛克的|cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r!",
+							["time"] = 1628077393,
+							["arg1"] = "数个三二一-安苏 interrupted 英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [126]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070729,
-							["arg1"] = "大呆萌德-寒冰皇冠 interrupted {rt8}英格拉·马洛克's |cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077400,
+							["arg1"] = "你们明明……那么……弱……",
 						}, -- [127]
 						{
-							["arg2"] = "宗主奥法兰",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070735,
-							["arg1"] = "痛苦……困惑……",
+							["time"] = 1628077400,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [128]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070739,
-							["arg1"] = "<EH> Magiccream got hit by |cff71d5ff|Hspell:323137:0|h[迷乱花粉]|h|r.",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077415,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [129]
-						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070742,
-							["arg1"] = "你会听从我的命令！",
-						}, -- [130]
-						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070744,
-							["arg1"] = "你们明明……那么……弱……",
-						}, -- [131]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070755,
+							["time"] = 1628077417,
 							["arg1"] = "耶！又有新朋友来玩了！快过来！",
+						}, -- [130]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077454,
+							["arg1"] = "数个三二一-安苏 interrupted 数个三二一-安苏's |cff71d5ff|Hspell:188196:0|h[闪电箭]|h|r",
+							["clColor"] = "fffe7b09",
+						}, -- [131]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077466,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [132]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070817,
-							["arg1"] = "<EH> 大呆萌德-寒冰皇冠 got hit by |cff71d5ff|Hspell:331721:0|h[长矛乱舞]|h|r for 15.6k (47%).",
+							["type"] = "PARTY",
+							["time"] = 1628077610,
+							["arg1"] = "Interrupted {rt1}纱雾照看者's |cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [133]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611070877,
-							["arg1"] = "我已打断纱雾照看者的|cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r!",
+							["time"] = 1628077620,
+							["arg1"] = "<EH> 数个三二一-安苏 got hit by |cff71d5ff|Hspell:331721:0|h[长矛乱舞]|h|r for 44.8k (108%).",
 							["clColor"] = "fffe7b09",
 						}, -- [134]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070877,
-							["arg1"] = "大呆萌德-寒冰皇冠 interrupted {rt1}纱雾照看者's |cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077627,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}纱雾照看者's |cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [135]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611070892,
-							["arg1"] = "Interrupted {rt1}纱雾照看者's |cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077654,
+							["arg1"] = "Interrupted {rt3}纱雾塑形者's |cff71d5ff|Hspell:324776:0|h[木棘外壳]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [136]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611070983,
-							["arg1"] = "Magiccream使用了|cff71d5ff|Hspell:20484:0|h[复生]|h|r -> 皂壮壮",
+							["time"] = 1628077664,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}纱雾照看者's |cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [137]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071004,
-							["arg1"] = "这一定会很有趣！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077675,
+							["arg1"] = "深秋之黎明-埃德萨拉 interrupted 深秋之黎明-埃德萨拉's |cff71d5ff|Hspell:82326:0|h[圣光术]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [138]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071010,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077686,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}纱雾照看者's |cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [139]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071017,
-							["arg1"] = "这是送你的独家游戏！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077802,
+							["arg1"] = "Interrupted {rt1}纱雾照看者's |cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [140]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071019,
-							["arg1"] = "Interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077825,
+							["arg1"] = "Interrupted {rt3}纱雾塑形者's |cff71d5ff|Hspell:324776:0|h[木棘外壳]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [141]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071025,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077875,
+							["arg1"] = "这一定会很有趣！",
 						}, -- [142]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071028,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077883,
+							["arg1"] = "嘿，接着！",
 						}, -- [143]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071041,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077890,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [144]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071043,
-							["arg1"] = "噢，你玩累了吗？",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077891,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [145]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071044,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077894,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [146]
-						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "PARTY",
-							["time"] = 1611071047,
-							["arg1"] = "皂壮壮使用了|cff71d5ff|Hspell:20484:0|h[复生]|h|r -> 哈尼斯斯",
-							["clColor"] = "fffe7b09",
-						}, -- [147]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071047,
-							["arg1"] = "<EH> 哈尼斯斯 got hit by |cff71d5ff|Hspell:336759:0|h[闪避球]|h|r for 18.5k (55%).",
-							["clColor"] = "fffe7b09",
-						}, -- [148]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071055,
-							["arg1"] = "动作快！",
+							["time"] = 1628077899,
+							["arg1"] = "嘿，接着！",
+						}, -- [147]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077910,
+							["arg1"] = "这是送你的独家游戏！",
+						}, -- [148]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077911,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [149]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071058,
-							["arg1"] = "<EH> 哈尼斯斯 got hit by |cff71d5ff|Hspell:321893:0|h[冻结爆发]|h|r.",
+							["type"] = "PARTY",
+							["time"] = 1628077912,
+							["arg1"] = "<EH> 大米恶魔-燃烧之刃 got hit by |cff71d5ff|Hspell:321893:0|h[冻结爆发]|h|r.",
 							["clColor"] = "fffe7b09",
 						}, -- [150]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071062,
-							["arg1"] = "<EH> 大呆萌德-寒冰皇冠 got hit by |cff71d5ff|Hspell:321834:0|h[闪避球]|h|r for 13.3k (40%).",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077913,
+							["arg1"] = "嘿，接着！",
 						}, -- [151]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071066,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077914,
+							["arg1"] = "我在这！嘿嘿！",
 						}, -- [152]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071111,
-							["arg1"] = "这一定会很有趣！",
+							["time"] = 1628077926,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [153]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071120,
-							["arg1"] = "动作快！",
+							["time"] = 1628077933,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [154]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071125,
-							["arg1"] = "就是你！快来和我玩！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077934,
+							["arg1"] = "<EH> Magiccream got hit by |cff71d5ff|Hspell:321893:0|h[冻结爆发]|h|r.",
+							["clColor"] = "fffe7b09",
 						}, -- [155]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071126,
-							["arg1"] = "Interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628077935,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [156]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071137,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077938,
+							["arg1"] = "嘿，接着！",
 						}, -- [157]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071147,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628077949,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [158]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071149,
-							["arg1"] = "Interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077954,
+							["arg1"] = "嘿，接着！",
 						}, -- [159]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071150,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077960,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [160]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071155,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077962,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [161]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071160,
-							["arg1"] = "<EH> 哈尼斯斯 got hit by |cff71d5ff|Hspell:321893:0|h[冻结爆发]|h|r.",
+							["type"] = "PARTY",
+							["time"] = 1628077964,
+							["arg1"] = "<EH> Magiccream got hit by |cff71d5ff|Hspell:321893:0|h[冻结爆发]|h|r.",
 							["clColor"] = "fffe7b09",
 						}, -- [162]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071160,
-							["arg1"] = "<EH> 钟孖期-影之哀伤 got hit by |cff71d5ff|Hspell:321893:0|h[冻结爆发]|h|r.",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077967,
+							["arg1"] = "嘿，接着！",
 						}, -- [163]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071169,
-							["arg1"] = "我在这！嘿嘿！",
+							["time"] = 1628077970,
+							["arg1"] = "不玩了？",
 						}, -- [164]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071169,
-							["arg1"] = "嘿，接着！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077974,
+							["arg1"] = "<EH> Magiccream got hit by |cff71d5ff|Hspell:321834:0|h[闪避球]|h|r for 22.9k (44%) and |cff71d5ff|Hspell:336759:0|h[闪避球]|h|r for 22.9k (44%).",
+							["clColor"] = "fffe7b09",
 						}, -- [165]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071173,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077979,
+							["arg1"] = "你找到我了！真棒！",
 						}, -- [166]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071174,
-							["arg1"] = "Interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077982,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [167]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071183,
-							["arg1"] = "嘿，接着！",
+							["time"] = 1628077988,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [168]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628077990,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fffe7b09",
+						}, -- [169]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071196,
-							["arg1"] = "就是你！快来和我玩！",
-						}, -- [169]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071197,
-							["arg1"] = "Interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628077996,
+							["arg1"] = "嘿，接着！",
 						}, -- [170]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071201,
+							["time"] = 1628078012,
 							["arg1"] = "动作快！",
 						}, -- [171]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071206,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628078016,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [172]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071217,
-							["arg1"] = "嘿，接着！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078018,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [173]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071221,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628078024,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [174]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071222,
-							["arg1"] = "你找到我了！真棒！",
+							["time"] = 1628078029,
+							["arg1"] = "嘿，接着！",
 						}, -- [175]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071222,
-							["arg1"] = "Interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078037,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [176]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071230,
-							["arg1"] = "动作快！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078037,
+							["arg1"] = "深秋之黎明-埃德萨拉 interrupted 深秋之黎明-埃德萨拉's |cff71d5ff|Hspell:82326:0|h[圣光术]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [177]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071243,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078038,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [178]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071246,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628078044,
+							["arg1"] = "动作快！",
 						}, -- [179]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071247,
-							["arg1"] = "Interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078056,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [180]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071258,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628078056,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [181]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071262,
-							["arg1"] = "有一个长得不一样哦！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078058,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 唤雾者's |cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [182]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071268,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628078058,
+							["arg1"] = "嘿，接着！",
 						}, -- [183]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071273,
-							["arg1"] = "动作快！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078077,
+							["arg1"] = "深秋之黎明-埃德萨拉 interrupted 深秋之黎明-埃德萨拉's |cff71d5ff|Hspell:212056:0|h[宽恕]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [184]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071282,
-							["arg1"] = "噢，你可真有两下子！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628078099,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [185]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071287,
-							["arg1"] = "嘿，接着！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628078145,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [186]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611071333,
-							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r!",
+							["time"] = 1628078165,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [187]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071333,
-							["arg1"] = "大呆萌德-寒冰皇冠 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078170,
+							["arg1"] = "Interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [188]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071335,
-							["arg1"] = "Interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078188,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [189]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071368,
-							["arg1"] = "皂壮壮-燃烧平原 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078194,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [190]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611071368,
-							["arg1"] = "已打断 锥喉鹿角巨虫 的 |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r!",
+							["time"] = 1628078198,
+							["arg1"] = "数个三二一-安苏 interrupted 数个三二一-安苏's |cff71d5ff|Hspell:188443:0|h[闪电链]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [191]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611071368,
-							["arg1"] = "已断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r!",
+							["time"] = 1628078228,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [192]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071374,
-							["arg1"] = "Interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078229,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [193]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071409,
-							["arg1"] = "哈尼斯斯 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078247,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [194]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071431,
-							["arg1"] = "Interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078291,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [195]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071508,
-							["arg1"] = "<EH> 哈尼斯斯 got hit by |cff71d5ff|Hspell:326022:0|h[酸性水滴]|h|r for 25.5k (76%).",
+							["type"] = "PARTY",
+							["time"] = 1628078298,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [196]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071527,
-							["arg1"] = "毁灭！吞噬！饕餮大餐！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078311,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [197]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071532,
-							["arg1"] = "炸开花！炸开花！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078330,
+							["arg1"] = "<EH> 数个三二一-安苏 got hit by |cff71d5ff|Hspell:326022:0|h[酸性水滴]|h|r for 59.5k (136%).",
+							["clColor"] = "fffe7b09",
 						}, -- [198]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071540,
-							["arg1"] = "Interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337235:0|h[寄生平静]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078467,
+							["arg1"] = "Interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [199]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071548,
-							["arg1"] = "黑暗！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078476,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [200]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071550,
-							["arg1"] = "饿了！要吃饭！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078489,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [201]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071552,
-							["arg1"] = "痛死你！痛死你！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078499,
+							["arg1"] = "数个三二一-安苏 interrupted 数个三二一-安苏's |cff71d5ff|Hspell:188196:0|h[闪电箭]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [202]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071554,
-							["arg1"] = "我吃到了……我……进化了……",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078524,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [203]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071561,
-							["arg1"] = "<EH> 哈尼斯斯 got hit by |cff71d5ff|Hspell:322655:0|h[酸蚀排放]|h|r for 16.8k (50%).",
+							["type"] = "PARTY",
+							["time"] = 1628078547,
+							["arg1"] = "数个三二一-安苏 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [204]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071561,
-							["arg1"] = "Interrupted 特雷德奥瓦's |cff71d5ff|Hspell:322450:0|h[吞噬]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078551,
+							["arg1"] = "此角色不取名-奥尔加隆 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [205]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071568,
-							["arg1"] = "皂壮壮-燃烧平原 interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337249:0|h[寄生瘫痪]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078582,
+							["arg1"] = "毁灭！吞噬！饕餮大餐！",
 						}, -- [206]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
+							["arg2"] = "大米恶魔-燃烧之刃",
 							["type"] = "PARTY",
-							["time"] = 1611071568,
-							["arg1"] = "已打断 特雷德奥瓦 的 |cff71d5ff|Hspell:337249:0|h[寄生瘫痪]|h|r!",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628078587,
+							["arg1"] = "SX",
+							["clColor"] = "ffa22fc8",
 						}, -- [207]
-						{
-							["arg2"] = "皂壮壮-燃烧平原",
-							["type"] = "PARTY",
-							["time"] = 1611071568,
-							["arg1"] = "已断特雷德奥瓦的|cff71d5ff|Hspell:337249:0|h[寄生瘫痪]|h|r!",
-							["clColor"] = "fffe7b09",
-						}, -- [208]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071572,
-							["arg1"] = "这下可没法躲了！",
+							["time"] = 1628078588,
+							["arg1"] = "痛死你！痛死你！",
+						}, -- [208]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078595,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337235:0|h[寄生平静]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [209]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071581,
-							["arg1"] = "孩子们，吞掉他们！",
+							["time"] = 1628078602,
+							["arg1"] = "暗影！",
 						}, -- [210]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071582,
-							["arg1"] = "诱人的美餐！",
+							["time"] = 1628078602,
+							["arg1"] = "我吃到了……我……进化了……",
 						}, -- [211]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071591,
-							["arg1"] = "你们无路可逃。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078607,
+							["arg1"] = "数个三二一-安苏 interrupted 特雷德奥瓦's |cff71d5ff|Hspell:322450:0|h[吞噬]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [212]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071598,
-							["arg1"] = "Interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337249:0|h[寄生瘫痪]|h|r",
-							["clColor"] = "fffe7b09",
-						}, -- [213]
-						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071604,
-							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
+							["time"] = 1628078609,
+							["arg1"] = "这下可没法躲了！",
+						}, -- [213]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078616,
+							["arg1"] = "大米恶魔-燃烧之刃 interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337249:0|h[寄生瘫痪]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [214]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071613,
-							["arg1"] = "Interrupted 特雷德奥瓦's |cff71d5ff|Hspell:322450:0|h[吞噬]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078618,
+							["arg1"] = "<EH> 深秋之黎明-埃德萨拉 got hit by |cff71d5ff|Hspell:322655:0|h[酸蚀排放]|h|r for 21.1k (49%).",
 							["clColor"] = "fffe7b09",
 						}, -- [215]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071614,
-							["arg1"] = "你们的行动太明显了。",
+							["time"] = 1628078627,
+							["arg1"] = "来吧孩子们。开动。",
 						}, -- [216]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071623,
-							["arg1"] = "<EH> 钟孖期-影之哀伤 got hit by |cff71d5ff|Hspell:322655:0|h[酸蚀排放]|h|r for 15.9k (51%).",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078628,
+							["arg1"] = "他们能闻到你！",
 						}, -- [217]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071628,
-							["arg1"] = "这是你们神智中幽暗的深渊。",
+							["time"] = 1628078628,
+							["arg1"] = "这下可没法躲了！",
 						}, -- [218]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071631,
-							["arg1"] = "你们的血肉将滋养我的后代。",
+							["time"] = 1628078638,
+							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
 						}, -- [219]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078644,
+							["arg1"] = "数个三二一-安苏 interrupted 特雷德奥瓦's |cff71d5ff|Hspell:322450:0|h[吞噬]|h|r",
+							["clColor"] = "fffe7b09",
+						}, -- [220]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071634,
+							["time"] = 1628078648,
 							["arg1"] = "我能看穿你们的每一步！",
-						}, -- [220]
-						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "PARTY",
-							["time"] = 1611071641,
-							["arg1"] = "Magiccream使用了|cff71d5ff|Hspell:20484:0|h[复生]|h|r -> 皂壮壮",
-							["clColor"] = "fffe7b09",
 						}, -- [221]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071643,
-							["arg1"] = "<EH> 大呆萌德-寒冰皇冠 got hit by |cff71d5ff|Hspell:322655:0|h[酸蚀排放]|h|r for 15.8k (48%).",
+							["type"] = "PARTY",
+							["time"] = 1628078654,
+							["arg1"] = "此角色不取名-奥尔加隆 interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337255:0|h[寄生占据]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [222]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071643,
-							["arg1"] = "<EH> 皂壮壮-燃烧平原 got hit by |cff71d5ff|Hspell:322655:0|h[酸蚀排放]|h|r for 12.4k (40%).",
+							["type"] = "PARTY",
+							["time"] = 1628078657,
+							["arg1"] = "<EH> 数个三二一-安苏 got hit by |cff71d5ff|Hspell:322655:0|h[酸蚀排放]|h|r for 50.0k (120%).",
 							["clColor"] = "fffe7b09",
 						}, -- [223]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071644,
+							["time"] = 1628078659,
 							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [224]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071648,
-							["arg1"] = "Interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337255:0|h[寄生占据]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078661,
+							["arg1"] = "我的孩子饥饿难耐。",
 						}, -- [225]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071653,
+							["time"] = 1628078667,
 							["arg1"] = "你们的行动太明显了。",
 						}, -- [226]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071661,
-							["arg1"] = "你们的无知清晰可见。",
+							["time"] = 1628078675,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [227]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071664,
-							["arg1"] = "我的孩子饥饿难耐。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "PARTY",
+							["time"] = 1628078680,
+							["arg1"] = "数个三二一-安苏 interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337255:0|h[寄生占据]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [228]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071672,
+							["time"] = 1628078686,
 							["arg1"] = "你们的行动太明显了。",
 						}, -- [229]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071680,
-							["arg1"] = "Interrupted 特雷德奥瓦's |cff71d5ff|Hspell:337255:0|h[寄生占据]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078695,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [230]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071681,
-							["arg1"] = "<EH> 钟孖期-影之哀伤 got hit by |cff71d5ff|Hspell:322655:0|h[酸蚀排放]|h|r for 15.9k (51%).",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078697,
+							["arg1"] = "你们的血肉将滋养我的后代。",
 						}, -- [231]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071683,
-							["arg1"] = "你们的无知清晰可见。",
+							["time"] = 1628078697,
+							["arg1"] = "多么……甘甜的……智慧……",
 						}, -- [232]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071686,
-							["arg1"] = "多么……甘甜的……智慧……",
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "PARTY",
+							["time"] = 1628078697,
+							["arg1"] = "大脚任务进度提示: 击败炽蓝仙野的强力劲敌：1/1(完成)",
+							["clColor"] = "ff006fdc",
 						}, -- [233]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071714,
-							["arg1"] = "Interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "深秋之黎明-埃德萨拉",
+							["type"] = "PARTY",
+							["time"] = 1628078697,
+							["arg1"] = "大脚任务进度提示: 击败炽蓝仙野的强力劲敌：1/1(完成)",
+							["clColor"] = "fff38bb9",
 						}, -- [234]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071721,
-							["arg1"] = "皂壮壮-燃烧平原 interrupted {rt1}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "大米恶魔-燃烧之刃",
+							["type"] = "PARTY",
+							["time"] = 1628078697,
+							["arg1"] = "大脚任务进度提示: 击败炽蓝仙野的强力劲敌：1/1(完成)",
+							["clColor"] = "ffa22fc8",
 						}, -- [235]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611071721,
-							["arg1"] = "已打断 锥喉鹿角巨虫 的 |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r!",
+							["time"] = 1628078697,
+							["arg1"] = "Thank you for travelling with ElitismHelper. Amount of failure damage:",
 							["clColor"] = "fffe7b09",
 						}, -- [236]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "PARTY",
-							["time"] = 1611071721,
-							["arg1"] = "已断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r!",
+							["time"] = 1628078697,
+							["arg1"] = "1. 深秋之黎明-埃德萨拉 37.7k",
 							["clColor"] = "fffe7b09",
 						}, -- [237]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071737,
-							["arg1"] = "Interrupted {rt2}锥喉鹿角巨虫's |cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078697,
+							["arg1"] = "2. 大米恶魔-燃烧之刃 127.3k",
 							["clColor"] = "fffe7b09",
 						}, -- [238]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071748,
-							["arg1"] = "哈尼斯斯 interrupted {rt2}锥喉鹿角巨虫's |cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["type"] = "PARTY",
+							["time"] = 1628078697,
+							["arg1"] = "3. 此角色不取名-奥尔加隆 222.4k",
 							["clColor"] = "fffe7b09",
 						}, -- [239]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071776,
-							["arg1"] = "Thank you for travelling with ElitismHelper. Amount of failure damage:",
+							["type"] = "PARTY",
+							["time"] = 1628078697,
+							["arg1"] = "4. 数个三二一-安苏 248.7k",
 							["clColor"] = "fffe7b09",
 						}, -- [240]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071776,
-							["arg1"] = "1. 皂壮壮-燃烧平原 33.8k",
+							["type"] = "PARTY",
+							["time"] = 1628078697,
+							["arg1"] = "5. Magiccream 375.6k",
 							["clColor"] = "fffe7b09",
 						}, -- [241]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071776,
-							["arg1"] = "2. 钟孖期-影之哀伤 46.7k",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "PARTY",
+							["time"] = 1628078698,
+							["arg1"] = "炽蓝仙野的挑战 (任务完成)",
+							["clColor"] = "ff006fdc",
 						}, -- [242]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071776,
-							["arg1"] = "3. Magiccream 60.7k",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "深秋之黎明-埃德萨拉",
+							["type"] = "PARTY",
+							["time"] = 1628078698,
+							["arg1"] = "炽蓝仙野的挑战 (任务完成)",
+							["clColor"] = "fff38bb9",
 						}, -- [243]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071776,
-							["arg1"] = "4. 哈尼斯斯 82.6k",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "大米恶魔-燃烧之刃",
+							["type"] = "PARTY",
+							["time"] = 1628078698,
+							["arg1"] = "炽蓝仙野的挑战 (任务完成)",
+							["clColor"] = "ffa22fc8",
 						}, -- [244]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "此角色不取名-奥尔加隆",
 							["type"] = "PARTY_LEADER",
-							["time"] = 1611071776,
-							["arg1"] = "5. 大呆萌德-寒冰皇冠 110.4k",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628078718,
+							["arg1"] = "头要吗",
+							["clColor"] = "ffc59a6c",
 						}, -- [245]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "此角色不取名-奥尔加隆",
 							["type"] = "PARTY_LEADER",
-							["time"] = 1611071776,
-							["arg1"] = "新钥石：|cffa335ee|Hkeystone:180653:376:10:9:6:13:121|h[钥石：通灵战潮 (10)]|h|r",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628078743,
+							["arg1"] = "谢谢",
+							["clColor"] = "ffc59a6c",
 						}, -- [246]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "深秋之黎明-埃德萨拉",
 							["type"] = "PARTY",
-							["time"] = 1611071780,
-							["arg1"] = "感谢各位!",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628078745,
+							["arg1"] = "不客气",
+							["clColor"] = "fff38bb9",
 						}, -- [247]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "PARTY",
-							["time"] = 1611071817,
-							["arg1"] = "哈尼斯斯开启了|cff71d5ff|Hspell:344597:0|h[传送门：奥利波斯]|h|r",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [248]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071840,
-							["arg1"] = "<SavedInstances> 重置所有副本",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [249]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "PARTY_LEADER",
-							["time"] = 1611071840,
-							["arg1"] = "<SavedInstances> 无法重置塞兹仙林的迷雾，该副本中仍有玩家。",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [250]
 					},
 				}, -- [3]
@@ -4621,3108 +4555,3093 @@ ElephantDBPerChar = {
 					["name"] = "说",
 					["logs"] = {
 						{
-							["arg2"] = "束缚之魂残迹",
+							["arg2"] = "表弟慢热手",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610970464,
-							["arg1"] = "你……真的……在这里？",
+							["time"] = 1627990451,
+							["arg1"] = "牦牛尾巴对保持平衡有帮助吗？",
 						}, -- [1]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610970507,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "老衲-血吼",
+							["type"] = "SAY",
+							["time"] = 1627990451,
+							["arg1"] = "打了把",
+							["clColor"] = "ff00fe97",
 						}, -- [2]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610970507,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627990453,
+							["arg1"] = "我隐身怎么看到我的？",
+							["clColor"] = "fffe7b09",
 						}, -- [3]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610970599,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627990613,
+							["arg1"] = "草",
+							["clColor"] = "fffe7b09",
 						}, -- [4]
 						{
-							["arg2"] = "刻符者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610970611,
-							["arg1"] = "晋升堡垒的孩子……不该拥有这样的命运。指引他们走向光明。",
+							["arg2"] = "无丶濑-燃烧之刃",
+							["type"] = "SAY",
+							["time"] = 1627990641,
+							["arg1"] = "已打断 焚化者阿寇拉斯 的 |cff71d5ff|Hspell:358967:0|h[地狱烈火]|h|r!",
+							["clColor"] = "ffa22fc8",
 						}, -- [5]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610970967,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "无丶濑-燃烧之刃",
+							["type"] = "SAY",
+							["time"] = 1627990662,
+							["arg1"] = "已打断 焚化者阿寇拉斯 的 |cff71d5ff|Hspell:358967:0|h[地狱烈火]|h|r!",
+							["clColor"] = "ffa22fc8",
 						}, -- [6]
 						{
-							["arg2"] = "刻符者",
+							["arg2"] = "魔药设计师马里莱斯",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610971064,
-							["arg1"] = "晋升堡垒的孩子……不该拥有这样的命运。指引他们走向光明。",
+							["time"] = 1627990865,
+							["arg1"] = "我们密院的研究还在继续，学徒！你能不能帮我们最新的混合物收集一些必要的材料？",
 						}, -- [7]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610971160,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "德拉卡女男爵",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627990910,
+							["arg1"] = "对玛卓克萨斯人来说，力量就是一切。在竞技场证明自己的实力吧！",
 						}, -- [8]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610971162,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "飞翼卫士阿拉玛尔",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627990916,
+							["arg1"] = "你要走了吗？",
 						}, -- [9]
 						{
-							["arg1"] = " ",
+							["arg2"] = "塞尼厄斯",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991120,
+							["arg1"] = "敌人对自己的信念十分坚持。如果我们没法用言辞劝说他们，就必须出手才行。这个不幸的任务就交给你了。",
 						}, -- [10]
 						{
-							["arg1"] = " ",
+							["arg2"] = "投暗学徒",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991135,
+							["arg1"] = "你？挑战我？",
 						}, -- [11]
 						{
-							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
-							["type"] = "SYSTEM",
+							["arg2"] = "亮翼",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991138,
+							["arg1"] = "我来对付他们！",
 						}, -- [12]
 						{
-							["arg2"] = "刻符者",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981386,
-							["arg1"] = "陨落的法夜，受尽了苦难。救救他们……不能让他们被黑暗吞噬。",
+							["time"] = 1627991138,
+							["arg1"] = "我是你的学员！开始练习吧！",
 						}, -- [13]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981398,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "亮翼",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991143,
+							["arg1"] = "你需要帮助吗？",
 						}, -- [14]
 						{
-							["arg2"] = "刻符者",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981402,
-							["arg1"] = "你被盯上了。要小心。",
+							["time"] = 1627991152,
+							["arg1"] = "我好像在那边看到了什么，就在那边！",
 						}, -- [15]
 						{
-							["arg2"] = "巨型卫士",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981409,
-							["arg1"] = "|cFFFF0000%s|r开始激活|cFFFF0000|Hspell:298073|h[捕食者的凝视]|h|r，它的伤害将随着你的移动而提高！",
+							["arg2"] = "亮翼",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991162,
+							["arg1"] = "闪烁时间到了！",
 						}, -- [16]
 						{
-							["arg2"] = "巨型卫士",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981411,
-							["arg1"] = "|cFFFF0000%s|r开始激活|cFFFF0000|Hspell:298073|h[捕食者的凝视]|h|r，它的伤害将随着你的移动而提高！",
+							["arg2"] = "亮翼",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991164,
+							["arg1"] = "呼，好险啊！",
 						}, -- [17]
 						{
-							["arg2"] = "凇心特工",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981493,
-							["arg1"] = "我们……都是……囚犯……",
+							["time"] = 1627991183,
+							["arg1"] = "别想赶上我！",
 						}, -- [18]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981517,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "堕落的学识探求者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991194,
+							["arg1"] = "我太小看你了。",
 						}, -- [19]
 						{
-							["arg2"] = "刻符者",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981527,
-							["arg1"] = "你被盯上了。要小心。",
+							["time"] = 1627991194,
+							["arg1"] = "呼，好险啊！",
 						}, -- [20]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981538,
-							["arg1"] = "我把最后的力量……交给你。",
+							["time"] = 1627991213,
+							["arg1"] = "别想赶上我！",
 						}, -- [21]
 						{
-							["arg2"] = "阿靛",
+							["arg2"] = "投暗学徒",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981543,
-							["arg1"] = "我们必须找到本茜雅，她肯定就被关在附近。嗯，也谢谢你救了我！",
+							["time"] = 1627991214,
+							["arg1"] = "我没有接受过迎接消亡的训练。",
 						}, -- [22]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981551,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "上古导师",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991216,
+							["arg1"] = "你的手臂将会承载许多灵魂，有些灵魂所承载的负担会比其他灵魂更加沉重。",
 						}, -- [23]
 						{
-							["arg2"] = "凇心卫士",
+							["arg2"] = "上古导师",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981585,
-							["arg1"] = "死亡……才是……永恒……",
+							["time"] = 1627991218,
+							["arg1"] = "牢记你的训练，相信我们的道路，信仰仲裁官和她的无穷智慧。",
 						}, -- [24]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981586,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "上古导师",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991221,
+							["arg1"] = "如果没有我们的羽翼，暗影界就会陷入混乱。愿我们的永恒使命指引你。",
 						}, -- [25]
 						{
-							["arg2"] = "束缚之魂残迹",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981589,
-							["arg1"] = "请……接受我的祝福。",
+							["time"] = 1627991223,
+							["arg1"] = "闪烁时间到了！",
 						}, -- [26]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981606,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "堕落的学识探求者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991290,
+							["arg1"] = "如此骄纵轻狂。",
 						}, -- [27]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981608,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "亮翼",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991291,
+							["arg1"] = "闪烁时间到了！",
 						}, -- [28]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981663,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "亮翼",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991292,
+							["arg1"] = "我准备好学习了！",
 						}, -- [29]
 						{
-							["arg2"] = "阿靛",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981714,
-							["arg1"] = "她在那儿！",
+							["time"] = 1627991296,
+							["arg1"] = "你需要帮助吗？",
 						}, -- [30]
 						{
-							["arg2"] = "本茜雅",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981715,
-							["arg1"] = "阿靛！天哪，我还以为我完蛋了。",
+							["time"] = 1627991317,
+							["arg1"] = "呼，好险啊！",
 						}, -- [31]
 						{
-							["arg2"] = "阿靛",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981718,
-							["arg1"] = "我们会找个安全的地方躲起来。谢谢你帮了我们。",
+							["time"] = 1627991349,
+							["arg1"] = "我来对付他们！",
 						}, -- [32]
 						{
-							["arg2"] = "强化的凇心晋升者",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981765,
-							["arg1"] = "死亡……才是……永恒……",
+							["time"] = 1627991351,
+							["arg1"] = "我准备好学习了！",
 						}, -- [33]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981810,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "上古导师",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991352,
+							["arg1"] = "抵御评判他人的诱惑，所有灵魂都将由仲裁官审判，所有善恶行径皆有报应。",
 						}, -- [34]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981811,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "上古导师",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991355,
+							["arg1"] = "当凡人的生命走到尽头，将由你来决定他在尘世的时光是否应当至此结束。",
 						}, -- [35]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981864,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "亮翼",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991355,
+							["arg1"] = "你需要帮助吗？",
 						}, -- [36]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981867,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "上古导师",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991357,
+							["arg1"] = "其他的都交给仲裁官和永恒之路吧。这便是我们的使命。",
 						}, -- [37]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981884,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "上古导师",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991363,
+							["arg1"] = "你的手臂将会承载许多灵魂，有些灵魂所承载的负担会比其他灵魂更加沉重。",
 						}, -- [38]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "上古导师",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981885,
-							["arg1"] = "我……不该……这样……",
+							["time"] = 1627991366,
+							["arg1"] = "牢记你的训练，相信我们的道路，信仰仲裁官和她的无穷智慧。",
 						}, -- [39]
 						{
-							["arg2"] = "巨型卫士",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981911,
-							["arg1"] = "|cFFFF0000%s|r开始激活|cFFFF0000|Hspell:298073|h[捕食者的凝视]|h|r，它的伤害将随着你的移动而提高！",
+							["arg2"] = "上古导师",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991368,
+							["arg1"] = "如果没有我们的羽翼，暗影界就会陷入混乱。愿我们的永恒使命指引你。",
 						}, -- [40]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "亮翼",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981937,
-							["arg1"] = "一点……希望的滋味。",
+							["time"] = 1627991383,
+							["arg1"] = "哦，嗨！我在这！",
 						}, -- [41]
 						{
-							["arg2"] = "凇心卫士",
+							["arg2"] = "塞尼厄斯",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981939,
-							["arg1"] = "被诅咒的生者！",
+							["time"] = 1627991450,
+							["arg1"] = "他们终究会明白自己想法里的问题。希望今天他们学到了宝贵的一课。",
 						}, -- [42]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981944,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "亮翼",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991462,
+							["arg1"] = "哦，嗨！我在这！",
 						}, -- [43]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981948,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "表弟慢热手",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991600,
+							["arg1"] = "十年了。我任劳任怨地刷牦牛十年了。",
 						}, -- [44]
 						{
-							["arg2"] = "凇心卫士",
+							["arg2"] = "秘法师鸟羽帽",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981974,
-							["arg1"] = "你的努力……毫无意义……",
+							["time"] = 1627991601,
+							["arg1"] = "你的牦牛在另一个棚舍里。",
 						}, -- [45]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981975,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "凯蒂·印哨",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991632,
+							["arg1"] = "只要有邮件寄出，我就会准时到户！",
 						}, -- [46]
 						{
-							["arg2"] = "凇心束缚者",
+							["arg2"] = "月莓女勋爵",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610981984,
-							["arg1"] = "你会……在镣铐下……腐朽……",
+							["time"] = 1627991987,
+							["arg1"] = "黑暗的力量在威胁塞兹仙林。要是我们现在不出手干预，他们就会颠覆整个炽蓝仙野！",
 						}, -- [47]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610981998,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "月莓女勋爵",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627991999,
+							["arg1"] = "黑暗的力量在威胁塞兹仙林。要是我们现在不出手干预，他们就会颠覆整个炽蓝仙野！",
 						}, -- [48]
 						{
-							["arg2"] = "束缚之魂残迹",
+							["arg2"] = "仙木灵居民",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982060,
-							["arg1"] = "你能……听见我吗？",
+							["time"] = 1627992235,
+							["arg1"] = "祝福你，小家伙。",
 						}, -- [49]
 						{
-							["arg2"] = "噬渊鼠",
+							["arg2"] = "眼神无敌帅",
 							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982085,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["time"] = 1627992556,
+							["arg1"] = "%s赢下了一局炉石比赛！",
+							["clColor"] = "fff38bb9",
 						}, -- [50]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982085,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627992677,
+							["arg1"] = "英格拉·马洛克倒下了。森林叹息之余，也在感激。",
 						}, -- [51]
 						{
-							["arg2"] = "凇心束缚者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982111,
-							["arg1"] = "一切都是……徒劳……",
+							["time"] = 1627992687,
+							["arg1"] = "迷雾凶险，勇敢前行。我们终将重聚。",
 						}, -- [52]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982187,
-							["arg1"] = "他们夺走了……一切……",
+							["time"] = 1627992747,
+							["arg1"] = "你们能找到迷雾的出口吗？一定要想清楚哦！",
 						}, -- [53]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982191,
-							["arg1"] = "你……真的……在这里？",
+							["time"] = 1627992755,
+							["arg1"] = "被你看穿了！",
 						}, -- [54]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982196,
-							["arg1"] = "我……不该……这样……",
+							["time"] = 1627992827,
+							["arg1"] = "噢耶！你快赢了！",
 						}, -- [55]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982217,
-							["arg1"] = "一点……希望的滋味。",
+							["time"] = 1627992877,
+							["arg1"] = "抱歉！重来吧！",
 						}, -- [56]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982282,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627992896,
+							["arg1"] = "你成功了！猜得真准！",
 						}, -- [57]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982313,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627992970,
+							["arg1"] = "抱歉！重来吧！",
 						}, -- [58]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982347,
-							["arg1"] = "他们夺走了……一切……",
+							["time"] = 1627992996,
+							["arg1"] = "被你看穿了！",
 						}, -- [59]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982370,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627993061,
+							["arg1"] = "噢耶！你快赢了！",
 						}, -- [60]
 						{
-							["arg2"] = "噬渊鼠",
+							["arg2"] = "眼神无敌帅",
 							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982434,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["time"] = 1627993068,
+							["arg1"] = "%s赢下了一局炉石比赛！",
+							["clColor"] = "fff38bb9",
 						}, -- [61]
 						{
-							["arg2"] = "巨型卫士",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982476,
-							["arg1"] = "|cFFFF0000%s|r开始激活|cFFFF0000|Hspell:298073|h[捕食者的凝视]|h|r，它的伤害将随着你的移动而提高！",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627993103,
+							["arg1"] = "噢耶！你快赢了！",
 						}, -- [62]
 						{
-							["arg2"] = "噬渊鼠",
+							["arg2"] = "眼神无敌帅",
 							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982525,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["time"] = 1627993227,
+							["arg1"] = "%s赢下了一局炉石比赛！",
+							["clColor"] = "fff38bb9",
 						}, -- [63]
 						{
-							["arg2"] = "凇心卫士",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982536,
-							["arg1"] = "放弃……希望吧……",
+							["time"] = 1627993280,
+							["arg1"] = "太好玩了！我很久没有这么尽兴了……快点，重新开始吧！",
 						}, -- [64]
 						{
-							["arg2"] = "凇心卫士",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982539,
-							["arg1"] = "一切都将……灰飞烟灭……",
+							["time"] = 1627993286,
+							["arg1"] = "游戏时间结束了。森林之风在催促我们继续前进。",
 						}, -- [65]
 						{
-							["arg2"] = "刻符者",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610982572,
-							["arg1"] = "你被盯上了。要小心。",
+							["time"] = 1627993295,
+							["arg1"] = "噢，好吧。迷雾，散了吧。",
 						}, -- [66]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982597,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627993300,
+							["arg1"] = "嘿……好像不太妙。这到底是怎么回事！",
 						}, -- [67]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982607,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627993304,
+							["arg1"] = "戈姆快把塞兹仙林啃光了。必须恢复自然的平衡。",
 						}, -- [68]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610982668,
-							["arg1"] = "我把最后的力量……交给你。",
+							["arg2"] = "枫海寻心-燃烧之刃",
+							["type"] = "SAY",
+							["time"] = 1627993318,
+							["arg1"] = "枫海寻心 中了不稳定的酸液",
+							["clColor"] = "ff3ec6ea",
 						}, -- [69]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610982803,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "SAY",
+							["time"] = 1627993320,
+							["arg1"] = "柯隐 中了不稳定的酸液",
+							["clColor"] = "fffef367",
 						}, -- [70]
 						{
-							["arg2"] = "刻符者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610982867,
-							["arg1"] = "你被盯上了。要小心。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993333,
+							["arg1"] = "Magiccream 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [71]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983032,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "SAY",
+							["time"] = 1627993334,
+							["arg1"] = "柯隐 中了不稳定的酸液",
+							["clColor"] = "fffef367",
 						}, -- [72]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610983446,
-							["arg1"] = "我把最后的力量……交给你。",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "SAY",
+							["time"] = 1627993350,
+							["arg1"] = "柯隐 中了不稳定的酸液",
+							["clColor"] = "fffef367",
 						}, -- [73]
 						{
-							["arg2"] = "刻符者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610983458,
-							["arg1"] = "你被盯上了。要小心。",
+							["arg2"] = "眼神无敌帅",
+							["type"] = "MONSTER_EMOTE",
+							["time"] = 1627993358,
+							["arg1"] = "%s赢下了一局炉石比赛！",
+							["clColor"] = "fff38bb9",
 						}, -- [74]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983477,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "SAY",
+							["time"] = 1627993361,
+							["arg1"] = "柯隐 中了不稳定的酸液",
+							["clColor"] = "fffef367",
 						}, -- [75]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610983507,
-							["arg1"] = "请……接受我的祝福。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993508,
+							["arg1"] = "Magiccream 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [76]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610983518,
-							["arg1"] = "请……接受我的祝福。",
+							["arg2"] = "瑾残丿醉瞳风-霍格",
+							["type"] = "SAY",
+							["time"] = 1627993508,
+							["arg1"] = "瑾残丿醉瞳风 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [77]
 						{
-							["arg2"] = "刻符者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610983563,
-							["arg1"] = "你被盯上了。要小心。",
+							["arg2"] = "枫海寻心-燃烧之刃",
+							["type"] = "SAY",
+							["time"] = 1627993536,
+							["arg1"] = "枫海寻心 中了不稳定的酸液",
+							["clColor"] = "ff3ec6ea",
 						}, -- [78]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983571,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993537,
+							["arg1"] = "Magiccream 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [79]
 						{
-							["arg2"] = "噬渊鼠",
+							["arg2"] = "眼神无敌帅",
 							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983577,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["time"] = 1627993553,
+							["arg1"] = "%s赢下了一局炉石比赛！",
+							["clColor"] = "fff38bb9",
 						}, -- [80]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983577,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993555,
+							["arg1"] = "Magiccream 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [81]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983577,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "SAY",
+							["time"] = 1627993631,
+							["arg1"] = "Infester",
+							["clColor"] = "fffef367",
 						}, -- [82]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983577,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993640,
+							["arg1"] = "Magiccream 中了心灵连接",
+							["clColor"] = "fffe7b09",
 						}, -- [83]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983577,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "SAY",
+							["time"] = 1627993641,
+							["arg1"] = "眼神无敌帅 中了心灵连接",
+							["clColor"] = "fff38bb9",
 						}, -- [84]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983577,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "SAY",
+							["time"] = 1627993641,
+							["arg1"] = "柯隐 中了心灵连接",
+							["clColor"] = "fffef367",
 						}, -- [85]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983577,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993661,
+							["arg1"] = "Infester",
+							["clColor"] = "fffe7b09",
 						}, -- [86]
 						{
-							["arg2"] = "噬渊鼠",
+							["arg2"] = "眼神无敌帅",
 							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983577,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["time"] = 1627993683,
+							["arg1"] = "%s赢下了一局炉石比赛！",
+							["clColor"] = "fff38bb9",
 						}, -- [87]
 						{
-							["arg2"] = "阿靛",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610983662,
-							["arg1"] = "我们必须找到本茜雅，她肯定就被关在附近。嗯，也谢谢你救了我！",
+							["arg2"] = "枫海寻心-燃烧之刃",
+							["type"] = "SAY",
+							["time"] = 1627993700,
+							["arg1"] = "Infester",
+							["clColor"] = "ff3ec6ea",
 						}, -- [88]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983764,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993704,
+							["arg1"] = "Magiccream 中了心灵连接",
+							["clColor"] = "fffe7b09",
 						}, -- [89]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983768,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "SAY",
+							["time"] = 1627993704,
+							["arg1"] = "眼神无敌帅 中了心灵连接",
+							["clColor"] = "fff38bb9",
 						}, -- [90]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983769,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "SAY",
+							["time"] = 1627993704,
+							["arg1"] = "柯隐 中了心灵连接",
+							["clColor"] = "fffef367",
 						}, -- [91]
 						{
-							["arg2"] = "阿靛",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610983784,
-							["arg1"] = "她在那儿！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993725,
+							["arg1"] = "Infester",
+							["clColor"] = "fffe7b09",
 						}, -- [92]
 						{
-							["arg2"] = "本茜雅",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610983785,
-							["arg1"] = "阿靛！天哪，我还以为我完蛋了。",
+							["time"] = 1627993746,
+							["arg1"] = "雷卡利沉睡着，学识完好无损。时间会为他疗伤。",
 						}, -- [93]
 						{
-							["arg2"] = "阿靛",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610983789,
-							["arg1"] = "我们会找个安全的地方躲起来。谢谢你帮了我们。",
+							["time"] = 1627993762,
+							["arg1"] = "塞兹仙林会铭记你。永远。",
 						}, -- [94]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610983943,
-							["arg1"] = "我……不该……这样……",
+							["arg2"] = "瑾残丿醉瞳风-霍格",
+							["type"] = "SAY",
+							["time"] = 1627993788,
+							["arg1"] = "瑾残丿醉瞳风 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [95]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983973,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "SAY",
+							["time"] = 1627993793,
+							["arg1"] = "柯隐 中了不稳定的酸液",
+							["clColor"] = "fffef367",
 						}, -- [96]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610983983,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1627993806,
+							["arg1"] = "Magiccream 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [97]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610984052,
-							["arg1"] = "从这个地方……把我带走吧。",
+							["arg2"] = "尖叫影魔",
+							["type"] = "MONSTER_EMOTE",
+							["time"] = 1627994217,
+							["arg1"] = "%s从裂隙闯入了刻希亚！",
 						}, -- [98]
 						{
-							["arg2"] = "噬渊鼠",
+							["arg2"] = "逃跑的荒蚺",
 							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610984102,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["time"] = 1627994710,
+							["arg1"] = "%s在远处挑衅地咆哮。",
 						}, -- [99]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "腐蚀者卡伟洛克斯",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984312,
-							["arg1"] = "从苦难和折磨中救救我吧！",
+							["time"] = 1627994990,
+							["arg1"] = "让我尝尝你的血，噬渊行者！",
 						}, -- [100]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "波波",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984312,
-							["arg1"] = "快让我离开这里！",
+							["time"] = 1627995031,
+							["arg1"] = "波波永远不放弃朋友！",
 						}, -- [101]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "表弟慢热手",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984313,
-							["arg1"] = "谁来救救我！",
+							["time"] = 1627995035,
+							["arg1"] = "在与牦牛争论时有两大理论。可哪个也不起作用。",
 						}, -- [102]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "波波",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984315,
-							["arg1"] = "有没有人！谁都行！",
+							["time"] = 1627995046,
+							["arg1"] = "迪奥斯受伤了？我去拿药剂帮忙！",
 						}, -- [103]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "迪奥斯",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984318,
-							["arg1"] = "请……接受我的祝福。",
+							["time"] = 1627995048,
+							["arg1"] = "你来得正是时候，波波。一直保持警惕，我已经开始有点累了。",
 						}, -- [104]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "迪奥斯",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984322,
-							["arg1"] = "他们夺走了……一切……",
+							["time"] = 1627995050,
+							["arg1"] = "你的药剂让我充满活力。我会继续守住这里，击退上百名敌人！",
 						}, -- [105]
 						{
-							["arg2"] = "被折磨的灵魂残迹",
+							["arg2"] = "波波",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984324,
-							["arg1"] = "你……真的……在这里？",
+							["time"] = 1627995053,
+							["arg1"] = "之后等你回到营地，我们再互相讲讲冒险故事。我去帮玛丽莉丝啦！",
 						}, -- [106]
 						{
-							["arg2"] = "噬渊鼠",
+							["arg2"] = "沉默的猎魂者",
 							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610984402,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["time"] = 1627995082,
+							["arg1"] = "%s从裂隙闯入了刻希亚！",
 						}, -- [107]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
+							["arg2"] = "波波",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984425,
-							["arg1"] = "一点……希望的滋味。",
+							["time"] = 1627995106,
+							["arg1"] = "玛丽莉丝没有受伤，但是还有许多人需要帮助……",
 						}, -- [108]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610984460,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "玛丽莉丝",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627995107,
+							["arg1"] = "我已经尽力了，波波，但是这支部队遭到了重创。",
 						}, -- [109]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610984469,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "波波",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627995108,
+							["arg1"] = "你把这些药剂都带给朋友们吧。是谁伤害了他们？",
 						}, -- [110]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
+							["arg2"] = "玛丽莉丝",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984475,
-							["arg1"] = "请……接受我的祝福。",
+							["time"] = 1627995109,
+							["arg1"] = "在前面的路上有个横冲直撞的吞食者。完全拦不住它！",
 						}, -- [111]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
+							["arg2"] = "波波",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984553,
-							["arg1"] = "一点……希望的滋味。",
+							["time"] = 1627995110,
+							["arg1"] = "我去阻止它。不会有朋友再受伤了。",
 						}, -- [112]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610984594,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "表弟慢热手",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627995139,
+							["arg1"] = "我将更新我的日记。",
 						}, -- [113]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610984598,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "波波",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627995197,
+							["arg1"] = "朋友们现在安全了。我去为他们多做些药剂！",
 						}, -- [114]
 						{
-							["arg2"] = "噬渊鼠",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610984599,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["arg2"] = "秘法师鸟羽帽",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1627995641,
+							["arg1"] = "那些野牛人手握直剑。直。剑。",
 						}, -- [115]
 						{
-							["arg2"] = "噬渊鼠",
+							["arg2"] = "逃跑的荒蚺",
 							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610984601,
-							["arg1"] = "%s充满恐惧地想要转身逃跑！",
+							["time"] = 1627995793,
+							["arg1"] = "%s在远处挑衅地咆哮。",
 						}, -- [116]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
+							["arg2"] = "表弟慢热手",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610984613,
-							["arg1"] = "我……不该……这样……",
+							["time"] = 1627995897,
+							["arg1"] = "在与牦牛争论时有两大理论。可哪个也不起作用。",
 						}, -- [117]
 						{
-							["arg2"] = "灌注了一半的灵魂残迹",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610984802,
-							["arg1"] = "你……真的……在这里？",
+							["arg1"] = " ",
 						}, -- [118]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610985937,
-							["arg1"] = "他们夺走了……一切……",
+							["arg1"] = " ",
 						}, -- [119]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610985940,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
+							["type"] = "SYSTEM",
 						}, -- [120]
 						{
-							["arg2"] = "囚禁之魂",
+							["arg2"] = "霍巴特·钩锤",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610986003,
-							["arg1"] = "我把最后的力量……交给你。",
+							["time"] = 1628001687,
+							["arg1"] = "欢迎！请随便看看。",
 						}, -- [121]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986005,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg2"] = "格鲁托妮雅",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628002096,
+							["arg1"] = "别忘了按高级账户的按钮！",
 						}, -- [122]
 						{
-							["arg2"] = "囚禁之魂",
+							["arg2"] = "霍巴特·钩锤",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610986024,
-							["arg1"] = "请……接受我的祝福。",
+							["time"] = 1628002126,
+							["arg1"] = "你好。我能帮上什么忙吗？",
 						}, -- [123]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986025,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg1"] = " ",
 						}, -- [124]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610986026,
-							["arg1"] = "你能……听见我吗？",
+							["arg1"] = " ",
 						}, -- [125]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986028,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [126]
 						{
-							["arg2"] = "囚禁之魂",
+							["arg2"] = "商人索·雷克",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610986087,
-							["arg1"] = "我把最后的力量……交给你。",
+							["time"] = 1628003330,
+							["arg1"] = "你一定要记录下这些凡人的喜好。",
 						}, -- [127]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986089,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg2"] = "商人索·兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628003331,
+							["arg1"] = "我在记了，我们可能需要启动更多供应链。有些他们喜欢的商品很难弄到。",
 						}, -- [128]
 						{
-							["arg2"] = "囚禁之魂",
+							["arg2"] = "商人索·雷克",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610986109,
-							["arg1"] = "你……真的……在这里？",
+							["time"] = 1628003334,
+							["arg1"] = "如果有必要的话，我们会扩大业务范围的。以后我们再商量这件事。",
 						}, -- [129]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986110,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg2"] = "格鲁托妮雅",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628003742,
+							["arg1"] = "别忘了按高级账户的按钮！",
 						}, -- [130]
 						{
-							["arg2"] = "Magiccream",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986139,
-							["arg1"] = "|TInterface\\ICONS\\INV_MawEye_Grey.blp:20|t |cFFFF0000|Hspell:335417|h噬渊中的[搜魂者]|h|r现在会立刻对你发起攻击。",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "格鲁托妮雅",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628003768,
+							["arg1"] = "看看这些……但愿没有丢什么东西……",
 						}, -- [131]
 						{
-							["arg2"] = "囚禁之魂",
+							["arg2"] = "格鲁托妮雅",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610986306,
-							["arg1"] = "我把最后的力量……交给你。",
+							["time"] = 1628003797,
+							["arg1"] = "如果您丢了东西，请联系客服！呵呵呵……",
 						}, -- [132]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986307,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg2"] = "秘法师鸟羽帽",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628003836,
+							["arg1"] = "我感觉若有所失。",
 						}, -- [133]
 						{
-							["arg2"] = "Magiccream",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986308,
-							["arg1"] = "|TInterface\\ICONS\\Spell_AnimaMaw_Missile.BLP:20|t高塔会周期性地|cFFFF0000|Hspell:314932|h [轰炸]|h|r你的位置。",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628004245,
+							["arg1"] = "这些灵魂救不回来了。全部收割掉！",
 						}, -- [134]
 						{
-							["arg2"] = "囚禁之魂",
+							["arg2"] = "堕落的追猎者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610986329,
-							["arg1"] = "他们夺走了……一切……",
+							["time"] = 1628004254,
+							["arg1"] = "我会享受羞辱你的快感。",
 						}, -- [135]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986330,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg2"] = "凯蒂·印哨",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628004471,
+							["arg1"] = "只要有邮件寄出，我就会准时到户！",
 						}, -- [136]
 						{
-							["arg2"] = "烈焰保护者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610986331,
-							["arg1"] = "在黑暗中湮灭吧！",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628004631,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:325876:0|h[湮灭诅咒]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [137]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610986351,
-							["arg1"] = "从这个地方……把我带走吧。",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628004663,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:338003:0|h[邪恶箭矢]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [138]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986354,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg2"] = "堕落的歼灭者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628004733,
+							["arg1"] = "主宰者……会阻止你的……",
 						}, -- [139]
 						{
-							["arg2"] = "囚禁之魂",
+							["arg2"] = "堕落的驯犬者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1610986364,
-							["arg1"] = "他们夺走了……一切……",
+							["time"] = 1628004737,
+							["arg1"] = "主宰者……会阻止你的……",
 						}, -- [140]
 						{
-							["arg2"] = "囚禁之魂",
-							["type"] = "MONSTER_EMOTE",
-							["time"] = 1610986365,
-							["arg1"] = "灵魂进入了你的护魂者。",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628004747,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:325876:0|h[湮灭诅咒]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [141]
 						{
-							["arg2"] = "大领主伯瓦尔·弗塔根",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610986489,
-							["arg1"] = "我……已经尽力了。",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628004801,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:338003:0|h[邪恶箭矢]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [142]
 						{
-							["arg2"] = "贝恩·血蹄",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1610986494,
-							["arg1"] = "安度因……武器？她是什么意思？！",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628004925,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:338003:0|h[邪恶箭矢]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [143]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628004986,
+							["arg1"] = "已打断 堕落的搜集者 的 |cff71d5ff|Hspell:325700:0|h[收集罪恶]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [144]
 						{
-							["arg1"] = " ",
+							["arg2"] = "堕落的搜集者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628004995,
+							["arg1"] = "你什么都……不是……",
 						}, -- [145]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628005062,
+							["arg1"] = "已打断 焚化者阿寇拉斯 的 |cff71d5ff|Hspell:358967:0|h[地狱烈火]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [146]
 						{
 							["arg2"] = "秘法师鸟羽帽",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1611067394,
+							["time"] = 1628005155,
 							["arg1"] = "做梦的感觉就是这样吗？",
 						}, -- [147]
 						{
-							["arg2"] = "表弟慢热手",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611067878,
-							["arg1"] = "放入越多，进去越多。",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628005255,
+							["arg1"] = "已打断 堕落的搜集者 的 |cff71d5ff|Hspell:325700:0|h[收集罪恶]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [148]
 						{
-							["arg2"] = "德拉卡女男爵",
+							["arg2"] = "堕落的搜集者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1611068154,
-							["arg1"] = "对玛卓克萨斯人来说，力量就是一切。在竞技场证明自己的实力吧！",
+							["time"] = 1628005260,
+							["arg1"] = "无礼的……凡人……",
 						}, -- [149]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611068269,
-							["arg1"] = "Magiccream 中了灼热之陨",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628005421,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:338003:0|h[邪恶箭矢]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [150]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "SAY",
-							["time"] = 1611068283,
-							["arg1"] = "少年丶来搞基 中了灼热之陨",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "堕落的歼灭者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628005447,
+							["arg1"] = "你什么都……不是……",
 						}, -- [151]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
-							["type"] = "SAY",
-							["time"] = 1611068296,
-							["arg1"] = "丶臭弟弟丶 中了灼热之陨",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "堕落的黑暗剑士",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628005482,
+							["arg1"] = "我……不能这样……结束……",
 						}, -- [152]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611068310,
-							["arg1"] = "哈尼斯斯 中了灼热之陨",
+							["time"] = 1628005744,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:338003:0|h[邪恶箭矢]|h|r!",
 							["clColor"] = "ff3ec6ea",
 						}, -- [153]
 						{
-							["arg2"] = "粉碎者赫文",
+							["arg2"] = "堕落的歼灭者",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1611068453,
-							["arg1"] = "荣耀属于我！",
+							["time"] = 1628005772,
+							["arg1"] = "我……不能这样……结束……",
 						}, -- [154]
 						{
-							["arg2"] = "阿德文特·追惘",
+							["arg2"] = "堕落的黑暗剑士",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1611068537,
-							["arg1"] = "我要用你的骨头装饰我的铠甲！",
+							["time"] = 1628005805,
+							["arg1"] = "我……不能这样……结束……",
 						}, -- [155]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611068571,
-							["arg1"] = "哈尼斯斯 中了回旋利刃",
+							["time"] = 1628005924,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:338003:0|h[邪恶箭矢]|h|r!",
 							["clColor"] = "ff3ec6ea",
 						}, -- [156]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069048,
-							["arg1"] = "少年丶来搞基 中了幻影寄生",
+							["time"] = 1628006007,
+							["arg1"] = "竹月 中了碎石之跃",
 							["clColor"] = "ff00fe97",
 						}, -- [157]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069049,
-							["arg1"] = "丶臭弟弟丶 中了幻影寄生",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006009,
+							["arg1"] = "3秒",
+							["clColor"] = "ff00fe97",
 						}, -- [158]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069075,
-							["arg1"] = "Magiccream 中了幻影寄生",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006010,
+							["arg1"] = "2秒",
+							["clColor"] = "ff00fe97",
 						}, -- [159]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069075,
-							["arg1"] = "丶臭弟弟丶 中了幻影寄生",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006011,
+							["arg1"] = "1秒",
+							["clColor"] = "ff00fe97",
 						}, -- [160]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069101,
-							["arg1"] = "Magiccream 中了幻影寄生",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006038,
+							["arg1"] = "竹月 中了碎石之跃",
+							["clColor"] = "ff00fe97",
 						}, -- [161]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069101,
-							["arg1"] = "哈尼斯斯 中了幻影寄生",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1628006040,
+							["arg1"] = "3秒",
+							["clColor"] = "ff00fe97",
 						}, -- [162]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069129,
-							["arg1"] = "丶臭弟弟丶 中了幻影寄生",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006041,
+							["arg1"] = "2秒",
+							["clColor"] = "ff00fe97",
 						}, -- [163]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069130,
-							["arg1"] = "大呆萌德 中了幻影寄生",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006042,
+							["arg1"] = "1秒",
+							["clColor"] = "ff00fe97",
 						}, -- [164]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069155,
-							["arg1"] = "少年丶来搞基 中了幻影寄生",
-							["clColor"] = "ff00fe97",
+							["time"] = 1628006100,
+							["arg1"] = "晒月亮补爱 中了碎石之跃",
+							["clColor"] = "ff3ec6ea",
 						}, -- [165]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069156,
-							["arg1"] = "大呆萌德 中了幻影寄生",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006102,
+							["arg1"] = "3秒",
+							["clColor"] = "ff3ec6ea",
 						}, -- [166]
+						{
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628006103,
+							["arg1"] = "2秒",
+							["clColor"] = "ff3ec6ea",
+						}, -- [167]
+						{
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628006104,
+							["arg1"] = "1秒",
+							["clColor"] = "ff3ec6ea",
+						}, -- [168]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069640,
-							["arg1"] = "死亡具象",
+							["time"] = 1628006129,
+							["arg1"] = "Magiccream 中了跳跃",
 							["clColor"] = "fffe7b09",
-						}, -- [167]
-						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "SAY",
-							["time"] = 1611069640,
-							["arg1"] = "死亡具象",
-							["clColor"] = "fffe7b09",
-						}, -- [168]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069640,
-							["arg1"] = "死亡具象",
-							["clColor"] = "ff3ec6ea",
 						}, -- [169]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069640,
-							["arg1"] = "死亡具象",
-							["clColor"] = "ff00fe97",
+							["time"] = 1628006131,
+							["arg1"] = "3秒",
+							["clColor"] = "fffe7b09",
 						}, -- [170]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069640,
-							["arg1"] = "死亡具象",
+							["time"] = 1628006132,
+							["arg1"] = "2秒",
 							["clColor"] = "fffe7b09",
 						}, -- [171]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069643,
-							["arg1"] = "3秒",
+							["time"] = 1628006133,
+							["arg1"] = "1秒",
 							["clColor"] = "fffe7b09",
 						}, -- [172]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069643,
-							["arg1"] = "3秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "堕落的驯犬者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628006292,
+							["arg1"] = "你什么都……不是……",
 						}, -- [173]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069643,
-							["arg1"] = "3秒",
+							["time"] = 1628006322,
+							["arg1"] = "已打断 堕落的歼灭者 的 |cff71d5ff|Hspell:338003:0|h[邪恶箭矢]|h|r!",
 							["clColor"] = "ff3ec6ea",
 						}, -- [174]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069643,
-							["arg1"] = "3秒",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006492,
+							["arg1"] = "竹月 中了萦绕锁定",
+							["clColor"] = "ff00fe97",
 						}, -- [175]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069643,
-							["arg1"] = "3秒",
+							["time"] = 1628006512,
+							["arg1"] = "竹月 中了萦绕锁定",
 							["clColor"] = "ff00fe97",
 						}, -- [176]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069644,
-							["arg1"] = "2秒",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006529,
+							["arg1"] = "已打断 高阶裁决官阿丽兹 的 |cff71d5ff|Hspell:323552:0|h[能量箭雨]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [177]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "蘭小蘭-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069644,
-							["arg1"] = "2秒",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1628006534,
+							["arg1"] = "蘭小蘭 中了萦绕锁定",
+							["clColor"] = "fffef367",
 						}, -- [178]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
+							["arg2"] = "蘭小蘭-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069644,
-							["arg1"] = "2秒",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006558,
+							["arg1"] = "蘭小蘭 中了萦绕锁定",
+							["clColor"] = "fffef367",
 						}, -- [179]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069644,
-							["arg1"] = "2秒",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628006632,
+							["arg1"] = "已打断 审判官西加尔 的 |cff71d5ff|Hspell:326829:0|h[邪恶箭矢]|h|r!",
+							["clColor"] = "ff3ec6ea",
 						}, -- [180]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "SAY",
-							["time"] = 1611069644,
-							["arg1"] = "2秒",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "表弟慢热手",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628006984,
+							["arg1"] = "也许你能滚动一只桶。",
 						}, -- [181]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "SAY",
-							["time"] = 1611069645,
-							["arg1"] = "1秒",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "表弟慢热手",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628007230,
+							["arg1"] = "也许你能滚动一只桶。",
 						}, -- [182]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069645,
-							["arg1"] = "1秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "秘法师鸟羽帽",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628007231,
+							["arg1"] = "那些野牛人手握直剑。直。剑。",
 						}, -- [183]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
-							["type"] = "SAY",
-							["time"] = 1611069645,
-							["arg1"] = "1秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "表弟慢热手",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628007309,
+							["arg1"] = "一个人去很危险吧？",
 						}, -- [184]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "SAY",
-							["time"] = 1611069645,
-							["arg1"] = "1秒",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [185]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069645,
-							["arg1"] = "1秒",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = " ",
 						}, -- [186]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069699,
-							["arg1"] = "死亡具象",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
 						}, -- [187]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "SAY",
-							["time"] = 1611069699,
-							["arg1"] = "死亡具象",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "表弟慢热手",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628076470,
+							["arg1"] = "我只不过是个胡吃海喝的可怜虫。",
 						}, -- [188]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "SAY",
-							["time"] = 1611069699,
-							["arg1"] = "死亡具象",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "月莓女勋爵",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628076638,
+							["arg1"] = "黑暗的力量在威胁塞兹仙林。要是我们现在不出手干预，他们就会颠覆整个炽蓝仙野！",
 						}, -- [189]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069699,
-							["arg1"] = "死亡具象",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "仙木灵居民",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628076855,
+							["arg1"] = "森林感谢你。",
 						}, -- [190]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
-							["type"] = "SAY",
-							["time"] = 1611069699,
-							["arg1"] = "死亡具象",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077407,
+							["arg1"] = "英格拉·马洛克倒下了。森林叹息之余，也在感激。",
 						}, -- [191]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069702,
-							["arg1"] = "3秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077416,
+							["arg1"] = "迷雾凶险，勇敢前行。我们终将重聚。",
 						}, -- [192]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "SAY",
-							["time"] = 1611069702,
-							["arg1"] = "3秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077510,
+							["arg1"] = "你们能找到迷雾的出口吗？一定要想清楚哦！",
 						}, -- [193]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069702,
-							["arg1"] = "3秒",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077514,
+							["arg1"] = "噢耶！你快赢了！",
 						}, -- [194]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
-							["type"] = "SAY",
-							["time"] = 1611069702,
-							["arg1"] = "3秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077587,
+							["arg1"] = "噢耶！你快赢了！",
 						}, -- [195]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "SAY",
-							["time"] = 1611069702,
-							["arg1"] = "3秒",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077642,
+							["arg1"] = "被你看穿了！",
 						}, -- [196]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "SAY",
-							["time"] = 1611069703,
-							["arg1"] = "2秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077710,
+							["arg1"] = "噢耶！你快赢了！",
 						}, -- [197]
 						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
-							["type"] = "SAY",
-							["time"] = 1611069703,
-							["arg1"] = "2秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077783,
+							["arg1"] = "你成功了！猜得真准！",
 						}, -- [198]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069703,
-							["arg1"] = "2秒",
+							["time"] = 1628077846,
+							["arg1"] = "猫德这aoe 吐了",
 							["clColor"] = "fffe7b09",
 						}, -- [199]
 						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "SAY",
-							["time"] = 1611069703,
-							["arg1"] = "2秒",
-							["clColor"] = "ff00fe97",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628077867,
+							["arg1"] = "你成功了！猜得真准！",
 						}, -- [200]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069703,
-							["arg1"] = "2秒",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628078070,
+							["arg1"] = "太好玩了！我很久没有这么尽兴了……快点，重新开始吧！",
 						}, -- [201]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "SAY",
-							["time"] = 1611069705,
-							["arg1"] = "1秒",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628078077,
+							["arg1"] = "游戏时间结束了。森林之风在催促我们继续前进。",
 						}, -- [202]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628078091,
+							["arg1"] = "噢，好吧。迷雾，散了吧。",
+						}, -- [203]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628078095,
+							["arg1"] = "嘿……好像不太妙。这到底是怎么回事！",
+						}, -- [204]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628078100,
+							["arg1"] = "戈姆快把塞兹仙林啃光了。必须恢复自然的平衡。",
+						}, -- [205]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611069705,
-							["arg1"] = "1秒",
+							["time"] = 1628078165,
+							["arg1"] = "Magiccream 中了不稳定的酸液",
 							["clColor"] = "fffe7b09",
-						}, -- [203]
-						{
-							["arg2"] = "丶臭弟弟丶-丽丽（四川）",
-							["type"] = "SAY",
-							["time"] = 1611069705,
-							["arg1"] = "1秒",
-							["clColor"] = "fffe7b09",
-						}, -- [204]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611069705,
-							["arg1"] = "1秒",
-							["clColor"] = "ff3ec6ea",
-						}, -- [205]
-						{
-							["arg2"] = "少年丶来搞基-血色十字军",
-							["type"] = "SAY",
-							["time"] = 1611069705,
-							["arg1"] = "1秒",
-							["clColor"] = "ff00fe97",
 						}, -- [206]
 						{
-							["arg2"] = "表弟慢热手",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611069929,
-							["arg1"] = "我只不过是个胡吃海喝的可怜虫。",
+							["arg2"] = "深秋之黎明-埃德萨拉",
+							["type"] = "SAY",
+							["time"] = 1628078166,
+							["arg1"] = "深秋之黎明 中了不稳定的酸液",
+							["clColor"] = "fff38bb9",
 						}, -- [207]
 						{
-							["arg2"] = "秘法师鸟羽帽",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611069930,
-							["arg1"] = "我是位牦牛骑士。这是我的牦牛。",
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "SAY",
+							["time"] = 1628078178,
+							["arg1"] = "数个三二一 中了不稳定的酸液",
+							["clColor"] = "ff006fdc",
 						}, -- [208]
 						{
-							["arg2"] = "仙木灵居民",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070476,
-							["arg1"] = "森林感谢你。",
+							["arg2"] = "深秋之黎明-埃德萨拉",
+							["type"] = "SAY",
+							["time"] = 1628078182,
+							["arg1"] = "深秋之黎明 中了不稳定的酸液",
+							["clColor"] = "fff38bb9",
 						}, -- [209]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070751,
-							["arg1"] = "英格拉·马洛克倒下了。森林叹息之余，也在感激。",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "SAY",
+							["time"] = 1628078193,
+							["arg1"] = "此角色不取名 中了不稳定的酸液",
+							["clColor"] = "ffc59a6c",
 						}, -- [210]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070760,
-							["arg1"] = "迷雾凶险，勇敢前行。我们终将重聚。",
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "SAY",
+							["time"] = 1628078197,
+							["arg1"] = "数个三二一 中了不稳定的酸液",
+							["clColor"] = "ff006fdc",
 						}, -- [211]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070786,
-							["arg1"] = "你们能找到迷雾的出口吗？一定要想清楚哦！",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "SAY",
+							["time"] = 1628078317,
+							["arg1"] = "此角色不取名 中了不稳定的酸液",
+							["clColor"] = "ffc59a6c",
 						}, -- [212]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070793,
-							["arg1"] = "石碑印记，指明道路。独一无二。引领前路。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628078319,
+							["arg1"] = "Magiccream 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [213]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070824,
-							["arg1"] = "噢耶！你快赢了！",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "SAY",
+							["time"] = 1628078410,
+							["arg1"] = "此角色不取名 中了不稳定的酸液",
+							["clColor"] = "ffc59a6c",
 						}, -- [214]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070862,
-							["arg1"] = "噢耶！你快赢了！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628078423,
+							["arg1"] = "Magiccream 中了不稳定的酸液",
+							["clColor"] = "fffe7b09",
 						}, -- [215]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070908,
-							["arg1"] = "噢耶！你快赢了！",
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "SAY",
+							["time"] = 1628078436,
+							["arg1"] = "数个三二一 中了不稳定的酸液",
+							["clColor"] = "ff006fdc",
 						}, -- [216]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070953,
-							["arg1"] = "噢耶！你快赢了！",
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "SAY",
+							["time"] = 1628078525,
+							["arg1"] = "数个三二一 中了不稳定的酸液",
+							["clColor"] = "ff006fdc",
 						}, -- [217]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611070996,
-							["arg1"] = "噢耶！你快赢了！",
+							["arg2"] = "深秋之黎明-埃德萨拉",
+							["type"] = "SAY",
+							["time"] = 1628078527,
+							["arg1"] = "深秋之黎明 中了不稳定的酸液",
+							["clColor"] = "fff38bb9",
 						}, -- [218]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611071291,
-							["arg1"] = "太好玩了！我很久没有这么尽兴了……快点，重新开始吧！",
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "SAY",
+							["time"] = 1628078541,
+							["arg1"] = "此角色不取名 中了不稳定的酸液",
+							["clColor"] = "ffc59a6c",
 						}, -- [219]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611071297,
-							["arg1"] = "游戏时间结束了。森林之风在催促我们继续前进。",
+							["arg2"] = "深秋之黎明-埃德萨拉",
+							["type"] = "SAY",
+							["time"] = 1628078554,
+							["arg1"] = "深秋之黎明 中了不稳定的酸液",
+							["clColor"] = "fff38bb9",
 						}, -- [220]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611071306,
-							["arg1"] = "噢，好吧。迷雾，散了吧。",
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "SAY",
+							["time"] = 1628078557,
+							["arg1"] = "数个三二一 中了不稳定的酸液",
+							["clColor"] = "ff006fdc",
 						}, -- [221]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611071310,
-							["arg1"] = "嘿……好像不太妙。这到底是怎么回事！",
-						}, -- [222]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_SAY",
-							["time"] = 1611071315,
-							["arg1"] = "戈姆快把塞兹仙林啃光了。必须恢复自然的平衡。",
-						}, -- [223]
-						{
-							["arg2"] = "钟孖期-影之哀伤",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611071332,
-							["arg1"] = "钟孖期 中了不稳定的酸液",
-							["clColor"] = "fffe7b09",
-						}, -- [224]
-						{
-							["arg2"] = "皂壮壮-燃烧平原",
-							["type"] = "SAY",
-							["time"] = 1611071335,
-							["arg1"] = "皂壮壮 中了不稳定的酸液",
-							["clColor"] = "fffe7b09",
-						}, -- [225]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071344,
-							["arg1"] = "哈尼斯斯 中了不稳定的酸液",
-							["clColor"] = "ff3ec6ea",
-						}, -- [226]
-						{
-							["arg2"] = "皂壮壮-燃烧平原",
-							["type"] = "SAY",
-							["time"] = 1611071412,
-							["arg1"] = "皂壮壮 中了不稳定的酸液",
-							["clColor"] = "fffe7b09",
-						}, -- [227]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071427,
-							["arg1"] = "哈尼斯斯 中了不稳定的酸液",
-							["clColor"] = "ff3ec6ea",
-						}, -- [228]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071468,
-							["arg1"] = "哈尼斯斯 中了不稳定的酸液",
-							["clColor"] = "ff3ec6ea",
-						}, -- [229]
-						{
-							["arg2"] = "皂壮壮-燃烧平原",
-							["type"] = "SAY",
-							["time"] = 1611071496,
-							["arg1"] = "皂壮壮 中了不稳定的酸液",
-							["clColor"] = "fffe7b09",
-						}, -- [230]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071502,
-							["arg1"] = "哈尼斯斯 中了不稳定的酸液",
-							["clColor"] = "ff3ec6ea",
-						}, -- [231]
-						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
-							["type"] = "SAY",
-							["time"] = 1611071567,
+							["time"] = 1628078594,
 							["arg1"] = "Infester",
 							["clColor"] = "fffe7b09",
+						}, -- [222]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628078602,
+							["arg1"] = "Magiccream 中了心灵连接",
+							["clColor"] = "fffe7b09",
+						}, -- [223]
+						{
+							["arg2"] = "大米恶魔-燃烧之刃",
+							["type"] = "SAY",
+							["time"] = 1628078603,
+							["arg1"] = "大米恶魔 中了心灵连接",
+							["clColor"] = "ffa22fc8",
+						}, -- [224]
+						{
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "SAY",
+							["time"] = 1628078603,
+							["arg1"] = "此角色不取名 中了心灵连接",
+							["clColor"] = "ffc59a6c",
+						}, -- [225]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628078615,
+							["arg1"] = "Infester",
+							["clColor"] = "fffe7b09",
+						}, -- [226]
+						{
+							["arg2"] = "数个三二一-安苏",
+							["type"] = "SAY",
+							["time"] = 1628078653,
+							["arg1"] = "Infester",
+							["clColor"] = "ff006fdc",
+						}, -- [227]
+						{
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "SAY",
+							["time"] = 1628078660,
+							["arg1"] = "此角色不取名 中了心灵连接",
+							["clColor"] = "ffc59a6c",
+						}, -- [228]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628078660,
+							["arg1"] = "Magiccream 中了心灵连接",
+							["clColor"] = "fffe7b09",
+						}, -- [229]
+						{
+							["arg2"] = "此角色不取名-奥尔加隆",
+							["type"] = "SAY",
+							["time"] = 1628078675,
+							["arg1"] = "此角色不取名 中了心灵连接",
+							["clColor"] = "ffc59a6c",
+						}, -- [230]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "SAY",
+							["time"] = 1628078675,
+							["arg1"] = "Magiccream 中了心灵连接",
+							["clColor"] = "fffe7b09",
+						}, -- [231]
+						{
+							["arg2"] = "深秋之黎明-埃德萨拉",
+							["type"] = "SAY",
+							["time"] = 1628078675,
+							["arg1"] = "深秋之黎明 中了心灵连接",
+							["clColor"] = "fff38bb9",
 						}, -- [232]
 						{
-							["arg2"] = "大呆萌德-寒冰皇冠",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "SAY",
-							["time"] = 1611071629,
-							["arg1"] = "大呆萌德 中了心灵连接",
+							["time"] = 1628078695,
+							["arg1"] = "Magiccream 中了心灵连接",
 							["clColor"] = "fffe7b09",
 						}, -- [233]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "此角色不取名-奥尔加隆",
 							["type"] = "SAY",
-							["time"] = 1611071629,
-							["arg1"] = "Magiccream 中了心灵连接",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628078695,
+							["arg1"] = "此角色不取名 中了心灵连接",
+							["clColor"] = "ffc59a6c",
 						}, -- [234]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
+							["arg2"] = "数个三二一-安苏",
 							["type"] = "SAY",
-							["time"] = 1611071629,
-							["arg1"] = "皂壮壮 中了心灵连接",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628078695,
+							["arg1"] = "数个三二一 中了心灵连接",
+							["clColor"] = "ff006fdc",
 						}, -- [235]
 						{
-							["arg2"] = "钟孖期-影之哀伤",
+							["arg2"] = "深秋之黎明-埃德萨拉",
 							["type"] = "SAY",
-							["time"] = 1611071629,
-							["arg1"] = "钟孖期 中了心灵连接",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628078695,
+							["arg1"] = "深秋之黎明 中了心灵连接",
+							["clColor"] = "fff38bb9",
 						}, -- [236]
 						{
-							["arg2"] = "钟孖期-影之哀伤",
+							["arg2"] = "大米恶魔-燃烧之刃",
 							["type"] = "SAY",
-							["time"] = 1611071632,
-							["arg1"] = "Adds on 钟孖期 ",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628078695,
+							["arg1"] = "大米恶魔 中了心灵连接",
+							["clColor"] = "ffa22fc8",
 						}, -- [237]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071645,
-							["arg1"] = "哈尼斯斯 中了心灵连接",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628078710,
+							["arg1"] = "雷卡利沉睡着，学识完好无损。时间会为他疗伤。",
 						}, -- [238]
 						{
-							["arg2"] = "钟孖期-影之哀伤",
-							["type"] = "SAY",
-							["time"] = 1611071645,
-							["arg1"] = "钟孖期 中了心灵连接",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628078727,
+							["arg1"] = "塞兹仙林会铭记你。永远。",
 						}, -- [239]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
-							["type"] = "SAY",
-							["time"] = 1611071645,
-							["arg1"] = "皂壮壮 中了心灵连接",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [240]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071645,
-							["arg1"] = "Magiccream 中了心灵连接",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [241]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
-							["type"] = "SAY",
-							["time"] = 1611071647,
-							["arg1"] = "Infester",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [242]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071679,
-							["arg1"] = "Infester",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "大使巴·所罗",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628163673,
+							["arg1"] = "我们也许能从中大赚一笔。",
 						}, -- [243]
 						{
-							["arg2"] = "宗主奥法兰",
+							["arg2"] = "马夫塔·拉什诺",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1611071699,
-							["arg1"] = "雷卡利沉睡着，学识完好无损。时间会为他疗伤。",
+							["time"] = 1628163782,
+							["arg1"] = "塔·威聂？",
 						}, -- [244]
 						{
-							["arg2"] = "宗主奥法兰",
+							["arg2"] = "守护者塔·沙兰",
 							["type"] = "MONSTER_SAY",
-							["time"] = 1611071715,
-							["arg1"] = "塞兹仙林会铭记你。永远。",
+							["time"] = 1628163783,
+							["arg1"] = "塔·威聂，你又来了？我们早就谈过这件事了。",
 						}, -- [245]
 						{
-							["arg2"] = "皂壮壮-燃烧平原",
-							["type"] = "SAY",
-							["time"] = 1611071735,
-							["arg1"] = "皂壮壮 中了不稳定的酸液",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "塔·威聂",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628163785,
+							["arg1"] = "传送门开错了！送我回去！要是主母塔·多拉问起来，你们就说没见过我！",
 						}, -- [246]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071736,
-							["arg1"] = "哈尼斯斯 中了不稳定的酸液",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "马夫塔·拉什诺",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628163788,
+							["arg1"] = "逆转流向。",
 						}, -- [247]
 						{
-							["arg2"] = "钟孖期-影之哀伤",
-							["type"] = "SAY",
-							["time"] = 1611071749,
-							["arg1"] = "钟孖期 中了不稳定的酸液",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "守护者塔·沙兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628163789,
+							["arg1"] = "还有，别碰我的传送门网络！",
 						}, -- [248]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "SAY",
-							["time"] = 1611071765,
-							["arg1"] = "哈尼斯斯 中了不稳定的酸液",
-							["clColor"] = "ff3ec6ea",
+							["arg2"] = "马夫塔·拉什诺",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628163791,
+							["arg1"] = "他什么时候照你说的做过？",
 						}, -- [249]
 						{
-							["type"] = "TEXT_EMOTE",
-							["time"] = 1611071825,
-							["arg1"] = "你感到很饿。也许在哈尼斯斯那里可以找到一些食物。",
+							["arg2"] = "守护者塔·沙兰",
+							["type"] = "MONSTER_SAY",
+							["time"] = 1628163792,
+							["arg1"] = "从来没有，但毕竟他是财团的一员。",
 						}, -- [250]
 					},
 				}, -- [4]
 				{
 					["enabled"] = true,
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["name"] = "呼喊",
 					["logs"] = {
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1610026167,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992644,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [1]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1610026167,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992647,
+							["arg1"] = "请……活下来……",
 						}, -- [2]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "柯隐-神圣之歌",
 							["type"] = "YELL",
-							["time"] = 1610026274,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627992649,
+							["arg1"] = "已断|cff71d5ff|Hspell:323057:0|h[灵魂之箭]|h|r",
+							["clColor"] = "fffef367",
 						}, -- [3]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1610026305,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992657,
+							["arg1"] = "我……控制不住……",
 						}, -- [4]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026443,
-							["arg1"] = "你阻止不了我！",
+							["time"] = 1627992660,
+							["arg1"] = "服从我！",
 						}, -- [5]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026448,
-							["arg1"] = "我的利刃会劈开你的血肉！",
+							["time"] = 1627992663,
+							["arg1"] = "要对仙野有信心。",
 						}, -- [6]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1610026452,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992664,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [7]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026454,
-							["arg1"] = "你脚下就是你的葬身之地！",
+							["time"] = 1627992670,
+							["arg1"] = "竟敢违抗我！",
 						}, -- [8]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026460,
-							["arg1"] = "阴影中的匕首会刺穿你的心脏。",
+							["time"] = 1627992670,
+							["arg1"] = "你们明明……那么……弱……",
 						}, -- [9]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026470,
-							["arg1"] = "我的利刃会劈开你的血肉！",
+							["time"] = 1627992684,
+							["arg1"] = "耶！又有新朋友来玩了！快过来！",
 						}, -- [10]
 						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026476,
-							["arg1"] = "你脚下就是你的葬身之地！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "YELL",
+							["time"] = 1627992848,
+							["arg1"] = "已断|cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
+							["clColor"] = "fffef367",
 						}, -- [11]
 						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026492,
-							["arg1"] = "只要有一处擦破点皮……",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627992935,
+							["arg1"] = "我已打断纱雾照看者的|cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [12]
 						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026497,
-							["arg1"] = "阴影中的匕首会刺穿你的心脏。",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "YELL",
+							["time"] = 1627993082,
+							["arg1"] = "已断|cff71d5ff|Hspell:324914:0|h[滋养森林]|h|r",
+							["clColor"] = "fffef367",
 						}, -- [13]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026516,
-							["arg1"] = "我的利刃会劈开你的血肉！",
+							["time"] = 1627993113,
+							["arg1"] = "这一定会很有趣！",
 						}, -- [14]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026522,
-							["arg1"] = "你脚下就是你的葬身之地！",
+							["time"] = 1627993122,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [15]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026533,
-							["arg1"] = "暗影会拥抱你的陨灭。",
+							["time"] = 1627993127,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [16]
 						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026540,
-							["arg1"] = "我的利刃会劈开你的血肉！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993127,
+							["arg1"] = "我已打断唤雾者的|cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [17]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026546,
-							["arg1"] = "你脚下就是你的葬身之地！",
+							["time"] = 1627993136,
+							["arg1"] = "嘿，接着！",
 						}, -- [18]
 						{
-							["arg2"] = "多米娜·毒刃",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026550,
-							["arg1"] = "我……必将……复仇……",
+							["time"] = 1627993142,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [19]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026615,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
+							["time"] = 1627993147,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [20]
 						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026640,
-							["arg1"] = "仆从们，用餐时间到！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993148,
+							["arg1"] = "我已打断唤雾者的|cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [21]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026681,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
+							["time"] = 1627993151,
+							["arg1"] = "嘿，接着！",
 						}, -- [22]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026691,
-							["arg1"] = "仆从们，用餐时间到！",
+							["time"] = 1627993164,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [23]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026765,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
+							["time"] = 1627993167,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [24]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026776,
-							["arg1"] = "起来吧，凋零的仆从！",
+							["time"] = 1627993170,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [25]
 						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026800,
-							["arg1"] = "腐败的守护者，听我号令！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993171,
+							["arg1"] = "我已打断唤雾者的|cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [26]
 						{
-							["arg2"] = "艾柯尔·胆肉",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026808,
-							["arg1"] = "凋零之母……来找你了……",
+							["time"] = 1627993181,
+							["arg1"] = "嘿，接着！",
 						}, -- [27]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026870,
-							["arg1"] = "见证我最后的杰作！我的骄傲，我的末日！",
+							["time"] = 1627993191,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [28]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026879,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
+							["time"] = 1627993196,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [29]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026888,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["time"] = 1627993199,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [30]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026899,
-							["arg1"] = "一切都将毁灭！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993200,
+							["arg1"] = "我已打断唤雾者的|cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [31]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1610026911,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993209,
+							["arg1"] = "嘿，接着！",
 						}, -- [32]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1610026911,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993220,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [33]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026923,
-							["arg1"] = "它在扩散！无法束缚！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993221,
+							["arg1"] = "我已打断唤雾者的|cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [34]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1610026929,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993223,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [35]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026935,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
+							["time"] = 1627993223,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [36]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026944,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["time"] = 1627993237,
+							["arg1"] = "动作快！",
 						}, -- [37]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026958,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
+							["time"] = 1627993242,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [38]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026969,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993243,
+							["arg1"] = "我已打断唤雾者的|cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [39]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026972,
-							["arg1"] = "一切都将毁灭！",
+							["time"] = 1627993252,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [40]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610026995,
-							["arg1"] = "它会吞噬你们！",
+							["time"] = 1627993256,
+							["arg1"] = "嘿，接着！",
 						}, -- [41]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1610027001,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993264,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [42]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610027005,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993265,
+							["arg1"] = "我已打断唤雾者的|cff71d5ff|Hspell:321828:0|h[肉饼蛋糕]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [43]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610027022,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["time"] = 1627993270,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [44]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1610027028,
-							["arg1"] = "不要……相信……男爵……",
+							["time"] = 1627993271,
+							["arg1"] = "动作快！",
 						}, -- [45]
 						{
-							["arg1"] = " ",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993316,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [46]
 						{
-							["arg1"] = " ",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993330,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [47]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993361,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [48]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068220,
-							["arg1"] = "诸位，欢迎光临伤逝剧场！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993427,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [49]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068226,
-							["arg1"] = "看来有些人真是没有自知之明，居然来挑战玛卓克萨斯最优秀的斗士！哈哈！我们等着瞧吧！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993436,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [50]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068239,
-							["arg1"] = "无论如何……这一定会是场好戏。有请挑战者登场！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993459,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [51]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068258,
-							["arg1"] = "血流成河吧！",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "YELL",
+							["time"] = 1627993503,
+							["arg1"] = "已断|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fffef367",
 						}, -- [52]
 						{
-							["arg2"] = "受诅者赛泽尔",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068283,
-							["arg1"] = "不！我绝不会消亡！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993508,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [53]
 						{
-							["arg2"] = "斩首者德茜雅",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068286,
-							["arg1"] = "我的刀刃会畅饮你们的灵魂！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993521,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [54]
 						{
-							["arg2"] = "疫毒者巴瑟兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068318,
-							["arg1"] = "你的痛苦很有信息量。",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993531,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [55]
 						{
-							["arg2"] = "斩首者德茜雅",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068322,
-							["arg1"] = "替我……复仇……",
+							["time"] = 1627993620,
+							["arg1"] = "毁灭！吞噬！饕餮大餐！",
 						}, -- [56]
 						{
-							["arg2"] = "受诅者赛泽尔",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068333,
-							["arg1"] = "你……必将……消亡……",
+							["time"] = 1627993625,
+							["arg1"] = "炸开花！炸开花！",
 						}, -- [57]
 						{
-							["arg2"] = "疫毒者巴瑟兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068355,
-							["arg1"] = "我……最伟大的……造物……",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993632,
+							["arg1"] = "我已打断特雷德奥瓦的|cff71d5ff|Hspell:337235:0|h[寄生平静]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [58]
 						{
-							["arg2"] = "卑劣的席拉",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068355,
-							["arg1"] = "停！我受够这场闹剧了！",
+							["time"] = 1627993640,
+							["arg1"] = "黑暗！",
 						}, -- [59]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068356,
-							["arg1"] = "这就完了？说好的跌宕起伏呢！太令人失望了。",
+							["time"] = 1627993640,
+							["arg1"] = "我吃到了……我……进化了……",
 						}, -- [60]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068367,
-							["arg1"] = "难以置信！看来狗虽小，但还是会咬人的！",
+							["time"] = 1627993655,
+							["arg1"] = "你们无路可逃。",
 						}, -- [61]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068373,
-							["arg1"] = "不过预赛好歹是结束了，是时候开始真正的试炼了！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993662,
+							["arg1"] = "我已打断特雷德奥瓦的|cff71d5ff|Hspell:337249:0|h[寄生瘫痪]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [62]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068393,
-							["arg1"] = "新来的挑战者？哼，我倒要瞧瞧你能坚持多久。",
+							["time"] = 1627993664,
+							["arg1"] = "孩子们，吞掉他们！",
 						}, -- [63]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611068405,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993666,
+							["arg1"] = "诱人的美餐！",
 						}, -- [64]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611068405,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993674,
+							["arg1"] = "你们无路可逃。",
 						}, -- [65]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611068538,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993683,
+							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
 						}, -- [66]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068596,
-							["arg1"] = "你最好会点有意思的招式。",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "YELL",
+							["time"] = 1627993688,
+							["arg1"] = "已断|cff71d5ff|Hspell:322450:0|h[吞噬]|h|r",
+							["clColor"] = "fffef367",
 						}, -- [67]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068602,
-							["arg1"] = "狂风将会把你吹散。",
+							["time"] = 1627993694,
+							["arg1"] = "我能看穿你们的每一步！",
 						}, -- [68]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068614,
-							["arg1"] = "你们的力量也配跟我比？！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993701,
+							["arg1"] = "我已打断特雷德奥瓦的|cff71d5ff|Hspell:337255:0|h[寄生占据]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [69]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068627,
-							["arg1"] = "为荣耀而战！",
+							["time"] = 1627993703,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [70]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068633,
-							["arg1"] = "狂风将会把你吹散。",
+							["time"] = 1627993706,
+							["arg1"] = "我的孩子饥饿难耐。",
 						}, -- [71]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068648,
-							["arg1"] = "我的利刃无可匹敌。",
+							["time"] = 1627993713,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [72]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068654,
-							["arg1"] = "屈服于我的力量！",
+							["time"] = 1627993721,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [73]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068675,
-							["arg1"] = "我的利刃无可匹敌。",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993726,
+							["arg1"] = "我已打断特雷德奥瓦的|cff71d5ff|Hspell:337255:0|h[寄生占据]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [74]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068685,
-							["arg1"] = "屈服于我的力量！",
+							["time"] = 1627993732,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [75]
 						{
-							["arg2"] = "无堕者哈夫",
+							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068697,
-							["arg1"] = "为荣耀而战！",
+							["time"] = 1627993733,
+							["arg1"] = "多么……甘甜的……智慧……",
 						}, -- [76]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068706,
-							["arg1"] = "狂风将会把你吹散。",
+							["arg2"] = "柯隐-神圣之歌",
+							["type"] = "YELL",
+							["time"] = 1627993751,
+							["arg1"] = "已断|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fffef367",
 						}, -- [77]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068720,
-							["arg1"] = "屈服于我的力量！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993754,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [78]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068741,
-							["arg1"] = "狂风将会把你吹散。",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993773,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [79]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068743,
-							["arg1"] = "打得……真……棒……",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993798,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:326046:0|h[模拟抗性]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [80]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068747,
-							["arg1"] = "挑战者通过了第一场试炼！但要想获胜还有很长的路要走！",
+							["arg2"] = "眼神无敌帅-燃烧之刃",
+							["type"] = "YELL",
+							["time"] = 1627993806,
+							["arg1"] = "我已打断锥喉鹿角巨虫的|cff71d5ff|Hspell:340544:0|h[再生鼓舞]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [81]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "卡达威鲁斯",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611068767,
-							["arg1"] = "凡人的生命如此短促……如此脆弱。",
+							["time"] = 1627994368,
+							["arg1"] = "搜遍每一条缝隙，寻找通灵师的尸体！",
 						}, -- [82]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "波波",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069044,
-							["arg1"] = "你们的灵魂都归我了！",
+							["time"] = 1627994952,
+							["arg1"] = "救兵就快到了，朋友！",
 						}, -- [83]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "波波",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069048,
-							["arg1"] = "让恐惧吞噬你！",
+							["time"] = 1627995139,
+							["arg1"] = "出来面对波波吧，你这个大号的蓝色坏蛋！",
 						}, -- [84]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "阿滴",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069053,
-							["arg1"] = "在我的手中凋零吧。",
+							["time"] = 1627995329,
+							["arg1"] = "为了堕罪堡！",
 						}, -- [85]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "卡达威鲁斯",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069060,
-							["arg1"] = "放弃你的灵魂吧。",
+							["time"] = 1627995495,
+							["arg1"] = "搜遍每一条缝隙，寻找通灵师的尸体！",
 						}, -- [86]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069074,
-							["arg1"] = "在我的手中凋零吧。",
+							["arg1"] = " ",
 						}, -- [87]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069075,
-							["arg1"] = "让恐惧吞噬你！",
+							["arg1"] = " ",
 						}, -- [88]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069081,
-							["arg1"] = "我会剥夺你的灵魂。",
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
+							["type"] = "SYSTEM",
 						}, -- [89]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069094,
-							["arg1"] = "你已经无路可逃了。",
+							["arg2"] = "灾舅子-红龙女王",
+							["type"] = "YELL",
+							["time"] = 1628000224,
+							["arg1"] = "我已打断",
+							["clColor"] = "ffa22fc8",
 						}, -- [90]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "Magiccream",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069100,
-							["arg1"] = "让恐惧吞噬你！",
+							["time"] = 1628000727,
+							["arg1"] = "没有人胆敢挑战兄弟会！",
+							["clColor"] = "fffe7b09",
 						}, -- [91]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069101,
-							["arg1"] = "放弃你的灵魂吧。",
+							["arg1"] = " ",
 						}, -- [92]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069115,
-							["arg1"] = "你已经无路可逃了。",
+							["arg1"] = " ",
 						}, -- [93]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069122,
-							["arg1"] = "放弃你的灵魂吧。",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [94]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "Magiccream",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069129,
-							["arg1"] = "让恐惧吞噬你！",
+							["time"] = 1628003409,
+							["arg1"] = "你们都是些不值一提的渣滓！",
+							["clColor"] = "fffe7b09",
 						}, -- [95]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069136,
-							["arg1"] = "在我的手中凋零吧。",
+							["time"] = 1628005983,
+							["arg1"] = "滚开！叛军的废物！",
 						}, -- [96]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069143,
-							["arg1"] = "我会剥夺你的灵魂。",
+							["time"] = 1628005990,
+							["arg1"] = "鲜血会吞没你！",
 						}, -- [97]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069155,
-							["arg1"] = "让恐惧吞噬你！",
+							["time"] = 1628005995,
+							["arg1"] = "听我的指令，奴仆们！",
 						}, -- [98]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069156,
-							["arg1"] = "在我的手中凋零吧。",
+							["time"] = 1628006003,
+							["arg1"] = "不许动，凡人！",
 						}, -- [99]
 						{
-							["arg2"] = "库尔萨洛克",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069159,
-							["arg1"] = "不会在这里结束……",
+							["time"] = 1628006006,
+							["arg1"] = "尘归尘！",
 						}, -- [100]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069164,
-							["arg1"] = "又通过了一场试炼！看来我们得准备点真正的挑战了！",
+							["time"] = 1628006012,
+							["arg1"] = "你们毫无胜算。",
 						}, -- [101]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069185,
-							["arg1"] = "看看这是什么！新鲜的肉！",
+							["time"] = 1628006013,
+							["arg1"] = "鲜血会吞没你！",
 						}, -- [102]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069233,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006030,
+							["arg1"] = "鲜血会吞没你！",
 						}, -- [103]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069233,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006035,
+							["arg1"] = "血肉真是脆弱！",
 						}, -- [104]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069237,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006038,
+							["arg1"] = "我要碾碎你！",
 						}, -- [105]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069356,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006044,
+							["arg1"] = "总算闭嘴了。",
 						}, -- [106]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069417,
-							["arg1"] = "撕碎扯烂！",
+							["time"] = 1628006045,
+							["arg1"] = "听我的指令，奴仆们！",
 						}, -- [107]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069423,
-							["arg1"] = "又有备用部件了！",
+							["time"] = 1628006050,
+							["arg1"] = "大地正在流血！",
 						}, -- [108]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069427,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006052,
+							["arg1"] = "你们彻底失败了。",
 						}, -- [109]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069432,
-							["arg1"] = "砸扁你！",
+							["time"] = 1628006064,
+							["arg1"] = "你的命运早已刻在了石头上！",
 						}, -- [110]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069442,
-							["arg1"] = "得把你剁成肉酱！",
+							["time"] = 1628006067,
+							["arg1"] = "尘归尘！",
 						}, -- [111]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069451,
-							["arg1"] = "砸扁你！",
+							["time"] = 1628006073,
+							["arg1"] = "你们彻底失败了。",
 						}, -- [112]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069457,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006074,
+							["arg1"] = "溺毙在鲜血中！",
 						}, -- [113]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069471,
-							["arg1"] = "砸扁你！",
+							["time"] = 1628006087,
+							["arg1"] = "听我的指令，奴仆们！",
 						}, -- [114]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069477,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006092,
+							["arg1"] = "溺毙在鲜血中！",
 						}, -- [115]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069491,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006097,
+							["arg1"] = "你的命运早已刻在了石头上！",
 						}, -- [116]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069496,
-							["arg1"] = "往哪儿逃！",
+							["time"] = 1628006100,
+							["arg1"] = "死从天降！",
 						}, -- [117]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069503,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006106,
+							["arg1"] = "你们彻底失败了。",
 						}, -- [118]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069503,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006109,
+							["arg1"] = "大地正在流血！",
 						}, -- [119]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069506,
-							["arg1"] = "得把你剁成肉酱！",
+							["time"] = 1628006126,
+							["arg1"] = "你的命运早已刻在了石头上！",
 						}, -- [120]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069516,
-							["arg1"] = "往哪儿逃！",
+							["time"] = 1628006129,
+							["arg1"] = "我要碾碎你！",
 						}, -- [121]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069521,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006135,
+							["arg1"] = "你们毫无胜算。",
 						}, -- [122]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069521,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006136,
+							["arg1"] = "大地正在流血！",
 						}, -- [123]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069522,
-							["arg1"] = "开膛破肚！",
+							["time"] = 1628006141,
+							["arg1"] = "过来！",
 						}, -- [124]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069535,
-							["arg1"] = "往哪儿逃！",
+							["time"] = 1628006153,
+							["arg1"] = "大地正在流血！",
 						}, -- [125]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069541,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006158,
+							["arg1"] = "血肉真是脆弱！",
 						}, -- [126]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069541,
-							["arg1"] = "得把你剁成肉酱！",
+							["time"] = 1628006161,
+							["arg1"] = "死从天降！",
 						}, -- [127]
 						{
-							["arg2"] = "斩血",
+							["arg2"] = "艾谢朗",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069551,
-							["arg1"] = "需要……更好的……部件……",
+							["time"] = 1628006167,
+							["arg1"] = "这……怎么……可能……",
 						}, -- [128]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069556,
-							["arg1"] = "难以置信！我们的挑战者通过了这次试炼，正在前往最后的战场！",
+							["time"] = 1628006475,
+							["arg1"] = "你们的忏悔已经刻不容缓！",
 						}, -- [129]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069565,
-							["arg1"] = "回到中间的房间吧！重头戏就要开场了！",
+							["time"] = 1628006490,
+							["arg1"] = "他们的痛苦会给你启迪。",
 						}, -- [130]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069581,
-							["arg1"] = "玛卓克萨斯的士兵们！想欣赏暴力美学了吗？！",
+							["time"] = 1628006511,
+							["arg1"] = "他们的痛苦会给你启迪。",
 						}, -- [131]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069590,
-							["arg1"] = "我们的新星现在面对的，正是伤逝剧场有史以来卫冕时期最长的冠军：无尽女皇莫德蕾莎！",
+							["time"] = 1628006532,
+							["arg1"] = "他们的痛苦会给你启迪。",
 						}, -- [132]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069606,
-							["arg1"] = "等了这么久，终于来了个像样的对手……",
+							["time"] = 1628006556,
+							["arg1"] = "他们的痛苦会给你启迪。",
 						}, -- [133]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "高阶裁决官阿丽兹",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069614,
-							["arg1"] = "见证我的力量，绝望吧！",
+							["time"] = 1628006564,
+							["arg1"] = "我的羊群……还需要我……",
 						}, -- [134]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069615,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "审判官西加尔",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006589,
+							["arg1"] = "离我的教民远点，你这暴躁的傻瓜！",
 						}, -- [135]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611069615,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006709,
+							["arg1"] = "我受够你们这些粗野的乡巴佬了。看来我得亲自动手。",
 						}, -- [136]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069630,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["time"] = 1628006782,
+							["arg1"] = "滚开，贱民！",
 						}, -- [137]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069638,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["time"] = 1628006789,
+							["arg1"] = "你们还没有骄傲的资格。",
 						}, -- [138]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069656,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["time"] = 1628006793,
+							["arg1"] = "你脏了我的眼睛！",
 						}, -- [139]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069670,
-							["arg1"] = "死亡之手渴望着你的灵魂。",
+							["time"] = 1628006799,
+							["arg1"] = "可悲的蝼蚁！",
 						}, -- [140]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069671,
-							["arg1"] = "你刀下的亡魂哭喊着复仇！",
+							["time"] = 1628006805,
+							["arg1"] = "别挡我的道。",
 						}, -- [141]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069690,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["time"] = 1628006819,
+							["arg1"] = "心能在宣泄！",
 						}, -- [142]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069698,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["time"] = 1628006836,
+							["arg1"] = "你们还没有骄傲的资格。",
 						}, -- [143]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069716,
-							["arg1"] = "我的魔法超乎你们这些凡人的想象。",
+							["time"] = 1628006840,
+							["arg1"] = "你脏了我的眼睛！",
 						}, -- [144]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069728,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["time"] = 1628006855,
+							["arg1"] = "心能任我挥霍！",
 						}, -- [145]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069741,
-							["arg1"] = "万物……必须……消亡……",
+							["time"] = 1628006872,
+							["arg1"] = "好好感受你们深重的罪孽吧。",
 						}, -- [146]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069746,
-							["arg1"] = "没错！莫德蕾莎被打败了！简直不敢相信！为竞技场的新任冠军欢呼吧！",
+							["time"] = 1628006875,
+							["arg1"] = "你脏了我的眼睛！",
 						}, -- [147]
 						{
-							["arg2"] = "沃尔大师",
+							["arg2"] = "宫务大臣",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611069757,
-							["arg1"] = "胜利与荣耀属于你们！愿你们奋战不息，噬渊行者！",
+							["time"] = 1628006887,
+							["arg1"] = "我快失去耐心了！",
 						}, -- [148]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611070450,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006893,
+							["arg1"] = "好好感受你们深重的罪孽吧。",
 						}, -- [149]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611070450,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006897,
+							["arg1"] = "可悲的蝼蚁！",
 						}, -- [150]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611070508,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006897,
+							["arg1"] = "没用的……仆人……",
 						}, -- [151]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "拧发条鸟二-红龙女王",
 							["type"] = "YELL",
-							["time"] = 1611070508,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["time"] = 1628007037,
+							["arg1"] = "Selama ashal'anore",
+							["clColor"] = "fffefefe",
 						}, -- [152]
 						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070541,
-							["arg1"] = "可悲的生物。居然崇拜枯枝和落叶……",
+							["arg2"] = "拧发条鸟二-红龙女王",
+							["type"] = "YELL",
+							["time"] = 1628007656,
+							["arg1"] = "Selama ashal'anore",
+							["clColor"] = "fffefefe",
 						}, -- [153]
 						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070547,
-							["arg1"] = "自然注定被我们掌控和驯服。德鲁斯特必将征服万物！",
+							["arg1"] = " ",
 						}, -- [154]
 						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070615,
-							["arg1"] = "你会听从我的命令！",
+							["arg1"] = " ",
 						}, -- [155]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070619,
-							["arg1"] = "一定要……撑住……",
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
 						}, -- [156]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070629,
-							["arg1"] = "我……控制不住……",
+							["arg2"] = "樱下劫-克尔苏加德",
+							["type"] = "YELL",
+							["time"] = 1628076462,
+							["arg1"] = "啊，如此强大的力量…",
+							["clColor"] = "ffa22fc8",
 						}, -- [157]
 						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070633,
-							["arg1"] = "服从我！",
+							["arg2"] = "樱下劫-克尔苏加德",
+							["type"] = "YELL",
+							["time"] = 1628076462,
+							["arg1"] = "感受这被囚禁了一!@#$%^的愤怒吧！！",
+							["clColor"] = "ffa22fc8",
 						}, -- [158]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070636,
-							["arg1"] = "一定要……撑住……",
+							["arg2"] = "樱下劫-克尔苏加德",
+							["type"] = "YELL",
+							["time"] = 1628076462,
+							["arg1"] = "啊，如此强大的力量…",
+							["clColor"] = "ffa22fc8",
 						}, -- [159]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070638,
-							["arg1"] = "要对仙野有信心。",
+							["arg2"] = "樱下劫-克尔苏加德",
+							["type"] = "YELL",
+							["time"] = 1628076462,
+							["arg1"] = "感受这被囚禁了一&*!@#$的愤怒吧！！",
+							["clColor"] = "ffa22fc8",
 						}, -- [160]
 						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070652,
-							["arg1"] = "竟敢违抗我！",
+							["arg2"] = "叶窝-奥尔加隆",
+							["type"] = "YELL",
+							["time"] = 1628076490,
+							["arg1"] = "灌注！灌注！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [161]
 						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070664,
-							["arg1"] = "痛苦……困惑……",
+							["arg2"] = "叶窝-奥尔加隆",
+							["type"] = "YELL",
+							["time"] = 1628076491,
+							["arg1"] = "灌注！灌注！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [162]
+						{
+							["arg2"] = "叶窝-奥尔加隆",
+							["type"] = "YELL",
+							["time"] = 1628076594,
+							["arg1"] = "灌注！灌注！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [163]
+						{
+							["arg2"] = "叶窝-奥尔加隆",
+							["type"] = "YELL",
+							["time"] = 1628076594,
+							["arg1"] = "灌注！灌注！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [164]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070670,
-							["arg1"] = "服从我！",
-						}, -- [163]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070674,
-							["arg1"] = "一定要……撑住……",
-						}, -- [164]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070684,
-							["arg1"] = "痛苦……困惑……",
+							["time"] = 1628077053,
+							["arg1"] = "可悲的生物。居然崇拜枯枝和落叶……",
 						}, -- [165]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070686,
-							["arg1"] = "服从我！",
+							["time"] = 1628077059,
+							["arg1"] = "自然注定被我们掌控和驯服。德鲁斯特必将征服万物！",
 						}, -- [166]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070690,
-							["arg1"] = "请……活下来……",
-						}, -- [167]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070693,
-							["arg1"] = "从我眼前消失！",
+							["time"] = 1628077215,
+							["arg1"] = "仙木灵！碾碎这些爬虫！",
+						}, -- [167]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077219,
+							["arg1"] = "快逃。我的心智……背叛了我……",
 						}, -- [168]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070697,
-							["arg1"] = "黑暗拥抱我！",
+							["time"] = 1628077226,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [169]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070700,
-							["arg1"] = "痛苦……困惑……",
+							["time"] = 1628077230,
+							["arg1"] = "一定要……撑住……",
 						}, -- [170]
-						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070702,
-							["arg1"] = "服从我！",
-						}, -- [171]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070706,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077240,
+							["arg1"] = "痛苦……困惑……",
+						}, -- [171]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077242,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [172]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070708,
-							["arg1"] = "要对仙野有信心。",
+							["time"] = 1628077246,
+							["arg1"] = "一定要……撑住……",
 						}, -- [173]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070722,
-							["arg1"] = "我会把你们碾成粉末！",
+							["time"] = 1628077246,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [174]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070735,
-							["arg1"] = "痛苦……困惑……",
-						}, -- [175]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070742,
-							["arg1"] = "你会听从我的命令！",
+							["time"] = 1628077250,
+							["arg1"] = "黑暗拥抱我！",
+						}, -- [175]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077256,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [176]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070744,
-							["arg1"] = "你们明明……那么……弱……",
+							["time"] = 1628077259,
+							["arg1"] = "服从我！",
 						}, -- [177]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070755,
-							["arg1"] = "耶！又有新朋友来玩了！快过来！",
+							["time"] = 1628077263,
+							["arg1"] = "森林渴望着你们的胜利，凡人。",
 						}, -- [178]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071004,
-							["arg1"] = "这一定会很有趣！",
+							["time"] = 1628077277,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [179]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071010,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077290,
+							["arg1"] = "我……控制不住……",
 						}, -- [180]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071017,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628077295,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [181]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071025,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077298,
+							["arg1"] = "一定要……撑住……",
 						}, -- [182]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071028,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077308,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [183]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071041,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077313,
+							["arg1"] = "服从我！",
 						}, -- [184]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071043,
-							["arg1"] = "噢，你玩累了吗？",
+							["time"] = 1628077315,
+							["arg1"] = "森林渴望着你们的胜利，凡人。",
 						}, -- [185]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071044,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077329,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [186]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071055,
-							["arg1"] = "动作快！",
+							["time"] = 1628077342,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [187]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071066,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077349,
+							["arg1"] = "服从我！",
 						}, -- [188]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071111,
-							["arg1"] = "这一定会很有趣！",
+							["time"] = 1628077352,
+							["arg1"] = "请……活下来……",
 						}, -- [189]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071120,
-							["arg1"] = "动作快！",
+							["time"] = 1628077363,
+							["arg1"] = "我……控制不住……",
 						}, -- [190]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071125,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077367,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [191]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071137,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077371,
+							["arg1"] = "一定要……撑住……",
 						}, -- [192]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071147,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628077371,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [193]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071150,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077375,
+							["arg1"] = "黑暗拥抱我！",
 						}, -- [194]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071155,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077381,
+							["arg1"] = "我……控制不住……",
 						}, -- [195]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071169,
-							["arg1"] = "我在这！嘿嘿！",
+							["time"] = 1628077388,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [196]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071169,
-							["arg1"] = "嘿，接着！",
+							["time"] = 1628077392,
+							["arg1"] = "要对仙野有信心。",
 						}, -- [197]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071173,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077400,
+							["arg1"] = "你们明明……那么……弱……",
 						}, -- [198]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071183,
-							["arg1"] = "嘿，接着！",
+							["time"] = 1628077400,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [199]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071196,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077417,
+							["arg1"] = "耶！又有新朋友来玩了！快过来！",
 						}, -- [200]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071201,
-							["arg1"] = "动作快！",
+							["time"] = 1628077875,
+							["arg1"] = "这一定会很有趣！",
 						}, -- [201]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071206,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077883,
+							["arg1"] = "嘿，接着！",
 						}, -- [202]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071217,
-							["arg1"] = "嘿，接着！",
+							["time"] = 1628077890,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [203]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071221,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077894,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [204]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071222,
-							["arg1"] = "你找到我了！真棒！",
+							["time"] = 1628077899,
+							["arg1"] = "嘿，接着！",
 						}, -- [205]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071230,
-							["arg1"] = "动作快！",
+							["time"] = 1628077910,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [206]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071243,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077913,
+							["arg1"] = "嘿，接着！",
 						}, -- [207]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071246,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628077914,
+							["arg1"] = "我在这！嘿嘿！",
 						}, -- [208]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071258,
+							["time"] = 1628077926,
 							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [209]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071262,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077933,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [210]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071268,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077938,
+							["arg1"] = "嘿，接着！",
 						}, -- [211]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071273,
-							["arg1"] = "动作快！",
+							["time"] = 1628077949,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [212]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071282,
-							["arg1"] = "噢，你可真有两下子！",
+							["time"] = 1628077954,
+							["arg1"] = "嘿，接着！",
 						}, -- [213]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071287,
-							["arg1"] = "嘿，接着！",
+							["time"] = 1628077960,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [214]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071369,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077967,
+							["arg1"] = "嘿，接着！",
 						}, -- [215]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071382,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077970,
+							["arg1"] = "不玩了？",
 						}, -- [216]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071445,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077979,
+							["arg1"] = "你找到我了！真棒！",
 						}, -- [217]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071461,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077982,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [218]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071527,
-							["arg1"] = "毁灭！吞噬！饕餮大餐！",
+							["time"] = 1628077988,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [219]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071529,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077996,
+							["arg1"] = "嘿，接着！",
 						}, -- [220]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071532,
-							["arg1"] = "炸开花！炸开花！",
+							["time"] = 1628078012,
+							["arg1"] = "动作快！",
 						}, -- [221]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071548,
-							["arg1"] = "黑暗！",
+							["time"] = 1628078016,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [222]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071550,
-							["arg1"] = "饿了！要吃饭！",
+							["time"] = 1628078024,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [223]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071552,
-							["arg1"] = "痛死你！痛死你！",
+							["time"] = 1628078029,
+							["arg1"] = "嘿，接着！",
 						}, -- [224]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071554,
-							["arg1"] = "我吃到了……我……进化了……",
+							["time"] = 1628078037,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [225]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071572,
-							["arg1"] = "这下可没法躲了！",
+							["time"] = 1628078044,
+							["arg1"] = "动作快！",
 						}, -- [226]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071581,
-							["arg1"] = "孩子们，吞掉他们！",
+							["time"] = 1628078056,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [227]
 						{
-							["arg2"] = "特雷德奥瓦",
+							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071582,
-							["arg1"] = "诱人的美餐！",
+							["time"] = 1628078056,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [228]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071586,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078058,
+							["arg1"] = "嘿，接着！",
 						}, -- [229]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071586,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078582,
+							["arg1"] = "毁灭！吞噬！饕餮大餐！",
 						}, -- [230]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071591,
-							["arg1"] = "你们无路可逃。",
+							["time"] = 1628078588,
+							["arg1"] = "痛死你！痛死你！",
 						}, -- [231]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071604,
-							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
+							["time"] = 1628078602,
+							["arg1"] = "暗影！",
 						}, -- [232]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071614,
-							["arg1"] = "你们的行动太明显了。",
+							["time"] = 1628078602,
+							["arg1"] = "我吃到了……我……进化了……",
 						}, -- [233]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071628,
-							["arg1"] = "这是你们神智中幽暗的深渊。",
+							["time"] = 1628078609,
+							["arg1"] = "这下可没法躲了！",
 						}, -- [234]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071631,
-							["arg1"] = "你们的血肉将滋养我的后代。",
+							["time"] = 1628078627,
+							["arg1"] = "来吧孩子们。开动。",
 						}, -- [235]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071634,
-							["arg1"] = "我能看穿你们的每一步！",
+							["time"] = 1628078628,
+							["arg1"] = "他们能闻到你！",
 						}, -- [236]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071638,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078628,
+							["arg1"] = "这下可没法躲了！",
 						}, -- [237]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071638,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078638,
+							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
 						}, -- [238]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071644,
-							["arg1"] = "这是你们神智中幽暗的深渊。",
+							["time"] = 1628078648,
+							["arg1"] = "我能看穿你们的每一步！",
 						}, -- [239]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071653,
-							["arg1"] = "你们的行动太明显了。",
+							["time"] = 1628078659,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [240]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071661,
-							["arg1"] = "你们的无知清晰可见。",
+							["time"] = 1628078661,
+							["arg1"] = "我的孩子饥饿难耐。",
 						}, -- [241]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071664,
-							["arg1"] = "我的孩子饥饿难耐。",
+							["time"] = 1628078667,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [242]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071671,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078675,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [243]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071672,
+							["time"] = 1628078686,
 							["arg1"] = "你们的行动太明显了。",
 						}, -- [244]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071683,
-							["arg1"] = "你们的无知清晰可见。",
+							["time"] = 1628078695,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [245]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071686,
-							["arg1"] = "多么……甘甜的……智慧……",
+							["time"] = 1628078697,
+							["arg1"] = "你们的血肉将滋养我的后代。",
 						}, -- [246]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071701,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628078697,
+							["arg1"] = "多么……甘甜的……智慧……",
 						}, -- [247]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071733,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [248]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071735,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [249]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "YELL",
-							["time"] = 1611071735,
-							["arg1"] = "hi，孙子！",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [250]
 					},
 				}, -- [5]
@@ -7749,7 +7668,7 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [4]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
 							["type"] = "SYSTEM",
 						}, -- [5]
 					},
@@ -7760,487 +7679,490 @@ ElephantDBPerChar = {
 					["name"] = "公会",
 					["logs"] = {
 						{
-							["arg1"] = "记录开始于 11/07/2020 的 13:31:52。",
-							["type"] = "SYSTEM",
-						}, -- [1]
-						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1604727168,
-							["arg1"] = "hi",
+							["time"] = 1626790747,
+							["arg1"] = "等下",
 							["clColor"] = "fffe7b09",
+						}, -- [1]
+						{
+							["arg1"] = " ",
 						}, -- [2]
 						{
 							["arg1"] = " ",
 						}, -- [3]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 07/21/2021 的 21:27:55。",
+							["type"] = "SYSTEM",
 						}, -- [4]
 						{
-							["arg1"] = "记录开始于 11/24/2020 的 19:15:15。",
-							["type"] = "SYSTEM",
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626874327,
+							["arg1"] = "有什么说法么？",
+							["clColor"] = "ff00fe97",
 						}, -- [5]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606217185,
-							["arg1"] = "HI",
+							["time"] = 1626874346,
+							["arg1"] = "需要球团",
 							["clColor"] = "fffe7b09",
 						}, -- [6]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "Exmist-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606217199,
-							["arg1"] = "yeah",
-							["clColor"] = "ff006fdc",
+							["time"] = 1626874428,
+							["arg1"] = "法夜突袭？",
+							["clColor"] = "ff00fe97",
 						}, -- [7]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606217215,
-							["arg1"] = "新婚生活咋样啊",
-							["clColor"] = "fffe7b09",
+							["time"] = 1626874436,
+							["arg1"] = "en  ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [8]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "Exmist-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606217236,
-							["arg1"] = "起飞",
-							["clColor"] = "ff006fdc",
+							["time"] = 1626874443,
+							["arg1"] = "给啥东西么",
+							["clColor"] = "ff00fe97",
 						}, -- [9]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606217240,
-							["arg1"] = "卧槽",
-							["clColor"] = "fffe7b09",
+							["time"] = 1626874453,
+							["arg1"] = "就那些啊，一样的 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [10]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606217243,
-							["arg1"] = "羡慕住！",
-							["clColor"] = "fffe7b09",
+							["time"] = 1626874473,
+							["arg1"] = "荒烈团的勋章，1级名望",
+							["clColor"] = "ff3ec6ea",
 						}, -- [11]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606217262,
-							["arg1"] = "你赶紧啊",
-							["clColor"] = "ff006fdc",
+							["time"] = 1626874482,
+							["arg1"] = "|cff0070dd|Hitem:185991::::::::60:62::11::1:28:2060:::::|h[荒猎团的战争宝箱]|h|r",
+							["clColor"] = "ff3ec6ea",
 						}, -- [12]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626874487,
+							["arg1"] = "基本就这些 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [13]
-						{
-							["arg1"] = " ",
-						}, -- [14]
-						{
-							["arg1"] = "记录开始于 11/27/2020 的 23:02:34。",
-							["type"] = "SYSTEM",
-						}, -- [15]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606491995,
-							["arg1"] = "雕哥追播间不错啊",
+							["time"] = 1626874540,
+							["arg1"] = "现在任务能做到几/9？",
 							["clColor"] = "fffe7b09",
+						}, -- [14]
+						{
+							["arg2"] = "彼岸丶花开-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626874557,
+							["arg1"] = "5",
+							["clColor"] = "fffe7b09",
+						}, -- [15]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626874578,
+							["arg1"] = "我开了飞行就没做主线了",
+							["clColor"] = "ff00fe97",
 						}, -- [16]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606492018,
-							["arg1"] = "离谱",
+							["time"] = 1626874834,
+							["arg1"] = "|cffa335ee|Hitem:186000::::::::60:62::11::1:28:872:::::|h[斩肢者的战争缰绳]|h|r",
 							["clColor"] = "ff3ec6ea",
 						}, -- [17]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Exinature-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606492047,
-							["arg1"] = "蛤~",
-							["clColor"] = "fff38bb9",
+							["time"] = 1626875299,
+							["arg1"] = "我现在开始搞个DH是不是有点晚了",
+							["clColor"] = "ffa22fc8",
 						}, -- [18]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606492116,
-							["arg1"] = "更新一下出装，哈哈哈哈",
+							["time"] = 1626875315,
+							["arg1"] = "上个版本的神啊",
 							["clColor"] = "fffe7b09",
 						}, -- [19]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606492123,
-							["arg1"] = "哈哈哈···",
-							["clColor"] = "fff38bb9",
+							["time"] = 1626875321,
+							["arg1"] = "搞DH干嘛 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [20]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Exinature-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606492151,
-							["arg1"] = "ZC卖了查房····",
-							["clColor"] = "fff38bb9",
+							["time"] = 1626875333,
+							["arg1"] = "pvp",
+							["clColor"] = "ffa22fc8",
 						}, -- [21]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "Exinature-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606492444,
-							["arg1"] = "|cff0070dd|Hitem:172231::::::::51:64:::::::|h[圣洁碎片]|h|r",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1626875339,
+							["arg1"] = "大米",
+							["clColor"] = "ffa22fc8",
 						}, -- [22]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606492492,
-							["arg1"] = "第一张图清干净，已经55了。。",
+							["time"] = 1626875364,
+							["arg1"] = "大米T的话还能玩，DPS组的人少",
 							["clColor"] = "fffe7b09",
 						}, -- [23]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Exinature-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606492566,
-							["arg1"] = "你准备60级慢慢做主线了",
-							["clColor"] = "fff38bb9",
+							["time"] = 1626875387,
+							["arg1"] = "那必须有邱君带啊",
+							["clColor"] = "ffa22fc8",
 						}, -- [24]
 						{
-							["arg1"] = " ",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626875410,
+							["arg1"] = "他自己都一天只打得了一个本",
+							["clColor"] = "fffe7b09",
 						}, -- [25]
 						{
-							["arg1"] = " ",
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626876891,
+							["arg1"] = "随机团",
+							["clColor"] = "ff3ec6ea",
 						}, -- [26]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/28/2020 的 15:39:34。",
+							["arg1"] = " ",
 						}, -- [27]
+						{
+							["arg1"] = " ",
+						}, -- [28]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/21/2021 的 22:35:03。",
+						}, -- [29]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606549622,
-							["arg1"] = "好卡啊。。。GG",
+							["time"] = 1626879725,
+							["arg1"] = "|cffff8000|Hitem:186017::::::::60:102:::::::::|h[刻钍水晶]|h|r",
 							["clColor"] = "fffe7b09",
-						}, -- [28]
-						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1606549649,
-							["arg1"] = "是的···者FWQ有毒",
-							["clColor"] = "fff38bb9",
-						}, -- [29]
-						{
-							["arg1"] = " ",
 						}, -- [30]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626880057,
+							["arg1"] = "|cffa335ee|Hitem:185973::::::::60:102::::1:28:872:::::|h[芭美兹拉之链]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [31]
 						{
-							["arg1"] = "记录开始于 11/28/2020 的 17:55:07。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [32]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1606561703,
-							["arg1"] = "李老板",
-							["clColor"] = "fff38bb9",
+							["arg1"] = " ",
 						}, -- [33]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1606561718,
-							["arg1"] = "|cffffffff|Hitem:172052::::::::60:66:::::::|h[飘渺肉块]|h|r这玩意有没有",
-							["clColor"] = "fff38bb9",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/22/2021 的 21:27:41。",
 						}, -- [34]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606561723,
-							["arg1"] = "我看看",
-							["clColor"] = "ff006fdc",
+							["time"] = 1626963983,
+							["arg1"] = "有木有活动！",
+							["clColor"] = "fffe7b09",
 						}, -- [35]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "Valkeuterpe-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606561730,
-							["arg1"] = "我有4个",
-							["clColor"] = "ff006fdc",
+							["time"] = 1626964110,
+							["arg1"] = "想打啥",
+							["clColor"] = "fff38bb9",
 						}, -- [36]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606561773,
-							["arg1"] = "给你了",
-							["clColor"] = "ff006fdc",
+							["time"] = 1626964322,
+							["arg1"] = "都可以",
+							["clColor"] = "fffe7b09",
 						}, -- [37]
 						{
 							["arg2"] = "Valkeuterpe-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606561785,
-							["arg1"] = "谢谢~",
+							["time"] = 1626964348,
+							["arg1"] = "我问问熊哥",
 							["clColor"] = "fff38bb9",
 						}, -- [38]
 						{
 							["arg2"] = "Valkeuterpe-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606561794,
-							["arg1"] = "疯狂乞讨",
+							["time"] = 1626964409,
+							["arg1"] = "熊哥么了··",
 							["clColor"] = "fff38bb9",
 						}, -- [39]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606561801,
-							["arg1"] = "这个干啥的",
-							["clColor"] = "ff006fdc",
+							["time"] = 1626964536,
+							["arg1"] = "|cffa335ee|Hitem:180725::::::::60:102::::1:28:872:::::|h[锥喉林地咀嚼者]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [40]
-						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1606561861,
-							["arg1"] = "弄个双手武器要用",
-							["clColor"] = "fff38bb9",
-						}, -- [41]
-						{
-							["arg1"] = " ",
-						}, -- [42]
-						{
-							["arg1"] = " ",
-						}, -- [43]
-						{
-							["arg1"] = "记录开始于 11/30/2020 的 22:31:46。",
-							["type"] = "SYSTEM",
-						}, -- [44]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606749272,
-							["arg1"] = "TQL",
+							["time"] = 1626964540,
+							["arg1"] = "咋又出坐骑了。。",
 							["clColor"] = "fffe7b09",
+						}, -- [41]
+						{
+							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626964603,
+							["arg1"] = "这玩意是真的必出···",
+							["clColor"] = "fff38bb9",
+						}, -- [42]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626964607,
+							["arg1"] = "噢噢",
+							["clColor"] = "fffe7b09",
+						}, -- [43]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1626964609,
+							["arg1"] = "害",
+							["clColor"] = "fffe7b09",
+						}, -- [44]
+						{
+							["arg1"] = " ",
 						}, -- [45]
 						{
 							["arg1"] = " ",
 						}, -- [46]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/23/2021 的 22:22:35。",
 						}, -- [47]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/01/2020 的 22:21:17。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627050209,
+							["arg1"] = "any 活动 here？",
+							["clColor"] = "fffe7b09",
 						}, -- [48]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "Valkeuterpe-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1606835671,
-							["arg1"] = "TQL",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627050333,
+							["arg1"] = "来YY",
+							["clColor"] = "fff38bb9",
 						}, -- [49]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627050406,
+							["arg1"] = "|cffa335ee|Hkeystone:180653:382:13:9:123:4:128|h[钥石：伤逝剧场 (13)]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [50]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627056491,
+							["arg1"] = "{大笑}",
+							["clColor"] = "fffe7b09",
 						}, -- [51]
 						{
-							["arg1"] = "记录开始于 12/14/2020 的 00:13:42。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [52]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1607876113,
-							["arg1"] = "哈尼斯斯又又又又拿装备啦",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [53]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1607876118,
-							["arg1"] = "害~",
-							["clColor"] = "fffe7b09",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/24/2021 的 23:25:28。",
 						}, -- [54]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1607876120,
-							["arg1"] = "害~~~",
+							["time"] = 1627142268,
+							["arg1"] = "随机团一把过啊",
 							["clColor"] = "fffe7b09",
 						}, -- [55]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1607876123,
-							["arg1"] = "害~~~~~~~~~~~~",
-							["clColor"] = "fffe7b09",
-						}, -- [56]
-						{
 							["arg2"] = "哈尼斯斯-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1607876176,
-							["arg1"] = "...",
+							["time"] = 1627143726,
+							["arg1"] = "|cffff8000|Hitem:185960::::::::60:64::13:1:3524::::::|h[原点残迹]|h|r",
 							["clColor"] = "ff3ec6ea",
+						}, -- [56]
+						{
+							["arg1"] = " ",
 						}, -- [57]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1607876184,
-							["arg1"] = "晚安",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [58]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 21:33:32。",
 						}, -- [59]
 						{
-							["arg1"] = " ",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627306481,
+							["arg1"] = "|cffffffff|Hitem:89868::::::::60:104:::1:3524::::::|h[猎豹印记]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [60]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/15/2020 的 23:05:04。",
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627306925,
+							["arg1"] = "|cffffd000|Htrade:Player-1500-038FB3E9:2259:171|h[炼金术]|h|r",
+							["clColor"] = "fff38bb9",
 						}, -- [61]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608045792,
-							["arg1"] = "听说我们的哈 10层限时啦？",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [62]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608045794,
-							["arg1"] = "TQL",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [63]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608045798,
-							["arg1"] = "我本周最好战绩 2层",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 07/26/2021 的 21:42:41。",
+							["type"] = "SYSTEM",
 						}, -- [64]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045799,
-							["arg1"] = "害",
+							["time"] = 1627307132,
+							["arg1"] = "|cffffd000|Henchant:131152|h[铭文: 猎豹雕文]|h|r",
 							["clColor"] = "fffe7b09",
 						}, -- [65]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608045827,
-							["arg1"] = "可能这就是实力吧，猜测一下奥",
-							["clColor"] = "fffe7b09",
-						}, -- [66]
-						{
 							["arg2"] = "Valkeuterpe-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045839,
-							["arg1"] = "YYGQ",
+							["time"] = 1627307246,
+							["arg1"] = "|cffffffff|Hitem:180732::::::::60:66:::::::::|h[铭符之瓶]|h|r|cffffffff|Hitem:173060::::::::60:66:::::::::|h[灌气之水]|h|r",
 							["clColor"] = "fff38bb9",
+						}, -- [66]
+						{
+							["arg1"] = " ",
 						}, -- [67]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608045853,
-							["arg1"] = "不用猜测",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = " ",
 						}, -- [68]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608045862,
-							["arg1"] = "你吗被你猜死了",
-							["clColor"] = "ff3ec6ea",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 22:04:23。",
 						}, -- [69]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "小灰灰-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045865,
-							["arg1"] = "听得懂嘛",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627308537,
+							["arg1"] = "？",
+							["clColor"] = "fffef367",
 						}, -- [70]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045866,
-							["arg1"] = "喂",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627308553,
+							["arg1"] = "草拟吗死代练",
+							["clColor"] = "fffe7b09",
 						}, -- [71]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "小灰灰-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045867,
-							["arg1"] = "hi",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627308559,
+							["arg1"] = "？？？？",
+							["clColor"] = "fffef367",
 						}, -- [72]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "小灰灰-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045871,
-							["arg1"] = "hello",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627308566,
+							["arg1"] = "狗逼",
+							["clColor"] = "fffef367",
 						}, -- [73]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045871,
-							["arg1"] = "hallo",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627308585,
+							["arg1"] = "狗币死代练",
+							["clColor"] = "fffe7b09",
 						}, -- [74]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "小灰灰-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045873,
-							["arg1"] = "Bonjour",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627308587,
+							["arg1"] = "狗逼，打本不带我",
+							["clColor"] = "fffef367",
 						}, -- [75]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "竹月-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045906,
-							["arg1"] = "A了 害",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627308590,
+							["arg1"] = "...",
+							["clColor"] = "ff00fe97",
 						}, -- [76]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608045926,
-							["arg1"] = "害",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627308596,
+							["arg1"] = "号主喝酒还没回来你就上了？",
+							["clColor"] = "fffe7b09",
 						}, -- [77]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "小灰灰-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608046077,
-							["arg1"] = "橙装怎么做啊？",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627308619,
+							["arg1"] = "狗逼花开，想死明说",
+							["clColor"] = "fffef367",
 						}, -- [78]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608046081,
-							["arg1"] = "怎么用？",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627308635,
+							["arg1"] = "这个打完就该你了 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [79]
 						{
-							["arg2"] = "Superdady-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608046091,
-							["arg1"] = "有个前置任务",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627308642,
+							["arg1"] = "死代练，有本事你连我们YY也黑了，进来说",
+							["clColor"] = "fffe7b09",
 						}, -- [80]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608046095,
-							["arg1"] = "好了。。",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627308644,
+							["arg1"] = "正好你去刻希亚吧任务做了 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [81]
 						{
-							["arg2"] = "Superdady-格雷迈恩",
+							["arg2"] = "小灰灰-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608046155,
-							["arg1"] = "我个惩戒骑，防骑核心橙都出全了",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627308647,
+							["arg1"] = "让我醒酒？",
+							["clColor"] = "fffef367",
 						}, -- [82]
 						{
 							["arg1"] = " ",
@@ -8250,803 +8172,748 @@ ElephantDBPerChar = {
 						}, -- [84]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/16/2020 的 22:22:22。",
+							["arg1"] = "记录开始于 07/27/2021 的 21:50:34。",
 						}, -- [85]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "漫雨飞花-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608128651,
-							["arg1"] = "欢迎小杨哥哥~",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627394205,
+							["arg1"] = "|cffa335ee|Hitem:183707::::::::60:64::::1:28:746:::::|h[铮亮之刃斗篷]|h|r",
+							["clColor"] = "ff3ec6ea",
 						}, -- [86]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608128674,
-							["arg1"] = "{害羞}",
-							["clColor"] = "ffc31d39",
+							["arg1"] = " ",
 						}, -- [87]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608128692,
-							["arg1"] = "那个哈尼斯斯是 小姚哥哥 格服第一fs",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [88]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608128743,
-							["arg1"] = "那可惜了呀，应该练个FS学习一下的",
-							["clColor"] = "ffc31d39",
+							["arg1"] = "记录开始于 07/27/2021 的 22:52:04。",
+							["type"] = "SYSTEM",
 						}, -- [89]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608128829,
-							["arg1"] = "小姚哥哥在冲首杀，可能暂时没空离我们 害",
+							["time"] = 1627397640,
+							["arg1"] = "111",
 							["clColor"] = "fffe7b09",
 						}, -- [90]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608128840,
-							["arg1"] = "害，第一肯定是很忙的呀",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627397717,
+							["arg1"] = "有没有活动！",
+							["clColor"] = "fffe7b09",
 						}, -- [91]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608128905,
-							["arg1"] = "下啦，小姚哥哥一会应该会看到记录的8",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627397760,
+							["arg1"] = "你什么要是 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [92]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608128908,
-							["arg1"] = "低保都没打",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627397761,
+							["arg1"] = "钥匙",
+							["clColor"] = "ff3ec6ea",
 						}, -- [93]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608128919,
-							["arg1"] = "应该吧，但是也可能第一比较忙呀",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627397768,
+							["arg1"] = "|cffa335ee|Hkeystone:180653:375:12:9:123:4:128|h[钥石：塞兹仙林的迷雾 (12)]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [94]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608128921,
-							["arg1"] = "我打了个2层，害",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627397773,
+							["arg1"] = "可以 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [95]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608128924,
-							["arg1"] = "不看也是可以理解的",
-							["clColor"] = "ffc31d39",
+							["arg1"] = " ",
 						}, -- [96]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608128931,
-							["arg1"] = "法神已经10层限时啦",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [97]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608128937,
-							["arg1"] = "TQL",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 07/28/2021 的 21:28:32。",
+							["type"] = "SYSTEM",
 						}, -- [98]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608128948,
-							["arg1"] = "TQLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627478963,
+							["arg1"] = "any活动！",
+							["clColor"] = "fffe7b09",
 						}, -- [99]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627479199,
+							["arg1"] = "喜闻乐见 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [100]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627479201,
+							["arg1"] = "又掉了 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [101]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/17/2020 的 20:13:30。",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627479226,
+							["arg1"] = "没麦",
+							["clColor"] = "ff3ec6ea",
 						}, -- [102]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211195,
-							["arg1"] = "哇恰",
+							["time"] = 1627479228,
+							["arg1"] = "别BB",
 							["clColor"] = "ff3ec6ea",
 						}, -- [103]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "Valkdiana-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211201,
-							["arg1"] = "小杨哥哥 TQLLLLL",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627479231,
+							["arg1"] = "为什么不说话",
+							["clColor"] = "ffa9d271",
 						}, -- [104]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211205,
-							["arg1"] = "小姚哥哥好",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627479233,
+							["arg1"] = "有人BB老子麦炸了 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [105]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211208,
-							["arg1"] = "嘻嘻嘻嘻嘻嘻",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627479238,
+							["arg1"] = "从此以后没有麦",
+							["clColor"] = "ff3ec6ea",
 						}, -- [106]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211212,
-							["arg1"] = "{无辜}",
+							["time"] = 1627479239,
+							["arg1"] = "你们玩",
 							["clColor"] = "ff3ec6ea",
 						}, -- [107]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211218,
-							["arg1"] = "第一FS理我啦",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627479524,
+							["arg1"] = "X奈雪知名店长，看不懂WOW任务说明 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [108]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211223,
-							["arg1"] = "{邪恶}",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627479527,
+							["arg1"] = "棒啊 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [109]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211235,
-							["arg1"] = "害呀 昨天就理了呀",
+							["time"] = 1627479731,
+							["arg1"] = "开哥去把你媳妇嘴缝上 ",
 							["clColor"] = "ff3ec6ea",
 						}, -- [110]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211249,
-							["arg1"] = "{悲剧} 可能是小杨哥哥自动屏蔽了我",
+							["time"] = 1627479843,
+							["arg1"] = "才打老3？",
 							["clColor"] = "ff3ec6ea",
 						}, -- [111]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211264,
-							["arg1"] = "U1S1",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627479896,
+							["arg1"] = "来来来，老子带你做 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [112]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211266,
-							["arg1"] = "没有理嗷",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627479905,
+							["arg1"] = "你做到底7章",
+							["clColor"] = "ff3ec6ea",
 						}, -- [113]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211269,
-							["arg1"] = "不能造谣",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627479907,
+							["arg1"] = "你就飞了 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [114]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608211270,
-							["arg1"] = "群里",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = " ",
 						}, -- [115]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608211273,
-							["arg1"] = "您昨天在冲首杀",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [116]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608211276,
-							["arg1"] = "小杨哥哥不在吗",
-							["clColor"] = "ff3ec6ea",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 21:47:01。",
 						}, -- [117]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211279,
-							["arg1"] = "小杨哥哥不在群里",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627480053,
+							["arg1"] = "滚回去，关了PVP",
+							["clColor"] = "ff3ec6ea",
 						}, -- [118]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608211280,
-							["arg1"] = "不好意思",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627480057,
+							["arg1"] = "老子带你做 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [119]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608211282,
-							["arg1"] = "害",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = " ",
 						}, -- [120]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608211285,
-							["arg1"] = "那就是你的不对了呀",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = " ",
 						}, -- [121]
 						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608211288,
-							["arg1"] = "您",
-							["clColor"] = "ff3ec6ea",
+							["arg1"] = "记录开始于 07/28/2021 的 21:48:16。",
+							["type"] = "SYSTEM",
 						}, -- [122]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627480108,
+							["arg1"] = "N",
+							["clColor"] = "ff3ec6ea",
 						}, -- [123]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627480109,
+							["arg1"] = "旅馆去关 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [124]
 						{
-							["arg1"] = "记录开始于 12/17/2020 的 22:42:26。",
-							["type"] = "SYSTEM",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627480109,
+							["arg1"] = "&*!@#$ ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [125]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608218926,
-							["arg1"] = "M不带我",
-							["clColor"] = "fffefefe",
+							["time"] = 1627480346,
+							["arg1"] = "打BOSS",
+							["clColor"] = "ff3ec6ea",
 						}, -- [126]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608218969,
-							["arg1"] = "来",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627480347,
+							["arg1"] = "小怪不大 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [127]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608218986,
-							["arg1"] = "1",
-							["clColor"] = "fffefefe",
+							["time"] = 1627480350,
+							["arg1"] = "看下说明嘛 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [128]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219198,
-							["arg1"] = "打啥啊",
-							["clColor"] = "fffefefe",
+							["time"] = 1627480351,
+							["arg1"] = "我的天 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [129]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219209,
-							["arg1"] = "毕节2",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627480369,
+							["arg1"] = "黄明怪 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [130]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219219,
-							["arg1"] = "|cffa335ee|Hkeystone:180653:377:2:9:0:0:0|h[钥石：彼界 (2)]|h|r",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627480370,
+							["arg1"] = "你也打 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [131]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219238,
-							["arg1"] = "带我能打？",
-							["clColor"] = "fffefefe",
+							["time"] = 1627480403,
+							["arg1"] = "等下 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [132]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219244,
-							["arg1"] = "|cffffff00|Hquest:62638:2060|h[战争的使者]|h|r",
-							["clColor"] = "fffefefe",
+							["time"] = 1627480404,
+							["arg1"] = "一个位置 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [133]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219252,
-							["arg1"] = "|cffa335ee|Hkeystone:180653:375:2:9:0:0:0|h[钥石：塞兹仙林的迷雾 (2)]|h|r",
-							["clColor"] = "fffefefe",
+							["time"] = 1627480406,
+							["arg1"] = "一个怪 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [134]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219286,
-							["arg1"] = "你们是又开发了一个YY？",
-							["clColor"] = "fffefefe",
+							["time"] = 1627480419,
+							["arg1"] = "过来 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [135]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219291,
-							["arg1"] = "46207461",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627480451,
+							["arg1"] = "洞里面 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [136]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608219296,
-							["arg1"] = "工会专业YY啊",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627480456,
+							["arg1"] = "我草你是真的瞎",
+							["clColor"] = "ff3ec6ea",
 						}, -- [137]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608221368,
-							["arg1"] = "|cffa335ee|Hitem:184021::::::::60:102::5:4:7188:6652:1485:6646:1:28:2060:::|h[同化雕文]|h|r",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627480498,
+							["arg1"] = "我差2",
+							["clColor"] = "ff3ec6ea",
 						}, -- [138]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627480589,
+							["arg1"] = "可以解死疽",
+							["clColor"] = "ff3ec6ea",
 						}, -- [139]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627480599,
+							["arg1"] = "屁话，瓶子就是药",
+							["clColor"] = "ff3ec6ea",
 						}, -- [140]
 						{
-							["arg1"] = "记录开始于 12/20/2020 的 21:55:38。",
-							["type"] = "SYSTEM",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627480621,
+							["arg1"] = "吹B给你听 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [141]
 						{
-							["arg2"] = "Superdady-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608473556,
-							["arg1"] = "有人大米吗",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627480753,
+							["arg1"] = "|cffffffff|Hitem:177278::::::::60:62:::::::::|h[静谧之瓶]|h|r",
+							["clColor"] = "ff3ec6ea",
 						}, -- [142]
 						{
-							["arg2"] = "Superdady-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608473565,
-							["arg1"] = "有人  打大米吗",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627480755,
+							["arg1"] = "除了魔法 ",
+							["clColor"] = "ff3ec6ea",
 						}, -- [143]
 						{
-							["arg2"] = "Superdady-格雷迈恩",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608473577,
-							["arg1"] = "|cffa335ee|Hkeystone:180653:376:6:9:7:0:0|h[钥石：通灵战潮 (6)]|h|r",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627480761,
+							["arg1"] = "基本解光，但是CD长",
+							["clColor"] = "ff3ec6ea",
 						}, -- [144]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608473787,
-							["arg1"] = "|cffa335ee|Hkeystone:180653:375:2:9:0:0:0|h[钥石：塞兹仙林的迷雾 (2)]|h|r",
-							["clColor"] = "fffefefe",
-						}, -- [145]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608473816,
-							["arg1"] = "需要dps吗",
-							["clColor"] = "fff38bb9",
-						}, -- [146]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608473839,
-							["arg1"] = "没人啊",
-							["clColor"] = "fffefefe",
-						}, -- [147]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608473968,
-							["arg1"] = "SB花开",
-							["clColor"] = "fffefefe",
-						}, -- [148]
-						{
-							["arg2"] = "罂僳埖丶謝-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608473986,
-							["arg1"] = "。。。",
-							["clColor"] = "ffc31d39",
-						}, -- [149]
-						{
-							["arg1"] = " ",
-						}, -- [150]
-						{
-							["arg1"] = " ",
-						}, -- [151]
-						{
-							["arg1"] = "记录开始于 12/21/2020 的 20:05:08。",
-							["type"] = "SYSTEM",
-						}, -- [152]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552417,
-							["arg1"] = "有没有刷M的呀",
+							["time"] = 1627481054,
+							["arg1"] = "|cffa335ee|Hitem:186659::::::::60:102::::1:28:872:::::|h[堕落军马的缰绳]|h|r",
 							["clColor"] = "fffe7b09",
+						}, -- [145]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627481060,
+							["arg1"] = "这是必掉的么？",
+							["clColor"] = "fffe7b09",
+						}, -- [146]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627481278,
+							["arg1"] = "??",
+							["clColor"] = "ff00fe97",
+						}, -- [147]
+						{
+							["arg1"] = " ",
+						}, -- [148]
+						{
+							["arg1"] = " ",
+						}, -- [149]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 23:08:33。",
+						}, -- [150]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627486326,
+							["arg1"] = "11",
+							["clColor"] = "fffe7b09",
+						}, -- [151]
+						{
+							["arg1"] = " ",
+						}, -- [152]
+						{
+							["arg1"] = " ",
 						}, -- [153]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608552463,
-							["arg1"] = "我有6c快活林，等球菌他们一起呗",
-							["clColor"] = "ffc59a6c",
+							["arg1"] = "记录开始于 07/29/2021 的 21:32:28。",
+							["type"] = "SYSTEM",
 						}, -- [154]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552481,
-							["arg1"] = "哇，6C",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627570584,
+							["arg1"] = "卧槽",
+							["clColor"] = "fffe7b09",
 						}, -- [155]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552486,
-							["arg1"] = "那我是不是输出太低啦",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627570585,
+							["arg1"] = "哈神",
+							["clColor"] = "fffe7b09",
 						}, -- [156]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552512,
-							["arg1"] = "湖州扛把子多少装等了",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627570589,
+							["arg1"] = "毕业腰带",
+							["clColor"] = "fffe7b09",
 						}, -- [157]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552536,
-							["arg1"] = "177，嘻嘻",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627570590,
+							["arg1"] = "TQL",
+							["clColor"] = "fffe7b09",
 						}, -- [158]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552549,
-							["arg1"] = "周末出去玩了，没有努力",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627570599,
+							["arg1"] = "如同人生，已经毕业",
+							["clColor"] = "fffe7b09",
 						}, -- [159]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552559,
-							["arg1"] = "我们先打两个ptm?",
+							["time"] = 1627570600,
+							["arg1"] = "害",
 							["clColor"] = "fffe7b09",
 						}, -- [160]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "哈尼斯斯-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552573,
-							["arg1"] = "嗯，你们提升下，180差不多进去",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627570608,
+							["arg1"] = "hh",
+							["clColor"] = "ff3ec6ea",
 						}, -- [161]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "哈尼斯斯-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552589,
-							["arg1"] = "这周风雷，近战你麻痹了",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627570615,
+							["arg1"] = "你妈被我害死了",
+							["clColor"] = "ff3ec6ea",
 						}, -- [162]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552648,
-							["arg1"] = "我也才180",
-							["clColor"] = "ff006fdc",
+							["time"] = 1627570625,
+							["arg1"] = "人生毕业啦！",
+							["clColor"] = "fffe7b09",
 						}, -- [163]
 						{
-							["arg2"] = "Exnatural-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552650,
-							["arg1"] = "GG",
-							["clColor"] = "ff006fdc",
+							["time"] = 1627570627,
+							["arg1"] = "哈尼斯斯！",
+							["clColor"] = "fffe7b09",
 						}, -- [164]
 						{
-							["arg2"] = "Exmist-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608552726,
-							["arg1"] = "啥时候也带我提升一下",
-							["clColor"] = "ff00fe97",
+							["time"] = 1627570638,
+							["arg1"] = "直接进行一个业的毕",
+							["clColor"] = "fffe7b09",
 						}, -- [165]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608553941,
-							["arg1"] = "大佬们，|cffffff00|Hquest:62719:709|h[最后一片]|h|r怎么做？",
-							["clColor"] = "fffefefe",
+							["time"] = 1627570888,
+							["arg1"] = "这版本最大包包 几格？",
+							["clColor"] = "fffe7b09",
 						}, -- [166]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608553978,
-							["arg1"] = "回忆就是橙装的图纸",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627570891,
+							["arg1"] = "@哈尼斯斯",
+							["clColor"] = "fffe7b09",
 						}, -- [167]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "哈尼斯斯-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608553986,
-							["arg1"] = "拿着回忆，橙装胚子，和急速全能啥的公函",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627570907,
+							["arg1"] = "32",
+							["clColor"] = "ff3ec6ea",
 						}, -- [168]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608553987,
-							["arg1"] = "其他都直接拍卖行",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627570920,
+							["arg1"] = "@哈尼斯斯",
+							["clColor"] = "fffe7b09",
 						}, -- [169]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608553995,
-							["arg1"] = "去找他就行了",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627570925,
+							["arg1"] = "ok",
+							["clColor"] = "fffe7b09",
 						}, -- [170]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608554005,
-							["arg1"] = "回忆哪儿来得",
-							["clColor"] = "fffefefe",
+							["arg1"] = " ",
 						}, -- [171]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608554024,
-							["arg1"] = "冒险指南",
-							["clColor"] = "fff38bb9",
+							["arg1"] = " ",
 						}, -- [172]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608554037,
-							["arg1"] = "传说之力",
-							["clColor"] = "fff38bb9",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 23:33:47。",
 						}, -- [173]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "小灰灰-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608554382,
-							["arg1"] = "心能只有做世界任务有？",
-							["clColor"] = "fffefefe",
+							["time"] = 1627575435,
+							["arg1"] = "|cffff8000|Hitem:187817::::::::60:261::14::1:28:783:::::|h[刻钍晶簇]|h|r",
+							["clColor"] = "fffef367",
 						}, -- [174]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608554410,
-							["arg1"] = "有2个周长没有250",
-							["clColor"] = "fff38bb9",
+							["arg1"] = " ",
 						}, -- [175]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608554415,
-							["arg1"] = "每个",
-							["clColor"] = "fff38bb9",
+							["arg1"] = " ",
 						}, -- [176]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608554591,
-							["arg1"] = "太少了",
-							["clColor"] = "fffefefe",
+							["arg1"] = "记录开始于 07/31/2021 的 12:12:28。",
+							["type"] = "SYSTEM",
 						}, -- [177]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608554611,
-							["arg1"] = "世界BOSS还有250",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627705073,
+							["arg1"] = "&*!@#$",
+							["clColor"] = "fffe7b09",
 						}, -- [178]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555461,
-							["arg1"] = "6仙林有人打吗",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627705081,
+							["arg1"] = "昨天打个大米",
+							["clColor"] = "fffe7b09",
 						}, -- [179]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555474,
-							["arg1"] = "打的话我换ms",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627705088,
+							["arg1"] = "有人说你这鸟德怎么输出这个地方",
+							["clColor"] = "fffe7b09",
 						}, -- [180]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555523,
-							["arg1"] = "我晚点···卡的意识模糊···",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627705090,
+							["arg1"] = "这么低",
+							["clColor"] = "fffe7b09",
 						}, -- [181]
 						{
-							["arg2"] = "猛猪突进-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555549,
-							["arg1"] = "今天没T了，邱君要当车头了",
-							["clColor"] = "ffc59a6c",
+							["time"] = 1627705091,
+							["arg1"] = "。。。",
+							["clColor"] = "fffe7b09",
 						}, -- [182]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555586,
-							["arg1"] = "gg",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627705122,
+							["arg1"] = "鸟只能压单体",
+							["clColor"] = "fffe7b09",
 						}, -- [183]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555618,
-							["arg1"] = "你低保呢·",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627705128,
+							["arg1"] = "大米里很难受",
+							["clColor"] = "fffe7b09",
 						}, -- [184]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555624,
-							["arg1"] = "···字都打不出来",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627705132,
+							["arg1"] = "也不是",
+							["clColor"] = "fffe7b09",
 						}, -- [185]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555630,
-							["arg1"] = "MMP了·",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627705138,
+							["arg1"] = "确实有点低。。。",
+							["clColor"] = "fffe7b09",
 						}, -- [186]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555701,
-							["arg1"] = "等下路局",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627705141,
+							["arg1"] = "有点不好意思",
+							["clColor"] = "fffe7b09",
 						}, -- [187]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555711,
-							["arg1"] = "艰难",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627705151,
+							["arg1"] = "猫也是只有单体",
+							["clColor"] = "fffe7b09",
 						}, -- [188]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555715,
-							["arg1"] = "应该尾王了",
-							["clColor"] = "fff38bb9",
+							["time"] = 1627705152,
+							["arg1"] = "有点拉胯",
+							["clColor"] = "fffe7b09",
 						}, -- [189]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555723,
-							["arg1"] = "他妈的 这个qs大概掉了20次",
+							["time"] = 1627705178,
+							["arg1"] = "没有超凡的时候",
 							["clColor"] = "fffe7b09",
 						}, -- [190]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608555729,
-							["arg1"] = "一万次吧",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627705180,
+							["arg1"] = "输出太%^&*!@低了",
+							["clColor"] = "fffe7b09",
 						}, -- [191]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608556153,
-							["arg1"] = "一个ptm打了一个小时了",
+							["time"] = 1627705203,
+							["arg1"] = "怪不得我看鸟德大米还是要那个戒指",
 							["clColor"] = "fffe7b09",
 						}, -- [192]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608556155,
-							["arg1"] = "行吧",
+							["time"] = 1627705213,
+							["arg1"] = "300能量开超凡那个",
 							["clColor"] = "fffe7b09",
 						}, -- [193]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608556159,
-							["arg1"] = "爽呀",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627705214,
+							["arg1"] = "现在德四系就熊能斤大米",
+							["clColor"] = "fffe7b09",
 						}, -- [194]
-						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608556340,
-							["arg1"] = "我特么",
-							["clColor"] = "ffc31d39",
-						}, -- [195]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608556374,
-							["arg1"] = "来帮忙打一下",
+							["time"] = 1627705325,
+							["arg1"] = "噬渊怎么这么卡。，。。。。",
+							["clColor"] = "fffe7b09",
+						}, -- [195]
+						{
+							["arg2"] = "彼岸丶花开-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627705368,
+							["arg1"] = "|cff71d5ff|Hspell:338668:0|h[原始奥能脉冲星]|h|r你说这个吗？",
 							["clColor"] = "fffe7b09",
 						}, -- [196]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608556376,
-							["arg1"] = "我操他妈了",
+							["time"] = 1627705373,
+							["arg1"] = "对",
 							["clColor"] = "fffe7b09",
 						}, -- [197]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608556659,
-							["arg1"] = "打你麻痹了",
+							["time"] = 1627705385,
+							["arg1"] = "这个A怪的时候爽",
 							["clColor"] = "fffe7b09",
 						}, -- [198]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "彼岸丶花开-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608556665,
-							["arg1"] = "打完歇了",
+							["time"] = 1627705391,
+							["arg1"] = "但是我没做",
 							["clColor"] = "fffe7b09",
 						}, -- [199]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608556666,
-							["arg1"] = "我草你妈",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [200]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608557004,
-							["arg1"] = "头好疼啊",
-							["clColor"] = "ffc31d39",
+							["arg1"] = " ",
 						}, -- [201]
 						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1608557046,
-							["arg1"] = "菜得过分了",
-							["clColor"] = "fff38bb9",
+							["arg1"] = "记录开始于 07/31/2021 的 23:00:37。",
+							["type"] = "SYSTEM",
 						}, -- [202]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608557149,
-							["arg1"] = "叼",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627747809,
+							["arg1"] = "|cff71d5ff|Htalent:21649|h[血腥爪击]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [203]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608557159,
-							["arg1"] = "diao",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627747868,
+							["arg1"] = "|cff71d5ff|Htalent:21646|h[洞察秋毫]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [204]
 						{
-							["arg2"] = "豆腐乾-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1608557165,
-							["arg1"] = "刁",
-							["clColor"] = "ffc31d39",
+							["time"] = 1627747941,
+							["arg1"] = "|cff71d5ff|Htalent:21653|h[野性狂乱]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [205]
 						{
 							["arg1"] = " ",
@@ -9055,1403 +8922,1517 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [207]
 						{
+							["arg1"] = "记录开始于 08/01/2021 的 23:21:42。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/27/2020 的 22:09:01。",
 						}, -- [208]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
+							["arg2"] = "小灰灰-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1609081172,
-							["arg1"] = "害 被孤立啦 没人理我 难受住",
-							["clColor"] = "fffe7b09",
+							["time"] = 1627831574,
+							["arg1"] = "[WeakAuras: 小灰灰-格雷迈恩 - 每周大秘境次数]",
+							["clColor"] = "fffef367",
 						}, -- [209]
 						{
-							["arg1"] = " ",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627831753,
+							["arg1"] = "[WeakAuras: 晒月亮补爱-格雷迈恩 - 低保解锁]",
+							["clColor"] = "ff3ec6ea",
 						}, -- [210]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627834471,
+							["arg1"] = "|cff71d5ff|Hspell:340053:0|h[狂乱兽群]|h|r",
+							["clColor"] = "fffe7b09",
 						}, -- [211]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 20:46:53。",
+							["arg1"] = " ",
 						}, -- [212]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1610023939,
-							["arg1"] = "|cffa335ee|Hkeystone:180653:379:6:10:8:0:0|h[钥石：凋魂之殇 (6)]|h|r有人么",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [213]
 						{
-							["arg1"] = " ",
-						}, -- [214]
-						{
-							["arg1"] = " ",
-						}, -- [215]
-						{
+							["arg1"] = "记录开始于 08/02/2021 的 21:26:45。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/18/2021 的 19:43:45。",
-						}, -- [216]
+						}, -- [214]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1610970428,
-							["arg1"] = "TQL",
+							["time"] = 1627910866,
+							["arg1"] = "any活动！",
 							["clColor"] = "fffe7b09",
+						}, -- [215]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627910884,
+							["arg1"] = "不好意思",
+							["clColor"] = "ff00fe97",
+						}, -- [216]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627910887,
+							["arg1"] = "要下了",
+							["clColor"] = "ff00fe97",
 						}, -- [217]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1610970434,
-							["arg1"] = "PVP滴神",
+							["time"] = 1627910890,
+							["arg1"] = "！",
 							["clColor"] = "fffe7b09",
 						}, -- [218]
 						{
-							["arg2"] = "通臂拳-格雷迈恩",
+							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1610970444,
-							["arg1"] = "yygq？",
-							["clColor"] = "ff3ec6ea",
+							["time"] = 1627910891,
+							["arg1"] = "可惜了",
+							["clColor"] = "fffe7b09",
 						}, -- [219]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1610970461,
-							["arg1"] = "U1S1",
+							["time"] = 1627910893,
+							["arg1"] = "下次一定！",
 							["clColor"] = "fffe7b09",
 						}, -- [220]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627910907,
+							["arg1"] = "刚游完泳回家！",
+							["clColor"] = "fffe7b09",
 						}, -- [221]
 						{
-							["arg1"] = " ",
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627910918,
+							["arg1"] = "下次也不一定",
+							["clColor"] = "ff00fe97",
 						}, -- [222]
 						{
-							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
-							["type"] = "SYSTEM",
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627910965,
+							["arg1"] = "这",
+							["clColor"] = "ff00fe97",
 						}, -- [223]
 						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
+							["arg2"] = "Exmist-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1610981380,
-							["arg1"] = "11仙林，有大佬不",
-							["clColor"] = "fffefefe",
+							["time"] = 1627910992,
+							["arg1"] = "陆局你多少装等了",
+							["clColor"] = "ff00fe97",
 						}, -- [224]
-						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1610981436,
-							["arg1"] = "我爬个塔就么了···",
-							["clColor"] = "fff38bb9",
-						}, -- [225]
-						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1610981453,
-							["arg1"] = "后面要出差···",
-							["clColor"] = "fff38bb9",
-						}, -- [226]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1610983565,
-							["arg1"] = "|cffa335ee|Hkeystone:180653:378:13:9:6:13:121|h[钥石：赎罪大厅 (13)]|h|r",
-							["clColor"] = "fffefefe",
-						}, -- [227]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1610986714,
-							["arg1"] = "TQLLLLLLLLLLLLLLLLLLLL",
-							["clColor"] = "ff3ec6ea",
-						}, -- [228]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1610986718,
-							["arg1"] = "一上线",
-							["clColor"] = "ff3ec6ea",
-						}, -- [229]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD",
-							["time"] = 1610986724,
-							["arg1"] = "就看到您跳成就",
-							["clColor"] = "ff3ec6ea",
-						}, -- [230]
-						{
-							["arg1"] = " ",
-						}, -- [231]
-						{
-							["arg1"] = " ",
-						}, -- [232]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/19/2021 的 21:34:05。",
-						}, -- [233]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD",
-							["time"] = 1611063427,
-							["arg1"] = "@贵族",
+							["time"] = 1627910997,
+							["arg1"] = "228",
 							["clColor"] = "fffe7b09",
+						}, -- [225]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911018,
+							["arg1"] = "那我可能也确实不配进队伍",
+							["clColor"] = "ff00fe97",
+						}, -- [226]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911050,
+							["arg1"] = "那不可能啊",
+							["clColor"] = "fffe7b09",
+						}, -- [227]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911055,
+							["arg1"] = "我吧我自己飞了",
+							["clColor"] = "fffe7b09",
+						}, -- [228]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911060,
+							["arg1"] = "也得给李总留个位置啊",
+							["clColor"] = "fffe7b09",
+						}, -- [229]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911109,
+							["arg1"] = "别别别",
+							["clColor"] = "ff00fe97",
+						}, -- [230]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911116,
+							["arg1"] = "yyrsm",
+							["clColor"] = "ff3ec6ea",
+						}, -- [231]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911130,
+							["arg1"] = "你怎么也在线了",
+							["clColor"] = "ff00fe97",
+						}, -- [232]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911146,
+							["arg1"] = "我在线两周了",
+							["clColor"] = "ff3ec6ea",
+						}, -- [233]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911151,
+							["arg1"] = "你们慢慢玩，我歇着了",
+							["clColor"] = "ff00fe97",
 						}, -- [234]
 						{
-							["arg1"] = " ",
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911249,
+							["arg1"] = "局座不来yy？",
+							["clColor"] = "ff3ec6ea",
 						}, -- [235]
 						{
-							["arg1"] = " ",
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911258,
+							["arg1"] = "贵族高冷是吧",
+							["clColor"] = "ff3ec6ea",
 						}, -- [236]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911326,
+							["arg1"] = "晚一点",
+							["clColor"] = "fffe7b09",
 						}, -- [237]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911334,
+							["arg1"] = "|cffffff00|Hquest:64166:2043|h[回忆随机访问]|h|r这个是什么sima任务啊",
+							["clColor"] = "fffe7b09",
+						}, -- [238]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911336,
+							["arg1"] = "一个啊接不到",
+							["clColor"] = "fffe7b09",
+						}, -- [239]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911347,
+							["arg1"] = "...",
+							["clColor"] = "ff3ec6ea",
+						}, -- [240]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911352,
+							["arg1"] = "wait me",
+							["clColor"] = "ff3ec6ea",
+						}, -- [241]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627911358,
+							["arg1"] = "不做了",
+							["clColor"] = "fffe7b09",
+						}, -- [242]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627912084,
+							["arg1"] = "傻逼任务",
+							["clColor"] = "ff3ec6ea",
+						}, -- [243]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627912086,
+							["arg1"] = "我也不做了",
+							["clColor"] = "ff3ec6ea",
+						}, -- [244]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627912264,
+							["arg1"] = "是的 傻逼任务",
+							["clColor"] = "fffe7b09",
+						}, -- [245]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627912269,
+							["arg1"] = "弄了半天 捡了 2个",
+							["clColor"] = "fffe7b09",
+						}, -- [246]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD",
+							["time"] = 1627912783,
+							["arg1"] = "弄了半天 捡了 2个",
+							["clColor"] = "fffe7b09",
+						}, -- [247]
+						{
+							["arg1"] = " ",
+						}, -- [248]
+						{
+							["arg1"] = " ",
+						}, -- [249]
+						{
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
+						}, -- [250]
 					},
 				}, -- [7]
 				{
 					["enabled"] = true,
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["name"] = "战利品",
 					["logs"] = {
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982215,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627990675,
+							["arg1"] = "无丶濑-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1506|h[崩裂壁垒]|h|r",
 						}, -- [1]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982238,
-							["arg1"] = "你获得了物品：|cffffffff|Hitem:168207::::::::60:102::14::1:28:709:::|h[掠夺来的心能单元]|h|r。",
+							["time"] = 1627990676,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1473|h[暴怒战斧]|h|r",
 						}, -- [2]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982241,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:10|h[奥伯勒隆蜉蝣]|h|r",
+							["time"] = 1627990679,
+							["arg1"] = "老衲-血吼获得了心能之力：|cff71d5ff|Hmawpower:1507|h[鲜血脓液之瓶]|h|r",
 						}, -- [3]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982248,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:191|h[幽暗食粮]|h|r",
+							["time"] = 1627990680,
+							["arg1"] = "鲸落南北-天空之墙获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [4]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982259,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1134|h[轨道偏离者]|h|r",
+							["time"] = 1627990940,
+							["arg1"] = "扎小克-燃烧之刃获得了战利品：|cffa335ee|Hitem:172232::::::::60:103:::::::::|h[永恒水晶]|h|r。",
 						}, -- [5]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982273,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627990941,
+							["arg1"] = "扎小克-燃烧之刃获得了战利品：|cff0070dd|Hitem:172231::::::::60:103:::::::::|h[圣洁碎片]|h|r。",
 						}, -- [6]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982293,
-							["arg1"] = "你拾取了4金币, 7银币, 2铜币",
+							["type"] = "LOOT",
+							["time"] = 1627990950,
+							["arg1"] = "扎小克-燃烧之刃获得了战利品：|cffa335ee|Hitem:172232::::::::60:103:::::::::|h[永恒水晶]|h|r。",
 						}, -- [7]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982293,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x6。",
+							["type"] = "LOOT",
+							["time"] = 1627990950,
+							["arg1"] = "扎小克-燃烧之刃获得了战利品：|cff0070dd|Hitem:172231::::::::60:103:::::::::|h[圣洁碎片]|h|r。",
 						}, -- [8]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982336,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179369::::::::60:102:::::::|h[幽魂钥匙]|h|r。",
+							["time"] = 1627990959,
+							["arg1"] = "扎小克-燃烧之刃获得了战利品：|cffa335ee|Hitem:172232::::::::60:103:::::::::|h[永恒水晶]|h|rx2。",
 						}, -- [9]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982337,
-							["arg1"] = "你拾取了9金币, 59银币, 13铜币",
+							["type"] = "LOOT",
+							["time"] = 1627991154,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:173874::::::::60:103:::::::::|h[扭曲沉积物]|h|r",
 						}, -- [10]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982337,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x40。",
+							["type"] = "LOOT",
+							["time"] = 1627991154,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:178136::::::::60:103:::::::::|h[情绪残迹]|h|rx2",
 						}, -- [11]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982340,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627991154,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182457::::::::60:103:::::::::|h[镜子碎片]|h|rx2",
 						}, -- [12]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982343,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x2。",
+							["type"] = "MONEY",
+							["time"] = 1627991154,
+							["arg1"] = "你拾取了1金币, 79银币, 14铜币",
 						}, -- [13]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982358,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627991167,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:178136::::::::60:103:::::::::|h[情绪残迹]|h|rx3",
 						}, -- [14]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982396,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x14。",
+							["type"] = "LOOT",
+							["time"] = 1627991201,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182457::::::::60:102:::::::::|h[镜子碎片]|h|r",
 						}, -- [15]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982400,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179370::::::::60:102:::::::|h[惰性通路徽记]|h|r。",
+							["time"] = 1627991201,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:173202::::::::60:102:::::::::|h[萦亡布]|h|rx2",
 						}, -- [16]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982400,
-							["arg1"] = "你拾取了4金币, 59银币, 18铜币",
+							["type"] = "LOOT",
+							["time"] = 1627991201,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:173874::::::::60:102:::::::::|h[扭曲沉积物]|h|rx3",
 						}, -- [17]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982401,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x32。",
+							["type"] = "LOOT",
+							["time"] = 1627991201,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:178136::::::::60:102:::::::::|h[情绪残迹]|h|r",
 						}, -- [18]
 						{
 							["type"] = "MONEY",
-							["time"] = 1610982425,
-							["arg1"] = "你拾取了2金币, 96银币, 46铜币",
+							["time"] = 1627991201,
+							["arg1"] = "你拾取了91银币",
 						}, -- [19]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982425,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x11。",
+							["type"] = "LOOT",
+							["time"] = 1627991202,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:182458::::::::60:102:::::::::|h[远古教诲之镜]|h|r",
 						}, -- [20]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982448,
-							["arg1"] = "你拾取了3金币, 95银币, 8铜币",
+							["type"] = "LOOT",
+							["time"] = 1627991217,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173034::::::::60:102:::::::::|h[银鳍梭鱼]|h|rx3",
 						}, -- [21]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982448,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627991217,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173035::::::::60:102:::::::::|h[麻点骨鱼]|h|rx3",
 						}, -- [22]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982504,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179369::::::::60:102:::::::|h[幽魂钥匙]|h|r。",
+							["time"] = 1627991217,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173036::::::::60:102:::::::::|h[刺鳍水虎鱼]|h|rx3",
 						}, -- [23]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982504,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:176931::::::::60:102::9:1:6909:2:28:709:9:60:::|h[霉变的皮质裹手]|h|r。",
+							["time"] = 1627991217,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173032::::::::60:102:::::::::|h[失魂舌鰨]|h|rx4",
 						}, -- [24]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982505,
-							["arg1"] = "你拾取了9金币, 65银币, 66铜币",
+							["type"] = "LOOT",
+							["time"] = 1627991218,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173033::::::::60:102:::::::::|h[虹色琥珀鱼]|h|rx3",
 						}, -- [25]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982505,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x30。",
+							["type"] = "LOOT",
+							["time"] = 1627991237,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:178136::::::::60:102:::::::::|h[情绪残迹]|h|r",
 						}, -- [26]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982507,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:194|h[利齿项圈]|h|r",
+							["time"] = 1627991237,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182457::::::::60:102:::::::::|h[镜子碎片]|h|r",
 						}, -- [27]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982519,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x8。",
+							["type"] = "MONEY",
+							["time"] = 1627991238,
+							["arg1"] = "你拾取了1金币, 38银币, 44铜币",
 						}, -- [28]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982544,
-							["arg1"] = "你拾取了3金币, 76银币, 66铜币",
+							["type"] = "LOOT",
+							["time"] = 1627991318,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:178136::::::::60:102:::::::::|h[情绪残迹]|h|rx5",
 						}, -- [29]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982544,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x13。",
+							["type"] = "LOOT",
+							["time"] = 1627991318,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182457::::::::60:102:::::::::|h[镜子碎片]|h|rx5",
 						}, -- [30]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982566,
-							["arg1"] = "你拾取了2金币, 89银币, 75铜币",
+							["type"] = "LOOT",
+							["time"] = 1627991318,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:173204::::::::60:102:::::::::|h[黯光丝绸]|h|r",
 						}, -- [31]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982566,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x9。",
+							["type"] = "LOOT",
+							["time"] = 1627991318,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:176801::::::::60:102:::3:6908:6652:1698:2:28:2060:9:60:::::|h[灼光之无忧之锤]|h|r",
 						}, -- [32]
 						{
-							["type"] = "LOOT",
-							["time"] = 1610982566,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1125|h[铁木板坯]|h|r",
+							["type"] = "MONEY",
+							["time"] = 1627991319,
+							["arg1"] = "你拾取了5金币, 74银币, 75铜币",
 						}, -- [33]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982585,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1627991320,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:182458::::::::60:102:::::::::|h[远古教诲之镜]|h|r",
 						}, -- [34]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982587,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x6。",
+							["type"] = "LOOT",
+							["time"] = 1627991321,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:182458::::::::60:102:::::::::|h[远古教诲之镜]|h|r",
 						}, -- [35]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982661,
-							["arg1"] = "你拾取了4金币, 52银币, 86铜币",
+							["type"] = "LOOT",
+							["time"] = 1627991407,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182477::::::::60:102:::::::::|h[圣洁教诲]|h|r",
 						}, -- [36]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982661,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x27。",
+							["type"] = "LOOT",
+							["time"] = 1627991416,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182477::::::::60:102:::::::::|h[圣洁教诲]|h|r",
 						}, -- [37]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982664,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1300|h[堕落武装]|h|r",
+							["time"] = 1627991428,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182477::::::::60:102:::::::::|h[圣洁教诲]|h|r",
 						}, -- [38]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982673,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1627991438,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182477::::::::60:102:::::::::|h[圣洁教诲]|h|r",
 						}, -- [39]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982682,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x8。",
+							["type"] = "LOOT",
+							["time"] = 1627991450,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:182477::::::::60:102:::::::::|h[圣洁教诲]|h|r",
 						}, -- [40]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982685,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:54|h[金色雕像]|h|r",
+							["time"] = 1627991450,
+							["arg1"] = "你获得了物品：|cffa335ee|Hitem:183473::::::::60:102::27:3:1472:5900:7245:2:28:2060:37:5:::::|h[元素汇流]|h|r",
 						}, -- [41]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982740,
-							["arg1"] = "你拾取了4金币, 16银币, 8铜币",
+							["type"] = "LOOT",
+							["time"] = 1627991585,
+							["arg1"] = "你获得了物品：|cff0070dd|Hitem:181372::::::::60:102::74::1:28:2060:::::|h[晋升者的礼物]|h|r",
 						}, -- [42]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982740,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x12。",
+							["type"] = "LOOT",
+							["time"] = 1627991587,
+							["arg1"] = "你获得了物品：|cff9d9d9d|Hitem:184565::::::::60:102:::::::::|h[格里恩涛声模拟器]|h|rx4",
 						}, -- [43]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982742,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1126|h[莱卡拉的书卷]|h|r",
+							["time"] = 1627991587,
+							["arg1"] = "你获得了物品：|cff9d9d9d|Hitem:182161::::::::60:102:::::::::|h[仪式标枪]|h|rx3",
 						}, -- [44]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982773,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627991587,
+							["arg1"] = "你获得了物品：|cff9d9d9d|Hitem:181379::::::::60:102:::::::::|h[翼狮羽毛笔]|h|rx6",
 						}, -- [45]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982795,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627992357,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [46]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982828,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179369::::::::60:102:::::::|h[幽魂钥匙]|h|r。",
+							["time"] = 1627992357,
+							["arg1"] = "眼神无敌帅-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1506|h[崩裂壁垒]|h|r",
 						}, -- [47]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982829,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x16。",
+							["type"] = "LOOT",
+							["time"] = 1627992357,
+							["arg1"] = "瑾残丿醉瞳风-霍格获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [48]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982829,
-							["arg1"] = "你拾取了8金币, 69银币, 70铜币",
+							["type"] = "LOOT",
+							["time"] = 1627992370,
+							["arg1"] = "枫海寻心-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1472|h[激励印章]|h|r",
 						}, -- [49]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982829,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1125|h[铁木板坯]|h|r",
+							["time"] = 1627992371,
+							["arg1"] = "柯隐-神圣之歌获得了心能之力：|cff71d5ff|Hmawpower:1473|h[暴怒战斧]|h|r",
 						}, -- [50]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982845,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627992504,
+							["arg1"] = "瑾残丿醉瞳风-霍格获得了心能之力：|cff71d5ff|Hmawpower:1492|h[狩猎背包]|h|r",
 						}, -- [51]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982863,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179369::::::::60:102:::::::|h[幽魂钥匙]|h|r。",
+							["time"] = 1627992504,
+							["arg1"] = "眼神无敌帅-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1498|h[殉难者坠饰]|h|r",
 						}, -- [52]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982864,
-							["arg1"] = "你拾取了98银币, 3铜币",
+							["type"] = "LOOT",
+							["time"] = 1627992506,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1491|h[复苏真菌]|h|r",
 						}, -- [53]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982864,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x3。",
+							["type"] = "LOOT",
+							["time"] = 1627992511,
+							["arg1"] = "枫海寻心-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1501|h[粗暴行为手册]|h|r",
 						}, -- [54]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982881,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1627992513,
+							["arg1"] = "柯隐-神圣之歌获得了心能之力：|cff71d5ff|Hmawpower:1499|h[绝望之瓶]|h|r",
 						}, -- [55]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982881,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1627992731,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1475|h[火山羽毛]|h|r",
 						}, -- [56]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982881,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1627992746,
+							["arg1"] = "瑾残丿醉瞳风-霍格获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [57]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610982919,
-							["arg1"] = "你拾取了2金币, 65银币, 74铜币",
+							["type"] = "LOOT",
+							["time"] = 1627992749,
+							["arg1"] = "柯隐-神圣之歌获得了心能之力：|cff71d5ff|Hmawpower:1475|h[火山羽毛]|h|r",
 						}, -- [58]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982919,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x11。",
+							["type"] = "LOOT",
+							["time"] = 1627992752,
+							["arg1"] = "眼神无敌帅-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1488|h[破城者的坚定]|h|r",
 						}, -- [59]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982921,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:186|h[饥渴心能]|h|r",
+							["time"] = 1627992753,
+							["arg1"] = "枫海寻心-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1475|h[火山羽毛]|h|r",
 						}, -- [60]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982927,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627993403,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [61]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610982929,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1126|h[莱卡拉的书卷]|h|r",
+							["time"] = 1627993407,
+							["arg1"] = "柯隐-神圣之歌获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [62]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610982943,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627993407,
+							["arg1"] = "眼神无敌帅-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1487|h[滴血之牙]|h|r",
 						}, -- [63]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983063,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:4|h[奥伯勒隆之风]|h|r",
+							["time"] = 1627993408,
+							["arg1"] = "枫海寻心-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [64]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983074,
-							["arg1"] = "你拾取了6金币, 49银币, 5铜币",
+							["type"] = "LOOT",
+							["time"] = 1627993412,
+							["arg1"] = "瑾残丿醉瞳风-霍格获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [65]
 						{
 							["type"] = "CURRENCY",
-							["time"] = 1610983074,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x19。",
+							["time"] = 1627993814,
+							["arg1"] = "你获得了货币：|cffa335ee|Hcurrency:1947:0|h[奖励勇气点数]|h|rx65",
 						}, -- [66]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983078,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1008|h[一串尖牙和利爪]|h|r",
+							["time"] = 1627993829,
+							["arg1"] = "瑾残丿醉瞳风-霍格获得了战利品：|cffa335ee|Hitem:183491::::::::60:103::16:3:1511:5887:7245:2:28:1279:37:7:::::|h[准备万全]|h|r。",
 						}, -- [67]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983081,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1131|h[荆棘斗篷]|h|r",
+							["time"] = 1627993831,
+							["arg1"] = "柯隐-神圣之歌获得了战利品：|cffa335ee|Hitem:178699::::::::60:103::16:6:7601:7359:6652:7574:1543:6646:1:28:1279:::::|h[树液饕餮者腰带]|h|r。",
 						}, -- [68]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983100,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:7|h[奥伯勒隆护符]|h|r",
+							["time"] = 1627993832,
+							["arg1"] = "柯隐-神圣之歌获得了战利品：|cff0070dd|Hitem:183623::::::::60:103::16::1:28:373:::::|h[锥喉戈姆蛴]|h|r。",
 						}, -- [69]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983111,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:194|h[利齿项圈]|h|r",
+							["time"] = 1627993832,
+							["arg1"] = "你获得了战利品：|cff0070dd|Hitem:184381::::::::60:103:::::::::|h[星界边材]|h|rx4",
 						}, -- [70]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983113,
-							["arg1"] = "你获得了物品：|cffffffff|Hitem:168207::::::::60:102::14::1:28:709:::|h[掠夺来的心能单元]|h|r。",
+							["time"] = 1627993832,
+							["arg1"] = "柯隐-神圣之歌获得了战利品：|cffa335ee|Hitem:183514::::::::60:103::16:3:1511:5887:7245:2:28:1279:37:7:::::|h[血管穿孔]|h|r。",
 						}, -- [71]
 						{
-							["type"] = "LOOT",
-							["time"] = 1610983116,
-							["arg1"] = "你获得了物品：|cffffffff|Hitem:176409::::::::60:102:::::::|h[复苏的虹吸精华]|h|r。",
+							["type"] = "MONEY",
+							["time"] = 1627993832,
+							["arg1"] = "你拾取了53金币, 28银币, 63铜币",
 						}, -- [72]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983122,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1248|h[亲和之石]|h|r",
+							["time"] = 1627993847,
+							["arg1"] = "枫海寻心-燃烧之刃获得了战利品：|cffa335ee|Hitem:178696::::::::60:103::33:5:7601:7359:6652:1543:6646:1:28:1279:::::|h[英格拉·马洛克的披肩]|h|r。",
 						}, -- [73]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983228,
-							["arg1"] = "你拾取了6金币, 48银币, 50铜币",
+							["type"] = "LOOT",
+							["time"] = 1627993847,
+							["arg1"] = "枫海寻心-燃烧之刃获得了战利品：|cffa335ee|Hitem:180653::::::::60:103::::5:17:382:18:9:19:10:20:7:21:14:::::|h[史诗钥石]|h|r。",
 						}, -- [74]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983229,
-							["arg1"] = "你获得了：|cffff8000|Hcurrency:1828:0|h[灵魂灰烬]|h|r x530。",
+							["type"] = "MONEY",
+							["time"] = 1627994626,
+							["arg1"] = "你拾取了1金币, 37银币, 25铜币",
 						}, -- [75]
 						{
-							["type"] = "LOOT",
-							["time"] = 1610983401,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:182|h[指挥体系]|h|r",
+							["type"] = "CURRENCY",
+							["time"] = 1627994626,
+							["arg1"] = "你获得了货币：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|rx1",
 						}, -- [76]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983419,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x2。",
+							["type"] = "LOOT",
+							["time"] = 1627994636,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:173202::::::::60:102:::::::::|h[萦亡布]|h|r",
 						}, -- [77]
 						{
-							["type"] = "LOOT",
-							["time"] = 1610983434,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179368::::::::60:102:::::::|h[恒定镣铐]|h|r。",
+							["type"] = "MONEY",
+							["time"] = 1627994637,
+							["arg1"] = "你拾取了98银币, 98铜币",
 						}, -- [78]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983434,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179372::::::::60:102:::::::|h[破损的噬渊鼠陷阱]|h|r。",
+							["time"] = 1627994655,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:186685::::::::60:102:::::::::|h[圣物碎片]|h|rx9",
 						}, -- [79]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983435,
-							["arg1"] = "你拾取了11金币, 75银币, 26铜币",
+							["type"] = "LOOT",
+							["time"] = 1627994655,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:187324::::::::60:102:::::::::|h[被啃过的古代神像]|h|r",
 						}, -- [80]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983435,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x29。",
+							["type"] = "LOOT",
+							["time"] = 1627994655,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:187470::::::::60:102:::::::::|h[碎裂的切割器锁链]|h|r",
 						}, -- [81]
 						{
-							["type"] = "LOOT",
-							["time"] = 1610983435,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1130|h[一瓶月光酒]|h|r",
+							["type"] = "MONEY",
+							["time"] = 1627994656,
+							["arg1"] = "你拾取了3金币, 25银币, 80铜币",
 						}, -- [82]
 						{
-							["type"] = "LOOT",
-							["time"] = 1610983438,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1|h[奥伯勒隆尖刺]|h|r",
+							["type"] = "CURRENCY",
+							["time"] = 1627994656,
+							["arg1"] = "你获得了货币：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|rx3",
 						}, -- [83]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983466,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x2。",
+							["type"] = "LOOT",
+							["time"] = 1627994683,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:187470::::::::60:102:::::::::|h[碎裂的切割器锁链]|h|r",
 						}, -- [84]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983471,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x2。",
+							["type"] = "LOOT",
+							["time"] = 1627994683,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:173202::::::::60:102:::::::::|h[萦亡布]|h|rx3",
 						}, -- [85]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983502,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179370::::::::60:102:::::::|h[惰性通路徽记]|h|r。",
+							["time"] = 1627994684,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:186150::::::::60:102:::2:7453:1693:2:28:2043:9:60:::::|h[燎火之渊誓黑暗法师的手杖]|h|r",
 						}, -- [86]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983503,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x22。",
+							["type"] = "MONEY",
+							["time"] = 1627994684,
+							["arg1"] = "你拾取了8金币, 83银币, 13铜币",
 						}, -- [87]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983503,
-							["arg1"] = "你拾取了8金币, 47银币, 25铜币",
+							["type"] = "CURRENCY",
+							["time"] = 1627994684,
+							["arg1"] = "你获得了货币：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|rx7",
 						}, -- [88]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983534,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:176289::::::::60:102::9:1:6909:2:28:709:9:60:::|h[枯皮腰带]|h|r。",
+							["time"] = 1627994702,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:187470::::::::60:102:::::::::|h[碎裂的切割器锁链]|h|r",
 						}, -- [89]
 						{
 							["type"] = "MONEY",
-							["time"] = 1610983535,
-							["arg1"] = "你拾取了2金币, 39银币, 98铜币",
+							["time"] = 1627994702,
+							["arg1"] = "你拾取了4金币, 11银币, 30铜币",
 						}, -- [90]
 						{
 							["type"] = "CURRENCY",
-							["time"] = 1610983535,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x9。",
+							["time"] = 1627994702,
+							["arg1"] = "你获得了货币：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|rx8",
 						}, -- [91]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983559,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1627994709,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:186685::::::::60:102:::::::::|h[圣物碎片]|h|rx10",
 						}, -- [92]
 						{
 							["type"] = "MONEY",
-							["time"] = 1610983561,
-							["arg1"] = "你拾取了1金币, 10银币, 21铜币",
+							["time"] = 1627994710,
+							["arg1"] = "你拾取了1金币, 9银币, 45铜币",
 						}, -- [93]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983561,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x5。",
+							["type"] = "LOOT",
+							["time"] = 1627994827,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:185746::::::::60:102:::::::::|h[失窃的密文]|h|r",
 						}, -- [94]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983582,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x2。",
+							["type"] = "LOOT",
+							["time"] = 1627994836,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:185746::::::::60:102:::::::::|h[失窃的密文]|h|r",
 						}, -- [95]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983587,
-							["arg1"] = "你拾取了3金币, 34银币, 28铜币",
+							["type"] = "LOOT",
+							["time"] = 1627994871,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:185746::::::::60:102:::::::::|h[失窃的密文]|h|r",
 						}, -- [96]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983587,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x10。",
+							["type"] = "LOOT",
+							["time"] = 1627994904,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:185746::::::::60:102:::::::::|h[失窃的密文]|h|r",
 						}, -- [97]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983592,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1627994942,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:185746::::::::60:102:::::::::|h[失窃的密文]|h|r",
 						}, -- [98]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983597,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x6。",
+							["type"] = "LOOT",
+							["time"] = 1627994954,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:185746::::::::60:102:::::::::|h[失窃的密文]|h|r",
 						}, -- [99]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983606,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1627995205,
+							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:173874::::::::60:102:::::::::|h[扭曲沉积物]|h|r",
 						}, -- [100]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983608,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x2。",
+							["type"] = "LOOT",
+							["time"] = 1627995205,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:186685::::::::60:102:::::::::|h[圣物碎片]|h|rx18",
 						}, -- [101]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983654,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179369::::::::60:102:::::::|h[幽魂钥匙]|h|r。",
+							["time"] = 1627995205,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:187322::::::::60:102:::::::::|h[崩裂的石板]|h|r",
 						}, -- [102]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983655,
-							["arg1"] = "你拾取了10金币, 83银币, 90铜币",
+							["type"] = "LOOT",
+							["time"] = 1627995205,
+							["arg1"] = "你获得了战利品：|cff1eff00|Hitem:186200::::::::60:102:::::::::|h[注能枝蔓]|h|rx10",
 						}, -- [103]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983655,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x26。",
+							["type"] = "LOOT",
+							["time"] = 1627995258,
+							["arg1"] = "你获得了物品：|cff0070dd|Hitem:186205::::::::60:102:::::::::|h[博学侍神者的手镯]|h|rx5",
 						}, -- [104]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983658,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x6。",
+							["type"] = "LOOT",
+							["time"] = 1627995277,
+							["arg1"] = "你获得了物品：|cff0070dd|Hitem:186205::::::::60:102:::::::::|h[博学侍神者的手镯]|h|rx6",
 						}, -- [105]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983732,
-							["arg1"] = "你拾取了12金币, 77银币, 77铜币",
+							["type"] = "LOOT",
+							["time"] = 1627995523,
+							["arg1"] = "你获得了战利品：|cffffffff|Hitem:173202::::::::60:102:::::::::|h[萦亡布]|h|rx2",
 						}, -- [106]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983732,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x32。",
+							["type"] = "MONEY",
+							["time"] = 1627995524,
+							["arg1"] = "你拾取了1金币, 54银币, 59铜币",
 						}, -- [107]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983741,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:194|h[利齿项圈]|h|r",
+							["time"] = 1627995618,
+							["arg1"] = "你获得了物品：|cffa335ee|Hitem:186734::::::::60:102::27:4:7692:6652:1472:6646:1:28:2043:::::|h[碎皮便鞋]|h|r",
 						}, -- [108]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983755,
-							["arg1"] = "你拾取了2金币, 72银币, 13铜币",
+							["type"] = "CURRENCY",
+							["time"] = 1627995646,
+							["arg1"] = "你获得了货币：|cff1eff00|Hcurrency:1931:0|h[编集研究]|h|rx371",
 						}, -- [109]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983755,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x11。",
+							["type"] = "LOOT",
+							["time"] = 1627995658,
+							["arg1"] = "你获得了物品：|cff0070dd|Hitem:187145::::::::60:102::14::1:28:2043:::::|h[专著：对冥殇及其用途的认识]|h|r",
 						}, -- [110]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983781,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179986::::::::60:102:::::::|h[苦闷回响]|h|rx32。",
+							["time"] = 1627995744,
+							["arg1"] = "你获得了物品：|cff0070dd|Hitem:186714::::::::60:102::14::1:28:2043:::::|h[研究报告：全视水晶]|h|r",
 						}, -- [111]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983782,
-							["arg1"] = "你拾取了6金币, 40银币, 56铜币",
+							["type"] = "LOOT",
+							["time"] = 1627995764,
+							["arg1"] = "你获得了物品：|cff1eff00|Hitem:187612::::::::60:102::14::1:28:2043:::::|h[流动水浪钥匙]|h|r",
 						}, -- [112]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983782,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x16。",
+							["type"] = "LOOT",
+							["time"] = 1627995875,
+							["arg1"] = "你获得了物品：|cffa335ee|Hitem:181476::::::::60:102::74::1:28:2060:::::|h[荒猎团的礼物]|h|r",
 						}, -- [113]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983792,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:147|h[炽蓝仙野的馈赠]|h|r",
+							["time"] = 1627995877,
+							["arg1"] = "你获得了物品：|cffa335ee|Hitem:176832::::::::60:102:::::::::|h[灵种根粒]|h|rx2",
 						}, -- [114]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983847,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:186|h[饥渴心能]|h|r",
+							["time"] = 1627995877,
+							["arg1"] = "你获得了物品：|cff1eff00|Hitem:176921::::::::60:102:::::::::|h[时空之叶]|h|rx3",
 						}, -- [115]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983849,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:176425::::::::60:102::9:1:6909:2:28:709:9:60:::|h[扭折板甲重型腰带]|h|r。",
+							["time"] = 1627995877,
+							["arg1"] = "你获得了物品：|cff0070dd|Hitem:176922::::::::60:102:::::::::|h[荒野魅夜花]|h|rx2",
 						}, -- [116]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983850,
-							["arg1"] = "你拾取了3金币, 83银币, 35铜币",
+							["type"] = "LOOT",
+							["time"] = 1627995877,
+							["arg1"] = "你获得了物品：|cff9d9d9d|Hitem:181485::::::::60:102:::::::::|h[珠珀之叶]|h|rx5",
 						}, -- [117]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983850,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x12。",
+							["type"] = "LOOT",
+							["time"] = 1627995877,
+							["arg1"] = "你获得了物品：|cff9d9d9d|Hitem:181492::::::::60:102:::::::::|h[石化的法夜之花]|h|rx9",
 						}, -- [118]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983864,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1627995877,
+							["arg1"] = "你获得了物品：|cff9d9d9d|Hitem:181483::::::::60:102:::::::::|h[一卷丝行者之线]|h|rx9",
 						}, -- [119]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983890,
-							["arg1"] = "你拾取了4金币, 97银币, 67铜币",
+							["arg1"] = " ",
 						}, -- [120]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983890,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x9。",
+							["arg1"] = " ",
 						}, -- [121]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983901,
-							["arg1"] = "你拾取了95银币, 98铜币",
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
+							["type"] = "SYSTEM",
 						}, -- [122]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983902,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1628002174,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173033::::::::60:103:::::::::|h[虹色琥珀鱼]|h|rx15",
 						}, -- [123]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983906,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x5。",
+							["type"] = "LOOT",
+							["time"] = 1628002181,
+							["arg1"] = "你制造了：|cffffffff|Hitem:172042::::::::60:103:::::::::|h[惊异怡人大餐]|h|r。",
 						}, -- [124]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983936,
-							["arg1"] = "你拾取了3金币, 59银币, 85铜币",
+							["type"] = "LOOT",
+							["time"] = 1628002184,
+							["arg1"] = "你制造了：|cffffffff|Hitem:172042::::::::60:103:::::::::|h[惊异怡人大餐]|h|r。",
 						}, -- [125]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983936,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x7。",
+							["type"] = "LOOT",
+							["time"] = 1628002282,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:172089::::::::60:103:::::::::|h[荒革]|h|rx196",
 						}, -- [126]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983963,
-							["arg1"] = "你拾取了1金币, 36银币, 95铜币",
+							["type"] = "LOOT",
+							["time"] = 1628002282,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:172089::::::::60:103:::::::::|h[荒革]|h|rx200",
 						}, -- [127]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983963,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x3。",
+							["type"] = "LOOT",
+							["time"] = 1628002386,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [128]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983980,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179370::::::::60:102:::::::|h[惰性通路徽记]|h|r。",
+							["time"] = 1628002386,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [129]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610983980,
-							["arg1"] = "你拾取了7金币, 87银币, 39铜币",
+							["type"] = "LOOT",
+							["time"] = 1628002386,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [130]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610983981,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x26。",
+							["type"] = "LOOT",
+							["time"] = 1628002386,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [131]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983997,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628002387,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [132]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983997,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628002387,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [133]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610983997,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628002387,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [134]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984043,
-							["arg1"] = "你拾取了7金币, 35银币, 58铜币",
+							["type"] = "LOOT",
+							["time"] = 1628002387,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [135]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984043,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628002387,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [136]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984241,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179370::::::::60:102:::::::|h[惰性通路徽记]|h|r。",
+							["time"] = 1628002407,
+							["arg1"] = "你制造了：|cff0070dd|Hitem:172264::::::::60:103::13:1:6893:4:28:391:29:49:30:36:9:60:::::|h[影鳞护腰]|h|r。",
 						}, -- [137]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984241,
-							["arg1"] = "你拾取了6金币, 28银币, 94铜币",
+							["type"] = "LOOT",
+							["time"] = 1628002410,
+							["arg1"] = "你制造了：|cff0070dd|Hitem:172264::::::::60:103::13:1:6893:4:28:391:29:32:30:40:9:60:::::|h[影鳞护腰]|h|r。",
 						}, -- [138]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984242,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x17。",
+							["type"] = "LOOT",
+							["time"] = 1628002414,
+							["arg1"] = "你制造了：|cff0070dd|Hitem:172264::::::::60:103::13:2:6893:7180:4:28:391:29:36:30:32:9:60:::::|h[影鳞护腰]|h|r。",
 						}, -- [139]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984247,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1126|h[莱卡拉的书卷]|h|r",
+							["time"] = 1628002418,
+							["arg1"] = "你制造了：|cff0070dd|Hitem:172264::::::::60:103::13:1:6893:4:28:391:29:40:30:49:9:60:::::|h[影鳞护腰]|h|r。",
 						}, -- [140]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984258,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x6。",
+							["type"] = "LOOT",
+							["time"] = 1628002421,
+							["arg1"] = "你制造了：|cff0070dd|Hitem:172264::::::::60:103::13:1:6893:4:28:391:29:49:30:40:9:60:::::|h[影鳞护腰]|h|r。",
 						}, -- [141]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984258,
-							["arg1"] = "你拾取了1金币, 72银币, 87铜币",
+							["type"] = "LOOT",
+							["time"] = 1628002444,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [142]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984288,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179370::::::::60:102:::::::|h[惰性通路徽记]|h|r。",
+							["time"] = 1628002446,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [143]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984289,
-							["arg1"] = "你拾取了4金币, 45银币",
+							["type"] = "LOOT",
+							["time"] = 1628002447,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [144]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984289,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x11。",
+							["type"] = "LOOT",
+							["time"] = 1628002449,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [145]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984290,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:193|h[飘忽的预言]|h|r",
+							["time"] = 1628002451,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [146]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984332,
-							["arg1"] = "你获得了物品：|cffffffff|Hitem:168207::::::::60:102::14::1:28:709:::|h[掠夺来的心能单元]|h|r。",
+							["time"] = 1628002452,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [147]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984340,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1008|h[一串尖牙和利爪]|h|r",
+							["time"] = 1628002454,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [148]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984347,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1008|h[一串尖牙和利爪]|h|r",
+							["time"] = 1628002455,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [149]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984351,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:48|h[幻灭心能背包]|h|r",
+							["time"] = 1628002457,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [150]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984352,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x150。",
+							["type"] = "LOOT",
+							["time"] = 1628002459,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [151]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984358,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:7|h[奥伯勒隆护符]|h|r",
+							["time"] = 1628002460,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [152]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984371,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:190|h[符文蚀刻]|h|r",
+							["time"] = 1628002462,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [153]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984410,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x6。",
+							["type"] = "LOOT",
+							["time"] = 1628002463,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [154]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984417,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:179369::::::::60:102:::::::|h[幽魂钥匙]|h|r。",
+							["time"] = 1628002465,
+							["arg1"] = "你制造了：|cff1eff00|Hitem:172096::::::::60:103:::::::::|h[厚荒革]|h|r。",
 						}, -- [155]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984418,
-							["arg1"] = "你拾取了9金币, 72银币, 2铜币",
+							["type"] = "LOOT",
+							["time"] = 1628002492,
+							["arg1"] = "你制造了：|cff0070dd|Hitem:172253::::::::60:103::13:1:6893:4:28:391:29:32:30:49:9:60:::::|h[影缚头盔]|h|r。",
 						}, -- [156]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984418,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x31。",
+							["type"] = "LOOT",
+							["time"] = 1628002544,
+							["arg1"] = "你制造了：|cff0070dd|Hitem:172097::::::::60:103:::::::::|h[厚茧皮]|h|r。",
 						}, -- [157]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984435,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x6。",
+							["type"] = "LOOT",
+							["time"] = 1628002548,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:177062::::::::60:103:::::::::|h[半影线]|h|r",
 						}, -- [158]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984438,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:191|h[幽暗食粮]|h|r",
+							["time"] = 1628002551,
+							["arg1"] = "你制造了：|cff0070dd|Hitem:172250::::::::60:103::13:1:6893:4:28:391:29:49:30:36:9:60:::::|h[影缚外套]|h|r。",
 						}, -- [159]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984529,
-							["arg1"] = "你拾取了5金币, 80银币, 44铜币",
+							["type"] = "LOOT",
+							["time"] = 1628002572,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:178786::::::::60:103:::::::::|h[璨麦面粉]|h|rx10",
 						}, -- [160]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984530,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x14。",
+							["type"] = "LOOT",
+							["time"] = 1628002574,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:172057::::::::60:103:::::::::|h[无穷陈年香醋]|h|rx10",
 						}, -- [161]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984531,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:186|h[饥渴心能]|h|r",
+							["time"] = 1628002582,
+							["arg1"] = "你制造了：|cffffffff|Hitem:172042::::::::60:103:::::::::|h[惊异怡人大餐]|h|r。",
 						}, -- [162]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984564,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x2。",
+							["arg1"] = " ",
 						}, -- [163]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984571,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["arg1"] = " ",
 						}, -- [164]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984573,
-							["arg1"] = "你拾取了2金币, 86银币, 25铜币",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [165]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984573,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x8。",
+							["type"] = "LOOT",
+							["time"] = 1628003397,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:171267::::::::60:103:::::::::|h[灵魂治疗药水]|h|rx20",
 						}, -- [166]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984574,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1434|h[滋养宝珠]|h|r",
+							["time"] = 1628003397,
+							["arg1"] = "你获得了物品：|cff0070dd|Hitem:172415::::::::60:103:::::::::|h[附魔护腕 - 永恒智力]|h|r",
 						}, -- [167]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984577,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1628003421,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1459|h[通往未知的传送门]|h|r",
 						}, -- [168]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984622,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1628003649,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:139278::::::::60:103:::::::::|h[林荫小路雕文]|h|r",
 						}, -- [169]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984631,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x2。",
+							["type"] = "LOOT",
+							["time"] = 1628004509,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:113509::::::::60:103:::::::::|h[魔法汉堡]|h|rx20",
 						}, -- [170]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984637,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x12。",
+							["type"] = "LOOT",
+							["time"] = 1628005095,
+							["arg1"] = "彼岸丶花开获得了心能之力：|cff71d5ff|Hmawpower:1506|h[崩裂壁垒]|h|r",
 						}, -- [171]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984640,
-							["arg1"] = "你拾取了5金币, 8银币, 46铜币",
+							["type"] = "LOOT",
+							["time"] = 1628005097,
+							["arg1"] = "晒月亮补爱获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [172]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984640,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x9。",
+							["type"] = "LOOT",
+							["time"] = 1628005100,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [173]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984649,
-							["arg1"] = "你拾取了1金币, 74银币, 97铜币",
+							["type"] = "LOOT",
+							["time"] = 1628005107,
+							["arg1"] = "竹月获得了心能之力：|cff71d5ff|Hmawpower:1507|h[鲜血脓液之瓶]|h|r",
 						}, -- [174]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984649,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x4。",
+							["type"] = "LOOT",
+							["time"] = 1628005110,
+							["arg1"] = "蘭小蘭获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [175]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984667,
-							["arg1"] = "你拾取了1金币, 89铜币",
+							["type"] = "LOOT",
+							["time"] = 1628005336,
+							["arg1"] = "彼岸丶花开获得了心能之力：|cff71d5ff|Hmawpower:1498|h[殉难者坠饰]|h|r",
 						}, -- [176]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984667,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x5。",
+							["type"] = "LOOT",
+							["time"] = 1628005338,
+							["arg1"] = "晒月亮补爱获得了心能之力：|cff71d5ff|Hmawpower:1491|h[复苏真菌]|h|r",
 						}, -- [177]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984686,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1432|h[充血水蛭]|h|r",
+							["time"] = 1628005347,
+							["arg1"] = "蘭小蘭获得了心能之力：|cff71d5ff|Hmawpower:1499|h[绝望之瓶]|h|r",
 						}, -- [178]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984689,
-							["arg1"] = "你拾取了3金币, 87铜币",
+							["type"] = "LOOT",
+							["time"] = 1628005350,
+							["arg1"] = "竹月获得了心能之力：|cff71d5ff|Hmawpower:1492|h[狩猎背包]|h|r",
 						}, -- [179]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984689,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x9。",
+							["type"] = "LOOT",
+							["time"] = 1628005354,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1491|h[复苏真菌]|h|r",
 						}, -- [180]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984694,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:10|h[奥伯勒隆蜉蝣]|h|r",
+							["time"] = 1628005426,
+							["arg1"] = "晒月亮补爱制造了：|cffffffff|Hitem:36799::::::::60:103::16:::::::|h[法力宝石]|h|r。",
 						}, -- [181]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984737,
-							["arg1"] = "你拾取了2金币, 16银币, 40铜币",
+							["type"] = "LOOT",
+							["time"] = 1628006241,
+							["arg1"] = "彼岸丶花开获得了心能之力：|cff71d5ff|Hmawpower:1504|h[冥河之王的倒刺]|h|r",
 						}, -- [182]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984737,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x15。",
+							["type"] = "LOOT",
+							["time"] = 1628006241,
+							["arg1"] = "晒月亮补爱获得了心能之力：|cff71d5ff|Hmawpower:1475|h[火山羽毛]|h|r",
 						}, -- [183]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984793,
-							["arg1"] = "你拾取了7金币, 18银币, 82铜币",
+							["type"] = "LOOT",
+							["time"] = 1628006245,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [184]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984793,
-							["arg1"] = "你获得了：|cffa335ee|Hcurrency:1728:0|h[幻灭心能]|h|r x18。",
+							["type"] = "LOOT",
+							["time"] = 1628006249,
+							["arg1"] = "竹月获得了心能之力：|cff71d5ff|Hmawpower:1503|h[稳定钻石护符]|h|r",
 						}, -- [185]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984795,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:190|h[符文蚀刻]|h|r",
+							["time"] = 1628006251,
+							["arg1"] = "蘭小蘭获得了心能之力：|cff71d5ff|Hmawpower:1470|h[死疽伤口之匕]|h|r",
 						}, -- [186]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984839,
-							["arg1"] = "你获得了物品：|cffffffff|Hitem:168207::::::::60:102::14::1:28:709:::|h[掠夺来的心能单元]|h|r。",
+							["time"] = 1628006444,
+							["arg1"] = "晒月亮补爱获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [187]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610984843,
-							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:13|h[奥伯勒隆毒液]|h|r",
+							["time"] = 1628006446,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [188]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610984942,
-							["arg1"] = "你拾取了2金币, 31银币, 97铜币",
+							["type"] = "LOOT",
+							["time"] = 1628006452,
+							["arg1"] = "彼岸丶花开获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [189]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610984942,
-							["arg1"] = "你获得了：|cffff8000|Hcurrency:1828:0|h[灵魂灰烬]|h|r x530。",
+							["type"] = "LOOT",
+							["time"] = 1628006452,
+							["arg1"] = "蘭小蘭获得了心能之力：|cff71d5ff|Hmawpower:1487|h[滴血之牙]|h|r",
 						}, -- [190]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610985941,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628006454,
+							["arg1"] = "竹月获得了心能之力：|cff71d5ff|Hmawpower:1495|h[自我防腐工具包]|h|r",
 						}, -- [191]
 						{
-							["type"] = "LOOT",
-							["time"] = 1610985996,
-							["arg1"] = "你获得了战利品：|cffffffff|Hitem:184622::::::::60:102::::1:28:2125:::|h[冥河之槌]|h|r。",
+							["type"] = "CURRENCY",
+							["time"] = 1628006898,
+							["arg1"] = "你获得了货币：|cffa335ee|Hcurrency:1947:0|h[奖励勇气点数]|h|rx65",
 						}, -- [192]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610985996,
-							["arg1"] = "你获得了战利品：|cff0070dd|Hitem:184395::::::::60:102::::1:28:2098:::|h[陨落冒险者的宝箱]|h|r。",
+							["time"] = 1628006902,
+							["arg1"] = "你获得了战利品：|cff0070dd|Hitem:181547::::::::60:103:::::::::|h[贵族饮剂]|h|rx4",
 						}, -- [193]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610985996,
-							["arg1"] = "你拾取了1金币, 15银币, 44铜币",
+							["type"] = "LOOT",
+							["time"] = 1628006902,
+							["arg1"] = "你获得了战利品：|cffa335ee|Hitem:178824::::::::60:103::16:6:7616:7359:6652:7574:1547:6646:1:28:1279:::::|h[虚假指控者的印戒]|h|r",
 						}, -- [194]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610985997,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x47。",
+							["type"] = "MONEY",
+							["time"] = 1628006902,
+							["arg1"] = "你拾取了53金币, 23银币, 75铜币",
 						}, -- [195]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610985999,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:184369::::::::60:102::::1:28:2098:::|h[被暴力破坏的锤子]|h|r。",
+							["time"] = 1628006908,
+							["arg1"] = "蘭小蘭获得了战利品：|cffa335ee|Hitem:180653::::::::60:103::::6:17:378:18:11:19:10:20:7:21:14:22:128:::::|h[史诗钥石]|h|r。",
 						}, -- [196]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610986000,
-							["arg1"] = "你拾取了22金币, 98银币, 95铜币",
+							["type"] = "LOOT",
+							["time"] = 1628006908,
+							["arg1"] = "彼岸丶花开获得了战利品：|cffa335ee|Hitem:178827::::::::60:103::33:6:7615:7359:6652:7576:1543:6646:1:28:1279:::::|h[罪污项坠]|h|r。",
 						}, -- [197]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986006,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628007251,
+							["arg1"] = "你获得了物品：|cff1eff00|Hitem:184146::::::::60:103:::::::::|h[焦灼灵魂镣铐]|h|rx7",
 						}, -- [198]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986026,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["arg1"] = " ",
 						}, -- [199]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986029,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["arg1"] = " ",
 						}, -- [200]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610986049,
-							["arg1"] = "你拾取了1金币, 22银币, 23铜币",
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
 						}, -- [201]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986049,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x2。",
+							["type"] = "LOOT",
+							["time"] = 1628076519,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:184631::::::::60:103::31:::::::|h[冒险者的附魔箱]|h|r",
 						}, -- [202]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610986085,
-							["arg1"] = "你获得了战利品：|cff9d9d9d|Hitem:184391::::::::60:102:::::::|h[空洞的护命匣碎片]|h|r。",
+							["time"] = 1628076521,
+							["arg1"] = "你获得了物品：|cff1eff00|Hitem:184632::::::::60:103::31:::::::|h[勇士的鱼箱]|h|r",
 						}, -- [203]
 						{
-							["type"] = "MONEY",
-							["time"] = 1610986086,
-							["arg1"] = "你拾取了3金币, 33银币, 61铜币",
+							["type"] = "LOOT",
+							["time"] = 1628076522,
+							["arg1"] = "你获得了物品：|cff1eff00|Hitem:184633::::::::60:103::31:::::::|h[勇士的肉箱]|h|r",
 						}, -- [204]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986086,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x3。",
+							["type"] = "LOOT",
+							["time"] = 1628076526,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173032::::::::60:103:::::::::|h[失魂舌鰨]|h|rx4",
 						}, -- [205]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986090,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628076526,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173033::::::::60:103:::::::::|h[虹色琥珀鱼]|h|rx3",
 						}, -- [206]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986111,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628076526,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173034::::::::60:103:::::::::|h[银鳍梭鱼]|h|rx3",
 						}, -- [207]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986308,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628076526,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173035::::::::60:103:::::::::|h[麻点骨鱼]|h|rx3",
 						}, -- [208]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986331,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628076527,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:173036::::::::60:103:::::::::|h[刺鳍水虎鱼]|h|rx3",
 						}, -- [209]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986355,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628076528,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:179314::::::::60:103:::::::::|h[潜伏爬行者肉块]|h|rx3",
 						}, -- [210]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986366,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x20。",
+							["type"] = "LOOT",
+							["time"] = 1628076528,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:172052::::::::60:103:::::::::|h[飘渺肉块]|h|rx4",
 						}, -- [211]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986415,
-							["arg1"] = "你获得了：|cffffffff|Hcurrency:1767:0|h[冥殇]|h|r x425。",
+							["type"] = "LOOT",
+							["time"] = 1628076528,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:172053::::::::60:103:::::::::|h[晦暗肋排]|h|rx3",
 						}, -- [212]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986467,
-							["arg1"] = "你获得了：|cffff8000|Hcurrency:1828:0|h[灵魂灰烬]|h|r x50。",
+							["type"] = "LOOT",
+							["time"] = 1628076528,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:172054::::::::60:103:::::::::|h[生的圣洁之翅]|h|rx3",
 						}, -- [213]
 						{
-							["type"] = "CURRENCY",
-							["time"] = 1610986479,
-							["arg1"] = "你获得了：|cffff8000|Hcurrency:1828:0|h[灵魂灰烬]|h|r x250。",
+							["type"] = "LOOT",
+							["time"] = 1628076528,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:172055::::::::60:103:::::::::|h[幻形腰肉]|h|rx3",
 						}, -- [214]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610986643,
-							["arg1"] = "你获得了物品：|cff0070dd|Hitem:181372::::::::60:102::74::1:28:2060:::|h[晋升者的供品]|h|r。",
+							["time"] = 1628076528,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:179315::::::::60:103:::::::::|h[曳影腿肉]|h|rx3",
 						}, -- [215]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610986676,
-							["arg1"] = "你获得了物品：|cff9d9d9d|Hitem:182161::::::::60:102:::::::|h[仪式标枪]|h|rx6。",
+							["time"] = 1628076530,
+							["arg1"] = "你获得了物品：|cffffffff|Hitem:172230::::::::60:103:::::::::|h[灵魂之尘]|h|rx4",
 						}, -- [216]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610986676,
-							["arg1"] = "你获得了物品：|cff9d9d9d|Hitem:184567::::::::60:102:::::::|h[手织的执事者毛衣]|h|rx4。",
+							["time"] = 1628076530,
+							["arg1"] = "你获得了物品：|cff0070dd|Hitem:172231::::::::60:103:::::::::|h[圣洁碎片]|h|rx2",
 						}, -- [217]
 						{
 							["type"] = "LOOT",
-							["time"] = 1610987159,
-							["arg1"] = "你的|cff0070dd|Hitem:177055::::::::60:102::11:3:7197:1493:6616:1:28:2060:::|h[无私载魂者的护肩]|h|r已被替换为|cff0070dd|Hitem:177055::::::::60:102::11:3:7198:1499:6616:1:28:2060:::|h[无私载魂者的护肩]|h|r。",
+							["time"] = 1628076530,
+							["arg1"] = "你获得了物品：|cffa335ee|Hitem:172232::::::::60:103:::::::::|h[永恒水晶]|h|r",
 						}, -- [218]
 						{
-							["arg1"] = " ",
+							["type"] = "LOOT",
+							["time"] = 1628077048,
+							["arg1"] = "此角色不取名-奥尔加隆获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [219]
 						{
-							["arg1"] = " ",
+							["type"] = "LOOT",
+							["time"] = 1628077048,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [220]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/19/2021 的 21:34:05。",
+							["type"] = "LOOT",
+							["time"] = 1628077049,
+							["arg1"] = "大米恶魔-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1506|h[崩裂壁垒]|h|r",
 						}, -- [221]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611063274,
-							["arg1"] = "你获得了物品：|cff0070dd|Hitem:172416::::::::60:102:::::::|h[附魔护腕 - 庇荫炉石]|h|r。",
+							["time"] = 1628077050,
+							["arg1"] = "深秋之黎明-埃德萨拉获得了心能之力：|cff71d5ff|Hmawpower:1507|h[鲜血脓液之瓶]|h|r",
 						}, -- [222]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611063433,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628077053,
+							["arg1"] = "数个三二一-安苏获得了心能之力：|cff71d5ff|Hmawpower:1472|h[激励印章]|h|r",
 						}, -- [223]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611063433,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628077119,
+							["arg1"] = "此角色不取名-奥尔加隆获得了心能之力：|cff71d5ff|Hmawpower:1499|h[绝望之瓶]|h|r",
 						}, -- [224]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611063433,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628077120,
+							["arg1"] = "大米恶魔-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1498|h[殉难者坠饰]|h|r",
 						}, -- [225]
 						{
-							["arg1"] = " ",
+							["type"] = "LOOT",
+							["time"] = 1628077120,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1491|h[复苏真菌]|h|r",
 						}, -- [226]
 						{
-							["arg1"] = " ",
+							["type"] = "LOOT",
+							["time"] = 1628077121,
+							["arg1"] = "数个三二一-安苏获得了心能之力：|cff71d5ff|Hmawpower:1501|h[粗暴行为手册]|h|r",
 						}, -- [227]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["type"] = "LOOT",
+							["time"] = 1628077122,
+							["arg1"] = "深秋之黎明-埃德萨拉获得了心能之力：|cff71d5ff|Hmawpower:1492|h[狩猎背包]|h|r",
 						}, -- [228]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611067492,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628077472,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [229]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611067492,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628077476,
+							["arg1"] = "此角色不取名-奥尔加隆获得了心能之力：|cff71d5ff|Hmawpower:1470|h[死疽伤口之匕]|h|r",
 						}, -- [230]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611067492,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:102:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628077480,
+							["arg1"] = "大米恶魔-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1488|h[破城者的坚定]|h|r",
 						}, -- [231]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611068180,
-							["arg1"] = "你获得了物品：|cffffffff|Hitem:113509::::::::60:104:::::::|h[魔法汉堡]|h|rx20。",
+							["time"] = 1628077480,
+							["arg1"] = "数个三二一-安苏获得了心能之力：|cff71d5ff|Hmawpower:1474|h[勇士的烙印]|h|r",
 						}, -- [232]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611068180,
-							["arg1"] = "你获得了物品：|cffffffff|Hitem:113509::::::::60:104:::::::|h[魔法汉堡]|h|rx20。",
+							["time"] = 1628077481,
+							["arg1"] = "深秋之黎明-埃德萨拉获得了心能之力：|cff71d5ff|Hmawpower:1489|h[溢流圣杯]|h|r",
 						}, -- [233]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611069747,
-							["arg1"] = "你获得了战利品：|cff0070dd|Hitem:181645::::::::60:104:::::::|h[充血畸兽之心]|h|r。",
+							["time"] = 1628077847,
+							["arg1"] = "大米恶魔-燃烧之刃制造了：|cffffffff|Hitem:177278::::::::60:103:::::::::|h[静谧之瓶]|h|r。",
 						}, -- [234]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611069748,
-							["arg1"] = "你获得了战利品：|cffa335ee|Hitem:178801::::::::60:104::16:5:7205:6652:1501:5855:6646:1:28:1279:::|h[无畏挑战者的护腿]|h|r。",
+							["time"] = 1628077847,
+							["arg1"] = "大米恶魔-燃烧之刃制造了：|cffffffff|Hitem:177278::::::::60:103:::::::::|h[静谧之瓶]|h|r。",
 						}, -- [235]
 						{
-							["type"] = "MONEY",
-							["time"] = 1611069748,
-							["arg1"] = "你拾取了53金币, 52银币, 56铜币",
+							["type"] = "LOOT",
+							["time"] = 1628077847,
+							["arg1"] = "大米恶魔-燃烧之刃制造了：|cffffffff|Hitem:177278::::::::60:103:::::::::|h[静谧之瓶]|h|r。",
 						}, -- [236]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611069749,
-							["arg1"] = "哈尼斯斯获得了战利品：|cffa335ee|Hitem:178869::::::::60:104::16:6:7205:6652:7193:1501:5855:6646:1:28:1279:::|h[融肉指环]|h|r。",
+							["time"] = 1628078151,
+							["arg1"] = "你获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [237]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611069753,
-							["arg1"] = "丶臭弟弟丶-丽丽（四川）获得了战利品：|cffa335ee|Hitem:183476::::::::60:104::16:2:1511:7245:2:28:1279:37:4:::|h[星辰灵感]|h|r。",
+							["time"] = 1628078152,
+							["arg1"] = "大米恶魔-燃烧之刃获得了心能之力：|cff71d5ff|Hmawpower:1497|h[残破的镜子]|h|r",
 						}, -- [238]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611070893,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:104:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628078152,
+							["arg1"] = "此角色不取名-奥尔加隆获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [239]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611070893,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:104:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628078155,
+							["arg1"] = "数个三二一-安苏获得了心能之力：|cff71d5ff|Hmawpower:1487|h[滴血之牙]|h|r",
 						}, -- [240]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611070893,
-							["arg1"] = "你制造了：|cffffffff|Hitem:177278::::::::60:104:::::::|h[静谧之瓶]|h|r。",
+							["time"] = 1628078158,
+							["arg1"] = "深秋之黎明-埃德萨拉获得了心能之力：|cff71d5ff|Hmawpower:1485|h[顽石结界]|h|r",
 						}, -- [241]
 						{
-							["type"] = "LOOT",
-							["time"] = 1611071793,
-							["arg1"] = "你获得了战利品：|cff0070dd|Hitem:184381::::::::60:104:::::::|h[星界边材]|h|r。",
+							["type"] = "CURRENCY",
+							["time"] = 1628078698,
+							["arg1"] = "你获得了货币：|cffa335ee|Hcurrency:1947:0|h[奖励勇气点数]|h|rx65",
 						}, -- [242]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611071793,
-							["arg1"] = "你获得了战利品：|cffa335ee|Hitem:183491::::::::60:104::16:2:1527:7245:2:28:1279:37:5:::|h[准备万全]|h|r。",
+							["time"] = 1628078710,
+							["arg1"] = "数个三二一-安苏获得了战利品：|cffa335ee|Hitem:178707::::::::60:103::16:6:7616:7359:6652:7575:1547:6646:1:28:1279:::::|h[迷途项坠]|h|r。",
 						}, -- [243]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611071793,
-							["arg1"] = "你获得了战利品：|cff0070dd|Hitem:182305::::::::60:104::16::1:28:1279:::|h[金秋花床王冠]|h|r。",
+							["time"] = 1628078710,
+							["arg1"] = "深秋之黎明-埃德萨拉获得了战利品：|cffa335ee|Hitem:178694::::::::60:103::33:6:7586:7359:6652:7575:1543:6646:1:28:1279:::::|h[怒皮巨盔]|h|r。",
 						}, -- [244]
 						{
-							["type"] = "MONEY",
-							["time"] = 1611071794,
-							["arg1"] = "你拾取了53金币, 2银币, 28铜币",
+							["type"] = "LOOT",
+							["time"] = 1628078711,
+							["arg1"] = "你获得了战利品：|cff0070dd|Hitem:184378::::::::60:103:::::::::|h[法夜仙野琥珀]|h|rx4",
 						}, -- [245]
 						{
 							["type"] = "LOOT",
-							["time"] = 1611071801,
-							["arg1"] = "皂壮壮-燃烧平原获得了战利品：|cffa335ee|Hitem:178714::::::::60:104::16:5:7207:6652:1501:5858:6646:1:28:1279:::|h[雷卡利的学识塔杖]|h|r。",
+							["time"] = 1628078711,
+							["arg1"] = "你获得了战利品：|cff0070dd|Hitem:183623::::::::60:103::16::1:28:373:::::|h[锥喉戈姆蛴]|h|r",
 						}, -- [246]
 						{
-							["type"] = "LOOT",
-							["time"] = 1611071801,
-							["arg1"] = "哈尼斯斯获得了战利品：|cffa335ee|Hitem:178705::::::::60:104::16:5:7207:6652:1501:5858:6646:1:28:1279:::|h[顽劣精灵手套]|h|r。",
+							["type"] = "MONEY",
+							["time"] = 1628078712,
+							["arg1"] = "你拾取了52金币, 83银币, 39铜币",
 						}, -- [247]
 						{
-							["type"] = "LOOT",
-							["time"] = 1611071802,
-							["arg1"] = "哈尼斯斯获得了战利品：|cff0070dd|Hitem:183623::::::::60:104::16::1:28:373:::|h[锥喉戈姆蛴]|h|r。",
+							["arg1"] = " ",
 						}, -- [248]
 						{
-							["type"] = "LOOT",
-							["time"] = 1611071827,
-							["arg1"] = "你获得了物品：|cff0070dd|Hitem:183623::::::::60:104::16::1:28:373:::|h[锥喉戈姆蛴]|h|r。",
+							["arg1"] = " ",
 						}, -- [249]
 						{
-							["type"] = "LOOT",
-							["time"] = 1611071878,
-							["arg1"] = "哈尼斯斯获得了战利品：|cffa335ee|Hitem:172232::::::::60:104:::::::|h[永恒水晶]|h|r。",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [250]
 					},
 				}, -- [8]
@@ -10462,2754 +10443,1421 @@ ElephantDBPerChar = {
 					["logs"] = {
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365327,
-							["arg1"] = "|Hplayer:斯巴达灬-萨尔|h[斯巴达灬-萨尔]|h邀请你加入队伍。",
+							["time"] = 1627918643,
+							["arg1"] = "|cff71d5ff|Hdeath:1|h[你已死亡。]|h",
 						}, -- [1]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365328,
-							["arg1"] = "小队转化为团队",
+							["time"] = 1627918647,
+							["arg1"] = "Valkdiana已经死亡。",
 						}, -- [2]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365328,
-							["arg1"] = "你加入了一个团队。|cffff2020（在团队中时，大部分非团队任务将无法完成。）|r",
+							["time"] = 1627918658,
+							["arg1"] = "|cff71d5ff|Hdeath:2|h[你已死亡。]|h",
 						}, -- [3]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365328,
-							["arg1"] = "团队副本难度设置为英雄。",
+							["time"] = 1627918659,
+							["arg1"] = "晒月亮补爱已经死亡。",
 						}, -- [4]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365328,
-							["arg1"] = "已将经典旧世团队副本难度设置为25人（英雄）。",
+							["time"] = 1627918660,
+							["arg1"] = "哈尼斯斯已经死亡。",
 						}, -- [5]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365334,
-							["arg1"] = "|Hplayer:啾啾丶啾啾|h[啾啾丶啾啾]|h上线了。",
+							["time"] = 1627918700,
+							["arg1"] = "晒月亮补爱已经死亡。",
 						}, -- [6]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365362,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1627918723,
+							["arg1"] = "彼岸丶花开已经死亡。",
 						}, -- [7]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365371,
-							["arg1"] = "|Hplayer:懒洋洋-奥杜尔|h[懒洋洋-奥杜尔]|h邀请你加入队伍。",
+							["time"] = 1627918769,
+							["arg1"] = "彼岸丶花开已经死亡。",
 						}, -- [8]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365373,
-							["arg1"] = "小队转化为团队",
+							["time"] = 1627918773,
+							["arg1"] = "晒月亮补爱已经死亡。",
 						}, -- [9]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365373,
-							["arg1"] = "你加入了一个团队。|cffff2020（在团队中时，大部分非团队任务将无法完成。）|r",
+							["time"] = 1627918774,
+							["arg1"] = "Valkdiana已经死亡。",
 						}, -- [10]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365373,
-							["arg1"] = "团队副本难度设置为英雄。",
+							["time"] = 1627918775,
+							["arg1"] = "|cff71d5ff|Hdeath:3|h[你已死亡。]|h",
 						}, -- [11]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365373,
-							["arg1"] = "已将经典旧世团队副本难度设置为10人（英雄）。",
+							["time"] = 1627918960,
+							["arg1"] = "哈尼斯斯已经死亡。",
 						}, -- [12]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365463,
-							["arg1"] = "啾啾丶啾啾下线了。",
+							["time"] = 1627919008,
+							["arg1"] = "哈尼斯斯已经死亡。",
 						}, -- [13]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365485,
-							["arg1"] = "355份心能灌注进了心能储备。",
+							["time"] = 1627919226,
+							["arg1"] = "晒月亮补爱已经死亡。",
 						}, -- [14]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365495,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1627919348,
+							["arg1"] = "|cff71d5ff|Hdeath:4|h[你已死亡。]|h",
 						}, -- [15]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365501,
-							["arg1"] = "|Hplayer:佳妮魔兽真好-军团要塞|h[佳妮魔兽真好-军团要塞]|h邀请你加入队伍。",
+							["time"] = 1627919362,
+							["arg1"] = "Valkdiana已经死亡。",
 						}, -- [16]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365502,
-							["arg1"] = "地下城难度已设置为普通。",
+							["time"] = 1627919684,
+							["arg1"] = "Valkdiana已经死亡。",
 						}, -- [17]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365506,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1627920686,
+							["arg1"] = "哈尼斯斯已经死亡。",
 						}, -- [18]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365510,
-							["arg1"] = "|Hplayer:懒洋洋-奥杜尔|h[懒洋洋-奥杜尔]|h邀请你加入队伍，但是你无法接受，因为你已经在一个队伍中了。",
+							["time"] = 1627920999,
+							["arg1"] = "|cffff80ff|Htransmogappearance:111523|h[苍穹恐魔的石皮护腿]|h|r已加入了你的外观收藏。",
 						}, -- [19]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365510,
-							["arg1"] = "|Hplayer:大奔-辛达苟萨|h[大奔-辛达苟萨]|h邀请你加入队伍。",
+							["time"] = 1627921018,
+							["arg1"] = "你对哈尼斯斯发出交易请求",
 						}, -- [20]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365512,
-							["arg1"] = "小队转化为团队",
+							["time"] = 1627921031,
+							["arg1"] = "你对晒月亮补爱发出交易请求",
 						}, -- [21]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365512,
-							["arg1"] = "你加入了一个团队。|cffff2020（在团队中时，大部分非团队任务将无法完成。）|r",
+							["time"] = 1627921034,
+							["arg1"] = "|cffff80ff|Htransmogappearance:111523|h[苍穹恐魔的石皮护腿]|h|r已从你的外观收藏中移除。",
 						}, -- [22]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365512,
-							["arg1"] = "团队副本难度设置为英雄。",
+							["time"] = 1627921108,
+							["arg1"] = "彼岸丶花开下线了。",
 						}, -- [23]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365512,
-							["arg1"] = "已将经典旧世团队副本难度设置为25人（英雄）。",
+							["time"] = 1627921115,
+							["arg1"] = "晒月亮补爱离开了队伍。",
 						}, -- [24]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365523,
-							["arg1"] = "Bladesexile-安苏离开了团队。",
+							["time"] = 1627921117,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [25]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610365557,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1627921119,
+							["arg1"] = "晒月亮补爱下线了。",
 						}, -- [26]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627921212,
+							["arg1"] = "Valkdiana下线了。",
 						}, -- [27]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627921227,
+							["arg1"] = "你现在是队长",
 						}, -- [28]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/16/2021 的 12:34:49。",
+							["time"] = 1627921228,
+							["arg1"] = "|Hplayer:芃芃其麦|h[芃芃其麦]|h上线了。",
 						}, -- [29]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610771713,
-							["arg1"] = "有爱插件助力9.0 回帖赢月卡和萨尔雕像",
+							["time"] = 1627921254,
+							["arg1"] = "芃芃其麦下线了。",
 						}, -- [30]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610771713,
-							["arg1"] = "复制链接到浏览器参与：",
+							["time"] = 1627921266,
+							["arg1"] = "|Hplayer:Valkeuterpe|h[Valkeuterpe]|h上线了。",
 						}, -- [31]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610771713,
-							["arg1"] = "http://dwz.date/dnvt",
+							["time"] = 1627921351,
+							["arg1"] = "你离开了队伍。",
 						}, -- [32]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610771723,
-							["arg1"] = "2021年MDI史诗钥石地下城全球锦标赛报名中！比赛服橙装盟约任意搭配，计时赛限时通关可获宠物玩具奖励，国服独立赛区不再熬夜参赛，冠亚军晋级全球总决赛，详情请查阅官网。",
+							["time"] = 1627921366,
+							["arg1"] = "哈尼斯斯下线了。",
 						}, -- [33]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1610771772,
-							["arg1"] = "Exmist下线了。",
+							["arg1"] = " ",
 						}, -- [34]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1610771774,
-							["arg1"] = "350份心能灌注进了心能储备。",
+							["arg1"] = " ",
 						}, -- [35]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610771781,
-							["arg1"] = "|Hplayer:Exnatural|h[Exnatural]|h上线了。",
+							["arg1"] = "记录开始于 08/03/2021 的 19:21:36。",
 						}, -- [36]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610771794,
-							["arg1"] = "|Hplayer:Exnatural|h[Exnatural]|h邀请你加入队伍。",
+							["time"] = 1627989727,
+							["arg1"] = "接受任务：炽蓝仙野的挑战",
 						}, -- [37]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627989783,
+							["arg1"] = "|Hplayer:星星没你美-贫瘠之地|h[星星没你美-贫瘠之地]|h邀请你加入队伍。",
 						}, -- [38]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627989786,
+							["arg1"] = "小队转化为团队",
 						}, -- [39]
 						{
-							["arg1"] = "记录开始于 01/17/2021 的 13:00:02。",
 							["type"] = "SYSTEM",
+							["time"] = 1627989786,
+							["arg1"] = "你加入了一个团队。|cffff2020（在团队中时，大部分非团队任务将无法完成。）|r",
 						}, -- [40]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859620,
-							["arg1"] = "有爱插件助力9.0 回帖赢月卡和萨尔雕像",
+							["time"] = 1627989786,
+							["arg1"] = "团队副本难度设置为普通。",
 						}, -- [41]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859620,
-							["arg1"] = "复制链接到浏览器参与：",
+							["time"] = 1627989786,
+							["arg1"] = "已将经典旧世团队副本难度设置为10人。",
 						}, -- [42]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859620,
-							["arg1"] = "http://dwz.date/dnvt",
+							["time"] = 1627989788,
+							["arg1"] = "你离开了队伍。",
 						}, -- [43]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859739,
-							["arg1"] = "接受任务：心能回收",
+							["time"] = 1627989799,
+							["arg1"] = "获得273金币, 3银币。",
 						}, -- [44]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859740,
-							["arg1"] = "你已经接到了该任务。",
+							["time"] = 1627989879,
+							["arg1"] = "地下城难度已设置为史诗。",
 						}, -- [45]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859782,
-							["arg1"] = "|Hplayer:叫我小刘就好|h[叫我小刘就好]|h: 等级 60 巨魔 战士 <Orange> - 奥利波斯",
+							["time"] = 1627989970,
+							["arg1"] = "扎小克-燃烧之刃加入了队伍。",
 						}, -- [46]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859782,
-							["arg1"] = "共计1个玩家",
+							["time"] = 1627990054,
+							["arg1"] = "210份心能灌注进了心能储备。",
 						}, -- [47]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859782,
-							["arg1"] = "共计0个玩家",
+							["time"] = 1627990065,
+							["arg1"] = "地下城难度已设置为场景战役（普通）。",
 						}, -- [48]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859782,
-							["arg1"] = "共计0个玩家",
+							["time"] = 1627990128,
+							["arg1"] = "接受任务：协助盟约",
 						}, -- [49]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859915,
-							["arg1"] = "|Hplayer:爆裂丶皮卡丘-埃克索图斯|h[爆裂丶皮卡丘-埃克索图斯]|h邀请你加入队伍。",
+							["time"] = 1627990217,
+							["arg1"] = "地下城难度已设置为史诗。",
 						}, -- [50]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859917,
-							["arg1"] = "|Hplayer:剑指天下-埃德萨拉|h[剑指天下-埃德萨拉]|h邀请你加入队伍。",
+							["time"] = 1627990436,
+							["arg1"] = "|cff71d5ff|Hdeath:1|h[你已死亡。]|h",
 						}, -- [51]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859917,
-							["arg1"] = "|Hplayer:买娤备请进组-烈焰峰|h[买娤备请进组-烈焰峰]|h邀请你加入队伍，但是你无法接受，因为你已经在一个队伍中了。",
+							["time"] = 1627990444,
+							["arg1"] = "扎小克已经死亡。",
 						}, -- [52]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859919,
-							["arg1"] = "|Hplayer:颤抖巴凡-回音山|h[颤抖巴凡-回音山]|h邀请你加入队伍，但是你无法接受，因为你已经在一个队伍中了。",
+							["time"] = 1627990477,
+							["arg1"] = "|cff71d5ff|Hdeath:2|h[你已死亡。]|h",
 						}, -- [53]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859949,
-							["arg1"] = "接受任务：占卜者之眼",
+							["time"] = 1627990478,
+							["arg1"] = "老衲已经死亡。",
 						}, -- [54]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610859951,
-							["arg1"] = "接受任务：无魂躯壳",
+							["time"] = 1627990479,
+							["arg1"] = "鲸落南北已经死亡。",
 						}, -- [55]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610860013,
-							["arg1"] = "你已经加入了托加斯特：扭曲回廊（难度1）的队列。",
+							["time"] = 1627990480,
+							["arg1"] = "无丶濑已经死亡。",
 						}, -- [56]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610860014,
-							["arg1"] = "地下城难度已设置为托加斯特。",
+							["time"] = 1627990482,
+							["arg1"] = "扎小克已经死亡。",
 						}, -- [57]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610860021,
-							["arg1"] = "你现在没有在一个队伍中",
+							["time"] = 1627990528,
+							["arg1"] = "老衲已经死亡。",
 						}, -- [58]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610860032,
-							["arg1"] = "你忘却了|cff71d5ff|Hspell:102401:0|h[野性冲锋]|h|r。",
+							["time"] = 1627990538,
+							["arg1"] = "鲸落南北已经死亡。",
 						}, -- [59]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610860032,
-							["arg1"] = "你学会新的法术：|cff71d5ff|Hspell:108238:0|h[甘霖]|h|r",
+							["time"] = 1627990543,
+							["arg1"] = "扎小克已经死亡。",
 						}, -- [60]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610860789,
-							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:252216:0|h[猛虎冲刺]|h|r",
+							["time"] = 1627990576,
+							["arg1"] = "无丶濑已经死亡。",
 						}, -- [61]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610860924,
-							["arg1"] = "啾啾丶啾啾下线了。",
+							["time"] = 1627990597,
+							["arg1"] = "鲸落南北已经死亡。",
 						}, -- [62]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610860956,
-							["arg1"] = "|cff71d5ff|Hdeath:1|h[你已死亡。]|h",
+							["time"] = 1627990705,
+							["arg1"] = "扎小克已经死亡。",
 						}, -- [63]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610861273,
-							["arg1"] = "|cff71d5ff|Hdeath:2|h[你已死亡。]|h",
+							["time"] = 1627990706,
+							["arg1"] = "无丶濑已经死亡。",
 						}, -- [64]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610861560,
-							["arg1"] = "罌僳埖丶塮下线了。",
+							["time"] = 1627990713,
+							["arg1"] = "鲸落南北已经死亡。",
 						}, -- [65]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610861772,
-							["arg1"] = "2021年MDI史诗钥石地下城全球锦标赛报名中！比赛服橙装盟约任意搭配，计时赛限时通关可获宠物玩具奖励，国服独立赛区不再熬夜参赛，冠亚军晋级全球总决赛，详情请查阅官网。",
+							["time"] = 1627990714,
+							["arg1"] = "|cff71d5ff|Hdeath:3|h[你已死亡。]|h",
 						}, -- [66]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610862116,
-							["arg1"] = "|cff71d5ff|Hdeath:3|h[你已死亡。]|h",
+							["time"] = 1627990716,
+							["arg1"] = "老衲已经死亡。",
 						}, -- [67]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610862266,
-							["arg1"] = "|cff71d5ff|Hdeath:4|h[你已死亡。]|h",
+							["time"] = 1627990815,
+							["arg1"] = "无丶濑已经死亡。",
 						}, -- [68]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610862368,
-							["arg1"] = "|cff71d5ff|Hdeath:5|h[你已死亡。]|h",
+							["time"] = 1627990817,
+							["arg1"] = "扎小克已经死亡。",
 						}, -- [69]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610862374,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1627990817,
+							["arg1"] = "|cff71d5ff|Hdeath:4|h[你已死亡。]|h",
 						}, -- [70]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627990819,
+							["arg1"] = "鲸落南北已经死亡。",
 						}, -- [71]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627990821,
+							["arg1"] = "老衲已经死亡。",
 						}, -- [72]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/17/2021 的 16:31:45。",
+							["time"] = 1627990834,
+							["arg1"] = "老衲-血吼离开了队伍。",
 						}, -- [73]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872318,
-							["arg1"] = "有爱插件助力9.0 回帖赢月卡和萨尔雕像",
+							["time"] = 1627991180,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [74]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872318,
-							["arg1"] = "复制链接到浏览器参与：",
+							["time"] = 1627991428,
+							["arg1"] = "你离开了队伍。",
 						}, -- [75]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872318,
-							["arg1"] = "http://dwz.date/dnvt",
+							["time"] = 1627991482,
+							["arg1"] = "|Hplayer:Exmist|h[Exmist]|h上线了。",
 						}, -- [76]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872349,
-							["arg1"] = "你已经加入了托加斯特：扭曲回廊（难度1）的队列。",
+							["time"] = 1627991585,
+							["arg1"] = "晋升堡垒训练完成。",
 						}, -- [77]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872354,
-							["arg1"] = "地下城难度已设置为托加斯特。",
+							["time"] = 1627991759,
+							["arg1"] = "|Hplayer:晒月亮补爱|h[晒月亮补爱]|h上线了。",
 						}, -- [78]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872360,
-							["arg1"] = "你现在没有在一个队伍中",
+							["time"] = 1627991876,
+							["arg1"] = "地下城难度已设置为史诗。",
 						}, -- [79]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你忘却了|cff71d5ff|Hspell:197492:0|h[恢复亲和]|h|r。",
+							["time"] = 1627991977,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [80]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:202157:0|h[野性亲和]|h|r。",
+							["time"] = 1627991991,
+							["arg1"] = "你不能加入正在进行中的史诗钥石地下城",
 						}, -- [81]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:131768:0|h[豹之迅捷]|h|r。",
+							["time"] = 1627992057,
+							["arg1"] = "瑾残丿醉瞳风已经死亡。",
 						}, -- [82]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:1079:0|h[割裂]|h|r",
+							["time"] = 1627992068,
+							["arg1"] = "枫海寻心-燃烧之刃开始进行就位确认。",
 						}, -- [83]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:213764:0|h[横扫]|h|r",
+							["time"] = 1627992312,
+							["arg1"] = "|Hplayer:小灰灰|h[小灰灰]|h上线了。",
 						}, -- [84]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:1822:0|h[斜掠]|h|r",
+							["time"] = 1627992530,
+							["arg1"] = "小灰灰下线了。",
 						}, -- [85]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:231063:0|h[撕碎]|h|r。",
+							["time"] = 1627992592,
+							["arg1"] = "|Hplayer:小灰灰|h[小灰灰]|h上线了。",
 						}, -- [86]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:231057:0|h[撕碎]|h|r。",
+							["time"] = 1627993576,
+							["arg1"] = "|cff71d5ff|Hdeath:5|h[你已死亡。]|h",
 						}, -- [87]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:231052:0|h[斜掠]|h|r。",
+							["time"] = 1627993595,
+							["arg1"] = "柯隐已经死亡。",
 						}, -- [88]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872364,
-							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:22570:0|h[割碎]|h|r",
+							["time"] = 1627993836,
+							["arg1"] = "柯隐-神圣之歌离开了队伍。",
 						}, -- [89]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872366,
-							["arg1"] = "你忘却了|cff71d5ff|Hspell:102401:0|h[野性冲锋]|h|r。",
+							["time"] = 1627993963,
+							["arg1"] = "你离开了队伍。",
 						}, -- [90]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872366,
-							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:252216:0|h[猛虎冲刺]|h|r",
+							["time"] = 1627993995,
+							["arg1"] = "Exmist下线了。",
 						}, -- [91]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610872489,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1627994089,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [92]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627994456,
+							["arg1"] = "你现在处于离开状态：离开",
 						}, -- [93]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627994545,
+							["arg1"] = "你不再处于离开状态。",
 						}, -- [94]
 						{
-							["arg1"] = "记录开始于 01/17/2021 的 23:02:25。",
 							["type"] = "SYSTEM",
+							["time"] = 1627994564,
+							["arg1"] = "接受任务：掮灵悬赏：领主阿佐拉克",
 						}, -- [95]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610895759,
-							["arg1"] = "有爱插件助力9.0 回帖赢月卡和萨尔雕像",
+							["time"] = 1627994572,
+							["arg1"] = "接受任务：密文与秘钥",
 						}, -- [96]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610895759,
-							["arg1"] = "复制链接到浏览器参与：",
+							["time"] = 1627994582,
+							["arg1"] = "接受任务：妥当程序",
 						}, -- [97]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610895759,
-							["arg1"] = "http://dwz.date/dnvt",
+							["time"] = 1627994596,
+							["arg1"] = "接受任务：深入行动：学者之家",
 						}, -- [98]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627995251,
+							["arg1"] = "深入行动：学者之家完成。",
 						}, -- [99]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1627995258,
+							["arg1"] = "妥当程序完成。",
 						}, -- [100]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/18/2021 的 19:43:45。",
+							["time"] = 1627995277,
+							["arg1"] = "密文与秘钥完成。",
 						}, -- [101]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970240,
-							["arg1"] = "有爱插件助力9.0 回帖赢月卡和萨尔雕像",
+							["time"] = 1627995618,
+							["arg1"] = "掮灵悬赏：领主阿佐拉克完成。",
 						}, -- [102]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970240,
-							["arg1"] = "复制链接到浏览器参与：",
+							["time"] = 1627995645,
+							["arg1"] = "你和档案员卷宗的关系是等级2。",
 						}, -- [103]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970240,
-							["arg1"] = "http://dwz.date/dnvt",
+							["time"] = 1627995649,
+							["arg1"] = "接受任务：失落的圣物",
 						}, -- [104]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970246,
-							["arg1"] = "你已经加入了托加斯特：扭曲回廊（难度1）的队列。",
+							["time"] = 1627995822,
+							["arg1"] = "失落的圣物完成。",
 						}, -- [105]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970249,
-							["arg1"] = "地下城难度已设置为托加斯特。",
+							["time"] = 1627995875,
+							["arg1"] = "炽蓝仙野的挑战完成。",
 						}, -- [106]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970257,
-							["arg1"] = "你现在没有在一个队伍中",
+							["time"] = 1627995908,
+							["arg1"] = "575份心能灌注进了心能储备。",
 						}, -- [107]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970468,
-							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:202430:0|h[自然平衡]|h|r。",
+							["time"] = 1627995928,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [108]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970482,
-							["arg1"] = "槐雪如风下线了。",
+							["time"] = 1627995971,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:320668:0|h[自然的壮美]|h|r。",
 						}, -- [109]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970595,
-							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:102560:0|h[化身：艾露恩之眷]|h|r",
+							["time"] = 1627995974,
+							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:320668:0|h[自然的壮美]|h|r。",
 						}, -- [110]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1610970712,
-							["arg1"] = "你忘却了|cff71d5ff|Hspell:102401:0|h[野性冲锋]|h|r。",
+							["arg1"] = " ",
 						}, -- [111]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1610970712,
-							["arg1"] = "你学会新的法术：|cff71d5ff|Hspell:108238:0|h[甘霖]|h|r",
+							["arg1"] = " ",
 						}, -- [112]
 						{
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
 							["type"] = "SYSTEM",
-							["time"] = 1610970713,
-							["arg1"] = "你学会新的法术：|cff71d5ff|Hspell:202347:0|h[星辰耀斑]|h|r",
 						}, -- [113]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970827,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1628000154,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:236068:0|h[洞察秋毫]|h|r。",
 						}, -- [114]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970836,
-							["arg1"] = "你已经加入了托加斯特：扭曲回廊（难度1）的队列。",
+							["time"] = 1628000154,
+							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:319439:0|h[血腥爪击]|h|r。",
 						}, -- [115]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970839,
-							["arg1"] = "地下城难度已设置为托加斯特。",
+							["time"] = 1628000155,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:285381:0|h[原始之怒]|h|r。",
 						}, -- [116]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610970846,
-							["arg1"] = "你现在没有在一个队伍中",
+							["time"] = 1628000155,
+							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:202028:0|h[野蛮挥砍]|h|r",
 						}, -- [117]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610971282,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1628000428,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:319439:0|h[血腥爪击]|h|r。",
 						}, -- [118]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1628000428,
+							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:236068:0|h[洞察秋毫]|h|r。",
 						}, -- [119]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1628000572,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:202028:0|h[野蛮挥砍]|h|r。",
 						}, -- [120]
 						{
-							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
 							["type"] = "SYSTEM",
+							["time"] = 1628000572,
+							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:285381:0|h[原始之怒]|h|r",
 						}, -- [121]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610981325,
-							["arg1"] = "有爱插件助力9.0 回帖赢月卡和萨尔雕像",
+							["time"] = 1628000578,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:158476:0|h[丛林之魂]|h|r。",
 						}, -- [122]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610981325,
-							["arg1"] = "复制链接到浏览器参与：",
+							["time"] = 1628000578,
+							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:52610:0|h[野蛮咆哮]|h|r",
 						}, -- [123]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610981325,
-							["arg1"] = "http://dwz.date/dnvt",
+							["time"] = 1628000579,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:52610:0|h[野蛮咆哮]|h|r。",
 						}, -- [124]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610981349,
-							["arg1"] = "你已经加入了托加斯特：凇心间隙（难度7）的队列。",
+							["time"] = 1628000579,
+							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:158476:0|h[丛林之魂]|h|r。",
 						}, -- [125]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610981354,
-							["arg1"] = "地下城难度已设置为托加斯特。",
+							["time"] = 1628000581,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:158476:0|h[丛林之魂]|h|r。",
 						}, -- [126]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610981361,
-							["arg1"] = "你现在没有在一个队伍中",
+							["time"] = 1628000581,
+							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:52610:0|h[野蛮咆哮]|h|r",
 						}, -- [127]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610981377,
-							["arg1"] = "你忘却了|cff71d5ff|Hspell:102401:0|h[野性冲锋]|h|r。",
+							["time"] = 1628000581,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:52610:0|h[野蛮咆哮]|h|r。",
 						}, -- [128]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610981377,
-							["arg1"] = "你学会新的法术：|cff71d5ff|Hspell:108238:0|h[甘霖]|h|r",
+							["time"] = 1628000581,
+							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:158476:0|h[丛林之魂]|h|r。",
 						}, -- [129]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983102,
-							["arg1"] = "|Hplayer:通臂拳|h[通臂拳]|h上线了。",
+							["time"] = 1628000683,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:319454:0|h[野性之心]|h|r。",
 						}, -- [130]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983137,
-							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:102560:0|h[化身：艾露恩之眷]|h|r",
+							["time"] = 1628000683,
+							["arg1"] = "你学会新的法术：|cff71d5ff|Hspell:102359:0|h[群体缠绕]|h|r",
 						}, -- [131]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983138,
-							["arg1"] = "你学会新的法术：|cff71d5ff|Hspell:202347:0|h[星辰耀斑]|h|r",
+							["time"] = 1628000685,
+							["arg1"] = "你忘却了|cff71d5ff|Hspell:102359:0|h[群体缠绕]|h|r。",
 						}, -- [132]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983151,
-							["arg1"] = "你忘却了|cff71d5ff|Hspell:102560:0|h[化身：艾露恩之眷]|h|r。",
+							["time"] = 1628000685,
+							["arg1"] = "你学会新的技能：|cff71d5ff|Hspell:5211:0|h[蛮力猛击]|h|r",
 						}, -- [133]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983232,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1628002167,
+							["arg1"] = "你赢得了对虹色琥珀鱼的竞标（15）",
 						}, -- [134]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983366,
-							["arg1"] = "你邀请Abell加入你的公会。",
+							["time"] = 1628002249,
+							["arg1"] = "你赢得了对荒革的竞标（396）",
 						}, -- [135]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983387,
-							["arg1"] = "你已经加入了托加斯特：灵魂熔炉（难度7）的队列。",
+							["time"] = 1628002424,
+							["arg1"] = "你已经学会了制作新物品：影缚护手",
 						}, -- [136]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983389,
-							["arg1"] = "地下城难度已设置为托加斯特。",
+							["time"] = 1628002425,
+							["arg1"] = "你已经学会了制作新物品：影鳞护手",
 						}, -- [137]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983395,
-							["arg1"] = "你现在没有在一个队伍中",
+							["time"] = 1628002425,
+							["arg1"] = "你已经学会了制作新物品：厚荒革",
 						}, -- [138]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983405,
-							["arg1"] = "你忘却了|cff71d5ff|Hspell:102401:0|h[野性冲锋]|h|r。",
+							["time"] = 1628002469,
+							["arg1"] = "你已经学会了制作新物品：影缚头盔",
 						}, -- [139]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983405,
-							["arg1"] = "你学会新的法术：|cff71d5ff|Hspell:108238:0|h[甘霖]|h|r",
+							["time"] = 1628002469,
+							["arg1"] = "你已经学会了制作新物品：影鳞头盔",
 						}, -- [140]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983772,
-							["arg1"] = "啾啾丶啾啾下线了。",
+							["time"] = 1628002469,
+							["arg1"] = "你已经学会了制作新物品：厚茧皮",
 						}, -- [141]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610983786,
-							["arg1"] = "|Hplayer:槐雪如风|h[槐雪如风]|h上线了。",
+							["time"] = 1628002470,
+							["arg1"] = "你已经学会了制作新物品：舒心驭手骑甲",
 						}, -- [142]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610984602,
-							["arg1"] = "|cff71d5ff|Hdeath:1|h[你已死亡。]|h",
+							["time"] = 1628002470,
+							["arg1"] = "你已经学会了制作新物品：影缚外套",
 						}, -- [143]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610984865,
-							["arg1"] = "你学会新的法术：|cff71d5ff|Hspell:202347:0|h[星辰耀斑]|h|r",
+							["time"] = 1628002471,
+							["arg1"] = "你已经学会了制作新物品：影鳞外套",
 						}, -- [144]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610984948,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1628002555,
+							["arg1"] = "你已经学会了制作新物品：影缚护胫",
 						}, -- [145]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610985292,
-							["arg1"] = "你现在处于离开状态：离开",
+							["time"] = 1628002556,
+							["arg1"] = "你已经学会了制作新物品：影鳞护胫",
 						}, -- [146]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1610985305,
-							["arg1"] = "Valkeuterpe下线了。",
+							["arg1"] = " ",
 						}, -- [147]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1610985870,
-							["arg1"] = "你不再处于离开状态。",
+							["arg1"] = " ",
 						}, -- [148]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986414,
-							["arg1"] = "无魂躯壳完成。",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [149]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986414,
-							["arg1"] = "获得51金币, 48银币。",
+							["time"] = 1628003550,
+							["arg1"] = "芃芃其麦下线了。",
 						}, -- [150]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986457,
-							["arg1"] = "接受任务：观察合作",
+							["time"] = 1628003571,
+							["arg1"] = "|Hplayer:漫雨飞花|h[漫雨飞花]|h上线了。",
 						}, -- [151]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986459,
-							["arg1"] = "接受任务：观察战争",
+							["time"] = 1628003644,
+							["arg1"] = "你赢得了对林荫小路雕文的竞标（1）",
 						}, -- [152]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986466,
-							["arg1"] = "狮王的线索完成。",
+							["time"] = 1628003836,
+							["arg1"] = "小灰灰下线了。",
 						}, -- [153]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986466,
-							["arg1"] = "获得102金币, 96银币。",
+							["time"] = 1628003912,
+							["arg1"] = "你已加入团队查找队列。",
 						}, -- [154]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986468,
-							["arg1"] = "接受任务：王入敌手",
+							["time"] = 1628003918,
+							["arg1"] = "你已离开队列。",
 						}, -- [155]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986478,
-							["arg1"] = "王入敌手完成。",
+							["time"] = 1628003969,
+							["arg1"] = "|Hplayer:彼岸丶花开|h[彼岸丶花开]|h邀请你加入队伍。",
 						}, -- [156]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986478,
-							["arg1"] = "获得25金币, 74银币。",
+							["time"] = 1628003971,
+							["arg1"] = "地下城难度已设置为史诗。",
 						}, -- [157]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986643,
-							["arg1"] = "心能回收完成。",
+							["time"] = 1628003998,
+							["arg1"] = "小队转化为团队",
 						}, -- [158]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986644,
-							["arg1"] = "带回失落之魂完成。",
+							["time"] = 1628003998,
+							["arg1"] = "团队副本难度设置为史诗。",
 						}, -- [159]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986644,
-							["arg1"] = "获得51金币, 48银币。",
+							["time"] = 1628003998,
+							["arg1"] = "已将经典旧世团队副本难度设置为25人。",
 						}, -- [160]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986644,
-							["arg1"] = "你学会了新的被动效果：|cff71d5ff|Hspell:344089:0|h[深厚联结]|h|r。",
+							["time"] = 1628004059,
+							["arg1"] = "晒月亮补爱现在是队长",
 						}, -- [161]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986683,
-							["arg1"] = "|Hplayer:哈尼斯斯|h[哈尼斯斯]|h上线了。",
+							["time"] = 1628004113,
+							["arg1"] = "|Hplayer:蘭小蘭|h[蘭小蘭]|h: 等级 60 血精灵 潜行者 <绘梦之约> - 奥利波斯",
 						}, -- [162]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1610986701,
-							["arg1"] = "获得260金币, 22银币。",
+							["time"] = 1628004113,
+							["arg1"] = "共计1个玩家",
 						}, -- [163]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1628004113,
+							["arg1"] = "共计0个玩家",
 						}, -- [164]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1628004113,
+							["arg1"] = "共计0个玩家",
 						}, -- [165]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/19/2021 的 21:34:05。",
+							["time"] = 1628004129,
+							["arg1"] = "蘭小蘭已经加入了一个公会",
 						}, -- [166]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611063263,
-							["arg1"] = "有爱插件助力9.0 回帖赢月卡和萨尔雕像",
+							["time"] = 1628004362,
+							["arg1"] = "团队转化为小队",
 						}, -- [167]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611063263,
-							["arg1"] = "复制链接到浏览器参与：",
+							["time"] = 1628004362,
+							["arg1"] = "地下城难度已设置为史诗。",
 						}, -- [168]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611063263,
-							["arg1"] = "http://dwz.date/dnvt",
+							["time"] = 1628004400,
+							["arg1"] = "彼岸丶花开现在是队长",
 						}, -- [169]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611063371,
-							["arg1"] = "接受任务：协助玛卓克萨斯",
+							["time"] = 1628004516,
+							["arg1"] = "彼岸丶花开开始进行就位确认。",
 						}, -- [170]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611063384,
-							["arg1"] = "接受任务：家园的麻烦",
+							["time"] = 1628004585,
+							["arg1"] = "漫雨飞花下线了。",
 						}, -- [171]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1628004600,
+							["arg1"] = "|Hplayer:Valkeuterpe|h[Valkeuterpe]|h上线了。",
 						}, -- [172]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["time"] = 1628004643,
+							["arg1"] = "蘭小蘭已经死亡。",
 						}, -- [173]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
 							["type"] = "SYSTEM",
+							["time"] = 1628004672,
+							["arg1"] = "蘭小蘭已经死亡。",
 						}, -- [174]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067376,
-							["arg1"] = "|Hplayer:哈尼斯斯|h[哈尼斯斯]|h上线了。",
+							["time"] = 1628004673,
+							["arg1"] = "|cff71d5ff|Hdeath:1|h[你已死亡。]|h",
 						}, -- [175]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067377,
-							["arg1"] = "有爱插件助力9.0 回帖赢月卡和萨尔雕像",
+							["time"] = 1628004677,
+							["arg1"] = "竹月已经死亡。",
 						}, -- [176]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067377,
-							["arg1"] = "复制链接到浏览器参与：",
+							["time"] = 1628004701,
+							["arg1"] = "|cff71d5ff|Hdeath:2|h[你已死亡。]|h",
 						}, -- [177]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067377,
-							["arg1"] = "http://dwz.date/dnvt",
+							["time"] = 1628004715,
+							["arg1"] = "蘭小蘭已经死亡。",
 						}, -- [178]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067393,
-							["arg1"] = "你邀请哈尼斯斯加入你的队伍",
+							["time"] = 1628004715,
+							["arg1"] = "|cff71d5ff|Hdeath:3|h[你已死亡。]|h",
 						}, -- [179]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067393,
-							["arg1"] = "地下城难度已设置为史诗。",
+							["time"] = 1628004724,
+							["arg1"] = "彼岸丶花开已经死亡。",
 						}, -- [180]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067395,
-							["arg1"] = "哈尼斯斯加入了队伍。",
+							["time"] = 1628004726,
+							["arg1"] = "晒月亮补爱已经死亡。",
 						}, -- [181]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067397,
-							["arg1"] = "哈尼斯斯现在是队长",
+							["time"] = 1628005053,
+							["arg1"] = "竹月已经死亡。",
 						}, -- [182]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067518,
-							["arg1"] = "大呆萌德-寒冰皇冠加入了队伍。",
+							["time"] = 1628005329,
+							["arg1"] = "竹月已经死亡。",
 						}, -- [183]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067563,
-							["arg1"] = "你现在是队长",
+							["time"] = 1628005427,
+							["arg1"] = "|cff71d5ff|Hdeath:4|h[你已死亡。]|h",
 						}, -- [184]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067651,
-							["arg1"] = "|Hplayer:Exnatural|h[Exnatural]|h上线了。",
+							["time"] = 1628005481,
+							["arg1"] = "竹月已经死亡。",
 						}, -- [185]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067825,
-							["arg1"] = "哈尼斯斯下线了。",
+							["time"] = 1628005839,
+							["arg1"] = "Valkeuterpe下线了。",
 						}, -- [186]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067868,
-							["arg1"] = "|Hplayer:哈尼斯斯|h[哈尼斯斯]|h上线了。",
+							["time"] = 1628005852,
+							["arg1"] = "|Hplayer:Valkdiana|h[Valkdiana]|h上线了。",
 						}, -- [187]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611067923,
-							["arg1"] = "丶臭弟弟丶-丽丽（四川）加入了队伍。",
+							["time"] = 1628005923,
+							["arg1"] = "Valkdiana下线了。",
 						}, -- [188]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611068031,
-							["arg1"] = "少年丶来搞基-血色十字军加入了队伍。",
+							["time"] = 1628005941,
+							["arg1"] = "|Hplayer:漫雨飞花|h[漫雨飞花]|h上线了。",
 						}, -- [189]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611068183,
-							["arg1"] = "开始就位确认…",
+							["time"] = 1628005963,
+							["arg1"] = "漫雨飞花下线了。",
 						}, -- [190]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611068187,
-							["arg1"] = "所有人都已准备就绪",
+							["time"] = 1628005979,
+							["arg1"] = "|Hplayer:芃芃其麦|h[芃芃其麦]|h上线了。",
 						}, -- [191]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611068929,
-							["arg1"] = "哈尼斯斯已经死亡。",
+							["time"] = 1628006052,
+							["arg1"] = "竹月已经死亡。",
 						}, -- [192]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611068973,
-							["arg1"] = "Exnatural下线了。",
+							["time"] = 1628006068,
+							["arg1"] = "芃芃其麦下线了。",
 						}, -- [193]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069225,
-							["arg1"] = "啾啾丶啾啾下线了。",
+							["time"] = 1628006108,
+							["arg1"] = "竹月已经死亡。",
 						}, -- [194]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069464,
-							["arg1"] = "|Hplayer:啾啾丶啾啾|h[啾啾丶啾啾]|h上线了。",
+							["time"] = 1628006121,
+							["arg1"] = "蘭小蘭已经死亡。",
 						}, -- [195]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069486,
-							["arg1"] = "罌僳埖丶塮下线了。",
+							["time"] = 1628006393,
+							["arg1"] = "|Hplayer:Valkeuterpe|h[Valkeuterpe]|h上线了。",
 						}, -- [196]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069533,
-							["arg1"] = "啾啾丶啾啾下线了。",
+							["time"] = 1628006437,
+							["arg1"] = "彼岸丶花开离开了队伍。",
 						}, -- [197]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069546,
-							["arg1"] = "|Hplayer:槐雪如风|h[槐雪如风]|h上线了。",
+							["time"] = 1628006437,
+							["arg1"] = "竹月现在是队长",
 						}, -- [198]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069748,
-							["arg1"] = "|cffff80ff|Htransmogappearance:111509|h[无畏挑战者的护腿]|h|r已加入了你的外观收藏。",
+							["time"] = 1628006445,
+							["arg1"] = "彼岸丶花开加入了队伍。",
 						}, -- [199]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069783,
-							["arg1"] = "你对少年丶来搞基-血色十字军发出交易请求",
+							["time"] = 1628007068,
+							["arg1"] = "晒月亮补爱下线了。",
 						}, -- [200]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069787,
-							["arg1"] = "大呆萌德-寒冰皇冠离开了队伍。",
+							["time"] = 1628007124,
+							["arg1"] = "彼岸丶花开下线了。",
 						}, -- [201]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069790,
-							["arg1"] = "|cffff80ff|Htransmogappearance:111509|h[无畏挑战者的护腿]|h|r已从你的外观收藏中移除。",
+							["time"] = 1628007142,
+							["arg1"] = "你离开了队伍。",
 						}, -- [202]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069808,
-							["arg1"] = "哈尼斯斯离开了队伍。",
+							["time"] = 1628007142,
+							["arg1"] = "你现在没有在一个队伍中",
 						}, -- [203]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069817,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1628007142,
+							["arg1"] = "你现在没有在一个队伍中",
 						}, -- [204]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069847,
-							["arg1"] = "你邀请哈尼斯斯加入你的队伍",
+							["time"] = 1628007249,
+							["arg1"] = "获得265金币, 1银币。",
 						}, -- [205]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069847,
-							["arg1"] = "地下城难度已设置为史诗。",
+							["time"] = 1628007250,
+							["arg1"] = "获得297金币, 15银币。",
 						}, -- [206]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611069848,
-							["arg1"] = "哈尼斯斯加入了队伍。",
+							["time"] = 1628007317,
+							["arg1"] = "175份心能灌注进了心能储备。",
 						}, -- [207]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1611069851,
-							["arg1"] = "哈尼斯斯现在是队长",
+							["arg1"] = " ",
 						}, -- [208]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1611069853,
-							["arg1"] = "大呆萌德-寒冰皇冠加入了队伍。",
+							["arg1"] = " ",
 						}, -- [209]
 						{
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
 							["type"] = "SYSTEM",
-							["time"] = 1611070014,
-							["arg1"] = "补充储备完成。",
 						}, -- [210]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070014,
-							["arg1"] = "获得102金币, 96银币。",
+							["time"] = 1628076339,
+							["arg1"] = "地下城难度已设置为史诗。",
 						}, -- [211]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070014,
-							["arg1"] = "你现在是队长",
+							["time"] = 1628076362,
+							["arg1"] = "数个三二一-安苏加入了队伍。",
 						}, -- [212]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070020,
-							["arg1"] = "35份心能灌注进了心能储备。",
+							["time"] = 1628076461,
+							["arg1"] = "大米恶魔-燃烧之刃加入了队伍。",
 						}, -- [213]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070179,
-							["arg1"] = "暮光尐夫君-萨菲隆加入了队伍。",
+							["time"] = 1628076473,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [214]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070187,
-							["arg1"] = "暮光尐夫君-萨菲隆离开了队伍。",
+							["time"] = 1628076621,
+							["arg1"] = "接受任务：协助雷文德斯",
 						}, -- [215]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070192,
-							["arg1"] = "钟孖期-影之哀伤加入了队伍。",
+							["time"] = 1628076641,
+							["arg1"] = "你在副本塞兹仙林的迷雾中的锁定状态将在11小时后结束。",
 						}, -- [216]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070194,
-							["arg1"] = "皂壮壮-燃烧平原加入了队伍。",
+							["time"] = 1628076668,
+							["arg1"] = "此角色不取名-奥尔加隆开始进行就位确认。",
 						}, -- [217]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070215,
-							["arg1"] = "哈尼斯斯现在是队长",
+							["time"] = 1628076819,
+							["arg1"] = "大米恶魔已经死亡。",
 						}, -- [218]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070231,
-							["arg1"] = "你现在是队长",
+							["time"] = 1628076824,
+							["arg1"] = "|cff71d5ff|Hdeath:1|h[你已死亡。]|h",
 						}, -- [219]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070376,
-							["arg1"] = "开始就位确认…",
+							["time"] = 1628076835,
+							["arg1"] = "此角色不取名已经死亡。",
 						}, -- [220]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070379,
-							["arg1"] = "所有人都已准备就绪",
+							["time"] = 1628076883,
+							["arg1"] = "数个三二一已经死亡。",
 						}, -- [221]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070433,
-							["arg1"] = "哈尼斯斯已经死亡。",
+							["time"] = 1628076890,
+							["arg1"] = "深秋之黎明已经死亡。",
 						}, -- [222]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070546,
-							["arg1"] = "|Hplayer:playeratbqlv|h[playeratbqlv]|h上线了。",
+							["time"] = 1628076893,
+							["arg1"] = "此角色不取名已经死亡。",
 						}, -- [223]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070666,
-							["arg1"] = "playeratbqlv下线了。",
+							["time"] = 1628076895,
+							["arg1"] = "|cff71d5ff|Hdeath:2|h[你已死亡。]|h",
 						}, -- [224]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070675,
-							["arg1"] = "|Hplayer:罌僳埖丶塮|h[罌僳埖丶塮]|h上线了。",
+							["time"] = 1628076895,
+							["arg1"] = "大米恶魔已经死亡。",
 						}, -- [225]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070696,
-							["arg1"] = "罌僳埖丶塮下线了。",
+							["time"] = 1628077970,
+							["arg1"] = "|cff71d5ff|Hdeath:3|h[你已死亡。]|h",
 						}, -- [226]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611070981,
-							["arg1"] = "皂壮壮已经死亡。",
+							["time"] = 1628078330,
+							["arg1"] = "数个三二一已经死亡。",
 						}, -- [227]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071043,
-							["arg1"] = "哈尼斯斯已经死亡。",
+							["time"] = 1628078662,
+							["arg1"] = "数个三二一已经死亡。",
 						}, -- [228]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071058,
-							["arg1"] = "大呆萌德已经死亡。",
+							["time"] = 1628078729,
+							["arg1"] = "大米恶魔-燃烧之刃离开了队伍。",
 						}, -- [229]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071062,
-							["arg1"] = "皂壮壮已经死亡。",
+							["time"] = 1628078745,
+							["arg1"] = "数个三二一-安苏离开了队伍。",
 						}, -- [230]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071062,
-							["arg1"] = "哈尼斯斯已经死亡。",
+							["time"] = 1628078768,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [231]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071068,
-							["arg1"] = "|cff71d5ff|Hdeath:1|h[你已死亡。]|h",
+							["time"] = 1628078814,
+							["arg1"] = "此角色不取名-奥尔加隆离开了队伍。",
 						}, -- [232]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071587,
-							["arg1"] = "槐雪如风下线了。",
+							["time"] = 1628078814,
+							["arg1"] = "深秋之黎明-埃德萨拉现在是队长",
 						}, -- [233]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071600,
-							["arg1"] = "|Hplayer:啾啾丶啾啾|h[啾啾丶啾啾]|h上线了。",
+							["time"] = 1628079026,
+							["arg1"] = "你现在是队长",
 						}, -- [234]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071638,
-							["arg1"] = "皂壮壮已经死亡。",
+							["time"] = 1628079124,
+							["arg1"] = "|Hplayer:芃芃其麦|h[芃芃其麦]|h上线了。",
 						}, -- [235]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071653,
-							["arg1"] = "啾啾丶啾啾下线了。",
+							["time"] = 1628079153,
+							["arg1"] = "你现在处于离开状态：离开",
 						}, -- [236]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1611071665,
-							["arg1"] = "|Hplayer:槐雪如风|h[槐雪如风]|h上线了。",
+							["arg1"] = " ",
 						}, -- [237]
 						{
-							["type"] = "SYSTEM",
-							["time"] = 1611071746,
-							["arg1"] = "夜莺轻啼，不觉中，夜幕已包裹住艾泽拉斯的领土。结束了一天的冒险，愿艾露恩赐您美梦。晚安，勇士们。",
+							["arg1"] = " ",
 						}, -- [238]
 						{
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
 							["type"] = "SYSTEM",
-							["time"] = 1611071793,
-							["arg1"] = "|cffff80ff|Htransmogappearance:114079|h[金秋花床王冠]|h|r已加入了你的外观收藏。",
 						}, -- [239]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071814,
-							["arg1"] = "钟孖期-影之哀伤离开了队伍。",
+							["time"] = 1628163491,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [240]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071816,
-							["arg1"] = "你对哈尼斯斯发出交易请求",
+							["time"] = 1628163528,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [241]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071822,
-							["arg1"] = "皂壮壮-燃烧平原离开了队伍。",
+							["time"] = 1628163575,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [242]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071828,
-							["arg1"] = "|cffff80ff|Htransmogappearance:114079|h[金秋花床王冠]|h|r已从你的外观收藏中移除。",
+							["time"] = 1628163598,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [243]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071829,
-							["arg1"] = "|cff0070dd|Hbattlepet:3044:1:3:151:13:10:BattlePet-0-0000086FE53D:99850|h[锥喉戈姆蛴]|h|r已加入了你的宠物手册！",
+							["time"] = 1628163617,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [244]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611071840,
-							["arg1"] = "无法重置塞兹仙林的迷雾，该副本中仍有玩家。",
+							["time"] = 1628163658,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [245]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611072166,
-							["arg1"] = "你现在处于离开状态：离开",
+							["time"] = 1628163743,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [246]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611072185,
-							["arg1"] = "哈尼斯斯下线了。",
+							["time"] = 1628163760,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [247]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611072309,
-							["arg1"] = "你不再处于离开状态。",
+							["time"] = 1628163782,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [248]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611072337,
-							["arg1"] = "你离开了队伍。",
+							["time"] = 1628163798,
+							["arg1"] = "尐红豆开始变得冷静下来了。",
 						}, -- [249]
 						{
 							["type"] = "SYSTEM",
-							["time"] = 1611072396,
-							["arg1"] = "35份心能灌注进了心能储备。",
+							["time"] = 1628163803,
+							["arg1"] = "与尼娅处于灵魂羁绊状态。",
 						}, -- [250]
 					},
 				}, -- [9]
 				{
 					["enabled"] = true,
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["name"] = "成就",
 					["logs"] = {
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607172491,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14198:Player-1500-0417F13B:1:12:5:20:4294967295:4294967295:4294967295:4294967295|h[赤红深渊（英雄难度）]|h|r！",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [1]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607172491,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14199:Player-1500-0417F13B:1:12:5:20:4294967295:4294967295:4294967295:4294967295|h[赤红深渊（史诗难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [2]
-						{
-							["arg1"] = " ",
-						}, -- [3]
-						{
-							["arg1"] = " ",
-						}, -- [4]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/05/2020 的 20:55:49。",
-						}, -- [5]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607173934,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14374:Player-1500-0417F13B:1:12:5:20:4294967295:4294967295:4294967295:4294967295|h[伴侣咨询]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [6]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607174729,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14373:Player-1500-0417F13B:1:12:5:20:4294967295:4294967295:4294967295:4294967295|h[彼界]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [7]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607174729,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14408:Player-1500-0417F13B:1:12:5:20:4294967295:4294967295:4294967295:4294967295|h[彼界（英雄难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [8]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607174729,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14409:Player-1500-0417F13B:1:12:5:20:4294967295:4294967295:4294967295:4294967295|h[彼界（史诗难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [9]
-						{
-							["arg1"] = " ",
-						}, -- [10]
-						{
-							["arg1"] = " ",
-						}, -- [11]
-						{
-							["arg1"] = "记录开始于 12/06/2020 的 21:55:42。",
-							["type"] = "SYSTEM",
-						}, -- [12]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607263463,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:974:Player-1500-05B0C83A:1:12:6:20:4294967295:4294967295:4294967295:4294967295|h[完成50个日常任务]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [13]
-						{
-							["arg1"] = " ",
-						}, -- [14]
-						{
-							["arg1"] = " ",
-						}, -- [15]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/06/2020 的 22:55:41。",
-						}, -- [16]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607267449,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14659:Player-1500-0417F13B:1:12:6:20:4294967295:4294967295:4294967295:4294967295|h[解决手下]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [17]
-						{
-							["arg2"] = "火爆腰花丶-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607267459,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14488:Player-1500-03809D5C:1:12:6:20:4294967295:4294967295:4294967295:4294967295|h[莫尔特雷加]|h|r！",
-							["clColor"] = "ffc59a6c",
-						}, -- [18]
-						{
-							["arg1"] = " ",
-						}, -- [19]
-						{
-							["arg1"] = " ",
-						}, -- [20]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/07/2020 的 19:19:05。",
-						}, -- [21]
-						{
-							["arg2"] = "槐雪如风-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607340767,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14371:Player-1500-04DB6C4D:1:12:7:20:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾]|h|r！",
-							["clColor"] = "ffc59a6c",
-						}, -- [22]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607342187,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14499:Player-1500-0417F13B:1:12:7:20:4294967295:4294967295:4294967295:4294967295|h[幻惑]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [23]
-						{
-							["arg1"] = " ",
-						}, -- [24]
-						{
-							["arg1"] = " ",
-						}, -- [25]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/12/2020 的 11:03:31。",
-						}, -- [26]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607744478,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14835:Player-1500-0417F13B:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[果敢羁绊]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [27]
-						{
-							["arg1"] = " ",
-						}, -- [28]
-						{
-							["arg1"] = " ",
-						}, -- [29]
-						{
-							["arg1"] = "记录开始于 12/12/2020 的 21:32:51。",
-							["type"] = "SYSTEM",
-						}, -- [30]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607780688,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14366:Player-1500-05B55FA4:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[通灵战潮]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [31]
-						{
-							["arg2"] = "火爆腰花丶-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607781344,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14773:Player-1500-03809D5C:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[暴力灭鼠]|h|r！",
-							["clColor"] = "ffc59a6c",
-						}, -- [32]
-						{
-							["arg2"] = "火爆腰花丶-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607781936,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14463:Player-1500-03809D5C:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[斯科杜斯之厅]|h|r！",
-							["clColor"] = "ffc59a6c",
-						}, -- [33]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607784083,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14483:Player-1500-0417F13B:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[凇心间隙]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [34]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607784290,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14410:Player-1500-01F85A11:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[赎罪大厅（英雄难度）]|h|r！",
-							["clColor"] = "ff3ec6ea",
-						}, -- [35]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607784290,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14411:Player-1500-01F85A11:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[赎罪大厅（史诗难度）]|h|r！",
-							["clColor"] = "ff3ec6ea",
-						}, -- [36]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607785249,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14796:Player-1500-01F85A11:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[精良]|h|r！",
-							["clColor"] = "ff3ec6ea",
-						}, -- [37]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607785814,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14370:Player-1500-05B55FA4:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[赎罪大厅]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [38]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607786731,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14366:Player-1500-0417F13B:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[通灵战潮]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [39]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607786731,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14367:Player-1500-0417F13B:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[通灵战潮（英雄难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [40]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607786731,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14368:Player-1500-0417F13B:1:12:12:20:4294967295:4294967295:4294967295:4294967295|h[通灵战潮（史诗难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [41]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607789077,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14369:Player-1500-05B55FA4:1:12:13:20:4294967295:4294967295:4294967295:4294967295|h[凋魂之殇]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [42]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607789842,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14326:Player-1500-0417F13B:1:12:13:20:4294967295:4294967295:4294967295:4294967295|h[晋升高塔]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [43]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607789842,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14324:Player-1500-0417F13B:1:12:13:20:4294967295:4294967295:4294967295:4294967295|h[晋升高塔（英雄难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [44]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607789842,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14325:Player-1500-0417F13B:1:12:13:20:4294967295:4294967295:4294967295:4294967295|h[晋升高塔（史诗难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [45]
-						{
-							["arg1"] = " ",
-						}, -- [46]
-						{
-							["arg1"] = " ",
-						}, -- [47]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/13/2020 的 15:49:44。",
-						}, -- [48]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607845802,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:11183:Player-1500-05B0C83A:1:12:13:20:4294967295:4294967295:4294967295:4294967295|h[钥石新人]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [49]
-						{
-							["arg1"] = " ",
-						}, -- [50]
-						{
-							["arg1"] = " ",
-						}, -- [51]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/13/2020 的 20:44:43。",
-						}, -- [52]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607863736,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14835:Player-1500-01F85A11:1:12:13:20:4294967295:4294967295:4294967295:4294967295|h[果敢羁绊]|h|r！",
-							["clColor"] = "ff3ec6ea",
-						}, -- [53]
-						{
-							["arg1"] = " ",
-						}, -- [54]
-						{
-							["arg1"] = " ",
-						}, -- [55]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/14/2020 的 23:37:00。",
-						}, -- [56]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1607963317,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14463:Player-1500-0417F13B:1:12:15:20:4294967295:4294967295:4294967295:4294967295|h[斯科杜斯之厅]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [57]
-						{
-							["arg1"] = " ",
-						}, -- [58]
-						{
-							["arg1"] = " ",
-						}, -- [59]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/15/2020 的 23:05:04。",
-						}, -- [60]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608045975,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14759:Player-1500-0417F13B:1:12:15:20:4294967295:4294967295:4294967295:4294967295|h[我想起来了……]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [61]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608046103,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14755:Player-1500-0417F13B:1:12:15:20:4294967295:4294967295:4294967295:4294967295|h[传说协作]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [62]
-						{
-							["arg1"] = " ",
-						}, -- [63]
-						{
-							["arg1"] = " ",
-						}, -- [64]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/17/2020 的 20:13:30。",
-						}, -- [65]
-						{
-							["arg2"] = "猛猪突进-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608207694,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14840:Player-1500-04D697C8:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[冒险：新手上路]|h|r！",
-							["clColor"] = "ffc59a6c",
-						}, -- [66]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608208439,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14367:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[通灵战潮（英雄难度）]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [67]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608208601,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:1177:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[积少成多]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [68]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608209501,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14412:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾（英雄难度）]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [69]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608209501,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:4476:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[1Q4，来的密]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [70]
-						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608211158,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14324:Player-1500-05B52160:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[晋升高塔（英雄难度）]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [71]
-						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608211158,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14325:Player-1500-05B52160:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[晋升高塔（史诗难度）]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [72]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608211864,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14372:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[伤逝剧场]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [73]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608211864,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14416:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[伤逝剧场（英雄难度）]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [74]
-						{
-							["arg2"] = "ECUSTSinoGerman",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608213487,
-							["arg1"] = "\"ECUSTSinoGerman\"获得了成就|cffffff00|Hachievement:14380:Guild-1500-0000027136C5:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[史诗：赎罪大厅（公会版）]|h|r！",
-						}, -- [75]
-						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608213487,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14410:Player-1500-05B52160:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[赎罪大厅（英雄难度）]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [76]
-						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608213487,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14411:Player-1500-05B52160:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[赎罪大厅（史诗难度）]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [77]
-						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608213773,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14796:Player-1500-05B52160:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[精良]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [78]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608213964,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14373:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[彼界]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [79]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608213964,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14408:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[彼界（英雄难度）]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [80]
-						{
-							["arg1"] = " ",
-						}, -- [81]
-						{
-							["arg1"] = " ",
-						}, -- [82]
-						{
-							["arg1"] = "记录开始于 12/17/2020 的 22:42:26。",
-							["type"] = "SYSTEM",
-						}, -- [83]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608216394,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:1178:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[积少成多]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [84]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608216697,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14628:Player-1500-05B0C83A:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[名望之路]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [85]
-						{
-							["arg2"] = "ECUSTSinoGerman",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608218702,
-							["arg1"] = "\"ECUSTSinoGerman\"获得了成就|cffffff00|Hachievement:14379:Guild-1500-0000027136C5:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[史诗：彼界（公会版）]|h|r！",
-						}, -- [86]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608218957,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14417:Player-1500-05B55FA4:1:12:17:20:4294967295:4294967295:4294967295:4294967295|h[伤逝剧场（史诗难度）]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [87]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608221259,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14409:Player-1500-05B55FA4:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[彼界（史诗难度）]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [88]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608221259,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:11183:Player-1500-05B55FA4:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[钥石新人]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [89]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608221276,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14796:Player-1500-05B0C83A:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[精良]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [90]
-						{
-							["arg1"] = " ",
-						}, -- [91]
-						{
-							["arg1"] = " ",
-						}, -- [92]
-						{
-							["arg1"] = "记录开始于 12/18/2020 的 20:20:02。",
-							["type"] = "SYSTEM",
-						}, -- [93]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608294671,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14845:Player-1500-0417F13B:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[冒险：初登正途]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [94]
-						{
-							["arg1"] = " ",
-						}, -- [95]
-						{
-							["arg1"] = " ",
-						}, -- [96]
-						{
-							["arg1"] = "记录开始于 12/18/2020 的 20:44:46。",
-							["type"] = "SYSTEM",
-						}, -- [97]
-						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608297955,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14628:Player-1500-04B43C9F:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[名望之路]|h|r！",
-							["clColor"] = "ff006fdc",
-						}, -- [98]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608298411,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14746:Player-1500-05B0C83A:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[麻烦上身！]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [99]
-						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608299951,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14371:Player-1500-04B43C9F:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾]|h|r！",
-							["clColor"] = "ff006fdc",
-						}, -- [100]
-						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608299951,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14412:Player-1500-04B43C9F:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾（英雄难度）]|h|r！",
-							["clColor"] = "ff006fdc",
-						}, -- [101]
-						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608299951,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14413:Player-1500-04B43C9F:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾（史诗难度）]|h|r！",
-							["clColor"] = "ff006fdc",
-						}, -- [102]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608300240,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14493:Player-1500-0417F13B:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[上层区域]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [103]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608300477,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:1180:Player-1500-05B0C83A:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[积少成多]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [104]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608300833,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14628:Player-1500-0417F13B:1:12:18:20:4294967295:4294967295:4294967295:4294967295|h[名望之路]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [105]
-						{
-							["arg1"] = " ",
-						}, -- [106]
-						{
-							["arg1"] = " ",
-						}, -- [107]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/18/2020 的 22:45:56。",
-						}, -- [108]
-						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608307688,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14659:Player-1500-01F95214:1:12:19:20:4294967295:4294967295:4294967295:4294967295|h[解决手下]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [109]
-						{
-							["arg1"] = " ",
-						}, -- [110]
-						{
-							["arg1"] = " ",
-						}, -- [111]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/19/2020 的 22:32:54。",
-						}, -- [112]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608390320,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14797:Player-1500-05B0C83A:1:12:19:20:4294967295:4294967295:4294967295:4294967295|h[史诗]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [113]
-						{
-							["arg2"] = "Exmist-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608391252,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:11213:Player-1500-04B4384A:1:12:19:20:4294967295:4294967295:4294967295:4294967295|h[号令千军]|h|r！",
-							["clColor"] = "ff00fe97",
-						}, -- [114]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608391384,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14800:Player-1500-0417F13B:1:12:19:20:4294967295:4294967295:4294967295:4294967295|h[旅居炽蓝仙野]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [115]
-						{
-							["arg1"] = " ",
-						}, -- [116]
-						{
-							["arg1"] = " ",
-						}, -- [117]
-						{
-							["arg1"] = "记录开始于 12/20/2020 的 16:52:07。",
-							["type"] = "SYSTEM",
-						}, -- [118]
-						{
-							["arg2"] = "罂僳埖丶謝-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608454580,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14414:Player-1500-01F4530E:1:12:20:20:4294967295:4294967295:4294967295:4294967295|h[凋魂之殇（英雄难度）]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [119]
-						{
-							["arg2"] = "罂僳埖丶謝-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608454580,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14418:Player-1500-01F4530E:1:12:20:20:4294967295:4294967295:4294967295:4294967295|h[暗影界地下城英雄]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [120]
-						{
-							["arg1"] = " ",
-						}, -- [121]
-						{
-							["arg1"] = " ",
-						}, -- [122]
-						{
-							["arg1"] = "记录开始于 12/20/2020 的 21:55:38。",
-							["type"] = "SYSTEM",
-						}, -- [123]
-						{
-							["arg2"] = "Valkeuterpe-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608472854,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14297:Player-1500-01F95214:1:12:20:20:4294967295:4294967295:4294967295:4294967295|h[三选一]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [124]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608476264,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14754:Player-1500-05B55FA4:1:12:20:20:4294967295:4294967295:4294967295:4294967295|h[被忘却者]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [125]
-						{
-							["arg1"] = " ",
-						}, -- [126]
-						{
-							["arg1"] = " ",
-						}, -- [127]
-						{
-							["arg1"] = "记录开始于 12/21/2020 的 20:05:08。",
-							["type"] = "SYSTEM",
-						}, -- [128]
-						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608552593,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14415:Player-1500-04B43C9F:1:12:21:20:4294967295:4294967295:4294967295:4294967295|h[凋魂之殇（史诗难度）]|h|r！",
-							["clColor"] = "ff006fdc",
-						}, -- [129]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608553257,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14499:Player-1500-05B55FA4:1:12:21:20:4294967295:4294967295:4294967295:4294967295|h[幻惑]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [130]
-						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608557145,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14417:Player-1500-05B52160:1:12:21:20:4294967295:4294967295:4294967295:4294967295|h[伤逝剧场（史诗难度）]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [131]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608558033,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14303:Player-1500-0417F13B:1:12:21:20:4294967295:4294967295:4294967295:4294967295|h[探索晋升堡垒]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [132]
-						{
-							["arg1"] = " ",
-						}, -- [133]
-						{
-							["arg1"] = " ",
-						}, -- [134]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/22/2020 的 19:27:21。",
-						}, -- [135]
-						{
-							["arg2"] = "豆腐乾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608636601,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14374:Player-1500-05B52160:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[伴侣咨询]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [136]
-						{
-							["arg1"] = " ",
-						}, -- [137]
-						{
-							["arg1"] = " ",
-						}, -- [138]
-						{
-							["arg1"] = "记录开始于 12/22/2020 的 22:38:34。",
-							["type"] = "SYSTEM",
-						}, -- [139]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608647958,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:154:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[阿拉希盆地胜利]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [140]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608649034,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:1259:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[不是很快]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [141]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608649209,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:245:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[职业杀手]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [142]
-						{
-							["arg1"] = " ",
-						}, -- [143]
-						{
-							["arg1"] = " ",
-						}, -- [144]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/22/2020 的 23:02:25。",
-						}, -- [145]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608649397,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:166:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[战歌峡谷胜利]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [146]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608649397,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:168:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[完美战歌峡谷]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [147]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608650239,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:513:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[100个荣誉消灭]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [148]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608650390,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:6950:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[能量之球]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [149]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608650392,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:6740:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[寇魔古寺的胜利]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [150]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608650392,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:6971:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[能量归我了]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [151]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608651251,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:12405:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[天降杀机]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [152]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608651701,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:12409:Player-1500-05B55FA4:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[涌泉海滩胜利]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [153]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608652096,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14796:Player-1500-0417F13B:1:12:22:20:4294967295:4294967295:4294967295:4294967295|h[精良]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [154]
-						{
-							["arg1"] = " ",
-						}, -- [155]
-						{
-							["arg1"] = " ",
-						}, -- [156]
-						{
-							["arg1"] = "记录开始于 12/23/2020 的 19:30:43。",
-							["type"] = "SYSTEM",
-						}, -- [157]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608723566,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14735:Player-1500-0417F13B:1:12:23:20:4294967295:4294967295:4294967295:4294967295|h[飞行毕业]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [158]
-						{
-							["arg1"] = " ",
-						}, -- [159]
-						{
-							["arg1"] = " ",
-						}, -- [160]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/23/2020 的 22:21:27。",
-						}, -- [161]
-						{
-							["arg2"] = "罂僳埖丶謝-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608734613,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14417:Player-1500-01F4530E:1:12:23:20:4294967295:4294967295:4294967295:4294967295|h[伤逝剧场（史诗难度）]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [162]
-						{
-							["arg1"] = " ",
-						}, -- [163]
-						{
-							["arg1"] = " ",
-						}, -- [164]
-						{
-							["arg1"] = "记录开始于 12/23/2020 的 23:28:32。",
-							["type"] = "SYSTEM",
-						}, -- [165]
-						{
-							["arg2"] = "罂僳埖丶謝-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608737337,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14415:Player-1500-01F4530E:1:12:23:20:4294967295:4294967295:4294967295:4294967295|h[凋魂之殇（史诗难度）]|h|r！",
-							["clColor"] = "ffc31d39",
-						}, -- [166]
-						{
-							["arg1"] = " ",
-						}, -- [167]
-						{
-							["arg1"] = " ",
-						}, -- [168]
-						{
-							["arg1"] = "记录开始于 12/24/2020 的 08:08:42。",
-							["type"] = "SYSTEM",
-						}, -- [169]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608768561,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14846:Player-1500-0417F13B:1:12:24:20:4294967295:4294967295:4294967295:4294967295|h[冒险：聚叶成林]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [170]
-						{
-							["arg1"] = " ",
-						}, -- [171]
-						{
-							["arg1"] = " ",
-						}, -- [172]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 21:39:26。",
-						}, -- [173]
-						{
-							["arg2"] = "彼岸丶花闓-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608817317,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14206:Player-1500-04B849E1:1:12:24:20:4294967295:4294967295:4294967295:4294967295|h[兵主之刃]|h|r！",
-							["clColor"] = "ffa22fc8",
-						}, -- [174]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608818670,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14835:Player-1500-05B55FA4:1:12:24:20:4294967295:4294967295:4294967295:4294967295|h[果敢羁绊]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [175]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608818731,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14846:Player-1500-05B55FA4:1:12:24:20:4294967295:4294967295:4294967295:4294967295|h[冒险：聚叶成林]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [176]
-						{
-							["arg1"] = " ",
-						}, -- [177]
-						{
-							["arg1"] = " ",
-						}, -- [178]
-						{
-							["arg1"] = "记录开始于 12/24/2020 的 22:39:55。",
-							["type"] = "SYSTEM",
-						}, -- [179]
-						{
-							["arg2"] = "Exmist-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608822099,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:12901:Player-1500-04B4384A:1:12:24:20:4294967295:4294967295:4294967295:4294967295|h[荣誉等级25级]|h|r！",
-							["clColor"] = "ff00fe97",
-						}, -- [180]
-						{
-							["arg2"] = "Exmist-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608822800,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:869:Player-1500-04B4384A:1:12:24:20:4294967295:4294967295:4294967295:4294967295|h[50000个荣誉消灭]|h|r！",
-							["clColor"] = "ff00fe97",
-						}, -- [181]
-						{
-							["arg1"] = " ",
-						}, -- [182]
-						{
-							["arg1"] = " ",
-						}, -- [183]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 23:14:14。",
-						}, -- [184]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608822874,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:11212:Player-1500-05B55FA4:1:12:24:20:4294967295:4294967295:4294967295:4294967295|h[大军压境]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [185]
-						{
-							["arg2"] = "彼岸丶花闓-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608825847,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14369:Player-1500-04B849E1:1:12:25:20:4294967295:4294967295:4294967295:4294967295|h[凋魂之殇]|h|r！",
-							["clColor"] = "ffa22fc8",
-						}, -- [186]
-						{
-							["arg2"] = "Exnatural-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1608826306,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:515:Player-1500-04B43C9F:1:12:25:20:4294967295:4294967295:4294967295:4294967295|h[500个荣誉消灭]|h|r！",
-							["clColor"] = "ff006fdc",
-						}, -- [187]
-						{
-							["arg1"] = " ",
-						}, -- [188]
-						{
-							["arg1"] = " ",
-						}, -- [189]
-						{
-							["arg1"] = "记录开始于 12/27/2020 的 20:37:35。",
-							["type"] = "SYSTEM",
-						}, -- [190]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609076721,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14760:Player-1500-0417F13B:1:12:27:20:4294967295:4294967295:4294967295:4294967295|h[收集回忆]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [191]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609076961,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:238:Player-1500-05B0C83A:1:12:27:20:4294967295:4294967295:4294967295:4294967295|h[一次荣誉消灭]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [192]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609077338,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:229:Player-1500-05B0C83A:1:12:27:20:4294967295:4294967295:4294967295:4294967295|h[恐怖收割者]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [193]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609077753,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:1005:Player-1500-05B0C83A:1:12:27:20:4294967295:4294967295:4294967295:4294967295|h[知己知彼]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [194]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609077766,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:223:Player-1500-05B0C83A:1:12:27:20:4294967295:4294967295:4294967295:4294967295|h[生病的瞪羚]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [195]
-						{
-							["arg1"] = " ",
-						}, -- [196]
-						{
-							["arg1"] = " ",
-						}, -- [197]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/27/2020 的 22:09:01。",
-						}, -- [198]
-						{
-							["arg2"] = "Superdady-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609078162,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:513:Player-1500-05B0C83A:1:12:27:20:4294967295:4294967295:4294967295:4294967295|h[100个荣誉消灭]|h|r！",
-							["clColor"] = "fff38bb9",
-						}, -- [199]
-						{
-							["arg1"] = " ",
-						}, -- [200]
-						{
-							["arg1"] = " ",
-						}, -- [201]
-						{
-							["arg1"] = "记录开始于 12/28/2020 的 22:22:36。",
-							["type"] = "SYSTEM",
-						}, -- [202]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609167775,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:11184:Player-1500-05B55FA4:1:12:28:20:4294967295:4294967295:4294967295:4294967295|h[钥石挑战者]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [203]
-						{
-							["arg1"] = " ",
-						}, -- [204]
-						{
-							["arg1"] = " ",
-						}, -- [205]
-						{
-							["arg1"] = "记录开始于 12/30/2020 的 20:59:50。",
-							["type"] = "SYSTEM",
-						}, -- [206]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609334542,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14371:Player-1500-0417F13B:1:12:30:20:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [207]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609334542,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14412:Player-1500-0417F13B:1:12:30:20:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾（英雄难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [208]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609334542,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14413:Player-1500-0417F13B:1:12:30:20:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾（史诗难度）]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [209]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609334542,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14418:Player-1500-0417F13B:1:12:30:20:4294967295:4294967295:4294967295:4294967295|h[暗影界地下城英雄]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [210]
-						{
-							["arg2"] = "哈尼斯斯-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609334651,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14797:Player-1500-01F85A11:1:12:30:20:4294967295:4294967295:4294967295:4294967295|h[史诗]|h|r！",
-							["clColor"] = "ff3ec6ea",
-						}, -- [211]
-						{
-							["arg1"] = " ",
-						}, -- [212]
-						{
-							["arg1"] = " ",
-						}, -- [213]
-						{
-							["arg1"] = "记录开始于 12/31/2020 的 19:59:10。",
-							["type"] = "SYSTEM",
-						}, -- [214]
-						{
-							["arg2"] = "晒月亮补爱-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609419294,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:507:Player-1500-04C2D87A:1:12:31:20:4294967295:4294967295:4294967295:4294967295|h[完成1000个任务]|h|r！",
-							["clColor"] = "ff3ec6ea",
-						}, -- [215]
-						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609420082,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14478:Player-1500-0417F13B:1:12:31:20:4294967295:4294967295:4294967295:4294967295|h[灵魂熔炉]|h|r！",
-							["clColor"] = "fffe7b09",
-						}, -- [216]
-						{
-							["arg1"] = " ",
-						}, -- [217]
-						{
-							["arg1"] = " ",
-						}, -- [218]
-						{
-							["arg1"] = "记录开始于 12/31/2020 的 23:18:24。",
-							["type"] = "SYSTEM",
-						}, -- [219]
-						{
-							["arg2"] = "晒月亮补爱-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1609430368,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14206:Player-1500-04C2D87A:1:12:31:20:4294967295:4294967295:4294967295:4294967295|h[兵主之刃]|h|r！",
-							["clColor"] = "ff3ec6ea",
-						}, -- [220]
-						{
-							["arg1"] = " ",
-						}, -- [221]
-						{
-							["arg1"] = " ",
-						}, -- [222]
-						{
-							["arg1"] = "记录开始于 01/07/2021 的 19:56:53。",
-							["type"] = "SYSTEM",
-						}, -- [223]
-						{
-							["arg2"] = "啾啾丶啾啾-格雷迈恩",
-							["type"] = "GUILD_ACHIEVEMENT",
-							["time"] = 1610022093,
-							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14463:Player-1500-05B55FA4:1:1:7:21:4294967295:4294967295:4294967295:4294967295|h[斯科杜斯之厅]|h|r！",
-							["clColor"] = "fffefefe",
-						}, -- [224]
-						{
-							["arg1"] = " ",
-						}, -- [225]
-						{
-							["arg1"] = " ",
-						}, -- [226]
 						{
 							["arg1"] = "记录开始于 01/17/2021 的 13:00:02。",
 							["type"] = "SYSTEM",
-						}, -- [227]
+						}, -- [2]
 						{
 							["arg2"] = "罌僳埖丶塮-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610860716,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14760:Player-1500-05B832F2:1:1:17:21:4294967295:4294967295:4294967295:4294967295|h[收集回忆]|h|r！",
 							["clColor"] = "fffefefe",
-						}, -- [228]
+						}, -- [3]
 						{
 							["arg2"] = "罌僳埖丶塮-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610861198,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14755:Player-1500-05B832F2:1:1:17:21:4294967295:4294967295:4294967295:4294967295|h[传说协作]|h|r！",
 							["clColor"] = "fffefefe",
-						}, -- [229]
+						}, -- [4]
 						{
 							["arg1"] = " ",
-						}, -- [230]
+						}, -- [5]
 						{
 							["arg1"] = " ",
-						}, -- [231]
+						}, -- [6]
 						{
 							["type"] = "SYSTEM",
 							["arg1"] = "记录开始于 01/18/2021 的 19:43:45。",
-						}, -- [232]
+						}, -- [7]
 						{
 							["arg2"] = "通臂拳-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610970256,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:1005:Player-1500-04B27F8B:1:1:18:21:4294967295:4294967295:4294967295:4294967295|h[知己知彼]|h|r！",
 							["clColor"] = "ff3ec6ea",
-						}, -- [233]
+						}, -- [8]
 						{
 							["arg2"] = "通臂拳-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610970383,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:5247:Player-1500-04B27F8B:1:1:18:21:4294967295:4294967295:4294967295:4294967295|h[完美吉尔尼斯之战]|h|r！",
 							["clColor"] = "ff3ec6ea",
-						}, -- [234]
+						}, -- [9]
 						{
 							["arg2"] = "通臂拳-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610970383,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:5254:Player-1500-04B27F8B:1:1:18:21:4294967295:4294967295:4294967295:4294967295|h[从菜鸟到强力党]|h|r！",
 							["clColor"] = "ff3ec6ea",
-						}, -- [235]
+						}, -- [10]
 						{
 							["arg2"] = "通臂拳-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610970383,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:5245:Player-1500-04B27F8B:1:1:18:21:4294967295:4294967295:4294967295:4294967295|h[吉尔尼斯之战的胜利]|h|r！",
 							["clColor"] = "ff3ec6ea",
-						}, -- [236]
+						}, -- [11]
 						{
 							["arg1"] = " ",
-						}, -- [237]
+						}, -- [12]
 						{
 							["arg1"] = " ",
-						}, -- [238]
+						}, -- [13]
 						{
 							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
 							["type"] = "SYSTEM",
-						}, -- [239]
+						}, -- [14]
 						{
 							["arg2"] = "Valkeuterpe-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610981323,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14626:Player-1500-01F95214:1:1:18:21:4294967295:4294967295:4294967295:4294967295|h[哀伤收割者]|h|r！",
 							["clColor"] = "fff38bb9",
-						}, -- [240]
+						}, -- [15]
 						{
 							["arg2"] = "通臂拳-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610984759,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14478:Player-1500-04B27F8B:1:1:18:21:4294967295:4294967295:4294967295:4294967295|h[灵魂熔炉]|h|r！",
 							["clColor"] = "ff3ec6ea",
-						}, -- [241]
+						}, -- [16]
 						{
 							["arg2"] = "槐雪如风-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610985300,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:6753:Player-1500-04DB6C4D:1:1:18:21:4294967295:4294967295:4294967295:4294967295|h[积少成多]|h|r！",
 							["clColor"] = "ffc59a6c",
-						}, -- [242]
+						}, -- [17]
 						{
 							["arg2"] = "槐雪如风-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610985847,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14478:Player-1500-04DB6C4D:1:1:19:21:4294967295:4294967295:4294967295:4294967295|h[灵魂熔炉]|h|r！",
 							["clColor"] = "ffc59a6c",
-						}, -- [243]
+						}, -- [18]
 						{
 							["arg2"] = "通臂拳-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610986689,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14499:Player-1500-04B27F8B:1:1:19:21:4294967295:4294967295:4294967295:4294967295|h[幻惑]|h|r！",
 							["clColor"] = "ff3ec6ea",
-						}, -- [244]
+						}, -- [19]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1610986697,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14840:Player-1500-0417F13B:1:1:19:21:4294967295:4294967295:4294967295:4294967295|h[冒险：新手上路]|h|r！",
 							["clColor"] = "fffe7b09",
-						}, -- [245]
+						}, -- [20]
 						{
 							["arg1"] = " ",
-						}, -- [246]
+						}, -- [21]
 						{
 							["arg1"] = " ",
-						}, -- [247]
+						}, -- [22]
 						{
 							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
 							["type"] = "SYSTEM",
-						}, -- [248]
+						}, -- [23]
 						{
 							["arg2"] = "啾啾丶啾啾-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1611068395,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:13701:Player-1500-05B55FA4:1:1:19:21:4294967295:4294967295:4294967295:4294967295|h[战场斗士]|h|r！",
 							["clColor"] = "fffefefe",
-						}, -- [249]
+						}, -- [24]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
 							["type"] = "GUILD_ACHIEVEMENT",
 							["time"] = 1611070014,
 							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14629:Player-1500-0417F13B:1:1:19:21:4294967295:4294967295:4294967295:4294967295|h[赢得尊重]|h|r！",
 							["clColor"] = "fffe7b09",
-						}, -- [250]
-					},
-				}, -- [10]
-				{
-					["logs"] = {
-						{
-							["arg2"] = "凋零大鹏骑手",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026040,
-							["arg1"] = "施放骨矛！",
-						}, -- [1]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026443,
-							["arg1"] = "你阻止不了我！",
-						}, -- [2]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026448,
-							["arg1"] = "我的利刃会劈开你的血肉！",
-						}, -- [3]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026454,
-							["arg1"] = "你脚下就是你的葬身之地！",
-						}, -- [4]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026460,
-							["arg1"] = "阴影中的匕首会刺穿你的心脏。",
-						}, -- [5]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026470,
-							["arg1"] = "我的利刃会劈开你的血肉！",
-						}, -- [6]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026476,
-							["arg1"] = "你脚下就是你的葬身之地！",
-						}, -- [7]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026492,
-							["arg1"] = "只要有一处擦破点皮……",
-						}, -- [8]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026497,
-							["arg1"] = "阴影中的匕首会刺穿你的心脏。",
-						}, -- [9]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026516,
-							["arg1"] = "我的利刃会劈开你的血肉！",
-						}, -- [10]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026522,
-							["arg1"] = "你脚下就是你的葬身之地！",
-						}, -- [11]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026533,
-							["arg1"] = "暗影会拥抱你的陨灭。",
-						}, -- [12]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026540,
-							["arg1"] = "我的利刃会劈开你的血肉！",
-						}, -- [13]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026546,
-							["arg1"] = "你脚下就是你的葬身之地！",
-						}, -- [14]
-						{
-							["arg2"] = "多米娜·毒刃",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026550,
-							["arg1"] = "我……必将……复仇……",
-						}, -- [15]
-						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026615,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
-						}, -- [16]
-						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026640,
-							["arg1"] = "仆从们，用餐时间到！",
-						}, -- [17]
-						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026681,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
-						}, -- [18]
-						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026691,
-							["arg1"] = "仆从们，用餐时间到！",
-						}, -- [19]
-						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026765,
-							["arg1"] = "欢迎光临！我们一直在等你们！",
-						}, -- [20]
-						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026776,
-							["arg1"] = "起来吧，凋零的仆从！",
-						}, -- [21]
-						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026800,
-							["arg1"] = "腐败的守护者，听我号令！",
-						}, -- [22]
-						{
-							["arg2"] = "艾柯尔·胆肉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026808,
-							["arg1"] = "凋零之母……来找你了……",
-						}, -- [23]
-						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026870,
-							["arg1"] = "见证我最后的杰作！我的骄傲，我的末日！",
-						}, -- [24]
-						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026879,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
 						}, -- [25]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026888,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["arg1"] = " ",
 						}, -- [26]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026899,
-							["arg1"] = "一切都将毁灭！",
+							["arg1"] = " ",
 						}, -- [27]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026923,
-							["arg1"] = "它在扩散！无法束缚！",
+							["arg1"] = "记录开始于 01/20/2021 的 22:53:04。",
+							["type"] = "SYSTEM",
 						}, -- [28]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026935,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1611155458,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14304:Player-1500-0417F13B:1:1:20:21:4294967295:4294967295:4294967295:4294967295|h[探索炽蓝仙野]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [29]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026944,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["arg1"] = " ",
 						}, -- [30]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026958,
-							["arg1"] = "谁能感受这种愤怒？我的愤怒？！",
+							["arg1"] = " ",
 						}, -- [31]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026969,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 01/21/2021 的 08:12:41。",
 						}, -- [32]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026972,
-							["arg1"] = "一切都将毁灭！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1611188010,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14797:Player-1500-0417F13B:1:1:21:21:4294967295:4294967295:4294967295:4294967295|h[史诗]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [33]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610026995,
-							["arg1"] = "它会吞噬你们！",
+							["arg1"] = " ",
 						}, -- [34]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610027005,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["arg1"] = " ",
 						}, -- [35]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610027022,
-							["arg1"] = "我的密院在凋零中啜泣！",
+							["arg1"] = "记录开始于 01/24/2021 的 12:48:25。",
+							["type"] = "SYSTEM",
 						}, -- [36]
 						{
-							["arg2"] = "斯特拉达玛侯爵",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1610027028,
-							["arg1"] = "不要……相信……男爵……",
+							["arg2"] = "Superdady-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1611465135,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14773:Player-1500-05B0C83A:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[暴力灭鼠]|h|r！",
+							["clColor"] = "fff38bb9",
 						}, -- [37]
 						{
 							["arg1"] = " ",
@@ -13218,1278 +11866,2559 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [39]
 						{
-							["arg1"] = "记录开始于 01/17/2021 的 13:00:02。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 01/24/2021 的 16:49:25。",
 						}, -- [40]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860070,
-							["arg1"] = "大脚任务进度提示: 心能余烬：3/150",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "她说是晒黑的-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1611478392,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14463:Player-1500-05B51D58:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[斯科杜斯之厅]|h|r！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [41]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860096,
-							["arg1"] = "大脚任务进度提示: 心能余烬：6/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [42]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860107,
-							["arg1"] = "大脚任务进度提示: 心能余烬：8/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [43]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860138,
-							["arg1"] = "大脚任务进度提示: 心能余烬：11/150",
-							["clColor"] = "fffe7b09",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 01/24/2021 的 16:59:14。",
 						}, -- [44]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860143,
-							["arg1"] = "大脚任务进度提示: 心能余烬：15/150",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "她说是晒黑的-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1611479023,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:11992:Player-1500-05B51D58:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[加洛西灭世者（史诗难度）]|h|r！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [45]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860168,
-							["arg1"] = "大脚任务进度提示: 心能余烬：18/150",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "她说是晒黑的-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1611479142,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:11993:Player-1500-05B51D58:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[萨格拉斯的恶犬（史诗难度）]|h|r！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [46]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860176,
-							["arg1"] = "大脚任务进度提示: 心能余烬：21/150",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "她说是晒黑的-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1611479603,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:12001:Player-1500-05B51D58:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[阿格拉玛（史诗难度）]|h|r！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [47]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860202,
-							["arg1"] = "大脚任务进度提示: 心能余烬：27/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [48]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860224,
-							["arg1"] = "大脚任务进度提示: 心能余烬：30/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [49]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860323,
-							["arg1"] = "大脚任务进度提示: 心能余烬：34/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 01/24/2021 的 18:19:20。",
+							["type"] = "SYSTEM",
 						}, -- [50]
 						{
 							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860361,
-							["arg1"] = "大脚任务进度提示: 心能余烬：37/150",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1611483850,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14836:Player-1500-0417F13B:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[坚毅羁绊]|h|r！",
 							["clColor"] = "fffe7b09",
 						}, -- [51]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860363,
-							["arg1"] = "大脚任务进度提示: 心能余烬：40/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [52]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860365,
-							["arg1"] = "大脚任务进度提示: 心能余烬：43/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [53]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860367,
-							["arg1"] = "大脚任务进度提示: 心能余烬：46/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 02/13/2021 的 09:44:41。",
+							["type"] = "SYSTEM",
 						}, -- [54]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860399,
-							["arg1"] = "大脚任务进度提示: 心能余烬：49/150",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "Showmaker-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1613181007,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14840:Player-1500-04C987CC:1:2:13:21:4294967295:4294967295:4294967295:4294967295|h[冒险：新手上路]|h|r！",
+							["clColor"] = "ff8687ed",
 						}, -- [55]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860449,
-							["arg1"] = "大脚任务进度提示: 心能余烬：55/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [56]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860463,
-							["arg1"] = "大脚任务进度提示: 心能余烬：57/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [57]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860470,
-							["arg1"] = "大脚任务进度提示: 心能余烬：59/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 07/20/2021 的 22:28:07。",
+							["type"] = "SYSTEM",
 						}, -- [58]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860517,
-							["arg1"] = "大脚任务进度提示: 心能余烬：62/150",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626793678,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14840:Player-1500-05C8C7BA:1:7:20:21:4294967295:4294967295:4294967295:4294967295|h[冒险：新手上路]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [59]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860628,
-							["arg1"] = "大脚任务进度提示: 心能余烬：71/150",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626796953,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:7410:Player-1500-05C8C7BA:1:7:21:21:4294967295:4294967295:4294967295:4294967295|h[完成5000个日常任务]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [60]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860713,
-							["arg1"] = "大脚任务进度提示: 心能余烬：80/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [61]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860786,
-							["arg1"] = "大脚任务进度提示: 心能余烬：84/150",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [62]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860928,
-							["arg1"] = "大脚任务进度提示: 皇家戒指：1/1(完成)",
-							["clColor"] = "fffe7b09",
+							["arg1"] = "记录开始于 07/21/2021 的 21:27:55。",
+							["type"] = "SYSTEM",
 						}, -- [63]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860928,
-							["arg1"] = "大脚任务进度提示: 心能余烬：150/150(完成)",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626874543,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14747:Player-1500-04C2D87A:1:7:21:21:4294967295:4294967295:4294967295:4294967295|h[麻烦加倍！]|h|r！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [64]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610860929,
-							["arg1"] = "心能回收 (任务完成)",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [65]
 						{
 							["arg1"] = " ",
 						}, -- [66]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/21/2021 的 22:35:03。",
 						}, -- [67]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/18/2021 的 19:43:45。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626879616,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14663:Player-1500-0417F13B:1:7:21:21:4294967295:4294967295:4294967295:4294967295|h[探索噬渊]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [68]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610970823,
-							["arg1"] = "大脚任务进度提示: 雄狮纹章：1/1(完成)",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [69]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610971274,
-							["arg1"] = "大脚任务进度提示: 圣光灌注长链：1/1(完成)",
-							["clColor"] = "fffe7b09",
+							["arg1"] = " ",
 						}, -- [70]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610971275,
-							["arg1"] = "狮王的线索 (任务完成)",
-							["clColor"] = "fffe7b09",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/22/2021 的 21:27:41。",
 						}, -- [71]
 						{
-							["arg1"] = " ",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626960485,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14374:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[伴侣咨询]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [72]
 						{
-							["arg1"] = " ",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626960485,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14374:Player-1500-05C8C7BA:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[伴侣咨询]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [73]
 						{
-							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
-							["type"] = "SYSTEM",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626960935,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14373:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[彼界]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [74]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610981712,
-							["arg1"] = "大脚任务进度提示: 解救本茜雅：1/1(完成)",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626960935,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14408:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[彼界（英雄难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [75]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610982683,
-							["arg1"] = "Magiccream - 狂奔怒吼: 0:04",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626960935,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14409:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[彼界（史诗难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [76]
 						{
-							["arg2"] = "Magiccream-格雷迈恩",
-							["type"] = "INSTANCE_CHAT",
-							["time"] = 1610983783,
-							["arg1"] = "大脚任务进度提示: 解救本茜雅：1/1(完成)",
-							["clColor"] = "fffe7b09",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626961853,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14371:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [77]
 						{
-							["arg1"] = " ",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626961853,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14412:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾（英雄难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [78]
 						{
-							["arg1"] = " ",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626961853,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14413:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[塞兹仙林的迷雾（史诗难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [79]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626963221,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14372:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[伤逝剧场]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [80]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068220,
-							["arg1"] = "诸位，欢迎光临伤逝剧场！",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626963221,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14416:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[伤逝剧场（英雄难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [81]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068226,
-							["arg1"] = "看来有些人真是没有自知之明，居然来挑战玛卓克萨斯最优秀的斗士！哈哈！我们等着瞧吧！",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626963221,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14417:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[伤逝剧场（史诗难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [82]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068239,
-							["arg1"] = "无论如何……这一定会是场好戏。有请挑战者登场！",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626964097,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14369:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[凋魂之殇]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [83]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068258,
-							["arg1"] = "血流成河吧！",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626964097,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14414:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[凋魂之殇（英雄难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [84]
 						{
-							["arg2"] = "受诅者赛泽尔",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068283,
-							["arg1"] = "不！我绝不会消亡！",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1626964097,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14415:Player-1500-04BA22D9:1:7:22:21:4294967295:4294967295:4294967295:4294967295|h[凋魂之殇（史诗难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [85]
 						{
-							["arg2"] = "斩首者德茜雅",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068286,
-							["arg1"] = "我的刀刃会畅饮你们的灵魂！",
+							["arg1"] = " ",
 						}, -- [86]
 						{
-							["arg2"] = "疫毒者巴瑟兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068318,
-							["arg1"] = "你的痛苦很有信息量。",
+							["arg1"] = " ",
 						}, -- [87]
 						{
-							["arg2"] = "斩首者德茜雅",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068322,
-							["arg1"] = "替我……复仇……",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/23/2021 的 22:22:35。",
 						}, -- [88]
 						{
-							["arg2"] = "受诅者赛泽尔",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068333,
-							["arg1"] = "你……必将……消亡……",
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627053722,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15053:Player-1500-01F85A11:1:7:23:21:4294967295:4294967295:4294967295:4294967295|h[探索刻希亚]|h|r！",
+							["clColor"] = "ff3ec6ea",
 						}, -- [89]
 						{
-							["arg2"] = "疫毒者巴瑟兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068355,
-							["arg1"] = "我……最伟大的……造物……",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627056687,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14630:Player-1500-0417F13B:1:7:24:21:4294967295:4294967295:4294967295:4294967295|h[成为英雄]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [90]
 						{
-							["arg2"] = "卑劣的席拉",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068355,
-							["arg1"] = "停！我受够这场闹剧了！",
+							["arg1"] = " ",
 						}, -- [91]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068356,
-							["arg1"] = "这就完了？说好的跌宕起伏呢！太令人失望了。",
+							["arg1"] = " ",
 						}, -- [92]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068367,
-							["arg1"] = "难以置信！看来狗虽小，但还是会咬人的！",
+							["arg1"] = "记录开始于 07/24/2021 的 11:25:29。",
+							["type"] = "SYSTEM",
 						}, -- [93]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068373,
-							["arg1"] = "不过预赛好歹是结束了，是时候开始真正的试炼了！",
+							["arg2"] = "芃芃其麦-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627097931,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15000:Player-1500-043EB654:1:7:24:21:4294967295:4294967295:4294967295:4294967295|h[统一战线]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [94]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068393,
-							["arg1"] = "新来的挑战者？哼，我倒要瞧瞧你能坚持多久。",
+							["arg1"] = " ",
 						}, -- [95]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068596,
-							["arg1"] = "你最好会点有意思的招式。",
+							["arg1"] = " ",
 						}, -- [96]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068602,
-							["arg1"] = "狂风将会把你吹散。",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/24/2021 的 12:51:25。",
 						}, -- [97]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068614,
-							["arg1"] = "你们的力量也配跟我比？！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627103822,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14746:Player-1500-0417F13B:1:7:24:21:4294967295:4294967295:4294967295:4294967295|h[麻烦上身！]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [98]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068627,
-							["arg1"] = "为荣耀而战！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627103964,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14837:Player-1500-0417F13B:1:7:24:21:4294967295:4294967295:4294967295:4294967295|h[羁绊枢纽]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [99]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068633,
-							["arg1"] = "狂风将会把你吹散。",
+							["arg1"] = " ",
 						}, -- [100]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068648,
-							["arg1"] = "我的利刃无可匹敌。",
+							["arg1"] = " ",
 						}, -- [101]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068654,
-							["arg1"] = "屈服于我的力量！",
+							["arg1"] = "记录开始于 07/24/2021 的 15:37:10。",
+							["type"] = "SYSTEM",
 						}, -- [102]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068675,
-							["arg1"] = "我的利刃无可匹敌。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627113173,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14631:Player-1500-0417F13B:1:7:24:21:4294967295:4294967295:4294967295:4294967295|h[盟约勇士]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [103]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068685,
-							["arg1"] = "屈服于我的力量！",
+							["arg1"] = " ",
 						}, -- [104]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068697,
-							["arg1"] = "为荣耀而战！",
+							["arg1"] = " ",
 						}, -- [105]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068706,
-							["arg1"] = "狂风将会把你吹散。",
+							["arg1"] = "记录开始于 07/24/2021 的 21:07:57。",
+							["type"] = "SYSTEM",
 						}, -- [106]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068720,
-							["arg1"] = "屈服于我的力量！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627134401,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14500:Player-1500-0417F13B:1:7:24:21:4294967295:4294967295:4294967295:4294967295|h[幻心]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [107]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068741,
-							["arg1"] = "狂风将会把你吹散。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627138470,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15076:Player-1500-0417F13B:1:7:24:21:4294967295:4294967295:4294967295:4294967295|h[万物之盒]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [108]
 						{
-							["arg2"] = "无堕者哈夫",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068743,
-							["arg1"] = "打得……真……棒……",
+							["arg1"] = " ",
 						}, -- [109]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068747,
-							["arg1"] = "挑战者通过了第一场试炼！但要想获胜还有很长的路要走！",
+							["arg1"] = " ",
 						}, -- [110]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611068767,
-							["arg1"] = "凡人的生命如此短促……如此脆弱。",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/24/2021 的 23:25:28。",
 						}, -- [111]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069044,
-							["arg1"] = "你们的灵魂都归我了！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627143906,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15122:Player-1500-0417F13B:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[典狱长先锋军]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [112]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069048,
-							["arg1"] = "让恐惧吞噬你！",
+							["arg1"] = " ",
 						}, -- [113]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069053,
-							["arg1"] = "在我的手中凋零吧。",
+							["arg1"] = " ",
 						}, -- [114]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069060,
-							["arg1"] = "放弃你的灵魂吧。",
+							["arg1"] = "记录开始于 07/25/2021 的 10:49:54。",
+							["type"] = "SYSTEM",
 						}, -- [115]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069074,
-							["arg1"] = "在我的手中凋零吧。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627181747,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15053:Player-1500-0417F13B:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[探索刻希亚]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [116]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069075,
-							["arg1"] = "让恐惧吞噬你！",
+							["arg1"] = " ",
 						}, -- [117]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069081,
-							["arg1"] = "我会剥夺你的灵魂。",
+							["arg1"] = " ",
 						}, -- [118]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069094,
-							["arg1"] = "你已经无路可逃了。",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/25/2021 的 12:30:23。",
 						}, -- [119]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069100,
-							["arg1"] = "让恐惧吞噬你！",
+							["arg2"] = "芃芃其麦-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627189369,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14374:Player-1500-043EB654:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[伴侣咨询]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [120]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069101,
-							["arg1"] = "放弃你的灵魂吧。",
+							["arg2"] = "芃芃其麦-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627189994,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14373:Player-1500-043EB654:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[彼界]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [121]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069115,
-							["arg1"] = "你已经无路可逃了。",
+							["arg2"] = "芃芃其麦-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627189994,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14408:Player-1500-043EB654:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[彼界（英雄难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [122]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069122,
-							["arg1"] = "放弃你的灵魂吧。",
+							["arg2"] = "芃芃其麦-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627189994,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14409:Player-1500-043EB654:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[彼界（史诗难度）]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [123]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069129,
-							["arg1"] = "让恐惧吞噬你！",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627192554,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14809:Player-1500-05C8C7BA:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[纵贯托加斯特]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [124]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069136,
-							["arg1"] = "在我的手中凋零吧。",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627192901,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14285:Player-1500-0417F13B:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[准备突袭第七季]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [125]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069143,
-							["arg1"] = "我会剥夺你的灵魂。",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627195789,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14810:Player-1500-05C8C7BA:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[称霸托加斯特]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [126]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069155,
-							["arg1"] = "让恐惧吞噬你！",
+							["arg1"] = " ",
 						}, -- [127]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069156,
-							["arg1"] = "在我的手中凋零吧。",
+							["arg1"] = " ",
 						}, -- [128]
 						{
-							["arg2"] = "库尔萨洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069159,
-							["arg1"] = "不会在这里结束……",
+							["arg1"] = "记录开始于 07/25/2021 的 18:44:56。",
+							["type"] = "SYSTEM",
 						}, -- [129]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069164,
-							["arg1"] = "又通过了一场试炼！看来我们得准备点真正的挑战了！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627210392,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14297:Player-1500-0417F13B:1:7:25:21:4294967295:4294967295:4294967295:4294967295|h[三选一]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [130]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069185,
-							["arg1"] = "看看这是什么！新鲜的肉！",
+							["arg1"] = " ",
 						}, -- [131]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069417,
-							["arg1"] = "撕碎扯烂！",
+							["arg1"] = " ",
 						}, -- [132]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069423,
-							["arg1"] = "又有备用部件了！",
+							["arg1"] = "记录开始于 07/26/2021 的 17:36:50。",
+							["type"] = "SYSTEM",
 						}, -- [133]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069427,
-							["arg1"] = "开膛破肚！",
+							["arg2"] = "Exinature-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627292222,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14334:Player-1500-0443D04C:1:7:26:21:4294967295:4294967295:4294967295:4294967295|h[进入噬渊]|h|r！",
+							["clColor"] = "ffa22fc8",
 						}, -- [134]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069432,
-							["arg1"] = "砸扁你！",
+							["arg2"] = "Exinature-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627292240,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:32:Player-1500-0443D04C:1:7:26:21:4294967295:4294967295:4294967295:4294967295|h[完成2000个任务]|h|r！",
+							["clColor"] = "ffa22fc8",
 						}, -- [135]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069442,
-							["arg1"] = "得把你剁成肉酱！",
+							["arg1"] = " ",
 						}, -- [136]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069451,
-							["arg1"] = "砸扁你！",
+							["arg1"] = " ",
 						}, -- [137]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069457,
-							["arg1"] = "开膛破肚！",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 17:37:50。",
 						}, -- [138]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069471,
-							["arg1"] = "砸扁你！",
+							["arg2"] = "Exinature-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627292427,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14627:Player-1500-0443D04C:1:7:26:21:4294967295:4294967295:4294967295:4294967295|h[天命之选]|h|r！",
+							["clColor"] = "ffa22fc8",
 						}, -- [139]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069477,
-							["arg1"] = "开膛破肚！",
+							["arg1"] = " ",
 						}, -- [140]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069491,
-							["arg1"] = "开膛破肚！",
+							["arg1"] = " ",
 						}, -- [141]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069496,
-							["arg1"] = "往哪儿逃！",
+							["arg1"] = "记录开始于 07/26/2021 的 20:16:01。",
+							["type"] = "SYSTEM",
 						}, -- [142]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069506,
-							["arg1"] = "得把你剁成肉酱！",
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627302778,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14835:Player-1500-038FB3E9:1:7:26:21:4294967295:4294967295:4294967295:4294967295|h[果敢羁绊]|h|r！",
+							["clColor"] = "fff38bb9",
 						}, -- [143]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069516,
-							["arg1"] = "往哪儿逃！",
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627304127,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14326:Player-1500-038FB3E9:1:7:26:21:4294967295:4294967295:4294967295:4294967295|h[晋升高塔]|h|r！",
+							["clColor"] = "fff38bb9",
 						}, -- [144]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069522,
-							["arg1"] = "开膛破肚！",
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627304127,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14324:Player-1500-038FB3E9:1:7:26:21:4294967295:4294967295:4294967295:4294967295|h[晋升高塔（英雄难度）]|h|r！",
+							["clColor"] = "fff38bb9",
 						}, -- [145]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069535,
-							["arg1"] = "往哪儿逃！",
+							["arg1"] = " ",
 						}, -- [146]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069541,
-							["arg1"] = "得把你剁成肉酱！",
+							["arg1"] = " ",
 						}, -- [147]
 						{
-							["arg2"] = "斩血",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069551,
-							["arg1"] = "需要……更好的……部件……",
+							["arg1"] = "记录开始于 07/27/2021 的 22:52:04。",
+							["type"] = "SYSTEM",
 						}, -- [148]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069556,
-							["arg1"] = "难以置信！我们的挑战者通过了这次试炼，正在前往最后的战场！",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627400964,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:1180:Player-1500-05C8C7BA:1:7:27:21:4294967295:4294967295:4294967295:4294967295|h[积少成多]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [149]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069565,
-							["arg1"] = "回到中间的房间吧！重头戏就要开场了！",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627401673,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14328:Player-1500-05C8C7BA:1:7:28:21:4294967295:4294967295:4294967295:4294967295|h[暗影界专业大师]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [150]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069581,
-							["arg1"] = "玛卓克萨斯的士兵们！想欣赏暴力美学了吗？！",
+							["arg1"] = " ",
 						}, -- [151]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069590,
-							["arg1"] = "我们的新星现在面对的，正是伤逝剧场有史以来卫冕时期最长的冠军：无尽女皇莫德蕾莎！",
+							["arg1"] = " ",
 						}, -- [152]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069606,
-							["arg1"] = "等了这么久，终于来了个像样的对手……",
+							["arg1"] = "记录开始于 07/28/2021 的 21:28:32。",
+							["type"] = "SYSTEM",
 						}, -- [153]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069614,
-							["arg1"] = "见证我的力量，绝望吧！",
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627479555,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14799:Player-1500-0417F13B:1:7:28:21:4294967295:4294967295:4294967295:4294967295|h[旅居玛卓克萨斯]|h|r！",
+							["clColor"] = "fffe7b09",
 						}, -- [154]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069630,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["arg1"] = " ",
 						}, -- [155]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069638,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["arg1"] = " ",
 						}, -- [156]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069656,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["arg1"] = "记录开始于 07/29/2021 的 08:04:27。",
+							["type"] = "SYSTEM",
 						}, -- [157]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069670,
-							["arg1"] = "死亡之手渴望着你的灵魂。",
+							["arg2"] = "Valkdiana-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627518365,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15023:Player-1500-0223E5B6:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[百废待兴]|h|r！",
+							["clColor"] = "ffa9d271",
 						}, -- [158]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069671,
-							["arg1"] = "你刀下的亡魂哭喊着复仇！",
+							["arg1"] = " ",
 						}, -- [159]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069690,
-							["arg1"] = "你们都将灰飞烟灭。",
+							["arg1"] = " ",
 						}, -- [160]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069698,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["arg1"] = "记录开始于 07/29/2021 的 21:32:28。",
+							["type"] = "SYSTEM",
 						}, -- [161]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069716,
-							["arg1"] = "我的魔法超乎你们这些凡人的想象。",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627569010,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14306:Player-1500-05C8C7BA:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[探索雷文德斯]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [162]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069728,
-							["arg1"] = "现实向你宣泄着怒火。",
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627569110,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14483:Player-1500-04BA22D9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[凇心间隙]|h|r！",
+							["clColor"] = "ff00fe97",
 						}, -- [163]
 						{
-							["arg2"] = "无尽女皇莫德蕾莎",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069741,
-							["arg1"] = "万物……必须……消亡……",
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627569110,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14483:Player-1500-038FB3E9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[凇心间隙]|h|r！",
+							["clColor"] = "fff38bb9",
 						}, -- [164]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069746,
-							["arg1"] = "没错！莫德蕾莎被打败了！简直不敢相信！为竞技场的新任冠军欢呼吧！",
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627569394,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15094:Player-1500-05C8C7BA:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[暴怒]|h|r！",
+							["clColor"] = "fffef367",
 						}, -- [165]
 						{
-							["arg2"] = "沃尔大师",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611069757,
-							["arg1"] = "胜利与荣耀属于你们！愿你们奋战不息，噬渊行者！",
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627569750,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14493:Player-1500-038FB3E9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[上层区域]|h|r！",
+							["clColor"] = "fff38bb9",
 						}, -- [166]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627569750,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14493:Player-1500-04BA22D9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[上层区域]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [167]
+						{
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627570451,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14631:Player-1500-038FB3E9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[盟约勇士]|h|r！",
+							["clColor"] = "fff38bb9",
+						}, -- [168]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627572119,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14499:Player-1500-04BA22D9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[幻惑]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [169]
+						{
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627572462,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14499:Player-1500-038FB3E9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[幻惑]|h|r！",
+							["clColor"] = "fff38bb9",
+						}, -- [170]
+						{
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627572786,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15091:Player-1500-038FB3E9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[初尝完美]|h|r！",
+							["clColor"] = "fff38bb9",
+						}, -- [171]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627572786,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15091:Player-1500-04BA22D9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[初尝完美]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [172]
+						{
+							["arg2"] = "槐雪如风-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627572786,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15091:Player-1500-04DB6C4D:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[初尝完美]|h|r！",
+							["clColor"] = "ffc59a6c",
+						}, -- [173]
+						{
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627572786,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14488:Player-1500-038FB3E9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[莫尔特雷加]|h|r！",
+							["clColor"] = "fff38bb9",
+						}, -- [174]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627572786,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14488:Player-1500-04BA22D9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[莫尔特雷加]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [175]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627572786,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14776:Player-1500-04BA22D9:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[为了囤货！]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [176]
+						{
+							["arg1"] = " ",
+						}, -- [177]
+						{
+							["arg1"] = " ",
+						}, -- [178]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 23:33:47。",
+						}, -- [179]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627573122,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15094:Player-1500-0417F13B:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[暴怒]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [180]
+						{
+							["arg2"] = "槐雪如风-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627573741,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15094:Player-1500-04DB6C4D:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[暴怒]|h|r！",
+							["clColor"] = "ffc59a6c",
+						}, -- [181]
+						{
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627574272,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14841:Player-1500-05C8C7BA:1:7:29:21:4294967295:4294967295:4294967295:4294967295|h[冒险：初见成效]|h|r！",
+							["clColor"] = "fffef367",
+						}, -- [182]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627574572,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15076:Player-1500-04BA22D9:1:7:30:21:4294967295:4294967295:4294967295:4294967295|h[万物之盒]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [183]
+						{
+							["arg2"] = "Rileyneal-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627575354,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:5877:Player-1500-038FB3E9:1:7:30:21:4294967295:4294967295:4294967295:4294967295|h[宠物博览会]|h|r！",
+							["clColor"] = "fff38bb9",
+						}, -- [184]
+						{
+							["arg1"] = " ",
+						}, -- [185]
+						{
+							["arg1"] = " ",
+						}, -- [186]
+						{
+							["arg1"] = "记录开始于 07/30/2021 的 21:34:53。",
+							["type"] = "SYSTEM",
+						}, -- [187]
+						{
+							["arg2"] = "彼岸丶花开-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627652255,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:5752:Player-1500-04D3D7FD:1:7:30:21:4294967295:4294967295:4294967295:4294967295|h[勤劳持家]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [188]
+						{
+							["arg1"] = " ",
+						}, -- [189]
+						{
+							["arg1"] = " ",
+						}, -- [190]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/30/2021 的 22:27:45。",
+						}, -- [191]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627657196,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15073:Player-1500-0417F13B:1:7:30:21:4294967295:4294967295:4294967295:4294967295|h[“暗影国度”钥石探索者：第二赛季]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [192]
+						{
+							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627657683,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15077:Player-1500-01F95214:1:7:30:21:4294967295:4294967295:4294967295:4294967295|h[“暗影国度”钥石征服者：第二赛季]|h|r！",
+							["clColor"] = "fff38bb9",
+						}, -- [193]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627658475,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14305:Player-1500-0417F13B:1:7:30:21:4294967295:4294967295:4294967295:4294967295|h[探索玛卓克萨斯]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [194]
+						{
+							["arg1"] = " ",
+						}, -- [195]
+						{
+							["arg1"] = " ",
+						}, -- [196]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 12:12:28。",
+							["type"] = "SYSTEM",
+						}, -- [197]
+						{
+							["arg2"] = "芃芃其麦-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627705568,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15122:Player-1500-043EB654:1:7:31:21:4294967295:4294967295:4294967295:4294967295|h[典狱长先锋军]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [198]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627705568,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15122:Player-1500-01F85A11:1:7:31:21:4294967295:4294967295:4294967295:4294967295|h[典狱长先锋军]|h|r！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [199]
+						{
+							["arg2"] = "彼岸丶花开-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627706520,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15001:Player-1500-04D3D7FD:1:7:31:21:4294967295:4294967295:4294967295:4294967295|h[典狱长的私人藏品]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [200]
+						{
+							["arg2"] = "芃芃其麦-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627707170,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15076:Player-1500-043EB654:1:7:31:21:4294967295:4294967295:4294967295:4294967295|h[万物之盒]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [201]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627708406,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15123:Player-1500-0417F13B:1:7:31:21:4294967295:4294967295:4294967295:4294967295|h[晦暗刑狱]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [202]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627710053,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14747:Player-1500-0417F13B:1:7:31:21:4294967295:4294967295:4294967295:4294967295|h[麻烦加倍！]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [203]
+						{
+							["arg1"] = " ",
+						}, -- [204]
+						{
+							["arg1"] = " ",
+						}, -- [205]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 23:00:37。",
+							["type"] = "SYSTEM",
+						}, -- [206]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627744286,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15123:Player-1500-01F85A11:1:7:31:21:4294967295:4294967295:4294967295:4294967295|h[晦暗刑狱]|h|r！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [207]
+						{
+							["arg1"] = " ",
+						}, -- [208]
+						{
+							["arg1"] = " ",
+						}, -- [209]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 20:41:30。",
+						}, -- [210]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627826912,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14847:Player-1500-0417F13B:1:8:1:21:4294967295:4294967295:4294967295:4294967295|h[冒险：暗影界的守护者]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [211]
+						{
+							["arg2"] = "Valkdiana-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627827402,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15033:Player-1500-0223E5B6:1:8:1:21:4294967295:4294967295:4294967295:4294967295|h[攻占特玛库伦]|h|r！",
+							["clColor"] = "ffa9d271",
+						}, -- [212]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627827650,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15000:Player-1500-01F85A11:1:8:1:21:4294967295:4294967295:4294967295:4294967295|h[统一战线]|h|r！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [213]
+						{
+							["arg2"] = "小灰灰-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627831177,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15078:Player-1500-05C8C7BA:1:8:1:21:4294967295:4294967295:4294967295:4294967295|h[“暗影国度”钥石大师：第二赛季]|h|r！",
+							["clColor"] = "fffef367",
+						}, -- [214]
+						{
+							["arg2"] = "彼岸丶花开-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627831177,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15078:Player-1500-04D3D7FD:1:8:1:21:4294967295:4294967295:4294967295:4294967295|h[“暗影国度”钥石大师：第二赛季]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [215]
+						{
+							["arg1"] = " ",
+						}, -- [216]
+						{
+							["arg1"] = " ",
+						}, -- [217]
+						{
+							["arg1"] = "记录开始于 08/01/2021 的 23:21:42。",
+							["type"] = "SYSTEM",
+						}, -- [218]
+						{
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627831426,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15033:Player-1500-04C2D87A:1:8:1:21:4294967295:4294967295:4294967295:4294967295|h[攻占特玛库伦]|h|r！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [219]
+						{
+							["arg2"] = "哈尼斯斯-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627831511,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14632:Player-1500-01F85A11:1:8:1:21:4294967295:4294967295:4294967295:4294967295|h[心能导流]|h|r！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [220]
+						{
+							["arg1"] = " ",
+						}, -- [221]
+						{
+							["arg1"] = " ",
+						}, -- [222]
+						{
+							["arg1"] = "记录开始于 08/02/2021 的 21:26:45。",
+							["type"] = "SYSTEM",
+						}, -- [223]
+						{
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627913932,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15078:Player-1500-04C2D87A:1:8:2:21:4294967295:4294967295:4294967295:4294967295|h[“暗影国度”钥石大师：第二赛季]|h|r！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [224]
+						{
+							["arg2"] = "Valkeuterpe-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627914266,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15033:Player-1500-01F95214:1:8:2:21:4294967295:4294967295:4294967295:4294967295|h[攻占特玛库伦]|h|r！",
+							["clColor"] = "fff38bb9",
+						}, -- [225]
+						{
+							["arg1"] = " ",
+						}, -- [226]
+						{
+							["arg1"] = " ",
+						}, -- [227]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 22:30:26。",
+						}, -- [228]
+						{
+							["arg2"] = "Magiccream-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627917123,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15077:Player-1500-0417F13B:1:8:2:21:4294967295:4294967295:4294967295:4294967295|h[“暗影国度”钥石征服者：第二赛季]|h|r！",
+							["clColor"] = "fffe7b09",
+						}, -- [229]
+						{
+							["arg1"] = " ",
+						}, -- [230]
+						{
+							["arg1"] = " ",
+						}, -- [231]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 19:21:36。",
+						}, -- [232]
+						{
+							["arg2"] = "Exmist-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627993160,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14969:Player-1500-04B4384A:1:8:3:21:4294967295:4294967295:4294967295:4294967295|h[挑战者：“暗影国度”第2赛季]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [233]
+						{
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1627994079,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14847:Player-1500-04C2D87A:1:8:3:21:4294967295:4294967295:4294967295:4294967295|h[冒险：暗影界的守护者]|h|r！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [234]
+						{
+							["arg1"] = " ",
+						}, -- [235]
+						{
+							["arg1"] = " ",
+						}, -- [236]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
+						}, -- [237]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1628003745,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14370:Player-1500-04BA22D9:1:8:3:21:4294967295:4294967295:4294967295:4294967295|h[赎罪大厅]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [238]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1628003745,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14410:Player-1500-04BA22D9:1:8:3:21:4294967295:4294967295:4294967295:4294967295|h[赎罪大厅（英雄难度）]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [239]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1628003745,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14411:Player-1500-04BA22D9:1:8:3:21:4294967295:4294967295:4294967295:4294967295|h[赎罪大厅（史诗难度）]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [240]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1628003880,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14796:Player-1500-04BA22D9:1:8:3:21:4294967295:4294967295:4294967295:4294967295|h[精良]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [241]
+						{
+							["arg1"] = " ",
+						}, -- [242]
+						{
+							["arg1"] = " ",
+						}, -- [243]
+						{
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
+						}, -- [244]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1628077308,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14759:Player-1500-04BA22D9:1:8:4:21:4294967295:4294967295:4294967295:4294967295|h[我想起来了……]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [245]
+						{
+							["arg2"] = "晒月亮补爱-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1628077858,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:15094:Player-1500-04C2D87A:1:8:4:21:4294967295:4294967295:4294967295:4294967295|h[暴怒]|h|r！",
+							["clColor"] = "ff3ec6ea",
+						}, -- [246]
+						{
+							["arg2"] = "竹月-格雷迈恩",
+							["type"] = "GUILD_ACHIEVEMENT",
+							["time"] = 1628078743,
+							["arg1"] = "%s获得了成就|cffffff00|Hachievement:14837:Player-1500-04BA22D9:1:8:4:21:4294967295:4294967295:4294967295:4294967295|h[羁绊枢纽]|h|r！",
+							["clColor"] = "ff00fe97",
+						}, -- [247]
+						{
+							["arg1"] = " ",
+						}, -- [248]
+						{
+							["arg1"] = " ",
+						}, -- [249]
+						{
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
+						}, -- [250]
+					},
+				}, -- [10]
+				{
+					["logs"] = {
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992537,
+							["arg1"] = "我……控制不住……",
+						}, -- [1]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070541,
+							["time"] = 1627992539,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [2]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992543,
+							["arg1"] = "一定要……撑住……",
+						}, -- [3]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992549,
+							["arg1"] = "黑暗拥抱我！",
+						}, -- [4]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992552,
+							["arg1"] = "痛苦……困惑……",
+						}, -- [5]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992554,
+							["arg1"] = "我是你最可怕的梦魇！",
+						}, -- [6]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992555,
+							["arg1"] = "要对仙野有信心。",
+						}, -- [7]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992557,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [8]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992569,
+							["arg1"] = "我会把你们碾成粉末！",
+						}, -- [9]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992581,
+							["arg1"] = "我……控制不住……",
+						}, -- [10]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992589,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [11]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992592,
+							["arg1"] = "一定要……撑住……",
+						}, -- [12]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992602,
+							["arg1"] = "我……控制不住……",
+						}, -- [13]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992606,
+							["arg1"] = "服从我！",
+						}, -- [14]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992609,
+							["arg1"] = "一定要……撑住……",
+						}, -- [15]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992616,
+							["arg1"] = "黑暗拥抱我！",
+						}, -- [16]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992619,
+							["arg1"] = "我……控制不住……",
+						}, -- [17]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992627,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [18]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992631,
+							["arg1"] = "请……活下来……",
+						}, -- [19]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992631,
+							["arg1"] = "从我眼前消失！",
+						}, -- [20]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992641,
+							["arg1"] = "痛苦……困惑……",
+						}, -- [21]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992644,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [22]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992647,
+							["arg1"] = "请……活下来……",
+						}, -- [23]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992657,
+							["arg1"] = "我……控制不住……",
+						}, -- [24]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992660,
+							["arg1"] = "服从我！",
+						}, -- [25]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992663,
+							["arg1"] = "要对仙野有信心。",
+						}, -- [26]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992664,
+							["arg1"] = "我是你最可怕的梦魇！",
+						}, -- [27]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992670,
+							["arg1"] = "竟敢违抗我！",
+						}, -- [28]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992670,
+							["arg1"] = "你们明明……那么……弱……",
+						}, -- [29]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992682,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
+						}, -- [30]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627992684,
+							["arg1"] = "耶！又有新朋友来玩了！快过来！",
+						}, -- [31]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627992719,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
+						}, -- [32]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993113,
+							["arg1"] = "这一定会很有趣！",
+						}, -- [33]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993122,
+							["arg1"] = "我敢打赌，你一定躲不开！",
+						}, -- [34]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993127,
+							["arg1"] = "就是你！快来和我玩！",
+						}, -- [35]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993136,
+							["arg1"] = "嘿，接着！",
+						}, -- [36]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993142,
+							["arg1"] = "有一个长得不一样哦！",
+						}, -- [37]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993147,
+							["arg1"] = "就是你！快来和我玩！",
+						}, -- [38]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993151,
+							["arg1"] = "嘿，接着！",
+						}, -- [39]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993164,
+							["arg1"] = "噢，你可真有两下子！",
+						}, -- [40]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993167,
+							["arg1"] = "我敢打赌，你一定躲不开！",
+						}, -- [41]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993170,
+							["arg1"] = "来和我玩吧？求你了？",
+						}, -- [42]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993181,
+							["arg1"] = "嘿，接着！",
+						}, -- [43]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993191,
+							["arg1"] = "有一个长得不一样哦！",
+						}, -- [44]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993196,
+							["arg1"] = "我敢打赌，你一定躲不开！",
+						}, -- [45]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993199,
+							["arg1"] = "来和我玩吧？求你了？",
+						}, -- [46]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993209,
+							["arg1"] = "嘿，接着！",
+						}, -- [47]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993220,
+							["arg1"] = "这是送你的独家游戏！",
+						}, -- [48]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993223,
+							["arg1"] = "噢，你可真有两下子！",
+						}, -- [49]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993223,
+							["arg1"] = "我敢打赌，你一定躲不开！",
+						}, -- [50]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993237,
+							["arg1"] = "动作快！",
+						}, -- [51]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993242,
+							["arg1"] = "来和我玩吧？求你了？",
+						}, -- [52]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993252,
+							["arg1"] = "有一个长得不一样哦！",
+						}, -- [53]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993256,
+							["arg1"] = "嘿，接着！",
+						}, -- [54]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993264,
+							["arg1"] = "就是你！快来和我玩！",
+						}, -- [55]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993270,
+							["arg1"] = "噢，你可真有两下子！",
+						}, -- [56]
+						{
+							["arg2"] = "唤雾者",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993271,
+							["arg1"] = "动作快！",
+						}, -- [57]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993306,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
+						}, -- [58]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993398,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
+						}, -- [59]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993620,
+							["arg1"] = "毁灭！吞噬！饕餮大餐！",
+						}, -- [60]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993625,
+							["arg1"] = "炸开花！炸开花！",
+						}, -- [61]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993640,
+							["arg1"] = "黑暗！",
+						}, -- [62]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993640,
+							["arg1"] = "我吃到了……我……进化了……",
+						}, -- [63]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993655,
+							["arg1"] = "你们无路可逃。",
+						}, -- [64]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993664,
+							["arg1"] = "孩子们，吞掉他们！",
+						}, -- [65]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993666,
+							["arg1"] = "诱人的美餐！",
+						}, -- [66]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993674,
+							["arg1"] = "你们无路可逃。",
+						}, -- [67]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993683,
+							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
+						}, -- [68]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993694,
+							["arg1"] = "我能看穿你们的每一步！",
+						}, -- [69]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993703,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
+						}, -- [70]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993706,
+							["arg1"] = "我的孩子饥饿难耐。",
+						}, -- [71]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993713,
+							["arg1"] = "你们的行动太明显了。",
+						}, -- [72]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993721,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
+						}, -- [73]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993732,
+							["arg1"] = "你们的行动太明显了。",
+						}, -- [74]
+						{
+							["arg2"] = "特雷德奥瓦",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627993733,
+							["arg1"] = "多么……甘甜的……智慧……",
+						}, -- [75]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1627993814,
+							["arg1"] = "精彩的胜利。你证明在佐瓦尔的军队里，无人能与你匹敌。",
+						}, -- [76]
+						{
+							["arg2"] = "卡达威鲁斯",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627994368,
+							["arg1"] = "搜遍每一条缝隙，寻找通灵师的尸体！",
+						}, -- [77]
+						{
+							["arg2"] = "波波",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627994952,
+							["arg1"] = "救兵就快到了，朋友！",
+						}, -- [78]
+						{
+							["arg2"] = "波波",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627995139,
+							["arg1"] = "出来面对波波吧，你这个大号的蓝色坏蛋！",
+						}, -- [79]
+						{
+							["arg2"] = "阿滴",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627995329,
+							["arg1"] = "为了堕罪堡！",
+						}, -- [80]
+						{
+							["arg2"] = "卡达威鲁斯",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1627995495,
+							["arg1"] = "搜遍每一条缝隙，寻找通灵师的尸体！",
+						}, -- [81]
+						{
+							["arg1"] = " ",
+						}, -- [82]
+						{
+							["arg1"] = " ",
+						}, -- [83]
+						{
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
+							["type"] = "SYSTEM",
+						}, -- [84]
+						{
+							["arg2"] = "Magiccream",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628000727,
+							["arg1"] = "没有人胆敢挑战兄弟会！",
+							["clColor"] = "fffe7b09",
+						}, -- [85]
+						{
+							["arg1"] = " ",
+						}, -- [86]
+						{
+							["arg1"] = " ",
+						}, -- [87]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
+						}, -- [88]
+						{
+							["arg2"] = "Magiccream",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628003409,
+							["arg1"] = "你们都是些不值一提的渣滓！",
+							["clColor"] = "fffe7b09",
+						}, -- [89]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628004984,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
+						}, -- [90]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005089,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
+						}, -- [91]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005270,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
+						}, -- [92]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628005330,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
+						}, -- [93]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628005983,
+							["arg1"] = "滚开！叛军的废物！",
+						}, -- [94]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628005990,
+							["arg1"] = "鲜血会吞没你！",
+						}, -- [95]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628005995,
+							["arg1"] = "听我的指令，奴仆们！",
+						}, -- [96]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006003,
+							["arg1"] = "不许动，凡人！",
+						}, -- [97]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006006,
+							["arg1"] = "尘归尘！",
+						}, -- [98]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006012,
+							["arg1"] = "你们毫无胜算。",
+						}, -- [99]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006013,
+							["arg1"] = "鲜血会吞没你！",
+						}, -- [100]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006030,
+							["arg1"] = "鲜血会吞没你！",
+						}, -- [101]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006035,
+							["arg1"] = "血肉真是脆弱！",
+						}, -- [102]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006038,
+							["arg1"] = "我要碾碎你！",
+						}, -- [103]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006044,
+							["arg1"] = "总算闭嘴了。",
+						}, -- [104]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006045,
+							["arg1"] = "听我的指令，奴仆们！",
+						}, -- [105]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006050,
+							["arg1"] = "大地正在流血！",
+						}, -- [106]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006052,
+							["arg1"] = "你们彻底失败了。",
+						}, -- [107]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006064,
+							["arg1"] = "你的命运早已刻在了石头上！",
+						}, -- [108]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006067,
+							["arg1"] = "尘归尘！",
+						}, -- [109]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006073,
+							["arg1"] = "你们彻底失败了。",
+						}, -- [110]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006074,
+							["arg1"] = "溺毙在鲜血中！",
+						}, -- [111]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006087,
+							["arg1"] = "听我的指令，奴仆们！",
+						}, -- [112]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006092,
+							["arg1"] = "溺毙在鲜血中！",
+						}, -- [113]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006097,
+							["arg1"] = "你的命运早已刻在了石头上！",
+						}, -- [114]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006100,
+							["arg1"] = "死从天降！",
+						}, -- [115]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006106,
+							["arg1"] = "你们彻底失败了。",
+						}, -- [116]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006109,
+							["arg1"] = "大地正在流血！",
+						}, -- [117]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006126,
+							["arg1"] = "你的命运早已刻在了石头上！",
+						}, -- [118]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006129,
+							["arg1"] = "我要碾碎你！",
+						}, -- [119]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006135,
+							["arg1"] = "你们毫无胜算。",
+						}, -- [120]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006136,
+							["arg1"] = "大地正在流血！",
+						}, -- [121]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006141,
+							["arg1"] = "过来！",
+						}, -- [122]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006153,
+							["arg1"] = "大地正在流血！",
+						}, -- [123]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006158,
+							["arg1"] = "血肉真是脆弱！",
+						}, -- [124]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006161,
+							["arg1"] = "死从天降！",
+						}, -- [125]
+						{
+							["arg2"] = "艾谢朗",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006167,
+							["arg1"] = "这……怎么……可能……",
+						}, -- [126]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006196,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
+						}, -- [127]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006235,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
+						}, -- [128]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006380,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
+						}, -- [129]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628006438,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
+						}, -- [130]
+						{
+							["arg2"] = "高阶裁决官阿丽兹",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006475,
+							["arg1"] = "你们的忏悔已经刻不容缓！",
+						}, -- [131]
+						{
+							["arg2"] = "高阶裁决官阿丽兹",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006490,
+							["arg1"] = "他们的痛苦会给你启迪。",
+						}, -- [132]
+						{
+							["arg2"] = "高阶裁决官阿丽兹",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006511,
+							["arg1"] = "他们的痛苦会给你启迪。",
+						}, -- [133]
+						{
+							["arg2"] = "高阶裁决官阿丽兹",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006532,
+							["arg1"] = "他们的痛苦会给你启迪。",
+						}, -- [134]
+						{
+							["arg2"] = "高阶裁决官阿丽兹",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006556,
+							["arg1"] = "他们的痛苦会给你启迪。",
+						}, -- [135]
+						{
+							["arg2"] = "高阶裁决官阿丽兹",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006564,
+							["arg1"] = "我的羊群……还需要我……",
+						}, -- [136]
+						{
+							["arg2"] = "审判官西加尔",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006589,
+							["arg1"] = "离我的教民远点，你这暴躁的傻瓜！",
+						}, -- [137]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006709,
+							["arg1"] = "我受够你们这些粗野的乡巴佬了。看来我得亲自动手。",
+						}, -- [138]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006782,
+							["arg1"] = "滚开，贱民！",
+						}, -- [139]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006789,
+							["arg1"] = "你们还没有骄傲的资格。",
+						}, -- [140]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006793,
+							["arg1"] = "你脏了我的眼睛！",
+						}, -- [141]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006799,
+							["arg1"] = "可悲的蝼蚁！",
+						}, -- [142]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006805,
+							["arg1"] = "别挡我的道。",
+						}, -- [143]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006819,
+							["arg1"] = "心能在宣泄！",
+						}, -- [144]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006836,
+							["arg1"] = "你们还没有骄傲的资格。",
+						}, -- [145]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006840,
+							["arg1"] = "你脏了我的眼睛！",
+						}, -- [146]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006855,
+							["arg1"] = "心能任我挥霍！",
+						}, -- [147]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006872,
+							["arg1"] = "好好感受你们深重的罪孽吧。",
+						}, -- [148]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006875,
+							["arg1"] = "你脏了我的眼睛！",
+						}, -- [149]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006887,
+							["arg1"] = "我快失去耐心了！",
+						}, -- [150]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006893,
+							["arg1"] = "好好感受你们深重的罪孽吧。",
+						}, -- [151]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006897,
+							["arg1"] = "可悲的蝼蚁！",
+						}, -- [152]
+						{
+							["arg2"] = "宫务大臣",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628006897,
+							["arg1"] = "没用的……仆人……",
+						}, -- [153]
+						{
+							["arg1"] = " ",
+						}, -- [154]
+						{
+							["arg1"] = " ",
+						}, -- [155]
+						{
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
+						}, -- [156]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628076873,
+							["arg1"] = "附近潜伏着邪恶的强敌。尽快解决它。",
+						}, -- [157]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077043,
+							["arg1"] = "赢得漂亮。快，夺走它的力量为你所用。",
+						}, -- [158]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077053,
 							["arg1"] = "可悲的生物。居然崇拜枯枝和落叶……",
+						}, -- [159]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077059,
+							["arg1"] = "自然注定被我们掌控和驯服。德鲁斯特必将征服万物！",
+						}, -- [160]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077071,
+							["arg1"] = "噬渊的黑暗魔法在此凝聚，快消除它的源头。",
+						}, -- [161]
+						{
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077113,
+							["arg1"] = "这个生物被消灭了。快，夺走它的力量为你所用。",
+						}, -- [162]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077215,
+							["arg1"] = "仙木灵！碾碎这些爬虫！",
+						}, -- [163]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077219,
+							["arg1"] = "快逃。我的心智……背叛了我……",
+						}, -- [164]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077226,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [165]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077230,
+							["arg1"] = "一定要……撑住……",
+						}, -- [166]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077240,
+							["arg1"] = "痛苦……困惑……",
 						}, -- [167]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070547,
-							["arg1"] = "自然注定被我们掌控和驯服。德鲁斯特必将征服万物！",
+							["time"] = 1628077242,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [168]
 						{
-							["arg2"] = "英格拉·马洛克",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070615,
-							["arg1"] = "你会听从我的命令！",
+							["time"] = 1628077246,
+							["arg1"] = "一定要……撑住……",
 						}, -- [169]
 						{
-							["arg2"] = "宗主奥法兰",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070619,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077246,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [170]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070629,
-							["arg1"] = "我……控制不住……",
-						}, -- [171]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070633,
-							["arg1"] = "服从我！",
-						}, -- [172]
+							["time"] = 1628077250,
+							["arg1"] = "黑暗拥抱我！",
+						}, -- [171]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070636,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077256,
+							["arg1"] = "痛苦……困惑……",
+						}, -- [172]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077259,
+							["arg1"] = "服从我！",
 						}, -- [173]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070638,
-							["arg1"] = "要对仙野有信心。",
+							["time"] = 1628077263,
+							["arg1"] = "森林渴望着你们的胜利，凡人。",
 						}, -- [174]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070652,
-							["arg1"] = "竟敢违抗我！",
+							["time"] = 1628077277,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [175]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070664,
-							["arg1"] = "痛苦……困惑……",
+							["time"] = 1628077290,
+							["arg1"] = "我……控制不住……",
 						}, -- [176]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070670,
-							["arg1"] = "服从我！",
+							["time"] = 1628077295,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [177]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070674,
+							["time"] = 1628077298,
 							["arg1"] = "一定要……撑住……",
 						}, -- [178]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070684,
+							["time"] = 1628077308,
 							["arg1"] = "痛苦……困惑……",
 						}, -- [179]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070686,
+							["time"] = 1628077313,
 							["arg1"] = "服从我！",
 						}, -- [180]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070690,
-							["arg1"] = "请……活下来……",
+							["time"] = 1628077315,
+							["arg1"] = "森林渴望着你们的胜利，凡人。",
 						}, -- [181]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070693,
-							["arg1"] = "从我眼前消失！",
+							["time"] = 1628077329,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [182]
-						{
-							["arg2"] = "英格拉·马洛克",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070697,
-							["arg1"] = "黑暗拥抱我！",
-						}, -- [183]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070700,
+							["time"] = 1628077342,
 							["arg1"] = "痛苦……困惑……",
-						}, -- [184]
+						}, -- [183]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070702,
+							["time"] = 1628077349,
 							["arg1"] = "服从我！",
+						}, -- [184]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077352,
+							["arg1"] = "请……活下来……",
 						}, -- [185]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070706,
-							["arg1"] = "一定要……撑住……",
+							["time"] = 1628077363,
+							["arg1"] = "我……控制不住……",
 						}, -- [186]
-						{
-							["arg2"] = "宗主奥法兰",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070708,
-							["arg1"] = "要对仙野有信心。",
-						}, -- [187]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070722,
-							["arg1"] = "我会把你们碾成粉末！",
-						}, -- [188]
+							["time"] = 1628077367,
+							["arg1"] = "你会听从我的命令！",
+						}, -- [187]
 						{
 							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070735,
-							["arg1"] = "痛苦……困惑……",
+							["time"] = 1628077371,
+							["arg1"] = "一定要……撑住……",
+						}, -- [188]
+						{
+							["arg2"] = "英格拉·马洛克",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077371,
+							["arg1"] = "我是你最可怕的梦魇！",
 						}, -- [189]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070742,
-							["arg1"] = "你会听从我的命令！",
+							["time"] = 1628077375,
+							["arg1"] = "黑暗拥抱我！",
 						}, -- [190]
+						{
+							["arg2"] = "宗主奥法兰",
+							["type"] = "MONSTER_YELL",
+							["time"] = 1628077381,
+							["arg1"] = "我……控制不住……",
+						}, -- [191]
 						{
 							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611070744,
-							["arg1"] = "你们明明……那么……弱……",
-						}, -- [191]
-						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611070755,
-							["arg1"] = "耶！又有新朋友来玩了！快过来！",
+							["time"] = 1628077388,
+							["arg1"] = "你会听从我的命令！",
 						}, -- [192]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "宗主奥法兰",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071004,
-							["arg1"] = "这一定会很有趣！",
+							["time"] = 1628077392,
+							["arg1"] = "要对仙野有信心。",
 						}, -- [193]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071010,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077400,
+							["arg1"] = "你们明明……那么……弱……",
 						}, -- [194]
 						{
-							["arg2"] = "唤雾者",
+							["arg2"] = "英格拉·马洛克",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071017,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628077400,
+							["arg1"] = "我会把你们碾成粉末！",
 						}, -- [195]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071025,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077415,
+							["arg1"] = "有个残忍的渊誓者就在附近，当心。",
 						}, -- [196]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071028,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077417,
+							["arg1"] = "耶！又有新朋友来玩了！快过来！",
 						}, -- [197]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071041,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628077466,
+							["arg1"] = "心能属于胜利者。这力量归你了，噬渊行者。",
 						}, -- [198]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071043,
-							["arg1"] = "噢，你玩累了吗？",
+							["time"] = 1628077875,
+							["arg1"] = "这一定会很有趣！",
 						}, -- [199]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071044,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077883,
+							["arg1"] = "嘿，接着！",
 						}, -- [200]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071055,
-							["arg1"] = "动作快！",
+							["time"] = 1628077890,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [201]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071066,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077894,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [202]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071111,
-							["arg1"] = "这一定会很有趣！",
+							["time"] = 1628077899,
+							["arg1"] = "嘿，接着！",
 						}, -- [203]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071120,
-							["arg1"] = "动作快！",
+							["time"] = 1628077910,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [204]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071125,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077913,
+							["arg1"] = "嘿，接着！",
 						}, -- [205]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071137,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077914,
+							["arg1"] = "我在这！嘿嘿！",
 						}, -- [206]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071147,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628077926,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [207]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071150,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077933,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [208]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071155,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628077938,
+							["arg1"] = "嘿，接着！",
 						}, -- [209]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071169,
-							["arg1"] = "我在这！嘿嘿！",
+							["time"] = 1628077949,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [210]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071169,
+							["time"] = 1628077954,
 							["arg1"] = "嘿，接着！",
 						}, -- [211]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071173,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077960,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [212]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071183,
+							["time"] = 1628077967,
 							["arg1"] = "嘿，接着！",
 						}, -- [213]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071196,
-							["arg1"] = "就是你！快来和我玩！",
+							["time"] = 1628077970,
+							["arg1"] = "不玩了？",
 						}, -- [214]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071201,
-							["arg1"] = "动作快！",
+							["time"] = 1628077979,
+							["arg1"] = "你找到我了！真棒！",
 						}, -- [215]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071206,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628077982,
+							["arg1"] = "我敢打赌，你一定躲不开！",
 						}, -- [216]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071217,
-							["arg1"] = "嘿，接着！",
+							["time"] = 1628077988,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [217]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071221,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628077996,
+							["arg1"] = "嘿，接着！",
 						}, -- [218]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071222,
-							["arg1"] = "你找到我了！真棒！",
+							["time"] = 1628078012,
+							["arg1"] = "动作快！",
 						}, -- [219]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071230,
-							["arg1"] = "动作快！",
+							["time"] = 1628078016,
+							["arg1"] = "来和我玩吧？求你了？",
 						}, -- [220]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071243,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628078024,
+							["arg1"] = "有一个长得不一样哦！",
 						}, -- [221]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071246,
-							["arg1"] = "这是送你的独家游戏！",
+							["time"] = 1628078029,
+							["arg1"] = "嘿，接着！",
 						}, -- [222]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071258,
-							["arg1"] = "我敢打赌，你一定躲不开！",
+							["time"] = 1628078037,
+							["arg1"] = "这是送你的独家游戏！",
 						}, -- [223]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071262,
-							["arg1"] = "有一个长得不一样哦！",
+							["time"] = 1628078044,
+							["arg1"] = "动作快！",
 						}, -- [224]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071268,
-							["arg1"] = "来和我玩吧？求你了？",
+							["time"] = 1628078056,
+							["arg1"] = "噢，你可真有两下子！",
 						}, -- [225]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071273,
-							["arg1"] = "动作快！",
+							["time"] = 1628078056,
+							["arg1"] = "就是你！快来和我玩！",
 						}, -- [226]
 						{
 							["arg2"] = "唤雾者",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071282,
-							["arg1"] = "噢，你可真有两下子！",
+							["time"] = 1628078058,
+							["arg1"] = "嘿，接着！",
 						}, -- [227]
 						{
-							["arg2"] = "唤雾者",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071287,
-							["arg1"] = "嘿，接着！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628078099,
+							["arg1"] = "当心，你前面是典狱长的强大仆从。",
 						}, -- [228]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071527,
-							["arg1"] = "毁灭！吞噬！饕餮大餐！",
+							["arg2"] = "兵主",
+							["type"] = "MONSTER_WHISPER",
+							["time"] = 1628078145,
+							["arg1"] = "拿走这头野兽的力量，用它来抵御前方的危险。",
 						}, -- [229]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071532,
-							["arg1"] = "炸开花！炸开花！",
+							["time"] = 1628078582,
+							["arg1"] = "毁灭！吞噬！饕餮大餐！",
 						}, -- [230]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071548,
-							["arg1"] = "黑暗！",
+							["time"] = 1628078588,
+							["arg1"] = "痛死你！痛死你！",
 						}, -- [231]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071550,
-							["arg1"] = "饿了！要吃饭！",
+							["time"] = 1628078602,
+							["arg1"] = "暗影！",
 						}, -- [232]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071552,
-							["arg1"] = "痛死你！痛死你！",
+							["time"] = 1628078602,
+							["arg1"] = "我吃到了……我……进化了……",
 						}, -- [233]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071554,
-							["arg1"] = "我吃到了……我……进化了……",
+							["time"] = 1628078609,
+							["arg1"] = "这下可没法躲了！",
 						}, -- [234]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071572,
-							["arg1"] = "这下可没法躲了！",
+							["time"] = 1628078627,
+							["arg1"] = "来吧孩子们。开动。",
 						}, -- [235]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071581,
-							["arg1"] = "孩子们，吞掉他们！",
+							["time"] = 1628078628,
+							["arg1"] = "他们能闻到你！",
 						}, -- [236]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071582,
-							["arg1"] = "诱人的美餐！",
+							["time"] = 1628078628,
+							["arg1"] = "这下可没法躲了！",
 						}, -- [237]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071591,
-							["arg1"] = "你们无路可逃。",
+							["time"] = 1628078638,
+							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
 						}, -- [238]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071604,
-							["arg1"] = "我还要更多。灵感在我头脑里迸发。",
+							["time"] = 1628078648,
+							["arg1"] = "我能看穿你们的每一步！",
 						}, -- [239]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071614,
-							["arg1"] = "你们的行动太明显了。",
+							["time"] = 1628078659,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [240]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071628,
-							["arg1"] = "这是你们神智中幽暗的深渊。",
+							["time"] = 1628078661,
+							["arg1"] = "我的孩子饥饿难耐。",
 						}, -- [241]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071631,
-							["arg1"] = "你们的血肉将滋养我的后代。",
+							["time"] = 1628078667,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [242]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071634,
-							["arg1"] = "我能看穿你们的每一步！",
+							["time"] = 1628078675,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [243]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071644,
-							["arg1"] = "这是你们神智中幽暗的深渊。",
+							["time"] = 1628078686,
+							["arg1"] = "你们的行动太明显了。",
 						}, -- [244]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071653,
-							["arg1"] = "你们的行动太明显了。",
+							["time"] = 1628078695,
+							["arg1"] = "这是你们神智中幽暗的深渊。",
 						}, -- [245]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071661,
-							["arg1"] = "你们的无知清晰可见。",
+							["time"] = 1628078697,
+							["arg1"] = "你们的血肉将滋养我的后代。",
 						}, -- [246]
 						{
 							["arg2"] = "特雷德奥瓦",
 							["type"] = "MONSTER_YELL",
-							["time"] = 1611071664,
-							["arg1"] = "我的孩子饥饿难耐。",
+							["time"] = 1628078697,
+							["arg1"] = "多么……甘甜的……智慧……",
 						}, -- [247]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071672,
-							["arg1"] = "你们的行动太明显了。",
+							["arg1"] = " ",
 						}, -- [248]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071683,
-							["arg1"] = "你们的无知清晰可见。",
+							["arg1"] = " ",
 						}, -- [249]
 						{
-							["arg2"] = "特雷德奥瓦",
-							["type"] = "MONSTER_YELL",
-							["time"] = 1611071686,
-							["arg1"] = "多么……甘甜的……智慧……",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [250]
 					},
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["enabled"] = true,
 				}, -- [11]
 				["大脚世界频道"] = {
@@ -14498,2661 +14427,1690 @@ ElephantDBPerChar = {
 					["name"] = "大脚世界频道",
 					["logs"] = {
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611063302,
-							["arg1"] = "橙装可以直接从1级跳到3级吗",
+							["clColor"] = "fffefefe",
+							["time"] = 1627993926,
+							["arg1"] = "合着说了半天，他是个瞎子··",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "赵璐璐-黑手军团",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [1]
 						{
 							["clColor"] = "fff38bb9",
-							["time"] = 1611063307,
-							["arg1"] = "1",
+							["time"] = 1627993936,
+							["arg1"] = "这么对聊天机器人，人家吓坏了",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "索菲熊熊-红龙女王",
+							["arg2"] = "诚挚的欺骗-奈萨里奥",
 						}, -- [2]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611063309,
-							["arg1"] = "带 大米 爬塔 来人",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627993939,
+							["arg1"] = "大佬们 梅莉今天哪里上班",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "是盼盼呀-红龙女王",
+							["arg2"] = "银刀太妹-菲拉斯",
 						}, -- [3]
 						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611063319,
-							["arg1"] = "|cffffff00|Hachievement:11987:Player-1515-04525205:0:0:0:-1:0:0:0:0|h[阿古斯团队的荣耀]|h|r几十分钟阿古斯成就拿到手 给恶犬~免费无套路没有的来还差2人",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627993940,
+							["arg1"] = "名字前面啥符号？",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "舅口确僖-菲拉斯",
+							["arg2"] = "谁寄花笺来-格雷迈恩",
 						}, -- [4]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611063364,
-							["arg1"] = "H尾王来个熟练T 来个熟练T 来了就开",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627993942,
+							["arg1"] = "这就对了，这才是真正的新人",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "不爱也是伤-格雷迈恩",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [5]
 						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611063370,
-							["arg1"] = "|cffffff00|Hachievement:11987:Player-1515-04525205:0:0:0:-1:0:0:0:0|h[阿古斯团队的荣耀]|h|r几十分钟阿古斯成就拿到手 给恶犬~免费无套路没有的来还差2人",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1627993943,
+							["arg1"] = "chuanjiabao 买荣誉点数 买装备",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "舅口确僖-菲拉斯",
+							["arg2"] = "孤单猫二-菲拉斯",
 						}, -- [6]
 						{
-							["clColor"] = "ffa22fc8",
-							["time"] = 1611063372,
-							["arg1"] = "1",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1627993947,
+							["arg1"] = "我小白",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "火之舞者-红龙女王",
+							["arg2"] = "孤单猫二-菲拉斯",
 						}, -- [7]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611063394,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1627993951,
+							["arg1"] = "谁能带我去",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "叫我小刘就好-格雷迈恩",
+							["arg2"] = "孤单猫二-菲拉斯",
 						}, -- [8]
 						{
 							["clColor"] = "ff8687ed",
-							["time"] = 1611063421,
-							["arg1"] = "|cffffff00|Hachievement:11987:Player-1515-04525205:0:0:0:-1:0:0:0:0|h[阿古斯团队的荣耀]|h|r几十分钟阿古斯成就拿到手 给恶犬~免费无套路没有的来还差2人",
+							["time"] = 1627993993,
+							["arg1"] = "买chuan家bao首先你要有G币，你有多少……",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "舅口确僖-菲拉斯",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [9]
 						{
-							["clColor"] = "fff38bb9",
-							["time"] = 1611063448,
-							["arg1"] = "M小怪来的MMMMM",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994002,
+							["arg1"] = "你有多少钱",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "白无垢-格雷迈恩",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [10]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611063452,
-							["arg1"] = "收炼金龙，带价M",
+							["clColor"] = "fffefefe",
+							["time"] = 1627994026,
+							["arg1"] = "你都没大号，，，哪来的传家   宝",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "尽悬北凉刀-菲拉斯",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [11]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611063461,
-							["arg1"] = "|cffffff00|Hachievement:11987:Player-1515-04525205:0:0:0:-1:0:0:0:0|h[阿古斯团队的荣耀]|h|r几十分钟拿紫色大狗 做阿古斯成就还没有的快来 还差2人",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627994056,
+							["arg1"] = "黑市刷的什么  有人知道吗",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "内辈判蝗-菲拉斯",
+							["arg2"] = "Konie-菲拉斯",
 						}, -- [12]
 						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611063472,
-							["arg1"] = "|cffffff00|Hachievement:11987:Player-1515-04525205:0:0:0:-1:0:0:0:0|h[阿古斯团队的荣耀]|h|r几十分钟阿古斯成就拿到手 给恶犬~免费无套路没有的来还差2人",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994063,
+							["arg1"] = "白鸡",
 							["arg9"] = "大脚世界频道",
-							["arg2"] = "舅口确僖-菲拉斯",
+							["arg2"] = "谁寄花笺来-格雷迈恩",
 						}, -- [13]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994069,
+							["arg1"] = "。。。都说了，站桩20，睡一觉就满级了，打一防一混一下午征服就能打团本了",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [14]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994089,
+							["arg1"] = "咋非要跟传家 宝过不去",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [15]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fffefefe",
+							["time"] = 1627994101,
+							["arg1"] = "····",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [16]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994103,
+							["arg1"] = "体验小号升级的乐趣？",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "谁寄花笺来-格雷迈恩",
 						}, -- [17]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611067439,
-							["arg1"] = "|cffffd100|HclubFinder:ClubFinder-1-81604-1500-41066320|h[公会: 谋杀娃娃]|h|r千人公会纳新，公会气氛友好欢迎新人和大秘/PVP玩家，备战M团本活动时间周四五六晚8-11，招收主力位置强力输出。",
-							["arg2"] = "醉里乾坤-黑手军团",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994123,
+							["arg1"] = "大哥，征服现在就能拿2450……",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [18]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611067504,
-							["arg1"] = "|cffffff00|Hquest:62969:837|h[紧跟线索]|h|r这个线索在上塔几层啊",
-							["arg2"] = "赵璐璐-黑手军团",
+							["clColor"] = "fffefefe",
+							["time"] = 1627994124,
+							["arg1"] = "萌新 能知道传家   宝 也是个奇迹",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [19]
 						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611067526,
-							["arg1"] = "打完boss掉落线索",
-							["arg2"] = "全聚德的-格雷迈恩",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994169,
+							["arg1"] = "不是，新手区她能看到的，都是传家 宝",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [20]
 						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611067536,
-							["arg1"] = "出售四系卡牌饰品，出售1-4级《皮锁板项链戒指橙胚》 会4级皮甲--全套--，4级锁甲（肩{护臂}{头}，全套4级--板甲--，4级{戒指}{项链}",
-							["arg2"] = "咕德猫-格雷迈恩",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994186,
+							["arg1"] = "萌新基本都知道，你们可以去AG领取一个向导资格，就可以解锁新手频道，里面基本都知道穿甲保",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [21]
 						{
-							["clColor"] = "fffef367",
-							["time"] = 1611067553,
-							["arg1"] = "好像是路上一个npc 对话后他会说有个绿皮大个子被抓走了",
-							["arg2"] = "蛇货-红龙女王",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994224,
+							["arg1"] = "灵魂灰烬怎么刷快啊 大佬们",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Sturdy-格雷迈恩",
 						}, -- [22]
 						{
-							["clColor"] = "fffef367",
-							["time"] = 1611067557,
-							["arg1"] = "然后打尾王",
-							["arg2"] = "蛇货-红龙女王",
+							["clColor"] = "fffefefe",
+							["time"] = 1627994240,
+							["arg1"] = "无限爬塔··",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [23]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611067569,
-							["arg1"] = "饕餮刷了",
-							["arg2"] = "名字才烦哦-红龙女王",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994242,
+							["arg1"] = "大号邮寄",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Bratma-奈萨里奥",
 						}, -- [24]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611067737,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "网恋加抠详谈-格雷迈恩",
+							["clColor"] = "fffef367",
+							["time"] = 1627994264,
+							["arg1"] = "大号邮件",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "低调的华尔兹-格雷迈恩",
 						}, -- [25]
 						{
-							["clColor"] = "fff38bb9",
-							["time"] = 1611067792,
-							["arg1"] = "2",
-							["arg2"] = "轩辕一方-红龙女王",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994270,
+							["arg1"] = "爬塔每周 有上限吗",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Sturdy-格雷迈恩",
 						}, -- [26]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611067793,
-							["arg1"] = "3",
-							["arg2"] = "不落酸酸-奈萨里奥",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994271,
+							["arg1"] = "每个奇数点去杀折磨者，好像必给50",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [27]
 						{
-							["clColor"] = "fff38bb9",
-							["time"] = 1611067861,
-							["arg1"] = "1",
-							["arg2"] = "木子丨六月-红龙女王",
+							["clColor"] = "fffefefe",
+							["time"] = 1627994279,
+							["arg1"] = "灰烬能邮寄？真不知道呢··",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [28]
 						{
-							["clColor"] = "ffa22fc8",
-							["time"] = 1611067869,
-							["arg1"] = "找个开锁彦祖 于晏 帮帮忙  |cff1eff00|Hitem:179311::::::::60:577:::1:6826:2:9:60:28:2060:::|h[髓硫保险箱]|h|r",
-							["arg2"] = "蛋蛋的刀刀-菲拉斯",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994289,
+							["arg1"] = "能，300换250",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [29]
 						{
-							["clColor"] = "fff38bb9",
-							["time"] = 1611067870,
-							["arg1"] = "1",
-							["arg2"] = "木子丨六月-红龙女王",
+							["clColor"] = "fffefefe",
+							["time"] = 1627994327,
+							["arg1"] = "那意思，能交易？我同服的卖点给你吧···",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [30]
 						{
 							["clColor"] = "ff006fdc",
-							["time"] = 1611067904,
-							["arg1"] = "有史诗本队伍吗",
-							["arg2"] = "解封祭神-格雷迈恩",
+							["time"] = 1627994343,
+							["arg1"] = "账号通用",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "耗子尾只-奈萨里奥",
 						}, -- [31]
 						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611068004,
-							["arg1"] = "|cffa335ee|Hitem:184778::::::::10:1455::6:4:7187:6652:1498:6646:1:28:753:::|h[颓废的纳斯利亚披巾]|h|r|cffa335ee|Hitem:183010::::::::10:1455::6:4:7187:6652:1498:6646:1:28:753:::|h[钉痕足甲]|h|r要的M",
-							["arg2"] = "垃圾佬-格雷迈恩",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994346,
+							["arg1"] = "大哥，战网通行证绑定",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [32]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611068298,
-							["arg1"] = "@退出公会",
-							["arg2"] = "王十三-格雷迈恩",
+							["clColor"] = "ff006fdc",
+							["time"] = 1627994350,
+							["arg1"] = "真瓜啊",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "耗子尾只-奈萨里奥",
 						}, -- [33]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611068340,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "网恋加抠详谈-格雷迈恩",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1627994352,
+							["arg1"] = "怎么邮寄啊",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "崔小玄-格雷迈恩",
 						}, -- [34]
 						{
-							["clColor"] = "fff38bb9",
-							["time"] = 1611068376,
-							["arg1"] = "M小怪来的MMMMM",
-							["arg2"] = "白无垢-格雷迈恩",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994353,
+							["arg1"] = "收SS绿火书 有的MMMMMMMMMM",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Hc-菲拉斯",
 						}, -- [35]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611068379,
-							["arg1"] = "M小怪刷装绑 来的密",
-							["arg2"] = "萌面小姨妈-黑手军团",
+							["clColor"] = "fffefefe",
+							["time"] = 1627994361,
+							["arg1"] = "{尴尬}",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [36]
 						{
 							["clColor"] = "ffa9d271",
-							["time"] = 1611068407,
-							["arg1"] = "刚才的猎人老哥m我下",
-							["arg2"] = "樱雪落-红龙女王",
+							["time"] = 1627994367,
+							["arg1"] = "大号买了 装备 U 给小号不就可以了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Hpv-菲拉斯",
 						}, -- [37]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611068425,
-							["arg1"] = "请问，wqz的40级天赋选哪个|cff71d5ff|Htalent:22392|h[间接伤害]|h|r|cff71d5ff|Htalent:22391|h[灭战者]|h|r",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994387,
+							["arg1"] = "把灵魂灰烬300个打包成250个的传家宝，邮寄给小号",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "谁寄花笺来-格雷迈恩",
 						}, -- [38]
 						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611068435,
-							["arg1"] = "|cff71d5ff|Htalent:22391|h[灭战者]|h|r",
-							["arg2"] = "丶紫夜丿灬-菲拉斯",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994387,
+							["arg1"] = "收SS绿火书 有的MMMMMMMMMM",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Hc-菲拉斯",
 						}, -- [39]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611068440,
-							["arg1"] = "大佬们，幽暗城天灾蝙蝠是不是绝版了？",
-							["arg2"] = "背后居死你-格雷迈恩",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994396,
+							["arg1"] = "懂了吧",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "谁寄花笺来-格雷迈恩",
 						}, -- [40]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611068443,
-							["arg1"] = "反正我选的|cff71d5ff|Htalent:22391|h[灭战者]|h|r",
-							["arg2"] = "苍蝇搓脚-格雷迈恩",
+							["clColor"] = "fffefefe",
+							["time"] = 1627994411,
+							["arg1"] = "哦，搜嘎",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "风月残雪-黑手军团",
 						}, -- [41]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611068461,
-							["arg1"] = "果然我是明智的，也是灭站着",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627994461,
+							["arg1"] = "|cffffd100|HclubFinder:ClubFinder-1-10703-1500-44288345|h[公会: 倾注一生]|h|r 周451晚8-11点开荒M统御圣所，补两个意识不错朋友！亦欢迎其他小伙伴入坑，互相帮衬~",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "不羁的風丶-格雷迈恩",
 						}, -- [42]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611068464,
-							["arg1"] = "hiahiahia",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994501,
+							["arg1"] = "|cffffff00|Hquest:62719:709|h[最后一片]|h|r这个怎么做啊 ",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "羽八爷-菲拉斯",
 						}, -- [43]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611068466,
-							["arg1"] = "刚才的猎人老哥m我下",
-							["arg2"] = "樱雪落-红龙女王",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994504,
+							["arg1"] = "直接AH买？",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "羽八爷-菲拉斯",
 						}, -- [44]
 						{
 							["clColor"] = "ffc59a6c",
-							["time"] = 1611068467,
-							["arg1"] = "谢谢",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["time"] = 1627994518,
+							["arg1"] = "买",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "煮豆燃豆萁-菲拉斯",
 						}, -- [45]
 						{
-							["clColor"] = "fffef367",
-							["time"] = 1611068543,
-							["arg1"] = "收个 |cffa335ee|Hitem:183035::::::::60:261:::::::|h[炽热阳星玺戒]|h|r 有的代价MMMMMMMMMMMMMMM",
-							["arg2"] = "心如静水-菲拉斯",
+							["clColor"] = "ff006fdc",
+							["time"] = 1627994520,
+							["arg1"] = "买啊",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "淡雅血色-格雷迈恩",
 						}, -- [46]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611068576,
-							["arg1"] = "M小怪刷装绑 来的密",
-							["arg2"] = "萌面小姨妈-黑手军团",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994549,
+							["arg1"] = "就搜 符文容器 和公函么",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "羽八爷-菲拉斯",
 						}, -- [47]
 						{
-							["clColor"] = "fffef367",
-							["time"] = 1611068582,
-							["arg1"] = "收个 226的|cffa335ee|Hitem:183035::::::::60:261:::::::|h[炽热阳星玺戒]|h|r有的代价MMMMMMMMMM",
-							["arg2"] = "心如静水-菲拉斯",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994585,
+							["arg1"] = "现在亡灵的头子是谁啊？",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "暴尸幽魂-菲拉斯",
 						}, -- [48]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611068648,
-							["arg1"] = "带 大米 爬塔 来人",
-							["arg2"] = "是盼盼呀-红龙女王",
+							["clColor"] = "ff006fdc",
+							["time"] = 1627994587,
+							["arg1"] = "公函对的，符文容器错了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Revengor-格雷迈恩",
 						}, -- [49]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611068657,
-							["arg1"] = "M小怪刷装绑 来的密",
-							["arg2"] = "萌面小姨妈-黑手军团",
+							["clColor"] = "ff006fdc",
+							["time"] = 1627994610,
+							["arg1"] = "符文容器=护甲=你自己的那种类型的甲里面去找",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Revengor-格雷迈恩",
 						}, -- [50]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611068749,
-							["arg1"] = "请问有锁甲肩代工吗？麻烦联系一下",
-							["arg2"] = "香艹聖代-格雷迈恩",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627994612,
+							["arg1"] = "AH选择对应的护甲，点符文铭刻，点搜索",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "浅浅玄-红龙女王",
 						}, -- [51]
 						{
 							["clColor"] = "ffc59a6c",
-							["time"] = 1611068802,
-							["arg1"] = "哎 无趣的世界频道",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
+							["time"] = 1627994633,
+							["arg1"] = "是我",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "苍蝇搓脚-格雷迈恩",
 						}, -- [52]
 						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611068816,
-							["arg1"] = "典狱长之怒 怎么刷新啊",
-							["arg2"] = "小手托腮-红龙女王",
+							["clColor"] = "ffc31d39",
+							["time"] = 1627994791,
+							["arg1"] = "13",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [53]
 						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611068820,
-							["arg1"] = "|cffa335ee|Hitem:184778::::::::10:1455::6:4:7187:6652:1498:6646:1:28:753:::|h[颓废的纳斯利亚披巾]|h|r|cffa335ee|Hitem:183010::::::::10:1455::6:4:7187:6652:1498:6646:1:28:753:::|h[钉痕足甲]|h|r需要的M",
-							["arg2"] = "垃圾佬-格雷迈恩",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994801,
+							["arg1"] = "我卡死了怎么办",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "战神瓦格里-红龙女王",
 						}, -- [54]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611068828,
-							["arg1"] = "使劲刷",
-							["arg2"] = "Redmer-格雷迈恩",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994808,
+							["arg1"] = "大退了还卡着",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "战神瓦格里-红龙女王",
 						}, -- [55]
 						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611068829,
-							["arg1"] = "出售四系卡牌饰品，出售1-4级《皮锁板项链戒指橙胚》 会4级皮甲--全套--，4级锁甲（肩{护臂}{头}，全套4级--板甲--，4级{戒指}{项链}",
-							["arg2"] = "咕德猫-格雷迈恩",
+							["clColor"] = "ff006fdc",
+							["time"] = 1627994817,
+							["arg1"] = "删号重练",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "淡雅血色-格雷迈恩",
 						}, -- [56]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611068830,
-							["arg1"] = "时间到了自然刷新",
-							["arg2"] = "Revengor-格雷迈恩",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994819,
+							["arg1"] = "卸载游戏重装",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [57]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611068835,
-							["arg1"] = "？",
-							["arg2"] = "孙笑川-菲拉斯",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994828,
+							["arg1"] = "66666",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "战神瓦格里-红龙女王",
 						}, -- [58]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611068840,
-							["arg1"] = "一天一刷 满了等明天再来",
-							["arg2"] = "二狗突然-菲拉斯",
+							["clColor"] = "ffc31d39",
+							["time"] = 1627994830,
+							["arg1"] = "联系GM",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [59]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611068847,
-							["arg1"] = "武僧现在厉害吗？",
-							["arg2"] = "阿南-奈萨里奥",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994837,
+							["arg1"] = "电脑砸了 换一台",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "暴尸幽魂-菲拉斯",
 						}, -- [60]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611068855,
-							["arg1"] = "武僧 垃圾",
-							["arg2"] = "Redmer-格雷迈恩",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627994850,
+							["arg1"] = "为什么老是怪电脑呢",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "恐怖得-菲拉斯",
 						}, -- [61]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611068860,
-							["arg1"] = "典狱长是一周一刷的",
-							["arg2"] = "Revengor-格雷迈恩",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627994851,
+							["arg1"] = "你这人太坏了，这和删号有啥关系",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [62]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611068861,
-							["arg1"] = "。。。",
-							["arg2"] = "风暴烈酒丶-红龙女王",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627994855,
+							["arg1"] = "人的问题",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "恐怖得-菲拉斯",
 						}, -- [63]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611068866,
-							["arg1"] = "多垃圾",
-							["arg2"] = "阿南-奈萨里奥",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627994857,
+							["arg1"] = "把老婆打一顿就好了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "妖怪我师傅呢-红龙女王",
 						}, -- [64]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611068869,
-							["arg1"] = "MS选啥天赋",
-							["arg2"] = "孙笑川-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627994862,
+							["arg1"] = "回炉重造",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "恐怖得-菲拉斯",
 						}, -- [65]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611068869,
-							["arg1"] = "每周一次拾取",
-							["arg2"] = "Revengor-格雷迈恩",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994876,
+							["arg1"] = "太坏了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "银刀太妹-菲拉斯",
 						}, -- [66]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611068872,
-							["arg1"] = "和尚厉害着啊",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994881,
+							["arg1"] = "alt+F4",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "谁寄花笺来-格雷迈恩",
 						}, -- [67]
 						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611068874,
-							["arg1"] = "看到了 在刷",
-							["arg2"] = "小手托腮-红龙女王",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627994950,
+							["arg1"] = "有没有M1啊",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "愤怒的馒头-菲拉斯",
 						}, -- [68]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611068913,
-							["arg1"] = "|cffffff00|Hquest:62836:837|h[狮王的线索]|h|r都没敢去爬",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627994964,
+							["arg1"] = "同问",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "恐怖得-菲拉斯",
 						}, -- [69]
 						{
 							["clColor"] = "fff38bb9",
-							["time"] = 1611068919,
-							["arg1"] = "借个团",
-							["arg2"] = "蕾依莉雅-格雷迈恩",
+							["time"] = 1627994978,
+							["arg1"] = "咱们fwq是不是没人了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "愤怒的馒头-菲拉斯",
 						}, -- [70]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611068922,
-							["arg1"] = "纳斯利亚堡 普通 180+++++++ 免费",
-							["arg2"] = "兆黄柑丝蚀-菲拉斯",
+							["clColor"] = "fffef367",
+							["time"] = 1627994983,
+							["arg1"] = "我也想知道",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "寒月影刃-菲拉斯",
 						}, -- [71]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611068931,
-							["arg1"] = "给你们吓的  现在还没缓过来",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627994994,
+							["arg1"] = "有个锤子",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "七擒萌货-奈萨里奥",
 						}, -- [72]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611068937,
-							["arg1"] = "？",
-							["arg2"] = "孙笑川-菲拉斯",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627995004,
+							["arg1"] = "你看服务器负载就知道，金六服妥妥人口大服",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大筒木辉夜-格雷迈恩",
 						}, -- [73]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611068946,
-							["arg1"] = "纳斯利亚堡普通新CD~180+++等你加入",
-							["arg2"] = "Fheqcv-菲拉斯",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627995023,
+							["arg1"] = "M1不是比H还简单吗",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "愤怒的馒头-菲拉斯",
 						}, -- [74]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611068971,
-							["arg1"] = "纳斯利亚堡 普通 180+++++++ 免费",
-							["arg2"] = "兆黄柑丝蚀-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627995058,
+							["arg1"] = "主要是组人累",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "恐怖得-菲拉斯",
 						}, -- [75]
 						{
 							["clColor"] = "fff38bb9",
-							["time"] = 1611068985,
-							["arg1"] = "借个团",
-							["arg2"] = "蕾依莉雅-格雷迈恩",
+							["time"] = 1627995074,
+							["arg1"] = "你开团吧 我配合你",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "愤怒的馒头-菲拉斯",
 						}, -- [76]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611068998,
-							["arg1"] = "纳斯利亚堡普通新CD~180+++等你加入",
-							["arg2"] = "Fheqcv-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627995074,
+							["arg1"] = "M1近乎白送",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "恐怖得-菲拉斯",
 						}, -- [77]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611069019,
-							["arg1"] = "纳斯利亚堡 普通 180+++++++ 免费",
-							["arg2"] = "兆黄柑丝蚀-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627995150,
+							["arg1"] = "算了吧，真不好组，周4还好，这2天确实不好组，需要自己本身就有几个人了再开始组差不多",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "恐怖得-菲拉斯",
 						}, -- [78]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611069020,
-							["arg1"] = "M小怪刷装绑 来的密",
-							["arg2"] = "萌面小姨妈-黑手军团",
+							["clColor"] = "ffc31d39",
+							["time"] = 1627995220,
+							["arg1"] = "军马",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Fayon-红龙女王",
 						}, -- [79]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611069049,
-							["arg1"] = "MS选戒律还是神圣",
-							["arg2"] = "孙笑川-菲拉斯",
+							["clColor"] = "ff8687ed",
+							["time"] = 1627995229,
+							["arg1"] = "11111",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "小拇指遮天-菲拉斯",
 						}, -- [80]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611069049,
-							["arg1"] = "纳斯利亚堡普通新CD~180+++等你加入",
-							["arg2"] = "Fheqcv-菲拉斯",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1627995233,
+							["arg1"] = "1111",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "雪痕-红龙女王",
 						}, -- [81]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611069067,
-							["arg1"] = "纳斯利亚堡 普通 180+++++++ 免费",
-							["arg2"] = "兆黄柑丝蚀-菲拉斯",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1627995239,
+							["arg1"] = "11",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "巫婆喵喵-菲拉斯",
 						}, -- [82]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611069100,
-							["arg1"] = "纳斯利亚堡普通新CD~180+++等你加入",
-							["arg2"] = "Fheqcv-菲拉斯",
+							["clColor"] = "fffef367",
+							["time"] = 1627995243,
+							["arg1"] = "111",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Jealousguy-菲拉斯",
 						}, -- [83]
 						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611069115,
-							["arg1"] = "纳斯利亚堡 普通 180+++++++ 免费",
-							["arg2"] = "兆黄柑丝蚀-菲拉斯",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1627995243,
+							["arg1"] = "位置",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "张曼芋丶-格雷迈恩",
 						}, -- [84]
 						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611069150,
-							["arg1"] = "|cffa335ee|Hitem:184778::::::::10:1455::6:4:7187:6652:1498:6646:1:28:753:::|h[颓废的纳斯利亚披巾]|h|r|cffa335ee|Hitem:183010::::::::10:1455::6:4:7187:6652:1498:6646:1:28:753:::|h[钉痕足甲]|h|r有需要的老板吗 挥泪甩",
-							["arg2"] = "垃圾佬-格雷迈恩",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1627995244,
+							["arg1"] = "111",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "薇丶薇-格雷迈恩",
 						}, -- [85]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611069164,
-							["arg1"] = "M小怪刷装绑 来的密",
-							["arg2"] = "萌面小姨妈-黑手军团",
+							["clColor"] = "ffc31d39",
+							["time"] = 1627995246,
+							["arg1"] = "|cffffff00|Hworldmap:1543:4284:4039|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a 地图标记位置]|h|r",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Fayon-红龙女王",
 						}, -- [86]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611069166,
-							["arg1"] = "|cffa335ee|Hitem:183035::::::::60:254::6:5:7187:6652:7194:1498:6646:1:28:753:::|h[炽热阳星玺戒]|h|r看上的M",
-							["arg2"] = "蔚蓝决斗-瓦丝琪",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1627995265,
+							["arg1"] = " 7 通灵，有没TN 前来呀，鼓掌欢迎啊··啪啪啪啪",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "摸眼一酷-红龙女王",
 						}, -- [87]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611069174,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "网恋加抠详谈-格雷迈恩",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1627995280,
+							["arg1"] = "等下啊 军马",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "胡茬老爹-菲拉斯",
 						}, -- [88]
 						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611069207,
-							["arg1"] = "典狱长之路 来的M",
-							["arg2"] = "小手托腮-红龙女王",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627995359,
+							["arg1"] = "11111111111",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "致命罗密欧-格雷迈恩",
 						}, -- [89]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611069302,
-							["arg1"] = "刚才的猎人老哥m我下",
-							["arg2"] = "樱雪落-红龙女王",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627995361,
+							["arg1"] = "组个",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "致命罗密欧-格雷迈恩",
 						}, -- [90]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611069324,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "网恋加抠详谈-格雷迈恩",
+							["clColor"] = "fffe7b09",
+							["time"] = 1627995401,
+							["arg1"] = "马蹄铁继续哦飘过",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "牛轰轰-格雷迈恩",
 						}, -- [91]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611069329,
-							["arg1"] = "？",
-							["arg2"] = "孙笑川-菲拉斯",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627995443,
+							["arg1"] = "求梅莉位置",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "银刀太妹-菲拉斯",
 						}, -- [92]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611069363,
-							["arg1"] = "M小怪刷装绑 来的密",
-							["arg2"] = "萌面小姨妈-黑手军团",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1627995605,
+							["arg1"] = "求一人多的公会",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "战神瓦格里-红龙女王",
 						}, -- [93]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069478,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "叫我小刘就好-格雷迈恩",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1627995700,
+							["arg1"] = "求活跃工会 晚上稳定在线",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Demonstormra-菲拉斯",
 						}, -- [94]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069668,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "叫我小刘就好-格雷迈恩",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627995821,
+							["arg1"] = "都是我自己n n n uhnv ytg=】",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "银刀太妹-菲拉斯",
 						}, -- [95]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611069691,
-							["arg1"] = "带 大米 爬塔 来人",
-							["arg2"] = "是盼盼呀-红龙女王",
+							["clColor"] = "fff38bb9",
+							["time"] = 1627995824,
+							["arg1"] = "||出学费、",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "银刀太妹-菲拉斯",
 						}, -- [96]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069734,
-							["arg1"] = "有人打史诗奥格吗",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1627995959,
+							["arg1"] = "现在怎么隐藏披风   怎么设置里面没有了 求解",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶执念灬-奈萨里奥",
 						}, -- [97]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069745,
-							["arg1"] = "来个非板甲职业",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
-							["arg9"] = "大脚世界频道",
+							["arg1"] = " ",
 						}, -- [98]
 						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611069773,
-							["arg1"] = "？奥格我记得可以单刷了",
-							["arg2"] = "远行之风-格雷迈恩",
-							["arg9"] = "大脚世界频道",
+							["arg1"] = " ",
 						}, -- [99]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611069778,
-							["arg1"] = "？",
-							["arg2"] = "孙笑川-菲拉斯",
-							["arg9"] = "大脚世界频道",
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
+							["type"] = "SYSTEM",
 						}, -- [100]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069806,
-							["arg1"] = "这个。。。我是想反正要打，再找个人一起打呗",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
-							["arg9"] = "大脚世界频道",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [101]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611069829,
-							["arg1"] = "还是的啊 都冲着护肩去的",
-							["arg2"] = "孙笑川-菲拉斯",
+							["clColor"] = "ffa9d271",
+							["time"] = 1627999981,
+							["arg1"] = "无语了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Sarash-格雷迈恩",
 						}, -- [102]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069840,
-							["arg1"] = "也就板甲想刷个肩膀 ",
-							["arg2"] = "婉唲-格雷迈恩",
+							["clColor"] = "ffa9d271",
+							["time"] = 1627999988,
+							["arg1"] = "大米必出",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶蝶祁-格雷迈恩",
 						}, -- [103]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069852,
-							["arg1"] = "是啊，从开荒到现在见过别人出。。。自己没出过",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628000004,
+							["arg1"] = "真的假的 ",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Sarash-格雷迈恩",
 						}, -- [104]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611069865,
-							["arg1"] = "我可以跟你去啊  ",
-							["arg2"] = "丿灬小坤-瓦丝琪",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628000010,
+							["arg1"] = "真的",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶蝶祁-格雷迈恩",
 						}, -- [105]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611069867,
-							["arg1"] = "带我不",
-							["arg2"] = "丿灬小坤-瓦丝琪",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628000012,
+							["arg1"] = "谢谢 现在就去",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Sarash-格雷迈恩",
 						}, -- [106]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069888,
-							["arg1"] = "组我",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628000019,
+							["arg1"] = "麻溜的去",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "Sarash-格雷迈恩",
 						}, -- [107]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069899,
-							["arg1"] = "我不能点你名字。。不知道为啥",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628000279,
+							["arg1"] = "|cff1eff00|Hitem:180163::::::::60:66:::3:6908:42:1690:2:28:1229:9:60:::::|h[燎火之乌棘收割者]|h|r",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "吳宗憲-菲拉斯",
 						}, -- [108]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069907,
-							["arg1"] = "要不我cz一下",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628000418,
+							["arg1"] = "跳舞稀有 来俩人",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "木头曲调-奈萨里奥",
 						}, -- [109]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069955,
-							["arg1"] = "刚刚那个法师还在吗",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628000487,
+							["arg1"] = "跳舞稀有 来1人",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "木头曲调-奈萨里奥",
 						}, -- [110]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611069963,
-							["arg1"] = "瓦斯琪的那个法师朋友",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628000515,
+							["arg1"] = "仙野地图 跳舞稀有 再来1个",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "木头曲调-奈萨里奥",
 						}, -- [111]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611070003,
-							["arg1"] = "在",
-							["arg2"] = "丿灬小坤-瓦丝琪",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628000528,
+							["arg1"] = "仙野地图 跳舞稀有 再来1个 ",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "木头曲调-奈萨里奥",
 						}, -- [112]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611070011,
-							["arg1"] = "在听巫妖王白话呢",
-							["arg2"] = "丿灬小坤-瓦丝琪",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628000578,
+							["arg1"] = "仙野地图 跳舞稀有 随便来 准备开了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "木头曲调-奈萨里奥",
 						}, -- [113]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070025,
-							["arg1"] = "我不知道啥问题，不能点击你名字。。。",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628000654,
+							["arg1"] = "|cff71d5ff|Hspell:332904:0|h[收割者的惊惧之翼]|h|r出了个这个",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶蝶祁-格雷迈恩",
 						}, -- [114]
 						{
 							["clColor"] = "ff3ec6ea",
-							["time"] = 1611070026,
-							["arg1"] = "等我下",
-							["arg2"] = "丿灬小坤-瓦丝琪",
+							["time"] = 1628000685,
+							["arg1"] = "|cff0070dd|Hitem:186969::::::::60:62:::::::::|h[坍缩裂隙石]|h|r100冥殇1个。。。。。",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "灬渔灬-格雷迈恩",
 						}, -- [115]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070040,
-							["arg1"] = "你加我好友吧，你好了我组你",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628000709,
+							["arg1"] = "哪里有卖",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "苏雷斯塔萨-奈萨里奥",
 						}, -- [116]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070068,
-							["arg1"] = "麻蛋爬塔多爽自己就多采",
-							["arg2"] = "迷迷糊糊-黑手军团",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628000761,
+							["arg1"] = "突袭这里刚才出现了一个商人",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "灬渔灬-格雷迈恩",
 						}, -- [117]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070133,
-							["arg1"] = "1",
-							["arg2"] = "婉唲-格雷迈恩",
+							["clColor"] = "ff006fdc",
+							["time"] = 1628000850,
+							["arg1"] = "圣物破坏者罢工了？",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "暗影疯牛-奈萨里奥",
 						}, -- [118]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611070155,
-							["arg1"] = "|cffff8000|Hitem:183282::::::::60:268::2::1:28:2044:::|h[致命之触的回忆]|h|r这个是不是核心",
-							["arg2"] = "Elaine-红龙女王",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628000864,
+							["arg1"] = "卡了很久了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "影魔猎-奈萨里奥",
 						}, -- [119]
 						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611070170,
-							["arg1"] = "爬塔和野外打怪核心",
-							["arg2"] = "亡国的咒术式-格雷迈恩",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628000886,
+							["arg1"] = "卡闪避了",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "苏雷斯塔萨-奈萨里奥",
 						}, -- [120]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611070179,
-							["arg1"] = "一分钟一个秒杀",
-							["arg2"] = "Elaine-红龙女王",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628000910,
+							["arg1"] = "开挂了，这不封了，无限闪避挂",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "不说话装高手-格雷迈恩",
 						}, -- [121]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611070182,
-							["arg1"] = "cool",
-							["arg2"] = "Elaine-红龙女王",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628001005,
+							["arg1"] = "|cffffff00|Hquest:63836:2043|h[裂牙粉丝俱乐部]|h|r这个任务有几率出掮灵商人，卖|cff0070dd|Hitem:186969::::::::60:62:::::::::|h[坍缩裂隙石]|h|r",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "灬渔灬-格雷迈恩",
 						}, -- [122]
 						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611070197,
-							["arg1"] = "|cffa335ee|Hitem:184806::::::::60:258:::3:6652:1472:6646:1:28:2060:::|h[库戴贝的卓越圆盾]|h|r避税 有人要吗",
-							["arg2"] = "开嗜血开爆发-格雷迈恩",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628001006,
+							["arg1"] = "我破坏者没有开挂",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "谁寄花笺来-格雷迈恩",
 						}, -- [123]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070271,
-							["arg1"] = "我不能出副本是咋回事",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
+							["clColor"] = "ff8687ed",
+							["time"] = 1628001030,
+							["arg1"] = "谁知道EUI 为啥聊天框不显示私聊  会单独出来一个框框哦",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "羽八爷-菲拉斯",
 						}, -- [124]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070277,
-							["arg1"] = "问个事情 法师塔的外观挑战真的绝版来吗",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628001066,
+							["arg1"] = "界面 社交   新的悄悄话 ",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "晒月亮补爱-格雷迈恩",
 						}, -- [125]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611070287,
-							["arg1"] = "是的",
-							["arg2"] = "凌大头-菲拉斯",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628001068,
+							["arg1"] = "6c彼界来个车头和大奶",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "冲锋释放丶-红龙女王",
 						}, -- [126]
 						{
-							["clColor"] = "fffef367",
-							["time"] = 1611070288,
-							["arg1"] = "是的",
-							["arg2"] = "宇智波木木-格雷迈恩",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628001135,
+							["arg1"] = "..",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "冲锋释放丶-红龙女王",
 						}, -- [127]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070344,
-							["arg1"] = "不对啊 这里显示法师塔还是可以建的 而且上面说明有说会议开启挑战呢",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
+							["clColor"] = "ff8687ed",
+							["time"] = 1628001176,
+							["arg1"] = "弄好了 感谢大家",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "羽八爷-菲拉斯",
 						}, -- [128]
 						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611070361,
-							["arg1"] = "那你等嘛...",
-							["arg2"] = "亡国的咒术式-格雷迈恩",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628002102,
+							["arg1"] = "|cffffd100|HclubFinder:ClubFinder-1-10703-1500-44288345|h[公会: 倾注一生]|h|r 周451晚8-11点开荒M统御圣所，补两个意识不错朋友！亦欢迎其他小伙伴入坑，互相帮衬~",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "不羁的風丶-格雷迈恩",
 						}, -- [129]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611070375,
-							["arg1"] = "暴雪说绝版了的，很扯淡",
-							["arg2"] = "Elaine-红龙女王",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628002461,
+							["arg1"] = "大佬们  指挥台任务完成 但是点击不了 怎么办",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "何以笙箫默丶-格雷迈恩",
 						}, -- [130]
 						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611070381,
-							["arg1"] = "当时只玩了法师",
-							["arg2"] = "Elaine-红龙女王",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628002486,
+							["arg1"] = "空格键",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "知秋一叶-红龙女王",
 						}, -- [131]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070403,
-							["arg1"] = "那这说明也修正下啊  不然误导玩家啊",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628002504,
+							["arg1"] = "我次奥  感谢",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "何以笙箫默丶-格雷迈恩",
 						}, -- [132]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070409,
-							["arg1"] = "现在LR爬塔还有那个5倍伤害吗",
-							["arg2"] = "飞起给你一箭-菲拉斯",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628002509,
+							["arg1"] = "什么情况？",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "何以笙箫默丶-格雷迈恩",
 						}, -- [133]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070462,
-							["arg1"] = "心能么",
-							["arg2"] = "女射手李琪薇-菲拉斯",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628002513,
+							["arg1"] = "不客气",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "知秋一叶-红龙女王",
 						}, -- [134]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070465,
-							["arg1"] = "有啊",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
+							["arg1"] = " ",
 						}, -- [135]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070475,
-							["arg1"] = "那个bug还在吗",
-							["arg2"] = "飞起给你一箭-菲拉斯",
-							["arg9"] = "大脚世界频道",
+							["arg1"] = " ",
 						}, -- [136]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070477,
-							["arg1"] = "在",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [137]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070482,
-							["arg1"] = "好滴",
-							["arg2"] = "飞起给你一箭-菲拉斯",
-							["arg9"] = "大脚世界频道",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [138]
 						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611070491,
-							["arg1"] = "我擦 爬完塔  石头回盟约旅馆 直接暴毙？",
-							["arg2"] = "影舞魂织刃-菲拉斯",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628003491,
+							["arg1"] = "求法师大大指教一下PVP冰法要什么属性？急速吗？第二属性是全能还是什么？谢谢指教。",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "凝焰焚雪-菲拉斯",
 						}, -- [139]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611070493,
-							["arg1"] = "黄金挑战 绝版听可惜",
-							["arg2"] = "小老白-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628004186,
+							["arg1"] = "|cffffff00|Hquest:43991:341|h[保护者]|h|r这个任务怎么做呀",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "五佰在此-红龙女王",
 						}, -- [140]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070496,
-							["arg1"] = "好喜欢那个法师塔德木遁外观",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
+							["clColor"] = "fffef367",
+							["time"] = 1628004207,
+							["arg1"] = "变形",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "夜丶幕-格雷迈恩",
 						}, -- [141]
 						{
 							["clColor"] = "ffa9d271",
-							["time"] = 1611070511,
-							["arg1"] = "但是打完还没没出，就难受",
-							["arg2"] = "女射手李琪薇-菲拉斯",
+							["time"] = 1628004246,
+							["arg1"] = "卧槽，我把加尔鲁什前面的一个BOSS驯服当宠物了，门不开是不是不能打最后BOSS了？",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大乘一帆引-奈萨里奥",
 						}, -- [142]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611070537,
-							["arg1"] = "法师塔绝版 。好多回归 XD直接AFK 不玩了",
-							["arg2"] = "小老白-菲拉斯",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628004333,
+							["arg1"] = "会重新刷出来的",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "酥妲己-格雷迈恩",
 						}, -- [143]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070539,
-							["arg1"] = "反正不少人说兽王爬塔轻松，基本建立在卡BUG上。。。",
-							["arg2"] = "女射手李琪薇-菲拉斯",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628004355,
+							["arg1"] = "有彦祖会做262布甲手吗",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "浮华逝去-格雷迈恩",
 						}, -- [144]
 						{
 							["clColor"] = "ffa9d271",
-							["time"] = 1611070559,
-							["arg1"] = "兽王还用BUG？",
-							["arg2"] = "雅尓貝徳-菲拉斯",
+							["time"] = 1628004357,
+							["arg1"] = "出来了 谢谢啊",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "大乘一帆引-奈萨里奥",
 						}, -- [145]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070562,
-							["arg1"] = "我觉得兽王挺轻松 没用BUG",
-							["arg2"] = "射后再说-红龙女王",
+							["clColor"] = "fffefefe",
+							["time"] = 1628004405,
+							["arg1"] = "我会",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "无光之盾-菲拉斯",
 						}, -- [146]
 						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611070580,
-							["arg1"] = "法师塔绝版这个消息都出了差不多1年了 1年还没打",
-							["arg2"] = "亡国的咒术式-格雷迈恩",
+							["clColor"] = "fffefefe",
+							["time"] = 1628004441,
+							["arg1"] = "|cffff8000|Hitem:173244::::::::60:258::66:5:6982:6649:6648:7451:1559:1:28:2142::::Player-1500-05A589D4:|h[暗影烈焰棱镜]|h|r",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "无光之盾-菲拉斯",
 						}, -- [147]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070581,
-							["arg1"] = "是轻松，不过大多数都说有这个BUG而已",
-							["arg2"] = "女射手李琪薇-菲拉斯",
+							["clColor"] = "fffefefe",
+							["time"] = 1628004457,
+							["arg1"] = "看我自己做的 被逼的",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "无光之盾-菲拉斯",
 						}, -- [148]
 						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611070589,
-							["arg1"] = "爱afk 就afk把",
-							["arg2"] = "亡国的咒术式-格雷迈恩",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628004474,
+							["arg1"] = "262...",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "佛爷-格雷迈恩",
 						}, -- [149]
 						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070596,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "叫我小刘就好-格雷迈恩",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628004489,
+							["arg1"] = "66666玩具有点早",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "佛爷-格雷迈恩",
 						}, -- [150]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070605,
-							["arg1"] = "我都不知道有啥BUG",
-							["arg2"] = "射后再说-红龙女王",
+							["clColor"] = "ff006fdc",
+							["time"] = 1628004911,
+							["arg1"] = "1",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "战萨-红龙女王",
 						}, -- [151]
 						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611070614,
-							["arg1"] = "火法爬塔 感觉也简单 。拿到闪现镜像 跟智能镜像  什么BOSS 都随便虐",
-							["arg2"] = "小老白-菲拉斯",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628005556,
+							["arg1"] = "今天梅丽姐姐来了吗",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "黑漆漆的夜-格雷迈恩",
 						}, -- [152]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070628,
-							["arg1"] = "|cffa335ee|Hkeystone:180653:376:2:9:0:0:0|h[钥石：通灵战潮 (2)]|h|r{想}灭散了啊",
-							["arg2"] = "女射手李琪薇-菲拉斯",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628006100,
+							["arg1"] = "|cffffd100|HclubFinder:ClubFinder-1-10703-1500-44288345|h[公会: 倾注一生]|h|r 周451晚8-11点开荒M统御圣所，补两个意识不错朋友！亦欢迎其他小伙伴入坑，互相帮衬~",
 							["arg9"] = "大脚世界频道",
+							["arg2"] = "不羁的風丶-格雷迈恩",
 						}, -- [153]
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070645,
-							["arg1"] = "1号正面打，2号不打法系，3号不会跑钩子",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [154]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070653,
-							["arg1"] = "我还是生存猎打第一",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [155]
-						{
-							["clColor"] = "ffa22fc8",
-							["time"] = 1611070668,
-							["arg1"] = "3号要跑什么钩子，我怎么没跑过",
-							["arg2"] = "火之舞者-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [156]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070669,
-							["arg1"] = "而且是没生存的橙{哭}",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [157]
-						{
-							["clColor"] = "fffef367",
-							["time"] = 1611070670,
-							["arg1"] = "灭灭更健康",
-							["arg2"] = "战翼-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [158]
-						{
-							["clColor"] = "ffa22fc8",
-							["time"] = 1611070671,
-							["arg1"] = "都是坑",
-							["arg2"] = "爱我-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [159]
-						{
-							["clColor"] = "fff38bb9",
-							["time"] = 1611070679,
-							["arg1"] = "你能坚持到3号也需要勇气了",
-							["arg2"] = "藜蒿腊肉-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [160]
-						{
-							["clColor"] = "ffa22fc8",
-							["time"] = 1611070682,
-							["arg1"] = "出生存打本已经说明问题了",
-							["arg2"] = "林一木-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [161]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070698,
-							["arg1"] = "如果不是3个远程，我也不切生存，1号他们都不集合站A虫子",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [162]
-						{
-							["clColor"] = "ffa22fc8",
-							["time"] = 1611070748,
-							["arg1"] = "生存LR不配打本，灭散了是应该的",
-							["arg2"] = "火之舞者-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [163]
-						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611070759,
-							["arg1"] = "纳斯利亚堡 普通 180+++++++ 免费",
-							["arg2"] = "兆黄柑丝蚀-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [164]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070769,
-							["arg1"] = "随便了，那2个远程都打不过T。唉",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [165]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611070788,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "叫我小刘就好-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [166]
-						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611070807,
-							["arg1"] = "纳斯利亚堡 普通 180+++++++ 免费",
-							["arg2"] = "兆黄柑丝蚀-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [167]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611070823,
-							["arg1"] = " 明天腊八了 各位准备腌蒜了吗",
-							["arg2"] = "眼热謀殺-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [168]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070845,
-							["arg1"] = "能请假么",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [169]
-						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611070855,
-							["arg1"] = "纳斯利亚堡 普通 180+++++++ 免费",
-							["arg2"] = "兆黄柑丝蚀-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [170]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611070858,
-							["arg1"] = "请假腌蒜吗",
-							["arg2"] = "眼热謀殺-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [171]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070862,
-							["arg1"] = "休息",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [172]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070867,
-							["arg1"] = "上班累，下班还要灭",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [173]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070878,
-							["arg1"] = "然后怪我被迫切生存",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [174]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611070884,
-							["arg1"] = "身心疲惫吗",
-							["arg2"] = "眼热謀殺-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [175]
-						{
-							["clColor"] = "fffef367",
-							["time"] = 1611070887,
-							["arg1"] = "啥是腊八",
-							["arg2"] = "米特阳-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [176]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070934,
-							["arg1"] = "习惯了，不是我的问题，都成我的问题的事情也不是第一次",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [177]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611070944,
-							["arg1"] = "。。。。。腊八节都不知道么",
-							["arg2"] = "丷豆豆丷-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [178]
-						{
-							["clColor"] = "fffef367",
-							["time"] = 1611070966,
-							["arg1"] = "没过过腊八",
-							["arg2"] = "米特阳-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [179]
-						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611070975,
-							["arg1"] = "喝腊八粥~",
-							["arg2"] = "我的鸡捌岁了-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [180]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070978,
-							["arg1"] = "那不是有钱人的日子么",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [181]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611070994,
-							["arg1"] = "我们这些社畜不管咋样都是工作",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [182]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611071013,
-							["arg1"] = "节日除了放假也越来越没联系",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [183]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071033,
-							["arg1"] = "工作使我快乐",
-							["arg2"] = "亚里士多德-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [184]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611071037,
-							["arg1"] = "睡觉去了",
-							["arg2"] = "女射手李琪薇-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [185]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071041,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "叫我小刘就好-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [186]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071055,
-							["arg1"] = "一直工作一直快乐",
-							["arg2"] = "亚里士多德-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [187]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071141,
-							["arg1"] = "你们这个腊八粥有腊肉吗？",
-							["arg2"] = "西尔维-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [188]
-						{
-							["clColor"] = "fff38bb9",
-							["time"] = 1611071169,
-							["arg1"] = "就到了吃腊八粥的时候了？",
-							["arg2"] = "Ep-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [189]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071173,
-							["arg1"] = "怎么让DK腿变长？",
-							["arg2"] = "风渐丶卯时-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [190]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071183,
-							["arg1"] = "踩高跷",
-							["arg2"] = "苍蝇搓脚-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [191]
-						{
-							["clColor"] = "ffa22fc8",
-							["time"] = 1611071191,
-							["arg1"] = "买个轮椅",
-							["arg2"] = "我要找到你-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [192]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071201,
-							["arg1"] = "法夜",
-							["arg2"] = "柒语-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [193]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071212,
-							["arg1"] = "返回角色界面，点击新建盗贼",
-							["arg2"] = "么德-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [194]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071218,
-							["arg1"] = "给轮椅装个氮气加速",
-							["arg2"] = "亚里士多德-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [195]
-						{
-							["clColor"] = "fff38bb9",
-							["time"] = 1611071219,
-							["arg1"] = "选温西尔 有闪现",
-							["arg2"] = "Ep-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [196]
-						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611071228,
-							["arg1"] = "法夜",
-							["arg2"] = "祼奔的青春-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [197]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611071229,
-							["arg1"] = "新建DH或者WS",
-							["arg2"] = "丶獵丶-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [198]
-						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611071265,
-							["arg1"] = "多雇点牧师 在前面轮番拉你",
-							["arg2"] = "无色噗铃猫-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [199]
-						{
-							["clColor"] = "ffa22fc8",
-							["time"] = 1611071379,
-							["arg1"] = "不说话了，哈哈，删号了？",
-							["arg2"] = "我要找到你-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [200]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071396,
-							["arg1"] = "难8回廊来个武僧",
-							["arg2"] = "亚里士多德-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [201]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071400,
-							["arg1"] = "你们啊",
-							["arg2"] = "西尔维-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [202]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071406,
-							["arg1"] = "真的是",
-							["arg2"] = "西尔维-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [203]
-						{
-							["clColor"] = "fffef367",
-							["time"] = 1611071415,
-							["arg1"] = "明天米国换届，大家猜能和平交接？",
-							["arg2"] = "战翼-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [204]
-						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611071422,
-							["arg1"] = "有没有盟约选格里恩的兄弟，能做出邀请函激活灰烬王庭的声望的？还是只有法夜激活",
-							["arg2"] = "大筒木辉夜-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [205]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071423,
-							["arg1"] = "大家说的都是真诚建议",
-							["arg2"] = "亚里士多德-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [206]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1611071423,
-							["arg1"] = "必须不能 ",
-							["arg2"] = "丶獵丶-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [207]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071427,
-							["arg1"] = "|cffff8000|Hitem:183228::::::::60:102::::1:28:2125:::|h[奥能脉冲星的回忆]|h|r鸟德用这个输出号码",
-							["arg2"] = "小手托腮-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [208]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071428,
-							["arg1"] = "和平？那不可能的",
-							["arg2"] = "浅浅玄-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [209]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071430,
-							["arg1"] = "好吗",
-							["arg2"] = "小手托腮-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [210]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071434,
-							["arg1"] = "管我P事。我吃瓜",
-							["arg2"] = "西尔维-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [211]
-						{
 							["clColor"] = "ff3ec6ea",
-							["time"] = 1611071436,
-							["arg1"] = "美丽的风景线",
-							["arg2"] = "十亿少男的梦-奈萨里奥",
+							["time"] = 1628006939,
+							["arg1"] = "今天就4个日常么",
 							["arg9"] = "大脚世界频道",
-						}, -- [212]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071449,
-							["arg1"] = "2万5警卫队不是吃干饭的吧，最好打起来{想}",
-							["arg2"] = "浅浅玄-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [213]
-						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611071450,
-							["arg1"] = "不知道要动谁",
-							["arg2"] = "十亿少男的梦-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [214]
-						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611071453,
-							["arg1"] = "年度大戏，即将开演",
 							["arg2"] = "冥月恶魔-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [215]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071464,
-							["arg1"] = "腊八在家喝粥看戏",
-							["arg2"] = "亚里士多德-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [216]
-						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611071467,
-							["arg1"] = "他谁换届，只要不把暴雪制裁了就行",
-							["arg2"] = "大筒木辉夜-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [217]
-						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611071499,
-							["arg1"] = "I love USA game",
-							["arg2"] = "大筒木辉夜-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [218]
-						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611071505,
-							["arg1"] = "带 大米 爬塔 来人",
-							["arg2"] = "是盼盼呀-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [219]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071537,
-							["arg1"] = "工会451晚上7点30到11点开荒M，招收稳定远程和坦克，目前H全通+M2，有意私聊",
-							["arg2"] = "叫我小刘就好-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [220]
-						{
-							["clColor"] = "fffef367",
-							["time"] = 1611071546,
-							["arg1"] = "从第几层需要组队了？",
-							["arg2"] = "战翼-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [221]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071553,
-							["arg1"] = "暗牧爬塔厉害吗",
-							["arg2"] = "亚里士多德-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [222]
-						{
-							["clColor"] = "fffefefe",
-							["time"] = 1611071565,
-							["arg1"] = "拉胯",
-							["arg2"] = "接着就顺产了-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [223]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071571,
-							["arg1"] = "用奶多好",
-							["arg2"] = "叶页页-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [224]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071658,
-							["arg1"] = "今天貌似一个印度裔，爆料，他是漂亮国的病D实验室的学生，他的导师貌似是美国病D实验室研究新G病D的专家，前不久被暗杀，这个学生害怕也被杀，爆料这个实验室是研究新G病D的生化研究所",
-							["arg2"] = "西尔维-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [225]
-						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611071663,
-							["arg1"] = "世界BOSS来人啦",
-							["arg2"] = "魔轩魔辕-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [226]
-						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1611071664,
-							["arg1"] = "除了法夜，有没有格里恩和通灵领主的兄弟也能激活灰烬王庭声望的？求告知下",
-							["arg2"] = "大筒木辉夜-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [227]
-						{
-							["clColor"] = "fffef367",
-							["time"] = 1611071679,
-							["arg1"] = "求组",
-							["arg2"] = "战翼-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [228]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071680,
-							["arg1"] = "小坤，等等",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [229]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071686,
-							["arg1"] = ".先别组我",
-							["arg2"] = "嘿蛋炒饭-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [230]
-						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611071720,
-							["arg1"] = "世界BOSS PVE位面 来的快",
-							["arg2"] = "魔轩魔辕-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [231]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071799,
-							["arg1"] = "有人有那个法师塔战士盾外观吗  发我看看呗",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [232]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071837,
-							["arg1"] = "|cffe6cc80|Hitem:128289::::::::60:71:::::::|h[大地守护者之鳞]|h|r？",
-							["arg2"] = "常在-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [233]
-						{
-							["clColor"] = "ff00fe97",
-							["time"] = 1611071837,
-							["arg1"] = "别想了，没了",
-							["arg2"] = "Elaine-红龙女王",
-							["arg9"] = "大脚世界频道",
-						}, -- [234]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071843,
-							["arg1"] = "|cffffff00|Hquest:62308:837|h[精通的披肩]|h|r来人",
-							["arg2"] = "Dereklee-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [235]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071853,
-							["arg1"] = "|cffe6cc80|Hitem:128289::::::::60:71:::::::|h[大地守护者之鳞]|h|r|cffe6cc80|Hitem:128289::::::::60:71:::::::|h[大地守护者之鳞]|h|r|cffe6cc80|Hitem:128289::::::::60:71:::::::|h[大地守护者之鳞]|h|r|cffe6cc80|Hitem:128289::::::::60:71:::::::|h[大地守护者之鳞]|h|r",
-							["arg2"] = "常在-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [236]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1611071885,
-							["arg1"] = "|cffff8000|Hitem:183238::::::::60:104::::1:28:2060:::|h[翡翠灌注的回忆]|h|r。。。。。。",
-							["arg2"] = "凶勒伐得了-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [237]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071897,
-							["arg1"] = "你应该看不到",
-							["arg2"] = "常在-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [238]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071914,
-							["arg1"] = "法师塔的挑战外观  木盾",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [239]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071925,
-							["arg1"] = "你看不到 我发出来了",
-							["arg2"] = "常在-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [240]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071942,
-							["arg1"] = "哎 ",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [241]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071944,
-							["arg1"] = "|cffe6cc80|Hitem:128289::::::::60:71:::::::|h[大地守护者之鳞]|h|r",
-							["arg2"] = "常在-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [242]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071948,
-							["arg1"] = "太欺负人来",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [243]
-						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611071954,
-							["arg1"] = "橙装可以升级吗？还是做出来等级就固定了",
-							["arg2"] = "暗影疯牛-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [244]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071954,
-							["arg1"] = "只能看原版的",
-							["arg2"] = "常在-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [245]
-						{
-							["clColor"] = "ffc59a6c",
-							["time"] = 1611071959,
-							["arg1"] = "看都不让看",
-							["arg2"] = "灬哀沐涕-格雷迈恩",
-							["arg9"] = "大脚世界频道",
-						}, -- [246]
-						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1611071986,
-							["arg1"] = "橙装可以升级吗？还是做出来等级就固定了",
-							["arg2"] = "暗影疯牛-奈萨里奥",
-							["arg9"] = "大脚世界频道",
-						}, -- [247]
-						{
-							["clColor"] = "ffc31d39",
-							["time"] = 1611071993,
-							["arg1"] = "可以升级",
-							["arg2"] = "西尔维-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [248]
-						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611072009,
-							["arg1"] = "世界BOSS没人了吗 来的快呀 PVE",
-							["arg2"] = "魔轩魔辕-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [249]
-						{
-							["clColor"] = "ff3ec6ea",
-							["time"] = 1611072044,
-							["arg1"] = "直接做 235的 。胚子太贵",
-							["arg2"] = "小老白-菲拉斯",
-							["arg9"] = "大脚世界频道",
-						}, -- [250]
-					},
-				},
-				["集合石"] = {
-					["enabled"] = true,
-					["hasMessage"] = true,
-					["name"] = "集合石",
-					["logs"] = {
-						{
-							["arg1"] = " ",
-						}, -- [1]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/19/2020 的 22:32:54。",
-						}, -- [2]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [3]
-						{
-							["arg1"] = " ",
-						}, -- [4]
-						{
-							["arg1"] = " ",
-						}, -- [5]
-						{
-							["arg1"] = "记录开始于 12/20/2020 的 10:57:56。",
-							["type"] = "SYSTEM",
-						}, -- [6]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [7]
-						{
-							["arg1"] = " ",
-						}, -- [8]
-						{
-							["arg1"] = " ",
-						}, -- [9]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/20/2020 的 12:44:58。",
-						}, -- [10]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [11]
-						{
-							["arg1"] = " ",
-						}, -- [12]
-						{
-							["arg1"] = " ",
-						}, -- [13]
-						{
-							["arg1"] = "记录开始于 12/20/2020 的 16:52:07。",
-							["type"] = "SYSTEM",
-						}, -- [14]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [15]
-						{
-							["arg1"] = " ",
-						}, -- [16]
-						{
-							["arg1"] = " ",
-						}, -- [17]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/20/2020 的 21:33:08。",
-						}, -- [18]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [19]
-						{
-							["arg1"] = " ",
-						}, -- [20]
-						{
-							["arg1"] = " ",
-						}, -- [21]
-						{
-							["arg1"] = "记录开始于 12/20/2020 的 21:55:38。",
-							["type"] = "SYSTEM",
-						}, -- [22]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [23]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1608476205,
-							["arg1"] = ". 3 2 W 40 ( 沅)- - 5 0 W 60 (沅 )）",
-							["arg9"] = "集合石",
-							["arg2"] = "苏亚雷斯丶-红龙女王",
-						}, -- [24]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1608476205,
-							["arg1"] = ". 3 2 W 40 (沅 )- - 5 0 W 60 (沅 ) ）      ",
-							["arg9"] = "集合石",
-							["arg2"] = "苏亚雷斯丶-红龙女王",
-						}, -- [25]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1608476205,
-							["arg1"] = ". 3 2 W 40 ( 沅)- - 5 0 W 60 (沅 )））",
-							["arg9"] = "集合石",
-							["arg2"] = "苏亚雷斯丶-红龙女王",
-						}, -- [26]
-						{
-							["arg1"] = " ",
-						}, -- [27]
-						{
-							["arg1"] = " ",
-						}, -- [28]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/20/2020 的 23:43:44。",
-						}, -- [29]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [30]
-						{
-							["arg1"] = " ",
-						}, -- [31]
-						{
-							["arg1"] = " ",
-						}, -- [32]
-						{
-							["arg1"] = "记录开始于 12/21/2020 的 20:05:08。",
-							["type"] = "SYSTEM",
-						}, -- [33]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [34]
-						{
-							["arg1"] = " ",
-						}, -- [35]
-						{
-							["arg1"] = " ",
-						}, -- [36]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/22/2020 的 19:27:21。",
-						}, -- [37]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [38]
-						{
-							["arg1"] = " ",
-						}, -- [39]
-						{
-							["arg1"] = " ",
-						}, -- [40]
-						{
-							["arg1"] = "记录开始于 12/22/2020 的 22:38:34。",
-							["type"] = "SYSTEM",
-						}, -- [41]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [42]
-						{
-							["arg1"] = " ",
-						}, -- [43]
-						{
-							["arg1"] = " ",
-						}, -- [44]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/22/2020 的 23:02:25。",
-						}, -- [45]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [46]
-						{
-							["arg1"] = " ",
-						}, -- [47]
-						{
-							["arg1"] = " ",
-						}, -- [48]
-						{
-							["arg1"] = "记录开始于 12/23/2020 的 19:30:43。",
-							["type"] = "SYSTEM",
-						}, -- [49]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [50]
-						{
-							["arg1"] = " ",
-						}, -- [51]
-						{
-							["arg1"] = " ",
-						}, -- [52]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/23/2020 的 22:21:27。",
-						}, -- [53]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [54]
-						{
-							["arg1"] = " ",
-						}, -- [55]
-						{
-							["arg1"] = " ",
-						}, -- [56]
-						{
-							["arg1"] = "记录开始于 12/23/2020 的 23:07:38。",
-							["type"] = "SYSTEM",
-						}, -- [57]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [58]
-						{
-							["arg1"] = " ",
-						}, -- [59]
-						{
-							["arg1"] = " ",
-						}, -- [60]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/23/2020 的 23:28:59。",
-						}, -- [61]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [62]
-						{
-							["arg1"] = " ",
-						}, -- [63]
-						{
-							["arg1"] = " ",
-						}, -- [64]
-						{
-							["arg1"] = "记录开始于 12/24/2020 的 08:08:42。",
-							["type"] = "SYSTEM",
-						}, -- [65]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [66]
-						{
-							["arg1"] = " ",
-						}, -- [67]
-						{
-							["arg1"] = " ",
-						}, -- [68]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 21:39:26。",
-						}, -- [69]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [70]
-						{
-							["arg1"] = " ",
-						}, -- [71]
-						{
-							["arg1"] = " ",
-						}, -- [72]
-						{
-							["arg1"] = "记录开始于 12/24/2020 的 22:39:55。",
-							["type"] = "SYSTEM",
-						}, -- [73]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [74]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1608821068,
-							["arg1"] = "|cffa335ee|Hitem:183010::::::::60:102::5:4:7188:6652:1485:6646:1:28:752:::|h[钉痕足甲]|h|r 卖个靴子 有人收没有",
-							["arg9"] = "集合石",
-							["arg2"] = "只是注定-格雷迈恩",
-						}, -- [75]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1608821091,
-							["arg1"] = "|cffa335ee|Hitem:183010::::::::60:102::5:4:7188:6652:1485:6646:1:28:752:::|h[钉痕足甲]|h|r 有人收没有",
-							["arg9"] = "集合石",
-							["arg2"] = "只是注定-格雷迈恩",
-						}, -- [76]
-						{
-							["arg1"] = " ",
-						}, -- [77]
-						{
-							["arg1"] = " ",
-						}, -- [78]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 23:14:14。",
-						}, -- [79]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [80]
-						{
-							["arg1"] = " ",
-						}, -- [81]
-						{
-							["arg1"] = " ",
-						}, -- [82]
-						{
-							["arg1"] = "记录开始于 12/27/2020 的 20:31:32。",
-							["type"] = "SYSTEM",
-						}, -- [83]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [84]
-						{
-							["arg1"] = " ",
-						}, -- [85]
-						{
-							["arg1"] = " ",
-						}, -- [86]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/27/2020 的 20:36:30。",
-						}, -- [87]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [88]
-						{
-							["arg1"] = " ",
-						}, -- [89]
-						{
-							["arg1"] = " ",
-						}, -- [90]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/27/2020 的 22:09:01。",
-						}, -- [91]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [92]
-						{
-							["arg1"] = " ",
-						}, -- [93]
-						{
-							["arg1"] = " ",
-						}, -- [94]
-						{
-							["arg1"] = "记录开始于 12/28/2020 的 22:22:36。",
-							["type"] = "SYSTEM",
-						}, -- [95]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [96]
-						{
-							["arg1"] = " ",
-						}, -- [97]
-						{
-							["arg1"] = " ",
-						}, -- [98]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/28/2020 的 23:10:06。",
-						}, -- [99]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [100]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1609169104,
-							["arg1"] = "战士，新手都能上天",
-							["arg9"] = "集合石",
-							["arg2"] = "不讲武德丿-菲拉斯",
-						}, -- [101]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1609170105,
-							["arg1"] = ". 3 2 W 40 ( 沅)- - 5 0 W 60 (沅 )）",
-							["arg9"] = "集合石",
-							["arg2"] = "苏亚雷斯丶-红龙女王",
-						}, -- [102]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1609170105,
-							["arg1"] = ". 3 2 W 40 (沅 )- - 5 0 W 60 (沅 ) ）      ",
-							["arg9"] = "集合石",
-							["arg2"] = "苏亚雷斯丶-红龙女王",
-						}, -- [103]
-						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1609170105,
-							["arg1"] = ". 3 2 W 40 ( 沅)- - 5 0 W 60 (沅 )））",
-							["arg9"] = "集合石",
-							["arg2"] = "苏亚雷斯丶-红龙女王",
-						}, -- [104]
-						{
-							["arg1"] = " ",
-						}, -- [105]
-						{
-							["arg1"] = " ",
-						}, -- [106]
-						{
-							["arg1"] = "记录开始于 12/29/2020 的 19:46:23。",
-							["type"] = "SYSTEM",
-						}, -- [107]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [108]
-						{
-							["arg1"] = " ",
-						}, -- [109]
-						{
-							["arg1"] = " ",
-						}, -- [110]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/29/2020 的 19:47:50。",
-						}, -- [111]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [112]
-						{
-							["arg1"] = " ",
-						}, -- [113]
-						{
-							["arg1"] = " ",
-						}, -- [114]
-						{
-							["arg1"] = "记录开始于 12/29/2020 的 23:18:44。",
-							["type"] = "SYSTEM",
-						}, -- [115]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [116]
-						{
-							["arg1"] = " ",
-						}, -- [117]
-						{
-							["arg1"] = " ",
-						}, -- [118]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/30/2020 的 20:56:13。",
-						}, -- [119]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [120]
-						{
-							["arg1"] = " ",
-						}, -- [121]
-						{
-							["arg1"] = " ",
-						}, -- [122]
-						{
-							["arg1"] = "记录开始于 12/30/2020 的 20:59:50。",
-							["type"] = "SYSTEM",
-						}, -- [123]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [124]
-						{
-							["arg1"] = " ",
-						}, -- [125]
-						{
-							["arg1"] = " ",
-						}, -- [126]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/30/2020 的 22:01:44。",
-						}, -- [127]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [128]
-						{
-							["arg1"] = " ",
-						}, -- [129]
-						{
-							["arg1"] = " ",
-						}, -- [130]
-						{
-							["arg1"] = "记录开始于 12/31/2020 的 08:04:49。",
-							["type"] = "SYSTEM",
-						}, -- [131]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [132]
-						{
-							["arg1"] = " ",
-						}, -- [133]
-						{
-							["arg1"] = " ",
-						}, -- [134]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/31/2020 的 19:34:21。",
-						}, -- [135]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [136]
-						{
-							["clColor"] = "ff006fdc",
-							["time"] = 1609415082,
-							["arg1"] = "橙装灰烬能追赶吗。。",
-							["arg9"] = "集合石",
-							["arg2"] = "恢复萨没想好-红龙女王",
-						}, -- [137]
-						{
-							["arg1"] = " ",
-						}, -- [138]
-						{
-							["arg1"] = " ",
-						}, -- [139]
-						{
-							["arg1"] = "记录开始于 12/31/2020 的 19:59:10。",
-							["type"] = "SYSTEM",
-						}, -- [140]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [141]
-						{
-							["arg1"] = " ",
-						}, -- [142]
-						{
-							["arg1"] = " ",
-						}, -- [143]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/31/2020 的 23:14:50。",
-						}, -- [144]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [145]
-						{
-							["arg1"] = " ",
-						}, -- [146]
-						{
-							["arg1"] = " ",
-						}, -- [147]
-						{
-							["arg1"] = "记录开始于 12/31/2020 的 23:18:24。",
-							["type"] = "SYSTEM",
-						}, -- [148]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [149]
-						{
-							["arg1"] = " ",
-						}, -- [150]
-						{
-							["arg1"] = " ",
-						}, -- [151]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/01/2021 的 08:36:31。",
-						}, -- [152]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [153]
-						{
-							["arg1"] = " ",
 						}, -- [154]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628006959,
+							["arg1"] = "是的",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "龙之戰-菲拉斯",
 						}, -- [155]
 						{
-							["arg1"] = "记录开始于 01/01/2021 的 19:20:11。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628007372,
+							["arg1"] = "。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "千面妖猎-格雷迈恩",
 						}, -- [156]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [157]
 						{
 							["arg1"] = " ",
 						}, -- [158]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
 						}, -- [159]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/01/2021 的 20:55:17。",
 						}, -- [160]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076161,
+							["arg1"] = "有人一起打5试炼没？拿坐骑了",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "酥妲己-格雷迈恩",
 						}, -- [161]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628076247,
+							["arg1"] = "你真的跟WOW有缘！牢牢记住即将展开的剧情吧，战友们！当艾泽拉斯的传送门被全部关闭！当法师不再具备开门的特殊技能！当所有具备传送功能的法术、药水和玩具用品都被彻底作废！",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "浪荡子-红龙女王",
 						}, -- [162]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628076310,
+							["arg1"] = "啥玩意啊",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "唐人-格雷迈恩",
 						}, -- [163]
 						{
-							["arg1"] = "记录开始于 01/01/2021 的 21:14:51。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628076320,
+							["arg1"] = "我也想知道他说了啥",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "暴尸幽魂-菲拉斯",
 						}, -- [164]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628076338,
+							["arg1"] = "你们怎么那么在意别人说啥",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "残灬冬-菲拉斯",
 						}, -- [165]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076357,
+							["arg1"] = "有人一起敲墓钟吗",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "酥妲己-格雷迈恩",
 						}, -- [166]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffef367",
+							["time"] = 1628076359,
+							["arg1"] = " G .M?",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "四丶爷-格雷迈恩",
 						}, -- [167]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/03/2021 的 10:23:40。",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076360,
+							["arg1"] = "我敲了2个了",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "酥妲己-格雷迈恩",
 						}, -- [168]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076475,
+							["arg1"] = "为啥第3个翘不了了。。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "酥妲己-格雷迈恩",
 						}, -- [169]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628076491,
+							["arg1"] = "求个公会收留",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "冥王瓦格里-红龙女王",
 						}, -- [170]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffef367",
+							["time"] = 1628076515,
+							["arg1"] = "掠夺者快刷了？",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "四丶爷-格雷迈恩",
 						}, -- [171]
 						{
-							["arg1"] = "记录开始于 01/03/2021 的 13:41:40。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fffef367",
+							["time"] = 1628076521,
+							["arg1"] = "快来蹲",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "四丶爷-格雷迈恩",
 						}, -- [172]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076531,
+							["arg1"] = "|cff71d5ff|Hspell:342335:0|h[晋升天鬃马]|h|r没人来？",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "酥妲己-格雷迈恩",
 						}, -- [173]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628076548,
+							["arg1"] = "掠夺者是啥",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "童子拜佛-红龙女王",
 						}, -- [174]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ff8687ed",
+							["time"] = 1628076555,
+							["arg1"] = "在哪",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "手残打手-格雷迈恩",
 						}, -- [175]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/03/2021 的 14:00:42。",
+							["clColor"] = "ff8687ed",
+							["time"] = 1628076558,
+							["arg1"] = "我来",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "手残打手-格雷迈恩",
 						}, -- [176]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076569,
+							["arg1"] = "传送那个",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "知秋一叶-红龙女王",
 						}, -- [177]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffef367",
+							["time"] = 1628076579,
+							["arg1"] = "井盖",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "四丶爷-格雷迈恩",
 						}, -- [178]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076579,
+							["arg1"] = "组个",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "裂颜-菲拉斯",
 						}, -- [179]
 						{
-							["arg1"] = "记录开始于 01/03/2021 的 21:09:16。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fffef367",
+							["time"] = 1628076588,
+							["arg1"] = "估计快刷了 目前没",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "四丶爷-格雷迈恩",
 						}, -- [180]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ff8687ed",
+							["time"] = 1628076592,
+							["arg1"] = "‘组个",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "手残打手-格雷迈恩",
 						}, -- [181]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628076593,
+							["arg1"] = "组个",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "误尽苍生-菲拉斯",
 						}, -- [182]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628076599,
+							["arg1"] = "布兰契也快刷了",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "致命罗密欧-格雷迈恩",
 						}, -- [183]
 						{
-							["arg1"] = "记录开始于 01/05/2021 的 08:09:04。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076632,
+							["arg1"] = "人满了。。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "酥妲己-格雷迈恩",
 						}, -- [184]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fffef367",
+							["time"] = 1628076645,
+							["arg1"] = "集合石刷了 速度",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "四丶爷-格雷迈恩",
 						}, -- [185]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffef367",
+							["time"] = 1628076652,
+							["arg1"] = "掠夺者",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "四丶爷-格雷迈恩",
 						}, -- [186]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628076796,
+							["arg1"] = "200皮锁套装，230蓝色皮锁（唯一），1-6级皮锁板布戒指项链全系橙胚。另收水晶。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "咕德猫-格雷迈恩",
 						}, -- [187]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 00:06:02。",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076810,
+							["arg1"] = "哈哈",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [188]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076822,
+							["arg1"] = "看到古德猫",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [189]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076832,
+							["arg1"] = "突然想起那几个S  B 了",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [190]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076844,
+							["arg1"] = "去NGA挂他，被全NGA的人喷",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [191]
 						{
-							["arg1"] = "记录开始于 01/07/2021 的 00:11:43。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628076876,
+							["arg1"] = "为啥",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "崔小玄-格雷迈恩",
 						}, -- [192]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076891,
+							["arg1"] = "说他卖的东西好贵",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [193]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076915,
+							["arg1"] = "然后被鄙视没见过世面",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [194]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628076927,
+							["arg1"] = "{大笑}",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "流氓-格雷迈恩",
 						}, -- [195]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 08:07:26。",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628077011,
+							["arg1"] = "wo RTM    爬塔 LR 也被歧视？",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "唐人-格雷迈恩",
 						}, -- [196]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "fffefefe",
+							["time"] = 1628077136,
+							["arg1"] = "谁敢歧视LR  打他一顿",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "纯真奶牛-红龙女王",
 						}, -- [197]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ff8687ed",
+							["time"] = 1628077150,
+							["arg1"] = "公会 招收 FS  DZ DK MS有兴趣的M聊",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "魔豆-红龙女王",
 						}, -- [198]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077172,
+							["arg1"] = "好无聊，好想被人打",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [199]
 						{
-							["arg1"] = "记录开始于 01/07/2021 的 19:56:53。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077196,
+							["arg1"] = "家里最近很差钱啊",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [200]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628077199,
+							["arg1"] = "开PVP呗",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "猎者之魂-格雷迈恩",
 						}, -- [201]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077255,
+							["arg1"] = "决战奥格瑞玛的本怎么进 恩佐斯突袭副本入口不见了",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "冥王瓦格里-红龙女王",
 						}, -- [202]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628077259,
+							["arg1"] = "今天有挑衅者吗，谁知道啊",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "浅浅玄-红龙女王",
 						}, -- [203]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 20:46:53。",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077266,
+							["arg1"] = "希望你能线下向我发起挑战",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [204]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628077278,
+							["arg1"] = "今天挑衅和波哥都有的",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "猎者之魂-格雷迈恩",
 						}, -- [205]
 						{
-							["clColor"] = "ff8687ed",
-							["time"] = 1610026189,
-							["arg1"] = "\\",
-							["arg9"] = "集合石",
-							["arg2"] = "蒙着面会很强-红龙女王",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628077283,
+							["arg1"] = "好的谢谢",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "浅浅玄-红龙女王",
 						}, -- [206]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628077301,
+							["arg1"] = "不客气，祝我下次出就行{龇牙}",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "猎者之魂-格雷迈恩",
 						}, -- [207]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffefefe",
+							["time"] = 1628077312,
+							["arg1"] = "还真有想被打的 先签好生死状  再来挑战",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "纯真奶牛-红龙女王",
 						}, -- [208]
 						{
-							["arg1"] = "记录开始于 01/11/2021 的 19:31:16。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628077314,
+							["arg1"] = "可以的，大家都一次出",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "浅浅玄-红龙女王",
 						}, -- [209]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628077314,
+							["arg1"] = "有挑衅   20分钟前击杀  ",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "知秋一叶-红龙女王",
 						}, -- [210]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077345,
+							["arg1"] = "你打我，我不还手，差钱手头紧，你只管打",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [211]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffefefe",
+							["time"] = 1628077351,
+							["arg1"] = "。。。。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "纯真奶牛-红龙女王",
 						}, -- [212]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/11/2021 的 19:36:36。",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077379,
+							["arg1"] = "当我当倒在地，一定摸出手机看看汽车之家",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [213]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "fffefefe",
+							["time"] = 1628077390,
+							["arg1"] = "路虎吗",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "纯真奶牛-红龙女王",
 						}, -- [214]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077426,
+							["arg1"] = "哈佛H6起步",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [215]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628077430,
+							["arg1"] = "BYD",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "有有-菲拉斯",
 						}, -- [216]
 						{
-							["arg1"] = "记录开始于 01/11/2021 的 19:41:36。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077456,
+							["arg1"] = "上不封顶，主要看伤情，以及动手的兄弟加底厚不厚",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [217]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628077493,
+							["arg1"] = "要是换路虎的话 我估计以后怕也是要请驾驶员了 。。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "知秋一叶-红龙女王",
 						}, -- [218]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628077562,
+							["arg1"] = "console CameradistanceMaxFactor 50",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [219]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628077857,
+							["arg1"] = "14层低保和15低保有区别吗",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "暴尸幽魂-菲拉斯",
 						}, -- [220]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/16/2021 的 12:34:49。",
+							["clColor"] = "ff006fdc",
+							["time"] = 1628077869,
+							["arg1"] = "哟",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶周杰伦-红龙女王",
 						}, -- [221]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "fff38bb9",
+							["time"] = 1628077873,
+							["arg1"] = "249和252",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "劳拉亚尔赛德-奈萨里奥",
 						}, -- [222]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628077875,
+							["arg1"] = "有，装等高",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "浅浅玄-红龙女王",
 						}, -- [223]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628077881,
+							["arg1"] = "哦",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "暴尸幽魂-菲拉斯",
 						}, -- [224]
 						{
-							["arg1"] = "记录开始于 01/17/2021 的 13:00:02。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628078181,
+							["arg1"] = "|cffffd100|HclubFinder:ClubFinder-1-10703-1500-44288345|h[公会: 倾注一生]|h|r 周451晚8-11点开荒M统御圣所，诚邀双修NQ/MT/MS/D等犀利DPS入坑 互相帮衬~",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "随风铃-格雷迈恩",
 						}, -- [225]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628078239,
+							["arg1"] = "200皮锁套装，230蓝色皮锁（唯一），1-6级皮锁板布戒指项链全系橙胚。另收水晶。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "咕德猫-格雷迈恩",
 						}, -- [226]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628078296,
+							["arg1"] = "有哪位大神告诉我一下布兰契要求打水  在那个坐标可以打到水",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "玲珑百魅-菲拉斯",
 						}, -- [227]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffef367",
+							["time"] = 1628078308,
+							["arg1"] = "%^&*!@仙野",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "夜丶幕-格雷迈恩",
 						}, -- [228]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/17/2021 的 16:31:45。",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628078329,
+							["arg1"] = "之蓝仙野，随便找块有水的地方",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "猎者之魂-格雷迈恩",
 						}, -- [229]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628078388,
+							["arg1"] = "之前在晋升堡垒装的水",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "龙大夫-红龙女王",
 						}, -- [230]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628078506,
+							["arg1"] = "所以你找错位置了",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "猎者之魂-格雷迈恩",
 						}, -- [231]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628078541,
+							["arg1"] = "欧洲划水之父-菲拉斯狗托",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "利刃的华尔兹-格雷迈恩",
 						}, -- [232]
 						{
-							["arg1"] = "记录开始于 01/17/2021 的 23:02:25。",
-							["type"] = "SYSTEM",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628078616,
+							["arg1"] = "200皮锁套装，230蓝色皮锁（唯一），1-6级皮锁板布戒指项链全系橙胚。另收水晶。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "咕德猫-格雷迈恩",
 						}, -- [233]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628078642,
+							["arg1"] = "肝帝",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "Roc-菲拉斯",
 						}, -- [234]
 						{
-							["arg1"] = " ",
+							["clColor"] = "fffe7b09",
+							["time"] = 1628079222,
+							["arg1"] = "200皮锁套装，230蓝色皮锁（唯一），1-6级皮锁板布戒指项链全系橙胚。另收水晶。",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "咕德猫-格雷迈恩",
 						}, -- [235]
 						{
 							["arg1"] = " ",
 						}, -- [236]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/18/2021 的 19:43:45。",
+							["arg1"] = " ",
 						}, -- [237]
 						{
+							["arg1"] = "记录开始于 08/05/2021 的 19:35:47。",
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
 						}, -- [238]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628163372,
+							["arg1"] = "今天梅丽阿姨没上班吧",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶逆流成河-菲拉斯",
 						}, -- [239]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628163395,
+							["arg1"] = "打疫苗去了",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "童子拜佛-红龙女王",
 						}, -- [240]
 						{
-							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffc31d39",
+							["time"] = 1628163396,
+							["arg1"] = "同求",
+							["arg9"] = "大脚世界频道",
+							["arg2"] = "丶黑色高跟鞋-菲拉斯",
 						}, -- [241]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [242]
 						{
 							["arg1"] = " ",
 						}, -- [243]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [244]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/19/2021 的 21:34:05。",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628163506,
+							["arg1"] = "尼玛怎么突然那么卡",
+							["arg2"] = "狱婪-菲拉斯",
+							["arg9"] = "大脚世界频道",
 						}, -- [245]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "ffa9d271",
+							["time"] = 1628163517,
+							["arg1"] = "我直接技能延迟",
+							["arg2"] = "逍遥无忧-红龙女王",
+							["arg9"] = "大脚世界频道",
 						}, -- [246]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ff3ec6ea",
+							["time"] = 1628163545,
+							["arg1"] = "&*!@ 都卡歪了",
+							["arg2"] = "Aa-格雷迈恩",
+							["arg9"] = "大脚世界频道",
 						}, -- [247]
 						{
-							["arg1"] = " ",
+							["clColor"] = "ffc59a6c",
+							["time"] = 1628163613,
+							["arg1"] = "这#$%^&*!@#FWQ又开始抽风了",
+							["arg2"] = "童子拜佛-红龙女王",
+							["arg9"] = "大脚世界频道",
 						}, -- [248]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628163750,
+							["arg1"] = "有大佬知道梅莉在哪吗",
+							["arg2"] = "Angelwings-黑手军团",
+							["arg9"] = "大脚世界频道",
 						}, -- [249]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["clColor"] = "ffa22fc8",
+							["time"] = 1628163792,
+							["arg1"] = "曼曼子   古德猫 在不",
+							["arg2"] = "丶逆流成河-菲拉斯",
+							["arg9"] = "大脚世界频道",
 						}, -- [250]
 					},
 				},
@@ -17161,9 +16119,1803 @@ ElephantDBPerChar = {
 					["name"] = "公会招募",
 					["logs"] = {
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
 							["type"] = "SYSTEM",
 						}, -- [1]
+					},
+				},
+				["集合石"] = {
+					["enabled"] = true,
+					["hasMessage"] = true,
+					["name"] = "集合石",
+					["logs"] = {
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [1]
+						{
+							["arg1"] = " ",
+						}, -- [2]
+						{
+							["arg1"] = " ",
+						}, -- [3]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 17:36:50。",
+							["type"] = "SYSTEM",
+						}, -- [4]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [5]
+						{
+							["arg1"] = " ",
+						}, -- [6]
+						{
+							["arg1"] = " ",
+						}, -- [7]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 17:37:50。",
+						}, -- [8]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [9]
+						{
+							["arg1"] = " ",
+						}, -- [10]
+						{
+							["arg1"] = " ",
+						}, -- [11]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 19:32:29。",
+							["type"] = "SYSTEM",
+						}, -- [12]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [13]
+						{
+							["arg1"] = " ",
+						}, -- [14]
+						{
+							["arg1"] = " ",
+						}, -- [15]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 20:06:17。",
+						}, -- [16]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [17]
+						{
+							["arg1"] = " ",
+						}, -- [18]
+						{
+							["arg1"] = " ",
+						}, -- [19]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 20:16:01。",
+							["type"] = "SYSTEM",
+						}, -- [20]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [21]
+						{
+							["arg1"] = " ",
+						}, -- [22]
+						{
+							["arg1"] = " ",
+						}, -- [23]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 21:33:32。",
+						}, -- [24]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [25]
+						{
+							["arg1"] = " ",
+						}, -- [26]
+						{
+							["arg1"] = " ",
+						}, -- [27]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 21:42:41。",
+							["type"] = "SYSTEM",
+						}, -- [28]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [29]
+						{
+							["arg1"] = " ",
+						}, -- [30]
+						{
+							["arg1"] = " ",
+						}, -- [31]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 21:47:40。",
+						}, -- [32]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [33]
+						{
+							["arg1"] = " ",
+						}, -- [34]
+						{
+							["arg1"] = " ",
+						}, -- [35]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 21:54:42。",
+							["type"] = "SYSTEM",
+						}, -- [36]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [37]
+						{
+							["arg1"] = " ",
+						}, -- [38]
+						{
+							["arg1"] = " ",
+						}, -- [39]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 22:04:23。",
+						}, -- [40]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [41]
+						{
+							["arg1"] = " ",
+						}, -- [42]
+						{
+							["arg1"] = " ",
+						}, -- [43]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 22:17:47。",
+						}, -- [44]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [45]
+						{
+							["arg1"] = " ",
+						}, -- [46]
+						{
+							["arg1"] = " ",
+						}, -- [47]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 22:20:38。",
+							["type"] = "SYSTEM",
+						}, -- [48]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [49]
+						{
+							["arg1"] = " ",
+						}, -- [50]
+						{
+							["arg1"] = " ",
+						}, -- [51]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 22:23:35。",
+						}, -- [52]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [53]
+						{
+							["arg1"] = " ",
+						}, -- [54]
+						{
+							["arg1"] = " ",
+						}, -- [55]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 22:25:12。",
+							["type"] = "SYSTEM",
+						}, -- [56]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [57]
+						{
+							["arg1"] = " ",
+						}, -- [58]
+						{
+							["arg1"] = " ",
+						}, -- [59]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 22:27:59。",
+						}, -- [60]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [61]
+						{
+							["arg1"] = " ",
+						}, -- [62]
+						{
+							["arg1"] = " ",
+						}, -- [63]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 22:28:49。",
+							["type"] = "SYSTEM",
+						}, -- [64]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [65]
+						{
+							["arg1"] = " ",
+						}, -- [66]
+						{
+							["arg1"] = " ",
+						}, -- [67]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 22:33:03。",
+							["type"] = "SYSTEM",
+						}, -- [68]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [69]
+						{
+							["arg1"] = " ",
+						}, -- [70]
+						{
+							["arg1"] = " ",
+						}, -- [71]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 22:43:23。",
+						}, -- [72]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [73]
+						{
+							["arg1"] = " ",
+						}, -- [74]
+						{
+							["arg1"] = " ",
+						}, -- [75]
+						{
+							["arg1"] = "记录开始于 07/26/2021 的 23:09:30。",
+							["type"] = "SYSTEM",
+						}, -- [76]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [77]
+						{
+							["arg1"] = " ",
+						}, -- [78]
+						{
+							["arg1"] = " ",
+						}, -- [79]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/26/2021 的 23:22:42。",
+						}, -- [80]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [81]
+						{
+							["arg1"] = " ",
+						}, -- [82]
+						{
+							["arg1"] = " ",
+						}, -- [83]
+						{
+							["arg1"] = "记录开始于 07/27/2021 的 19:02:41。",
+							["type"] = "SYSTEM",
+						}, -- [84]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [85]
+						{
+							["arg1"] = " ",
+						}, -- [86]
+						{
+							["arg1"] = " ",
+						}, -- [87]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/27/2021 的 21:33:09。",
+						}, -- [88]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [89]
+						{
+							["arg1"] = " ",
+						}, -- [90]
+						{
+							["arg1"] = " ",
+						}, -- [91]
+						{
+							["arg1"] = "记录开始于 07/27/2021 的 21:38:04。",
+							["type"] = "SYSTEM",
+						}, -- [92]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [93]
+						{
+							["arg1"] = " ",
+						}, -- [94]
+						{
+							["arg1"] = " ",
+						}, -- [95]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/27/2021 的 21:50:34。",
+						}, -- [96]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [97]
+						{
+							["arg1"] = " ",
+						}, -- [98]
+						{
+							["arg1"] = " ",
+						}, -- [99]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 14:01:45。",
+						}, -- [100]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [101]
+						{
+							["arg1"] = " ",
+						}, -- [102]
+						{
+							["arg1"] = " ",
+						}, -- [103]
+						{
+							["arg1"] = "记录开始于 07/28/2021 的 21:28:32。",
+							["type"] = "SYSTEM",
+						}, -- [104]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [105]
+						{
+							["arg1"] = " ",
+						}, -- [106]
+						{
+							["arg1"] = " ",
+						}, -- [107]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 21:47:01。",
+						}, -- [108]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [109]
+						{
+							["arg1"] = " ",
+						}, -- [110]
+						{
+							["arg1"] = " ",
+						}, -- [111]
+						{
+							["arg1"] = "记录开始于 07/28/2021 的 21:48:16。",
+							["type"] = "SYSTEM",
+						}, -- [112]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [113]
+						{
+							["arg1"] = " ",
+						}, -- [114]
+						{
+							["arg1"] = " ",
+						}, -- [115]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 23:08:33。",
+						}, -- [116]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [117]
+						{
+							["arg1"] = " ",
+						}, -- [118]
+						{
+							["arg1"] = " ",
+						}, -- [119]
+						{
+							["arg1"] = "记录开始于 07/29/2021 的 08:04:27。",
+							["type"] = "SYSTEM",
+						}, -- [120]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [121]
+						{
+							["arg1"] = " ",
+						}, -- [122]
+						{
+							["arg1"] = " ",
+						}, -- [123]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 18:58:54。",
+						}, -- [124]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [125]
+						{
+							["arg1"] = " ",
+						}, -- [126]
+						{
+							["arg1"] = " ",
+						}, -- [127]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 19:08:35。",
+						}, -- [128]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [129]
+						{
+							["arg1"] = " ",
+						}, -- [130]
+						{
+							["arg1"] = " ",
+						}, -- [131]
+						{
+							["arg1"] = "记录开始于 07/29/2021 的 21:32:28。",
+							["type"] = "SYSTEM",
+						}, -- [132]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [133]
+						{
+							["arg1"] = " ",
+						}, -- [134]
+						{
+							["arg1"] = " ",
+						}, -- [135]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 23:33:47。",
+						}, -- [136]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [137]
+						{
+							["arg1"] = " ",
+						}, -- [138]
+						{
+							["arg1"] = " ",
+						}, -- [139]
+						{
+							["arg1"] = "记录开始于 07/30/2021 的 21:34:53。",
+							["type"] = "SYSTEM",
+						}, -- [140]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [141]
+						{
+							["arg1"] = " ",
+						}, -- [142]
+						{
+							["arg1"] = " ",
+						}, -- [143]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/30/2021 的 22:27:45。",
+						}, -- [144]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [145]
+						{
+							["arg1"] = " ",
+						}, -- [146]
+						{
+							["arg1"] = " ",
+						}, -- [147]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 09:40:25。",
+							["type"] = "SYSTEM",
+						}, -- [148]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [149]
+						{
+							["arg1"] = " ",
+						}, -- [150]
+						{
+							["arg1"] = " ",
+						}, -- [151]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 12:12:28。",
+							["type"] = "SYSTEM",
+						}, -- [152]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [153]
+						{
+							["arg1"] = " ",
+						}, -- [154]
+						{
+							["arg1"] = " ",
+						}, -- [155]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/31/2021 的 15:39:01。",
+						}, -- [156]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [157]
+						{
+							["arg1"] = " ",
+						}, -- [158]
+						{
+							["arg1"] = " ",
+						}, -- [159]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 17:06:10。",
+							["type"] = "SYSTEM",
+						}, -- [160]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [161]
+						{
+							["arg1"] = " ",
+						}, -- [162]
+						{
+							["arg1"] = " ",
+						}, -- [163]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 17:20:42。",
+							["type"] = "SYSTEM",
+						}, -- [164]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [165]
+						{
+							["arg1"] = " ",
+						}, -- [166]
+						{
+							["arg1"] = " ",
+						}, -- [167]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/31/2021 的 19:06:10。",
+						}, -- [168]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [169]
+						{
+							["arg1"] = " ",
+						}, -- [170]
+						{
+							["arg1"] = " ",
+						}, -- [171]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 23:00:37。",
+							["type"] = "SYSTEM",
+						}, -- [172]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [173]
+						{
+							["arg1"] = " ",
+						}, -- [174]
+						{
+							["arg1"] = " ",
+						}, -- [175]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 09:01:12。",
+						}, -- [176]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [177]
+						{
+							["arg1"] = " ",
+						}, -- [178]
+						{
+							["arg1"] = " ",
+						}, -- [179]
+						{
+							["arg1"] = "记录开始于 08/01/2021 的 10:22:55。",
+							["type"] = "SYSTEM",
+						}, -- [180]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [181]
+						{
+							["arg1"] = " ",
+						}, -- [182]
+						{
+							["arg1"] = " ",
+						}, -- [183]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 10:50:37。",
+						}, -- [184]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [185]
+						{
+							["arg1"] = " ",
+						}, -- [186]
+						{
+							["arg1"] = " ",
+						}, -- [187]
+						{
+							["arg1"] = "记录开始于 08/01/2021 的 12:03:27。",
+							["type"] = "SYSTEM",
+						}, -- [188]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [189]
+						{
+							["arg1"] = " ",
+						}, -- [190]
+						{
+							["arg1"] = " ",
+						}, -- [191]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 12:44:19。",
+						}, -- [192]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [193]
+						{
+							["arg1"] = " ",
+						}, -- [194]
+						{
+							["arg1"] = " ",
+						}, -- [195]
+						{
+							["arg1"] = "记录开始于 08/01/2021 的 20:40:18。",
+							["type"] = "SYSTEM",
+						}, -- [196]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [197]
+						{
+							["arg1"] = " ",
+						}, -- [198]
+						{
+							["arg1"] = " ",
+						}, -- [199]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 20:41:30。",
+						}, -- [200]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [201]
+						{
+							["arg1"] = " ",
+						}, -- [202]
+						{
+							["arg1"] = " ",
+						}, -- [203]
+						{
+							["arg1"] = "记录开始于 08/01/2021 的 23:21:42。",
+							["type"] = "SYSTEM",
+						}, -- [204]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [205]
+						{
+							["arg1"] = " ",
+						}, -- [206]
+						{
+							["arg1"] = " ",
+						}, -- [207]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 18:29:08。",
+						}, -- [208]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [209]
+						{
+							["arg1"] = " ",
+						}, -- [210]
+						{
+							["arg1"] = " ",
+						}, -- [211]
+						{
+							["arg1"] = "记录开始于 08/02/2021 的 21:26:45。",
+							["type"] = "SYSTEM",
+						}, -- [212]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [213]
+						{
+							["arg1"] = " ",
+						}, -- [214]
+						{
+							["arg1"] = " ",
+						}, -- [215]
+						{
+							["arg1"] = "记录开始于 08/02/2021 的 23:31:06。",
+							["type"] = "SYSTEM",
+						}, -- [216]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [217]
+						{
+							["arg1"] = " ",
+						}, -- [218]
+						{
+							["arg1"] = " ",
+						}, -- [219]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 19:21:36。",
+						}, -- [220]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [221]
+						{
+							["arg1"] = " ",
+						}, -- [222]
+						{
+							["arg1"] = " ",
+						}, -- [223]
+						{
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
+							["type"] = "SYSTEM",
+						}, -- [224]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [225]
+						{
+							["clColor"] = "fffe7b09",
+							["time"] = 1628000405,
+							["arg1"] = "跳舞稀有 来2人",
+							["arg9"] = "集合石",
+							["arg2"] = "木头曲调-奈萨里奥",
+						}, -- [226]
+						{
+							["arg1"] = " ",
+						}, -- [227]
+						{
+							["arg1"] = " ",
+						}, -- [228]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
+						}, -- [229]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [230]
+						{
+							["arg1"] = " ",
+						}, -- [231]
+						{
+							["arg1"] = " ",
+						}, -- [232]
+						{
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
+							["type"] = "SYSTEM",
+						}, -- [233]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [234]
+						{
+							["arg1"] = " ",
+						}, -- [235]
+						{
+							["arg1"] = " ",
+						}, -- [236]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/05/2021 的 19:34:40。",
+						}, -- [237]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [238]
+						{
+							["arg1"] = " ",
+						}, -- [239]
+						{
+							["arg1"] = " ",
+						}, -- [240]
+						{
+							["arg1"] = "记录开始于 08/05/2021 的 19:35:47。",
+							["type"] = "SYSTEM",
+						}, -- [241]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [242]
+						{
+							["arg1"] = " ",
+						}, -- [243]
+						{
+							["arg1"] = " ",
+						}, -- [244]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/05/2021 的 19:36:52。",
+						}, -- [245]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [246]
+						{
+							["arg1"] = " ",
+						}, -- [247]
+						{
+							["arg1"] = " ",
+						}, -- [248]
+						{
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
+						}, -- [249]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [250]
+					},
+				},
+				["交易"] = {
+					["enabled"] = true,
+					["hasMessage"] = false,
+					["name"] = "交易",
+					["logs"] = {
+						{
+							["arg1"] = " ",
+						}, -- [1]
+						{
+							["arg1"] = "记录开始于 12/04/2020 的 20:39:24。",
+							["type"] = "SYSTEM",
+						}, -- [2]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [3]
+						{
+							["arg1"] = " ",
+						}, -- [4]
+						{
+							["arg1"] = " ",
+						}, -- [5]
+						{
+							["arg1"] = "记录开始于 12/05/2020 的 18:16:43。",
+							["type"] = "SYSTEM",
+						}, -- [6]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [7]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [8]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [9]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [10]
+						{
+							["arg1"] = " ",
+						}, -- [11]
+						{
+							["arg1"] = " ",
+						}, -- [12]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/06/2020 的 18:40:50。",
+						}, -- [13]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [14]
+						{
+							["arg1"] = " ",
+						}, -- [15]
+						{
+							["arg1"] = " ",
+						}, -- [16]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/06/2020 的 22:55:41。",
+						}, -- [17]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [18]
+						{
+							["arg1"] = " ",
+						}, -- [19]
+						{
+							["arg1"] = " ",
+						}, -- [20]
+						{
+							["arg1"] = "记录开始于 12/11/2020 的 19:33:00。",
+							["type"] = "SYSTEM",
+						}, -- [21]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [22]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [23]
+						{
+							["arg1"] = " ",
+						}, -- [24]
+						{
+							["arg1"] = " ",
+						}, -- [25]
+						{
+							["arg1"] = "记录开始于 12/12/2020 的 21:32:51。",
+							["type"] = "SYSTEM",
+						}, -- [26]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [27]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [28]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [29]
+						{
+							["arg1"] = " ",
+						}, -- [30]
+						{
+							["arg1"] = " ",
+						}, -- [31]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/14/2020 的 23:37:00。",
+						}, -- [32]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [33]
+						{
+							["arg1"] = " ",
+						}, -- [34]
+						{
+							["arg1"] = " ",
+						}, -- [35]
+						{
+							["arg1"] = "记录开始于 12/15/2020 的 22:04:34。",
+							["type"] = "SYSTEM",
+						}, -- [36]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [37]
+						{
+							["arg1"] = " ",
+						}, -- [38]
+						{
+							["arg1"] = " ",
+						}, -- [39]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/15/2020 的 23:05:04。",
+						}, -- [40]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [41]
+						{
+							["arg1"] = " ",
+						}, -- [42]
+						{
+							["arg1"] = " ",
+						}, -- [43]
+						{
+							["arg1"] = "记录开始于 12/17/2020 的 08:10:01。",
+							["type"] = "SYSTEM",
+						}, -- [44]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [45]
+						{
+							["arg1"] = " ",
+						}, -- [46]
+						{
+							["arg1"] = " ",
+						}, -- [47]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/17/2020 的 20:13:30。",
+						}, -- [48]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [49]
+						{
+							["arg1"] = " ",
+						}, -- [50]
+						{
+							["arg1"] = " ",
+						}, -- [51]
+						{
+							["arg1"] = "记录开始于 12/17/2020 的 22:42:26。",
+							["type"] = "SYSTEM",
+						}, -- [52]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [53]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [54]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [55]
+						{
+							["arg1"] = " ",
+						}, -- [56]
+						{
+							["arg1"] = " ",
+						}, -- [57]
+						{
+							["arg1"] = "记录开始于 12/18/2020 的 20:44:46。",
+							["type"] = "SYSTEM",
+						}, -- [58]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [59]
+						{
+							["arg1"] = " ",
+						}, -- [60]
+						{
+							["arg1"] = " ",
+						}, -- [61]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/18/2020 的 22:45:56。",
+						}, -- [62]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [63]
+						{
+							["arg1"] = " ",
+						}, -- [64]
+						{
+							["arg1"] = " ",
+						}, -- [65]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/20/2020 的 23:43:44。",
+						}, -- [66]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [67]
+						{
+							["arg1"] = " ",
+						}, -- [68]
+						{
+							["arg1"] = " ",
+						}, -- [69]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/22/2020 的 23:02:25。",
+						}, -- [70]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [71]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [72]
+						{
+							["clColor"] = "ffa9d271",
+							["time"] = 1608652416,
+							["arg1"] = "213装绑披风吹个",
+							["arg9"] = "交易 - 城市",
+							["arg2"] = "Aliouga-红龙女王",
+						}, -- [73]
+						{
+							["clColor"] = "ffa9d271",
+							["time"] = 1608652424,
+							["arg1"] = "213装吧ing",
+							["arg9"] = "交易 - 城市",
+							["arg2"] = "Aliouga-红龙女王",
+						}, -- [74]
+						{
+							["arg1"] = " ",
+						}, -- [75]
+						{
+							["arg1"] = " ",
+						}, -- [76]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/24/2020 的 21:39:26。",
+						}, -- [77]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [78]
+						{
+							["arg1"] = " ",
+						}, -- [79]
+						{
+							["arg1"] = " ",
+						}, -- [80]
+						{
+							["arg1"] = "记录开始于 12/27/2020 的 20:37:35。",
+							["type"] = "SYSTEM",
+						}, -- [81]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [82]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [83]
+						{
+							["arg1"] = " ",
+						}, -- [84]
+						{
+							["arg1"] = " ",
+						}, -- [85]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/27/2020 的 22:09:01。",
+						}, -- [86]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [87]
+						{
+							["arg1"] = " ",
+						}, -- [88]
+						{
+							["arg1"] = " ",
+						}, -- [89]
+						{
+							["arg1"] = "记录开始于 12/28/2020 的 22:22:36。",
+							["type"] = "SYSTEM",
+						}, -- [90]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [91]
+						{
+							["arg1"] = " ",
+						}, -- [92]
+						{
+							["arg1"] = " ",
+						}, -- [93]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 12/31/2020 的 19:34:21。",
+						}, -- [94]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [95]
+						{
+							["arg1"] = " ",
+						}, -- [96]
+						{
+							["arg1"] = " ",
+						}, -- [97]
+						{
+							["arg1"] = "记录开始于 12/31/2020 的 19:59:10。",
+							["type"] = "SYSTEM",
+						}, -- [98]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [99]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [100]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [101]
+						{
+							["arg1"] = " ",
+						}, -- [102]
+						{
+							["arg1"] = " ",
+						}, -- [103]
+						{
+							["arg1"] = "记录开始于 12/31/2020 的 23:18:24。",
+							["type"] = "SYSTEM",
+						}, -- [104]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [105]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [106]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [107]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [108]
+						{
+							["arg1"] = " ",
+						}, -- [109]
+						{
+							["arg1"] = " ",
+						}, -- [110]
+						{
+							["arg1"] = "记录开始于 01/07/2021 的 19:56:53。",
+							["type"] = "SYSTEM",
+						}, -- [111]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [112]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [113]
+						{
+							["arg1"] = " ",
+						}, -- [114]
+						{
+							["arg1"] = " ",
+						}, -- [115]
+						{
+							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
+							["type"] = "SYSTEM",
+						}, -- [116]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [117]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [118]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [119]
+						{
+							["arg1"] = " ",
+						}, -- [120]
+						{
+							["arg1"] = " ",
+						}, -- [121]
+						{
+							["arg1"] = "记录开始于 01/20/2021 的 22:53:04。",
+							["type"] = "SYSTEM",
+						}, -- [122]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [123]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [124]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [125]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [126]
+						{
+							["arg1"] = " ",
+						}, -- [127]
+						{
+							["arg1"] = " ",
+						}, -- [128]
+						{
+							["arg1"] = "记录开始于 02/11/2021 的 10:56:33。",
+							["type"] = "SYSTEM",
+						}, -- [129]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [130]
+						{
+							["arg1"] = " ",
+						}, -- [131]
+						{
+							["arg1"] = " ",
+						}, -- [132]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/20/2021 的 22:16:24。",
+						}, -- [133]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [134]
+						{
+							["arg1"] = " ",
+						}, -- [135]
+						{
+							["arg1"] = " ",
+						}, -- [136]
+						{
+							["arg1"] = "记录开始于 07/21/2021 的 18:55:12。",
+							["type"] = "SYSTEM",
+						}, -- [137]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [138]
+						{
+							["arg1"] = " ",
+						}, -- [139]
+						{
+							["arg1"] = " ",
+						}, -- [140]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/21/2021 的 19:24:36。",
+						}, -- [141]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [142]
+						{
+							["arg1"] = " ",
+						}, -- [143]
+						{
+							["arg1"] = " ",
+						}, -- [144]
+						{
+							["arg1"] = "记录开始于 07/24/2021 的 11:25:29。",
+							["type"] = "SYSTEM",
+						}, -- [145]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [146]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [147]
+						{
+							["arg1"] = " ",
+						}, -- [148]
+						{
+							["arg1"] = " ",
+						}, -- [149]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/24/2021 的 12:51:25。",
+						}, -- [150]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [151]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [152]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [153]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [154]
+						{
+							["arg1"] = " ",
+						}, -- [155]
+						{
+							["arg1"] = " ",
+						}, -- [156]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/24/2021 的 16:24:55。",
+						}, -- [157]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [158]
+						{
+							["arg1"] = " ",
+						}, -- [159]
+						{
+							["arg1"] = " ",
+						}, -- [160]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/24/2021 的 23:25:28。",
+						}, -- [161]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [162]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [163]
+						{
+							["arg1"] = " ",
+						}, -- [164]
+						{
+							["arg1"] = " ",
+						}, -- [165]
+						{
+							["arg1"] = "记录开始于 07/25/2021 的 09:23:54。",
+							["type"] = "SYSTEM",
+						}, -- [166]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [167]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [168]
+						{
+							["arg1"] = " ",
+						}, -- [169]
+						{
+							["arg1"] = " ",
+						}, -- [170]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/25/2021 的 12:30:23。",
+						}, -- [171]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [172]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [173]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [174]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [175]
+						{
+							["arg1"] = " ",
+						}, -- [176]
+						{
+							["arg1"] = " ",
+						}, -- [177]
+						{
+							["arg1"] = "记录开始于 07/25/2021 的 18:44:56。",
+							["type"] = "SYSTEM",
+						}, -- [178]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [179]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [180]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [181]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [182]
+						{
+							["arg1"] = " ",
+						}, -- [183]
+						{
+							["arg1"] = " ",
+						}, -- [184]
+						{
+							["arg1"] = "记录开始于 07/27/2021 的 22:52:04。",
+							["type"] = "SYSTEM",
+						}, -- [185]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [186]
+						{
+							["arg1"] = " ",
+						}, -- [187]
+						{
+							["arg1"] = " ",
+						}, -- [188]
+						{
+							["arg1"] = "记录开始于 07/28/2021 的 21:48:16。",
+							["type"] = "SYSTEM",
+						}, -- [189]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [190]
+						{
+							["arg1"] = " ",
+						}, -- [191]
+						{
+							["arg1"] = " ",
+						}, -- [192]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 23:08:33。",
+						}, -- [193]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [194]
+						{
+							["arg1"] = " ",
+						}, -- [195]
+						{
+							["arg1"] = " ",
+						}, -- [196]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 19:08:35。",
+						}, -- [197]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [198]
+						{
+							["arg1"] = " ",
+						}, -- [199]
+						{
+							["arg1"] = " ",
+						}, -- [200]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 23:33:47。",
+						}, -- [201]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [202]
+						{
+							["arg1"] = " ",
+						}, -- [203]
+						{
+							["arg1"] = " ",
+						}, -- [204]
+						{
+							["arg1"] = "记录开始于 07/30/2021 的 21:34:53。",
+							["type"] = "SYSTEM",
+						}, -- [205]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [206]
+						{
+							["arg1"] = " ",
+						}, -- [207]
+						{
+							["arg1"] = " ",
+						}, -- [208]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/30/2021 的 22:27:45。",
+						}, -- [209]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [210]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [211]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [212]
+						{
+							["arg1"] = " ",
+						}, -- [213]
+						{
+							["arg1"] = " ",
+						}, -- [214]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 09:40:25。",
+							["type"] = "SYSTEM",
+						}, -- [215]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [216]
+						{
+							["arg1"] = " ",
+						}, -- [217]
+						{
+							["arg1"] = " ",
+						}, -- [218]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 12:12:28。",
+							["type"] = "SYSTEM",
+						}, -- [219]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [220]
+						{
+							["arg1"] = " ",
+						}, -- [221]
+						{
+							["arg1"] = " ",
+						}, -- [222]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/31/2021 的 15:39:01。",
+						}, -- [223]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [224]
+						{
+							["arg1"] = " ",
+						}, -- [225]
+						{
+							["arg1"] = " ",
+						}, -- [226]
+						{
+							["arg1"] = "记录开始于 07/31/2021 的 17:06:10。",
+							["type"] = "SYSTEM",
+						}, -- [227]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [228]
+						{
+							["arg1"] = " ",
+						}, -- [229]
+						{
+							["arg1"] = " ",
+						}, -- [230]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 20:41:30。",
+						}, -- [231]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [232]
+						{
+							["arg1"] = " ",
+						}, -- [233]
+						{
+							["arg1"] = " ",
+						}, -- [234]
+						{
+							["arg1"] = "记录开始于 08/02/2021 的 21:26:45。",
+							["type"] = "SYSTEM",
+						}, -- [235]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [236]
+						{
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
+						}, -- [237]
+						{
+							["arg1"] = " ",
+						}, -- [238]
+						{
+							["arg1"] = " ",
+						}, -- [239]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 19:21:36。",
+						}, -- [240]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [241]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [242]
+						{
+							["arg1"] = " ",
+						}, -- [243]
+						{
+							["arg1"] = " ",
+						}, -- [244]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
+						}, -- [245]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [246]
+						{
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
+						}, -- [247]
+						{
+							["arg1"] = " ",
+						}, -- [248]
+						{
+							["arg1"] = " ",
+						}, -- [249]
+						{
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
+						}, -- [250]
 					},
 				},
 				["世界防务"] = {
@@ -17171,959 +17923,65 @@ ElephantDBPerChar = {
 					["name"] = "世界防务",
 					["logs"] = {
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
 							["type"] = "SYSTEM",
 						}, -- [1]
 					},
 				},
-				["交易"] = {
+				[""] = {
 					["enabled"] = true,
-					["hasMessage"] = true,
-					["name"] = "交易",
+					["hasMessage"] = false,
+					["name"] = "",
 					["logs"] = {
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 22:31:13。",
 						}, -- [1]
 						{
-							["arg1"] = "记录开始于 10/31/2020 的 22:09:56。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [2]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [3]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [4]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [5]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
+							["type"] = "SYSTEM",
 						}, -- [6]
-						{
-							["arg1"] = " ",
-						}, -- [7]
-						{
-							["arg1"] = "记录开始于 11/01/2020 的 12:23:17。",
-							["type"] = "SYSTEM",
-						}, -- [8]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [9]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [10]
-						{
-							["arg1"] = " ",
-						}, -- [11]
-						{
-							["arg1"] = " ",
-						}, -- [12]
-						{
-							["arg1"] = "记录开始于 11/01/2020 的 18:02:12。",
-							["type"] = "SYSTEM",
-						}, -- [13]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [14]
-						{
-							["arg1"] = " ",
-						}, -- [15]
-						{
-							["arg1"] = " ",
-						}, -- [16]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/01/2020 的 23:03:44。",
-						}, -- [17]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [18]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [19]
-						{
-							["arg1"] = " ",
-						}, -- [20]
-						{
-							["arg1"] = " ",
-						}, -- [21]
-						{
-							["arg1"] = "记录开始于 11/02/2020 的 22:33:37。",
-							["type"] = "SYSTEM",
-						}, -- [22]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [23]
-						{
-							["arg1"] = " ",
-						}, -- [24]
-						{
-							["arg1"] = " ",
-						}, -- [25]
-						{
-							["arg1"] = "记录开始于 11/03/2020 的 21:56:17。",
-							["type"] = "SYSTEM",
-						}, -- [26]
-						{
-							["clColor"] = "fffefefe",
-							["time"] = 1604412511,
-							["arg1"] = "|cffa335ee|Hitem:95416::::::::50:258:::::::|h[飞天魔像]|h|r",
-							["arg9"] = "交易 - 城市",
-							["arg2"] = "烟雨平生-奈萨里奥",
-						}, -- [27]
-						{
-							["clColor"] = "fffefefe",
-							["time"] = 1604412530,
-							["arg1"] = "收购一个|cffa335ee|Hitem:95416::::::::50:258:::::::|h[飞天魔像]|h|r  ",
-							["arg9"] = "交易 - 城市",
-							["arg2"] = "烟雨平生-奈萨里奥",
-						}, -- [28]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [29]
-						{
-							["arg1"] = " ",
-						}, -- [30]
-						{
-							["arg1"] = " ",
-						}, -- [31]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/04/2020 的 23:15:42。",
-						}, -- [32]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [33]
-						{
-							["arg1"] = " ",
-						}, -- [34]
-						{
-							["arg1"] = " ",
-						}, -- [35]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/05/2020 的 22:00:53。",
-						}, -- [36]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [37]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [38]
-						{
-							["arg1"] = " ",
-						}, -- [39]
-						{
-							["arg1"] = " ",
-						}, -- [40]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/06/2020 的 23:21:04。",
-						}, -- [41]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [42]
-						{
-							["arg1"] = " ",
-						}, -- [43]
-						{
-							["arg1"] = " ",
-						}, -- [44]
-						{
-							["arg1"] = "记录开始于 11/07/2020 的 13:15:49。",
-							["type"] = "SYSTEM",
-						}, -- [45]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [46]
-						{
-							["arg1"] = " ",
-						}, -- [47]
-						{
-							["arg1"] = " ",
-						}, -- [48]
-						{
-							["arg1"] = "记录开始于 11/07/2020 的 16:35:05。",
-							["type"] = "SYSTEM",
-						}, -- [49]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [50]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [51]
-						{
-							["arg1"] = " ",
-						}, -- [52]
-						{
-							["arg1"] = " ",
-						}, -- [53]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/07/2020 的 21:34:11。",
-						}, -- [54]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [55]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [56]
-						{
-							["arg1"] = " ",
-						}, -- [57]
-						{
-							["arg1"] = " ",
-						}, -- [58]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/08/2020 的 13:50:50。",
-						}, -- [59]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [60]
-						{
-							["arg1"] = " ",
-						}, -- [61]
-						{
-							["arg1"] = " ",
-						}, -- [62]
-						{
-							["arg1"] = "记录开始于 11/08/2020 的 19:04:35。",
-							["type"] = "SYSTEM",
-						}, -- [63]
-						{
-							["clColor"] = "fffefefe",
-							["time"] = 1604833533,
-							["arg1"] = "|cff0070dd|Hbattlepet:2711:1:3:153:12:11:0000000000000000:0|h[金色的斯诺夫]|h|r  6.5 ",
-							["arg9"] = "交易 - 城市",
-							["arg2"] = "烟雨平生-奈萨里奥",
-						}, -- [64]
-						{
-							["clColor"] = "fffefefe",
-							["time"] = 1604833543,
-							["arg1"] = "|cff0070dd|Hbattlepet:2711:1:3:153:12:11:0000000000000000:0|h[金色的斯诺夫]|h|r  6.5 有要的吗",
-							["arg9"] = "交易 - 城市",
-							["arg2"] = "烟雨平生-奈萨里奥",
-						}, -- [65]
-						{
-							["arg1"] = " ",
-						}, -- [66]
-						{
-							["arg1"] = " ",
-						}, -- [67]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/08/2020 的 21:52:54。",
-						}, -- [68]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [69]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [70]
-						{
-							["arg1"] = " ",
-						}, -- [71]
-						{
-							["arg1"] = " ",
-						}, -- [72]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/09/2020 的 19:42:34。",
-						}, -- [73]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [74]
-						{
-							["arg1"] = " ",
-						}, -- [75]
-						{
-							["arg1"] = " ",
-						}, -- [76]
-						{
-							["arg1"] = "记录开始于 11/11/2020 的 23:13:47。",
-							["type"] = "SYSTEM",
-						}, -- [77]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [78]
-						{
-							["arg1"] = " ",
-						}, -- [79]
-						{
-							["arg1"] = " ",
-						}, -- [80]
-						{
-							["arg1"] = "记录开始于 11/12/2020 的 22:18:51。",
-							["type"] = "SYSTEM",
-						}, -- [81]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [82]
-						{
-							["arg1"] = " ",
-						}, -- [83]
-						{
-							["arg1"] = " ",
-						}, -- [84]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/12/2020 的 22:37:34。",
-						}, -- [85]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [86]
-						{
-							["arg1"] = " ",
-						}, -- [87]
-						{
-							["arg1"] = " ",
-						}, -- [88]
-						{
-							["arg1"] = "记录开始于 11/12/2020 的 23:20:17。",
-							["type"] = "SYSTEM",
-						}, -- [89]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [90]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [91]
-						{
-							["arg1"] = " ",
-						}, -- [92]
-						{
-							["arg1"] = " ",
-						}, -- [93]
-						{
-							["arg1"] = "记录开始于 11/16/2020 的 18:44:00。",
-							["type"] = "SYSTEM",
-						}, -- [94]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [95]
-						{
-							["arg1"] = " ",
-						}, -- [96]
-						{
-							["arg1"] = " ",
-						}, -- [97]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 11/22/2020 的 23:31:12。",
-						}, -- [98]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [99]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [100]
-						{
-							["arg1"] = " ",
-						}, -- [101]
-						{
-							["arg1"] = " ",
-						}, -- [102]
-						{
-							["arg1"] = "记录开始于 11/23/2020 的 22:59:02。",
-							["type"] = "SYSTEM",
-						}, -- [103]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [104]
-						{
-							["arg1"] = " ",
-						}, -- [105]
-						{
-							["arg1"] = " ",
-						}, -- [106]
-						{
-							["arg1"] = "记录开始于 11/24/2020 的 19:15:15。",
-							["type"] = "SYSTEM",
-						}, -- [107]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [108]
-						{
-							["arg1"] = " ",
-						}, -- [109]
-						{
-							["arg1"] = " ",
-						}, -- [110]
-						{
-							["arg1"] = "记录开始于 11/28/2020 的 17:55:07。",
-							["type"] = "SYSTEM",
-						}, -- [111]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [112]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [113]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [114]
-						{
-							["arg1"] = " ",
-						}, -- [115]
-						{
-							["arg1"] = " ",
-						}, -- [116]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/01/2020 的 22:21:17。",
-						}, -- [117]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [118]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [119]
-						{
-							["arg1"] = " ",
-						}, -- [120]
-						{
-							["arg1"] = " ",
-						}, -- [121]
-						{
-							["arg1"] = "记录开始于 12/02/2020 的 22:04:09。",
-							["type"] = "SYSTEM",
-						}, -- [122]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [123]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [124]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [125]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [126]
-						{
-							["arg1"] = " ",
-						}, -- [127]
-						{
-							["arg1"] = " ",
-						}, -- [128]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/03/2020 的 19:23:13。",
-						}, -- [129]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [130]
-						{
-							["arg1"] = " ",
-						}, -- [131]
-						{
-							["arg1"] = " ",
-						}, -- [132]
-						{
-							["arg1"] = "记录开始于 12/04/2020 的 20:39:24。",
-							["type"] = "SYSTEM",
-						}, -- [133]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [134]
-						{
-							["arg1"] = " ",
-						}, -- [135]
-						{
-							["arg1"] = " ",
-						}, -- [136]
-						{
-							["arg1"] = "记录开始于 12/05/2020 的 18:16:43。",
-							["type"] = "SYSTEM",
-						}, -- [137]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [138]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [139]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [140]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [141]
-						{
-							["arg1"] = " ",
-						}, -- [142]
-						{
-							["arg1"] = " ",
-						}, -- [143]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/06/2020 的 18:40:50。",
-						}, -- [144]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [145]
-						{
-							["arg1"] = " ",
-						}, -- [146]
-						{
-							["arg1"] = " ",
-						}, -- [147]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/06/2020 的 22:55:41。",
-						}, -- [148]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [149]
-						{
-							["arg1"] = " ",
-						}, -- [150]
-						{
-							["arg1"] = " ",
-						}, -- [151]
-						{
-							["arg1"] = "记录开始于 12/11/2020 的 19:33:00。",
-							["type"] = "SYSTEM",
-						}, -- [152]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [153]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [154]
-						{
-							["arg1"] = " ",
-						}, -- [155]
-						{
-							["arg1"] = " ",
-						}, -- [156]
-						{
-							["arg1"] = "记录开始于 12/12/2020 的 21:32:51。",
-							["type"] = "SYSTEM",
-						}, -- [157]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [158]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [159]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [160]
-						{
-							["arg1"] = " ",
-						}, -- [161]
-						{
-							["arg1"] = " ",
-						}, -- [162]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/14/2020 的 23:37:00。",
-						}, -- [163]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [164]
-						{
-							["arg1"] = " ",
-						}, -- [165]
-						{
-							["arg1"] = " ",
-						}, -- [166]
-						{
-							["arg1"] = "记录开始于 12/15/2020 的 22:04:34。",
-							["type"] = "SYSTEM",
-						}, -- [167]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [168]
-						{
-							["arg1"] = " ",
-						}, -- [169]
-						{
-							["arg1"] = " ",
-						}, -- [170]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/15/2020 的 23:05:04。",
-						}, -- [171]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [172]
-						{
-							["arg1"] = " ",
-						}, -- [173]
-						{
-							["arg1"] = " ",
-						}, -- [174]
-						{
-							["arg1"] = "记录开始于 12/17/2020 的 08:10:01。",
-							["type"] = "SYSTEM",
-						}, -- [175]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [176]
-						{
-							["arg1"] = " ",
-						}, -- [177]
-						{
-							["arg1"] = " ",
-						}, -- [178]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/17/2020 的 20:13:30。",
-						}, -- [179]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [180]
-						{
-							["arg1"] = " ",
-						}, -- [181]
-						{
-							["arg1"] = " ",
-						}, -- [182]
-						{
-							["arg1"] = "记录开始于 12/17/2020 的 22:42:26。",
-							["type"] = "SYSTEM",
-						}, -- [183]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [184]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [185]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [186]
-						{
-							["arg1"] = " ",
-						}, -- [187]
-						{
-							["arg1"] = " ",
-						}, -- [188]
-						{
-							["arg1"] = "记录开始于 12/18/2020 的 20:44:46。",
-							["type"] = "SYSTEM",
-						}, -- [189]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [190]
-						{
-							["arg1"] = " ",
-						}, -- [191]
-						{
-							["arg1"] = " ",
-						}, -- [192]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/18/2020 的 22:45:56。",
-						}, -- [193]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [194]
-						{
-							["arg1"] = " ",
-						}, -- [195]
-						{
-							["arg1"] = " ",
-						}, -- [196]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/20/2020 的 23:43:44。",
-						}, -- [197]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [198]
-						{
-							["arg1"] = " ",
-						}, -- [199]
-						{
-							["arg1"] = " ",
-						}, -- [200]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/22/2020 的 23:02:25。",
-						}, -- [201]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [202]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [203]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1608652416,
-							["arg1"] = "213装绑披风吹个",
-							["arg9"] = "交易 - 城市",
-							["arg2"] = "Aliouga-红龙女王",
-						}, -- [204]
-						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1608652424,
-							["arg1"] = "213装吧ing",
-							["arg9"] = "交易 - 城市",
-							["arg2"] = "Aliouga-红龙女王",
-						}, -- [205]
-						{
-							["arg1"] = " ",
-						}, -- [206]
-						{
-							["arg1"] = " ",
-						}, -- [207]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 21:39:26。",
-						}, -- [208]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [209]
-						{
-							["arg1"] = " ",
-						}, -- [210]
-						{
-							["arg1"] = " ",
-						}, -- [211]
-						{
-							["arg1"] = "记录开始于 12/27/2020 的 20:37:35。",
-							["type"] = "SYSTEM",
-						}, -- [212]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [213]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [214]
-						{
-							["arg1"] = " ",
-						}, -- [215]
-						{
-							["arg1"] = " ",
-						}, -- [216]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/27/2020 的 22:09:01。",
-						}, -- [217]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [218]
-						{
-							["arg1"] = " ",
-						}, -- [219]
-						{
-							["arg1"] = " ",
-						}, -- [220]
-						{
-							["arg1"] = "记录开始于 12/28/2020 的 22:22:36。",
-							["type"] = "SYSTEM",
-						}, -- [221]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [222]
-						{
-							["arg1"] = " ",
-						}, -- [223]
-						{
-							["arg1"] = " ",
-						}, -- [224]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/31/2020 的 19:34:21。",
-						}, -- [225]
-						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
-						}, -- [226]
-						{
-							["arg1"] = " ",
-						}, -- [227]
-						{
-							["arg1"] = " ",
-						}, -- [228]
-						{
-							["arg1"] = "记录开始于 12/31/2020 的 19:59:10。",
-							["type"] = "SYSTEM",
-						}, -- [229]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [230]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [231]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [232]
-						{
-							["arg1"] = " ",
-						}, -- [233]
-						{
-							["arg1"] = " ",
-						}, -- [234]
-						{
-							["arg1"] = "记录开始于 12/31/2020 的 23:18:24。",
-							["type"] = "SYSTEM",
-						}, -- [235]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [236]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [237]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [238]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [239]
-						{
-							["arg1"] = " ",
-						}, -- [240]
-						{
-							["arg1"] = " ",
-						}, -- [241]
-						{
-							["arg1"] = "记录开始于 01/07/2021 的 19:56:53。",
-							["type"] = "SYSTEM",
-						}, -- [242]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [243]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [244]
-						{
-							["arg1"] = " ",
-						}, -- [245]
-						{
-							["arg1"] = " ",
-						}, -- [246]
-						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
-							["type"] = "SYSTEM",
-						}, -- [247]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [248]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [249]
-						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
-						}, -- [250]
 					},
 				},
 				["综合"] = {
 					["enabled"] = true,
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["name"] = "综合",
 					["logs"] = {
 						{
-							["clColor"] = "ffa9d271",
-							["time"] = 1608391059,
-							["arg1"] = "大的出奇的蘑菇..虫子坐骑.有人来吗",
-							["arg9"] = "综合 - 炽蓝仙野",
-							["arg2"] = "鬼冢狐-伊森利恩",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 14:01:45。",
 						}, -- [1]
 						{
 							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
 						}, -- [2]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [3]
 						{
 							["arg1"] = " ",
 						}, -- [4]
 						{
-							["arg1"] = "记录开始于 12/20/2020 的 16:52:07。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [5]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 07/28/2021 的 21:28:32。",
 							["type"] = "SYSTEM",
 						}, -- [6]
 						{
@@ -18137,21 +17995,23 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [9]
 						{
+							["arg1"] = "记录开始于 07/28/2021 的 21:48:16。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/20/2020 的 21:33:08。",
 						}, -- [10]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [11]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [12]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [13]
 						{
-							["arg1"] = "记录开始于 12/20/2020 的 21:55:38。",
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
 						}, -- [14]
 						{
@@ -18167,50 +18027,48 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [17]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [18]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [19]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 23:08:33。",
 						}, -- [20]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [21]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [22]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [23]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [24]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [25]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/20/2020 的 23:43:44。",
+							["arg1"] = " ",
 						}, -- [26]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [27]
 						{
+							["arg1"] = "记录开始于 07/29/2021 的 08:04:27。",
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
 						}, -- [28]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [29]
 						{
 							["arg1"] = " ",
@@ -18219,41 +18077,41 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [31]
 						{
-							["arg1"] = "记录开始于 12/21/2020 的 20:05:08。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 19:08:35。",
 						}, -- [32]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [33]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [34]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [35]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [36]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [37]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [38]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 07/29/2021 的 21:32:28。",
+							["type"] = "SYSTEM",
 						}, -- [39]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [40]
 						{
-							["arg1"] = "记录开始于 12/22/2020 的 22:38:34。",
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
 						}, -- [41]
 						{
@@ -18269,30 +18127,32 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [44]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [45]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [46]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/22/2020 的 23:02:25。",
 						}, -- [47]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [48]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [49]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [50]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [51]
 						{
 							["arg1"] = " ",
@@ -18302,7 +18162,7 @@ ElephantDBPerChar = {
 						}, -- [53]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/23/2020 的 22:21:27。",
+							["arg1"] = "记录开始于 07/29/2021 的 23:33:47。",
 						}, -- [54]
 						{
 							["type"] = "SYSTEM",
@@ -18317,22 +18177,24 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [57]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [58]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [59]
 						{
-							["arg1"] = "记录开始于 12/23/2020 的 23:07:38。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [60]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [61]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [62]
 						{
 							["arg1"] = " ",
@@ -18341,56 +18203,58 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [64]
 						{
+							["arg1"] = "记录开始于 07/30/2021 的 21:34:53。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/23/2020 的 23:28:59。",
 						}, -- [65]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [66]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [67]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [68]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [69]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [70]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [71]
 						{
 							["arg1"] = " ",
 						}, -- [72]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/30/2021 的 22:27:45。",
 						}, -- [73]
 						{
-							["arg1"] = "记录开始于 12/24/2020 的 08:08:42。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [74]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [75]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [76]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [77]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 21:39:26。",
+							["arg1"] = "你加入了频道。",
 						}, -- [78]
 						{
 							["type"] = "SYSTEM",
@@ -18413,21 +18277,21 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [83]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [84]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [85]
 						{
-							["arg1"] = "记录开始于 12/24/2020 的 22:39:55。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [86]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [87]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 07/31/2021 的 09:40:25。",
 							["type"] = "SYSTEM",
 						}, -- [88]
 						{
@@ -18443,43 +18307,45 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [91]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [92]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [93]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 23:14:14。",
 						}, -- [94]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [95]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [96]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [97]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [98]
 						{
+							["arg1"] = "记录开始于 07/31/2021 的 12:12:28。",
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
 						}, -- [99]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [100]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [101]
 						{
-							["arg1"] = "记录开始于 12/27/2020 的 20:37:35。",
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
 						}, -- [102]
 						{
@@ -18487,11 +18353,8 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [103]
 						{
-							["clColor"] = "fffe7b09",
-							["time"] = 1609072699,
-							["arg1"] = "老牌公会《兄弟荣誉》招收各种休闲玩家，也欢迎一起打副本的朋友加入",
-							["arg9"] = "综合 - 奥利波斯",
-							["arg2"] = "乌索克之怒-格雷迈恩",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [104]
 						{
 							["arg1"] = "你加入了频道。",
@@ -18510,26 +18373,26 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [108]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [109]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [110]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/31/2021 的 15:39:01。",
 						}, -- [111]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [112]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [113]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/27/2020 的 22:09:01。",
+							["arg1"] = "你加入了频道。",
 						}, -- [114]
 						{
 							["type"] = "SYSTEM",
@@ -18544,54 +18407,55 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [117]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [118]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [119]
 						{
+							["arg1"] = "记录开始于 07/31/2021 的 17:06:10。",
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
 						}, -- [120]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["clColor"] = "ffc31d39",
+							["time"] = 1627722690,
+							["arg1"] = "谁招的维斯克图斯要死了",
+							["arg9"] = "综合 - 玛卓克萨斯",
+							["arg2"] = "舞枂光-菲拉斯",
 						}, -- [121]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [122]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [123]
 						{
-							["arg1"] = "记录开始于 12/28/2020 的 22:22:36。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [124]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [125]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/31/2021 的 19:06:10。",
 						}, -- [126]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [127]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [128]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [129]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [130]
 						{
 							["arg1"] = " ",
@@ -18600,42 +18464,42 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [132]
 						{
+							["arg1"] = "记录开始于 07/31/2021 的 23:00:37。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/28/2020 的 23:10:06。",
 						}, -- [133]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [134]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [135]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [136]
 						{
 							["arg1"] = " ",
 						}, -- [137]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 09:01:12。",
 						}, -- [138]
 						{
-							["arg1"] = "记录开始于 12/30/2020 的 20:59:50。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [139]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [140]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [141]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [142]
 						{
 							["arg1"] = " ",
@@ -18644,40 +18508,42 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [144]
 						{
+							["arg1"] = "记录开始于 08/01/2021 的 12:03:27。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/30/2020 的 22:01:44。",
 						}, -- [145]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [146]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [147]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [148]
 						{
 							["arg1"] = " ",
 						}, -- [149]
 						{
-							["arg1"] = "记录开始于 12/31/2020 的 08:04:49。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [150]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 20:41:30。",
 						}, -- [151]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [152]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [153]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/31/2020 的 19:34:21。",
+							["arg1"] = "你加入了频道。",
 						}, -- [154]
 						{
 							["type"] = "SYSTEM",
@@ -18688,25 +18554,25 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [156]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [157]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [158]
 						{
-							["arg1"] = "记录开始于 12/31/2020 的 19:59:10。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [159]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [160]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [161]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/01/2021 的 23:21:42。",
 							["type"] = "SYSTEM",
 						}, -- [162]
 						{
@@ -18726,57 +18592,55 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [166]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [167]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [168]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 18:29:08。",
 						}, -- [169]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [170]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [171]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [172]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [173]
 						{
-							["arg1"] = "记录开始于 12/31/2020 的 23:18:24。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [174]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [175]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [176]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [177]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [178]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [179]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/02/2021 的 21:26:45。",
 							["type"] = "SYSTEM",
 						}, -- [180]
 						{
@@ -18808,41 +18672,43 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [187]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [188]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [189]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/01/2021 的 08:36:31。",
 						}, -- [190]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [191]
 						{
 							["arg1"] = " ",
 						}, -- [192]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 22:30:26。",
 						}, -- [193]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 00:06:02。",
+							["arg1"] = "你加入了频道。",
 						}, -- [194]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [195]
 						{
 							["arg1"] = " ",
 						}, -- [196]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 08/02/2021 的 23:31:06。",
+							["type"] = "SYSTEM",
 						}, -- [197]
 						{
-							["arg1"] = "记录开始于 01/07/2021 的 19:56:53。",
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
 						}, -- [198]
 						{
@@ -18862,18 +18728,18 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [202]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [203]
 						{
 							["arg1"] = " ",
 						}, -- [204]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 19:21:36。",
 						}, -- [205]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 20:46:53。",
+							["arg1"] = "你加入了频道。",
 						}, -- [206]
 						{
 							["type"] = "SYSTEM",
@@ -18888,40 +18754,44 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [209]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [210]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [211]
 						{
-							["arg1"] = "记录开始于 01/17/2021 的 13:00:02。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [212]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [213]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [214]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [215]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [216]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [217]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [218]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/17/2021 的 16:31:45。",
+							["arg1"] = "你加入了频道。",
 						}, -- [219]
 						{
 							["type"] = "SYSTEM",
@@ -18932,97 +18802,97 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [221]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [222]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [223]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/18/2021 的 19:43:45。",
+							["arg1"] = "你加入了频道。",
 						}, -- [224]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [225]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [226]
 						{
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
 						}, -- [227]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [228]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [229]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [230]
 						{
-							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
 						}, -- [231]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [232]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [233]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [234]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [235]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [236]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [237]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [238]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [239]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [240]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [241]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [242]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [243]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [244]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [245]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/04/2021 的 19:21:19。",
 							["type"] = "SYSTEM",
 						}, -- [246]
 						{
@@ -19030,35 +18900,31 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [247]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [248]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [249]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
 							["type"] = "SYSTEM",
 						}, -- [250]
 					},
 				},
 				["本地防务"] = {
 					["enabled"] = true,
-					["hasMessage"] = true,
+					["hasMessage"] = false,
 					["name"] = "本地防务",
 					["logs"] = {
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [1]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [2]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 07/26/2021 的 23:22:42。",
 						}, -- [3]
 						{
 							["type"] = "SYSTEM",
@@ -19075,16 +18941,16 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [7]
 						{
-							["arg1"] = "记录开始于 12/19/2020 的 09:53:10。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/27/2021 的 21:50:34。",
 						}, -- [8]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [9]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [10]
 						{
 							["arg1"] = " ",
@@ -19093,73 +18959,73 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [12]
 						{
+							["arg1"] = "记录开始于 07/27/2021 的 22:52:04。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/19/2020 的 22:32:54。",
 						}, -- [13]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [14]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [15]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [16]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [17]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [18]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [19]
 						{
 							["arg1"] = " ",
 						}, -- [20]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/28/2021 的 14:01:45。",
 						}, -- [21]
 						{
-							["arg1"] = "记录开始于 12/20/2020 的 16:52:07。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [22]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [23]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [24]
 						{
 							["arg1"] = " ",
 						}, -- [25]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 07/28/2021 的 21:28:32。",
+							["type"] = "SYSTEM",
 						}, -- [26]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/20/2020 的 21:33:08。",
 						}, -- [27]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [28]
 						{
 							["arg1"] = " ",
 						}, -- [29]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 07/28/2021 的 21:48:16。",
+							["type"] = "SYSTEM",
 						}, -- [30]
 						{
-							["arg1"] = "记录开始于 12/20/2020 的 21:55:38。",
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
 						}, -- [31]
 						{
@@ -19194,7 +19060,7 @@ ElephantDBPerChar = {
 						}, -- [39]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/20/2020 的 23:43:44。",
+							["arg1"] = "记录开始于 07/28/2021 的 23:08:33。",
 						}, -- [40]
 						{
 							["type"] = "SYSTEM",
@@ -19215,7 +19081,7 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [45]
 						{
-							["arg1"] = "记录开始于 12/21/2020 的 20:05:08。",
+							["arg1"] = "记录开始于 07/29/2021 的 08:04:27。",
 							["type"] = "SYSTEM",
 						}, -- [46]
 						{
@@ -19223,110 +19089,114 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [47]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [48]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [49]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 19:08:35。",
 						}, -- [50]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [51]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [52]
 						{
-							["arg1"] = "记录开始于 12/22/2020 的 22:38:34。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [53]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [54]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [55]
 						{
 							["arg1"] = " ",
 						}, -- [56]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 07/29/2021 的 21:32:28。",
+							["type"] = "SYSTEM",
 						}, -- [57]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/22/2020 的 23:02:25。",
 						}, -- [58]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [59]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [60]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [61]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [62]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [63]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [64]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/23/2020 的 22:21:27。",
 						}, -- [65]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [66]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [67]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [68]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [69]
 						{
 							["arg1"] = " ",
 						}, -- [70]
 						{
-							["arg1"] = "记录开始于 12/23/2020 的 23:07:38。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [71]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/29/2021 的 23:33:47。",
 						}, -- [72]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [73]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [74]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [75]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/23/2020 的 23:28:59。",
+							["arg1"] = "你加入了频道。",
 						}, -- [76]
 						{
 							["type"] = "SYSTEM",
@@ -19341,117 +19211,121 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [79]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [80]
 						{
 							["arg1"] = " ",
 						}, -- [81]
 						{
-							["arg1"] = "记录开始于 12/24/2020 的 08:08:42。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [82]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 07/30/2021 的 21:34:53。",
 							["type"] = "SYSTEM",
 						}, -- [83]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [84]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [85]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 21:39:26。",
 						}, -- [86]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [87]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [88]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [89]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [90]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 07/30/2021 的 22:27:45。",
 						}, -- [91]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [92]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [93]
 						{
-							["arg1"] = "记录开始于 12/24/2020 的 22:39:55。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [94]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [95]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [96]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [97]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [98]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [99]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [100]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [101]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/24/2020 的 23:14:14。",
+							["arg1"] = "你加入了频道。",
 						}, -- [102]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [103]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [104]
 						{
+							["arg1"] = "记录开始于 07/31/2021 的 09:40:25。",
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
 						}, -- [105]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [106]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [107]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [108]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [109]
 						{
-							["arg1"] = "记录开始于 12/27/2020 的 20:37:35。",
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
 						}, -- [110]
 						{
@@ -19467,15 +19341,13 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [113]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [114]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [115]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 07/31/2021 的 12:12:28。",
 							["type"] = "SYSTEM",
 						}, -- [116]
 						{
@@ -19487,30 +19359,30 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [118]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [119]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [120]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/27/2020 的 22:09:01。",
 						}, -- [121]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [122]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [123]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [124]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 07/31/2021 的 15:39:01。",
 						}, -- [125]
 						{
 							["type"] = "SYSTEM",
@@ -19525,21 +19397,21 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [128]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [129]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [130]
 						{
-							["arg1"] = "记录开始于 12/28/2020 的 22:22:36。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [131]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [132]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 07/31/2021 的 17:06:10。",
 							["type"] = "SYSTEM",
 						}, -- [133]
 						{
@@ -19551,22 +19423,22 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [135]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [136]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [137]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 07/31/2021 的 19:06:10。",
 						}, -- [138]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [139]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/28/2020 的 23:10:06。",
+							["arg1"] = "你加入了频道。",
 						}, -- [140]
 						{
 							["type"] = "SYSTEM",
@@ -19583,7 +19455,7 @@ ElephantDBPerChar = {
 							["arg1"] = " ",
 						}, -- [144]
 						{
-							["arg1"] = "记录开始于 12/30/2020 的 20:59:50。",
+							["arg1"] = "记录开始于 07/31/2021 的 23:00:37。",
 							["type"] = "SYSTEM",
 						}, -- [145]
 						{
@@ -19602,7 +19474,7 @@ ElephantDBPerChar = {
 						}, -- [149]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/30/2020 的 22:01:44。",
+							["arg1"] = "记录开始于 08/01/2021 的 09:01:12。",
 						}, -- [150]
 						{
 							["type"] = "SYSTEM",
@@ -19613,77 +19485,77 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [152]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [153]
 						{
 							["arg1"] = " ",
 						}, -- [154]
 						{
-							["arg1"] = "记录开始于 12/31/2020 的 08:04:49。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [155]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/01/2021 的 12:03:27。",
 							["type"] = "SYSTEM",
 						}, -- [156]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [157]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [158]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 12/31/2020 的 19:34:21。",
 						}, -- [159]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [160]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [161]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/01/2021 的 20:41:30。",
 						}, -- [162]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [163]
 						{
-							["arg1"] = "记录开始于 12/31/2020 的 19:59:10。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [164]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [165]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [166]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [167]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [168]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [169]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [170]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [171]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/01/2021 的 23:21:42。",
 							["type"] = "SYSTEM",
 						}, -- [172]
 						{
@@ -19699,53 +19571,51 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [175]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [176]
 						{
 							["arg1"] = " ",
 						}, -- [177]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 18:29:08。",
 						}, -- [178]
 						{
-							["arg1"] = "记录开始于 12/31/2020 的 23:18:24。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [179]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [180]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [181]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [182]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [183]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [184]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [185]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [186]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [187]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/02/2021 的 21:26:45。",
 							["type"] = "SYSTEM",
 						}, -- [188]
 						{
@@ -19757,53 +19627,55 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [190]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [191]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [192]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/01/2021 的 08:36:31。",
 						}, -- [193]
 						{
-							["type"] = "SYSTEM",
 							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [194]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [195]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [196]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 00:06:02。",
 						}, -- [197]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [198]
 						{
 							["arg1"] = " ",
 						}, -- [199]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/02/2021 的 22:30:26。",
 						}, -- [200]
 						{
-							["arg1"] = "记录开始于 01/07/2021 的 19:56:53。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [201]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [202]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [203]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/02/2021 的 23:31:06。",
 							["type"] = "SYSTEM",
 						}, -- [204]
 						{
@@ -19815,58 +19687,62 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [206]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [207]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [208]
 						{
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/07/2021 的 20:46:53。",
 						}, -- [209]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [210]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [211]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 19:21:36。",
 						}, -- [212]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [213]
 						{
-							["arg1"] = "记录开始于 01/17/2021 的 13:00:02。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [214]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [215]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [216]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [217]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [218]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [219]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [220]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/17/2021 的 16:31:45。",
+							["arg1"] = "你加入了频道。",
 						}, -- [221]
 						{
 							["type"] = "SYSTEM",
@@ -19877,14 +19753,16 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [223]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [224]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [225]
 						{
 							["type"] = "SYSTEM",
-							["arg1"] = "记录开始于 01/18/2021 的 19:43:45。",
+							["arg1"] = "你加入了频道。",
 						}, -- [226]
 						{
 							["type"] = "SYSTEM",
@@ -19895,21 +19773,21 @@ ElephantDBPerChar = {
 							["arg1"] = "你加入了频道。",
 						}, -- [228]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [229]
 						{
-							["type"] = "SYSTEM",
-							["arg1"] = "你加入了频道。",
+							["arg1"] = " ",
 						}, -- [230]
 						{
-							["arg1"] = " ",
+							["arg1"] = "记录开始于 08/03/2021 的 22:12:17。",
+							["type"] = "SYSTEM",
 						}, -- [231]
 						{
-							["arg1"] = " ",
+							["arg1"] = "你加入了频道。",
+							["type"] = "SYSTEM",
 						}, -- [232]
 						{
-							["arg1"] = "记录开始于 01/18/2021 的 22:48:30。",
+							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
 						}, -- [233]
 						{
@@ -19921,61 +19799,59 @@ ElephantDBPerChar = {
 							["type"] = "SYSTEM",
 						}, -- [235]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [236]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [237]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "记录开始于 08/03/2021 的 23:06:42。",
 						}, -- [238]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [239]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [240]
 						{
-							["arg1"] = " ",
+							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [241]
 						{
-							["arg1"] = "记录开始于 01/19/2021 的 22:42:39。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [242]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [243]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [244]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [245]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [246]
 						{
-							["arg1"] = "你加入了频道。",
 							["type"] = "SYSTEM",
+							["arg1"] = "你加入了频道。",
 						}, -- [247]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [248]
 						{
-							["arg1"] = "你加入了频道。",
-							["type"] = "SYSTEM",
+							["arg1"] = " ",
 						}, -- [249]
 						{
-							["arg1"] = "你加入了频道。",
+							["arg1"] = "记录开始于 08/05/2021 的 19:37:30。",
 							["type"] = "SYSTEM",
 						}, -- [250]
 					},

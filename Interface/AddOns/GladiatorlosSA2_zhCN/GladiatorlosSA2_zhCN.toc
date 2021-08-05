@@ -1,4 +1,4 @@
-﻿## Interface: 90002
+﻿## Interface: 90100
 ## Title: GladiatorlosSA_zhCN(VV)
 ## Title-zhCN:GSA2_VV语音包
 ## Title-zhTW:GSA2_VV语音包
@@ -6,6 +6,6 @@
 ## Notes-zhCN: PVP技能語音提示
 ## Notes-zhTW: PVP技能語音提示
 ## Author: VV
-## Version: 9.0.2
+## Version: 9.1.3
 
 GladiatorlosSA2_zhCN.lua

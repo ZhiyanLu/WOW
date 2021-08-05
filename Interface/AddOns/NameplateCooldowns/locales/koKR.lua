@@ -2,7 +2,8 @@
 -- luacheck: globals LibStub
 
 local L = LibStub("AceLocale-3.0"):NewLocale("NameplateCooldowns", "koKR");
-L = L or {}
+L = L or {} -- luacheck: ignore
+--@non-debug@
 --[[Translation missing --]]
 L["anchor-point:bottom"] = "Bottom"
 --[[Translation missing --]]
@@ -26,11 +27,7 @@ L["anchor-point:x-offset"] = "X offset"
 --[[Translation missing --]]
 L["anchor-point:y-offset"] = "Y offset"
 --[[Translation missing --]]
-L["chat:addon-is-disabled"] = "Addon is disabled"
---[[Translation missing --]]
 L["chat:addon-is-disabled-note"] = "Please note: this addon is disabled. You can enable it in options dialog (/nc)"
---[[Translation missing --]]
-L["chat:addon-is-enabled"] = "Addon is enabled"
 --[[Translation missing --]]
 L["chat:default-spell-is-added-to-ignore-list"] = "Default spell is added to ignore list: %s. You will not receive cooldown time updates for this spell."
 --[[Translation missing --]]
@@ -44,8 +41,6 @@ L["Current profile: [%s]"] = "현재 프로필: [%s]"
 L["Data from '%s' has been successfully copied to '%s'"] = "'%s'의 데이터가 성공적으로 '%s'에 복사되었습니다"
 L["Delete"] = "삭제"
 L["Delete profile:"] = "프로필 삭제:"
-L["Disable test mode"] = "테스트 모드 비활성화"
-L["Enable test mode (need at least one visible nameplate)"] = "테스트 모드 활성화 (최소 하나의 볼 수 있는 이름표 필요)"
 --[[Translation missing --]]
 L["Filters"] = "Filters"
 --[[Translation missing --]]
@@ -99,15 +94,11 @@ L["options:general:anchor-point"] = "Anchor point"
 --[[Translation missing --]]
 L["options:general:anchor-point-to-parent"] = "Anchor point (to parent)"
 --[[Translation missing --]]
-L["options:general:disable-addon-btn"] = "Disable addon"
---[[Translation missing --]]
-L["options:general:enable-addon-btn"] = "Enable addon"
---[[Translation missing --]]
 L["options:general:enable-only-for-target-nameplate"] = "Show the cooldowns on the current target nameplate only"
 --[[Translation missing --]]
 L["options:general:full-opacity-always"] = "Icons are always completely opaque"
 --[[Translation missing --]]
-L["options:general:full-opacity-always:tooltip"] = [=[If this option is enabled, the icons will always be completely opaque. If not, the opacity will be the same as the health bar]=]
+L["options:general:full-opacity-always:tooltip"] = "If this option is enabled, the icons will always be completely opaque. If not, the opacity will be the same as the health bar"
 --[[Translation missing --]]
 L["options:general:icon-grow-direction"] = "Icons' growth direction"
 --[[Translation missing --]]
@@ -117,7 +108,13 @@ L["options:general:ignore-nameplate-scale:tooltip"] = [=[If this option is check
 change accordingly to nameplate scale
 (for example, if nameplate of your target becomes bigger)]=]
 --[[Translation missing --]]
+L["options:general:inverse-logic"] = "Inverse logic"
+--[[Translation missing --]]
+L["options:general:inverse-logic:tooltip"] = "Display icon if player IS ABLE to cast certain spell"
+--[[Translation missing --]]
 L["options:general:show-cd-on-allies"] = "Show cooldowns on nameplates of allies"
+--[[Translation missing --]]
+L["options:general:show-cooldown-tooltip"] = "Show cooldown tooltip"
 --[[Translation missing --]]
 L["options:general:show-inactive-cd"] = "Show inactive cooldowns"
 --[[Translation missing --]]
@@ -126,7 +123,9 @@ You will see ONLY those cooldowns that foe has already used]=]
 --[[Translation missing --]]
 L["options:general:space-between-icons"] = "Space between icons (px)"
 --[[Translation missing --]]
-L["options:profiles:open-profiles-dialog"] = "Open profiles dialog"
+L["options:general:test-mode"] = "Test mode"
+--[[Translation missing --]]
+L["options:profiles"] = "Profiles"
 --[[Translation missing --]]
 L["options:spells:add-new-spell"] = "Add new spell (name or id):"
 --[[Translation missing --]]
@@ -135,6 +134,10 @@ L["options:spells:add-spell"] = "Add spell"
 L["options:spells:click-to-select-spell"] = "Click to select spell"
 --[[Translation missing --]]
 L["options:spells:cooldown-time"] = "Cooldown time"
+--[[Translation missing --]]
+L["options:spells:custom-cooldown"] = "Custom cooldown value"
+--[[Translation missing --]]
+L["options:spells:custom-cooldown-value"] = "Cooldown (sec)"
 --[[Translation missing --]]
 L["options:spells:delete-all-spells"] = "Delete all spells"
 --[[Translation missing --]]
@@ -175,8 +178,9 @@ L["options:timer-text:scale-font-size"] = [=[Scale font size
 according to
 icon size]=]
 L["Profile '%s' has been successfully deleted"] = "'%s' 프로필이 성공적으로 삭제되었습니다"
-L["Profiles"] = "프로필"
 L["Show border around interrupts"] = "방해 주위에 테두리 표시"
 L["Show border around trinkets"] = "장신구 주위에 테두리 표시"
 L["Unknown spell: %s"] = "알 수 없는 주문: %s"
 L["Value must be a number"] = "값은 반드시 숫자여야 합니다"
+
+--@end-non-debug@

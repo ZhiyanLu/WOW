@@ -1,10 +1,34 @@
-lightweight tag 025c7b9620465da1a17aec3eea52252d19e4d922 DetailsRetail.9.0.2.8154.144(a)
-Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Mon Jan 18 14:33:45 2021 -0300
+Changes since tag DetailsRetail.9.1.0.8722.145
 
-commit 025c7b9620465da1a17aec3eea52252d19e4d922
+commit b4b6b645049fda4aebe8ede76ced05995fb71b4d
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Mon Jan 18 14:33:45 2021 -0300
+Date:   Tue Aug 3 10:44:42 2021 -0300
 
-    Attempt to add Russian Cyrillic alphabet into the NickTag lib
+    Fixed lib Translit on healing done
+
+commit 4fe002cf18309212b1322b052f7d4618a5e6c8c6
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Fri Jul 30 20:22:07 2021 -0300
+
+    Added Transliterate to healing tooltips, fixed some close buttons with green boxes
+
+commit b32a48dc635c999e008aafc0be3503924fca48f8
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Fri Jul 30 17:56:11 2021 -0300
+
+    Added Details.all_switch_config.font_size and Details.all_switch_config.scale
+    
+    These entries configure the panel shown when right click the title bar of the window.
+
+commit e3c539dc30d29c4f00d7ac0e755f3c76186657ab
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Fri Jul 30 13:06:41 2021 -0300
+
+    Fixed Raid Check plugin position and shadow priest void eruption got merged with other spells of the same name
+
+commit 9a69703ea7a7019d01dac3075d76ef291add3aa4
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Thu Jul 15 14:25:52 2021 -0300
+
+    Clicking on the minimap while the options panel is open will close it
 

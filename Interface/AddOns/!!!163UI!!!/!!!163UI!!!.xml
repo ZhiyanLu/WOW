@@ -65,10 +65,11 @@
     <Script file="..\!!!Libs\LibItemUpgradeInfo-1.0\Core.lua"/>
     <Script file="PluginCore\InventoryLevel.lua"/>
 
-    <Include file="BlzUISet\BlzUISet.xml"/>
     <Include file="Misc\Misc.xml"/>
 
     <Include file="Guide\Guide.xml"/>
+
+    <Include file="External\External.xml"/>
 
 </Ui>
 
