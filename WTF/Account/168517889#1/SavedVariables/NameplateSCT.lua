@@ -9,8 +9,7 @@ NameplateSCTDB = {
 		["哈尼臭嗨 - 格雷迈恩"] = "Default",
 	},
 	["global"] = {
-		["yOffsetPersonal"] = -200,
-		["xOffset"] = 75,
+		["personal"] = false,
 		["yOffset"] = 40,
 		["formatting"] = {
 			["icon"] = "left",
@@ -27,18 +26,19 @@ NameplateSCTDB = {
 			["crit"] = "disabled",
 			["miss"] = "disabled",
 		},
+		["animations"] = {
+			["autoattackcrit"] = "disabled",
+			["normal"] = "fountain",
+			["miss"] = "disabled",
+			["crit"] = "fountain",
+			["animationspeed"] = 2,
+			["autoattack"] = "disabled",
+		},
+		["yOffsetPersonal"] = -200,
 		["sizing"] = {
 			["critsScale"] = 1,
 		},
-		["animations"] = {
-			["autoattack"] = "disabled",
-			["autoattackcrit"] = "disabled",
-			["miss"] = "disabled",
-			["animationspeed"] = 2,
-			["crit"] = "fountain",
-			["normal"] = "fountain",
-		},
 		["textShadow"] = false,
-		["personal"] = false,
+		["xOffset"] = 75,
 	},
 }

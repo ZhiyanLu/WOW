@@ -1,0 +1,89 @@
+
+MEETINGSTONE_UI_DB = {
+	["profileKeys"] = {
+		["Magiccream - 格雷迈恩"] = "Default",
+	},
+	["global"] = {
+		["serverDatas"] = {
+			["AnnData"] = {
+				["data"] = "^1^SAnnData^T^Stitle^S集合石插件积分兑换维护^Scontent^S集合石插件积分兑换功能正在维护中，目前暂时无法正常使用，大家还是可以正常登录战网进行兑换，给大家造成的不便还请谅解。^t^^",
+			},
+			["ActivitiesData"] = {
+				["data"] = "$1$Z$S297`魔兽主播活动`万圣节`10月24日（周六）晚8点，和斗鱼TV人气主播：苍天哥（房间号：622414）一起万盛狂欢！*J万圣节来了！又到了糖果、恶作剧和奇装异服的时间——当然，无头骑士也回来了。他骑着爱马，要将恐惧带入艾泽拉斯居民的脑海和心灵深处，快和苍天哥一起直面这个臭名昭著的骑士！`http://w.163.com/special/convene-stone/`2`3$$",
+			},
+			["MallData"] = {
+				["data"] = "^1^SMallData^T^S宠物#1^S2006;1500,,每周限量;23713;16943#2007;850,,每周限量;72134;38919^S消耗品#3^S1002;150;46779^S玩具#2^S7001;750,,每周限量;54212;31756#3006;1500,,每月限量;79769#3007;450,,每月限量;69227^t^^",
+			},
+			["FilterData"] = {
+				["data"] = "^1^S![Vv][Xx]^S下单^S付款^S某宝^S站桩^S代打^S陪练^S低价^S便宜^S超低^S老板^S门票^S包车^S![Ww][ⅩXx]^S另接^S全躺^S咨询^S陪打^S看戏^S实惠^S价格^S贵宾^S陪聊^S支付^SV信^S带小号^S有偿^S可淘^S卧铺^S代唰^S代做^S安全效率^S臣卜^S拼车^S可指定^S装备送^S莱%h*外%h*恩^S５^S⒌^S⒏^S后彡^^",
+				["new"] = true,
+			},
+		},
+		["spamWord"] = {
+			{
+				["text"] = "%d+元",
+			}, -- [1]
+			{
+				["pain"] = true,
+				["text"] = "5173",
+			}, -- [2]
+			{
+				["pain"] = true,
+				["text"] = "lfg:",
+			}, -- [3]
+			{
+				["text"] = "tao.*bao",
+			}, -- [4]
+			{
+				["pain"] = true,
+				["text"] = "平台",
+			}, -- [5]
+			{
+				["text"] = "支.*付.*宝",
+			}, -- [6]
+			{
+				["text"] = "淘.*宝",
+			}, -- [7]
+			{
+				["pain"] = true,
+				["text"] = "门票",
+			}, -- [8]
+			["default"] = true,
+		},
+		["version"] = "90001.01",
+		["filters"] = {
+			[6] = {
+				["BossKilled"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["Members"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["ItemLevel"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["Age"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+			},
+		},
+	},
+}
+MEETINGSTONE_UI_E_POINTS = {
+	["y"] = -116,
+	["x"] = 15.99999809265137,
+	["a2"] = "TOPLEFT",
+	["a1"] = "TOPLEFT",
+	["QuickJoin"] = true,
+}
+MEETINGSTONE_UI_BLACKLISTEDLEADERS = {
+}
+MEETINGSTONE_UI_E_FILTERAD = false

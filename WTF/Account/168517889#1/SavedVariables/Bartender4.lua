@@ -1,917 +1,916 @@
 
 Bartender4DB = {
-	["namespaces"] = {
-		["StatusTrackingBar"] = {
-			["profiles"] = {
-				["Magiccreamdk - 格雷迈恩"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["x"] = -515,
-						["point"] = "BOTTOM",
-						["scale"] = 1.264999985694885,
-						["y"] = 62,
-					},
-				},
-			},
-		},
-		["APBar"] = {
-		},
-		["ActionBars"] = {
-			["profiles"] = {
-				["余生请多指教 - 格雷迈恩"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-						}, -- [2]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
-					},
-				},
-				["bf_infobox"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -205.000022888184,
-								["x"] = -231.499938964844,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = 178.5,
-								["x"] = -231.500061035156,
-								["point"] = "BOTTOM",
-							},
-						}, -- [9]
-						{
-						}, -- [10]
-					},
-				},
-				["Magicocream - 格雷迈恩"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -205.000022888184,
-								["x"] = -231.499938964844,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
-				["Magiccreamdk - 格雷迈恩"] = {
-					["actionbars"] = {
-						{
-							["version"] = 3,
-							["padding"] = 6,
-							["position"] = {
-								["x"] = -510,
-								["point"] = "BOTTOM",
-								["y"] = 41.75,
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["x"] = -231.4998168945313,
-								["point"] = "CENTER",
-								["y"] = -204.9999694824219,
-							},
-						}, -- [2]
-						{
-							["rows"] = 12,
-							["version"] = 3,
-							["padding"] = 5,
-							["position"] = {
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-								["y"] = 610,
-							},
-						}, -- [3]
-						{
-							["rows"] = 12,
-							["version"] = 3,
-							["padding"] = 5,
-							["position"] = {
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-								["y"] = 610,
-							},
-						}, -- [4]
-						{
-							["version"] = 3,
-							["padding"] = 6,
-							["position"] = {
-								["x"] = 3,
-								["point"] = "BOTTOM",
-								["y"] = 110,
-							},
-						}, -- [5]
-						{
-							["version"] = 3,
-							["padding"] = 6,
-							["position"] = {
-								["x"] = -510,
-								["point"] = "BOTTOM",
-								["y"] = 110,
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
-				["Magiccream - 格雷迈恩"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -205.000022888184,
-								["x"] = -231.499938964844,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
-				["Magiccream - 艾莫莉丝"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -205.000022888184,
-								["x"] = -231.499938964844,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
-			},
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["ExtraActionBar"] = {
-			["profiles"] = {
-				["余生请多指教 - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000030517578,
-						["x"] = -31.4998779296875,
-						["point"] = "BOTTOM",
-					},
-				},
-				["bf_infobox"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000030517578,
-						["x"] = -31.4998779296875,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magicocream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000030517578,
-						["x"] = -31.4998779296875,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magiccreamdk - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["x"] = -63.49981689453125,
-						["point"] = "CENTER",
-						["y"] = -192.5000305175781,
-					},
-				},
-				["Magiccream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000030517578,
-						["x"] = -31.4998779296875,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magiccream - 艾莫莉丝"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000030517578,
-						["x"] = -31.4998779296875,
-						["point"] = "BOTTOM",
-					},
-				},
-			},
-		},
-		["MicroMenu"] = {
-			["profiles"] = {
-				["余生请多指教 - 格雷迈恩"] = {
-					["padding"] = -2,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 41.75,
-						["x"] = 37.5,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["bf_infobox"] = {
-					["padding"] = -2,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 41.75,
-						["x"] = 37.5,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Magicocream - 格雷迈恩"] = {
-					["padding"] = -2,
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = 37.5,
-						["point"] = "BOTTOM",
-						["y"] = 41.75,
-					},
-				},
-				["Magiccreamdk - 格雷迈恩"] = {
-					["version"] = 3,
-					["padding"] = -2,
-					["position"] = {
-						["x"] = 37.5,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-						["y"] = 41.75,
-					},
-				},
-				["Magiccream - 格雷迈恩"] = {
-					["padding"] = -2,
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = 37.5,
-						["point"] = "BOTTOM",
-						["y"] = 41.75,
-					},
-				},
-				["Magiccream - 艾莫莉丝"] = {
-					["padding"] = -2,
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = 37.5,
-						["point"] = "BOTTOM",
-						["y"] = 41.75,
-					},
-				},
-			},
-		},
-		["ZoneAbilityBar"] = {
-			["profiles"] = {
-				["Magicocream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000030517578,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["余生请多指教 - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000030517578,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["bf_infobox"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -160.500015258789,
-						["x"] = -31.5,
-						["point"] = "CENTER",
-					},
-				},
-			},
-		},
-		["XPBar"] = {
-		},
-		["StanceBar"] = {
-			["profiles"] = {
-				["bf_infobox"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Magicocream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -15.0000076293945,
-						["x"] = -82.4999694824219,
-						["point"] = "CENTER",
-					},
-				},
-				["Magiccreamdk - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["x"] = -82.49995422363281,
-						["point"] = "CENTER",
-						["y"] = -14.99998474121094,
-					},
-				},
-				["Magiccream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["y"] = 116,
-					},
-				},
-				["Magiccream - 艾莫莉丝"] = {
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["y"] = 116,
-					},
-				},
-			},
-		},
-		["BlizzardArt"] = {
-			["profiles"] = {
-				["余生请多指教 - 格雷迈恩"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47,
-						["x"] = -512,
-						["point"] = "BOTTOM",
-					},
-				},
-				["bf_infobox"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47,
-						["x"] = -512,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magicocream - 格雷迈恩"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47,
-						["x"] = -512,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magiccreamdk - 格雷迈恩"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["x"] = -512,
-						["point"] = "BOTTOM",
-						["y"] = 47,
-					},
-				},
-				["Magiccream - 格雷迈恩"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47,
-						["x"] = -512,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magiccream - 艾莫莉丝"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47,
-						["x"] = -512,
-						["point"] = "BOTTOM",
-					},
-				},
-			},
-		},
-		["BagBar"] = {
-			["profiles"] = {
-				["余生请多指教 - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["bf_infobox"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magicocream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magiccreamdk - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["x"] = 345,
-						["point"] = "BOTTOM",
-						["y"] = 38.5,
-					},
-				},
-				["Magiccream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magiccream - 艾莫莉丝"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-			},
-		},
-		["UnitFrames"] = {
-			["profiles"] = {
-				["bf_infobox"] = {
-					["unitframes"] = {
-						["PartyMemberFrame2"] = {
-							["version"] = 3,
-						},
-						["MinimapCluster"] = {
-							["version"] = 3,
-						},
-						["PartyMemberFrame4"] = {
-							["version"] = 3,
-						},
-						["BuffFrame"] = {
-							["version"] = 3,
-						},
-						["PlayerFrame"] = {
-							["version"] = 3,
-						},
-						["PartyMemberFrame1"] = {
-							["version"] = 3,
-						},
-						["FocusFrame"] = {
-							["version"] = 3,
-						},
-						["CastingBarFrame"] = {
-							["version"] = 3,
-						},
-						["PartyMemberFrame3"] = {
-							["version"] = 3,
-						},
-						["TargetFrame"] = {
-							["version"] = 3,
-						},
-					},
-					["useUiScale"] = 1,
-					["uiScale"] = 0.849999964237213,
-				},
-			},
-		},
-		["Vehicle"] = {
-			["profiles"] = {
-				["余生请多指教 - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.5,
-						["x"] = 99.4999389648438,
-						["point"] = "CENTER",
-					},
-				},
-				["bf_infobox"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.5,
-						["x"] = 99.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Magicocream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.5,
-						["x"] = 99.4999389648438,
-						["point"] = "CENTER",
-					},
-				},
-				["Magiccreamdk - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["x"] = 104.5,
-						["point"] = "CENTER",
-						["y"] = 42.50003051757813,
-					},
-				},
-				["Magiccream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.5,
-						["x"] = 99.4999389648438,
-						["point"] = "CENTER",
-					},
-				},
-				["Magiccream - 艾莫莉丝"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.5,
-						["x"] = 99.4999389648438,
-						["point"] = "CENTER",
-					},
-				},
-			},
-		},
-		["PetBar"] = {
-			["profiles"] = {
-				["余生请多指教 - 格雷迈恩"] = {
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-					},
-				},
-				["bf_infobox"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -120,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magicocream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magiccreamdk - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["y"] = 143,
-					},
-				},
-				["Magiccream - 格雷迈恩"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -120,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Magiccream - 艾莫莉丝"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -120,
-						["point"] = "BOTTOM",
-					},
-				},
-			},
-		},
-		["RepBar"] = {
-		},
-	},
-	["profileKeys"] = {
-		["余生请多指教 - 格雷迈恩"] = "bf_infobox",
-		["Magiccream - 艾莫莉丝"] = "bf_infobox",
-		["Magicocream - 格雷迈恩"] = "bf_infobox",
-		["Magiccreamdk - 格雷迈恩"] = "Magiccreamdk - 格雷迈恩",
-		["Magiccream - 格雷迈恩"] = "bf_infobox",
-	},
-	["profiles"] = {
-		["余生请多指教 - 格雷迈恩"] = {
-			["focuscastmodifier"] = false,
-			["blizzardVehicle"] = true,
-			["outofrange"] = "hotkey",
-		},
-		["bf_infobox"] = {
-			["focuscastmodifier"] = false,
-			["blizzardVehicle"] = true,
-			["minimapIcon"] = {
-				["minimapPos"] = 155,
-				["hide"] = false,
-			},
-			["outofrange"] = "hotkey",
-		},
-		["Magicocream - 格雷迈恩"] = {
-			["focuscastmodifier"] = false,
-			["blizzardVehicle"] = true,
-			["outofrange"] = "hotkey",
-		},
-		["Magiccreamdk - 格雷迈恩"] = {
-			["focuscastmodifier"] = false,
-			["blizzardVehicle"] = true,
-			["outofrange"] = "hotkey",
-		},
-		["Magiccream - 格雷迈恩"] = {
-			["focuscastmodifier"] = false,
-			["blizzardVehicle"] = true,
-			["outofrange"] = "hotkey",
-		},
-		["Magiccream - 艾莫莉丝"] = {
-			["focuscastmodifier"] = false,
-			["blizzardVehicle"] = true,
-			["outofrange"] = "hotkey",
-		},
-	},
+["namespaces"]={
+["ExtraActionBar"]={
+["profiles"]={
+["Magicocream - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=223.00003051758,
+["x"]=-31.499877929688,
+["point"]="BOTTOM",
+},
+},
+["Magiccreamdk - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["x"]=-63.499816894531,
+["point"]="CENTER",
+["y"]=-192.50003051758,
+},
+},
+["Magiccream - 格雷迈恩"]={
+["position"]={
+["y"]=223.00003051758,
+["x"]=-31.499877929688,
+["point"]="BOTTOM",
+},
+["version"]=3,
+},
+["Magiccream - 艾莫莉丝"]={
+["version"]=3,
+["position"]={
+["x"]=-31.499877929688,
+["point"]="BOTTOM",
+["y"]=223.00003051758,
+},
+},
+["余生请多指教 - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=223.00003051758,
+["x"]=-31.499877929688,
+["point"]="BOTTOM",
+},
+},
+["bf_infobox"]={
+["version"]=3,
+["position"]={
+["point"]="BOTTOM",
+["y"]=223.00003051758,
+["x"]=-31.499877929688,
+},
+},
+},
+},
+["BlizzardArt"]={
+["profiles"]={
+["Magiccreamdk - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["point"]="BOTTOM",
+["y"]=47,
+["x"]=-512,
+},
+["enabled"]=true,
+},
+["Magiccream - 格雷迈恩"]={
+["enabled"]=true,
+["version"]=3,
+["position"]={
+["y"]=47,
+["x"]=-512,
+["point"]="BOTTOM",
+},
+},
+["Magiccream - 艾莫莉丝"]={
+["enabled"]=true,
+["version"]=3,
+["position"]={
+["y"]=47,
+["x"]=-512,
+["point"]="BOTTOM",
+},
+},
+["余生请多指教 - 格雷迈恩"]={
+["enabled"]=true,
+["version"]=3,
+["position"]={
+["y"]=47,
+["x"]=-512,
+["point"]="BOTTOM",
+},
+},
+["bf_infobox"]={
+["version"]=3,
+["position"]={
+["y"]=47,
+["x"]=-512,
+["point"]="BOTTOM",
+},
+},
+["Magicocream - 格雷迈恩"]={
+["enabled"]=true,
+["version"]=3,
+["position"]={
+["y"]=47,
+["x"]=-512,
+["point"]="BOTTOM",
+},
+},
+},
+},
+["Vehicle"]={
+["profiles"]={
+["余生请多指教 - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=47.5,
+["x"]=99.499938964844,
+["point"]="CENTER",
+},
+},
+["bf_infobox"]={
+["version"]=3,
+["position"]={
+["y"]=47.5,
+["x"]=99.5,
+["point"]="CENTER",
+},
+},
+["Magicocream - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=47.5,
+["x"]=99.499938964844,
+["point"]="CENTER",
+},
+},
+["Magiccreamdk - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["point"]="CENTER",
+["y"]=42.500030517578,
+["x"]=104.5,
+},
+},
+["Magiccream - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=47.5,
+["x"]=99.499938964844,
+["point"]="CENTER",
+},
+},
+["Magiccream - 艾莫莉丝"]={
+["version"]=3,
+["position"]={
+["y"]=47.5,
+["x"]=99.499938964844,
+["point"]="CENTER",
+},
+},
+},
+},
+["StatusTrackingBar"]={
+["profiles"]={
+["Magiccreamdk - 格雷迈恩"]={
+["enabled"]=true,
+["version"]=3,
+["position"]={
+["x"]=-515,
+["point"]="BOTTOM",
+["scale"]=1.2649999856949,
+["y"]=62,
+},
+},
+},
+},
+["APBar"]={
+},
+["LibDualSpec-1.0"]={
+},
+["MicroMenu"]={
+["profiles"]={
+["余生请多指教 - 格雷迈恩"]={
+["padding"]=-2,
+["version"]=3,
+["position"]={
+["point"]="BOTTOM",
+["scale"]=1,
+["y"]=41.75,
+["x"]=37.5,
+},
+},
+["bf_infobox"]={
+["padding"]=-2,
+["version"]=3,
+["position"]={
+["point"]="BOTTOM",
+["scale"]=1,
+["y"]=41.75,
+["x"]=37.5,
+},
+},
+["Magicocream - 格雷迈恩"]={
+["padding"]=-2,
+["version"]=3,
+["position"]={
+["scale"]=1,
+["x"]=37.5,
+["point"]="BOTTOM",
+["y"]=41.75,
+},
+},
+["Magiccreamdk - 格雷迈恩"]={
+["position"]={
+["scale"]=1,
+["y"]=41.75,
+["x"]=37.5,
+["point"]="BOTTOM",
+},
+["version"]=3,
+["padding"]=-2,
+},
+["Magiccream - 格雷迈恩"]={
+["padding"]=-2,
+["version"]=3,
+["position"]={
+["scale"]=1,
+["x"]=37.5,
+["point"]="BOTTOM",
+["y"]=41.75,
+},
+},
+["Magiccream - 艾莫莉丝"]={
+["position"]={
+["y"]=41.75,
+["scale"]=1,
+["x"]=37.5,
+["point"]="BOTTOM",
+},
+["padding"]=-2,
+["version"]=3,
+},
+},
+},
+["BagBar"]={
+["profiles"]={
+["bf_infobox"]={
+["version"]=3,
+["position"]={
+["point"]="BOTTOM",
+["y"]=38.5,
+["x"]=345,
+},
+},
+["Magicocream - 格雷迈恩"]={
+["position"]={
+["y"]=38.5,
+["x"]=345,
+["point"]="BOTTOM",
+},
+["version"]=3,
+},
+["Magiccreamdk - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["x"]=345,
+["point"]="BOTTOM",
+["y"]=38.5,
+},
+},
+["Magiccream - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["x"]=345,
+["point"]="BOTTOM",
+["y"]=38.5,
+},
+},
+["Magiccream - 艾莫莉丝"]={
+["version"]=3,
+["position"]={
+["y"]=38.5,
+["x"]=345,
+["point"]="BOTTOM",
+},
+},
+["余生请多指教 - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=38.5,
+["x"]=345,
+["point"]="BOTTOM",
+},
+},
+},
+},
+["PetBar"]={
+["profiles"]={
+["Magiccreamdk - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["x"]=-460,
+["point"]="BOTTOM",
+["y"]=143,
+},
+},
+["Magiccream - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=116,
+["x"]=-120,
+["point"]="BOTTOM",
+},
+},
+["Magiccream - 艾莫莉丝"]={
+["position"]={
+["point"]="BOTTOM",
+["y"]=116,
+["x"]=-120,
+},
+["version"]=3,
+},
+["余生请多指教 - 格雷迈恩"]={
+["position"]={
+["y"]=116,
+["x"]=-460,
+["point"]="BOTTOM",
+},
+},
+["bf_infobox"]={
+["version"]=3,
+["position"]={
+["x"]=-120,
+["point"]="BOTTOM",
+["y"]=116,
+},
+},
+["Magicocream - 格雷迈恩"]={
+["position"]={
+["point"]="BOTTOM",
+["y"]=116,
+["x"]=-460,
+},
+["version"]=3,
+},
+},
+},
+["RepBar"]={
+},
+["StanceBar"]={
+["profiles"]={
+["Magiccreamdk - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["x"]=-82.499954223633,
+["point"]="CENTER",
+["y"]=-14.999984741211,
+},
+},
+["Magiccream - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["scale"]=1,
+["x"]=-460,
+["point"]="BOTTOM",
+["y"]=116,
+},
+},
+["Magiccream - 艾莫莉丝"]={
+["version"]=3,
+["position"]={
+["scale"]=1,
+["x"]=-460,
+["point"]="BOTTOM",
+["y"]=116,
+},
+},
+["bf_infobox"]={
+["version"]=3,
+["position"]={
+["y"]=116,
+["x"]=-460,
+["point"]="BOTTOM",
+["scale"]=1,
+},
+},
+["Magicocream - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=-15.000007629394,
+["x"]=-82.499969482422,
+["point"]="CENTER",
+},
+},
+},
+},
+["UnitFrames"]={
+["profiles"]={
+["bf_infobox"]={
+["unitframes"]={
+["MinimapCluster"]={
+["version"]=3,
+},
+["PlayerFrame"]={
+["version"]=3,
+},
+["FocusFrame"]={
+["version"]=3,
+},
+["PartyMemberFrame3"]={
+["version"]=3,
+},
+["TargetFrame"]={
+["version"]=3,
+},
+["PartyMemberFrame2"]={
+["version"]=3,
+},
+["PartyMemberFrame4"]={
+["version"]=3,
+},
+["BuffFrame"]={
+["version"]=3,
+},
+["PartyMemberFrame1"]={
+["version"]=3,
+},
+["CastingBarFrame"]={
+["version"]=3,
+},
+},
+["useUiScale"]=1,
+["uiScale"]=0.84999996423721,
+},
+},
+},
+["ActionBars"]={
+["profiles"]={
+["Magicocream - 格雷迈恩"]={
+["actionbars"]={
+[1]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=41.75,
+["x"]=-510,
+["point"]="BOTTOM",
+},
+},
+[2]={
+["enabled"]=false,
+["version"]=3,
+["position"]={
+["y"]=-205.00002288818,
+["x"]=-231.49993896484,
+["point"]="CENTER",
+},
+},
+[3]={
+["rows"]=12,
+["version"]=3,
+["position"]={
+["y"]=610,
+["x"]=-82,
+["point"]="BOTTOMRIGHT",
+},
+["padding"]=5,
+},
+[4]={
+["padding"]=5,
+["rows"]=12,
+["version"]=3,
+["position"]={
+["y"]=610,
+["x"]=-42,
+["point"]="BOTTOMRIGHT",
+},
+},
+[5]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=83,
+["x"]=3,
+["point"]="BOTTOM",
+},
+},
+[6]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["point"]="BOTTOM",
+["y"]=83,
+["x"]=-510,
+},
+},
+[7]={
+},
+[8]={
+},
+[10]={
+},
+},
+},
+["Magiccreamdk - 格雷迈恩"]={
+["actionbars"]={
+[1]={
+["position"]={
+["x"]=-510,
+["point"]="BOTTOM",
+["y"]=41.75,
+},
+["version"]=3,
+["padding"]=6,
+},
+[2]={
+["enabled"]=false,
+["version"]=3,
+["position"]={
+["x"]=-231.49981689453,
+["point"]="CENTER",
+["y"]=-204.99996948242,
+},
+},
+[3]={
+["rows"]=12,
+["version"]=3,
+["padding"]=5,
+["position"]={
+["x"]=-82,
+["point"]="BOTTOMRIGHT",
+["y"]=610,
+},
+},
+[4]={
+["rows"]=12,
+["version"]=3,
+["padding"]=5,
+["position"]={
+["point"]="BOTTOMRIGHT",
+["y"]=610,
+["x"]=-42,
+},
+},
+[5]={
+["version"]=3,
+["padding"]=6,
+["position"]={
+["x"]=3,
+["point"]="BOTTOM",
+["y"]=110,
+},
+},
+[6]={
+["position"]={
+["x"]=-510,
+["point"]="BOTTOM",
+["y"]=110,
+},
+["version"]=3,
+["padding"]=6,
+},
+[7]={
+},
+[8]={
+},
+[10]={
+},
+},
+},
+["Magiccream - 格雷迈恩"]={
+["actionbars"]={
+[1]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["point"]="BOTTOM",
+["y"]=41.75,
+["x"]=-510,
+},
+},
+[2]={
+["enabled"]=false,
+["version"]=3,
+["position"]={
+["y"]=-205.00002288818,
+["x"]=-231.49993896484,
+["point"]="CENTER",
+},
+},
+[3]={
+["rows"]=12,
+["padding"]=5,
+["version"]=3,
+["position"]={
+["x"]=-82,
+["point"]="BOTTOMRIGHT",
+["y"]=610,
+},
+},
+[4]={
+["rows"]=12,
+["padding"]=5,
+["version"]=3,
+["position"]={
+["y"]=610,
+["x"]=-42,
+["point"]="BOTTOMRIGHT",
+},
+},
+[5]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=83,
+["x"]=3,
+["point"]="BOTTOM",
+},
+},
+[6]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=83,
+["x"]=-510,
+["point"]="BOTTOM",
+},
+},
+[7]={
+},
+[8]={
+},
+[10]={
+},
+},
+},
+["Magiccream - 艾莫莉丝"]={
+["actionbars"]={
+[1]={
+["position"]={
+["y"]=41.75,
+["x"]=-510,
+["point"]="BOTTOM",
+},
+["padding"]=6,
+["version"]=3,
+},
+[2]={
+["position"]={
+["point"]="CENTER",
+["y"]=-205.00002288818,
+["x"]=-231.49993896484,
+},
+["enabled"]=false,
+["version"]=3,
+},
+[3]={
+["position"]={
+["y"]=610,
+["x"]=-82,
+["point"]="BOTTOMRIGHT",
+},
+["padding"]=5,
+["rows"]=12,
+["version"]=3,
+},
+[4]={
+["padding"]=5,
+["rows"]=12,
+["version"]=3,
+["position"]={
+["y"]=610,
+["x"]=-42,
+["point"]="BOTTOMRIGHT",
+},
+},
+[5]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=83,
+["x"]=3,
+["point"]="BOTTOM",
+},
+},
+[6]={
+["version"]=3,
+["position"]={
+["point"]="BOTTOM",
+["y"]=83,
+["x"]=-510,
+},
+["padding"]=6,
+},
+[7]={
+},
+[8]={
+},
+[10]={
+},
+},
+},
+["余生请多指教 - 格雷迈恩"]={
+["actionbars"]={
+[1]={
+["position"]={
+["y"]=41.75,
+["x"]=-510,
+["point"]="BOTTOM",
+},
+["padding"]=6,
+["version"]=3,
+},
+[2]={
+["enabled"]=false,
+["version"]=3,
+},
+[3]={
+["padding"]=5,
+["rows"]=12,
+["version"]=3,
+["position"]={
+["point"]="BOTTOMRIGHT",
+["y"]=610,
+["x"]=-82,
+},
+},
+[4]={
+["padding"]=5,
+["rows"]=12,
+["version"]=3,
+["position"]={
+["point"]="BOTTOMRIGHT",
+["y"]=610,
+["x"]=-42,
+},
+},
+[5]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=83,
+["x"]=3,
+["point"]="BOTTOM",
+},
+},
+[6]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=83,
+["x"]=-510,
+["point"]="BOTTOM",
+},
+},
+[7]={
+},
+[8]={
+},
+[10]={
+},
+},
+},
+["bf_infobox"]={
+["actionbars"]={
+[1]={
+["version"]=3,
+["position"]={
+["y"]=41.75,
+["x"]=-510,
+["point"]="BOTTOM",
+},
+["padding"]=6,
+},
+[2]={
+["enabled"]=false,
+["version"]=3,
+["position"]={
+["y"]=-205.00002288818,
+["x"]=-231.49993896484,
+["point"]="CENTER",
+},
+},
+[3]={
+["position"]={
+["y"]=610,
+["x"]=-82,
+["point"]="BOTTOMRIGHT",
+},
+["padding"]=5,
+["rows"]=12,
+["version"]=3,
+},
+[4]={
+["padding"]=5,
+["rows"]=12,
+["version"]=3,
+["position"]={
+["x"]=-42,
+["point"]="BOTTOMRIGHT",
+["y"]=610,
+},
+},
+[5]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=83,
+["x"]=3,
+["point"]="BOTTOM",
+},
+},
+[6]={
+["padding"]=6,
+["version"]=3,
+["position"]={
+["y"]=83,
+["x"]=-510,
+["point"]="BOTTOM",
+},
+},
+[7]={
+},
+[8]={
+},
+[9]={
+["version"]=3,
+["position"]={
+["x"]=-231.50006103516,
+["point"]="BOTTOM",
+["y"]=178.5,
+},
+},
+[10]={
+},
+},
+},
+},
+},
+["ZoneAbilityBar"]={
+["profiles"]={
+["Magicocream - 格雷迈恩"]={
+["position"]={
+["y"]=223.00003051758,
+["x"]=-31.499938964844,
+["point"]="BOTTOM",
+},
+["version"]=3,
+},
+["余生请多指教 - 格雷迈恩"]={
+["version"]=3,
+["position"]={
+["y"]=223.00003051758,
+["x"]=-31.499938964844,
+["point"]="BOTTOM",
+},
+},
+["bf_infobox"]={
+["version"]=3,
+["position"]={
+["y"]=-160.50001525879,
+["x"]=-31.5,
+["point"]="CENTER",
+},
+},
+},
+},
+["XPBar"]={
+},
+},
+["profileKeys"]={
+["余生请多指教 - 格雷迈恩"]="bf_infobox",
+["Magiccream - 艾莫莉丝"]="bf_infobox",
+["Magicocream - 格雷迈恩"]="bf_infobox",
+["Magiccreamdk - 格雷迈恩"]="bf_infobox",
+["Magiccream - 格雷迈恩"]="bf_infobox",
+},
+["profiles"]={
+["Magiccream - 格雷迈恩"]={
+["focuscastmodifier"]=false,
+["blizzardVehicle"]=true,
+["outofrange"]="hotkey",
+},
+["Magiccream - 艾莫莉丝"]={
+["outofrange"]="hotkey",
+["focuscastmodifier"]=false,
+["blizzardVehicle"]=true,
+},
+["余生请多指教 - 格雷迈恩"]={
+["focuscastmodifier"]=false,
+["blizzardVehicle"]=true,
+["outofrange"]="hotkey",
+},
+["bf_infobox"]={
+["focuscastmodifier"]=false,
+["blizzardVehicle"]=true,
+["minimapIcon"]={
+["minimapPos"]=155,
+["hide"]=false,
+},
+["outofrange"]="hotkey",
+},
+["Magicocream - 格雷迈恩"]={
+["focuscastmodifier"]=false,
+["blizzardVehicle"]=true,
+["outofrange"]="hotkey",
+},
+["Magiccreamdk - 格雷迈恩"]={
+["outofrange"]="hotkey",
+["focuscastmodifier"]=false,
+["blizzardVehicle"]=true,
+},
+},
 }

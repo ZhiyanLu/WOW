@@ -1,3 +1,4 @@
+MEETINGSTONE_UI_E_POINTS = {}
 BuildEnv(...)
 
 MainPanel = Addon:NewModule(GUI:GetClass('Panel'):New(UIParent), 'MainPanel', 'AceEvent-3.0', 'AceBucket-3.0')
@@ -6,7 +7,7 @@ function MainPanel:OnInitialize()
     GUI:Embed(self, 'Refresh', 'Help', 'Blocker')
 
     self:SetSize(832, 447)
-    self:SetText(L['集合石'] .. ' Beta ' .. ADDON_VERSION)
+    self:SetText(L['集合石'] .. ' 修改版 ' .. ADDON_VERSION .. " S2")
     self:SetIcon(ADDON_LOGO)
     self:EnableUIPanel(true)
     self:SetTabStyle('BOTTOM')
@@ -16,22 +17,35 @@ function MainPanel:OnInitialize()
     self:SetScript('OnDragStart', self.StartMoving)
     self:SetScript('OnDragStop', self.StopMovingOrSizing)
     self:SetClampedToScreen(true)
-    _G.MeetingStoneMainPanel = self;
-    tinsert(UISpecialFrames, "MeetingStoneMainPanel");
-    self:RegisterEvent("PLAYER_REGEN_DISABLED");
+    GUI:RegisterUIPanel(self)
+    local scale = Profile:GetSetting('uiscale')
+    if(scale == nil or scale < 1.0) then
+        scale = 1.0
+    end
+    self:SetScale(scale)
+
+    self:HookScript("OnHide", function()
+        local anchor1,_,anchor2,x,y = self:GetPoint();
+        MEETINGSTONE_UI_E_POINTS.x = x
+        MEETINGSTONE_UI_E_POINTS.y = y
+        MEETINGSTONE_UI_E_POINTS.a1 = anchor1
+        MEETINGSTONE_UI_E_POINTS.a2 = anchor2
+    end) 
 
     self:HookScript('OnShow', function()
         C_LFGList.RequestAvailableActivities()
         self:UpdateBlockers()
         self:SendMessage('MEETINGSTONE_OPEN')
+        if(MEETINGSTONE_UI_E_POINTS ~= nil and MEETINGSTONE_UI_E_POINTS.x ~= nil) then
+            self:ClearAllPoints();
+            self:SetPoint(MEETINGSTONE_UI_E_POINTS.a1, UIParent, MEETINGSTONE_UI_E_POINTS.a2, MEETINGSTONE_UI_E_POINTS.x, MEETINGSTONE_UI_E_POINTS.y)
+        end
     end)
 
     self:RegisterMessage('MEETINGSTONE_NEW_VERSION')
     self:RegisterEvent('AJ_PVE_LFG_ACTION')
     self:RegisterEvent('AJ_PVP_LFG_ACTION', 'AJ_PVE_LFG_ACTION')
 
-    self.CloseButton:SetScript("OnClick", function() self:Hide(); end)
-    
     PVEFrame:UnregisterEvent('AJ_PVE_LFG_ACTION')
     PVEFrame:UnregisterEvent('AJ_PVP_LFG_ACTION')
 
@@ -331,32 +345,24 @@ function MainPanel:OpenActivityTooltip(activity, tooltip)
             tooltip:AddLine(format(L['队长PvP 等级：|cffffffff%s|r'], activity:GetLeaderPvPRating()))
         end
 
-        --
-        local searchResultInfo = C_LFGList.GetSearchResultInfo(activity:GetID());
-        local activityName, shortName, categoryID, groupID, minItemLevel, filters, minLevel, maxPlayers, displayType, _, useHonorLevel, _, isMythicPlusActivity = C_LFGList.GetActivityInfo(searchResultInfo.activityID, nil, searchResultInfo.isWarMode);
-        if ( isMythicPlusActivity and searchResultInfo.leaderOverallDungeonScore) then 
-            local color = C_ChallengeMode.GetDungeonScoreRarityColor(searchResultInfo.leaderOverallDungeonScore);
-            if(not color) then 
-                color = HIGHLIGHT_FONT_COLOR; 
-            end 
-            tooltip:AddLine(DUNGEON_SCORE_LEADER:format(color:WrapTextInColorCode(searchResultInfo.leaderOverallDungeonScore)));
-        end 
-
-        if(isMythicPlusActivity and searchResultInfo.leaderDungeonScoreInfo) then 
-            local leaderDungeonScoreInfo = searchResultInfo.leaderDungeonScoreInfo; 
-            local color = C_ChallengeMode.GetSpecificDungeonOverallScoreRarityColor(leaderDungeonScoreInfo.mapScore);
-            if (not color) then 
-                color = HIGHLIGHT_FONT_COLOR;
-            end
-            if(leaderDungeonScoreInfo.mapScore == 0) then
-                tooltip:AddLine(DUNGEON_SCORE_PER_DUNGEON_NO_RATING:format(leaderDungeonScoreInfo.mapName, leaderDungeonScoreInfo.mapScore));
-            elseif (leaderDungeonScoreInfo.finishedSuccess) then
-                tooltip:AddLine(DUNGEON_SCORE_DUNGEON_RATING:format(leaderDungeonScoreInfo.mapName, color:WrapTextInColorCode(leaderDungeonScoreInfo.mapScore), leaderDungeonScoreInfo.bestRunLevel));
-            else
-                tooltip:AddLine(DUNGEON_SCORE_DUNGEON_RATING_OVERTIME:format(leaderDungeonScoreInfo.mapName, color:WrapTextInColorCode(leaderDungeonScoreInfo.mapScore), leaderDungeonScoreInfo.bestRunLevel));
+        local activityInfo = C_LFGList.GetSearchResultInfo(activity:GetID())
+        if(activityInfo ~= nil) then
+            local leaderScores = activityInfo.leaderDungeonScoreInfo
+            if(leaderScores ~= nil) then
+                local color = C_ChallengeMode.GetDungeonScoreRarityColor(leaderScores.mapScore * 8);
+                _G["TEST"] = color
+                if(not color) then 
+                    color = HIGHLIGHT_FONT_COLOR; 
+                end
+                tooltip:AddLine("当前秘境得分:"..color:GenerateHexColorMarkup()..leaderScores.mapScore)
+                local levelColor = RED_FONT_COLOR
+                if(leaderScores.finishedSuccess) then
+                    levelColor = GREEN_FONT_COLOR
+                end
+                tooltip:AddLine("|r当前秘境最高层:"..levelColor:GenerateHexColorMarkup()..leaderScores.bestRunLevel)
             end
         end
-        --
+
 
         tooltip:AddSepatator()
     end
@@ -384,7 +390,6 @@ function MainPanel:OpenActivityTooltip(activity, tooltip)
                             classColor.g, classColor.b)
         end
     else
-        -- Modification begin
         -- Display Raid/Party Roles,code from PGF addon
         local roles = {}
         local classInfo = {}
@@ -410,7 +415,6 @@ function MainPanel:OpenActivityTooltip(activity, tooltip)
                 tooltip:AddLine(text)
             end
         end
-        -- Modification end
         local memberCounts = C_LFGList.GetSearchResultMemberCounts(activity:GetID())
         if memberCounts then
             tooltip:AddSepatator()
@@ -553,8 +557,4 @@ function MainPanel:OpenRecentPlayerTooltip(player)
     tooltip:AddLine(player:GetNameText())
     tooltip:AddLine(player:GetNotes(), 1, 1, 1, true)
     tooltip:Show()
-end
-
-function MainPanel:PLAYER_REGEN_DISABLED()
-    self:Hide();
 end

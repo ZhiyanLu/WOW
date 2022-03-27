@@ -1,0 +1,24 @@
+
+ArchyDB = {
+	["char"] = {
+		["Magiccreamdz - 凤凰之神"] = {
+			["digsites"] = {
+				["blacklist"] = {
+				},
+				["stats"] = {
+				},
+			},
+		},
+	},
+	["global"] = {
+		["surveyNodes"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Magiccreamdz - 凤凰之神"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

@@ -1,8 +1,8 @@
-## Interface: 90100
+## Interface: 90105
 ## Title: HandyNotes_Lorewalkers
 ## Notes: Where the lore is at
 ## Author: Kemayo
-## Version: e67bf74
+## Version: 3aedd1f
 ## DefaultState: enabled
 ## X-Category: Map
 ## X-eMail: kemayo @ gmail DOT com

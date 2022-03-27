@@ -1,7 +1,7 @@
 
 SIL_Social = {
 	["profileKeys"] = {
-		["Magiccream - 冰风岗"] = "Default",
+		["余生请多指教 - 格雷迈恩"] = "Default",
 		["Magiccream - 洛丹伦"] = "Default",
 		["Magiccream - 艾莫莉丝"] = "Default",
 		["Magiccream - 格雷迈恩"] = "Default",
@@ -10,7 +10,7 @@ SIL_Social = {
 		["Magiccreamcn - 格雷迈恩"] = "Default",
 		["Magiccreamdk - 格雷迈恩"] = "Default",
 		["哈尼臭嗨 - 格雷迈恩"] = "Default",
-		["余生请多指教 - 格雷迈恩"] = "Default",
+		["Magiccream - 冰风岗"] = "Default",
 	},
 	["global"] = {
 		["chatEvents"] = {

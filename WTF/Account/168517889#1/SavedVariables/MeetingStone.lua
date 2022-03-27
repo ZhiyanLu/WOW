@@ -1,11 +1,11 @@
 
 MEETINGSTONE_UI_DB = {
 	["profileKeys"] = {
-		["Magiccreamdz - 凤凰之神"] = "Default",
+		["余生请多指教 - 格雷迈恩"] = "Default",
 		["哈尼臭嗨 - 格雷迈恩"] = "Default",
 		["Magiccreamdk - 格雷迈恩"] = "Default",
 		["Magiccream - 格雷迈恩"] = "Default",
-		["余生请多指教 - 格雷迈恩"] = "Default",
+		["Magiccreamdz - 凤凰之神"] = "Default",
 	},
 	["global"] = {
 		["spamWord"] = {
@@ -44,8 +44,7 @@ MEETINGSTONE_UI_DB = {
 				["data"] = "^1^SMallData^T^S宠物#1^S2006;1500,,每周限量;23713;16943#2007;850,,每周限量;72134;38919^S消耗品#3^S1002;150;46779^S玩具#2^S7001;750,,每周限量;54212;31756#3006;1500,,每月限量;79769#3007;450,,每月限量;69227^t^^",
 			},
 			["ActivitiesData"] = {
-				["data"] = "$1$Z$S333`魔兽主播活动`统御圣所团队的荣耀`8月7日（周六）晚8点，虎牙人气主播：丁神（房间号：587179），巅峰-阿乐（房间号：19107301）*J赫雷斯迪莫拉克的两面三刀极其为人不齿，他背板了自己的人民来追求力量。他面临着噬渊中的惩罚时，还试图推翻典狱长，如此愚蠢的行为使他永世遭受折磨，本期活动快和主播一起征服统御圣所的成就获得坐骑吧！`http://w.163.com/special/convene-stone/`1`3$S334`魔兽主播活动`统御圣所团队的荣耀`8月14日（周六）晚8点，斗鱼人气主播：阿翎子elsie0（房间号：1232254），萌萌的虾米（房间号：70）*J赫雷斯迪莫拉克的两面三刀极其为人不齿，他背板了自己的人民来追求力量。他面临着噬渊中的惩罚时，还试图推翻典狱长，如此愚蠢的行为使他永世遭受折磨，本期活动快和主播一起征服统御圣所的成就获得坐骑吧！`http://w.163.com/special/convene-stone/`1`3$$",
-				["new"] = false,
+				["data"] = "$1$Z$S348`魔兽主播活动`旧世赛季服`11月27日（周六）晚8点，虎牙人气主播：赵迪克（房间号：857824）*J在全新服务器和主播一起从1级再启征程，更短的更新周期、更具挑战性的团队副本、更快的升级速度、更好的优化体验，本期活动快和赵迪克一起体验更快、更具挑战的经典旧世吧！`http://w.163.com/special/convene-stone/`1`3$$",
 			},
 			["AnnData"] = {
 				["data"] = "^1^SAnnData^T^Stitle^S集合石插件积分兑换维护^Scontent^S集合石插件积分兑换功能正在维护中，目前暂时无法正常使用，大家还是可以正常登录战网进行兑换，给大家造成的不便还请谅解。^t^^",
@@ -63,23 +62,31 @@ MEETINGSTONE_UI_DB = {
 		["version"] = "90005.03",
 		["ActivityProfiles"] = {
 			["彼界（史诗钥石）"] = {
-				["ItemLevel"] = 183,
+				["ItemLevel"] = 240,
 				["HonorLevel"] = 0,
 			},
-			["塞兹仙林的迷雾（史诗钥石）"] = {
-				["ItemLevel"] = 190,
-				["HonorLevel"] = 0,
-			},
-			["晋升高塔（史诗钥石）"] = {
-				["ItemLevel"] = 180,
+			["赎罪大厅（史诗钥石）"] = {
+				["ItemLevel"] = 245,
 				["HonorLevel"] = 0,
 			},
 			["围攻伯拉勒斯（史诗钥石）"] = {
 				["ItemLevel"] = 115,
 				["HonorLevel"] = 0,
 			},
-			["赎罪大厅（史诗钥石）"] = {
-				["ItemLevel"] = 180,
+			["塞兹仙林的迷雾（史诗钥石）"] = {
+				["ItemLevel"] = 240,
+				["HonorLevel"] = 0,
+			},
+			["赤红深渊（史诗钥石）"] = {
+				["ItemLevel"] = 245,
+				["HonorLevel"] = 0,
+			},
+			["凋魂之殇（史诗钥石）"] = {
+				["ItemLevel"] = 240,
+				["HonorLevel"] = 0,
+			},
+			["晋升高塔（史诗钥石）"] = {
+				["ItemLevel"] = 245,
 				["HonorLevel"] = 0,
 			},
 			["伤逝剧场（史诗）"] = {
@@ -87,17 +94,22 @@ MEETINGSTONE_UI_DB = {
 				["HonorLevel"] = 0,
 			},
 			["伤逝剧场（史诗钥石）"] = {
-				["ItemLevel"] = 185,
+				["ItemLevel"] = 230,
 				["HonorLevel"] = 0,
 			},
 			["通灵战潮（史诗钥石）"] = {
-				["ItemLevel"] = 185,
+				["ItemLevel"] = 235,
 				["HonorLevel"] = 0,
 			},
 		},
 		["filters"] = {
 			[6] = {
 				["BossKilled"] = {
+					["min"] = 0,
+					["max"] = 0,
+					["enable"] = false,
+				},
+				["Members"] = {
 					["min"] = 0,
 					["max"] = 0,
 					["enable"] = false,
@@ -112,12 +124,43 @@ MEETINGSTONE_UI_DB = {
 					["max"] = 0,
 					["enable"] = false,
 				},
+			},
+			[2] = {
+				["LeaderScore"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["BossKilled"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
 				["Members"] = {
 					["min"] = 0,
-					["max"] = 0,
 					["enable"] = false,
+					["max"] = 0,
+				},
+				["Age"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["ItemLevel"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
 				},
 			},
 		},
 	},
 }
+MEETINGSTONE_UI_E_POINTS = {
+	["y"] = 66.6668472290039,
+	["x"] = 24.88871383666992,
+	["a1"] = "LEFT",
+	["a2"] = "LEFT",
+}
+MEETINGSTONE_UI_BLACKLISTEDLEADERS = {
+}
+MEETINGSTONE_UI_E_FILTERAD = false

@@ -3,14 +3,14 @@ Name: DRList-1.0
 Description: Diminishing returns database. Fork of DRData-1.0.
 Website: https://www.curseforge.com/wow/addons/drlist-1-0
 Documentation: https://wardz.github.io/DRList-1.0/
-Version: a0bc478
+Version: 620a36f
 Dependencies: LibStub
 License: MIT
 ]]
 
 --- DRList-1.0
 -- @module DRList-1.0
-local MAJOR, MINOR = "DRList-1.0", 23
+local MAJOR, MINOR = "DRList-1.0", 26
 local Lib = assert(LibStub, MAJOR .. " requires LibStub."):NewLibrary(MAJOR, MINOR)
 if not Lib then return end -- already loaded
 
@@ -250,7 +250,7 @@ Lib.diminishedDurations = {
 --- Get table of all spells that DRs.
 -- Key is the spellID, and value is the unlocalized DR category.
 -- For Classic the key is the localized spell name instead, and value
--- is a table containing both the DR category and spell ID.
+-- is a table containing both the DR category and spell ID. (Classic has no spellID payload in combat log)
 -- @see IterateSpellsByCategory
 -- @treturn ?table {number=string}|table {string=table}
 function Lib:GetSpells()
@@ -272,7 +272,7 @@ function Lib:GetPvECategories()
     return Lib.categoriesPvE[Lib.gameExpansion]
 end
 
---- Get constant for how long a DR lasts total for a given category.
+--- Get constant for how long a DR lasts for a given category.
 -- @tparam[opt="default"] string category Unlocalized category name, or "npc" for PvE timer.
 -- @treturn number
 function Lib:GetResetTime(category)
@@ -333,9 +333,9 @@ do
     local next = _G.next
 
     local function CategoryIterator(category, index)
-        local newCat
+        local spellList, newCat = Lib.spellList, nil
         repeat
-            index, newCat = next(Lib.spellList, index)
+            index, newCat = next(spellList, index)
             if index then
                 if newCat == category or newCat.category == category then
                     return index, category
@@ -347,7 +347,7 @@ do
     --- Iterate through the spells of a given category.
     -- @tparam string category Unlocalized category name
     -- @usage for spellID in DRList:IterateSpellsByCategory("root") do print(spellID) end
-    -- @warning Slow function, do not use for combat related stuff unless you cache results.
+    -- @warning Slow function, do not use for frequent combat related stuff unless you cache results.
     -- @return Iterator function
     function Lib:IterateSpellsByCategory(category)
         assert(Lib.categoryNames[Lib.gameExpansion][category], "invalid category")

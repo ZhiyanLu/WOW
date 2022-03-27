@@ -1053,6 +1053,27 @@ MDT.dungeonEnemies[dungeonIndex] = {
          [1] = {
             ["y"] = -317.85326900582;
             ["x"] = 565.21027105794;
+            ["week"] = {
+                [1] = true;
+                [2] = true;
+                [5] = true;
+                [6] = true;
+                [9] = true;
+                [10] = true;
+            };
+            ["sublevel"] = 1;
+         };
+         [2] = {
+            ["y"] = -123.52463227332;
+            ["x"] = 261.55314132983;
+            ["week"] = {
+                [3] = true;
+                [4] = true;
+                [7] = true;
+                [8] = true;
+                [11] = true;
+                [12] = true;
+            };
             ["sublevel"] = 1;
          };
        };
@@ -1961,6 +1982,27 @@ MDT.dungeonEnemies[dungeonIndex] = {
           [1] = {
             ["y"] = -123.52463227332;
             ["x"] = 261.55314132983;
+            ["week"] = {
+                [1] = true;
+                [2] = true;
+                [5] = true;
+                [6] = true;
+                [9] = true;
+                [10] = true;
+            };
+            ["sublevel"] = 1;
+         };
+         [2] = {
+            ["y"] = -317.85326900582;
+            ["x"] = 565.21027105794;
+            ["week"] = {
+                [3] = true;
+                [4] = true;
+                [7] = true;
+                [8] = true;
+                [11] = true;
+                [12] = true;
+            };
             ["sublevel"] = 1;
          };
        };
@@ -2095,7 +2137,28 @@ MDT.dungeonEnemies[dungeonIndex] = {
           [1] = {
             ["y"] = -174.23889036438;
             ["x"] = 472.8031121598;
+            ["week"] = {
+                [1] = true;
+                [2] = true;
+                [5] = true;
+                [6] = true;
+                [9] = true;
+                [10] = true;
+            };
             ["sublevel"] = 1;
+         };
+         [2] = {
+            ["y"] = -348.58257308629;
+            ["x"] = 461.52975816474;
+            ["week"] = {
+                [3] = true;
+                [4] = true;
+                [7] = true;
+                [8] = true;
+                [11] = true;
+                [12] = true;
+            };
+            ["sublevel"] = 2;
          };
        };
        ["spells"] = {
@@ -2157,9 +2220,30 @@ MDT.dungeonEnemies[dungeonIndex] = {
     [29] = {
        ["clones"] = {
          [1] = {
-            ["y"] = -314.4169385593;
-            ["x"] = 511.79428010194;
+            ["y"] = -348.58257308629;
+            ["x"] = 461.52975816474;
+            ["week"] = {
+                [1] = true;
+                [2] = true;
+                [5] = true;
+                [6] = true;
+                [9] = true;
+                [10] = true;
+            };
             ["sublevel"] = 2;
+         };
+         [2] = {
+            ["y"] = -174.23889036438;
+            ["x"] = 472.8031121598;
+            ["week"] = {
+                [3] = true;
+                [4] = true;
+                [7] = true;
+                [8] = true;
+                [11] = true;
+                [12] = true;
+            };
+            ["sublevel"] = 1;
          };
        };
        ["spells"] = {
@@ -2223,5 +2307,36 @@ MDT.dungeonEnemies[dungeonIndex] = {
        ["level"] = 60;
        ["health"] = 560700;
        ["count"] = 0;
+    };
+    [31] = {
+       ["clones"] = {
+          [1] = {
+             ["y"] = -165.99565683313;
+             ["x"] = 276.01386199891;
+             ["sublevel"] = 2;
+          };
+       };
+       ["id"] = 168594;
+       ["spells"] = {
+          [288865] = {};
+          [315536] = {};
+          [328170] = {};
+          [322429] = {};
+          [132951] = {};
+          [240443] = {};
+          [321020] = {};
+          [322418] = {};
+          [322433] = {};
+       };
+       ["characteristics"] = {
+          ["Taunt"] = true;
+       };
+       ["scale"] = 1.4;
+       ["name"] = "Chamber Sentinel";
+       ["displayId"] = 94737;
+       ["creatureType"] = "Humanoid";
+       ["level"] = 60;
+       ["health"] = 136170;
+       ["count"] = 7;
     };
  };

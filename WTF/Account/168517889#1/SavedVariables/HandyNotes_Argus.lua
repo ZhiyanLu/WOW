@@ -3,12 +3,12 @@ HandyNotes_ArgusDB = {
 	["profileKeys"] = {
 		["Magiccreamdz - 凤凰之神"] = "Magiccreamdz - 凤凰之神",
 		["哈尼臭嗨 - 格雷迈恩"] = "哈尼臭嗨 - 格雷迈恩",
-		["Magiccreamdk - 格雷迈恩"] = "Magiccreamdk - 格雷迈恩",
+		["Magiccreamdk - 格雷迈恩"] = "Magiccream - 格雷迈恩",
 		["Magiccream - 格雷迈恩"] = "Magiccream - 格雷迈恩",
 		["余生请多指教 - 格雷迈恩"] = "余生请多指教 - 格雷迈恩",
 	},
 	["profiles"] = {
-		["Magiccreamdz - 凤凰之神"] = {
+		["余生请多指教 - 格雷迈恩"] = {
 		},
 		["哈尼臭嗨 - 格雷迈恩"] = {
 		},
@@ -16,7 +16,7 @@ HandyNotes_ArgusDB = {
 		},
 		["Magiccream - 格雷迈恩"] = {
 		},
-		["余生请多指教 - 格雷迈恩"] = {
+		["Magiccreamdz - 凤凰之神"] = {
 		},
 	},
 }

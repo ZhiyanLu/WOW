@@ -38,6 +38,11 @@ function AuctionatorShoppingItemMixin:OnLoad()
       self.SearchContainer.SearchString:SetFocus()
     end
   })
+
+  Auctionator.EventBus:Register(self, {
+    Auctionator.ShoppingLists.Events.ListSearchStarted,
+    Auctionator.ShoppingLists.Events.ListSearchEnded
+  })
 end
 
 function AuctionatorShoppingItemMixin:Init(title, finishedButtonText)
@@ -74,12 +79,16 @@ function AuctionatorShoppingItemMixin:SetOnFinishedClicked(callback)
 end
 
 function AuctionatorShoppingItemMixin:OnFinishedClicked()
+  if not self.Finished:IsEnabled() then
+    return
+  end
+
   self:Hide()
 
   if self:HasItemInfo() then
     self.onFinishedClicked(self:GetItemString())
   else
-    Auctionator.Utilities.Message("No item info was specified.")
+    Auctionator.Utilities.Message(AUCTIONATOR_L_NO_ITEM_INFO_SPECIFIED)
   end
 end
 
@@ -109,17 +118,8 @@ end
 function AuctionatorShoppingItemMixin:SetItemString(itemString)
   local search = Auctionator.Search.SplitAdvancedSearch(itemString)
 
-  local searchTerm = ""
-  if string.match(search.queryString, "^\".*\"$") then
-    --Check for exact searches, if so, extract the search term from the
-    --queryString
-    searchTerm = select(1, string.match(search.queryString, "^\"(.*)\"$"))
-    self.SearchContainer.IsExact:SetChecked(true)
-  else
-    searchTerm = search.queryString
-    self.SearchContainer.IsExact:SetChecked(false)
-  end
-  self.SearchContainer.SearchString:SetText(searchTerm)
+  self.SearchContainer.IsExact:SetChecked(search.isExact)
+  self.SearchContainer.SearchString:SetText(search.searchString)
 
   self.FilterKeySelector:SetValue(search.categoryKey)
 
@@ -159,4 +159,10 @@ function AuctionatorShoppingItemMixin:ResetAll()
   self.CraftedLevelRange:Reset()
 end
 
-
+function AuctionatorShoppingItemMixin:ReceiveEvent(eventName)
+  if eventName == Auctionator.ShoppingLists.Events.ListSearchStarted then
+    self.Finished:Disable()
+  elseif eventName == Auctionator.ShoppingLists.Events.ListSearchEnded then
+    self.Finished:Enable()
+  end
+end

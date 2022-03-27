@@ -1653,3 +1653,42 @@ Change Log:
 * Added Shadowlands spells (world)
 * Added SL spells for Torghast
 * Added SL spells for Sanctum of Domination
+
+4.64
+* Don't alert when the player is mind-controlled
+* Fixed SL spells for Sanctum of Domination
+* Added Shadowlands spells (world)
+* Added SL spells for Sanctum of Domination
+* Added SL spells for Torghast
+
+4.64.1
+* Updated ToCs for all versions
+* Added SL spells for Sanctum of Domination
+
+4.64.2
+* Added Generic spells
+
+4.64.3
+* Added Shadowlands spells (world)
+* Added SL spells for Mists of Tirna Scithe
+* Added SL spells for Theater of Pain
+* Added SL spells for Torghast
+* Added SL spells for Sanctum of Domination
+* Added BC spells for Magtheridon's Lair
+* Added BC spells for The Eye
+* Added BC spells for Serpentshrine Cavern
+
+4.65
+* Updated for patch 9.1.5
+* Fixed BC spells for Magtheridon's Lair
+* Added BC spells for The Eye
+* Added BC spells for Serpentshrine Cavern
+* Added BC spells for Sunwell Plateau
+* Added Vanilla spells for Maraudon
+
+4.65.1
+* Updated ToCs using the new naming system
+* Added BC spells for Sunwell Plateau
+
+4.65.2
+* Fixed BC spells for Serpentshrine Cavern

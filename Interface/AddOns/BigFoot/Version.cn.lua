@@ -1,6 +1,6 @@
 if GetLocale()~='zhCN' then return end
 local main= "9.1.0."
-local minor = "876"
+local minor = "887"
 BIGFOOT_VERSION = "zhCN"..main..minor;
 
 function GetMinorVersion()
@@ -8,6 +8,59 @@ function GetMinorVersion()
 end
 
 BigFootChangelog_ah();
+
+	BigFootChangelog_at("2021/09/22 (9.1.0.887)")
+	BigFootChangelog_ar("按键保存","升级至最新版本(5.7.0)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.14)。")
+
+
+	BigFootChangelog_at("2021/09/18 (9.1.0.886)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90100.07)。")
+
+
+	BigFootChangelog_at("2021/09/16 (9.1.0.885)")
+	BigFootChangelog_ar("世界任务","升级至最新版本(429)。")
+	BigFootChangelog_ar("秘境增强","升级至最新版本(0.22.0)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.13)。")
+
+
+	BigFootChangelog_at("2021/09/01 (9.1.0.884)")
+	BigFootChangelog_ar("世界任务","升级至最新版本(428)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.12)。")
+
+
+	BigFootChangelog_at("2021/08/27 (9.1.0.883)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90100.06)。")
+
+
+	BigFootChangelog_at("2021/08/26 (9.1.0.882)")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.11)。")
+
+
+	BigFootChangelog_at("2021/08/23 (9.1.0.881)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90100.05)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.10)。")
+
+
+	BigFootChangelog_at("2021/08/18 (9.1.0.880)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90100.04)。")
+
+
+	BigFootChangelog_at("2021/08/16 (9.1.0.879)")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.9)。")
+
+
+	BigFootChangelog_at("2021/08/12 (9.1.0.878)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90100.03)。")
+	BigFootChangelog_ar("竞技语音","升级至最新版本(3.10)。")
+	BigFootChangelog_ar("地图标记","暗影国度模块更新。")
+
+
+	BigFootChangelog_at("2021/08/03 (9.1.0.877)")
+	BigFootChangelog_ar("集合石","升级至最新版本(90100.02)。")
+	BigFootChangelog_ar("竞技语音","升级至最新版本(3.9.2)。")
+	BigFootChangelog_ar("首领报警","升级至最新版本(9.1.8)。")
+
 
 	BigFootChangelog_at("2021/07/26 (9.1.0.876)")
 	BigFootChangelog_ar("进度管家","升级至最新版本(9.1.3)。")
@@ -1900,4 +1953,4 @@ BigFootChangelog_ah();
 BigFootChangelog_af();
 
 
-BF_VERSION_CHECKSUM = "48"
+BF_VERSION_CHECKSUM = "62"

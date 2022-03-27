@@ -235,6 +235,13 @@ local FILTERS = {
     end,
     Members = function(activity)
         return activity:GetNumMembers()
+    end,
+    LeaderScore = function(activity)
+        local activityInfo = C_LFGList.GetSearchResultInfo(activity:GetID())
+        if(activityInfo == nil) then
+            return 0
+        end
+        return activityInfo.leaderOverallDungeonScore
     end
 }
 
@@ -247,6 +254,71 @@ function Activity:Match(filters)
                 return false
             end
             if filter.max and filter.max ~= 0 and value > filter.max then
+                return false
+            end
+        end
+    end
+    -- 过滤条件:队长名
+    local searchResultInfo = C_LFGList.GetSearchResultInfo(self:GetID())
+    if (searchResultInfo ~= nil and searchResultInfo.leaderName ~= nil) then
+        local leaderName = searchResultInfo.leaderName
+        for k, v in ipairs(_G["MEETINGSTONE_UI_BLACKLISTEDLEADERS"]) do
+            if (leaderName == v) then
+                -- print("Filtered:Blacklisted Leader:"..v)
+                return false
+            end
+        end
+    end
+    -- 反广告-暂时禁用
+    if _G["MEETINGSTONE_UI_E_FILTERAD"] then
+        local completedEncounters = self:GetKilledBossCount()
+        local itemLevelRequired = self:GetItemLevel()
+        local totalPlayers = self:GetNumMembers()
+        local classInfo = {}
+        local classCount = 0
+        local fullName, shortName, categoryID, groupID, iLevel, filters, minLevel, maxPlayers, displayType, orderIndex, useHonorLevel, showQuickJoin = C_LFGList.GetActivityInfo(self:GetActivityID())
+        
+        if(fullName == nil) then
+            return true
+        end
+        local age = self:GetAge()
+        for i = 1, self:GetNumMembers() do
+            local role, class, classLocalized = C_LFGList.GetSearchResultMemberInfo(self:GetID(), i)
+            if not classInfo[class] and class then 
+                classInfo[class] = {}
+                classCount = classCount + 1
+            end
+        end
+        -- 过滤条件:团本分类
+        if(categoryID == 3) then
+            -- 过滤条件1:团队>=15人且职业人数小于6
+            if(totalPlayers >= 15) then
+                if (classCount < 6) then
+                    --print("Filtered:Less Classes")
+                    return false
+                end
+            end
+            if(totalPlayers > 9) then
+                if (classCount < 4) then
+                    --print("Filtered:Less Classes")
+                    return false
+                end
+            end
+            -- 过滤条件2:创建时间超过40分，且没有boss击杀
+            if(age > 2400 and completedEncounters == 0) then
+                --print("Filtered:Less Encounters")
+                return false
+            end
+            -- 过滤条件3:装等低于160
+            if(itemLevelRequired < 160) then
+                --print("Filtered:Less Lv")
+                return false
+            end
+        end
+        -- 过滤条件:大米分类
+        if(categoryID == 2 and shortName == CHALLENGES) then
+            -- 过滤条件1:装等低于401
+            if(itemLevelRequired < 160) then
                 return false
             end
         end

@@ -1,9 +1,11 @@
 # <DBM> Challenges
 
-## [r141](https://github.com/DeadlyBossMods/DBM-Challenges/tree/r141) (2021-08-02)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Challenges/compare/r140...r141) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Challenges/releases)
+## [r143](https://github.com/DeadlyBossMods/DBM-Challenges/tree/r143) (2021-11-02)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Challenges/compare/r142...r143) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Challenges/releases)
 
-- Remove obsolete code that was removed from 9.1 torghasts  
-- Added another dangerus spell  
-- account for reaction time  
-- Added quate warning to torghast, which is a very big threat on layer 12. Was wondering if blizz would ever use this mechanic again. one of coolest trash features of cataclysm.  
+- bump retail toc  
+- Fixed error in last  
+- Added nameplate aura to Queen mage tower challenge  
+    Fixed wipe detection on xylem mage tower challenge so it wipes faster on player death  
+    Added kick warning when sheild goes down on imp mother in mage tower challenges  
+- comment unused  

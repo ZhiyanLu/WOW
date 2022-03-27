@@ -2,22 +2,22 @@
 SIACFG = {
 	["soundOwn"] = 623880,
 	["party"] = {
-		["other"] = "party",
-		["own"] = "party",
+		["other"] = "self",
+		["own"] = "self",
 	},
 	["solo"] = {
 		["other"] = "off",
 		["own"] = "self",
 	},
-	["isEnabled"] = true,
 	["cfgversion"] = 1,
-	["raid"] = {
-		["other"] = "self",
-		["own"] = "self",
-	},
+	["isEnabled"] = true,
+	["soundOther"] = 623880,
 	["instance"] = {
 		["other"] = "self",
 		["own"] = "self",
 	},
-	["soundOther"] = 623880,
+	["raid"] = {
+		["other"] = "self",
+		["own"] = "self",
+	},
 }

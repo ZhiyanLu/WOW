@@ -196,10 +196,7 @@ L["Color code on aggro"] = "Farbcode bei Aggro"
 L["Color health by"] = "Gesundheit färben nach"
 L["Color on aggro"] = "Farbe bei Aggro"
 L["Color on curable debuff"] = "Farbe bei heilbaren Debuff"
-L["Color power by"] = [=[Färbe Power bei 
-
-
-(need more context, more than 1 option)]=]
+L["Color power by"] = "Färbe Power bei"
 L["Color to use for health bars that are set to be colored by a static color."] = "Farbe der Gesundheitsleiste, die von einer festgesetzten Farbe bestimmt ist."
 L["Color to use to show how much damage will be absorbed."] = "Verwendete Farbe die anzeigt, wieviel Schaden absorbiert wird."
 L["Color to use to show how much healing will e absorbed."] = "Farbe, die benutzt wird, um zu zeigen, wie viel Heilung absorbiert wird."
@@ -230,15 +227,9 @@ L["Cur/Max HP (Short)"] = "Akt/Max GP (Kurz)"
 L["Cur/Max HP (Smart)"] = "Akt/Max GP (Intelligent)"
 L["Cur/Max power (Absolute)"] = "Akt/Max Energie (Absolut)"
 L["Cur/Max power (Druid)"] = "Akt/Max Energie (Druide)"
-L["Cur/Max power (Druid/Absolute)"] = [=[Aktuelle/Max Power (Druide/absolut)
-
-(if cur stands for current)]=]
-L["Cur/Max power (Secondary)"] = [=[Aktuelle/Max Power (Sekundär)
-
-(if cur stands for current)]=]
-L["Cur/Max power (Secondary/Absolute)"] = [=[Aktuelle/Max Power (Sekundär/absolut)
-
-(if cur stands for current)]=]
+L["Cur/Max power (Druid/Absolute)"] = "Aktuelle/Max Power (Druide/absolut)"
+L["Cur/Max power (Secondary)"] = "Aktuelle/Max Power (Sekundär)"
+L["Cur/Max power (Secondary/Absolute)"] = "Aktuelle/Max Power (Sekundär/absolut)"
 L["Cur/Max Power (Short)"] = "Akt/Max Energie (Kurz)"
 L["Cur/Max PP (Smart)"] = "Akt/Max KP (Intelligent)"
 L["Curable"] = "heilbar"
@@ -338,9 +329,7 @@ L["Filtering debuffs only"] = "Nur Schwächungszauber filtern"
 L["Filters"] = "Filter"
 L["Finished cast"] = "Gewirkte Zauber"
 L["Flags the tag for frequent updating, it will update the tag on a timer regardless of any events firing."] = "Markiere den Tag für ein regelmäßiges Aktualisieren. Dies aktualisiert den Tag nach einem Timer, unabhängig davon, wann ein Ereginis ausgeführt wird."
-L["Flight"] = [=[Flug (if you mean the flight from sw to if)
-
-Schwarm (if you mean the dragon flight)]=]
+L["Flight"] = "Flug"
 L["Flips coloring so the bar color is shown as the background color and the background as the bar"] = "Dreht das Einfärben herum, so dass die Leistenfarbe als Hintergrundfarbe und die Hintergrundfarbe als Leistenfarbe angezeigt wird."
 L["Focus"] = "Fokus"
 L["Focus Target"] = "Fokus Ziel"
@@ -357,9 +346,7 @@ L["Friendly"] = "Freundlich"
 L["Fuel"] = "Treibstoff"
 L["Full size after"] = "Volle Größe nach"
 L["Full size before"] = "Volle Größe bevor"
-L["Fury"] = [=[Furor (the warrior fury spec)
-
-Jähzorn (the resource from demonhunter)]=]
+L["Fury"] = "Jähzorn"
 L["General"] = "Allgemein"
 L["General configuration to all enabled units."] = "Allgemeine Konfiguration für alle aktivierten Einheiten."
 L["General threat situation"] = "Normale Bedrohungssituation"
@@ -411,9 +398,7 @@ L["Hides the power bar unless the class has mana."] = "Verstecke die Power-Leist
 L["Hiding and showing various aspects of the default UI such as the player buff frames."] = "Verstecke und zeige verschiedene Aspekte der Standard UI, wie zum Beispiel die Stärkungszauber des Spielers."
 L["High"] = "Hoch"
 L["High health"] = "Hohe Gesundheit"
-L["Highlight"] = [=[Höhepunkt (the hightlight like a killed boss)
-
-Hervorhebung (to highlight something, questitems to pick up)]=]
+L["Highlight"] = "Hervorhebung"
 L["Highlight units that are "] = "Hebe Einheiten hervor, die ....."
 L["Highlight units that are debuffed with something you can cure."] = "Einheiten mit einem Schwächungszauber den Du reinigen kannst, hervorheben."
 L["Highlight units that are rare."] = "Hebe Einheiten hervor, die selten sind."
@@ -530,9 +515,7 @@ L["Max power (Absolute)"] = "Max. Energie (Absolut)"
 L["Max power (Short)"] = "Max. Energie (Kurz)"
 L["Max power, uses a short format, 16000 is formatted as 16k, values below 10000 are formatted as is."] = "Max. Energie, verwendet ein kurzes Format, 16.000 wird als 16k angezeigt, Werte unter 10.000 werden normal angezeigt."
 L["Max rows"] = "Max. Reihen"
-L["Medium"] = [=[Mittel / Medium
-
-(need more context)]=]
+L["Medium"] = "Medium"
 L["Minion"] = "Kreatur"
 L["Miscellaneous"] = "Verschiedenes"
 L["Missing HP (Short)"] = "Fehlende GP (Kurz)"
@@ -725,9 +708,7 @@ L["Show Heal Absorbs"] = "Zeige Heilungsabsorptionen"
 L["Show icon durations"] = "Zeige Symboldauer"
 L["Show incoming absorbs"] = "Zeige Absorbtion"
 L["Show incoming heals"] = "Zeige eingehende Heilungen."
-L["Show inside"] = [=[Zeige innen (?)
-
-(need more context)]=]
+L["Show inside"] = "Zeige innen"
 L["Show party as raid"] = "Zeige Gruppe als Schlachtzug"
 L["Show player in party"] = "Zeige Spieler in einer Gruppe"
 L["Show your auras"] = "Zeige deine Auren"
@@ -837,11 +818,7 @@ L["Turns this widget into a bar that can be resized and ordered just like health
 L["Unattackable hostile"] = "Nicht angreifbare Feinde"
 L["Unit color code on aggro"] = "Einheit - Farbe bei Aggro"
 L["Unit colored situation"] = "Einheit - Situation gefärbt"
-L["Unit Configuration"] = [=[Einheiten Konfiguration
-
-Einheiten Einstellung 
-
-(means the same)]=]
+L["Unit Configuration"] = "Einheiten Einstellung"
 L["Unit faction"] = "Einheiten Fraktion"
 L["Unit name"] = "Einheitenname"
 L["Unit name (Class colored)"] = "Einheitenname (Klassenfarben)"
@@ -912,11 +889,7 @@ L["Your active layout is the profile used for import backup, this cannot be over
 L["Your aura color"] = "Deine Aurenfarbe"
 L["Your Auras"] = "Deine Auren"
 L["Your code must be wrapped in a function, for example, if you were to make a tag to return the units name you would do:|n|nfunction(unit, unitOwner)|nreturn UnitName(unitOwner)|nend"] = "Dein Code muss in eine Funktion umgebrochen werden. Wenn Du beispielsweise einen Tag erstellst um den Einheitenname auszugeben, würdest Du folgendes tun:|n|nfunction(unit, unitOwner)|nreturn UnitName(unitOwner)|nend"
-L["Zone Configuration"] = [=[Zonen Konfiguration
-
-Zonen Einstellung
-
-(means the same)]=]
+L["Zone Configuration"] = "Zonen Einstellung"
 L["Zone configuration units"] = "Gebiet Konfiguration - Einheiten"
 
 local ShadowUF = select(2, ...)

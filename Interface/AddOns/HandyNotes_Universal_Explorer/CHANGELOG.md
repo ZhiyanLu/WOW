@@ -15,3 +15,15 @@
 ## Changes in 9.0.2
 * Updated for 9.0.2
 * Added Coordinates for Shadowlands
+## Changes in 9.1.5
+* Updated TOC for 9.1.5
+* Updated Coordinates:
+  - Northern Barrens:
+    * Grol'dom Farm (Thanks to spitebobels )
+    * Far Watch Post (Thanks to Slick1342 )
+    * Lushwater Oasis ( Thanks to spitebobels )
+    * The Dry Hills ( Thanks to spitebobels )
+    * The Merchant Coast ( Thanks to Slick1342 )
+    * The Sludge Fen ( Thanks to spitebobels )
+  - Teldrassil:
+    * The Cleft ( Thanks to Slick1342 )

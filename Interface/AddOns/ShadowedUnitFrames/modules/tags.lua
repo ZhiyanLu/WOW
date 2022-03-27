@@ -326,25 +326,27 @@ function ShadowUF:Hex(r, g, b)
 end
 
 function ShadowUF:FormatLargeNumber(number)
-	if( number < 9999 ) then
+	if( number < 10000 ) then
 		return number
-	elseif( number < 999999 ) then
-		return string.format("%.1fk", number / 1000)
-	elseif( number < 99999999 ) then
-		return string.format("%.2fm", number / 1000000)
+	elseif( number < 100000000 ) then
+		return string.format("%.1f万", number / 10000)
+	elseif( number >= 100000000 ) then
+		return string.format("%.1f亿", number / 100000000)
 	end
-
-	return string.format("%dm", number / 1000000)
+	
+	return string.format("%d万", number / 10000)
 end
 
 function ShadowUF:SmartFormatNumber(number)
-	if( number < 999999 ) then
+	if( number < 10000 ) then
 		return number
-	elseif( number < 99999999 ) then
-		return string.format("%.2fm", number / 1000000)
+	elseif( number < 100000000 ) then
+		return string.format("%.2f万", number / 10000)
+	elseif( number >= 100000000 ) then
+		return string.format("%.2f亿", number / 100000000)
 	end
-
-	return string.format("%dm", number / 1000000)
+	
+	return string.format("%d万", number / 10000)
 end
 
 function ShadowUF:GetClassColor(unit)

@@ -1,8 +1,8 @@
-## Interface: 90100
+## Interface: 90105
 ## Title: HandyNotes_LostAndFound
 ## Notes: Where the Lost and Found objects are in Pandaria
 ## Author: Kemayo
-## Version: 1e93e7c
+## Version: e0c8866
 ## DefaultState: enabled
 ## X-Category: Map
 ## X-eMail: kemayo @ gmail DOT com

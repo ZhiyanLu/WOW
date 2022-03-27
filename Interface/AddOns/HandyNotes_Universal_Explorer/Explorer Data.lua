@@ -38,23 +38,23 @@ plugin.points = {
 		},
 	[10] = {	-- Explore Northern Barrens: 750
 			[66001200] = {achievement=750, criteria=917,},		-- Boulder Lode Mine
-			[57001900] = {achievement=750, criteria=14078,},	-- Lushwater Oasis
+			[40267495] = {achievement=750, criteria=14078,},	-- Lushwater Oasis
 			[42001500] = {achievement=750, criteria=14079,},	-- The Mor'shan Rampart
-			[27003100] = {achievement=750, criteria=918,},		-- The Sludge Fen
+			[57961950] = {achievement=750, criteria=918,},		-- The Sludge Fen
 			[36004500] = {achievement=750, criteria=920,},		-- Dreadmist Peak
-			[42003800] = {achievement=750, criteria=921,},		-- The Dry Hills
+			[27593168] = {achievement=750, criteria=921,},		-- The Dry Hills
 			[53004100] = {achievement=750, criteria=922,},		-- The Forgotten Pools
-			[67003900] = {achievement=750, criteria=924,},		-- Grol'dom Farm
-			[58004900] = {achievement=750, criteria=925,},		-- Far Watch Post
+			[53844104] = {achievement=750, criteria=924,},		-- Grol'dom Farm
+			[67703916] = {achievement=750, criteria=925,},		-- Far Watch Post ( Updated thanks to Slick1342 )
 			[49005800] = {achievement=750, criteria=926,},		-- Thorn Hill
 			[67007200] = {achievement=750, criteria=927,},		-- The Crossroads
 			[70008900] = {achievement=750, criteria=928,},		-- The Stagnant Oasis
 			[55008000] = {achievement=750, criteria=929,},		-- Ratchet
-			[40007400] = {achievement=750, criteria=930,},		-- The Merchant Coast
+			[68657071] = {achievement=750, criteria=930,},		-- The Merchant Coast ( Updated thanks to Slick1342 )
 		},
 	[57] = {	-- Explore Teldrassil: 842
 			[58003600] = {achievement=842, criteria=1299,},		-- Shadowglen
-			[46005100] = {achievement=842, criteria=14088,},	-- The Cleft
+			[50203836] = {achievement=842, criteria=14088,},	-- The Cleft ( Updated thanks to Slick1342 )
 			[51003800] = {achievement=842, criteria=14089,},	-- Dolanaar
 			[55005200] = {achievement=842, criteria=1300,},		-- Ban'ethil Hollow
 			[44006700] = {achievement=842, criteria=1302,},		-- Gnarlpine Hold
@@ -1676,6 +1676,3 @@ plugin.points = {
 
 -- DATABASE END
 }
-
-
-

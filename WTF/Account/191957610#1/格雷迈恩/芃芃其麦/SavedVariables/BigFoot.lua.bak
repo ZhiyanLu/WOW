@@ -1,0 +1,50 @@
+
+BF_Frames_Config = {
+	["BUFTargetTargetFrame"] = {
+		["offX"] = 0,
+		["point"] = "BOTTOMRIGHT",
+		["region"] = "TargetFrame",
+		["offY"] = -18,
+		["refPoint"] = "BOTTOMRIGHT",
+	},
+	["BFGPSButton"] = {
+		["offX"] = 0,
+		["point"] = "TOPRIGHT",
+		["region"] = "UIParent",
+		["offY"] = -80.3136291503906,
+		["refPoint"] = "TOPRIGHT",
+	},
+	["CoolLine"] = {
+	},
+	["TrinketMenu_MainFrame"] = {
+		["offX"] = 699.5103759765625,
+		["point"] = "TOPLEFT",
+		["region"] = "UIParent",
+		["offY"] = 346.7890625,
+		["refPoint"] = "BOTTOMLEFT",
+	},
+	["BUFFocusFrame"] = {
+		["offX"] = -58.9999961853027,
+		["point"] = "TOPLEFT",
+		["region"] = "UIParent",
+		["offY"] = -20.83664894104,
+		["refPoint"] = "TOPLEFT",
+	},
+	["BCanMove"] = false,
+}
+BigFoot_Character = {
+	["Region"] = "cn0",
+	["Gender"] = 2,
+	["Race"] = "血精灵",
+	["Name"] = "芃芃其麦",
+	["Faction"] = 1,
+	["Class"] = "武僧",
+	["Level"] = 60,
+	["VCode"] = "361239840158805011520725068223476510510",
+	["Realm"] = "格雷迈恩",
+}
+BigFoot_SysTemSetTab = {
+	["showGarrisonMinimapButton"] = false,
+	["BigFoot_LoadBefore"] = 1,
+	["UtilsPatchVersion"] = "2020-03-26",
+}

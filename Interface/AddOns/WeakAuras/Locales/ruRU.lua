@@ -124,6 +124,8 @@ L["Armor Rating"] = "Количество брони"
 L["Array"] = "Массив"
 L["Ascending"] = "По возрастанию"
 L["Assigned Role"] = "Выбранная роль"
+--[[Translation missing --]]
+L["Assigned Role Icon"] = "Assigned Role Icon"
 L["At Least One Enemy"] = "Хотя бы один противник"
 L["At missing Value"] = "От недостающего значения"
 L["At Percent"] = "В процентах"
@@ -190,6 +192,8 @@ L["Blizzard Combat Text"] = "Текст боя Blizzard"
 L["Block"] = "Блок"
 L["Block (%)"] = "Блок"
 L["Block against Target (%)"] = "Блок против текущей цели"
+--[[Translation missing --]]
+L["Block Value"] = "Block Value"
 L["Blocked"] = "Заблокировано"
 L["Bloodlord Mandokir"] = "Мандокир Повелитель Крови"
 L["Border"] = "Граница"
@@ -205,6 +209,8 @@ L["Bounce with Decay"] = "Отскок с затуханием"
 L["Broodlord Lashlayer"] = "Предводитель драконов Разящий Бич"
 L["Brutallus"] = "Бруталл"
 L["Buff"] = "Бафф"
+--[[Translation missing --]]
+L["Buff/Debuff"] = "Buff/Debuff"
 L["Buffed/Debuffed"] = "Есть бафф / дебафф"
 L["Buru the Gorger"] = "Буру Ненасытный"
 L["Can be used for e.g. checking if \"boss1target\" is the same as \"player\"."] = [=[Используется для проверки того факта, что две единицы - одна и та же сущность, объект.
@@ -232,7 +238,22 @@ L["Channel (Spell)"] = "Потоковое"
 L["Character Stats"] = "Характеристики персонажа"
 L["Character Type"] = "Тип персонажа"
 L["Charge gained/lost"] = "Событие заряда"
-L["Charged Combo Point"] = "Заряженные анимой приемы"
+--[[Translation missing --]]
+L["Charged Combo Point (1)"] = "Charged Combo Point (1)"
+--[[Translation missing --]]
+L["Charged Combo Point (2)"] = "Charged Combo Point (2)"
+--[[Translation missing --]]
+L["Charged Combo Point (3)"] = "Charged Combo Point (3)"
+--[[Translation missing --]]
+L["Charged Combo Point (4)"] = "Charged Combo Point (4)"
+--[[Translation missing --]]
+L["Charged Combo Point 1"] = "Charged Combo Point 1"
+--[[Translation missing --]]
+L["Charged Combo Point 2"] = "Charged Combo Point 2"
+--[[Translation missing --]]
+L["Charged Combo Point 3"] = "Charged Combo Point 3"
+--[[Translation missing --]]
+L["Charged Combo Point 4"] = "Charged Combo Point 4"
 L["Charges"] = "Заряды"
 L["Charges Changed Event"] = "Изменение зарядов"
 L["Chat Frame"] = "Окно чата"
@@ -324,7 +345,6 @@ L["Distance"] = "Расстояние"
 L["Dodge"] = "Уклонение"
 L["Dodge (%)"] = "Уклонение"
 L["Dodge Rating"] = "Показатель уклонения"
-L["Done"] = "Выполнено"
 L["Down"] = "Вниз"
 L["Down, then Left"] = "Вниз, затем влево"
 L["Down, then Right"] = "Вниз, затем вправо"
@@ -471,6 +491,8 @@ L["Heal Absorb"] = "Поглощение исцеления"
 L["Heal Absorbed"] = "Исцеление поглощено"
 L["Health"] = "Здоровье"
 L["Health (%)"] = "Здоровье (%)"
+--[[Translation missing --]]
+L["Health Deficit"] = "Health Deficit"
 L["Heigan the Unclean"] = "Хейган Нечестивый"
 L["Height"] = "Высота"
 L["Hex Lord Malacrass"] = "Повелитель проклятий Малакрасс"
@@ -486,6 +508,8 @@ L["High Priestess Jeklik"] = "Верховная жрица Джеклик"
 L["High Priestess Mar'li"] = "Верховная жрица Мар'ли"
 L["High Warlord Naj'entus"] = "Верховный полководец Надж'ентус"
 L["Higher Than Tank"] = "Больше чем у основной цели"
+L["Hit (%)"] = "Меткость"
+L["Hit Rating"] = "Показатель меткости"
 L["Holy Resistance"] = "Сопротивление светлой магии"
 L["Horde"] = "Орда"
 L["Hostile"] = "Враждебный"
@@ -512,11 +536,15 @@ L["Importing is disabled while in combat"] = "Импорт отключен во
 L["In Combat"] = "В бою"
 L["In Encounter"] = "В сражении с боссом"
 L["In Group"] = "В группе"
+--[[Translation missing --]]
+L["In Party"] = "In Party"
 L["In Pet Battle"] = "В битве питомцев"
 L["In Raid"] = "В рейде"
 L["In Vehicle"] = "На транспорте"
 L["Include Bank"] = "Включая банк"
 L["Include Charges"] = "Включая заряды"
+--[[Translation missing --]]
+L["Include Pets"] = "Include Pets"
 L["Incoming Heal"] = "Поступающее исцеление"
 L["Increase Precision Below"] = "Увеличить точность, если меньше"
 L["Information"] = "Сообщение"
@@ -683,7 +711,6 @@ L["Nefarian"] = "Нефариан"
 L["Netherspite"] = "Гнев Пустоты"
 L["Neutral"] = "Нейтральный"
 L["Never"] = "Никогда"
-L["Next"] = "Далее"
 L["Next Combat"] = "Режим боя"
 L["Next Encounter"] = "Сражение с боссом"
 L["Nightbane"] = "Ночная Погибель"
@@ -695,10 +722,14 @@ L["None"] = "Нет"
 L["Non-player Character"] = "Неигровой персонаж (NPC)"
 L["Normal"] = "Обычный"
 L["Not in Group"] = "Не в группе"
+--[[Translation missing --]]
+L["Not in Smart Group"] = "Not in Smart Group"
 L["Not on Cooldown"] = "Не перезаряжается"
 L["Not On Threat Table"] = "Не в списке угроз"
 L["Note, that cross realm transmission is possible if you are on the same group"] = [=[Передача данных между игровыми мирами возможна,
 если вы находитесь в одной группе!]=]
+--[[Translation missing --]]
+L["Note: Due to how complicated the swing timer behaviour is and the lack of APIs from Blizzard, results are inaccurate in edge cases."] = "Note: Due to how complicated the swing timer behaviour is and the lack of APIs from Blizzard, results are inaccurate in edge cases."
 L["Note: 'Hide Alone' is not available in the new aura tracking system. A load option can be used instead."] = "|cFFFFCC00Предупреждение.|r Параметр \"Скрыть когда не в группе\" недоступен в новой версии триггера. Вместо него может быть использовано соответствующее условие на вкладке Загрузка."
 L["Note: The available text replacements for multi triggers match the normal triggers now."] = "|cFFFFCC00Примечение.|r Теперь для данного варианта триггера (несколько целей) доступны такие же специальные коды отображения динамической информации в тексте, как и для остальных."
 L["Note: This trigger type estimates the range to the hitbox of a unit. The actual range of friendly players is usually 3 yards more than the estimate. Range checking capabilities depend on your current class and known abilities as well as the type of unit being checked. Some of the ranges may also not work with certain NPCs.|n|n|cFFAAFFAAFriendly Units:|r %s|n|cFFFFAAAAHarmful Units:|r %s|n|cFFAAAAFFMiscellanous Units:|r %s"] = "|cFFFFCC00Примечание.|r Триггер оценивает (определяет приближённо) расстояние до хитбокса единицы. Фактическое расстояние до дружественных игроков обычно на 3 метра больше оценки. Возможности проверки дистанции зависят от вашего текущего класса, имеющихся способностей и от типа проверяемой единицы. Некоторые диапазоны могут не работать с отдельными NPC. |n|n|cFFAAFFAACоюзники:|r %s|n|cFFFFAAAAПротивники:|r %s|n|cFFAAAAFFПрочие цели:|r %s"
@@ -757,6 +788,8 @@ L["Pet"] = "Питомец"
 L["Pet Behavior"] = "Поведение питомца"
 L["Pet Specialization"] = "Специализация питомца"
 L["Pet Spell"] = "Заклинание питомца"
+--[[Translation missing --]]
+L["Pets only"] = "Pets only"
 L["Phase"] = "Фаза"
 L["Pixel Glow"] = "Пиксельное свечение"
 L["Placement"] = "Размещение"
@@ -775,9 +808,13 @@ L["Player Race"] = "Раса игрока"
 L["Player(s) Affected"] = "Задействованные игроки"
 L["Player(s) Not Affected"] = "Незадействованные игроки"
 L["Player/Unit Info"] = "Информация об игроке / единице"
+--[[Translation missing --]]
+L["Players and Pets"] = "Players and Pets"
 L["Poison"] = "Яд"
 L["Power"] = "Энергия"
 L["Power (%)"] = "Энергия (%)"
+--[[Translation missing --]]
+L["Power Deficit"] = "Power Deficit"
 L["Power Type"] = "Тип энергии"
 L["Precision"] = "Точность"
 L["Preset"] = "Набор эффектов"
@@ -808,6 +845,8 @@ L["Raid (Heroic)"] = "Рейд (героический)"
 L["Raid (Mythic)"] = "Рейд (эпохальный)"
 L["Raid (Normal)"] = "Рейд (обычный)"
 L["Raid (Timewalking)"] = "Рейд (путешествие во времени)"
+--[[Translation missing --]]
+L["Raid Mark"] = "Raid Mark"
 L["Raid Role"] = "Роль в рейде"
 L["Raid Warning"] = "Объявление рейду"
 L["Raids"] = "Рейды"
@@ -842,27 +881,6 @@ L["Requesting display information from %s ..."] = "Запрос информац
 L["Require Valid Target"] = "Требуется допустимая цель"
 L["Resist"] = "Сопротивление"
 L["Resisted"] = "Сопротивление"
-L["Resolve collisions dialog"] = [=[Вы включили аддон в котором определены индикации |cFF8800FFWeakAuras|r которые имеют те же имена, что и существующие.
-
-Вы должны переименовать ваши индикации, чтобы не было конфликта.
-
-Resolved: |cFFFF0000]=]
-L["Resolve collisions dialog singular"] = [=[Вы включили аддон в котором определена индикация |cFF8800FFWeakAuras|r которая имеет то же имя, что и существующая.
-
-Вы должны переименовать вашу индикацию, чтобы не было конфликта.
-
-Resolved: |cFFFF0000]=]
-L["Resolve collisions dialog startup"] = [=[Вы включили аддон в котором определены индикации |cFF8800FFWeakAuras|r которые имеют те же имена, что и существующие.
-
-
-Вы должны переименовать ваши индикации, чтобы не было конфликта.
-
-Resolved: |cFFFF0000]=]
-L["Resolve collisions dialog startup singular"] = [=[Вы включили аддон в котором определена индикация |cFF8800FFWeakAuras|r которая имеет то же имя, что и существующая.
-
-Вы должны переименовать вашу индикацию, чтобы не было конфликта.
-
-Resolved: |cFFFF0000]=]
 L["Rested"] = "Доп. опыт после отдыха"
 L["Rested Experience"] = "Доп. опыт после отдыха"
 L["Rested Experience (%)"] = "Доп. опыт после отдыха (%)"
@@ -978,6 +996,8 @@ L["Spell Usable"] = "Заклинание доступно"
 L["Spin"] = "Вращение"
 L["Spiral"] = "Спираль"
 L["Spiral In And Out"] = "Спираль (вперед-назад)"
+--[[Translation missing --]]
+L["Spirit"] = "Spirit"
 L["Stack Count"] = "Количество стаков"
 L["Stacks"] = "Стаки"
 L["Stage"] = "Фаза"
@@ -1049,6 +1069,8 @@ L["This aura has legacy aura trigger(s), which are no longer supported."] = "И�
 L["This aura was created with a newer version of WeakAuras."] = "Индикация была создана в новой версии WeakAuras."
 L["This aura was created with the Classic version of World of Warcraft."] = "Индикация была создана в Classic версии WoW."
 L["This aura was created with the retail version of World of Warcraft."] = "Индикация была создана в Retail версии WoW."
+--[[Translation missing --]]
+L["This import requires a newer WeakAuras version."] = "This import requires a newer WeakAuras version."
 L["This is a modified version of your aura, |cff9900FF%s.|r"] = [=[Это модифицированная версия вашей индикации:
 |cff9900FF%s|r.
 ]=]

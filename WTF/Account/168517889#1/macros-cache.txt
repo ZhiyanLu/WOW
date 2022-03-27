@@ -44,6 +44,10 @@ VER 3 0000000000000054 "低吼" "INV_MISC_QUESTIONMARK"
 /cast 低吼
 /shout hi，孙子！
 END
+VER 3 000000000000005E "冲锋" "INV_Misc_QuestionMark"
+#showtooltip 野性冲锋
+/cast [target=mouseover,nomodifier,exists] 野性冲锋
+END
 VER 3 0000000000000034 "取消伤害治疗数字" "INV_MISC_QUESTIONMARK"
 /console floatingCombatTextCombatDamage 0
 /console floatingCombatTextCombatHealing 0
@@ -68,6 +72,18 @@ VER 3 000000000000003E "屏蔽文字过滤" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000002B "开怪" "SPELL_MISC_PETHEAL"
 /dbm pull 5
+END
+VER 3 0000000000000060 "急奔" "INV_Misc_QuestionMark"
+#showtooltip 急奔
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+/castsequence reset=20 急奔,树人形态
+END
+VER 3 0000000000000061 "急奔" "INV_Misc_QuestionMark"
+#showtooltip 急奔
+/use [nostealth]棱彩装饰
+/use [nostealth]泡泡棒
+/castsequence reset=20 急奔,枭兽形态
 END
 VER 3 0000000000000058 "控制" "INV_Misc_QuestionMark"
 #showtooltip
@@ -104,13 +120,13 @@ END
 VER 3 000000000000004F "火箭" "443328"
 /use 6
 END
-VER 3 0000000000000055 "炉石" "1444943"
-/use 达拉然炉石
+VER 3 0000000000000056 "炉石" "134414"
+/use 炉石
 /console SET portal "TW"
 /console SET profanityFilter "0"
 END
-VER 3 0000000000000056 "炉石" "134414"
-/use 炉石
+VER 3 0000000000000055 "炉石" "1444943"
+/use 达拉然炉石
 /console SET portal "TW"
 /console SET profanityFilter "0"
 END
@@ -118,6 +134,11 @@ VER 3 000000000000004B "炉石" "INV_MISC_QUESTIONMARK"
 /use 法夜炉石
 /console SET portal "TW"
 /console SET profanityFilter "0"
+END
+VER 3 0000000000000062 "狂暴" "INV_Misc_QuestionMark"
+#showtooltip
+/use 狂暴
+/use 不可思议的量子装置
 END
 VER 3 0000000000000059 "猛虎之怒" "134400"
 /cast 猛虎之怒
@@ -134,7 +155,12 @@ VER 3 0000000000000037 "聊天乱码" "INV_MISC_QUESTIONMARK"
 /console SET portal "TW"
 /console SET profanityFilter "0"
 END
-VER 3 000000000000005A "超凡" "INV_Misc_QuestionMark"
+VER 3 000000000000005C "超凡" "INV_Misc_QuestionMark"
+#showtooltip
+/use 超凡之盟
+/use 导师的圣钟
+END
+VER 3 000000000000005D "超凡" "INV_Misc_QuestionMark"
 #showtooltip
 /use 超凡之盟
 /use 自省强化

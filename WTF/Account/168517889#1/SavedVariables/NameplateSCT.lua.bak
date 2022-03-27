@@ -9,8 +9,7 @@ NameplateSCTDB = {
 		["余生请多指教 - 格雷迈恩"] = "Default",
 	},
 	["global"] = {
-		["yOffsetPersonal"] = -200,
-		["personal"] = false,
+		["xOffset"] = 75,
 		["yOffset"] = 40,
 		["formatting"] = {
 			["alpha"] = 0.8,
@@ -27,18 +26,19 @@ NameplateSCTDB = {
 			["crit"] = "disabled",
 			["miss"] = "disabled",
 		},
+		["animations"] = {
+			["autoattackcrit"] = "disabled",
+			["autoattack"] = "disabled",
+			["miss"] = "disabled",
+			["animationspeed"] = 2,
+			["crit"] = "fountain",
+			["normal"] = "fountain",
+		},
+		["yOffsetPersonal"] = -200,
 		["sizing"] = {
 			["critsScale"] = 1,
 		},
-		["animations"] = {
-			["autoattack"] = "disabled",
-			["normal"] = "fountain",
-			["miss"] = "disabled",
-			["crit"] = "fountain",
-			["animationspeed"] = 2,
-			["autoattackcrit"] = "disabled",
-		},
 		["textShadow"] = false,
-		["xOffset"] = 75,
+		["personal"] = false,
 	},
 }

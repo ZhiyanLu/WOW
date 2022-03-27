@@ -1,6 +1,6 @@
 # <DBM> Outlands
 
-## [r681](https://github.com/DeadlyBossMods/DBM-BCVanilla/tree/r681) (2021-07-21)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-BCVanilla/compare/r680...r681) [Previous Releases](https://github.com/DeadlyBossMods/DBM-BCVanilla/releases)
+## [r683-1-g6ce64e8](https://github.com/DeadlyBossMods/DBM-BCVanilla/tree/6ce64e8592da80425bf08406067ba7ea8060832d) (2021-11-02)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-BCVanilla/compare/r683...6ce64e8592da80425bf08406067ba7ea8060832d) [Previous Releases](https://github.com/DeadlyBossMods/DBM-BCVanilla/releases)
 
-- Update world boss sync code  
+- Disable player regen for leo  

@@ -1,4 +1,4 @@
-﻿
+
 MEETINGSTONE_CHARACTER_DB = {
 	["profileKeys"] = {
 		["Magiccreamdk - 格雷迈恩"] = "Magiccreamdk - 格雷迈恩",

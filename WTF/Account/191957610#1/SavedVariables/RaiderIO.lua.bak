@@ -1,0 +1,12 @@
+
+RaiderIO_Config = {
+	["previouslyEnabledLogging"] = false,
+}
+RaiderIO_LastCharacter = "cn-芃芃其麦-greymane"
+RaiderIO_MissingCharacters = {
+	["cn-萧丨瑟丶-alar"] = true,
+	["cn-芃芃其麦-greymane"] = true,
+}
+RaiderIO_MissingServers = {
+}
+RaiderIO_CachedRuns = nil

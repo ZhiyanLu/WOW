@@ -5,10 +5,9 @@ Quartz3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["barcolor"] = {
-						nil, -- [1]
-						0, -- [2]
-						0.0274509803921569, -- [3]
-						1, -- [4]
+						[3] = 0.027450980392157,
+						[2] = 0,
+						[4] = 1,
 					},
 					["swingheight"] = 20,
 					["swingalpha"] = 0.6,
@@ -22,7 +21,7 @@ Quartz3DB = {
 		},
 		["Mirror"] = {
 		},
-		["ArcaneMage"] = {
+		["Magebuff"] = {
 		},
 		["GCD"] = {
 			["profiles"] = {
@@ -52,20 +51,19 @@ Quartz3DB = {
 		["Target"] = {
 			["profiles"] = {
 				["Default"] = {
+					["timetextx"] = 0,
 					["h"] = 29,
 					["timefontsize"] = 20,
 					["w"] = 427,
-					["y"] = 220,
-					["x"] = 0,
+					["font"] = "伤害数字",
 					["iconalpha"] = 1,
 					["icongap"] = 0,
 					["iconposition"] = "left",
 					["point"] = "CENTER",
 					["fontsize"] = 20,
 					["texture"] = "Gloss",
-					["font"] = "伤害数字",
+					["x"] = 0,
 					["noInterruptChangeBorder"] = false,
-					["timetextx"] = 0,
 					["nametextx"] = 10,
 				},
 			},
@@ -73,7 +71,7 @@ Quartz3DB = {
 		["Power"] = {
 			["profiles"] = {
 				["Default"] = {
-					["x"] = 703.137289229673,
+					["x"] = 703.13728922967,
 				},
 			},
 		},
@@ -84,8 +82,8 @@ Quartz3DB = {
 		["Pet"] = {
 			["profiles"] = {
 				["Default"] = {
-					["y"] = 258.169904129981,
-					["x"] = 698.954159691453,
+					["y"] = 258.16990412998,
+					["x"] = 698.95415969145,
 				},
 			},
 		},
@@ -97,11 +95,11 @@ Quartz3DB = {
 					["targetname"] = true,
 					["w"] = 427,
 					["y"] = 136,
-					["x"] = 635,
+					["font"] = "伤害数字",
 					["iconalpha"] = 0.8,
 					["icongap"] = 0,
 					["fontsize"] = 20,
-					["font"] = "伤害数字",
+					["x"] = 635,
 					["nametextx"] = 10,
 					["timetextx"] = 0,
 					["texture"] = "Gloss",
@@ -110,7 +108,7 @@ Quartz3DB = {
 		},
 		["Procs"] = {
 		},
-		["Magebuff"] = {
+		["ArcaneMage"] = {
 		},
 		["Range"] = {
 		},
@@ -137,9 +135,9 @@ Quartz3DB = {
 					["lagalpha"] = 1,
 					["lagfont"] = "伤害数字",
 					["lagtextcolor"] = {
-						0.952941176470588, -- [1]
+						0.95294117647059, -- [1]
 						0, -- [2]
-						0.0588235294117647, -- [3]
+						0.058823529411765, -- [3]
 						1, -- [4]
 					},
 				},
@@ -154,10 +152,10 @@ Quartz3DB = {
 		["Magiccream - 格雷迈恩"] = "Default",
 		["Magiccreamdz - 凤凰之神"] = "Default",
 		["麦吉克库瑞姆 - 格雷迈恩"] = "Default",
+		["余生请多指教 - 格雷迈恩"] = "Default",
 		["Magiccreamcn - 格雷迈恩"] = "Default",
 		["Magiccreamdk - 格雷迈恩"] = "Default",
 		["哈尼臭嗨 - 格雷迈恩"] = "Default",
-		["余生请多指教 - 格雷迈恩"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -169,15 +167,15 @@ Quartz3DB = {
 				1, -- [4]
 			},
 			["modules"] = {
-				["Tradeskill"] = false,
+				["Swing"] = false,
 				["Buff"] = false,
 				["Interrupt"] = false,
 				["Flight"] = false,
-				["Pet"] = false,
-				["Timer"] = false,
-				["Mirror"] = false,
-				["Swing"] = false,
 				["Range"] = false,
+				["Timer"] = false,
+				["Tradeskill"] = false,
+				["Pet"] = false,
+				["Mirror"] = false,
 			},
 			["backgroundalpha"] = 0.5,
 			["hidesamwise"] = false,

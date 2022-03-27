@@ -1,0 +1,23 @@
+
+InspectEquipConfig = {
+	["showAvgItemLevel"] = false,
+	["listItemLevels"] = false,
+	["maxSourceCount"] = 10,
+	["charWindow"] = false,
+	["showArtifactRelics"] = true,
+	["inspectWindow"] = false,
+	["checkEnchants"] = false,
+}
+InspectEquipLocalDB = {
+	["Zones"] = {
+	},
+	["Expansion"] = 7,
+	["Locale"] = "zhCN",
+	["Items"] = {
+	},
+	["Bosses"] = {
+	},
+	["ClientBuild"] = "35662",
+	["NextBossID"] = 1000,
+	["NextZoneID"] = 1000,
+}

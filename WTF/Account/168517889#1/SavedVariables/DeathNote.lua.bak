@@ -6,9 +6,9 @@ DeathNoteDB = {
 		["Magiccream - 格雷迈恩"] = "Magiccream - 格雷迈恩",
 		["Magiccreamdz - 凤凰之神"] = "Magiccreamdz - 凤凰之神",
 		["哈尼臭嗨 - 格雷迈恩"] = "哈尼臭嗨 - 格雷迈恩",
-		["Magiccreamcn - 格雷迈恩"] = "Magiccreamcn - 格雷迈恩",
-		["Magiccreamdk - 格雷迈恩"] = "Magiccreamdk - 格雷迈恩",
 		["Magiccream - 冰风岗"] = "Magiccream - 冰风岗",
+		["Magiccreamcn - 格雷迈恩"] = "Magiccreamcn - 格雷迈恩",
+		["Magiccreamdk - 格雷迈恩"] = "Magiccream - 格雷迈恩",
 		["麦吉克库瑞姆 - 格雷迈恩"] = "麦吉克库瑞姆 - 格雷迈恩",
 	},
 	["profiles"] = {
@@ -19,10 +19,10 @@ DeathNoteDB = {
 		["Magiccream - 格雷迈恩"] = {
 			["searchbox_text"] = "",
 			["display_filters"] = {
-				["highlight_survival"] = false,
+				["buff_gains"] = false,
 				["damage_threshold"] = 1000,
 				["survival_buffs"] = false,
-				["buff_gains"] = false,
+				["highlight_survival"] = false,
 				["heal_threshold"] = 1000,
 				["debuff_fades"] = false,
 				["buff_fades"] = false,
@@ -30,17 +30,17 @@ DeathNoteDB = {
 			["death_time"] = 20,
 			["display"] = {
 				["columns"] = {
-					69.7777252197266, -- [1]
-					89.9999771118164, -- [2]
-					123.111228942871, -- [3]
-					100.000114440918, -- [4]
+					69.777725219727, -- [1]
+					89.999977111816, -- [2]
+					123.11122894287, -- [3]
+					100.00011444092, -- [4]
 				},
 				["w"] = 880.4446411132812,
-				["y"] = -25.33274841308594,
-				["x"] = -4.888946533203125,
-				["namelist_width"] = 252.888900756836,
+				["y"] = 38.66744995117188,
 				["h"] = 650.222412109375,
+				["namelist_width"] = 252.88890075684,
 				["namelist"] = 2,
+				["x"] = -107.1111450195313,
 			},
 			["max_deaths"] = 500,
 		},
@@ -48,10 +48,56 @@ DeathNoteDB = {
 			["searchbox_text"] = "",
 			["display"] = {
 				["y"] = -58.22216796875,
-				["x"] = 48.00006103515625,
-				["w"] = 796.0001831054688,
-				["h"] = 616.4443969726562,
+				["x"] = 48.000061035156,
+				["w"] = 796.00018310547,
+				["h"] = 616.44439697266,
 			},
+			["display_filters"] = {
+				["debuff_fades"] = false,
+				["buff_fades"] = false,
+				["buff_gains"] = false,
+			},
+		},
+		["麦吉克库瑞姆 - 格雷迈恩"] = {
+			["death_time"] = 15,
+			["display"] = {
+				["y"] = -52.444412231445,
+				["x"] = 2.2228393554688,
+				["columns"] = {
+					69.777603149414, -- [1]
+					89.999977111816, -- [2]
+					124.0000076294, -- [3]
+				},
+				["w"] = 997.77825927734,
+				["h"] = 594.22235107422,
+			},
+			["max_deaths"] = 100,
+			["searchbox_text"] = "",
+			["display_filters"] = {
+				["debuff_fades"] = false,
+				["buff_fades"] = false,
+				["survival_buffs"] = false,
+				["buff_gains"] = false,
+			},
+		},
+		["Magiccreamcn - 格雷迈恩"] = {
+		},
+		["Magiccreamdk - 格雷迈恩"] = {
+			["display"] = {
+				["y"] = -26.222366333008,
+				["namelist"] = 2,
+				["columns"] = {
+					59.999988555908, -- [1]
+					89.999977111816, -- [2]
+					89.333305358887, -- [3]
+					148.88890075684, -- [4]
+				},
+				["h"] = 504.4443359375,
+				["w"] = 860.88897705078,
+				["x"] = -188.00003051758,
+			},
+			["searchbox_text"] = "",
+			["unit_menu"] = true,
 			["display_filters"] = {
 				["debuff_fades"] = false,
 				["buff_fades"] = false,
@@ -60,53 +106,7 @@ DeathNoteDB = {
 		},
 		["哈尼臭嗨 - 格雷迈恩"] = {
 		},
-		["Magiccreamcn - 格雷迈恩"] = {
-		},
-		["Magiccreamdk - 格雷迈恩"] = {
-			["display_filters"] = {
-				["debuff_fades"] = false,
-				["buff_fades"] = false,
-				["buff_gains"] = false,
-			},
-			["display"] = {
-				["y"] = -26.22236633300781,
-				["h"] = 504.4443359375,
-				["columns"] = {
-					59.9999885559082, -- [1]
-					89.9999771118164, -- [2]
-					89.33330535888672, -- [3]
-					148.8889007568359, -- [4]
-				},
-				["x"] = -188.0000305175781,
-				["w"] = 860.8889770507812,
-				["namelist"] = 2,
-			},
-			["unit_menu"] = true,
-			["searchbox_text"] = "",
-		},
 		["Magiccream - 冰风岗"] = {
-		},
-		["麦吉克库瑞姆 - 格雷迈恩"] = {
-			["death_time"] = 15,
-			["searchbox_text"] = "",
-			["max_deaths"] = 100,
-			["display_filters"] = {
-				["debuff_fades"] = false,
-				["buff_fades"] = false,
-				["survival_buffs"] = false,
-				["buff_gains"] = false,
-			},
-			["display"] = {
-				["y"] = -52.44441223144531,
-				["x"] = 2.22283935546875,
-				["columns"] = {
-					69.7776031494141, -- [1]
-					89.9999771118164, -- [2]
-					124.000007629395, -- [3]
-				},
-				["w"] = 997.7782592773438,
-				["h"] = 594.2223510742188,
-			},
 		},
 	},
 }

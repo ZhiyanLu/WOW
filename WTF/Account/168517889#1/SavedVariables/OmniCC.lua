@@ -5,12 +5,12 @@ OmniCCDB = {
 		["addonVersion"] = "9.1.0",
 	},
 	["profileKeys"] = {
-		["Magiccreamdz - 凤凰之神"] = "默认",
-		["麦吉克库瑞姆 - 格雷迈恩"] = "默认",
 		["余生请多指教 - 格雷迈恩"] = "默认",
+		["哈尼臭嗨 - 格雷迈恩"] = "默认",
+		["Magiccreamdz - 凤凰之神"] = "默认",
 		["Magiccreamdk - 格雷迈恩"] = "默认",
 		["Magiccream - 格雷迈恩"] = "默认",
-		["哈尼臭嗨 - 格雷迈恩"] = "默认",
+		["麦吉克库瑞姆 - 格雷迈恩"] = "默认",
 	},
 	["profiles"] = {
 		["默认"] = {
@@ -21,7 +21,6 @@ OmniCCDB = {
 					},
 					["id"] = "Threat Plates",
 					["priority"] = 1,
-					["theme"] = "Threat Plates",
 				}, -- [1]
 				{
 					["priority"] = 2,
@@ -77,16 +76,19 @@ OmniCCDB = {
 							["scale"] = 1,
 						},
 					},
-					["minDuration"] = 3,
-					["anchor"] = "TOPRIGHT",
+					["minDuration"] = 0,
+					["tenthsDuration"] = 5,
+					["minSize"] = 0,
+					["mmSSDuration"] = 300,
 					["effect"] = "none",
 					["spiralOpacity"] = 0.6,
 					["yOff"] = 5,
 					["xOff"] = 10,
 					["name"] = "163UI_Grid",
 					["fontSize"] = 26,
+					["minEffectDuration"] = 0,
 					["version"] = "20191126",
-					["minSize"] = 0.1,
+					["anchor"] = "TOPRIGHT",
 				},
 				["TMW"] = {
 					["textStyles"] = {
@@ -107,25 +109,30 @@ OmniCCDB = {
 							["scale"] = 1,
 						},
 					},
-					["fontSize"] = 17,
-					["tenthsDuration"] = 5.00000007450581,
+					["fontFace"] = "Fonts\\ARKai_T.TTF",
+					["tenthsDuration"] = 5.0000000745058,
 					["minSize"] = 0,
 					["mmSSDuration"] = 300,
-					["spiralOpacity"] = 1.00999997742474,
+					["spiralOpacity"] = 1.0099999774247,
 					["yOff"] = 1,
-					["minEffectDuration"] = 30.0000004470348,
-					["fontFace"] = "Fonts\\ARKai_T.TTF",
+					["minEffectDuration"] = 0,
+					["fontSize"] = 17,
 					["minDuration"] = 0,
 				},
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
+						["minutes"] = {
+						},
 						["seconds"] = {
 						},
 						["soon"] = {
 						},
-						["minutes"] = {
-						},
 					},
+					["tenthsDuration"] = 5,
+					["minSize"] = 0,
+					["mmSSDuration"] = 300,
+					["minEffectDuration"] = 0,
+					["minDuration"] = 0,
 				},
 				["默认"] = {
 					["textStyles"] = {
@@ -150,7 +157,7 @@ OmniCCDB = {
 					["tenthsDuration"] = 5,
 					["minSize"] = 0,
 					["mmSSDuration"] = 300,
-					["spiralOpacity"] = 1.00999997742474,
+					["spiralOpacity"] = 1.0099999774247,
 					["minEffectDuration"] = 0,
 					["minDuration"] = 0,
 				},
@@ -174,11 +181,12 @@ OmniCCDB = {
 						},
 					},
 					["fontFace"] = "Fonts\\ARKai_T.TTF",
+					["minDuration"] = 0,
 					["tenthsDuration"] = 5,
 					["minSize"] = 0,
 					["mmSSDuration"] = 300,
-					["spiralOpacity"] = 1.00999997742474,
-					["minDuration"] = 0,
+					["spiralOpacity"] = 1.0099999774247,
+					["minEffectDuration"] = 0,
 				},
 			},
 		},
@@ -186,26 +194,22 @@ OmniCCDB = {
 }
 OmniCC4Config = {
 	["version"] = "8.2.5",
-	["groups"] = {
-		{
-			["id"] = "TMW",
-			["rules"] = {
-				"TellMeWhen", -- [1]
-			},
-			["enabled"] = true,
-		}, -- [1]
-		{
-			["id"] = "Threat Plates",
-			["rules"] = {
-				"ThreatPlates", -- [1]
-			},
-			["enabled"] = true,
-		}, -- [2]
-	},
-	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["TMW"] = {
 			["enabled"] = true,
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
+			["minDuration"] = 0,
+			["effect"] = "pulse",
+			["yOff"] = 1,
+			["mmSSDuration"] = 300,
+			["minSize"] = 0,
+			["spiralOpacity"] = 1.0099999774247,
+			["scaleText"] = true,
+			["xOff"] = 0,
+			["tenthsDuration"] = 5.0000000745058,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30.000000447035,
 			["styles"] = {
 				["minutes"] = {
 					["scale"] = 1,
@@ -226,23 +230,13 @@ OmniCC4Config = {
 					["scale"] = 1,
 				},
 			},
-			["scaleText"] = true,
-			["effect"] = "pulse",
-			["minDuration"] = 0,
-			["mmSSDuration"] = 300,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = 1,
-			["xOff"] = 0,
-			["tenthsDuration"] = 5.00000007450581,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0,
-			["minEffectDuration"] = 30.0000004470348,
-			["fontFace"] = "Fonts\\ARKai_T.TTF",
 			["fontSize"] = 17,
 		},
 		["base"] = {
 			["enabled"] = true,
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
+			["effect"] = "pulse",
+			["fontSize"] = 18,
 			["styles"] = {
 				["seconds"] = {
 					["scale"] = 1,
@@ -263,30 +257,39 @@ OmniCC4Config = {
 					["scale"] = 1,
 				},
 			},
-			["effect"] = "pulse",
-			["fontFace"] = "Fonts\\ARKai_T.TTF",
-			["fontSize"] = 18,
 			["mmSSDuration"] = 300,
-			["spiralOpacity"] = 1.00999997742474,
+			["spiralOpacity"] = 1.0099999774247,
 			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 5,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0,
 			["minEffectDuration"] = 30,
-			["minDuration"] = 0,
 			["yOff"] = 0,
+			["minDuration"] = 0,
 		},
 		["Threat Plates"] = {
 			["enabled"] = false,
+			["fontFace"] = "Fonts\\ARKai_T.TTF",
+			["effect"] = "pulse",
+			["scaleText"] = true,
+			["yOff"] = 0,
+			["mmSSDuration"] = 300,
+			["spiralOpacity"] = 1.0099999774247,
+			["minDuration"] = 0,
+			["xOff"] = 0,
+			["tenthsDuration"] = 5,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0,
+			["minEffectDuration"] = 30,
 			["styles"] = {
-				["minutes"] = {
+				["seconds"] = {
 					["scale"] = 1,
 				},
 				["soon"] = {
 					["scale"] = 1,
 				},
-				["seconds"] = {
+				["minutes"] = {
 					["scale"] = 1,
 				},
 				["hours"] = {
@@ -299,19 +302,24 @@ OmniCC4Config = {
 					["scale"] = 1,
 				},
 			},
-			["effect"] = "pulse",
-			["minDuration"] = 0,
-			["scaleText"] = true,
-			["minEffectDuration"] = 30,
-			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = 0,
-			["xOff"] = 0,
-			["tenthsDuration"] = 5,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0,
-			["mmSSDuration"] = 300,
 			["fontSize"] = 18,
-			["fontFace"] = "Fonts\\ARKai_T.TTF",
 		},
+	},
+	["engine"] = "AniUpdater",
+	["groups"] = {
+		{
+			["enabled"] = true,
+			["rules"] = {
+				"TellMeWhen", -- [1]
+			},
+			["id"] = "TMW",
+		}, -- [1]
+		{
+			["enabled"] = true,
+			["rules"] = {
+				"ThreatPlates", -- [1]
+			},
+			["id"] = "Threat Plates",
+		}, -- [2]
 	},
 }

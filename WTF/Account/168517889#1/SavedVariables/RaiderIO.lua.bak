@@ -1,10 +1,19 @@
 
 RaiderIO_Config = {
-	["previouslyEnabledLogging"] = true,
+	["previouslyEnabledLogging"] = false,
 }
 RaiderIO_LastCharacter = "cn-Magiccream-greymane"
 RaiderIO_MissingCharacters = {
-	["cn-丿莫兮丶风流-greymane"] = true,
+	["cn-惜隐-isillien"] = true,
+	["cn-Exnatural-greymane"] = true,
+	["cn-殒歌-greymane"] = true,
+	["cn-悲伤的雷同丶-greymane"] = true,
+	["cn-Phoinikas-greymane"] = true,
+	["cn-Rileyneal-greymane"] = true,
+	["cn-Exnature-greymane"] = true,
+	["cn-哈尼斯斯-greymane"] = true,
+	["cn-Exmist-greymane"] = true,
+	["cn-豆腐乾-greymane"] = true,
 	["cn-Magiccream-greymane"] = true,
 }
 RaiderIO_MissingServers = {

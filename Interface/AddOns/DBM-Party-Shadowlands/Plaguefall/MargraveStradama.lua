@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2404, "DBM-Party-Shadowlands", 2, 1183)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210127004858")
+mod:SetRevision("20211019151227")
 mod:SetCreatureID(164267)
 mod:SetEncounterID(2386)
 
@@ -26,7 +26,7 @@ mod:RegisterEventsInCombat(
 --local warnPlagueCrash				= mod:NewCountAnnounce(322473, 4)--Announces each cast of the sequence in regular warning
 
 local specWarnMalignantGrowth		= mod:NewSpecialWarningSwitch(322304, "-Healer", nil, nil, 1, 7)
-local specWarnTouchofSlime			= mod:NewSpecialWarningSoak(257314, "Tank", nil, nil, 1, 7)
+local specWarnTouchofSlime			= mod:NewSpecialWarningSoak(322236, "Tank", nil, nil, 1, 7)
 local specWarnPlagueCrash			= mod:NewSpecialWarningDodge(322473, nil, nil, nil, 2, 2)--Announces beginning of sequence in special warning
 --local specWarnGTFO				= mod:NewSpecialWarningGTFO(257274, nil, nil, nil, 1, 8)
 
@@ -46,11 +46,10 @@ function mod:OnCombatStart(delay)
 	self.vb.sinkPhase = false
 	self.vb.sinkPhaseCount = 0
 	timerMalignantGrowthCD:Start(5.6-delay)
-	timerInfectiousRainCD:Start(19.1-delay)
+	timerInfectiousRainCD:Start(15.3-delay)
 --	if self:IsMythic() then
 --		timerPlagueCrashCD:Start(14.4)
 --	end
-	DBM:AddMsg("Infectious rain timer will be wrong until updated post hotfixes")
 end
 
 function mod:OnCombatEnd()
@@ -139,9 +138,7 @@ function mod:UNIT_TARGETABLE_CHANGED(uId)
 		self.vb.sinkPhase = false
 		if self.vb.sinkPhaseCount == 1 then
 			timerMalignantGrowthCD:Start(5.6)
-			timerInfectiousRainCD:Start(19.1)
-		else--2
-			timerInfectiousRainCD:Start(6)
 		end
+		timerInfectiousRainCD:Start(15.3)
 	end
 end

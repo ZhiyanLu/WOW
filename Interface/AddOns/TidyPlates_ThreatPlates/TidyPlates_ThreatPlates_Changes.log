@@ -1,4 +1,27 @@
 ﻿------------------------------------------------------
+10.2.13 (2021-11-01)
+------------------------------------------------------
+* Updated TOC version for for Classic Patch 1.14.0.
+* Updated integrated libraries to Ace3 r1252 to fix a Lua error related to a change in the WoW Interface Options API [GH-309, GH-310].
+
+------------------------------------------------------
+10.2.12 (2021-10-23)
+------------------------------------------------------
+* Fixed a Lua error that occured sometimes when friendly pets/totems/guardians turn neutral, e.g. when losing or giving up control over them [Issue #511].
+* Updated TOC version for for TBC Classic Patch 2.5.2.
+
+------------------------------------------------------
+10.2.11 (2021-07-10)
+------------------------------------------------------
+* Fixed a Lua error that occured because of incorrectly initialized Localization [Comment #5837].
+
+------------------------------------------------------
+10.2.10 (2021-07-08)
+------------------------------------------------------
+* Added support for anima-charged combo points from new covenant legendary "Resouding Clarity" [Issue #508, Comment #5813, #5821].
+* Fixed a Lua error that occured when player totems turn into neutral totems (e.g., when the player is mind-controlled) [Issue #506, Comment #5814].
+
+------------------------------------------------------
 10.2.9 (2021-07-28)
 ------------------------------------------------------
 * Fixed a lag/freeze issue when switching talents or specs that happened when the options dialog was opened at least once [Comment #5764].

@@ -46,13 +46,13 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Magiccream"] = {
-			["curOil"] = 3560,
+			["faction"] = "Horde",
 			["summary"] = {
 				["lastOilTime"] = 1610728900,
 				["tt2"] = true,
 				["tt3"] = 1608552330,
-				["ti1"] = 118531,
 				["tt1"] = true,
+				["ti1"] = 118531,
 				["ti3"] = 127855,
 				["inProgress"] = {
 					[192] = 1546999276,
@@ -62,11 +62,11 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["faction"] = "Horde",
+			["curOil"] = 3560,
 			["cacheSize"] = 1000,
-			["class"] = "DRUID",
-			["curRes"] = 10000,
 			["lastCacheTime"] = 1546997621,
+			["curRes"] = 10000,
+			["class"] = "DRUID",
 		},
 	},
 	["冰风岗"] = {

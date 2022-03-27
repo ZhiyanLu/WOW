@@ -70,6 +70,7 @@ Ld["Disable mouseover"] = "Disable mouseover"
 Ld["Disable tooltip display on icon mouseover"] = "Disable tooltip display on icon mouseover"
 Ld["Display instances in order of recommended level from lowest to highest"] = "Display instances in order of recommended level from lowest to highest"
 Ld["Display instances with space inserted between categories"] = "Display instances with space inserted between categories"
+Ld["Doomwalker"] = "Doomwalker"
 Ld["DOS"] = "DOS"
 Ld["Dragon of Nightmare"] = "Dragon of Nightmare"
 Ld["Dump quest debugging information"] = "Dump quest debugging information"
@@ -261,6 +262,8 @@ La["Disable mouseover"] = "Désactiver le survol avec la souris"
 La["Disable tooltip display on icon mouseover"] = "Désactive l'affichage de l'infobulle lors du survol de la souris."
 La["Display instances in order of recommended level from lowest to highest"] = "Affiche les instances dans l'ordre du niveau recommandé le plus bas au plus élevé."
 La["Display instances with space inserted between categories"] = "Affiche les instances avec un espace entre les catégories."
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 La["DOS"] = "DOS"
 La["Dragon of Nightmare"] = "Les Dragons du Cauchemar"
 La["Dump quest debugging information"] = "lister les informations de débogage des quêtes"
@@ -452,6 +455,8 @@ La["Disable mouseover"] = "Mouseover deaktivieren"
 La["Disable tooltip display on icon mouseover"] = "Deaktiviert die Anzeige des Tooltips bei Zeigen auf Icons mit der Maus"
 La["Display instances in order of recommended level from lowest to highest"] = "Instanzen nach vorgeschlagenem Level anzeigen, beginnend mit der niedrigsten zur höchsten Instanz"
 La["Display instances with space inserted between categories"] = "Instanzen mit einem Freiraum zwischen den verschiedenen Kategorien anzeigen"
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 La["DOS"] = "DOS"
 La["Dragon of Nightmare"] = "Drache des Albtraums"
 La["Dump quest debugging information"] = "Quest Debugging Information"
@@ -635,8 +640,7 @@ La["Combine LFR"] = "공찾/탄공 합침"
 La["Combine World Bosses"] = "야외 보스 합침"
 La["Connected Realms"] = "연동 서버"
 La["Covenant"] = "성약의 단"
---[[Translation missing --]]
-La["Covenant Assaults"] = "Covenant Assaults"
+La["Covenant Assaults"] = "성약의 단 습격"
 La["Currency settings"] = "화폐 설정"
 --[[Translation missing --]]
 La["Cursed Coffer"] = "Cursed Coffer"
@@ -647,6 +651,8 @@ La["Disable mouseover"] = "마우스오버 사용안함"
 La["Disable tooltip display on icon mouseover"] = "아이콘 마우스 오버시 툴팁 표시 안함"
 La["Display instances in order of recommended level from lowest to highest"] = "권장 레벨이 낮은 것부터 높은 순으로 인던을 표시합니다."
 La["Display instances with space inserted between categories"] = "카테고리 사이에 공백을 삽입하여 인스턴스를 표시합니다."
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 La["DOS"] = "저편"
 La["Dragon of Nightmare"] = "악몽의 용"
 La["Dump quest debugging information"] = "퀘스트 디버그 정보 덤프하기"
@@ -858,6 +864,8 @@ La["Disable tooltip display on icon mouseover"] = "Deshabilita el marco al pasar
 La["Display instances in order of recommended level from lowest to highest"] = "Mostrar instancias en orden de nivel recomendado de menor a mayor"
 La["Display instances with space inserted between categories"] = "Mostrar instancias con espacio entre categorías"
 --[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
+--[[Translation missing --]]
 La["DOS"] = "DOS"
 --[[Translation missing --]]
 La["Dragon of Nightmare"] = "Dragon of Nightmare"
@@ -1061,8 +1069,7 @@ La["Wrath of the Jailer"] = "Wrath of the Jailer"
 La["You can combine icons and text in a single indicator if you wish. Simply choose an icon, and insert the word ICON into the text field. Anywhere the word ICON is found, the icon you chose will be substituted in."] = "Puedes unirse a los iconos y texto en un solo indicador. Seleccione un icono y escribe \"ICON\" en el cuadro de texto para indicar dónde deseas que aparezca el icono."
 
 elseif locale == "ruRU" then
-  --[[Translation missing --]]
-La["|cffffff00Click|r to open weekly rewards"] = "|cffffff00Click|r to open weekly rewards"
+  La["|cffffff00Click|r to open weekly rewards"] = "|cffffff00Нажать|r открыть еженедельные награды"
 La["|cffffff00Left-click|r to detach tooltip"] = "|cffffff00Left-click|r Информация в отдельном окне"
 La["|cffffff00Middle-click|r to show Blizzard's Raid Information"] = "Средняя кнопка мыши, чтобы показать информацию о рейдах от Blizzard"
 La["|cffffff00Right-click|r to configure SavedInstances"] = "|cffffff00Right-click|r Настройки SavedInstances"
@@ -1071,10 +1078,8 @@ La["Abbreviate Mythic keystone dungeon names"] = "Сократить назва�
 La["Account"] = "Аккаунт"
 La["Account Summary"] = "Общая сводка по аккаунту"
 La["Always show"] = "Всегда отображать"
---[[Translation missing --]]
-La["Amathet Reliquary"] = "Amathet Reliquary"
---[[Translation missing --]]
-La["Ambered Coffer"] = "Ambered Coffer"
+La["Amathet Reliquary"] = "Реликварий аматетов"
+La["Ambered Coffer"] = "Покрытый янтарем сундук"
 La["Are you sure you want to remove %s from the SavedInstances character database?"] = "Вы уверены, что хотите удалить %s из базы данных персонажей SavedInstances?"
 La["Are you sure you want to report all your keys to %s?"] = "Вы уверены, что хотите сообщить обо всех своих ключах %s?"
 La["Are you sure you want to reset the SavedInstances character database? Characters will be re-populated as you log into them."] = "Вы уверены, что хотите сбросить базу данных персонажей SavedInstances? Персонажи будут вновь запомнены, как только вы зайдёте ими в игру."
@@ -1100,10 +1105,8 @@ La["Combine emissaries of same expansion"] = "Объединить эмисса�
 La["Combine LFR"] = "Объединять СПР (LFR)"
 La["Combine World Bosses"] = "Объединять мировых босcов"
 La["Connected Realms"] = "Соединенные сервера"
---[[Translation missing --]]
-La["Covenant"] = "Covenant"
---[[Translation missing --]]
-La["Covenant Assaults"] = "Covenant Assaults"
+La["Covenant"] = "Ковенант"
+La["Covenant Assaults"] = "Атаки ковенантов"
 La["Currency settings"] = "Настройки валюты"
 --[[Translation missing --]]
 La["Cursed Coffer"] = "Cursed Coffer"
@@ -1114,6 +1117,8 @@ La["Disable mouseover"] = "Откл. отобр. по наведению"
 La["Disable tooltip display on icon mouseover"] = "Отключить отображение подсказки по наведению на иконку"
 La["Display instances in order of recommended level from lowest to highest"] = "Отображать подземелья в порядке рекомендуемого уровня от самого низкого до самого высокого"
 La["Display instances with space inserted between categories"] = "Показывать подземелья с промежутком между категориями"
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 La["DOS"] = "ТС"
 La["Dragon of Nightmare"] = "Драконы Кошмара"
 La["Dump quest debugging information"] = "Сохранить отладочную информацию квеста в файле"
@@ -1141,14 +1146,10 @@ La["Guild"] = "Гильдия"
 La["HOA"] = "ЧП"
 La["Hold Alt to show all data"] = "Нажмите Alt для просмотра всей информации"
 La["Hover mouse on indicator for details"] = "Наведите мышкой на индикатор для детальной информации"
---[[Translation missing --]]
-La["Hunt: Death Elementals"] = "Hunt: Death Elementals"
---[[Translation missing --]]
-La["Hunt: Shadehounds"] = "Hunt: Shadehounds"
---[[Translation missing --]]
-La["Hunt: Soul Eaters"] = "Hunt: Soul Eaters"
---[[Translation missing --]]
-La["Hunt: Winged Soul Eaters"] = "Hunt: Winged Soul Eaters"
+La["Hunt: Death Elementals"] = "Охота: элементали смерти"
+La["Hunt: Shadehounds"] = "Охота: Темные Гончие"
+La["Hunt: Soul Eaters"] = "Охота: Пожиратели Душ"
+La["Hunt: Winged Soul Eaters"] = "Охота: Крылатые пожиратели душ"
 La["Ignore"] = "Игнорировать"
 La["Indicators"] = "Индикатор"
 --[[Translation missing --]]
@@ -1214,7 +1215,7 @@ La["Show Holiday"] = "Показывать События"
 La["Show holiday boss rewards"] = "Показывать награду с праздничных боссов"
 La["Show minimap button"] = "Кнопка у миникарты"
 La["Show name for a category when all displayed instances belong only to that category"] = "Показать имя для категории для всех отображаемых подземелий, принадлежащих только этой категории"
-La["Show only current server"] = "Показывать только текущий серврер"
+La["Show only current server"] = "Показывать только текущий сервер"
 La["Show Random"] = "Показывать Случайный Выбор"
 La["Show random dungeon bonus reward"] = "Показывать бонусную награду за случайное подземелье"
 La["Show self always"] = "Показывать себя всегда"
@@ -1246,8 +1247,7 @@ La["Time Left"] = "Обновится через"
 La["Tooltip Scale"] = "Масштаб подсказки"
 La["TOP"] = "Театр"
 La["Torghast"] = "Торгаст"
---[[Translation missing --]]
-La["Tormentors of Torghast"] = "Tormentors of Torghast"
+La["Tormentors of Torghast"] = "Мучители из Торгаста"
 La["Track Mythic keystone acquisition"] = "Отслеживать полученные эпохальные ключи"
 La["Track Mythic keystone best run"] = "Отслеживать лучший заход на эпохальный ключ"
 La["Trade Skill Cooldowns"] = "Восстановление способностей профессий."
@@ -1303,8 +1303,7 @@ La["Combine LFR"] = "合并显示随机团本"
 La["Combine World Bosses"] = "合并世界首领"
 La["Connected Realms"] = "已合并服务器"
 La["Covenant"] = "盟约"
---[[Translation missing --]]
-La["Covenant Assaults"] = "Covenant Assaults"
+La["Covenant Assaults"] = "盟约突袭"
 La["Currency settings"] = "货币设置"
 La["Cursed Coffer"] = "被诅咒的箱子"
 La["Daily Quests"] = "日常任务"
@@ -1314,6 +1313,8 @@ La["Disable mouseover"] = "禁用鼠标提示"
 La["Disable tooltip display on icon mouseover"] = "禁止当鼠标移动到插件图标上时显示提示信息"
 La["Display instances in order of recommended level from lowest to highest"] = "依照建议的等级从低到高显示副本"
 La["Display instances with space inserted between categories"] = "在分类之间显示间距"
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 La["DOS"] = "彼界"
 La["Dragon of Nightmare"] = "梦魇之龙"
 La["Dump quest debugging information"] = "打印任务调试信息"
@@ -1478,17 +1479,14 @@ La["Are you sure you want to report all your keys to %s?"] = "¿Estás seguro de
 La["Are you sure you want to reset the SavedInstances character database? Characters will be re-populated as you log into them."] = "¿Seguro que quieres reiniciar la base de datos de personajes de SavedInstances? Los personajes se añadirán de nuevo cuando entres con ellos."
 La["Attempt to recover completed daily quests for this character. Note this may recover some additional, linked daily quests that were not actually completed today."] = "Tratar de recuperar las misiones diarias ya completadas hoy por este personaje. Esto podría recuperar algunas otras misiones relacionadas que no fueron completadas hoy."
 La["Automatically shrink the tooltip to fit on the screen"] = "Encoger automáticamente la descripción para ajustarla a la pantalla"
---[[Translation missing --]]
 La["Azuregos"] = "Azuregos"
 La["Battleground Deserter"] = "Desertor del Campo de Batalla"
 La["Bind a key to toggle the SavedInstances tooltip"] = "Asignar una tecla para mostrar/ocultar la ventana de información de SavedInstances"
 --[[Translation missing --]]
 La["Bonus loot frame"] = "Bonus loot frame"
 La["Bonus rolls"] = "Tiradas extra"
---[[Translation missing --]]
 La[ [=[Boss kill information is missing for this lockout.
-This is a Blizzard bug affecting certain old raids.]=] ] = [=[Boss kill information is missing for this lockout.
-This is a Blizzard bug affecting certain old raids.]=]
+This is a Blizzard bug affecting certain old raids.]=] ] = "Informacion de jefes muertos faltante para este registro de banda. Esto es una falla que afecta ciertas bandas antigüas."
 --[[Translation missing --]]
 La["Calling Missing"] = "Calling Missing"
 La["Categories"] = "Categorías"
@@ -1496,15 +1494,13 @@ La["Characters"] = "Personajes"
 La["Color currency by cap"] = "---- \"Show currency max\" is \"Mostrar máximos de monedas\""
 --[[Translation missing --]]
 La["Combine Callings"] = "Combine Callings"
---[[Translation missing --]]
-La["Combine Emissaries"] = "Combine Emissaries"
+La["Combine Emissaries"] = "Combinar emisarios"
 La["Combine emissaries of same expansion"] = "Combinar emisarios de la misma expansión"
 La["Combine LFR"] = "Combinar BdG"
 La["Combine World Bosses"] = "Combinar jefes del mundo"
 La["Connected Realms"] = "Reinos conectados"
 La["Covenant"] = "Curia"
---[[Translation missing --]]
-La["Covenant Assaults"] = "Covenant Assaults"
+La["Covenant Assaults"] = "Asaltos de Curias"
 La["Currency settings"] = "Ajustes de moneda"
 --[[Translation missing --]]
 La["Cursed Coffer"] = "Cursed Coffer"
@@ -1515,6 +1511,8 @@ La["Disable mouseover"] = "Deshabilitar tooltip"
 La["Disable tooltip display on icon mouseover"] = "Deshabilita el tooltip al pasar el ratón por encima del icono"
 La["Display instances in order of recommended level from lowest to highest"] = "Mostrar instancias en orden de nivel recomendado de menor a mayor"
 La["Display instances with space inserted between categories"] = "Mostrar instancias con espacio entre categorías"
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 La["DOS"] = "EOL (DOS)"
 --[[Translation missing --]]
 La["Dragon of Nightmare"] = "Dragon of Nightmare"
@@ -1534,32 +1532,22 @@ La["Facets of Research"] = "Facetas de investigación"
 La["Fit to screen"] = "Ajustar a pantalla"
 La["Flex"] = "Flexible"
 La["Format large numbers"] = "Dar formato a números grandes"
---[[Translation missing --]]
-La["Full Clear + 1 Mask"] = "Full Clear + 1 Mask"
---[[Translation missing --]]
-La["Full Clear + 2 Masks"] = "Full Clear + 2 Masks"
---[[Translation missing --]]
-La["Full Clear + 3 Masks"] = "Full Clear + 3 Masks"
---[[Translation missing --]]
-La["Full Clear + 4 Masks"] = "Full Clear + 4 Masks"
---[[Translation missing --]]
-La["Full Clear + 5 Masks"] = "Full Clear + 5 Masks"
---[[Translation missing --]]
-La["Full Clear No Masks"] = "Full Clear No Masks"
+La["Full Clear + 1 Mask"] = "Limpieza completa + 1 Máscara"
+La["Full Clear + 2 Masks"] = "Limpieza completa + 2 Máscaras"
+La["Full Clear + 3 Masks"] = "Limpieza completa + 3 Máscaras"
+La["Full Clear + 4 Masks"] = "Limpieza completa + 4 Máscaras"
+La["Full Clear + 5 Masks"] = "Limpieza completa + 5 Máscaras"
+La["Full Clear No Masks"] = "Limpieza completa sin Máscaras"
 La["General settings"] = "Opciones generales"
 La["Group"] = "Grupo"
 La["Guild"] = "Hermandad"
 La["HOA"] = "SdE (HOA)"
 La["Hold Alt to show all data"] = "Pulsa Alt para mostrar toda la información"
 La["Hover mouse on indicator for details"] = "Coloca el cursor sobre el indicador para más detalles"
---[[Translation missing --]]
-La["Hunt: Death Elementals"] = "Hunt: Death Elementals"
---[[Translation missing --]]
-La["Hunt: Shadehounds"] = "Hunt: Shadehounds"
---[[Translation missing --]]
-La["Hunt: Soul Eaters"] = "Hunt: Soul Eaters"
---[[Translation missing --]]
-La["Hunt: Winged Soul Eaters"] = "Hunt: Winged Soul Eaters"
+La["Hunt: Death Elementals"] = "Caza: Elementales de muerte"
+La["Hunt: Shadehounds"] = "Caza: Canes de sombras"
+La["Hunt: Soul Eaters"] = "Caza: Comealmas"
+La["Hunt: Winged Soul Eaters"] = "Caza: Comealmas alados"
 La["Ignore"] = "Ignorar"
 La["Indicators"] = "Indicadores"
 --[[Translation missing --]]
@@ -1572,8 +1560,7 @@ La["Interleave"] = "Entrelazado"
 La["Keystone report target"] = "Keystone report target"
 La["Last updated"] = "Última actualización"
 La["Legion Transmute"] = "Transmutación de Legión"
---[[Translation missing --]]
-La["Lesser Visions of N'Zoth"] = "Lesser Visions of N'Zoth"
+La["Lesser Visions of N'Zoth"] = "Vision de N'zoth menor"
 La["Level %d Characters"] = "Personajes de nivel %d"
 La["LFG cooldown"] = "Tiempo de reutilización del Buscador de Grupo."
 La["LFR"] = "BdB"
@@ -1615,20 +1602,16 @@ La["Roll Bonus"] = "Bonos de tirada"
 La["Row Highlight"] = "Resalta de fila"
 La["SD"] = "CS (SD)"
 La["Set All"] = "Establecer todos"
---[[Translation missing --]]
-La["Show all emissary names"] = "Show all emissary names"
---[[Translation missing --]]
-La["Show both factions' emissay name"] = "Show both factions' emissay name"
+La["Show all emissary names"] = "Mostrar todos los nombres de emisarios"
+La["Show both factions' emissay name"] = "Mostrar ambos nombres de emisario de facciones"
 --[[Translation missing --]]
 La["Show calling line when all quests completed"] = "Show calling line when all quests completed"
 La["Show category names"] = "Mostrar nombres de categorías"
 La["Show category names in the tooltip"] = "Mostrar los nombres de categorías en la descripción"
 La["Show cooldown for characters to use battleground system"] = "Muestra el tiempo de reutilización de personajes para entrar en un campo de batalla."
 La["Show cooldown for characters to use LFG dungeon system"] = "Muestra el tiempo de reutilización de personajes para utilizar el sistema BdG."
---[[Translation missing --]]
-La["Show currency earned"] = "Show currency earned"
---[[Translation missing --]]
-La["Show currency max"] = "Show currency max"
+La["Show currency earned"] = "Mostrar cantidad ganada"
+La["Show currency max"] = "Mostrar cantidad máxima de moneda"
 --[[Translation missing --]]
 La["Show emissary line when all quests completed"] = "Show emissary line when all quests completed"
 La["Show Expired"] = "Mostrar acabados"
@@ -1642,8 +1625,7 @@ La["Show Random"] = "Muestra aleatoria"
 La["Show random dungeon bonus reward"] = "Mostrar recompensa extra de mazmorra aleatoria"
 La["Show self always"] = "Mostrar siempre a si mismo"
 La["Show self first"] = "Mostrarse a uno mismo primero"
---[[Translation missing --]]
-La["Show server name"] = "Show server name"
+La["Show server name"] = "Mostrar nombre del servidor"
 La["Show the SavedInstances minimap button"] = "Mostrar el botón del minimapa de SavedInstances"
 La["Show tooltip hints"] = "Mostrar consejos en descripciones"
 La["Show When"] = "Mostrar cuando"
@@ -1669,24 +1651,18 @@ La["Time Left"] = "Tiempo restante"
 La["Tooltip Scale"] = "Tamaño de la ventana de información"
 La["TOP"] = "TdD (TOP)"
 La["Torghast"] = "Torghast"
---[[Translation missing --]]
-La["Tormentors of Torghast"] = "Tormentors of Torghast"
---[[Translation missing --]]
-La["Track Mythic keystone acquisition"] = "Track Mythic keystone acquisition"
---[[Translation missing --]]
-La["Track Mythic keystone best run"] = "Track Mythic keystone best run"
+La["Tormentors of Torghast"] = "Tormentos de Torghast"
+La["Track Mythic keystone acquisition"] = "Rastrear adquisicion de piedra angular mítica"
+La["Track Mythic keystone best run"] = "Rastrear mejor incursión de piedra angular mítica"
 La["Trade Skill Cooldowns"] = "Tiempos de reutilización de Profesiones"
 La["Trade skills"] = "Profesiones"
 La["Transmute"] = "Transmutar"
 La["Type"] = "Tipo"
 La["Use class color"] = "Usar color de clase"
---[[Translation missing --]]
-La["Vision Boss + 2 Bonus Objectives"] = "Vision Boss + 2 Bonus Objectives"
---[[Translation missing --]]
-La["Vision Boss Only"] = "Vision Boss Only"
+La["Vision Boss + 2 Bonus Objectives"] = "Jefe de Vision + 2 objetivos extras"
+La["Vision Boss Only"] = "Solo jefe de Vision"
 La["Warfronts"] = "Frentes de guerra"
---[[Translation missing --]]
-La["Warn about instance limit"] = "Warn about instance limit"
+La["Warn about instance limit"] = "Advertencia sobre límite de instancias"
 La["Warning: You've entered about %i instances recently and are approaching the %i instance per hour limit for your account. More instances should be available in %s."] = "Advertencia: Has entrado en %i estancias recientemente, y te estás acercando al límite de %i estancias por hora para tu cuenta. Tendrás más disponibles después de %s."
 La["Weekly Quests"] = "Misiones semanales"
 La["Wild Transmute"] = "Transmutación Salvaje"
@@ -1734,8 +1710,7 @@ La["Combine LFR"] = "合併隨機團隊"
 La["Combine World Bosses"] = "合併世界首領"
 La["Connected Realms"] = "連結伺服器"
 La["Covenant"] = "誓盟"
---[[Translation missing --]]
-La["Covenant Assaults"] = "Covenant Assaults"
+La["Covenant Assaults"] = "誓盟進攻戰"
 La["Currency settings"] = "兌換通貨設定"
 --[[Translation missing --]]
 La["Cursed Coffer"] = "Cursed Coffer"
@@ -1746,6 +1721,8 @@ La["Disable mouseover"] = "停用滑鼠提示"
 La["Disable tooltip display on icon mouseover"] = "滑鼠指向圖示時不要顯示滑鼠提示"
 La["Display instances in order of recommended level from lowest to highest"] = "依照建議的等級從低到高顯示副本"
 La["Display instances with space inserted between categories"] = "顯示副本並在分類之間加上間距"
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 La["DOS"] = "彼界"
 La["Dragon of Nightmare"] = "夢魘之龍"
 La["Dump quest debugging information"] = "傾印任務偵錯資訊"
@@ -1893,15 +1870,12 @@ La["Wrath of the Jailer"] = "典獄長之怒"
 La["You can combine icons and text in a single indicator if you wish. Simply choose an icon, and insert the word ICON into the text field. Anywhere the word ICON is found, the icon you chose will be substituted in."] = "如果想要的話，可以在同個指標上顯示圖示與文字。首先選擇一個圖示，並在文字框中插入「ICON」到想要出現圖示的位置，就會自動替換成你選擇的圖示。"
 
 elseif locale == "ptBR" then
-  --[[Translation missing --]]
-La["|cffffff00Click|r to open weekly rewards"] = "|cffffff00Click|r to open weekly rewards"
+  La["|cffffff00Click|r to open weekly rewards"] = "|cffffff00Click|r para abrir recompensas semanais"
 La["|cffffff00Left-click|r to detach tooltip"] = "|cffffff00Botão Esquerdo | Para destacar as Dicas"
 La["|cffffff00Middle-click|r to show Blizzard's Raid Information"] = "|cffffff00Botão do Meio|r para mostrar informações da Raid dadas pela Blizzard"
 La["|cffffff00Right-click|r to configure SavedInstances"] = "|cffffff00Botão Direito|r Para configurar o SavedInstances"
---[[Translation missing --]]
-La["Abbreviate keystones"] = "Abbreviate keystones"
---[[Translation missing --]]
-La["Abbreviate Mythic keystone dungeon names"] = "Abbreviate Mythic keystone dungeon names"
+La["Abbreviate keystones"] = "Abreviar pedras-chave"
+La["Abbreviate Mythic keystone dungeon names"] = "Abreviar nomes de masmorras de pedra-chave Mítica"
 La["Account"] = "Conta"
 La["Account Summary"] = "Sumário da conta"
 La["Always show"] = "Mostrar sempre"
@@ -1954,6 +1928,8 @@ La["Disable mouseover"] = "Desativar mouseover"
 La["Disable tooltip display on icon mouseover"] = "Desabilitar exibição de ajuda ao passar o mouse no ícone"
 La["Display instances in order of recommended level from lowest to highest"] = "Exibir instâncias em ordem de nível recomendado menor para o maior"
 La["Display instances with space inserted between categories"] = "Exibir instâncias com espaço inserido entre as categorias"
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 --[[Translation missing --]]
 La["DOS"] = "DOS"
 --[[Translation missing --]]
@@ -2036,7 +2012,7 @@ La["Nathanos Blightcaller"] = "Nathanos Blightcaller"
 La["Never show"] = "Nunca mostrar"
 --[[Translation missing --]]
 La["NW"] = "NW"
-La["Opacity of the tooltip row highlighting"] = "Opacidade do destaque da linha de ajuda"
+La["Opacity of the tooltip row highlighting"] = "Opacidade do destaque da linha de ajuda "
 La["Open config"] = "Abrir configuração"
 --[[Translation missing --]]
 La["Order must be a number in [0 - 999]"] = "Order must be a number in [0 - 999]"
@@ -2210,6 +2186,8 @@ La["Disable mouseover"] = "Disabilita movimento del mouse"
 La["Disable tooltip display on icon mouseover"] = "Disattiva i tooltip quando vai sull'icona"
 La["Display instances in order of recommended level from lowest to highest"] = "Mostra istanze in ordine del livello raccomandato dal piu' basso al piu' alto"
 La["Display instances with space inserted between categories"] = "Mostra le istanze con uno spazio tra le varie categorie"
+--[[Translation missing --]]
+La["Doomwalker"] = "Doomwalker"
 --[[Translation missing --]]
 La["DOS"] = "DOS"
 La["Dragon of Nightmare"] = "Drago dell'Incubo"

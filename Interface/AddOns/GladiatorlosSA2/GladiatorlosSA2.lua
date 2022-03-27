@@ -5,19 +5,19 @@
  local L = LibStub("AceLocale-3.0"):GetLocale("GladiatorlosSA")
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
- local GSA_TEXT = "|cff69CCF0GladiatorlosSA2|r (|cffFFF569/gsa|r)"
- local GSA_VERSION = "|cffFF7D0A 3.9.2 |r(|cff9482C99.1 Shadowlands|r)"
- local GSA_TEST_BRANCH = ""
- local GSA_AUTHOR = " "
+ --local GSA_VERSION = "|cffFF7D0A " .. GetAddOnMetadata("GladiatorlosSA2", "Version") .." |r(|cff9482C99.1 Shadowlands|r)"
+ local GSA_VERSION = GetAddOnMetadata("GladiatorlosSA2", "Version")
+ local GSA_GAME_VERSION = "9.1.5"
+ local GSA_EXPANSION = ""
  local gsadb
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
  local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
  local canSpeakHere = false
  local playerCurrentZone = ""
- local debugMode = 0
  local opponentName = ""
  local duelingOn = false
 
+ -- This project is FULL of legacy code from before I took over. It's kind of a mess.
 
  local LSM_GSA_SOUNDFILES = {
 	["GSA-Demo"] = "Interface\\AddOns\\GladiatorlosSA2\\Voice_Custom\\Will-Demo.ogg",
@@ -71,6 +71,78 @@
  }
  self.GSA_TYPE = GSA_TYPE
 
+ -- TODO Clean up these arrays
+ local TrackedFriendlyDebuffs = {
+	 87204, 		-- Vampiric Touch Horrify
+	 196364, 	-- Unstable Affliction Silence
+	 1330, 		-- Garrote Silence
+	 1833, 		-- Cheap Shot
+	 6770, 		-- Sap
+	 3355, 		-- Freezing Trap
+	 212332, 	-- Smash (DK Abomination)
+	 212337,  	-- Powerful Smash (DK Abomination)
+	 91800,  	-- Gnaw (DK Ghoul)
+	 91797,  	-- Monstrous Claw (DK Ghoul)
+	 163505, 	-- Rake Stun
+	 199086, 	-- Warpath Stun
+	 202335, 	-- Double Barrel Stun
+	 215652, 	-- Shield of Virtue silence (Paladin)
+	 287254,		-- Remorseless Winter (Death Knight)
+	 357021,		-- Consecutive Concussion (Hunter)
+	 356727,		-- Spider Sting (Hunter)
+	 353084, 	-- Ring of Fire (Burning)
+
+	 -- Polymorph
+	 118, -- Sheep
+	 28271,-- Turtle
+	 28272, -- Pig
+	 61305, -- Black Cat
+	 61721, -- Rabbit
+	 61025, -- Serpent
+	 61780, -- Turkey
+	 161372, -- Peacock
+	 161355, -- Penguin
+	 161353, -- Polar Bear Cub
+	 161354, -- Monkey
+	 126819, -- Porcupine
+	 277787, -- Direhorn
+	 277792, -- Bumblebee
+
+	 --Hex (Shaman)
+	 51514, -- Frog
+	 210873, -- Compy
+	 211004, -- Spider
+	 211015, -- Cockroach
+	 211010, -- Snake
+	 269352, -- Skeletal Hatchling
+	 277778, -- Zandalari Tendonripper
+	 277784, -- Wicker Mongrel
+	 309328, -- Living Honey
+	 --
+	 82691, -- Ring of Frost (Debuff)
+	 5782, -- Fear (Warlock)
+	 118699, -- Fear (Warlock) for whatever reason the debuff ID is different
+	 33786, -- Cyclone (Druid)
+	 --[209753] = "success", -- Cyclone (Druid)
+	 19386, --Wyvern Sting (Hunter)
+	 20066, -- Repentence (Paladin)
+	 605, -- Mind Control (Priest)
+	 2637, -- Hibernate (Druid)/leave/lea
+	 1513, -- Scare Beast (Hunter)
+
+	 339, -- Entangling Roots
+	 235963 -- Entangling Roots PvP Talent
+ }
+
+ local EpicBGs = {
+	2118,	-- Wintergrasp [Epic]
+	30,		-- Alterac Valley
+	628,	-- Isle of Conquest
+	1280,	-- Southshore vs Tarren Mill
+	1191,	-- Trashcan
+	2197	-- Korrak's Revenge
+ }
+
  local dbDefaults = {
 	profile = {
 		all = false,
@@ -84,6 +156,7 @@
 		smartDisable = false,
 		outputUnlock = false,
 		output_menu = "MASTER",
+		seenExperimentalWarning = false;
 		
 		aruaApplied = false,
 		aruaRemoved = false,
@@ -127,9 +200,16 @@
  -- LSM END
 
  function GladiatorlosSA:OnInitialize()
+	self:SetExpansion()
+
 	if not self.spellList then
-		self.spellList = self:GetSpellList()
+		if (GSA_EXPANSION == L["EXPAC_TBC"]) then
+			self.spellList = self:GetSpellList_TBC()
+		else
+			self.spellList = self:GetSpellList()
+		end
 	end
+
 	for _,v in pairs(self.spellList) do
 		for _,spell in pairs(v) do
 			if dbDefaults.profile[spell] == nil then dbDefaults.profile[spell] = true end
@@ -137,7 +217,7 @@
 	end
 	
 	self.db1 = LibStub("AceDB-3.0"):New("GladiatorlosSADB",dbDefaults, "Default");
-	DEFAULT_CHAT_FRAME:AddMessage(GSA_TEXT .. GSA_VERSION .. GSA_AUTHOR .." "..GSA_TEST_BRANCH);
+	DEFAULT_CHAT_FRAME:AddMessage("|cff69CCF0 " .. L["GladiatorlosSA2"] .. "|r (|cffFFF569/gsa|r)" ..  "|cffFF7D0A " .. GSA_VERSION .." |r(|cff9482C9" .. GSA_GAME_VERSION .. " "  .. GSA_EXPANSION .. "|r)");
 	self:RegisterChatCommand("GladiatorlosSA", "ShowConfig")
 	self:RegisterChatCommand("gsa", "ShowConfig")
 	self:RegisterChatCommand("gsa2", "ShowConfig")
@@ -153,7 +233,7 @@
 			creditdesc = {
 			order = 1,
 			type = "description",
-			name = L["GladiatorlosSACredits"].."\n",
+			name = L["GladiatorlosSACredits"].."\n\n",
 			cmdHidden = true
 			},
 			gsavers = {
@@ -170,12 +250,16 @@
 		desc = L["Load Configuration Options"],
 		type = 'execute',
 		func = function()
-		self:OnOptionCreate()
-			bliz_options.args.load.disabled = true
-			GameTooltip:Hide()
-			--fix for in 5.3 BLZOptionsFrame can't refresh on load
-			InterfaceOptionsFrame:Hide()
-			InterfaceOptionsFrame:Show()
+			if (GSA_EXPANSION == L["EXPAC_TBC"]) then
+				self:OnOptionCreate_TBC()
+				else
+				self:OnOptionCreate()
+			end
+				bliz_options.args.load.disabled = true
+				GameTooltip:Hide()
+				--fix for in 5.3 BLZOptionsFrame can't refresh on load
+				InterfaceOptionsFrame:Hide()
+				InterfaceOptionsFrame:Show()
 		end,
 		handler = GladiatorlosSA,
 	}
@@ -238,38 +322,21 @@
 
  end
 
- -- Because arrays are for nerds
+ -- List of spells that need to be traked as Debuffs on ally players.
  function GSA:CheckFriendlyDebuffs(spellID)
-	if spellID == 87204 or			-- Vampiric Touch Horrify
-		spellID == 196364 or 		-- Unstable Affliction Silence
-		spellID == 1330 or 			-- Garrote Silence
-		spellID == 1833 or 			-- Cheap Shot
-		spellID == 6770 or 			-- Sap
-		spellID == 3355 or 			-- Freezing Trap
-		spellID == 212332 or 		-- Smash (DK Abomination)
-		spellID == 212337 or 		-- Powerful Smash (DK Abomination)
-		spellID == 91800 or 		-- Gnaw (DK Ghoul)
-		spellID == 91797 or 		-- Monstrous Claw (DK Ghoul)
-		spellID == 163505 or 		-- Rake Stun
-		spellID == 199086 or 		-- Warpath Stun
-		spellID == 202335 or 		-- Double Barrel Stun
-		spellID == 215652 or 		-- Shield of Virtue silence (Paladin)
-		spellID == 287254 or		-- Remorseless Winter (Death Knight)
-		spellID == 357021 or		-- Consecutive Concussion (Hunter)
-		spellID == 356727 then		-- Spider Sting (Hunter)
-		return true
-	end
+	 for k in pairs(TrackedFriendlyDebuffs) do
+		 if (TrackedFriendlyDebuffs[k] == spellID) then
+			 return true
+		 end
+	 end
 end
 
- -- Because arrays are for nerds
-function GSA:CheckForEpicBG(instanceMapID)	-- Determines if battleground is in list of epic bgs.
-	if instanceMapID == 2118 or		-- Wintergrasp [Epic]
-		instanceMapID == 30 or		-- Alterac Valley
-		instanceMapID == 628 or		-- Isle of Conquest
-		instanceMapID == 1280 or	-- Southshore vs Tarren Mill
-		instanceMapID == 1191 or	-- Trashcan
-		instanceMapID == 2197 then	-- Korrak's Revenge		
-		return true
+ -- List of battlegrounds that are Epic Battlegrounds
+function GSA:CheckForEpicBG(instanceMapID)
+	for k in pairs(EpicBGs) do
+		if (EpicBGs[k] == instanceMapID) then
+			return true
+		end
 	end
 end
 
@@ -285,7 +352,7 @@ function GSA:CanTalkHere()
 	playerCurrentZone = currentZoneType
 	duelingOn = false; -- Failsafe for when dueling events are skipped under unusual circumstances.
 
-	if (not ((currentZoneType == "none" and gsadb.field and not gsadb.onlyFlagged) or 												-- World
+	if (not ((currentZoneType == "none" and gsadb.field) or -- and not gsadb.onlyFlagged) or 						-- World
 		--(currentZoneType == "none" and gsadb.field and (gsadb.onlyFlagged and UnitIsWarModeDesired("player"))) or
 		(currentZoneType == "pvp" and gsadb.battleground and not self:CheckForEpicBG(instanceMapID)) or 	-- Battleground
 		(currentZoneType == "pvp" and gsadb.epicbattleground and self:CheckForEpicBG(instanceMapID)) or		-- Epic Battleground
@@ -302,6 +369,7 @@ end
 
  function GSA:SpammyDebug()
 	 -- This shouldn't be used 99.9% of the time.
+	 -- Legacy debug code that makes your chat log unusable, but I've had to use it a couple times so here it is!
 	 print(sourceName,sourceGUID,destName,destGUID,destFlags,"|cffFF7D0A" .. event.. "|r",spellName,"|cffFF7D0A" .. spellID.. "|r")
 	 print("|cffff0000timestamp|r",timestamp,"|cffff0000event|r",event,"|cffff0000hideCaster|r",hideCaster,"|cffff0000sourceGUID|r",sourceGUID,"|cffff0000sourceName|r",sourceName,"|cffff0000sourceFlags|r",sourceFlags,"|cffff0000sourceFlags2|r",sourceFlags2,"|cffff0000destGUID|r",destGUID,"|cffff0000destName|r",destName,"|cffff0000destFlags|r",destFlags,"|cffff0000destFlags2|r",destFlags2,"|cffff0000spellID|r",spellID,"|cffff0000spellName|r",spellName)
  end
@@ -373,14 +441,18 @@ end
 			 return
 		 end
 		 self:PlaySpell("auraApplied", spellID, sourceGUID, destGUID)
+		 return
 	 elseif (event == "SPELL_AURA_APPLIED" and (desttype[COMBATLOG_FILTER_FRIENDLY_UNITS] or desttype[COMBATLOG_FILTER_ME]) and (not gsadb.aonlyTF or destuid.target or destuid.focus) and not gsadb.aruaApplied) then
 		 if self:CheckFriendlyDebuffs(spellID) then
 			 self:PlaySpell("auraApplied", spellID, sourceGUID, destGUID)
+			 return
 		 end
 	 elseif (event == "SPELL_AURA_REMOVED" and desttype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.ronlyTF or destuid.target or destuid.focus) and not gsadb.aruaRemoved) then
 		 self:PlaySpell("auraRemoved", spellID, sourceGUID, destGUID)
+		 return
 	 elseif (event == "SPELL_CAST_START" and sourcetype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.conlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castStart) then
 		 self:PlaySpell("castStart", spellID, sourceGUID, destGUID)
+		 return
 	 elseif (event == "SPELL_CAST_SUCCESS" and sourcetype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.sonlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castSuccess) then
 		 if self:Throttle(tostring(spellID).."default", 0.05) then return end
 		 if gsadb.class and playerCurrentZone == "arena" then
@@ -388,17 +460,22 @@ end
 				 local c = self:ArenaClass(sourceGUID) -- PvP Trinket Class Callout
 				 if c then
 					 self:PlaySound(c);
+					 return
 				 end
 			 else
 				 self:PlaySpell("castSuccess", spellID, sourceGUID, destGUID)
+				 return
 			 end
 		 else
 			 self:PlaySpell("castSuccess", spellID, sourceGUID, destGUID)
+			 return
 		 end
 	 elseif (event == "SPELL_INTERRUPT" and desttype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and not gsadb.interrupt) then
 		 self:PlaySpell ("friendlyInterrupt", spellID, sourceGUID, destGUID)
+		 return
 	 elseif (event == "SPELL_INTERRUPT" and (desttype[COMBATLOG_FILTER_FRIENDLY_UNITS] or desttype[COMBATLOG_FILTER_ME]) and not gsadb.interruptedfriendly) then
 		 self:PlaySpell ("friendlyInterrupted", spellID, sourceGUID, destGUID)
+		 return
 	 end
 
 
@@ -423,6 +500,7 @@ end
 				 if (css.existinglist ~= nil and css.existinglist ~= ('')) then
 					 local soundz = LSM:Fetch('sound', css.existinglist)
 					 PlaySoundFile(soundz, gsadb.output_menu)
+					 return
 				 else
 					 GSA.log (L["No sound selected for the Custom alert : |cffC41F4B"] .. css.name .. "|r.")
 				 end
@@ -485,3 +563,14 @@ function GladiatorlosSA:DUEL_REQUESTED(event, playerName)
 	opponentName = ""
 	duelingOn = false
   end
+
+ function GladiatorlosSA:SetExpansion()
+	 local _,_,_,interfaceNumber = GetBuildInfo()
+	 if (interfaceNumber >= 20000 and interfaceNumber <= 69999) then
+		 GSA_EXPANSION = L["EXPAC_TBC"]
+		 return GSA_EXPANSION
+	 elseif (interfaceNumber >= 90000 and interfaceNumber <= 99999) then
+		 GSA_EXPANSION = L["EXPAC_SL"]
+		 return GSA_EXPANSION
+	 end
+ end

@@ -67,9 +67,7 @@ end
 
 local HelperTip
 function SummaryHtml:OpenHelper(id)
-    if not InCombatLockdown() then
-        HideUIPanel(HelpFrame)
-    end
+    HideUIPanel(HelpFrame)
 
     StaticPopup_Hide('HELP_TICKET')
     StaticPopup_Hide('HELP_TICKET_ABANDON_CONFIRM')

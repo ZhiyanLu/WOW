@@ -1,23 +1,27 @@
 
 ClassMonitorDataPerChar = {
 	["Plugins"] = {
+		["CM_MOVER"] = {
+			["height"] = 20,
+			["width"] = 167,
+		},
 		["CM_COMBO"] = {
 			["customcolor"] = false,
 			["specs"] = {
 				"any", -- [1]
 			},
 			["filled"] = true,
+			["color"] = {
+				1, -- [1]
+				0, -- [2]
+				0.00392156862745098, -- [3]
+			},
 			["anchor"] = {
 				"BOTTOMLEFT", -- [1]
 				"CM_RESOURCE", -- [2]
 				"TOPLEFT", -- [3]
 				0, -- [4]
 				0, -- [5]
-			},
-			["color"] = {
-				1, -- [1]
-				0, -- [2]
-				0.00392156862745098, -- [3]
 			},
 			["height"] = 20,
 			["autohide"] = false,
@@ -33,10 +37,6 @@ ClassMonitorDataPerChar = {
 			},
 			["text"] = true,
 			["textSize"] = 24,
-			["width"] = 167,
-		},
-		["CM_MOVER"] = {
-			["height"] = 20,
 			["width"] = 167,
 		},
 	},

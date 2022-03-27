@@ -8,9 +8,9 @@ Omen3DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["PositionW"] = 117.5560607910156,
+			["PositionW"] = 114.889404296875,
 			["PositionH"] = 172.6149444580078,
-			["VGrip2"] = 67.59467596766514,
+			["VGrip2"] = 66.06134982160651,
 			["PositionY"] = 172.6149444580078,
 			["Locked"] = true,
 			["UseFocus"] = true,
@@ -19,14 +19,14 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["VGrip1"] = 49.96128223696968,
-			["PositionX"] = 350.2260131835938,
-			["Shown"] = true,
+			["VGrip1"] = 48.82795421597024,
+			["PositionX"] = 352.8926391601563,
 			["TitleBar"] = {
 				["FontSize"] = 12,
 				["Font"] = "伤害数字",
 				["Height"] = 20,
 			},
+			["Shown"] = true,
 			["Bar"] = {
 				["ShowHeadings"] = false,
 				["ShowValue"] = false,
@@ -34,7 +34,7 @@ Omen3DB = {
 				["Texture"] = "Gloss",
 				["ShowTPS"] = false,
 				["TankBarColor"] = {
-					["b"] = 0.776470588235294,
+					["b"] = 0.77647058823529,
 				},
 				["Font"] = "伤害数字",
 				["TPSWindow"] = 11,

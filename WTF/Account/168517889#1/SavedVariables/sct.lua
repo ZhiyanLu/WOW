@@ -1,328 +1,330 @@
 
-SCT_CONFIG = {
-	["profileKeys"] = {
-		["Magiccream - 格雷迈恩"] = "Magiccream - 格雷迈恩",
-	},
-	["profiles"] = {
-		["Magiccream - 格雷迈恩"] = {
-			["ICON"] = true,
-			["SHOWHEAL"] = false,
-			["SHOWTARGETS"] = false,
-			["SHOWBUFF"] = false,
-			["SHOWOVERHEAL"] = false,
-			["SHOWDEBUFF"] = false,
-			["SHOWSELFHEAL"] = false,
-		},
-	},
-}
 SCT_EVENT_CONFIG = {
-	["profileKeys"] = {
-		["Magiccream - 格雷迈恩"] = "Global",
-	},
-	["global"] = {
-		["events"] = {
-			{
-				["type"] = "BUFF",
-				["r"] = 1,
-				["class"] = {
-					"Mage", -- [1]
-					"Shaman", -- [2]
-					"Druid", -- [3]
-					"Priest", -- [4]
-				},
-				["g"] = 1,
-				["soundwave"] = "Sound\\Spells\\Clearcasting_Impact_Chest.wav",
-				["iscrit"] = 1,
-				["name"] = "Clearcast",
-				["b"] = 0,
-				["display"] = "Clearcast!",
-				["search"] = "Clearcast",
-				["icon"] = 1,
-				["target"] = "SELF",
-			}, -- [1]
-			{
-				["type"] = "BUFF",
-				["r"] = 0.5,
-				["class"] = {
-					"Warrior", -- [1]
-					"Shaman", -- [2]
-				},
-				["g"] = 0,
-				["name"] = "Flurry",
-				["display"] = "Flurry!",
-				["b"] = 0,
-				["search"] = "Flurry",
-				["target"] = "SELF",
-			}, -- [2]
-			{
-				["type"] = "FADE",
-				["r"] = 0,
-				["class"] = {
-					"Shaman", -- [1]
-				},
-				["g"] = 0,
-				["name"] = "Lightning Shield",
-				["display"] = "Lightning Shield!",
-				["b"] = 1,
-				["search"] = "Lightning Shield",
-				["target"] = "SELF",
-			}, -- [3]
-			{
-				["type"] = "BUFF",
-				["r"] = 0,
-				["class"] = {
-					"Warlock", -- [1]
-				},
-				["g"] = 0.5,
-				["name"] = "Nightfall",
-				["display"] = "Nightfall!",
-				["b"] = 0.5,
-				["search"] = "Shadow Trance",
-				["target"] = "SELF",
-			}, -- [4]
-			{
-				["type"] = "MISS",
-				["source"] = "SELF",
-				["r"] = 1,
-				["class"] = {
-					"Warrior", -- [1]
-				},
-				["g"] = 1,
-				["iscrit"] = 1,
-				["name"] = "Overpower",
-				["b"] = 0,
-				["display"] = "Overpower!",
-				["override"] = false,
-				["misstype"] = "DODGE",
-				["target"] = "TARGET",
-			}, -- [5]
-			{
-				["type"] = "BUFF",
-				["r"] = 0.5,
-				["class"] = {
-					"Warrior", -- [1]
-				},
-				["g"] = 1,
-				["name"] = "Enraged",
-				["iscrit"] = 1,
-				["display"] = "Enraged!",
-				["b"] = 0.5,
-				["search"] = "Enrage",
-				["target"] = "SELF",
-			}, -- [6]
-			{
-				["type"] = "BUFF",
-				["r"] = 0.5,
-				["class"] = {
-					"Warrior", -- [1]
-					"Rogue", -- [2]
-					"Paladin", -- [3]
-					"Shaman", -- [4]
-					"Hunter", -- [5]
-				},
-				["g"] = 0.5,
-				["name"] = "Crusader",
-				["iscrit"] = 1,
-				["display"] = "Crusader!",
-				["b"] = 1,
-				["search"] = "Holy Strength",
-				["target"] = "SELF",
-			}, -- [7]
-			{
-				["type"] = "BUFF",
-				["r"] = 0.5,
-				["class"] = {
-					"Priest", -- [1]
-				},
-				["g"] = 0.5,
-				["name"] = "Spirit Tap",
-				["iscrit"] = 1,
-				["display"] = "Spirit Tap!",
-				["b"] = 0.5859375,
-				["search"] = "Spirit Tap",
-				["target"] = "SELF",
-			}, -- [8]
-			{
-				["type"] = "SUMMON",
-				["source"] = "SELF",
-				["r"] = 0.80078125,
-				["class"] = {
-					"Shaman", -- [1]
-				},
-				["g"] = 0.80078125,
-				["name"] = "Totems",
-				["b"] = 0,
-				["display"] = "[*1]",
-				["search"] = "Totem",
-				["icon"] = 1,
-				["target"] = "ANY",
-			}, -- [9]
-			{
-				["type"] = "BUFF",
-				["source"] = "SELF",
-				["r"] = 1,
-				["class"] = {
-					"Rogue", -- [1]
-					"Warrior", -- [2]
-				},
-				["g"] = 1,
-				["name"] = "Mace Stun",
-				["iscrit"] = 1,
-				["display"] = "Mace Stun!",
-				["b"] = 0,
-				["search"] = "Mace Stun",
-				["target"] = "TARGET",
-			}, -- [10]
-			{
-				["type"] = "BUFF",
-				["source"] = "SELF",
-				["r"] = 0,
-				["class"] = {
-					"Warrior", -- [1]
-				},
-				["g"] = 0.5,
-				["name"] = "Rooted",
-				["iscrit"] = 1,
-				["display"] = "Rooted!",
-				["b"] = 0,
-				["search"] = "Improved Hamstring",
-				["target"] = "TARGET",
-			}, -- [11]
-			{
-				["type"] = "BUFF",
-				["r"] = 0,
-				["class"] = {
-					"Warrior", -- [1]
-				},
-				["g"] = 1,
-				["iscrit"] = 1,
-				["name"] = "Full Sunder",
-				["b"] = 0,
-				["display"] = "Full Sunder!",
-				["buffcount"] = 5,
-				["search"] = "Sunder Armor",
-				["target"] = "TARGET",
-			}, -- [12]
-			{
-				["type"] = "BUFF",
-				["source"] = "SELF",
-				["r"] = 1,
-				["class"] = {
-					"Rogue", -- [1]
-				},
-				["g"] = 0,
-				["iscrit"] = 1,
-				["name"] = "Envenom",
-				["b"] = 1,
-				["display"] = "Envenom!",
-				["buffcount"] = 5,
-				["search"] = "Deadly",
-				["target"] = "TARGET",
-			}, -- [13]
-			{
-				["type"] = "BUFF",
-				["source"] = "SELF",
-				["r"] = 0.29296875,
-				["class"] = {
-					"Mage", -- [1]
-				},
-				["g"] = 0.5859375,
-				["iscrit"] = 1,
-				["name"] = "Frostbite",
-				["b"] = 0.87890625,
-				["display"] = "Frostbite!",
-				["search"] = "Frostbite",
-				["icon"] = 1,
-				["target"] = "TARGET",
-			}, -- [14]
-			{
-				["type"] = "MISS",
-				["source"] = "SELF",
-				["r"] = 0.5,
-				["class"] = {
-					"Warrior", -- [1]
-				},
-				["g"] = 0,
-				["name"] = "Deep Wound Spam",
-				["display"] = "",
-				["b"] = 0,
-				["search"] = "Deep Wound",
-				["target"] = "TARGET",
-			}, -- [15]
-			{
-				["type"] = "BUFF",
-				["source"] = "SELF",
-				["r"] = 0.5,
-				["class"] = {
-					"Priest", -- [1]
-				},
-				["g"] = 0.5,
-				["name"] = "Blackout",
-				["iscrit"] = 1,
-				["display"] = "Blackout!",
-				["b"] = 0.5859375,
-				["search"] = "Blackout",
-				["target"] = "TARGET",
-			}, -- [16]
-			{
-				["type"] = "BUFF",
-				["source"] = "SELF",
-				["r"] = 0.5,
-				["class"] = {
-					"Mage", -- [1]
-				},
-				["g"] = 0.25,
-				["name"] = "Impact",
-				["iscrit"] = 1,
-				["display"] = "Impact!",
-				["b"] = 0.25,
-				["search"] = "Impact",
-				["target"] = "TARGET",
-			}, -- [17]
-			{
-				["type"] = "MISS",
-				["source"] = "SELF",
-				["r"] = 0.99609375,
-				["class"] = {
-					"Rogue", -- [1]
-				},
-				["g"] = 0.59765625,
-				["name"] = "Feint",
-				["iscrit"] = 1,
-				["display"] = "Feint Failed!",
-				["b"] = 0.19921875,
-				["search"] = "Feint",
-				["target"] = "TARGET",
-			}, -- [18]
-			{
-				["type"] = "FADE",
-				["r"] = 0.80078125,
-				["class"] = {
-					"Mage", -- [1]
-				},
-				["g"] = 0.80078125,
-				["name"] = "Sheep",
-				["iscrit"] = 1,
-				["display"] = "Sheep Broke!",
-				["b"] = 1,
-				["search"] = "Polymorph",
-				["target"] = "FOCUS",
-			}, -- [19]
-			{
-				["type"] = "FADE",
-				["r"] = 0.80078125,
-				["class"] = {
-					"Mage", -- [1]
-				},
-				["g"] = 0.80078125,
-				["name"] = "Slow",
-				["iscrit"] = 1,
-				["display"] = "Slow Removed!",
-				["b"] = 0,
-				["search"] = "Slow",
-				["target"] = "ENEMY",
-			}, -- [20]
-		},
-		["firstload"] = true,
-	},
+["profileKeys"]={
+["Magiccream - 格雷迈恩"]="Global",
+["Magiccreamdk - 格雷迈恩"]="Global",
+},
+["global"]={
+["events"]={
+[1]={
+["class"]={
+[1]="Mage",
+[2]="Shaman",
+[3]="Druid",
+[4]="Priest",
+},
+["g"]=1,
+["iscrit"]=1,
+["name"]="Clearcast",
+["b"]=0,
+["icon"]=1,
+["type"]="BUFF",
+["r"]=1,
+["soundwave"]="Sound\\Spells\\Clearcasting_Impact_Chest.wav",
+["display"]="Clearcast!",
+["search"]="Clearcast",
+["target"]="SELF",
+},
+[2]={
+["b"]=0,
+["type"]="BUFF",
+["r"]=0.5,
+["class"]={
+[1]="Warrior",
+[2]="Shaman",
+},
+["g"]=0,
+["name"]="Flurry",
+["display"]="Flurry!",
+["search"]="Flurry",
+["target"]="SELF",
+},
+[3]={
+["type"]="FADE",
+["name"]="Lightning Shield",
+["b"]=1,
+["search"]="Lightning Shield",
+["r"]=0,
+["class"]={
+[1]="Shaman",
+},
+["g"]=0,
+["display"]="Lightning Shield!",
+["target"]="SELF",
+},
+[4]={
+["type"]="BUFF",
+["r"]=0,
+["display"]="Nightfall!",
+["b"]=0.5,
+["target"]="SELF",
+["class"]={
+[1]="Warlock",
+},
+["g"]=0.5,
+["name"]="Nightfall",
+["search"]="Shadow Trance",
+},
+[5]={
+["misstype"]="DODGE",
+["source"]="SELF",
+["class"]={
+[1]="Warrior",
+},
+["g"]=1,
+["name"]="Overpower",
+["b"]=0,
+["display"]="Overpower!",
+["override"]=false,
+["target"]="TARGET",
+["type"]="MISS",
+["r"]=1,
+["iscrit"]=1,
+},
+[6]={
+["iscrit"]=1,
+["display"]="Enraged!",
+["b"]=0.5,
+["target"]="SELF",
+["type"]="BUFF",
+["class"]={
+[1]="Warrior",
+},
+["g"]=1,
+["name"]="Enraged",
+["search"]="Enrage",
+["r"]=0.5,
+},
+[7]={
+["class"]={
+[1]="Warrior",
+[2]="Rogue",
+[3]="Paladin",
+[4]="Shaman",
+[5]="Hunter",
+},
+["name"]="Crusader",
+["b"]=1,
+["search"]="Holy Strength",
+["type"]="BUFF",
+["r"]=0.5,
+["g"]=0.5,
+["iscrit"]=1,
+["display"]="Crusader!",
+["target"]="SELF",
+},
+[8]={
+["r"]=0.5,
+["g"]=0.5,
+["iscrit"]=1,
+["b"]=0.5859375,
+["search"]="Spirit Tap",
+["type"]="BUFF",
+["class"]={
+[1]="Priest",
+},
+["name"]="Spirit Tap",
+["display"]="Spirit Tap!",
+["target"]="SELF",
+},
+[9]={
+["type"]="SUMMON",
+["class"]={
+[1]="Shaman",
+},
+["g"]=0.80078125,
+["icon"]=1,
+["target"]="ANY",
+["source"]="SELF",
+["r"]=0.80078125,
+["name"]="Totems",
+["b"]=0,
+["display"]="[*1]",
+["search"]="Totem",
+},
+[10]={
+["class"]={
+[1]="Rogue",
+[2]="Warrior",
+},
+["name"]="Mace Stun",
+["iscrit"]=1,
+["display"]="Mace Stun!",
+["b"]=0,
+["type"]="BUFF",
+["r"]=1,
+["g"]=1,
+["search"]="Mace Stun",
+["target"]="TARGET",
+["source"]="SELF",
+},
+[11]={
+["class"]={
+[1]="Warrior",
+},
+["display"]="Rooted!",
+["b"]=0,
+["target"]="TARGET",
+["source"]="SELF",
+["r"]=0,
+["g"]=0.5,
+["name"]="Rooted",
+["iscrit"]=1,
+["search"]="Improved Hamstring",
+["type"]="BUFF",
+},
+[12]={
+["name"]="Full Sunder",
+["buffcount"]=5,
+["search"]="Sunder Armor",
+["r"]=0,
+["g"]=1,
+["iscrit"]=1,
+["b"]=0,
+["display"]="Full Sunder!",
+["target"]="TARGET",
+["type"]="BUFF",
+["class"]={
+[1]="Warrior",
+},
+},
+[13]={
+["r"]=1,
+["iscrit"]=1,
+["name"]="Envenom",
+["b"]=1,
+["display"]="Envenom!",
+["type"]="BUFF",
+["source"]="SELF",
+["class"]={
+[1]="Rogue",
+},
+["g"]=0,
+["buffcount"]=5,
+["search"]="Deadly",
+["target"]="TARGET",
+},
+[14]={
+["source"]="SELF",
+["class"]={
+[1]="Mage",
+},
+["name"]="Frostbite",
+["search"]="Frostbite",
+["target"]="TARGET",
+["type"]="BUFF",
+["r"]=0.29296875,
+["g"]=0.5859375,
+["iscrit"]=1,
+["b"]=0.87890625,
+["display"]="Frostbite!",
+["icon"]=1,
+},
+[15]={
+["r"]=0.5,
+["class"]={
+[1]="Warrior",
+},
+["name"]="Deep Wound Spam",
+["b"]=0,
+["search"]="Deep Wound",
+["type"]="MISS",
+["source"]="SELF",
+["g"]=0,
+["display"]="",
+["target"]="TARGET",
+},
+[16]={
+["type"]="BUFF",
+["r"]=0.5,
+["class"]={
+[1]="Priest",
+},
+["g"]=0.5,
+["iscrit"]=1,
+["source"]="SELF",
+["name"]="Blackout",
+["display"]="Blackout!",
+["b"]=0.5859375,
+["search"]="Blackout",
+["target"]="TARGET",
+},
+[17]={
+["class"]={
+[1]="Mage",
+},
+["g"]=0.25,
+["b"]=0.25,
+["type"]="BUFF",
+["source"]="SELF",
+["r"]=0.5,
+["name"]="Impact",
+["iscrit"]=1,
+["display"]="Impact!",
+["search"]="Impact",
+["target"]="TARGET",
+},
+[18]={
+["type"]="MISS",
+["class"]={
+[1]="Rogue",
+},
+["name"]="Feint",
+["iscrit"]=1,
+["display"]="Feint Failed!",
+["search"]="Feint",
+["source"]="SELF",
+["r"]=0.99609375,
+["g"]=0.59765625,
+["b"]=0.19921875,
+["target"]="TARGET",
+},
+[19]={
+["type"]="FADE",
+["r"]=0.80078125,
+["class"]={
+[1]="Mage",
+},
+["g"]=0.80078125,
+["target"]="FOCUS",
+["name"]="Sheep",
+["iscrit"]=1,
+["display"]="Sheep Broke!",
+["b"]=1,
+["search"]="Polymorph",
+},
+[20]={
+["g"]=0.80078125,
+["iscrit"]=1,
+["display"]="Slow Removed!",
+["b"]=0,
+["search"]="Slow",
+["type"]="FADE",
+["class"]={
+[1]="Mage",
+},
+["name"]="Slow",
+["target"]="ENEMY",
+["r"]=0.80078125,
+},
+},
+["firstload"]=true,
+},
+}
+SCT_CONFIG = {
+["profileKeys"]={
+["Magiccream - 格雷迈恩"]="Magiccream - 格雷迈恩",
+["Magiccreamdk - 格雷迈恩"]="Magiccream - 格雷迈恩",
+},
+["profiles"]={
+["Magiccream - 格雷迈恩"]={
+["SHOWHEAL"]=false,
+["SHOWTARGETS"]=false,
+["SHOWBUFF"]=false,
+["SHOWOVERHEAL"]=false,
+["SHOWDEBUFF"]=false,
+["SHOWSELFHEAL"]=false,
+["ICON"]=true,
+},
+},
 }

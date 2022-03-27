@@ -1,0 +1,25 @@
+VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1OT[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]芃芃其[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000003 "嘲讽雕像" "INV_MISC_QUESTIONMARK"
+#showtooltip 嚎镇八方
+/tar 玄牛雕像
+/cast 嚎镇八方
+/targetlasttarget
+END
+VER 3 0100000000000006 "找" "INV_MISC_QUESTIONMARK"
+/tar 血肢
+/tar 塔勒西
+END
+VER 3 0100000000000004 "投喷" "INV_MISC_QUESTIONMARK"
+#showtooltip 醉酿投
+/castsequence reset=1 醉酿投,火焰之息
+END
+VER 3 0100000000000005 "投投" "INV_MISC_QUESTIONMARK"
+#showtooltip 醉酿投
+/cast 醉酿投
+/cast 火焰之息
+END

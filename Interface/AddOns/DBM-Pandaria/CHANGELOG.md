@@ -1,7 +1,8 @@
 # <DBM> Pandaria
 
-## [r142](https://github.com/DeadlyBossMods/DBM-MoP/tree/r142) (2021-07-21)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-MoP/compare/r141...r142) [Previous Releases](https://github.com/DeadlyBossMods/DBM-MoP/releases)
+## [r144-2-g7040395](https://github.com/DeadlyBossMods/DBM-MoP/tree/704039577d80ebef7484033a24539187fef0f582) (2021-11-19)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-MoP/compare/r144...704039577d80ebef7484033a24539187fef0f582) [Previous Releases](https://github.com/DeadlyBossMods/DBM-MoP/releases)
 
-- Update world boss sync code  
-- Remove the disableWBEngageSync check, it's deprecated  
+- Lua incorrect usage for AddTimerLine  
+    Its duplicating EJ\_GetSectionInfo as the variables have that already called.  
+- Fix namespace for GetDungeonInfo (#19)  

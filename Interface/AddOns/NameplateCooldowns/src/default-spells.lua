@@ -7,6 +7,7 @@ addonTable.CDs = {
 	[addonTable.UNKNOWN_CLASS] = {
 		-- // reviewed 2021/02/08
 		[336126] = 120,		-- // Медальон гладиатора https://ru.wowhead.com/spell=336126
+		[42292] = 120,		-- // PvP-аксессуар https://ru.wowhead.com/spell=42292
 		[283167] = 60,		-- // Адаптация https://ru.wowhead.com/spell=283167
 		[28730] = 120,		-- // Arcane Torrent https://ru.wowhead.com/spell=28730
 		[50613] = 120,		-- // Arcane Torrent https://ru.wowhead.com/spell=50613
@@ -61,6 +62,7 @@ addonTable.CDs = {
 		[30283] = 60-15,	-- Shadowfury https://ru.wowhead.com/spell=30283
 		[104773] = 180,		-- Unending Resolve https://ru.wowhead.com/spell=104773
 		[19647] = 24,		-- Spell Lock https://ru.wowhead.com/spell=19647
+		[132409] = 24,		-- Spell Lock (demon sacrificed) https://ru.wowhead.com/spell=132409
 		[89766] = 30,		-- Axe Toss" https://ru.wowhead.com/spell=89766
 		[115781] = 24,		-- Optical Blast https://ru.wowhead.com/spell=115781
 		[212295] = 45,		-- Nether Ward https://ru.wowhead.com/spell=212295
@@ -120,6 +122,7 @@ addonTable.CDs = {
 		[275699]	= 90-15-45,		-- Апокалипсис https://ru.wowhead.com/spell=275699
 		[315443]	= 120,			-- Abomination Limb https://www.wowhead.com/spell=315443/abomination-limb
 		[212552]	= 60,			-- Wraith Walk https://www.wowhead.com/spell=212552/wraith-walk
+		[204160]	= 45,			-- Chill Streak https://www.wowhead.com/spell=204160/chill-streak
 	},
 	["DRUID"] = {
 		-- // reviewed 2021/02/15
@@ -380,6 +383,7 @@ addonTable.Interrupts = {
 	[57994] = true,	-- // Wind Shear
 	[6552] = true,	-- // Pummel
 	[19647] = true,	-- // Spell Lock https://ru.wowhead.com/spell=19647
+	[132409] = true, -- Spell Lock (demon sacrificed) https://ru.wowhead.com/spell=132409
 	[147362] = true,	-- // Counter Shot
 	[116705] = true, -- // Spear Hand Strike
 	[115781] = true,	-- // Optical Blast

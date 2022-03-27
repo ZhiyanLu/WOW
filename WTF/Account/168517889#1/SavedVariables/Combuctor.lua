@@ -29,7 +29,7 @@ Combuctor_Sets = {
 	},
 	["mineColor"] = {
 	},
-	["version"] = "9.1.0",
+	["version"] = "9.1.2",
 	["fridgeColor"] = {
 	},
 	["global"] = {

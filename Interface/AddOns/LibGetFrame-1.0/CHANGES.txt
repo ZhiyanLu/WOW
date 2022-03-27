@@ -1,5 +1,27 @@
 Changes since tag 1.5.6
 
+commit b42f3219d0cfbde714ce7be01362720abf739de4
+Author: GreenhairTurtle <912967642@qq.com>
+Date:   Sat Nov 13 08:31:27 2021 +0800
+
+    Fix AshToAsh (#19)
+    
+    * Fix ATA bug
+    
+    * Fix ATA bug
+
+commit c491e985290baf4a3214dd14400dd95d884ee904
+Author: GreenhairTurtle <912967642@qq.com>
+Date:   Thu Sep 16 23:47:12 2021 +0800
+
+    Add AshToAsh support
+
+commit 037d136e727aecaa650f4d01fa152e003cbcb5e2
+Author: blastehh <blastuk@gmail.com>
+Date:   Thu Aug 12 14:53:45 2021 +0100
+
+    Add support for Luna Unit Frames
+
 commit feea6a3cbf3a9e0e3d458b10ef4e0db48cec5cec
 Author: Buds <mrbouyou@gmail.com>
 Date:   Sat Jul 10 22:18:26 2021 +0200

@@ -332,7 +332,30 @@ DCT_SAVE_PERCHAR = {
 		},
 		["sound"] = "",
 	},
-	["DCT_SPECSPELLSUCCESS"] = {
+	["DCT_SHOWKILLBLOW"] = {
+		["show"] = {
+			"击杀!", -- [1]
+		},
+		["fEff"] = 3,
+		["color"] = {
+			1, -- [1]
+			1, -- [2]
+			0, -- [3]
+		},
+		["frame"] = 0,
+		["colorEx"] = {
+			{
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+			}, -- [1]
+			{
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			}, -- [2]
+		},
+		["sound"] = "",
 	},
 	["DCT_SHOWSPECTARGETBUFFFADE"] = {
 		["show"] = {
@@ -359,30 +382,29 @@ DCT_SAVE_PERCHAR = {
 			}, -- [2]
 		},
 	},
-	["DCT_SHOWCOMBATLEAVE"] = {
+	["DCT_SHOWEXTRAATTACKS"] = {
 		["show"] = {
-			"离开战斗", -- [1]
+			"#sn x#am", -- [1]
 		},
-		["fEff"] = 2,
 		["color"] = {
-			0.4, -- [1]
+			1, -- [1]
 			1, -- [2]
-			0, -- [3]
+			1, -- [3]
 		},
-		["frame"] = 1,
+		["frame"] = 0,
+		["sound"] = "",
 		["colorEx"] = {
 			{
-				0, -- [1]
+				1, -- [1]
 				1, -- [2]
 				0, -- [3]
 			}, -- [1]
 			{
 				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+				0, -- [2]
+				0, -- [3]
 			}, -- [2]
 		},
-		["sound"] = "",
 	},
 	["DCT_CastBarWidth"] = 25,
 	["DCT_SHOWFACTION"] = {
@@ -615,10 +637,17 @@ DCT_SAVE_PERCHAR = {
 	["DCT_SSC_Number"] = 1,
 	["DCT_SPECTARGETBUFFFADE"] = {
 	},
-	["DCT_SHOWHONOR"] = {
+	["DCT_SSColor1"] = {
 		["color"] = {
 			1, -- [1]
 			1, -- [2]
+			1, -- [3]
+		},
+	},
+	["DCT_SHOWDEBUFFDOSE"] = {
+		["color"] = {
+			1, -- [1]
+			0.2, -- [2]
 			0, -- [3]
 		},
 		["frame"] = 0,
@@ -635,14 +664,15 @@ DCT_SAVE_PERCHAR = {
 			}, -- [2]
 		},
 		["show"] = {
-			"+#am 荣誉", -- [1]
+			"#ic不良叠加: #sn<#am>", -- [1]
+			"#ic不良减少: #sn<#am>", -- [2]
 		},
 	},
-	["DCT_PRETEXTNAME"] = "含图标(在左)-预设",
 	["DCT_ZeroHp_off"] = 1,
-	["DCT_SHOWEXTRAATTACKS"] = {
+	["DCT_SHOWDEFLECT"] = {
 		["show"] = {
-			"#sn x#am", -- [1]
+			"#ms", -- [1]
+			"#ic#ms #c1(#sn)#ce", -- [2]
 		},
 		["color"] = {
 			1, -- [1]
@@ -650,7 +680,6 @@ DCT_SAVE_PERCHAR = {
 			1, -- [3]
 		},
 		["frame"] = 0,
-		["sound"] = "",
 		["colorEx"] = {
 			{
 				1, -- [1]
@@ -660,55 +689,6 @@ DCT_SAVE_PERCHAR = {
 			{
 				1, -- [1]
 				0, -- [2]
-				0, -- [3]
-			}, -- [2]
-		},
-	},
-	["DCT_SHOWPERIODICHEAL"] = {
-		["show"] = {
-			"#ic#am#sn{#oi}", -- [1]
-			"#ic#am#sn{#oi}", -- [2]
-		},
-		["per"] = 100,
-		["color"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-		},
-		["frame"] = 2,
-		["colorEx"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
-			}, -- [1]
-			{
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-			}, -- [2]
-		},
-	},
-	["DCT_SHOWKILLBLOW"] = {
-		["show"] = {
-			"击杀!", -- [1]
-		},
-		["fEff"] = 3,
-		["color"] = {
-			1, -- [1]
-			1, -- [2]
-			0, -- [3]
-		},
-		["frame"] = 0,
-		["colorEx"] = {
-			{
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-			}, -- [1]
-			{
-				1, -- [1]
-				1, -- [2]
 				0, -- [3]
 			}, -- [2]
 		},
@@ -738,224 +718,30 @@ DCT_SAVE_PERCHAR = {
 			"#ic被偷取: #sn", -- [2]
 		},
 	},
-	["DCT_FRAME_CONFIG"] = {
-		{
-			["active"] = true,
-			["param4"] = 1,
-			["param5"] = 3,
-			["param3"] = 1,
-			["param1"] = 5,
-			["aniType"] = 7,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["param7"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 100,
-			["param2"] = 1,
-			["y"] = 0,
-			["x"] = 0,
-			["name"] = "",
-			["param6"] = 30,
-			["fSizeEn"] = 25,
-			["fSizeCh"] = 25,
-			["fEff"] = 1,
-			["anchor"] = 1,
-		}, -- [1]
-		{
-			["active"] = true,
-			["param4"] = 0,
-			["param5"] = 1,
-			["param3"] = 2,
-			["param1"] = 150,
-			["aniType"] = 6,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["param7"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 60,
-			["anchor"] = 1,
-			["y"] = 100,
-			["x"] = 300,
-			["name"] = "",
-			["param2"] = 3,
-			["param6"] = 30,
-			["fSizeEn"] = 20,
-			["fSizeCh"] = 15,
-			["fEff"] = 1,
-		}, -- [2]
-		{
-			["active"] = true,
-			["param4"] = 0,
-			["param5"] = 1,
-			["param3"] = 2,
-			["param1"] = 110,
-			["aniType"] = 6,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["param7"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 60,
-			["param2"] = 2,
-			["y"] = -50,
-			["x"] = 300,
-			["name"] = "",
-			["param6"] = 30,
-			["fSizeEn"] = 20,
-			["fSizeCh"] = 15,
-			["fEff"] = 1,
-			["anchor"] = 1,
-		}, -- [3]
-		{
-			["active"] = true,
-			["param4"] = 2,
-			["param5"] = 1,
-			["param3"] = 1,
-			["param1"] = 3,
-			["aniType"] = 3,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 100,
-			["y"] = -60,
-			["x"] = 0,
-			["name"] = "",
-			["param2"] = 3,
-			["fSizeEn"] = 24,
-			["fSizeCh"] = 24,
-			["fEff"] = 2,
-			["anchor"] = 1,
-		}, -- [4]
-		{
-			["active"] = true,
-			["param4"] = 2,
-			["param5"] = 1,
-			["param3"] = 2,
-			["param1"] = 20,
-			["aniType"] = 3,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 100,
-			["y"] = -135,
-			["x"] = 0,
-			["name"] = "",
-			["anchor"] = 1,
-			["param2"] = 10,
-			["fSizeEn"] = 17,
-			["fSizeCh"] = 17,
-			["fEff"] = 2,
-		}, -- [5]
-		{
-			["active"] = true,
-			["param4"] = 1,
-			["param5"] = 1,
-			["param3"] = 1,
-			["param1"] = 20,
-			["aniType"] = 3,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 100,
-			["y"] = 200,
-			["x"] = 0,
-			["name"] = "",
-			["param2"] = 4.5,
-			["fSizeEn"] = 15,
-			["fSizeCh"] = 15,
-			["fEff"] = 1,
-			["anchor"] = 1,
-		}, -- [6]
-		{
-			["active"] = true,
-			["param4"] = 0,
-			["param5"] = 0,
-			["param3"] = 1,
-			["param1"] = 80,
-			["aniType"] = 6,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 100,
-			["anchor"] = 1,
-			["y"] = 60,
-			["x"] = 0,
-			["name"] = "",
-			["param2"] = 2.5,
-			["param6"] = 0,
-			["fSizeEn"] = 18,
-			["fSizeCh"] = 16,
-			["fEff"] = 1,
-		}, -- [7]
-		{
-			["active"] = true,
-			["param4"] = 0,
-			["param5"] = 3,
-			["param3"] = 1,
-			["param1"] = 5,
-			["aniType"] = 7,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 80,
-			["anchor"] = 1,
-			["y"] = 75,
-			["x"] = -300,
-			["name"] = "",
-			["param2"] = 1,
-			["param6"] = 0,
-			["fSizeEn"] = 25,
-			["fSizeCh"] = 20,
-			["fEff"] = 1,
-		}, -- [8]
-		{
-			["active"] = true,
-			["param4"] = 0,
-			["param5"] = 1,
-			["param3"] = 2,
-			["param1"] = 260,
-			["aniType"] = 6,
-			["speed"] = 100,
-			["angle"] = 0,
-			["fEn"] = 1,
-			["param7"] = 1,
-			["fCh"] = 1,
-			["alpha"] = 60,
-			["param2"] = 5,
-			["y"] = 100,
-			["x"] = -300,
-			["name"] = "",
-			["param6"] = 30,
-			["fSizeEn"] = 20,
-			["fSizeCh"] = 15,
-			["fEff"] = 1,
-			["anchor"] = 1,
-		}, -- [9]
-		{
-			["active"] = false,
-		}, -- [10]
-		{
-			["active"] = false,
-		}, -- [11]
-		{
-			["active"] = false,
-		}, -- [12]
-		{
-			["active"] = false,
-		}, -- [13]
-		{
-			["active"] = false,
-		}, -- [14]
-		{
-			["active"] = false,
-		}, -- [15]
+	["DCT_SHOWCOMBATLEAVE"] = {
+		["show"] = {
+			"离开战斗", -- [1]
+		},
+		["fEff"] = 2,
+		["color"] = {
+			0.4, -- [1]
+			1, -- [2]
+			0, -- [3]
+		},
+		["frame"] = 1,
+		["colorEx"] = {
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+			}, -- [1]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [2]
+		},
+		["sound"] = "",
 	},
 	["DCT_SHOWSPECDEBUFFFADE"] = {
 		["color"] = {
@@ -980,6 +766,225 @@ DCT_SAVE_PERCHAR = {
 			"消失: #sn", -- [1]
 		},
 	},
+	["DCT_FRAME_CONFIG"] = {
+		{
+			["active"] = true,
+			["param4"] = 1,
+			["param5"] = 3,
+			["param3"] = 1,
+			["param1"] = 5,
+			["aniType"] = 7,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["param7"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 100,
+			["anchor"] = 1,
+			["y"] = 0,
+			["x"] = 0,
+			["name"] = "",
+			["fEff"] = 1,
+			["fSizeCh"] = 25,
+			["fSizeEn"] = 25,
+			["param6"] = 30,
+			["param2"] = 1,
+		}, -- [1]
+		{
+			["active"] = true,
+			["param4"] = 0,
+			["param5"] = 1,
+			["param3"] = 2,
+			["param1"] = 150,
+			["aniType"] = 6,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["param7"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 60,
+			["fEff"] = 1,
+			["y"] = 100,
+			["x"] = 300,
+			["name"] = "",
+			["fSizeCh"] = 15,
+			["fSizeEn"] = 20,
+			["param6"] = 30,
+			["param2"] = 3,
+			["anchor"] = 1,
+		}, -- [2]
+		{
+			["active"] = true,
+			["param4"] = 0,
+			["param5"] = 1,
+			["param3"] = 2,
+			["param1"] = 110,
+			["aniType"] = 6,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["param7"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 60,
+			["anchor"] = 1,
+			["y"] = -50,
+			["x"] = 300,
+			["name"] = "",
+			["fEff"] = 1,
+			["fSizeCh"] = 15,
+			["fSizeEn"] = 20,
+			["param6"] = 30,
+			["param2"] = 2,
+		}, -- [3]
+		{
+			["active"] = true,
+			["param4"] = 2,
+			["param5"] = 1,
+			["param3"] = 2,
+			["param1"] = 2,
+			["aniType"] = 3,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 100,
+			["y"] = -320,
+			["x"] = 0,
+			["name"] = "",
+			["anchor"] = 1,
+			["fEff"] = 2,
+			["fSizeCh"] = 22,
+			["fSizeEn"] = 22,
+			["param2"] = 3,
+		}, -- [4]
+		{
+			["active"] = true,
+			["param4"] = 2,
+			["param5"] = 1,
+			["param3"] = 2,
+			["param1"] = 5,
+			["aniType"] = 3,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 100,
+			["y"] = -260,
+			["x"] = 0,
+			["name"] = "",
+			["fEff"] = 2,
+			["fSizeCh"] = 22,
+			["fSizeEn"] = 22,
+			["param2"] = 5,
+			["anchor"] = 1,
+		}, -- [5]
+		{
+			["active"] = true,
+			["param4"] = 1,
+			["param5"] = 1,
+			["param3"] = 1,
+			["param1"] = 20,
+			["aniType"] = 3,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 100,
+			["y"] = 200,
+			["x"] = 0,
+			["name"] = "",
+			["anchor"] = 1,
+			["fEff"] = 1,
+			["fSizeCh"] = 15,
+			["fSizeEn"] = 15,
+			["param2"] = 4.5,
+		}, -- [6]
+		{
+			["active"] = true,
+			["param4"] = 0,
+			["param5"] = 0,
+			["param3"] = 1,
+			["param1"] = 80,
+			["aniType"] = 6,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 100,
+			["fEff"] = 1,
+			["y"] = 60,
+			["x"] = 0,
+			["name"] = "",
+			["fSizeCh"] = 16,
+			["fSizeEn"] = 18,
+			["param6"] = 0,
+			["param2"] = 2.5,
+			["anchor"] = 1,
+		}, -- [7]
+		{
+			["active"] = true,
+			["param4"] = 0,
+			["param5"] = 3,
+			["param3"] = 1,
+			["param1"] = 5,
+			["aniType"] = 7,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 80,
+			["fEff"] = 1,
+			["y"] = 75,
+			["x"] = -300,
+			["name"] = "",
+			["fSizeCh"] = 20,
+			["fSizeEn"] = 25,
+			["param6"] = 0,
+			["param2"] = 1,
+			["anchor"] = 1,
+		}, -- [8]
+		{
+			["active"] = true,
+			["param4"] = 0,
+			["param5"] = 1,
+			["param3"] = 2,
+			["param1"] = 260,
+			["aniType"] = 6,
+			["speed"] = 100,
+			["angle"] = 0,
+			["fEn"] = 1,
+			["param7"] = 1,
+			["fCh"] = 1,
+			["alpha"] = 60,
+			["anchor"] = 1,
+			["y"] = 100,
+			["x"] = -300,
+			["name"] = "",
+			["fEff"] = 1,
+			["fSizeCh"] = 15,
+			["fSizeEn"] = 20,
+			["param6"] = 30,
+			["param2"] = 5,
+		}, -- [9]
+		{
+			["active"] = false,
+		}, -- [10]
+		{
+			["active"] = false,
+		}, -- [11]
+		{
+			["active"] = false,
+		}, -- [12]
+		{
+			["active"] = false,
+		}, -- [13]
+		{
+			["active"] = false,
+		}, -- [14]
+		{
+			["active"] = false,
+		}, -- [15]
+	},
 	["DCT_SSColor4"] = {
 		["color"] = {
 			1, -- [1]
@@ -987,17 +992,21 @@ DCT_SAVE_PERCHAR = {
 			0, -- [3]
 		},
 	},
-	["DCT_SPECSPELLFAILED"] = {
+	["DCT_SPECSPELLSUCCESS"] = {
 	},
-	["DCT_SHOWREFLECT"] = {
-		["show"] = {
-			"#ms", -- [1]
-			"#ic#ms #c1(#sn)#ce", -- [2]
-		},
+	["DCT_PRETEXTNAME"] = "含图标(在左)-预设",
+	["DCT_SSColor8"] = {
 		["color"] = {
-			1, -- [1]
+			0.5, -- [1]
+			0.7, -- [2]
+			0.2, -- [3]
+		},
+	},
+	["DCT_SHOWBUFF"] = {
+		["color"] = {
+			0, -- [1]
 			1, -- [2]
-			1, -- [3]
+			0, -- [3]
 		},
 		["frame"] = 0,
 		["colorEx"] = {
@@ -1012,57 +1021,34 @@ DCT_SAVE_PERCHAR = {
 				0, -- [3]
 			}, -- [2]
 		},
-		["sound"] = "",
-	},
-	["DCT_SHOWPERIODIC"] = {
 		["show"] = {
-			"#ic-#am#sn{#oi}", -- [1]
-			"#ic-#am#sn(#bt){#oi}", -- [2]
-		},
-		["per"] = 100,
-		["color"] = {
-			1, -- [1]
-			0, -- [2]
-			1, -- [3]
-		},
-		["frame"] = 3,
-		["colorEx"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
-			}, -- [1]
-			{
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-			}, -- [2]
+			"#ic获得: #sn", -- [1]
 		},
 	},
 	["DCT_SPECBUFFFADE"] = {
 	},
 	["DCT_SaveVer"] = 2011,
-	["DCT_SHOWRESIST"] = {
+	["DCT_SHOWCOMBAT"] = {
 		["show"] = {
-			"#ms", -- [1]
-			"#ic#ms #c1(#sn)#ce", -- [2]
+			"进入战斗", -- [1]
 		},
+		["fEff"] = 2,
 		["color"] = {
 			1, -- [1]
-			1, -- [2]
-			1, -- [3]
+			0.4, -- [2]
+			0, -- [3]
 		},
-		["frame"] = 0,
+		["frame"] = 1,
 		["colorEx"] = {
 			{
-				1, -- [1]
+				0, -- [1]
 				1, -- [2]
 				0, -- [3]
 			}, -- [1]
 			{
 				1, -- [1]
-				0, -- [2]
-				0, -- [3]
+				1, -- [2]
+				1, -- [3]
 			}, -- [2]
 		},
 		["sound"] = "",
@@ -1099,30 +1085,30 @@ DCT_SAVE_PERCHAR = {
 			0, -- [3]
 		},
 	},
-	["DCT_SHOWCOOLDOWN"] = {
+	["DCT_SHOWPERIODIC"] = {
 		["show"] = {
-			"可用:#sn", -- [1]
+			"#ic-#am#sn{#oi}", -- [1]
+			"#ic-#am#sn(#bt){#oi}", -- [2]
 		},
-		["fEff"] = 3,
+		["per"] = 100,
 		["color"] = {
-			0.5, -- [1]
-			0.5, -- [2]
+			1, -- [1]
+			0, -- [2]
 			1, -- [3]
 		},
-		["frame"] = 0,
+		["frame"] = 3,
 		["colorEx"] = {
-			{
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-			}, -- [1]
 			{
 				1, -- [1]
 				1, -- [2]
 				0, -- [3]
+			}, -- [1]
+			{
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
 			}, -- [2]
 		},
-		["sound"] = "",
 	},
 	["DCT_SHOWSHIELD"] = {
 		["show"] = {
@@ -1182,13 +1168,67 @@ DCT_SAVE_PERCHAR = {
 			1, -- [3]
 		},
 	},
-	["DCT_SHOWBUFF"] = {
+	["DCT_SHOWCOOLDOWN"] = {
+		["show"] = {
+			"可用:#sn", -- [1]
+		},
+		["fEff"] = 3,
 		["color"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
+			0.5, -- [1]
+			0.5, -- [2]
+			1, -- [3]
 		},
 		["frame"] = 0,
+		["colorEx"] = {
+			{
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+			}, -- [1]
+			{
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			}, -- [2]
+		},
+		["sound"] = "",
+	},
+	["DCT_SHOWACTIVE"] = {
+		["fSizeCh"] = 4,
+		["show"] = {
+			"→#ic#sn", -- [1]
+		},
+		["fSizeEn"] = 4,
+		["fEff"] = 4,
+		["color"] = {
+			1, -- [1]
+			1, -- [2]
+			1, -- [3]
+		},
+		["frame"] = 0,
+		["sound"] = "",
+		["colorEx"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			}, -- [1]
+			{
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+			}, -- [2]
+		},
+	},
+	["DCT_SPECBUFF"] = {
+	},
+	["DCT_SHOWENVIRONMENTAL"] = {
+		["color"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["frame"] = 3,
 		["colorEx"] = {
 			{
 				1, -- [1]
@@ -1202,17 +1242,15 @@ DCT_SAVE_PERCHAR = {
 			}, -- [2]
 		},
 		["show"] = {
-			"#ic获得: #sn", -- [1]
+			"-#am#et", -- [1]
 		},
 	},
-	["DCT_SSColor1"] = {
+	["DCT_SSColor32"] = {
 		["color"] = {
 			1, -- [1]
-			1, -- [2]
+			0.4, -- [2]
 			1, -- [3]
 		},
-	},
-	["DCT_SPECBUFF"] = {
 	},
 	["DCT_SHOWDRAIN"] = {
 		["color"] = {
@@ -1235,14 +1273,6 @@ DCT_SAVE_PERCHAR = {
 		},
 		["show"] = {
 			"-#am #pt", -- [1]
-		},
-	},
-	["DCT_UseCastBar"] = 1,
-	["DCT_SSColor32"] = {
-		["color"] = {
-			1, -- [1]
-			0.4, -- [2]
-			1, -- [3]
 		},
 	},
 	["DCT_SHOWBUFFDOSE"] = {
@@ -1269,29 +1299,7 @@ DCT_SAVE_PERCHAR = {
 			"#ic减少: #sn<#am>", -- [2]
 		},
 	},
-	["DCT_SHOWENVIRONMENTAL"] = {
-		["color"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
-		["frame"] = 3,
-		["colorEx"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
-			}, -- [1]
-			{
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-			}, -- [2]
-		},
-		["show"] = {
-			"-#am#et", -- [1]
-		},
-	},
+	["DCT_UseCastBar"] = 1,
 	["DCT_SHOWDODGE"] = {
 		["show"] = {
 			"#ms", -- [1]
@@ -1317,32 +1325,7 @@ DCT_SAVE_PERCHAR = {
 		},
 		["sound"] = "",
 	},
-	["DCT_SHOWACTIVE"] = {
-		["fSizeCh"] = 4,
-		["sound"] = "",
-		["colorEx"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
-			}, -- [1]
-			{
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-			}, -- [2]
-		},
-		["fEff"] = 4,
-		["color"] = {
-			1, -- [1]
-			1, -- [2]
-			1, -- [3]
-		},
-		["frame"] = 0,
-		["fSizeEn"] = 4,
-		["show"] = {
-			"→#ic#sn", -- [1]
-		},
+	["DCT_SPECSPELLFAILED"] = {
 	},
 	["DCT_SHOWDEBUFFFADE"] = {
 		["color"] = {
@@ -1367,43 +1350,61 @@ DCT_SAVE_PERCHAR = {
 			"#ic消失:#c1#sn#ce", -- [1]
 		},
 	},
-	["DCT_SHOWCOMBAT"] = {
+	["DCT_SHOWRESIST"] = {
 		["show"] = {
-			"进入战斗", -- [1]
+			"#ms", -- [1]
+			"#ic#ms #c1(#sn)#ce", -- [2]
 		},
-		["fEff"] = 2,
 		["color"] = {
 			1, -- [1]
-			0.4, -- [2]
-			0, -- [3]
+			1, -- [2]
+			1, -- [3]
 		},
-		["frame"] = 1,
+		["frame"] = 0,
 		["colorEx"] = {
 			{
-				0, -- [1]
+				1, -- [1]
 				1, -- [2]
 				0, -- [3]
 			}, -- [1]
 			{
 				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+				0, -- [2]
+				0, -- [3]
 			}, -- [2]
 		},
 		["sound"] = "",
 	},
 	["DCT_ManaSelfNoneName"] = 0,
-	["DCT_SSColor8"] = {
-		["color"] = {
-			0.5, -- [1]
-			0.7, -- [2]
-			0.2, -- [3]
+	["DCT_SHOWREFLECT"] = {
+		["show"] = {
+			"#ms", -- [1]
+			"#ic#ms #c1(#sn)#ce", -- [2]
 		},
-	},
-	["DCT_SHOWDEBUFFDOSE"] = {
 		["color"] = {
 			1, -- [1]
-			0.2, -- [2]
+			1, -- [2]
+			1, -- [3]
+		},
+		["frame"] = 0,
+		["colorEx"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			}, -- [1]
+			{
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+			}, -- [2]
+		},
+		["sound"] = "",
+	},
+	["DCT_SHOWHONOR"] = {
+		["color"] = {
+			1, -- [1]
+			1, -- [2]
 			0, -- [3]
 		},
 		["frame"] = 0,
@@ -1420,8 +1421,7 @@ DCT_SAVE_PERCHAR = {
 			}, -- [2]
 		},
 		["show"] = {
-			"#ic不良叠加: #sn<#am>", -- [1]
-			"#ic不良减少: #sn<#am>", -- [2]
+			"+#am 荣誉", -- [1]
 		},
 	},
 	["DCT_EnglishInfo"] = 0,
@@ -1453,17 +1453,18 @@ DCT_SAVE_PERCHAR = {
 		},
 		["sound"] = "",
 	},
-	["DCT_SHOWDEFLECT"] = {
+	["DCT_SHOWPERIODICHEAL"] = {
 		["show"] = {
-			"#ms", -- [1]
-			"#ic#ms #c1(#sn)#ce", -- [2]
+			"#ic#am#sn{#oi}", -- [1]
+			"#ic#am#sn{#oi}", -- [2]
 		},
+		["per"] = 100,
 		["color"] = {
-			1, -- [1]
+			0, -- [1]
 			1, -- [2]
-			1, -- [3]
+			0, -- [3]
 		},
-		["frame"] = 0,
+		["frame"] = 2,
 		["colorEx"] = {
 			{
 				1, -- [1]
@@ -1476,6 +1477,5 @@ DCT_SAVE_PERCHAR = {
 				0, -- [3]
 			}, -- [2]
 		},
-		["sound"] = "",
 	},
 }

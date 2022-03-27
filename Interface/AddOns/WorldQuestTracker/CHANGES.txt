@@ -1,10 +1,10 @@
-tag 7c1c2fe40c9b1d59aec433b58b5dda46d0e86f31 v9.1.0.427
+tag 2cd8a9b8fe9c2c8c7e7c4a46803d956cd2707c1f v9.1.5.430
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Fri Jul 2 18:19:23 2021 -0300
+Date:	Mon Nov 8 15:17:42 2021 -0300
 
-commit 9518fadfdc862c57b9daaf257e9bca1a73bbafd8
+commit 0f48e1ff835557d5d81d46a39166d549805ab90c
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Fri Jul 2 18:19:02 2021 -0300
+Date:   Mon Nov 8 15:17:22 2021 -0300
 
-    Fixing anima amount on Spanish and Portugues languages
+    Quick band-aid to fix some errors due to 9.1.5
 

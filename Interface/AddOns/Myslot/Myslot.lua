@@ -354,8 +354,7 @@ end
 
 local function UnifyCRLF(text)
     text = string.gsub(text, "\r", "")
-    text = string.gsub(text, "\n", MYSLOT_LINE_SEP)
-    return text
+    return strtrim(text)
 end
 
 -- {{{ FindOrCreateMacro
@@ -383,12 +382,12 @@ function MySlot:FindOrCreateMacro(macroInfo)
     local body = macroInfo["body"]
     body = UnifyCRLF(body)
 
+
     local localIndex = localMacro[ name .. "_" .. body] or localMacro[ body ]
 
     if localIndex then
         return localIndex
     else
-
         local numglobal, numperchar = GetNumMacros()
         local perchar = id > MAX_ACCOUNT_MACROS and 2 or 1
 
@@ -487,6 +486,10 @@ function MySlot:RecoverData(msg, opt)
     
     local macro = {}
     if not opt.ignoreMacro then
+        if opt.clearMacro then
+            MySlot:Clear("MACRO")
+        end
+
         for _, m in pairs(msg.macro or {}) do
 
             local macroId = m.id
@@ -509,6 +512,10 @@ function MySlot:RecoverData(msg, opt)
     -- }}} Macro
 
     if (not opt.ignoreAction) then
+        if opt.clearAction then
+            MySlot:Clear("ACTION")
+        end
+
         local slotBucket = {}
 
         for _, s in pairs(msg.slot or {}) do
@@ -596,6 +603,10 @@ function MySlot:RecoverData(msg, opt)
     end
 
     if not opt.ignoreBinding then
+        if opt.clearBinding then
+            MySlot:Clear("BINDING")
+        end
+
         for _, b in pairs(msg.bind or {}) do
             
             local command = b.command

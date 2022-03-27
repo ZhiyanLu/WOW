@@ -8,13 +8,13 @@ Overachiever_Tabs_Settings = {
 	["SuggestionsSort"] = 2,
 	["WatchLists_General"] = {
 	},
-	["Version"] = "1.1.4",
+	["Version"] = "1.1.5",
 	["SearchFullList"] = true,
+	["WatchedList"] = 0,
 	["AchFilters"] = {
 		["Overachiever_SuggestionsFrame"] = 2,
 		["Overachiever_SearchFrame"] = 1,
 	},
-	["WatchedList"] = 0,
 	["WatchLists"] = {
 	},
 }

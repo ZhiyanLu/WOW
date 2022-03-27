@@ -1,0 +1,37 @@
+
+TargetCharms_OptionsGlobal = {
+	["ReadyCharm"] = {
+		["enabled"] = true,
+		["barscale"] = 1,
+		["draggable"] = true,
+		["partyOnly"] = false,
+		["text"] = "Ready?",
+		["alphaVal"] = 0.5,
+		["width"] = 60,
+	},
+	["Version"] = "1.6.2",
+	["FlareCharms"] = {
+		["draggable"] = true,
+		["alphaVal"] = 0.5,
+		["buttonTemplate"] = ">DvW>RvS<BvG>PvY<OV_>X",
+		["showicons"] = false,
+		["partyOnly"] = false,
+		["Yspacing"] = 0,
+		["barscale"] = 1,
+		["enabled"] = true,
+		["Xspacing"] = 0,
+	},
+	["TargetCharms"] = {
+		["draggable"] = true,
+		["alphaVal"] = 0.5,
+		["buttonTemplate"] = ">1>5v6<2v3>7v8<4v_>0",
+		["showontarget"] = true,
+		["partyOnly"] = false,
+		["toggleicon"] = false,
+		["barscale"] = 1,
+		["enabled"] = true,
+		["Yspacing"] = 0,
+		["Xspacing"] = 0,
+	},
+	["Name"] = "余生请多指教",
+}

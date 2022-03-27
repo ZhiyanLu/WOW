@@ -252,7 +252,7 @@ DCS_TableData.StatData.ItemLevelFrame = {
 			_G.CharacterStatsPane.ItemLevelFrame.Value:Show()
 			_G.CharacterFrame.ItemLevelText:SetText('')
 		end
-		local avgItemLevel, avgItemLevelEquipped = GetAverageItemLevel()
+		local avgItemLevel, avgItemLevelEquipped, avgItemLevelPvP = GetAverageItemLevel();
 		local DCS_DecimalPlaces
 		local multiplier
 		--if DCS_ItemLevelTwoDecimalsCheck:GetChecked(true) then
@@ -270,6 +270,7 @@ DCS_TableData.StatData.ItemLevelFrame = {
 		avgItemLevel = floor(multiplier*avgItemLevel)/multiplier;
 		avgItemLevelEquipped = floor(multiplier*avgItemLevelEquipped)/multiplier;
 		statFrame.tooltip = highlight_code..dcs_format(doll_tooltip_format, STAT_AVERAGE_ITEM_LEVEL).." "..dcs_format(DCS_DecimalPlaces, avgItemLevel);
+
 		--[[-
 		if not DCS_ILvl_EQ_AV_Check:GetChecked(true) or (avgItemLevel == avgItemLevelEquipped) then
 			PaperDollFrame_SetLabelAndText(statFrame, STAT_AVERAGE_ITEM_LEVEL, dcs_format(DCS_DecimalPlaces,avgItemLevelEquipped), false, avgItemLevelEquipped)
@@ -300,6 +301,9 @@ DCS_TableData.StatData.ItemLevelFrame = {
 		end
 		statFrame.tooltip = statFrame.tooltip .. font_color_close;
 		statFrame.tooltip2 = STAT_AVERAGE_ITEM_LEVEL_TOOLTIP;
+		if ( avgItemLevel ~= avgItemLevelPvP ) then
+			statFrame.tooltip2 = statFrame.tooltip2.."\n\n"..STAT_AVERAGE_PVP_ITEM_LEVEL:format(avgItemLevelPvP);
+		end
 		statFrame:Show()
     end
 }

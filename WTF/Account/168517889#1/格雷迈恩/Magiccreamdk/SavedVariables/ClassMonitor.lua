@@ -1,8 +1,30 @@
 
 ClassMonitorDataPerChar = {
 	["Plugins"] = {
-		["CM_BLOODSHIELD"] = {
-			["enabled"] = false,
+		["CM_MOVER"] = {
+			["height"] = 20,
+			["width"] = 167,
+		},
+		["CM_COMBO"] = {
+			["customcolor"] = false,
+			["specs"] = {
+				"any", -- [1]
+			},
+			["filled"] = true,
+			["anchor"] = {
+				"BOTTOMLEFT", -- [1]
+				"CM_RESOURCE", -- [2]
+				"TOPLEFT", -- [3]
+				0, -- [4]
+				0, -- [5]
+			},
+			["color"] = {
+				1, -- [1]
+				0, -- [2]
+				0.00392156862745098, -- [3]
+			},
+			["height"] = 20,
+			["autohide"] = false,
 			["width"] = 167,
 		},
 		["CM_RESOURCE"] = {
@@ -15,54 +37,6 @@ ClassMonitorDataPerChar = {
 			},
 			["text"] = true,
 			["textSize"] = 24,
-			["width"] = 167,
-		},
-		["CM_RUNES"] = {
-			["enabled"] = false,
-			["width"] = 167,
-			["height"] = 15,
-			["anchor"] = {
-				"BOTTOMLEFT", -- [1]
-				"CM_RUNIC_POWER", -- [2]
-				"TOPLEFT", -- [3]
-				0, -- [4]
-				2, -- [5]
-			},
-			["duration"] = true,
-			["orientation"] = "HORIZONTAL",
-			["durationTextSize"] = 20,
-		},
-		["CM_RUNIC_POWER"] = {
-			["autohide"] = false,
-			["height"] = 20,
-			["textSize"] = 24,
-			["hideifmax"] = false,
-			["width"] = 167,
-		},
-		["CM_MOVER"] = {
-			["height"] = 20,
-			["width"] = 167,
-		},
-		["CM_COMBO"] = {
-			["customcolor"] = false,
-			["specs"] = {
-				"any", -- [1]
-			},
-			["filled"] = true,
-			["color"] = {
-				1, -- [1]
-				0, -- [2]
-				0.00392156862745098, -- [3]
-			},
-			["anchor"] = {
-				"BOTTOMLEFT", -- [1]
-				"CM_RESOURCE", -- [2]
-				"TOPLEFT", -- [3]
-				0, -- [4]
-				0, -- [5]
-			},
-			["height"] = 20,
-			["autohide"] = false,
 			["width"] = 167,
 		},
 	},

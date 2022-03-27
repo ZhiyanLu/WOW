@@ -1,1 +1,3 @@
-- Ability updates for 9.1
+- Fix spell resets
+- Fix Intercept cooldown
+- Add Bonedust Brew

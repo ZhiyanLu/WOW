@@ -1,4 +1,4 @@
-﻿
+
 LgSupaDB = {
 	["Corrupted_Matrix"] = true,
 	["player5sound2"] = true,

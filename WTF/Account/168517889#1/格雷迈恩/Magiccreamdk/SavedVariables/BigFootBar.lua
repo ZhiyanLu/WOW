@@ -1,4 +1,4 @@
-﻿
+
 BigFootBar_Info = {
 	["Magiccreamdk"] = {
 		["BigFootBarFrame1"] = {

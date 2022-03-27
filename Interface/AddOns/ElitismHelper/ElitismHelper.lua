@@ -134,17 +134,21 @@ local Spells = {
 	[322475] = 20,		-- Plague Crash (Environement Margrave Stradama)
 	
 	-- Theater of Pain
-	[337037] = 20,		-- Whirling Blade (Nekthara the Mangler)
+	[337037] = 20,		-- Whirling Blade (Nekthara the Mangler) ?? TODO: Which one is correct?
+	[336996] = 20, -- Whirling Blade (Nekthara the Mangler) ?? TODO: Which one is correct?
 	[332708] = 20,		-- Ground Smash (Heavin the breaker)
 	[333297] = 20, 		-- Death Winds (Nefarious Darkspeaker)
 	[331243] = 20,		-- Bone Spikes (Soulforged Bonereaver)
 	[331224] = 20,		-- Bonestorm (Soulforged Bonereaver)
-	[330608] = 20,		-- Vile Eruption (Rancind Gasbag)
+	[330608] = 20,		-- Vile Eruption (Rancind Gasbag) ?? TODO: Which one is correct?
+	[330614] = 20,      -- Vile Eruption (Rancid Gasbag) ?? TODO: Which one is correct?
+	[321039] = 20,      -- Disgusting Burst (Disgusting Refuse and Blighted Sludge-Spewer)	
 	
 	[317231] = 20, 		-- Crushing Slam (Xav the Unfallen)
 	[339415] = 20,		-- Deafening Crash (Xav the Unfallen)
 	[320729] = 20,		-- Massive Cleave (Xav the Unfallen)
 	[318406] = 20,		-- Tenderizing Smash (Gorechop)
+	[323406] = 20, -- Jagged Gash (Gorechop)
 	-- id ?[323542] = 20,		-- Oozing (Gorechop)
 	[323681] = 20,		-- Dark Devastation (Mordretha) 
 	[339573] = 20,		-- Echos of Carnage (Mordretha)
@@ -155,7 +159,7 @@ local Spells = {
 	[320991] = 20,		-- Echoing Thrust (Regal Mistdancer)
 	[320999] = 20,		-- Echoing Thrust (Regal Mistdancer Mirror)
 	-- id ?[321019] = 20,		-- Sanctified Mists (Regal Mistcaller)
-	[334921] = 20,		-- Umbral Crash (Insatiable Brute)
+	-- [334921] = 20,		-- Umbral Crash (Insatiable Brute)
 	[322418] = 20,		-- Craggy Fracture (Chamber Sentinel)
 	[334378] = 20,      -- Explosive Vellum (Research Scribe)
 	[323573] = 20,      -- Residue (Fleeting Manifestation)
@@ -437,7 +441,7 @@ SlashCmdList["ELITISMHELPER"] = function(msg,editBox)
 			print(" eodoff: Disable Elitism Helper end-of-dungeon stats")
 			print(" output: Define output channel between default | party | raid | yell | self")
 			print(" ------ This is more or less for debugging ------")
-			print(" start: Start logging failure damage")
+			print(" start: Start logging avoidable damage")
 			print(" eod: Dungeon is complete")
 			print(" table: Prints users")
 			print(" resync: Rebuilts table")
@@ -594,10 +598,12 @@ function ElitismFrame:CHALLENGE_MODE_COMPLETED(event,...)
 		for _ in pairs(CombinedFails) do count = count + 1 end
 		if count == 0 then
 			print("No Damage?");
-			--maybeSendChatMessage("Thank you for travelling with ElitismHelper. No failure damage was taken this run.")
+			--maybeSendChatMessage("Thank you for travelling with ElitismHelper.)
+			--maybeSendChatMessage("<EH> No avoidable damage was taken this run.")
 			return
 		else
-			maybeSendChatMessage("Thank you for travelling with ElitismHelper. Amount of failure damage:")
+			maybeSendChatMessage("Thank you for travelling with ElitismHelper.")
+			maybeSendChatMessage("<EH> Amount of avoidable damage:")
 		end
 		local u = { }
 		for k, v in pairs(CombinedFails) do table.insert(u, { key = k, value = v }) end
@@ -611,7 +617,7 @@ end
 function ElitismFrame:CHALLENGE_MODE_START(event,...)
 	CombinedFails = {}
 	FailByAbility = {}
-	print("Failure damage now being recorded.")
+	print("Avoidable damage now being recorded.")
 end
 
 function ElitismFrame:SplitString(inputstr, sep)

@@ -762,7 +762,8 @@ Private.trigger_modes = {
 
 Private.debuff_types = {
   HELPFUL = L["Buff"],
-  HARMFUL = L["Debuff"]
+  HARMFUL = L["Debuff"],
+  BOTH = L["Buff/Debuff"]
 }
 
 Private.tooltip_count = {
@@ -773,7 +774,7 @@ Private.tooltip_count = {
 
 Private.aura_types = {
   BUFF = L["Buff"],
-  DEBUFF = L["Debuff"]
+  DEBUFF = L["Debuff"],
 }
 
 
@@ -1055,6 +1056,11 @@ Private.text_word_wrap = {
   Elide = L["Elide"]
 }
 
+Private.include_pets_types = {
+  PlayersAndPets = L["Players and Pets"],
+  PetsOnly = L["Pets only"]
+}
+
 Private.category_event_prototype = {}
 for name, prototype in pairs(Private.event_prototypes) do
   Private.category_event_prototype[prototype.type] = Private.category_event_prototype[prototype.type] or {}
@@ -1182,7 +1188,8 @@ Private.environmental_types = {
 Private.combatlog_flags_check_type = {
   Mine = L["Mine"],
   InGroup = L["In Group"],
-  NotInGroup = L["Not in Group"]
+  InParty = L["In Party"],
+  NotInGroup = L["Not in Smart Group"]
 }
 
 Private.combatlog_flags_check_reaction = {
@@ -2329,12 +2336,11 @@ Private.send_chat_message_types = {
   ERROR = L["Error Frame"]
 }
 
-if WeakAuras.IsRetail() then
-  Private.send_chat_message_types.TTS = L["Text-to-speech"]
-  Private.tts_voices = {}
-  for i, voiceInfo in pairs(C_VoiceChat.GetTtsVoices()) do
-    Private.tts_voices[voiceInfo.voiceID] = voiceInfo.name
-  end
+
+Private.send_chat_message_types.TTS = L["Text-to-speech"]
+Private.tts_voices = {}
+for i, voiceInfo in pairs(C_VoiceChat.GetTtsVoices()) do
+  Private.tts_voices[voiceInfo.voiceID] = voiceInfo.name
 end
 
 Private.group_aura_name_info_types = {
@@ -2388,6 +2394,13 @@ LSM:Register("sound", "Synth Chord", "Interface\\AddOns\\WeakAuras\\Media\\Sound
 LSM:Register("sound", "Chicken Alarm", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\ChickenAlarm.ogg")
 LSM:Register("sound", "Xylophone", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Xylophone.ogg")
 LSM:Register("sound", "Drums", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Drums.ogg")
+LSM:Register("sound", "Tada Fanfare", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\TadaFanfare.ogg")
+LSM:Register("sound", "Squeaky Toy Short", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\SqueakyToyShort.ogg")
+LSM:Register("sound", "Error Beep", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\ErrorBeep.ogg")
+LSM:Register("sound", "Oh No", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\OhNo.ogg")
+LSM:Register("sound", "Double Whoosh", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\DoubleWhoosh.ogg")
+LSM:Register("sound", "Brass", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Brass.mp3")
+LSM:Register("sound", "Glass", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Glass.mp3")
 
 LSM:Register("sound", "Voice: Adds", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Adds.ogg")
 LSM:Register("sound", "Voice: Boss", "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Boss.ogg")
@@ -2459,6 +2472,7 @@ LSM:Register("sound", "Wicked Female Laugh", PowerAurasSoundPath.."wlaugh.ogg")
 LSM:Register("sound", "Wolf Howl", PowerAurasSoundPath.."wolf5.ogg")
 LSM:Register("sound", "Yeehaw", PowerAurasSoundPath.."yeehaw.ogg")
 
+
 Private.sound_types = {
   [" custom"] = " " .. L["Custom"],
   [" KitID"] = " " .. L["Sound by Kit ID"]
@@ -2482,6 +2496,13 @@ LSM:Register("font", "Fira Mono Medium", "Interface\\Addons\\WeakAuras\\Media\\F
 
 -- register plain white border
 LSM:Register("border", "Square Full White", [[Interface\AddOns\WeakAuras\Media\Textures\Square_FullWhite.tga]])
+
+--
+LSM:Register("statusbar", "Clean", [[Interface\AddOns\WeakAuras\Media\Textures\Statusbar_Clean]])
+LSM:Register("statusbar", "Stripes", [[Interface\AddOns\WeakAuras\Media\Textures\Statusbar_Stripes]])
+LSM:Register("statusbar", "Thick Stripes", [[Interface\AddOns\WeakAuras\Media\Textures\Statusbar_Stripes_Thick]])
+LSM:Register("statusbar", "Thin Stripes", [[Interface\AddOns\WeakAuras\Media\Textures\Statusbar_Stripes_Thin]])
+LSM:Register("border", "Drop Shadow", [[Interface\AddOns\WeakAuras\Media\Textures\Border_DropShadow]])
 
 Private.duration_types = {
   seconds = L["Seconds"],
@@ -3058,7 +3079,11 @@ Private.multiUnitId = {
   ["boss"] = true,
   ["arena"] = true,
   ["group"] = true,
+  ["grouppets"] = true,
+  ["grouppetsonly"] = true,
   ["party"] = true,
+  ["partypets"] = true,
+  ["partypetsonly"] = true,
   ["raid"] = true,
 }
 
@@ -3074,19 +3099,29 @@ Private.multiUnitUnits = {
 Private.multiUnitUnits.group["player"] = true
 Private.multiUnitUnits.party["player"] = true
 
+Private.multiUnitUnits.group["pet"] = true
+Private.multiUnitUnits.party["pet"] = true
+
 for i = 1, 4 do
   Private.baseUnitId["party"..i] = true
   Private.baseUnitId["partypet"..i] = true
   Private.multiUnitUnits.group["party"..i] = true
   Private.multiUnitUnits.party["party"..i] = true
+  Private.multiUnitUnits.group["partypet"..i] = true
+  Private.multiUnitUnits.party["partypet"..i] = true
 end
 
 if WeakAuras.IsRetail() then
   for i = 1, MAX_BOSS_FRAMES do
-    Private.baseUnitId["arena"..i] = true
     Private.baseUnitId["boss"..i] = true
-    Private.multiUnitUnits.arena["arena"..i] = true
     Private.multiUnitUnits.boss["boss"..i] = true
+  end
+end
+
+if WeakAuras.IsRetail() or WeakAuras.IsBCC() then
+  for i = 1, 5 do
+    Private.baseUnitId["arena"..i] = true
+    Private.multiUnitUnits.arena["arena"..i] = true
   end
 end
 
@@ -3097,6 +3132,8 @@ for i = 1, 40 do
   Private.multiUnitUnits.nameplate["nameplate"..i] = true
   Private.multiUnitUnits.group["raid"..i] = true
   Private.multiUnitUnits.raid["raid"..i] = true
+  Private.multiUnitUnits.group["raidpet"..i] = true
+  Private.multiUnitUnits.raid["raidpet"..i] = true
 end
 
 Private.dbm_types = {

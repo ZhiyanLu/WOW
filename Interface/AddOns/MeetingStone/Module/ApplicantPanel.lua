@@ -3,6 +3,7 @@ BuildEnv(...)
 
 ApplicantPanel = Addon:NewModule(CreateFrame('Frame', nil, ManagerPanel), 'ApplicantPanel', 'AceEvent-3.0', 'AceTimer-3.0')
 
+local AllMythicChallengeMaps = {691,695,699,703,705,709,713,717}
 
 local function _PartySortHandler(applicant)
     return applicant:GetNumMembers() > 1 and format('%08x', applicant:GetID())
@@ -23,7 +24,7 @@ local APPLICANT_LIST_HEADER = {
     {
         key = 'Name',
         text = L['角色名'],
-        width = 95,
+        width = 80,
         style = 'LEFT',
         showHandler = function(applicant)
             local color = applicant:GetResult() and RAID_CLASS_COLORS[applicant:GetClass()] or GRAY_FONT_COLOR
@@ -33,7 +34,7 @@ local APPLICANT_LIST_HEADER = {
     {
         key = 'Role',
         text = L['职责'],
-        width = 52,
+        width = 40,
         class = Addon:GetClass('RoleItem'),
         formatHandler = function(grid, applicant)
             grid:SetMember(applicant)
@@ -119,9 +120,30 @@ local APPLICANT_LIST_HEADER = {
     --     end
     -- },
     {
+        key = 'MythicScore',
+        text = L['当前|总分'],
+        width = 90,
+        style = 'LEFT',
+        showHandler = function(applicant)
+            local id = applicant:GetID()
+            local index = applicant:GetIndex()
+            local activityID = applicant:GetActivityID()
+            local currentDungeonScore = C_LFGList.GetApplicantDungeonScoreForListing(id,index,692).mapScore
+            local totalDungeonScore = 0
+            for i=1,#AllMythicChallengeMaps do
+                totalDungeonScore = totalDungeonScore + C_LFGList.GetApplicantDungeonScoreForListing(id,index,AllMythicChallengeMaps[i]).mapScore
+            end
+            local color = C_ChallengeMode.GetDungeonScoreRarityColor(totalDungeonScore);
+            if(not color) then 
+                color = HIGHLIGHT_FONT_COLOR; 
+            end 
+            return currentDungeonScore.."|"..totalDungeonScore,color.r,color.g,color.b
+        end,
+    },
+    {
         key = 'Msg',
         text = L['描述'],
-        width = 152,
+        width = 138,
         style = 'LEFT',
         showHandler = function(applicant)
             if applicant:GetResult() then
@@ -134,7 +156,7 @@ local APPLICANT_LIST_HEADER = {
     {
         key = 'Option',
         text = L['操作'],
-        width = 130,
+        width = 90,
         class = Addon:GetClass('OperationGrid'),
         formatHandler = function(grid, applicant)
             grid:SetMember(applicant, CreatePanel:GetCurrentActivity():GetActivityID())

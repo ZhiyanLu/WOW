@@ -1,3 +1,3 @@
-# 10.2.9 (2021-07-28)
+# 10.2.13 (2021-11-01)
 
-* Fixed a lag/freeze issue when switching talents or specs that happened when the options dialog was opened at least once [Comment #5764].
+* Updated TOC version for for Classic Patch 1.14.0.

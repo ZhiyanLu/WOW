@@ -1,7 +1,3 @@
-VER 3 010000000000000B " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [talent:7/2]艾露恩之怒;[talent:7/3]新月
-END
 VER 3 0100000000000013 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [talent:2/2]甘霖;[talent:2/3]野性冲锋
@@ -12,49 +8,32 @@ VER 3 0100000000000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [talent:1/3,@cursor] 自然之力;[talent:1/2]艾露恩的战士
 END
-VER 3 010000000000001F " " "INV_Misc_QuestionMark"
+VER 3 0100000000000022 " " "134400"
+/cast 化身：乌索克的守护者(天赋，变形)
+/use 不可思议的量子装置
+END
+VER 3 010000000000000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [talent:2/2]乌索尔旋风;[talent:2/3]野性冲锋
-/use [nostealth]棱彩装饰
-/use [nostealth]泡泡棒
+/cast [talent:7/2]艾露恩之怒;[talent:7/3]新月
 END
 VER 3 010000000000001C "万灵" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast !万灵之召
 END
-VER 3 0100000000000012 "冲锋" "INV_MISC_QUESTIONMARK"
-#showtooltip 野性冲锋
-/cast [target=mouseover,nomodifier,exists] 野性冲锋
+VER 3 0100000000000021 "化身" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 化身：乌索克的守护者(天赋，变形)
+/use 不可思议的量子装置
 END
 VER 3 010000000000000A "复生" "INV_MISC_QUESTIONMARK"
 #showtooltip 复生
 /cast [target=mouseover,nomodifier,exists] 复生
 END
-VER 3 0100000000000002 "安抚" "INV_MISC_QUESTIONMARK"
-#showtooltip 安抚
-/tar 达萨莱战神
-/tar 铁潮猎犬
-/tar 影裔勇士
-/tar 混乱的暴徒
-/tar 艾什凡破坏者
-/tar 泥沙女王
-/tar 鲜血主母选民
-/tar 复活的护卫
-/tar 荆棘卫士
-/tar 纳兹曼尼战争主母 
-/施放 安抚
-END
-VER 3 0100000000000010 "急奔" "INV_MISC_QUESTIONMARK"
-#showtooltip 急奔
-/use [nostealth]棱彩装饰
-/use [nostealth]泡泡棒
-/castsequence reset=20 急奔,树人形态
-END
 VER 3 0100000000000011 "急奔" "INV_MISC_QUESTIONMARK"
 #showtooltip 急奔
 /use [nostealth]棱彩装饰
 /use [nostealth]泡泡棒
-/castsequence reset=20 急奔,枭兽形态
+/use 急奔
 END
 VER 3 010000000000000E "愈合" "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -85,9 +64,10 @@ VER 3 010000000000001B "熊" "INV_MISC_QUESTIONMARK"
 /use [nostealth]泡泡棒
 /castsequence reset=3 灵魂变形,熊形态
 END
-VER 3 010000000000001D "狂暴" "INV_MISC_QUESTIONMARK"
+VER 3 010000000000001D "爆发" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use 狂暴
+/use 化身：乌索克的守护者(天赋，变形)
 /use 猛虎之怒
 /use 不可思议的量子装置
 END
@@ -100,5 +80,5 @@ END
 VER 3 0100000000000018 "超凡" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use 超凡之盟
-/use 导师的圣钟
+/use 不可思议的量子装置
 END

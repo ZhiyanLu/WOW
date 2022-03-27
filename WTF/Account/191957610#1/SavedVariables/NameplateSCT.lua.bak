@@ -1,0 +1,45 @@
+
+NameplateSCTDB = {
+	["profileKeys"] = {
+		["Magiccreamdz - 凤凰之神"] = "Default",
+		["麦吉克库瑞姆 - 格雷迈恩"] = "Default",
+		["芃芃其麦 - 格雷迈恩"] = "Default",
+		["哈尼臭嗨 - 格雷迈恩"] = "Default",
+		["Magiccreamdk - 格雷迈恩"] = "Default",
+		["Magiccream - 格雷迈恩"] = "Default",
+		["余生请多指教 - 格雷迈恩"] = "Default",
+	},
+	["global"] = {
+		["xOffset"] = 75,
+		["yOffset"] = 40,
+		["formatting"] = {
+			["alpha"] = 0.8,
+			["icon"] = "left",
+			["size"] = 25,
+		},
+		["offTargetFormatting"] = {
+			["icon"] = "left",
+			["alpha"] = 0.6,
+			["size"] = 18,
+		},
+		["animationsPersonal"] = {
+			["normal"] = "disabled",
+			["crit"] = "disabled",
+			["miss"] = "disabled",
+		},
+		["animations"] = {
+			["autoattack"] = "disabled",
+			["crit"] = "fountain",
+			["miss"] = "disabled",
+			["normal"] = "fountain",
+			["animationspeed"] = 2,
+			["autoattackcrit"] = "disabled",
+		},
+		["yOffsetPersonal"] = -200,
+		["sizing"] = {
+			["critsScale"] = 1,
+		},
+		["textShadow"] = false,
+		["personal"] = false,
+	},
+}
